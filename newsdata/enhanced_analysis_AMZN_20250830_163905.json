@@ -1,0 +1,153 @@
+{
+  "symbol": "AMZN",
+  "sector": "Consumer Discretionary",
+  "analysis_timestamp": "2025-08-30T16:39:05.849115",
+  "days_analyzed": 30,
+  "data_quality": {
+    "total_events_found": 3,
+    "average_quality_score": 0.5666666666666668,
+    "average_relevance_score": 1.0,
+    "source_diversity": 2
+  },
+  "sentiment_metrics": {
+    "overall_score": 48.9,
+    "confidence": "low",
+    "sentiment_distribution": {
+      "positive": 33.3,
+      "negative": 0.0,
+      "neutral": 66.7
+    },
+    "urgency_breakdown": {
+      "high": 66.7,
+      "low": 33.3
+    },
+    "data_quality_metrics": {
+      "weighted_events": 3,
+      "total_weight": 0.91,
+      "average_event_quality": 0.57
+    }
+  },
+  "impact_analysis": {
+    "summary": "Sector sentiment is positive based on 3 high-quality events. Key drivers include ['Monetary Policy', 'Earnings & Financial Results'].",
+    "event_type_breakdown": {
+      "Monetary Policy": {
+        "count": 2,
+        "avg_sentiment": 1.7999999999999998,
+        "impact": 7.177799999999999,
+        "avg_impact": 3.5888999999999993
+      },
+      "Earnings & Financial Results": {
+        "count": 1,
+        "avg_sentiment": 0.0,
+        "impact": 1.2090750000000001,
+        "avg_impact": 1.2090750000000001
+      }
+    },
+    "geographic_impact": {
+      "Global": 5.892599999999999,
+      "Regional": 2.494275
+    },
+    "timeline_pattern": {
+      "trend": "insufficient_data",
+      "data_points": 0
+    },
+    "key_themes": {
+      "top_themes": [
+        "Monetary Policy",
+        "Earnings & Financial Results"
+      ],
+      "theme_details": [
+        {
+          "theme": "Monetary Policy",
+          "frequency": 2,
+          "avg_sentiment": 1.8,
+          "sentiment_label": "positive"
+        },
+        {
+          "theme": "Earnings & Financial Results",
+          "frequency": 1,
+          "avg_sentiment": 0.0,
+          "sentiment_label": "neutral"
+        }
+      ]
+    },
+    "confidence_factors": [
+      "Small sample size reduces confidence",
+      "Limited source diversity",
+      "High proportion of urgent events increases reliability"
+    ]
+  },
+  "risk_analysis": {
+    "overall_risk_level": "minimal",
+    "risk_score": 0.0,
+    "key_risk_factors": [],
+    "risk_distribution": {
+      "regulatory": 0,
+      "market": 0,
+      "operational": 0,
+      "geopolitical": 0
+    }
+  },
+  "trend_analysis": {
+    "trend": "insufficient_data",
+    "pattern": "unknown"
+  },
+  "top_events": [
+    {
+      "title": "Stock market today : Dow , S & P 500 , Nasdaq futures rise as Fed rate cut bets surge after inflation data",
+      "date": "20250813",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-rise-as-fed-rate-cut-bets-surge-after-inflation-data-225124395.html",
+      "sentiment": 3.6,
+      "sentiment_label": "very positive",
+      "event_type": "Monetary Policy",
+      "urgency": "high",
+      "impact_score": 5.89,
+      "sector_relevance": 1.0,
+      "content_quality": 0.53
+    },
+    {
+      "title": "What To Expect in Markets This Week : The Latest Inflation Figures , Earnings and More",
+      "date": "20250811",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/expect-markets-week-latest-inflation-100000627.html",
+      "sentiment": 0.0,
+      "sentiment_label": "neutral",
+      "event_type": "Earnings & Financial Results",
+      "urgency": "high",
+      "impact_score": 1.21,
+      "sector_relevance": 1.0,
+      "content_quality": 0.65
+    },
+    {
+      "title": "Market Holds Breath : Major Indexes Pull Back as Wall Street Awaits Key Inflation Data",
+      "date": "20250811",
+      "source": "markets.financialcontent.com",
+      "url": "https://markets.financialcontent.com/stocks/article/marketminute-2025-8-11-market-holds-breath-major-indexes-pull-back-as-wall-street-awaits-key-inflation-data",
+      "sentiment": 0.0,
+      "sentiment_label": "neutral",
+      "event_type": "Monetary Policy",
+      "urgency": "low",
+      "impact_score": 1.29,
+      "sector_relevance": 1.0,
+      "content_quality": 0.53
+    }
+  ],
+  "methodology_notes": {
+    "filtering_approach": "Multi-layered filtering using content quality, source reliability, and sector relevance",
+    "sentiment_calculation": "Weighted average based on event impact, quality, and sector relevance",
+    "confidence_factors": "Based on sample size, source diversity, content quality, and event urgency",
+    "limitations": [
+      "Analysis limited to English-language sources",
+      "Relies on GDELT event database availability",
+      "Sentiment analysis may miss nuanced context",
+      "Recent events may be weighted more heavily"
+    ],
+    "strengths": [
+      "Advanced content filtering reduces noise",
+      "Multi-dimensional relevance scoring",
+      "Quality-weighted sentiment calculation",
+      "Comprehensive risk and trend analysis"
+    ]
+  }
+}

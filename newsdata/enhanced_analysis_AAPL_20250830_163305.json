@@ -1,0 +1,179 @@
+{
+  "symbol": "AAPL",
+  "sector": "Technology",
+  "analysis_timestamp": "2025-08-30T16:33:05.399617",
+  "days_analyzed": 30,
+  "data_quality": {
+    "total_events_found": 4,
+    "average_quality_score": 0.5075,
+    "average_relevance_score": 3.15,
+    "source_diversity": 2
+  },
+  "sentiment_metrics": {
+    "overall_score": 25.77,
+    "confidence": "low",
+    "sentiment_distribution": {
+      "positive": 25.0,
+      "negative": 0.0,
+      "neutral": 75.0
+    },
+    "urgency_breakdown": {
+      "high": 25.0,
+      "low": 75.0
+    },
+    "data_quality_metrics": {
+      "weighted_events": 4,
+      "total_weight": 3.59,
+      "average_event_quality": 0.51
+    }
+  },
+  "impact_analysis": {
+    "summary": "Sector sentiment is neutral based on 4 high-quality events. Key drivers include ['Other Business News', 'Earnings & Financial Results'].",
+    "event_type_breakdown": {
+      "Earnings & Financial Results": {
+        "count": 1,
+        "avg_sentiment": 2.0,
+        "impact": 6.235739999999999,
+        "avg_impact": 6.235739999999999
+      },
+      "Supply Chain": {
+        "count": 1,
+        "avg_sentiment": 0.0,
+        "impact": 1.5802499999999997,
+        "avg_impact": 1.5802499999999997
+      },
+      "Other Business News": {
+        "count": 2,
+        "avg_sentiment": 0.0,
+        "impact": 2.6337499999999996,
+        "avg_impact": 1.3168749999999998
+      }
+    },
+    "geographic_impact": {
+      "Regional": 10.449739999999998
+    },
+    "timeline_pattern": {
+      "trend": "improving",
+      "recent_avg": 1.0,
+      "earlier_avg": 0.0,
+      "data_points": 3
+    },
+    "key_themes": {
+      "top_themes": [
+        "Other Business News",
+        "Earnings & Financial Results",
+        "Supply Chain"
+      ],
+      "theme_details": [
+        {
+          "theme": "Other Business News",
+          "frequency": 2,
+          "avg_sentiment": 0.0,
+          "sentiment_label": "neutral"
+        },
+        {
+          "theme": "Earnings & Financial Results",
+          "frequency": 1,
+          "avg_sentiment": 2.0,
+          "sentiment_label": "positive"
+        },
+        {
+          "theme": "Supply Chain",
+          "frequency": 1,
+          "avg_sentiment": 0.0,
+          "sentiment_label": "neutral"
+        }
+      ]
+    },
+    "confidence_factors": [
+      "Small sample size reduces confidence",
+      "Limited source diversity"
+    ]
+  },
+  "risk_analysis": {
+    "overall_risk_level": "minimal",
+    "risk_score": 0.0,
+    "key_risk_factors": [],
+    "risk_distribution": {
+      "regulatory": 0,
+      "market": 0,
+      "operational": 0,
+      "geopolitical": 0
+    }
+  },
+  "trend_analysis": {
+    "trend": "insufficient_data",
+    "pattern": "unknown"
+  },
+  "top_events": [
+    {
+      "title": "Dynatrace Stock : Dynatrace Earnings Top Estimates On Cloud Software Boost",
+      "date": "20250806",
+      "source": "investors.com",
+      "url": "https://www.investors.com/news/technology/dynatrace-stock-dt-stock-dynatrace-earnings-q22025/",
+      "sentiment": 2.0,
+      "sentiment_label": "positive",
+      "event_type": "Earnings & Financial Results",
+      "urgency": "high",
+      "impact_score": 6.24,
+      "sector_relevance": 3.6,
+      "content_quality": 0.52
+    },
+    {
+      "title": "This Artificial Intelligence ( AI ) Stock Just Dropped , and That a Buying Opportunity",
+      "date": "20250813",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/artificial-intelligence-ai-stock-just-135300027.html",
+      "sentiment": 0.0,
+      "sentiment_label": "neutral",
+      "event_type": "Supply Chain",
+      "urgency": "low",
+      "impact_score": 1.58,
+      "sector_relevance": 3.0,
+      "content_quality": 0.51
+    },
+    {
+      "title": "Better Artificial Intelligence Stock : BigBear . ai vs . Nvidia",
+      "date": "20250803",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/better-artificial-intelligence-stock-bigbear-181500983.html",
+      "sentiment": 0.0,
+      "sentiment_label": "neutral",
+      "event_type": "Other Business News",
+      "urgency": "low",
+      "impact_score": 1.32,
+      "sector_relevance": 3.0,
+      "content_quality": 0.51
+    },
+    {
+      "title": "2 Artificial Intelligence ( AI ) Stocks That Offer More Than Just Hype",
+      "date": "20250803",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/2-artificial-intelligence-ai-stocks-110655725.html",
+      "sentiment": 0.0,
+      "sentiment_label": "neutral",
+      "event_type": "Other Business News",
+      "urgency": "low",
+      "impact_score": 1.32,
+      "sector_relevance": 3.0,
+      "content_quality": 0.51
+    }
+  ],
+  "methodology_notes": {
+    "filtering_approach": "Multi-layered filtering using content quality, source reliability, and sector relevance",
+    "sentiment_calculation": "Weighted average based on event impact, quality, and sector relevance",
+    "confidence_factors": "Based on sample size, source diversity, content quality, and event urgency",
+    "limitations": [
+      "Analysis limited to English-language sources",
+      "Relies on GDELT event database availability",
+      "Sentiment analysis may miss nuanced context",
+      "Recent events may be weighted more heavily"
+    ],
+    "strengths": [
+      "Advanced content filtering reduces noise",
+      "Multi-dimensional relevance scoring",
+      "Quality-weighted sentiment calculation",
+      "Comprehensive risk and trend analysis"
+    ]
+  }
+}

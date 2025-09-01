@@ -1,0 +1,394 @@
+{
+  "symbol": "AAPL",
+  "company_name": "AAPL",
+  "analysis_timestamp": "2025-08-31T21:09:10.293149",
+  "total_articles": 20,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.019,
+    "average_compound": 0.019
+  },
+  "sentiment_distribution": {
+    "positive": 3,
+    "negative": 3,
+    "neutral": 14,
+    "positive_percentage": 15.0,
+    "negative_percentage": 15.0,
+    "neutral_percentage": 70.0
+  },
+  "source_breakdown": {
+    "MarketWatch": {
+      "count": 5,
+      "avg_sentiment": 0.0
+    },
+    "NewsAPI (Yahoo Entertainment)": {
+      "count": 4,
+      "avg_sentiment": -0.10815654993057251
+    },
+    "Yahoo Finance": {
+      "count": 1,
+      "avg_sentiment": 0.7441296577453613
+    },
+    "Google News": {
+      "count": 10,
+      "avg_sentiment": 0.005946607589721686
+    }
+  },
+  "recent_articles": [
+    {
+      "text": "Using RSI to spot recovery in AAPL - 2025 Big Picture & Technical Buy Zone Confirmations - Newser. Using RSI to spot recovery in AAPL - 2025 Big Picture & Technical Buy Zone Confirmations  Newser",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsSm1TbVdjVkVQV1BGWVlkVG4tTkFranNrS0h5MUZKUFdBcUl5WVphTjJZd0dnMnJpdm9VbEkwVkNvdWI2R283ZnU5YWFjbXNtcDdfNDBXRFp1UElJa2F3aUFPb3JRbk5FU0xBNUVpRkJPcTA?oc=5",
+      "timestamp": "2025-09-01T03:01:08"
+    },
+    {
+      "text": "Apple (AAPL) Director Sells $20.89 Million in Shares",
+      "sentiment": 0.0,
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-31T10:07:55.723865"
+    },
+    {
+      "text": "Time to act on AAPL?. Sign in to access your portfolio Apple (AAPL) Research Report. iPhone and iPad maker Apple (NASDAQ:AAPL) reported revenue ahead of Wall Street’s expectations in Q2 CY2025, with s...",
+      "sentiment": 0.7441296577453613,
+      "source": "Yahoo Finance",
+      "url": "https://stockstory.org/us/stocks/nasdaq/aapl?partner=yahoo&utm_source=yahoo&utm_medium=financequotetopnavigation&utm_campaign=quoteinvestabledestktop",
+      "timestamp": "2025-08-30T19:07:59.490098"
+    },
+    {
+      "text": "Apple’s (AAPL) September 9 “Awe-Dropping” Event Could Spark iPhone Upgrade Cycle. Apple Inc. (NASDAQ:AAPL) is one of the AI Stocks Hit with New Analyst Ratings. On August 26, Goldman Sachs analyst Mic...",
+      "sentiment": 0.0,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/apple-aapl-september-9-awe-132919430.html",
+      "timestamp": "2025-08-30T13:29:19"
+    },
+    {
+      "text": "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"description\":\"AAPL | Complete Apple Inc. stock news by MarketWatch. View real-time stock prices and stock quotes for a full financial overview.\",\"ur...",
+      "sentiment": 0.0,
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-30T10:07:55.723360"
+    }
+  ],
+  "raw_articles": [
+    {
+      "title": "AAPL Stock Price | Apple Inc",
+      "full_text": "AAPL Stock Price | Apple Inc. Stock Quote (U.S.: Nasdaq) | MarketWatch",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-29T10:07:55.722361",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 70,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "{\"@context\":\"https://schema",
+      "full_text": "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"description\":\"AAPL | Complete Apple Inc. stock news by MarketWatch. View real-time stock prices and stock quotes for a full financial overview.\",\"url\":\"https://www.marketwatch.com/investing/stock/aapl\",\"author\":{\"@type\":\"Organization\",\"name\":\"MarketWatch\"},\"headline\":\"AAPL Stock Price | Apple Inc. Stock Quote (U.S.: Nasdaq) | MarketWatch\",\"inLanguage\":\"en-US\",\"isAccessibleForFree\":true,\"publisher\":{\"@type\":\"NewsMediaOrganization\",\"@id\":\"https://www.marketwatch.com/#publisher\",\"name\":\"MarketWatch\"}}",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-30T10:07:55.723360",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 555,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Apple (AAPL) Director Sells $20",
+      "full_text": "Apple (AAPL) Director Sells $20.89 Million in Shares",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-31T10:07:55.723865",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 52,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "MSFT vs",
+      "full_text": "MSFT vs. AAPL vs. AMZN: Which Mega-Cap Tech Stock Is the Best Pick, According to Wall Street?",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-29T01:07:55.723865",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 93,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "var utag_data = { \"page_access\":\"free\",\"page_content_source\":\"MarketWatch\",\"page_site\":\"MarketWatch\",\"page_site_product\":\"MW\",\"page_content_type\":\"ResearchTools\",\"page_content_type_detail\":\"quote\",\"page_section\":\"Company Research\",\"page_name\":\"Quote_Page\",\"page_subsection\":\"Company Overview\",\"reengagement_refresh\":\"off\",\"user_type\":\"nonsubscriber\",\"page_ad_zone\":\"investing/quotes/stock/overview\",\"quote_ticker\":\"AAPL\",\"quote_company_name\":\"Apple Inc",
+      "full_text": "var utag_data = { \"page_access\":\"free\",\"page_content_source\":\"MarketWatch\",\"page_site\":\"MarketWatch\",\"page_site_product\":\"MW\",\"page_content_type\":\"ResearchTools\",\"page_content_type_detail\":\"quote\",\"page_section\":\"Company Research\",\"page_name\":\"Quote_Page\",\"page_subsection\":\"Company Overview\",\"reengagement_refresh\":\"off\",\"user_type\":\"nonsubscriber\",\"page_ad_zone\":\"investing/quotes/stock/overview\",\"quote_ticker\":\"AAPL\",\"quote_company_name\":\"Apple Inc.\",\"quote_exchange\":\"U.S.: Nasdaq\",\"quote_instrument_type\":\"Stock\"}; var utag_dataOriginal = {}; (function () { for (var prop in utag_data) { utag_dataOriginal[prop] = utag_data[prop]; } Object.freeze(utag_dataOriginal); })();",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-30T08:07:55.723865",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 678,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Apple’s (AAPL) September 9 “Awe-Dropping” Event Could Spark iPhone Upgrade Cycle",
+      "full_text": "Apple’s (AAPL) September 9 “Awe-Dropping” Event Could Spark iPhone Upgrade Cycle. Apple Inc. (NASDAQ:AAPL) is one of the AI Stocks Hit with New Analyst Ratings. On August 26, Goldman Sachs analyst Michael Ng reiterated a Buy rating on the .... Apple Inc. (NASDAQ:AAPL) is one of the AI Stocks Hit with New Analyst Ratings. On August 26, Goldman Sachs analyst Michael Ng reiterated a Buy rating on the stock with a $266.00 price target. The fi… Apple’s (AAPL) September 9 “Awe-Dropping” Event Could Spark iPhone Upgrade Cycle. Apple Inc. (NASDAQ:AAPL) is one of the AI Stocks Hit with New Analyst Ratings. On August 26, Goldman Sachs analyst Michael Ng reiterated a Buy rating on the stock with a $266.00 price target. The firm asserted that even though September product events have had “nominal impacts” on day-of stock price performance in the past, the reports are encouraging this time. The factors it has highlighted for the turnaround are form factor updates to iPhone 17 models, potential price increases to the iPhone 17 Pro, and sustained carrier competition driving device-related promotions. “Apple will host a special event “Awe-Dropping” on September 9th, 2025, when it is expected to announce new products including the iPhone 17 series, and an updated Apple Watch portfolio (Series 11, Ultra 3, SE 3). \" Apple is a technology company known for its consumer electronics, software, and services. While we acknowledge the potential of AAPL as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: 10 AI Stocks Hit with New Analyst Ratings and 10 Trending AI Stocks on Wall Street Disclosure: None.",
+      "raw_extracted_text": "Apple’s (AAPL) September 9 “Awe-Dropping” Event Could Spark iPhone Upgrade Cycle. Apple Inc. (NASDAQ:AAPL) is one of the AI Stocks Hit with New Analyst Ratings. On August 26, Goldman Sachs analyst Michael Ng reiterated a Buy rating on the stock with a $266.00 price target. The firm asserted that even though September product events have had “nominal impacts” on day-of stock price performance in the past, the reports are encouraging this time. The factors it has highlighted for the turnaround are form factor updates to iPhone 17 models, potential price increases to the iPhone 17 Pro, and sustained carrier competition driving device-related promotions. “Apple will host a special event “Awe-Dropping” on September 9th, 2025, when it is expected to announce new products including the iPhone 17 series, and an updated Apple Watch portfolio (Series 11, Ultra 3, SE 3). \" Apple is a technology company known for its consumer electronics, software, and services. While we acknowledge the potential of AAPL as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: 10 AI Stocks Hit with New Analyst Ratings and 10 Trending AI Stocks on Wall Street Disclosure: None.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/apple-aapl-september-9-awe-132919430.html",
+      "timestamp": "2025-08-30T13:29:19",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 1870,
+      "extracted_length": 1426,
+      "enhancement_ratio": 76.3
+    },
+    {
+      "title": "Apple Inc",
+      "full_text": "Apple Inc. (AAPL): The AI “Will Come Into Play Soon,” Says Jim Cramer. We recently published Jim Cramer Said AI Is A “Souped-Up Google” As He Discussed These 11 Stocks. Apple Inc. (NASDAQ:AAPL) is one of the stocks Jim Cramer.... We recently published Jim Cramer Said AI Is A Souped-Up Google As He Discussed These 11 Stocks. Apple Inc. (NASDAQ:AAPL) is one of the stocks Jim Cramer recently discussed. Apple Inc. (AAPL): The AI… Apple Inc. (AAPL): The AI “Will Come Into Play Soon,” Says Jim Cramer. We recently published Jim Cramer Said AI Is A “Souped-Up Google” As He Discussed These 11 Stocks. Apple Inc. (NASDAQ:AAPL) is one of the stocks Jim Cramer recently discussed. Apple Inc. (AAPL): The AI \"Will Come Into Play Soon,\" Says Jim Cramer guteksk7/Shutterstock.com Commenting on Cupertino, California-based technology giant Apple Inc. (NASDAQ:AAPL), Cramer discussed the firm’s AI spending and an analyst note about its upcoming iPhone launch: “And these companies are spending hundreds of billions of dollars and people are saying, look, Apple hasn’t spent anything yet, and their valuation is still very high. While we acknowledge the potential of AAPL as an investment, our conviction lies in the belief that some AI stocks hold greater promise for delivering higher returns and have limited downside risk. If you are looking for an extremely cheap AI stock that is also a major beneficiary of Trump tariffs and onshoring, see our free report on the best short-term AI stock. READ NEXT: 30 Stocks That Should Double in 3 Years and 11 Hidden AI Stocks to Buy Right Now.",
+      "raw_extracted_text": "Apple Inc. (AAPL): The AI “Will Come Into Play Soon,” Says Jim Cramer. We recently published Jim Cramer Said AI Is A “Souped-Up Google” As He Discussed These 11 Stocks. Apple Inc. (NASDAQ:AAPL) is one of the stocks Jim Cramer recently discussed. Apple Inc. (AAPL): The AI \"Will Come Into Play Soon,\" Says Jim Cramer guteksk7/Shutterstock.com Commenting on Cupertino, California-based technology giant Apple Inc. (NASDAQ:AAPL), Cramer discussed the firm’s AI spending and an analyst note about its upcoming iPhone launch: “And these companies are spending hundreds of billions of dollars and people are saying, look, Apple hasn’t spent anything yet, and their valuation is still very high. While we acknowledge the potential of AAPL as an investment, our conviction lies in the belief that some AI stocks hold greater promise for delivering higher returns and have limited downside risk. If you are looking for an extremely cheap AI stock that is also a major beneficiary of Trump tariffs and onshoring, see our free report on the best short-term AI stock. READ NEXT: 30 Stocks That Should Double in 3 Years and 11 Hidden AI Stocks to Buy Right Now.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/apple-inc-aapl-ai-come-214608795.html",
+      "timestamp": "2025-08-29T21:46:08",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 1578,
+      "extracted_length": 1148,
+      "enhancement_ratio": 72.8
+    },
+    {
+      "title": "Apple (AAPL) Explores Google Gemini AI for Siri Revamp",
+      "full_text": "Apple (AAPL) Explores Google Gemini AI for Siri Revamp. Apple Inc. (NASDAQ:AAPL) is one of the best long-term stocks to invest in according to Warren Buffett. On August 22, Apple began early discussions with.... Apple Inc. (NASDAQ:AAPL) is one of the best long-term stocks to invest in according to Warren Buffett. On August 22, Apple began early discussions with Google to potentially integrate its Gemini AI i… Apple (AAPL) Explores Google Gemini AI for Siri Revamp. Apple Inc. (NASDAQ:AAPL) is one of the best long-term stocks to invest in according to Warren Buffett. On August 22, Apple began early discussions with Google to potentially integrate its Gemini AI into a revamped version of Siri. The move could mark a major upgrade for Apple’s voice assistant as it seeks to catch up in the generative AI race. The goal is to create a more capable foundation for a new Siri, with a potential debut as early as 2026. Apple (AAPL) Explores Google Gemini AI for Siri Revamp Apple is conducting an internal “bake-off” to compare its own AI model, code-named Linwood, with external models, including Google’s Gemini, code-named Glenwood. No final decision has been made on whether to use an external partner or stick with Apple’s in-house model, with a decision expected in the coming weeks. Earlier in the year, the company held discussions with OpenAI and Anthropic to explore using their AI models for this task. However, negotiations stalled due to high fees, prompting the current talks with Google. Apple’s software engineering chief, Craig Federighi, described the Siri project as a “second-generation” architecture, stating, “This has put us in a position to not just deliver what we announced, but to deliver a much bigger upgrade than that we envisioned,” emphasizing an “end-to-end revamp” for advanced personalization features. Apple Inc. (NASDAQ:AAPL) is a technology company. It designs, manufactures, and markets consumer electronics, software, and digital services worldwide. The company’s flagship products include the iPhone, iPad, Mac, and Apple Watch. It also operates a services segment that encompasses the App Store, Apple Music, Apple Pay, and iCloud. While we acknowledge the potential of AAPL as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: 12 Best Mid-Cap Value Stocks to Buy Right Now and 10 Must-Buy US Stocks to Invest In. Disclosure: None. This article is originally published at Insider Monkey.",
+      "raw_extracted_text": "Apple (AAPL) Explores Google Gemini AI for Siri Revamp. Apple Inc. (NASDAQ:AAPL) is one of the best long-term stocks to invest in according to Warren Buffett. On August 22, Apple began early discussions with Google to potentially integrate its Gemini AI into a revamped version of Siri. The move could mark a major upgrade for Apple’s voice assistant as it seeks to catch up in the generative AI race. The goal is to create a more capable foundation for a new Siri, with a potential debut as early as 2026. Apple (AAPL) Explores Google Gemini AI for Siri Revamp Apple is conducting an internal “bake-off” to compare its own AI model, code-named Linwood, with external models, including Google’s Gemini, code-named Glenwood. No final decision has been made on whether to use an external partner or stick with Apple’s in-house model, with a decision expected in the coming weeks. Earlier in the year, the company held discussions with OpenAI and Anthropic to explore using their AI models for this task. However, negotiations stalled due to high fees, prompting the current talks with Google. Apple’s software engineering chief, Craig Federighi, described the Siri project as a “second-generation” architecture, stating, “This has put us in a position to not just deliver what we announced, but to deliver a much bigger upgrade than that we envisioned,” emphasizing an “end-to-end revamp” for advanced personalization features. Apple Inc. (NASDAQ:AAPL) is a technology company. It designs, manufactures, and markets consumer electronics, software, and digital services worldwide. The company’s flagship products include the iPhone, iPad, Mac, and Apple Watch. It also operates a services segment that encompasses the App Store, Apple Music, Apple Pay, and iCloud. While we acknowledge the potential of AAPL as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: 12 Best Mid-Cap Value Stocks to Buy Right Now and 10 Must-Buy US Stocks to Invest In. Disclosure: None. This article is originally published at Insider Monkey.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/apple-aapl-explores-google-gemini-043308141.html",
+      "timestamp": "2025-08-29T04:33:08",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 2695,
+      "extracted_length": 2282,
+      "enhancement_ratio": 84.7
+    },
+    {
+      "title": "Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds",
+      "full_text": "Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds. Apple Inc. (NASDAQ:AAPL) is one of the most profitable tech stocks to invest in now. On August 25, Bloomberg reported that Elon Musk’s companies X and xAI.... Apple Inc. (NASDAQ:AAPL) is one of the most profitable tech stocks to invest in now. On August 25, Bloomberg reported that Elon Musks companies X and xAI filed a lawsuit against Apple Inc. (NASDAQ:AA… Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds. Apple Inc. (NASDAQ:AAPL) is one of the most profitable tech stocks to invest in now. On August 25, Bloomberg reported that Elon Musk’s companies X and xAI filed a lawsuit against Apple Inc. (NASDAQ:AAPL) and OpenAI in federal court in Fort Worth, Texas, seeking billions of dollars in damages. The complaint alleges that Apple’s integration of ChatGPT into the iPhone operating system unfairly favors OpenAI, stifles competition, and limits consumer choice. Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds Photo by Alexandr Bormotin on Unsplash Musk’s team argued that Apple’s arrangement makes it impossible for rival chatbots to reach the top of the App Store rankings, thereby curbing innovation in generative AI. The filing also contends that Apple Inc. (NASDAQ:AAPL) and OpenAI’s exclusive setup has effectively locked up markets to maintain monopolistic power, mirroring concerns raised by regulators and the U.S. Department of Justice in ongoing antitrust actions against Apple. Apple Inc. (NASDAQ:AAPL) has already drawn regulatory scrutiny worldwide for how it runs the App Store, most notably during its extended clash with Epic Games. Earlier this year, the U.S. government filed a separate lawsuit accusing the company of using its dominance in app distribution to block competition and slow the rise of so-called “super apps.” Even with the latest legal challenges, investor sentiment has not wavered much. On August 26, Goldman Sachs reiterated its Buy rating on Apple Inc. (NASDAQ:AAPL) with a $266 target price, pointing to catalysts such as design changes expected in the iPhone 17, potential adjustments in pricing, and stronger carrier-led promotions. Apple Inc. (NASDAQ:AAPL) designs, manufactures, and markets innovative products, including the iPhone, iPad, Mac computers, Apple Watch, and Apple TV. The company also offers a range of software and services, such as the iOS and macOS operating systems, iCloud, advertising, payment services, Apple Music, and the App Store. While we acknowledge the potential of AAPL as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you’re looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: Top 10 Stocks to Buy and Hold Forever and 15 Best Data Center Stocks to Buy Now. Disclosure: None. This article is originally published at Insider Monkey.",
+      "raw_extracted_text": "Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds. Apple Inc. (NASDAQ:AAPL) is one of the most profitable tech stocks to invest in now. On August 25, Bloomberg reported that Elon Musk’s companies X and xAI filed a lawsuit against Apple Inc. (NASDAQ:AAPL) and OpenAI in federal court in Fort Worth, Texas, seeking billions of dollars in damages. The complaint alleges that Apple’s integration of ChatGPT into the iPhone operating system unfairly favors OpenAI, stifles competition, and limits consumer choice. Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds Photo by Alexandr Bormotin on Unsplash Musk’s team argued that Apple’s arrangement makes it impossible for rival chatbots to reach the top of the App Store rankings, thereby curbing innovation in generative AI. The filing also contends that Apple Inc. (NASDAQ:AAPL) and OpenAI’s exclusive setup has effectively locked up markets to maintain monopolistic power, mirroring concerns raised by regulators and the U.S. Department of Justice in ongoing antitrust actions against Apple. Apple Inc. (NASDAQ:AAPL) has already drawn regulatory scrutiny worldwide for how it runs the App Store, most notably during its extended clash with Epic Games. Earlier this year, the U.S. government filed a separate lawsuit accusing the company of using its dominance in app distribution to block competition and slow the rise of so-called “super apps.” Even with the latest legal challenges, investor sentiment has not wavered much. On August 26, Goldman Sachs reiterated its Buy rating on Apple Inc. (NASDAQ:AAPL) with a $266 target price, pointing to catalysts such as design changes expected in the iPhone 17, potential adjustments in pricing, and stronger carrier-led promotions. Apple Inc. (NASDAQ:AAPL) designs, manufactures, and markets innovative products, including the iPhone, iPad, Mac computers, Apple Watch, and Apple TV. The company also offers a range of software and services, such as the iOS and macOS operating systems, iCloud, advertising, payment services, Apple Music, and the App Store. While we acknowledge the potential of AAPL as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you’re looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: Top 10 Stocks to Buy and Hold Forever and 15 Best Data Center Stocks to Buy Now. Disclosure: None. This article is originally published at Insider Monkey.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/apple-aapl-growth-momentum-intact-042652691.html",
+      "timestamp": "2025-08-29T04:26:52",
+      "polarity": -0.4326,
+      "compound": -0.4326,
+      "sentiment_label": "Very Negative",
+      "text_length": 3023,
+      "extracted_length": 2596,
+      "enhancement_ratio": 85.9
+    },
+    {
+      "title": "Time to act on AAPL?",
+      "full_text": "Time to act on AAPL?. Sign in to access your portfolio Apple (AAPL) Research Report. iPhone and iPad maker Apple (NASDAQ:AAPL) reported revenue ahead of Wall Street’s expectations in Q2 CY2025, with sales up 9.6% year on year to $94.04 billion. Its GAAP profit of $1.57 per share was 10.1% above analysts’ consensus estimates. Apple (AAPL) Q2 CY2025 Highlights: Revenue: $94.04 billion vs analyst estimates of $89.54 billion (5% beat) $94.04 billion vs analyst estimates of $89.54 billion (5% beat) Operating Profit (GAAP): $28.2 billion vs analyst estimates of $25.86 billion (9.1% beat) $28.2 billion vs analyst estimates of $25.86 billion (9.1% beat) EPS (GAAP): $1.57 vs analyst estimates of $1.43 (10.1% beat) $1.57 vs analyst estimates of $1.43 (10.1% beat) Products Revenue: $66.61 billion vs analyst estimates of $62.76 billion (6.1% beat) $66.61 billion vs analyst estimates of $62.76 billion (6.1% beat) Services Revenue: $27.42 billion vs analyst estimates of $26.81 billion (2.3% beat) $27.42 billion vs analyst estimates of $26.81 billion (2.3% beat) Gross Margin: 46.5%, in line with the same quarter last year 46.5%, in line with the same quarter last year Operating Margin: 30%, in line with the same quarter last year 30%, in line with the same quarter last year Free Cash Flow Margin: 26%, down from 31.1% in the same quarter last year 26%, down from 31.1% in the same quarter last year Market Capitalization: $3.12 trillion Key Topics & Areas Of Debate On June 10, 2024, Apple held its Worldwide Developers Conference. The splashy announcement was Apple Intelligence, which combines GenAI with user-specific data to enhance personalization across its ecosystem. This new feature is powered by a combination of internally developed large-language models (LLMs) and OpenAI's GPT-4.0. The holiday season will be a big test for Apple since the iPhone 16 was released on September 20, 2024 - backward compatibility with Apple Intelligence is limited, so the market is waiting to see if this integration will spur a large, multi-year device upgrade cycle. A potential upgrade cycle would lead to spikes in shipment volumes, which could also increase its higher-margin Services revenue. Before the Apple Intelligence announcement, some investors were bemoaning Apple’s seeming lack of participation in the AI wave. How did a company that introduced Siri in 2011 fail to introduce a ChatGPT-like platform before OpenAI? This is a critical juncture where the misstep could be forgotten if the company re-establishes itself as a major AI player. Samsung (KOSE:A005930) is Apple’s main competitor in the worldwide smartphone market while its mobile operating system competes with Alphabet's (NASDAQ:GOOGL) Android. Regarding other devices and services, competitors include Microsoft (NASDAQ:MSFT) in MacBooks, Netflix (NASDAQ:NFLX) in Apple TV, and Spotify (NYSE:SPOT) in Apple Music.",
+      "raw_extracted_text": "Apple (AAPL) Research Report. iPhone and iPad maker Apple (NASDAQ:AAPL) reported revenue ahead of Wall Street’s expectations in Q2 CY2025, with sales up 9.6% year on year to $94.04 billion. Its GAAP profit of $1.57 per share was 10.1% above analysts’ consensus estimates. Apple (AAPL) Q2 CY2025 Highlights: Revenue: $94.04 billion vs analyst estimates of $89.54 billion (5% beat) $94.04 billion vs analyst estimates of $89.54 billion (5% beat) Operating Profit (GAAP): $28.2 billion vs analyst estimates of $25.86 billion (9.1% beat) $28.2 billion vs analyst estimates of $25.86 billion (9.1% beat) EPS (GAAP): $1.57 vs analyst estimates of $1.43 (10.1% beat) $1.57 vs analyst estimates of $1.43 (10.1% beat) Products Revenue: $66.61 billion vs analyst estimates of $62.76 billion (6.1% beat) $66.61 billion vs analyst estimates of $62.76 billion (6.1% beat) Services Revenue: $27.42 billion vs analyst estimates of $26.81 billion (2.3% beat) $27.42 billion vs analyst estimates of $26.81 billion (2.3% beat) Gross Margin: 46.5%, in line with the same quarter last year 46.5%, in line with the same quarter last year Operating Margin: 30%, in line with the same quarter last year 30%, in line with the same quarter last year Free Cash Flow Margin: 26%, down from 31.1% in the same quarter last year 26%, down from 31.1% in the same quarter last year Market Capitalization: $3.12 trillion Key Topics & Areas Of Debate On June 10, 2024, Apple held its Worldwide Developers Conference. The splashy announcement was Apple Intelligence, which combines GenAI with user-specific data to enhance personalization across its ecosystem. This new feature is powered by a combination of internally developed large-language models (LLMs) and OpenAI's GPT-4.0. The holiday season will be a big test for Apple since the iPhone 16 was released on September 20, 2024 - backward compatibility with Apple Intelligence is limited, so the market is waiting to see if this integration will spur a large, multi-year device upgrade cycle. A potential upgrade cycle would lead to spikes in shipment volumes, which could also increase its higher-margin Services revenue. Before the Apple Intelligence announcement, some investors were bemoaning Apple’s seeming lack of participation in the AI wave. How did a company that introduced Siri in 2011 fail to introduce a ChatGPT-like platform before OpenAI? This is a critical juncture where the misstep could be forgotten if the company re-establishes itself as a major AI player. Samsung (KOSE:A005930) is Apple’s main competitor in the worldwide smartphone market while its mobile operating system competes with Alphabet's (NASDAQ:GOOGL) Android. Regarding other devices and services, competitors include Microsoft (NASDAQ:MSFT) in MacBooks, Netflix (NASDAQ:NFLX) in Apple TV, and Spotify (NYSE:SPOT) in Apple Music.",
+      "extraction_successful": true,
+      "source": "Yahoo Finance",
+      "url": "https://stockstory.org/us/stocks/nasdaq/aapl?partner=yahoo&utm_source=yahoo&utm_medium=financequotetopnavigation&utm_campaign=quoteinvestabledestktop",
+      "timestamp": "2025-08-30T19:07:59.490098",
+      "polarity": 0.7441,
+      "compound": 0.7441,
+      "sentiment_label": "Very Positive",
+      "text_length": 2892,
+      "extracted_length": 2837,
+      "enhancement_ratio": 98.1
+    },
+    {
+      "title": "Apple (AAPL) Stock Sees Trading Spike on Product Buzz and Strong Earnings - CarbonCredits",
+      "full_text": "Apple (AAPL) Stock Sees Trading Spike on Product Buzz and Strong Earnings - CarbonCredits.com. Apple (AAPL) Stock Sees Trading Spike on Product Buzz and Strong Earnings  CarbonCredits.com",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRkFiNHRIMnlyOEpPTXZUNWJ0cW9jeC02bW90ekdUVm1WcDNpbThxSTVIWmtCeVJCT3FYNnZyVVMzX045UjFuY1gyOXJIZjJyenNJUTBsM1pYeFBMQm1sQXBiSVNVbWNhN20xbGVfLUdzY2U2dmRsNGZ4ZDlaZGtVMGx4N1NpelNOM01CSEpRb1d4dWVYMVBwaVJYMDZIMXc?oc=5",
+      "timestamp": "2025-08-29T16:24:04",
+      "polarity": 0.6264,
+      "compound": 0.6264,
+      "sentiment_label": "Very Positive",
+      "text_length": 187,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Using RSI to spot recovery in AAPL - 2025 Big Picture & Technical Buy Zone Confirmations - Newser",
+      "full_text": "Using RSI to spot recovery in AAPL - 2025 Big Picture & Technical Buy Zone Confirmations - Newser. Using RSI to spot recovery in AAPL - 2025 Big Picture & Technical Buy Zone Confirmations  Newser",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsSm1TbVdjVkVQV1BGWVlkVG4tTkFranNrS0h5MUZKUFdBcUl5WVphTjJZd0dnMnJpdm9VbEkwVkNvdWI2R283ZnU5YWFjbXNtcDdfNDBXRFp1UElJa2F3aUFPb3JRbk5FU0xBNUVpRkJPcTA?oc=5",
+      "timestamp": "2025-09-01T03:01:08",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 195,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "If You'd Invested $1,000 in Apple Stock 5 Years Ago, Here's How Much You'd Have Today - The Motley Fool",
+      "full_text": "If You'd Invested $1,000 in Apple Stock 5 Years Ago, Here's How Much You'd Have Today - The Motley Fool. If You'd Invested $1,000 in Apple Stock 5 Years Ago, Here's How Much You'd Have Today  The Motley Fool",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOejlGTHJNQ01Kb3pJdVAxazJUaDBHMFo2ektxd2o2dUFmcG1QYmY1ZVJYT2NlTWxCMlFvUzc0anQxWDdaNW9faTBUMGJEMW9HV3lqNWlGdTZiOWJTWmJTM2RSSThnWDF6R2pxWHpSSkRRTHBhZkJ3bWI1dXZMV0psQmNFQkZQTHJNdTVMODVPdmNhaG9a?oc=5",
+      "timestamp": "2025-08-28T13:09:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 207,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Apple Stock (NASDAQ:AAPL) Notches Up on New iPhone 17 Rumors Based on Logo Art - TipRanks",
+      "full_text": "Apple Stock (NASDAQ:AAPL) Notches Up on New iPhone 17 Rumors Based on Logo Art - TipRanks. Apple Stock (NASDAQ:AAPL) Notches Up on New iPhone 17 Rumors Based on Logo Art  TipRanks",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWDdvZnA4eERCelk0NUU2V3dfaE9CU3pEUWJtMGZvNmFrX2JjaUJHc0ZoRWh4V2tqNFFFS2lBUWNxR19rb25LLUVOUGtnb3NGUlphVC1mbXAtNnptRXBQcUJQLTY0VkR6X2lLNVk4dDAtaHhvWFVfcWtud2JaQ2xEUUtlYXd1Nl9STXk1dVdIckVES1BYb3ZHZGh1bUxoanVMV20wZ0pnSHk?oc=5",
+      "timestamp": "2025-08-27T17:03:09",
+      "polarity": 0.5466,
+      "compound": 0.5466,
+      "sentiment_label": "Very Positive",
+      "text_length": 179,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "APPLE INVESTIGATION INITIATED BY FORMER LOUISIANA ATTORNEY GENERAL: Kahn Swick & Foti, LLC Investigates the Officers and Directors of Apple Inc",
+      "full_text": "APPLE INVESTIGATION INITIATED BY FORMER LOUISIANA ATTORNEY GENERAL: Kahn Swick & Foti, LLC Investigates the Officers and Directors of Apple Inc. - AAPL - Morningstar. APPLE INVESTIGATION INITIATED BY FORMER LOUISIANA ATTORNEY GENERAL: Kahn Swick & Foti, LLC Investigates the Officers and Directors of Apple Inc. - AAPL  Morningstar",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNNFNsbmY5N0lKazNIcTRoMGw0RWZqRkRjTWZFZzlxTjcxVWt5Vk9oVnlCdHZ5ampGdDBnVzcydk9NVGZsRnUyTW9IRnlkaXRHU2owSkV3Z0FXdWpUeEJMNkREWF9RaTBLaWZ4d2ZnVGhCNUJVUVpQSF9CMFdTOUFiQ0dsUWtIQzBYNWhOYTJ1MGFGeEVTR0hiRXEyMFBPZlgzQnFuc3JnbkVzZmg2aXZGVTI3bFAxdzVzSklyN0cwUGVCd3BrNUhCUDgzX1o2LXhybHRrUzRiSW9jd2Vvcm42UjEzaTNmZEQxa2RsNWtwV3NjWE1jd1NaMVAzODJfY2hoZG5KT3ZuWm0wZHdpNUdrdWJTVko4akk2Z05IdTVkWXZNRy15ei0tT1pfR1EyUQ?oc=5",
+      "timestamp": "2025-08-29T21:33:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 331,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "The Stocks Warren Buffett Is Betting Big on in 2025 - Investopedia",
+      "full_text": "The Stocks Warren Buffett Is Betting Big on in 2025 - Investopedia. The Stocks Warren Buffett Is Betting Big on in 2025  Investopedia",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaktYZFFFb2JmbU9Eb1NRRUYwcTVDZW1BbUs3MjdpMlQ3X29JcGNwZ2ZuMzhVT3JxYTBqSUpjOEZtUGotV2ZNVjdpQl9ISkczTmFNSmdGSHZzSjIyMGZxaV9pWlJvTDhocUQyamFSV1FBRFlEYkNWTlZhaUltOHpIUlVzOHRZd2tpSU5MZ0pDT0gtWUk?oc=5",
+      "timestamp": "2025-08-28T13:18:45",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 133,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Elon Musk’s companies sue Apple, OpenAI alleging anticompetitive scheme (AAPL:NASDAQ) - Seeking Alpha",
+      "full_text": "Elon Musk’s companies sue Apple, OpenAI alleging anticompetitive scheme (AAPL:NASDAQ) - Seeking Alpha. Elon Musk’s companies sue Apple, OpenAI alleging anticompetitive scheme (AAPL:NASDAQ)  Seeking Alpha",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVzJ4YTJoMkpUejJvTFZIeGFZeWM2N1FtODFpTVpCZ3hWQ3pnS05aaEJ3cG1SdjBaMFhKM2hhU3pORzQ1UldObkp5WVFrem5GbWd4SjBkc19RcG5Ha1pEN3Ric2xLX3dlVWl6d25Sb1VZNHhuLXpMekN5bkJ0N3BHemc3Nmh4TXh3R3ExYzN2MVAtZXkycmZtOGF5R2ZNcEpUQ0V2WVBHQ2FWUQ?oc=5",
+      "timestamp": "2025-08-25T15:46:48",
+      "polarity": -0.3906,
+      "compound": -0.3906,
+      "sentiment_label": "Very Negative",
+      "text_length": 203,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Earnings live: Nvidia stock falls on data center revenue miss, Snowflake pops, CrowdStrike drops - Yahoo Finance",
+      "full_text": "Earnings live: Nvidia stock falls on data center revenue miss, Snowflake pops, CrowdStrike drops - Yahoo Finance. Earnings live: Nvidia stock falls on data center revenue miss, Snowflake pops, CrowdStrike drops  Yahoo Finance",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOa0hnMl8tbGpZZ05VMVRSWmk4RjlHMTdCVW1RZDdNb01NWnJIWXB6RXFGcVhHQW8yc1hnRUZNbk1ZaExvajJtSExxNmZNc1BJMDNxSGE4MHRMdmRNd09jQUFwWW1aZ041dVNTTEN4X2xQSzNOcy1jRmVLanFlaG92WTlyX1Jld09NUVl3MHk2cTRhLVhKNFdZT0RTTFF6R1Y3MHZBRHRKSFFVT3VYQ3lyYXQ5WkZMbm4zR3c?oc=5",
+      "timestamp": "2025-08-28T14:32:33",
+      "polarity": -0.7229,
+      "compound": -0.7229,
+      "sentiment_label": "Very Negative",
+      "text_length": 225,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Apple reports biggest revenue growth since December 2021 - CNBC",
+      "full_text": "Apple reports biggest revenue growth since December 2021 - CNBC. Apple reports biggest revenue growth since December 2021  CNBC",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1pLVBUN25LREp1Y1hqMjVfZUlOWllzNUFaZEJmWVdfSXozWDV5c2F5NW9uYnBXb3FDd0V6M01RVmpWaXJVQjQtY1J4TmE2Rzl0bnpHdDNhX1dKWF9GRWI2Ni1KZm40RF82LXdQdXlEaXZ6Y0hWRVNOUzFaY9IBgAFBVV95cUxNMzVkTGQyd0NINmhGM0JfX1RLTWVOV3NPai1BcnFlRGtmaXltUnNEdHpXU1Q5QmpoWmlDYUZlY2RNb000VnRGUjZVd09xNHdZNFRyZlpaS1h0ancyZG9sRktRRGFkaXRPbnhiWHZBZWc5RG1ENWpXaWpaME5OQVFtWg?oc=5",
+      "timestamp": "2025-07-31T07:00:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 127,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "After Earnings, Is Apple Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+      "full_text": "After Earnings, Is Apple Stock a Buy, a Sell, or Fairly Valued? - Morningstar. After Earnings, Is Apple Stock a Buy, a Sell, or Fairly Valued?  Morningstar",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOV0wzbTdqUG52VF9nYWNpclBWdDZ6a1duZS11V0ROSWVIUHRZWDFUcWN4ZWNESDQ0RElGOTZUNXhuVVdmUlE5RU1tZGRYVHRWNlRoSU5jSWVNbHBtcjdzQWlURDZ3UFBfOWlhTGlKbmtkMkVRY29KbWdWOFR2Rmw2Qy1la19sZ2U3Z1BBZkk5eTZ2ajlvTndv?oc=5",
+      "timestamp": "2025-08-08T07:00:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 155,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    }
+  ],
+  "newspaper3k_stats": {
+    "total_articles": 20,
+    "enhanced_articles": 5,
+    "total_extracted_chars": 10289,
+    "avg_enhancement_ratio": 2057.8,
+    "sources_with_enhancement": [
+      {
+        "source": "NewsAPI (Yahoo Entertainment)",
+        "enhanced_count": 4,
+        "avg_extracted_chars": 1863.0
+      },
+      {
+        "source": "Yahoo Finance",
+        "enhanced_count": 1,
+        "avg_extracted_chars": 2837.0
+      }
+    ]
+  }
+}

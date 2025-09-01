@@ -1,0 +1,390 @@
+{
+  "symbol": "XOM",
+  "company_name": "Exxon Mobil Corporation",
+  "analysis_timestamp": "2025-08-29T14:14:25.847259",
+  "total_sources_analyzed": 33,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.034,
+    "average_compound": 0.152
+  },
+  "sentiment_distribution": {
+    "positive": 12,
+    "neutral": 16,
+    "negative": 5,
+    "positive_percentage": 36.4,
+    "negative_percentage": 15.2
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Google News": 15,
+    "Seeking Alpha": 8,
+    "MarketWatch": 7,
+    "Bloomberg": 3
+  },
+  "sample_articles": [
+    {
+      "text": "Exxon Mobil Corporation $XOM Shares Purchased by Haverford Trust Co - MarketBeat. Exxon Mobil Corporation $XOM Shares Purchased by Haverford Trust Co&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.875,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T05:41:34",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMlNVOUs1TW92NkRZaVZ5RE9lMHUyLVdpVnpzNzY3ZXFGMEplOUQtLVNzSk5OSWJ4LUpUVlVBRnptaGFPSVhXOGhzQ3lzcXBYeU56ZDdxYTZPRUR3ZUQ3MXZkRU9HRTBFN0FjazRQakp1cHBjMzBuR1lyamh0TEF0RWxrS2xqNGNWZWJwVkxVRzdTZzlNaDRDYTJuOHlzZHlFd0lydkhmQmN0QTB5eHhyTTB5aGVBanZGYUtQdk1BaTEzbDV0OXc?oc=5"
+    },
+    {
+      "text": "Monterey Private Wealth Inc. Sells 2,987 Shares of Exxon Mobil Corporation $XOM - MarketBeat. Monterey Private Wealth Inc. Sells 2,987 Shares of Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.869,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:18:35",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRy03UXZXVlY2ZzJYMnNXeWhRZFRfTGJfRUFMYkpBWjBGT2d0ZEZZYkxQZmhYeXctSUFrcEtiZ3BEMGMxRHhKbFBvSm5XU1dDNHdVYXF0SWZrNEwyTTVkdDBHX2hMY1lVU0pDLWFmU3NuZ2stdWoxWGZLRGQyemhMY19hSVhZTUVXc3lBbW1HZFZkcVR1RGlRZ0I5SEF5eVZvQVotQnNYcGQ0Z0FfZm1jUGYzZ3M3ZVl5aGZLRnB2Mlk3aTlIUWpEdHBSaEV2WUZ6ODhN?oc=5"
+    },
+    {
+      "text": "Northwestern Mutual Wealth Management Co. Acquires 50,360 Shares of Exxon Mobil Corporation $XOM - MarketBeat. Northwestern Mutual Wealth Management Co. Acquires 50,360 Shares of Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.869,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T05:39:14",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYTBIc0x3SFVMM3M1emR6bUlMZjNTc0RDMHJlaV9tWG1oVHlQT2JtYlJySzZmSnllVUgyWURTc0FQRGtiUXBnOW9nLWF0Yk9CY3cySmtWQ2x2SENUNHZadmx3dEc4UVR2bmlWZWhiVTFBZm45dHBfWVR1Qi02OWpBOTB6YWZBYkZYaEYxRS1GbGFlZ1ZOZE5NU2NzZnpqV3R4ODllWjI4dy1DbURWT1RTS1FneDBlRmswZnB3UWdkaEpyX1BlSnhiRENWWTV6Q1d4d1hndVJmMWxHdWpXTjZIVXRn?oc=5"
+    },
+    {
+      "text": "RPg Family Wealth Advisory LLC Invests $420,000 in Exxon Mobil Corporation $XOM - MarketBeat. RPg Family Wealth Advisory LLC Invests $420,000 in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:03:18",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOXdkdkFHRUlVSXFBVmhPc3dWSnk4eURyV0s2cWVPMUNjdTFlY3kybnRJeVFhVm50Wk9HMkhsTWdoV3RfeTVIUlZMLXlFY3hMcFgwUFh5YVMta2UtZUw0NGZUUm1PbGFhYnJWS3VwdDEyUm1tWGRZVUxkaGd1eUgzeWtzckxiVlVJSW1NcVI4YkJFejk3V2dGTmFXX1hTV3FMQVZJUEdrR0VLY1FWeGpuRXNYSVNMeFdudVFCY1hSN0pJLVlHa0ZXbUNpS0dVTFhqX1E0?oc=5"
+    },
+    {
+      "text": "Technical AnalysisAs Nuclear Stalls, Oil Could Be the Surprise Winner.  3 Stocks to Buy Now.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.71,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T20:14:01.239709",
+      "url": "https://www.barrons.com/articles/3-oil-stocks-to-buy-now-d578a58f?mod=mw_quote_news"
+    },
+    {
+      "text": "Why ExxonMobil's Strong Fundamentals And Technical Setup Make It A Compelling Buy",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T02:14:06.639878",
+      "url": "https://seekingalpha.com/article/4816006-why-exxon-mobil-strong-fundamentals-technical-setup-compelling-buy#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Synovus Financial Corp Cuts Stake in Exxon Mobil Corporation $XOM - MarketBeat. Synovus Financial Corp Cuts Stake in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T18:51:39",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYnBtNmotLXd5NnhPQTVkVzBlMDJYRXhaTmFlNTRTTkpETG5sSEJvUXFmUklRX3l3LV91QVpYT2x5QlpRNWRQNVEySmZuQnNXcEd5eGZTNTdwRmFxVlhLT0VvbmwyN1BPMFRxMmdTblY1UWQzZTFDR0xtQnpvVXJ1aTlad1VCTlhiMTNpeEFEeWJiSjVoYm5wQmlQSUViQlY2cC1IX3lac2hLTDFkMXFmMkpxT2RIbjgzc0VzWG1CTm1pZFlndkRCaUNNUFpJYzU3ZWR5YWxzM0ZsOW0zY2M0?oc=5"
+    },
+    {
+      "text": "TD Capital Management LLC Purchases 2,648 Shares of Exxon Mobil Corporation $XOM - MarketBeat. TD Capital Management LLC Purchases 2,648 Shares of Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T12:26:24",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZzJraEJWcHUwY1hFMkJRQzVZZ0ZEUXN5Y2dKamRsQVdKYVREdnRrSF8tZWE3bDRhSHBvOURUVkViYzhrY3EtOFZreXJBbnZuT1VOZzNZeXlqT3ZXUy1aeE1GTDRRV3p1d29MaXlGR0VYM2FSRnBVbHVZcnhySzNtUUdzbkFFREVreVhxQzJaNmNGdklncU1QWXJ4NldwS3JVaGR2M3NqQ1ZxOEVyREtrQjNaUERVNlI5a1I1eS1jWERtOWxHZXU2QVpqQXQ3Z2ZIOTVhMnF3?oc=5"
+    },
+    {
+      "text": "Exxon Mobil Corp. stock outperforms competitors on strong trading day",
+      "source": "MarketWatch",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T01:14:01.239709",
+      "url": "https://www.marketwatch.com/data-news/exxon-mobil-corp-stock-outperforms-competitors-on-strong-trading-day-7de65136-8af2c844e57d?mod=mw_quote_news"
+    },
+    {
+      "text": "Exxon Mobil Stock Isn't Moving As It Prepares Reentry To Russia But This Energy Stock Is Jumping",
+      "source": "MarketWatch",
+      "sentiment_score": 0.47,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T06:14:01.237194",
+      "url": "https://www.investors.com/news/exxon-mobil-prepares-re-entry-to-russia-but-this-is-the-energy-stock-jumping/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Exxon Mobil Q2: A Great Company, But Not The Best Investment For Everyone",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.459,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T05:14:06.640884",
+      "url": "https://seekingalpha.com/article/4808308-exxon-mobil-q2-a-great-company-but-not-the-best-investment-for-everyone#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Why Exxon Mobil Crushes Chevron In 2025",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.44,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T09:14:06.639878",
+      "url": "https://seekingalpha.com/article/4812151-why-exxon-mobil-crushes-chevron-in-2025#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Exxon Mobil: A Capital Return Play",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.34,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T06:14:06.639878",
+      "url": "https://seekingalpha.com/article/4810924-exxon-mobil-stock-solid-fundamentals-capital-return-play#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Exxon Mobil: Ignore Quarterly Noise And Focus On What Matters",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.34,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T08:14:06.640884",
+      "url": "https://seekingalpha.com/article/4809350-exxon-mobil-ignore-quarterly-noise#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T23:14:18.979994",
+      "url": "https://www.bloomberg.com/quote/XOM:US"
+    },
+    {
+      "text": "OMERS ADMINISTRATION Corp Lowers Holdings in Exxon Mobil Corporation $XOM - MarketBeat. OMERS ADMINISTRATION Corp Lowers Holdings in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.25,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T11:02:01",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNclhGMWdsWEVrb01ia05BQ0c0ZzJ4T0ZocEJLUG0wT3pJcU0zMWhRaXNYdDNGVzQtbEN6TlRYMXI1QTVySXVLbVIxY2Y5QUVFbjloQXRydnBMMXJOcmVwUjQxMVllZlRzdFg5X2VrLXRtZ1RHa3hja2ZyZTI1aUw1U0JFcVViaG4xeTMtNFoxaW5qZTVZeGtDTVZJLXF6bFRSNTJoT0RJbHNEb3FhREhyVTMtMDZQSWMycnFTcnNRamR4YWhmZXNVZjFPLUVpdw?oc=5"
+    },
+    {
+      "text": "ExxonMobil Is Growing Quickly For Its Size",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.178,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T19:14:06.640884",
+      "url": "https://seekingalpha.com/article/4808478-exxonmobil-growing-quickly-for-its-size#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Corebridge Financial Inc. Decreases Stake in Exxon Mobil Corporation $XOM - MarketBeat. Corebridge Financial Inc. Decreases Stake in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:19:06",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQc1RzTDd4bmlJT3h4NVdUaF9uOVcyWjFiMHBkUElIa2lxVFF5anBNWS02ZDJyWmFKdnFlN3JwT1AteXRjWVpsTHF6dUVuZ21mbHV6WUVaRGRzNEtaS21aZm5XWHV4bFpEWl9nVU1OQWZrSjl5V05pZ25RRGJURlBnOUM5Q1FUWFpGaVF6d2lwVG9TY1lBdjFfTk1KcWxvMTN2N0Qtbm0wRkJvdDBGemhySWFPcTNlOVVucFV0NDB3b2cwSHJGWmhvUlFBcFVQR3ZqdGRIS2FjLWN6X2s?oc=5"
+    },
+    {
+      "text": "Exxon Mobil Corporation (XOM): A Bull Case Theory - MSN. Exxon Mobil Corporation (XOM): A Bull Case Theory&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:45:43",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUjVyYXgzS1lsdUJGdG5Cd3Y2eEtTb0dJdF9Jb3NRV2E3RHRXQVFCYVVvaXM1cVZmQk9MbkQ1djNQN3ZVREZzZWgzQ25oZHVVMV9uSlU3TXo4dkdvU0RZcVBQcVJZbDdWbGM1Q0tUSVBmOW9TWGhaZ0htelVfS2NJTm5jMHlJN0tINVVZMy1md1pSTmlmVE1KeGszSmZEMXc5TmVUMmNvQ3pnQXBOM1E?oc=5"
+    },
+    {
+      "text": "Exxon Mobil Corporation (XOM): A Bull Case Theory - Yahoo Finance. Exxon Mobil Corporation (XOM): A Bull Case Theory&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T10:05:39",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOenh0Ql9XSUhRTFpBM1MzV0Y2akZMQ1h2RzNxR0dKREUzajl1ejRUZ1J2SV9wZDRUWFhVZlRZamt0X2dNRUtzbmlRQUM1T3lhMUpjSXphUHo5Wld5cHA0WktJTHBRbUxzZG9KenFOQkFUMkYwX0RDdVFFNGlkZDY2eW5LX1I?oc=5"
+    },
+    {
+      "text": "Oak Harvest Investment Services Trims Position in Exxon Mobil Corporation $XOM - MarketBeat. Oak Harvest Investment Services Trims Position in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T18:52:18",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOei1QbndMMGpKSTFMSDgtZzh6Z1UxRXlaSzNvY0hlVy1PN0FIRk5JTjlTRWpmclJfZnJYTFZRZXpxeDZDYVdqTUZ1WC1CYnBWSFZsOGoyWHE0d2JfRnJFaldCa1FWS0lZR2x6RF9NcGlLeEUyOHN2ZFRiZTVIRmVXSi1acGNvSTBieFlTX3l0cU9mWHJtY20zazVxQ2Nuek5DZ2ZBd2J6RGw2aWF5T2ljd3FTMDllTnJnaGJQSU45MXNMaUF1eDIwell2T0E5SXE2?oc=5"
+    },
+    {
+      "text": "Mission Creek Capital Partners Inc. Decreases Stock Holdings in Exxon Mobil Corporation $XOM - MarketBeat. Mission Creek Capital Partners Inc. Decreases Stock Holdings in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:19:14",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNcXlFMkV4c3gxSURSeV95V0EtRld2M1g2RVJ1RmczcWpQN3BHZUdCTjZVaWM5ZHlWeWJBZVdIV3JpSmNZUWxoSmhONG1EQ1RycnJLZjM5ejJhNVBUX2FvdngwZVgySUFsbG9jXzdZaF9nOVB4b0t1RHMxZVVoRGczUlZJNGhYd3p1enZVTTlSd2RuNFVoV1FaaTR6U0Ita0RSTEc1SzVmUVc3NGpUZk1acXFkblFQaEVjOTQ3VG5YS3E2NFAwY2ZzV3pua0kxWUtzUXE4bmMyMHNrMEF0bWdPMGlQZ3MyZw?oc=5"
+    },
+    {
+      "text": "Exxon Mobil (NYSE:XOM) Stock Rating Upgraded by Wall Street Zen - MarketBeat. Exxon Mobil (NYSE:XOM) Stock Rating Upgraded by Wall Street Zen&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T05:39:10",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUmowS2dRR2RGSzA2Nmh6MjdPV19nME9MZVVxaXFkMmYxUm5EQkY1N2ZPaFhlWXNTaWQ3RDdTeHIwMHJRWW93Z3JiX19fcnpneWFfMy10cEwxcDMzck9oSkxHamc1RUR5cFRTZnNrdVJ3T3RvdTZTY1FncHZMd01zUkpWRW4tejV3ZWtXaDBJYTN3Zm1MSUhhT0lTQmpieUZxcWxUTmtaZGE5UGNKelE?oc=5"
+    },
+    {
+      "text": "Exxon Mobil Corporation $XOM Stock Position Raised by Compound Planning Inc. - MarketBeat. Exxon Mobil Corporation $XOM Stock Position Raised by Compound Planning Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T22:41:01",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNHVCNTRIbU42Z0l2QU1aSXhiMnZqZG5ITjVqdG02X0hDbGZ0VUdmWExTRnJLTnB4cVFDTTliaG5ZR0Fyd1A4M0R6NTVhX1lFeVA0UE9oZUI2cjV4WU14d2I3ZHY1YTUydW9xTlIxdkMxVWZUM3NvaWdlMW5RRTRnU1lsVS11Q3Y4bnhtZWJ5WFRkNmtGODNFNENpa1dhSnlFc2xCMFlob05VaS1aZU9YdUh0SjdIRWU2MzVMcmJTYWpmTXBMT3FweVg3UHVacHN1?oc=5"
+    },
+    {
+      "text": "Quantitative Investment Management LLC Buys New Stake in Exxon Mobil Corporation $XOM - MarketBeat. Quantitative Investment Management LLC Buys New Stake in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T00:33:45",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPNTgtbVV2cXJxNnZsTkREU3VyUmx0Y0tnMmU3VUo1RVZ2WXgzR09OODdLdFF2SFZJZ2I4MllLRGhHUnliQWFVTjlrUHJJczZNOFFENFdQWGZQaG5oVG1zMWU4MVZyZlVXSm9yWWxsSktOOEI0czNSb2FlU3VTbFRyeTBmX1djV3V6aGJKX0RwSzJrbHUzSmF6cmV3eFNvLVloU0dVV09oc3hyLThBVzNNc1JnRWJvck9ZQ1VGOVQtenU5NmpTNTNqQ2JGaXRFVTRjZXN4Z0ZsSm1leEhiNjI5VlYtLWxkMGpiT1c4bDZfVG9iS2VHUVE?oc=5"
+    },
+    {
+      "text": "EnergyExxon Holds Talks on Russia Return: Report. Ukraine Is Still a Hurdle for Oil Majors.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T08:14:01.238700",
+      "url": "https://www.barrons.com/articles/exxon-russia-ukraine-oil-rosneft-c1e6c3e2?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Exxon Held Secret Talks With Rosneft About Going Back to Russia",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T11:14:01.238700",
+      "url": "https://www.wsj.com/business/energy-oil/exxon-rosneft-russia-oil-talks-f524e81f?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "ExxonMobil OKs Baytown Complex Project to Up Diesel, Base Stock Production -- OPIS",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T22:14:01.238700",
+      "url": "https://www.marketwatch.com/story/exxonmobil-oks-baytown-complex-project-to-up-diesel-base-stock-production-opis-9862f6f6?mod=mw_quote_news"
+    },
+    {
+      "text": "EnergyPlug Power CEO Says His Company Is Square With Trump Administration",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:14:01.240707",
+      "url": "https://www.barrons.com/articles/plug-hydrogen-trump-autos-3c4e5d1d?mod=mw_quote_news"
+    },
+    {
+      "text": "ExxonMobil: $100 Oil Price Can Be A 2025 Black Swan",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T18:14:06.639364",
+      "url": "https://seekingalpha.com/article/4816919-exxon-mobil-100-oil-price-can-be-a-2025-black-swan#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Exxon Mobil: Plans To Grow Earnings In Place",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T21:14:06.640884",
+      "url": "https://seekingalpha.com/article/4808176-exxon-mobil-plans-to-grow-earnings-in-place#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Exxon Mobil CorpFollowFollowingFollowFollowFollowFollowXOM:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:14:15.487843",
+      "url": ""
+    },
+    {
+      "text": "Exxon Mobil CorpFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:14:15.488845",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Exxon Mobil Corporation $XOM Shares Purchased by Haverford Trust Co - MarketBeat. Exxon Mobil Corporation $XOM Shares Purchased by Haverford Trust Co&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.875,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T05:41:34",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMlNVOUs1TW92NkRZaVZ5RE9lMHUyLVdpVnpzNzY3ZXFGMEplOUQtLVNzSk5OSWJ4LUpUVlVBRnptaGFPSVhXOGhzQ3lzcXBYeU56ZDdxYTZPRUR3ZUQ3MXZkRU9HRTBFN0FjazRQakp1cHBjMzBuR1lyamh0TEF0RWxrS2xqNGNWZWJwVkxVRzdTZzlNaDRDYTJuOHlzZHlFd0lydkhmQmN0QTB5eHhyTTB5aGVBanZGYUtQdk1BaTEzbDV0OXc?oc=5"
+    },
+    {
+      "text": "Monterey Private Wealth Inc. Sells 2,987 Shares of Exxon Mobil Corporation $XOM - MarketBeat. Monterey Private Wealth Inc. Sells 2,987 Shares of Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.869,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:18:35",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRy03UXZXVlY2ZzJYMnNXeWhRZFRfTGJfRUFMYkpBWjBGT2d0ZEZZYkxQZmhYeXctSUFrcEtiZ3BEMGMxRHhKbFBvSm5XU1dDNHdVYXF0SWZrNEwyTTVkdDBHX2hMY1lVU0pDLWFmU3NuZ2stdWoxWGZLRGQyemhMY19hSVhZTUVXc3lBbW1HZFZkcVR1RGlRZ0I5SEF5eVZvQVotQnNYcGQ0Z0FfZm1jUGYzZ3M3ZVl5aGZLRnB2Mlk3aTlIUWpEdHBSaEV2WUZ6ODhN?oc=5"
+    },
+    {
+      "text": "Northwestern Mutual Wealth Management Co. Acquires 50,360 Shares of Exxon Mobil Corporation $XOM - MarketBeat. Northwestern Mutual Wealth Management Co. Acquires 50,360 Shares of Exxon Mobil Corporati...",
+      "source": "Google News",
+      "sentiment_score": 0.869,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T05:39:14",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYTBIc0x3SFVMM3M1emR6bUlMZjNTc0RDMHJlaV9tWG1oVHlQT2JtYlJySzZmSnllVUgyWURTc0FQRGtiUXBnOW9nLWF0Yk9CY3cySmtWQ2x2SENUNHZadmx3dEc4UVR2bmlWZWhiVTFBZm45dHBfWVR1Qi02OWpBOTB6YWZBYkZYaEYxRS1GbGFlZ1ZOZE5NU2NzZnpqV3R4ODllWjI4dy1DbURWT1RTS1FneDBlRmswZnB3UWdkaEpyX1BlSnhiRENWWTV6Q1d4d1hndVJmMWxHdWpXTjZIVXRn?oc=5"
+    },
+    {
+      "text": "RPg Family Wealth Advisory LLC Invests $420,000 in Exxon Mobil Corporation $XOM - MarketBeat. RPg Family Wealth Advisory LLC Invests $420,000 in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:03:18",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOXdkdkFHRUlVSXFBVmhPc3dWSnk4eURyV0s2cWVPMUNjdTFlY3kybnRJeVFhVm50Wk9HMkhsTWdoV3RfeTVIUlZMLXlFY3hMcFgwUFh5YVMta2UtZUw0NGZUUm1PbGFhYnJWS3VwdDEyUm1tWGRZVUxkaGd1eUgzeWtzckxiVlVJSW1NcVI4YkJFejk3V2dGTmFXX1hTV3FMQVZJUEdrR0VLY1FWeGpuRXNYSVNMeFdudVFCY1hSN0pJLVlHa0ZXbUNpS0dVTFhqX1E0?oc=5"
+    },
+    {
+      "text": "Technical AnalysisAs Nuclear Stalls, Oil Could Be the Surprise Winner.  3 Stocks to Buy Now.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.71,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T20:14:01.239709",
+      "url": "https://www.barrons.com/articles/3-oil-stocks-to-buy-now-d578a58f?mod=mw_quote_news"
+    },
+    {
+      "text": "Why ExxonMobil's Strong Fundamentals And Technical Setup Make It A Compelling Buy",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T02:14:06.639878",
+      "url": "https://seekingalpha.com/article/4816006-why-exxon-mobil-strong-fundamentals-technical-setup-compelling-buy#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Synovus Financial Corp Cuts Stake in Exxon Mobil Corporation $XOM - MarketBeat. Synovus Financial Corp Cuts Stake in Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T18:51:39",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNYnBtNmotLXd5NnhPQTVkVzBlMDJYRXhaTmFlNTRTTkpETG5sSEJvUXFmUklRX3l3LV91QVpYT2x5QlpRNWRQNVEySmZuQnNXcEd5eGZTNTdwRmFxVlhLT0VvbmwyN1BPMFRxMmdTblY1UWQzZTFDR0xtQnpvVXJ1aTlad1VCTlhiMTNpeEFEeWJiSjVoYm5wQmlQSUViQlY2cC1IX3lac2hLTDFkMXFmMkpxT2RIbjgzc0VzWG1CTm1pZFlndkRCaUNNUFpJYzU3ZWR5YWxzM0ZsOW0zY2M0?oc=5"
+    },
+    {
+      "text": "TD Capital Management LLC Purchases 2,648 Shares of Exxon Mobil Corporation $XOM - MarketBeat. TD Capital Management LLC Purchases 2,648 Shares of Exxon Mobil Corporation $XOM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T12:26:24",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZzJraEJWcHUwY1hFMkJRQzVZZ0ZEUXN5Y2dKamRsQVdKYVREdnRrSF8tZWE3bDRhSHBvOURUVkViYzhrY3EtOFZreXJBbnZuT1VOZzNZeXlqT3ZXUy1aeE1GTDRRV3p1d29MaXlGR0VYM2FSRnBVbHVZcnhySzNtUUdzbkFFREVreVhxQzJaNmNGdklncU1QWXJ4NldwS3JVaGR2M3NqQ1ZxOEVyREtrQjNaUERVNlI5a1I1eS1jWERtOWxHZXU2QVpqQXQ3Z2ZIOTVhMnF3?oc=5"
+    },
+    {
+      "text": "Exxon Mobil Corp. stock outperforms competitors on strong trading day",
+      "source": "MarketWatch",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T01:14:01.239709",
+      "url": "https://www.marketwatch.com/data-news/exxon-mobil-corp-stock-outperforms-competitors-on-strong-trading-day-7de65136-8af2c844e57d?mod=mw_quote_news"
+    },
+    {
+      "text": "Exxon Mobil Stock Isn't Moving As It Prepares Reentry To Russia But This Energy Stock Is Jumping",
+      "source": "MarketWatch",
+      "sentiment_score": 0.47,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T06:14:01.237194",
+      "url": "https://www.investors.com/news/exxon-mobil-prepares-re-entry-to-russia-but-this-is-the-energy-stock-jumping/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.127,
+    "last_week_average": 0.152,
+    "overall_average": 0.152,
+    "articles_last_24h": 19,
+    "articles_last_week": 33
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

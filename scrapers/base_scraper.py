@@ -1,0 +1,1473 @@
+#!/usr/bin/env python3
+"""
+Base scraper interface and common utilities for all scrapers
+"""
+
+from abc import ABC, abstractmethod
+from typing import List, Dict, Any
+from dataclasses import dataclass
+from datetime import datetime
+import requests
+import time
+import random
+import re
+from urllib.parse import urljoin, urlparse
+from bs4 import BeautifulSoup
+
+# Try to import newspaper3k for better article extraction
+try:
+    from newspaper import Article, Config
+    NEWSPAPER3K_AVAILABLE = True
+except ImportError:
+    NEWSPAPER3K_AVAILABLE = False
+    print("WARNING: newspaper3k not available. Using fallback extraction methods.")
+
+# Try to import selenium for browser automation
+try:
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+    from selenium.common.exceptions import TimeoutException, WebDriverException
+    SELENIUM_AVAILABLE = True
+except ImportError:
+    SELENIUM_AVAILABLE = False
+    if __name__ == "__main__":  # Only show warning if running directly
+        print("INFO: Selenium not available. Browser automation features disabled.")
+
+# Global selenium driver instance for performance optimization
+_GLOBAL_DRIVER = None
+_DRIVER_LAST_USED = 0
+_SELENIUM_ERROR_COUNT = 0
+_SELENIUM_DISABLED_UNTIL = 0
+_DRIVER_CREATION_IN_PROGRESS = False
+_DRIVER_CREATION_COUNT = 0
+_MAX_DRIVER_CREATIONS = 3
+
+# Global URL resolution success tracking
+_URL_RESOLUTION_STATS = {}  # {source_name: {"attempts": int, "successes": int}}
+_DISABLED_SOURCES = set()  # Sources with <10% success rate
+
+
+@dataclass
+class SentimentData:
+    """Data structure for sentiment analysis results"""
+    text: str
+    source: str
+    timestamp: datetime
+    polarity: float  # TextBlob polarity (-1 to 1)
+    compound: float  # VADER compound score (-1 to 1)
+    url: str = ""
+    raw_extracted_text: str = ""  # Raw text extracted by newspaper3k for debugging
+
+
+class BaseScraper(ABC):
+    """Abstract base class for all news scrapers"""
+    
+    def __init__(self, symbol: str, debug: bool = False):
+        self.symbol = symbol.upper()
+        self.debug = debug
+        self.session = requests.Session()
+        self.user_agents = [
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15'
+        ]
+        # Track selenium usage for this scraper instance
+        self._selenium_used = False
+        
+    @abstractmethod
+    def scrape(self, max_articles: int = 10) -> List[SentimentData]:
+        """Scrape articles and return sentiment data"""
+        pass
+    
+    @property
+    @abstractmethod
+    def source_name(self) -> str:
+        """Return the name of the scraper source"""
+        pass
+    
+    def get_random_user_agent(self) -> str:
+        """Get a random user agent to avoid blocking"""
+        return random.choice(self.user_agents)
+    
+    def make_request(self, url: str, headers: Dict[str, Any] = None, timeout: int = 10) -> requests.Response:
+        """Make a request with random user agent and error handling"""
+        if headers is None:
+            headers = {}
+        
+        headers.update({
+            'User-Agent': self.get_random_user_agent(),
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+        })
+        
+        try:
+            response = self.session.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+            response.raise_for_status()
+            return response
+        except requests.RequestException as e:
+            if self.debug:
+                print(f"Request failed for {url}: {e}")
+            raise
+    
+    def random_delay(self, min_seconds: float = 0.5, max_seconds: float = 2.0):
+        """Add random delay to avoid rate limiting"""
+        time.sleep(random.uniform(min_seconds, max_seconds))
+    
+    def clean_text(self, text: str) -> str:
+        """Clean and normalize text for processing"""
+        if not text:
+            return ""
+        
+        # Remove extra whitespace and newlines
+        text = ' '.join(text.split())
+        
+        # Remove common HTML entities
+        text = text.replace('&nbsp;', ' ')
+        text = text.replace('&amp;', '&')
+        text = text.replace('&lt;', '<')
+        text = text.replace('&gt;', '>')
+        text = text.replace('&quot;', '"')
+        
+        return text.strip()
+    
+    def is_relevant_content(self, title: str, content: str = "") -> bool:
+        """Check if content is relevant to the stock symbol"""
+        text_to_check = f"{title} {content}".lower()
+        
+        # Check for direct symbol mention
+        if self.symbol.lower() in text_to_check:
+            return True
+        
+        # Additional relevance checks can be added here
+        return False
+    
+    @classmethod
+    def track_url_resolution_attempt(cls, source_name: str):
+        """Track URL resolution attempt for success rate monitoring"""
+        global _URL_RESOLUTION_STATS
+        
+        if source_name not in _URL_RESOLUTION_STATS:
+            _URL_RESOLUTION_STATS[source_name] = {"attempts": 0, "successes": 0}
+        
+        _URL_RESOLUTION_STATS[source_name]["attempts"] += 1
+    
+    @classmethod
+    def track_url_resolution_success(cls, source_name: str):
+        """Track successful URL resolution"""
+        global _URL_RESOLUTION_STATS
+        
+        if source_name in _URL_RESOLUTION_STATS:
+            _URL_RESOLUTION_STATS[source_name]["successes"] += 1
+        
+        # Check if source should be disabled
+        cls._evaluate_source_success_rate(source_name)
+    
+    @classmethod
+    def _evaluate_source_success_rate(cls, source_name: str):
+        """Evaluate source success rate and disable if below 10%"""
+        global _URL_RESOLUTION_STATS, _DISABLED_SOURCES
+        
+        stats = _URL_RESOLUTION_STATS.get(source_name, {})
+        attempts = stats.get("attempts", 0)
+        successes = stats.get("successes", 0)
+        
+        # Only evaluate after minimum attempts
+        if attempts >= 10:  
+            success_rate = (successes / attempts) * 100
+            if success_rate < 10:
+                _DISABLED_SOURCES.add(source_name)
+                print(f"WARNING: {source_name} disabled - success rate: {success_rate:.1f}% ({successes}/{attempts})")
+    
+    @classmethod
+    def is_source_disabled(cls, source_name: str) -> bool:
+        """Check if source is disabled due to low success rate"""
+        return source_name in _DISABLED_SOURCES
+    
+    @classmethod
+    def get_url_resolution_stats(cls) -> dict:
+        """Get URL resolution statistics for all sources"""
+        global _URL_RESOLUTION_STATS
+        stats = {}
+        for source, data in _URL_RESOLUTION_STATS.items():
+            attempts = data["attempts"]
+            successes = data["successes"]
+            success_rate = (successes / attempts * 100) if attempts > 0 else 0
+            stats[source] = {
+                "attempts": attempts,
+                "successes": successes,
+                "success_rate": success_rate,
+                "disabled": source in _DISABLED_SOURCES
+            }
+        return stats
+    
+    @classmethod
+    def get_selenium_driver(cls):
+        """Get shared selenium driver instance for all scrapers with error tracking"""
+        global _GLOBAL_DRIVER, _DRIVER_LAST_USED, _SELENIUM_ERROR_COUNT, _SELENIUM_DISABLED_UNTIL, _DRIVER_CREATION_IN_PROGRESS, _DRIVER_CREATION_COUNT, _MAX_DRIVER_CREATIONS
+        
+        if not SELENIUM_AVAILABLE:
+            raise ImportError("Selenium not available. Install selenium and chromedriver.")
+        
+        current_time = time.time()
+        
+        # Check if selenium is temporarily disabled due to errors
+        if current_time < _SELENIUM_DISABLED_UNTIL:
+            remaining_time = int(_SELENIUM_DISABLED_UNTIL - current_time)
+            # Use a simple print instead of cls.debug
+            print(f"  Selenium temporarily disabled for {remaining_time} more seconds due to errors")
+            raise Exception(f"Selenium disabled for {remaining_time} seconds due to repeated errors")
+        
+        # Prevent infinite loops of driver creation
+        if _DRIVER_CREATION_IN_PROGRESS:
+            print(f"  Selenium driver creation already in progress, waiting...")
+            time.sleep(2)
+            if _GLOBAL_DRIVER is not None:
+                return _GLOBAL_DRIVER
+            else:
+                raise Exception("Driver creation failed or taking too long")
+        
+        # Prevent too many driver creations in one session
+        if _DRIVER_CREATION_COUNT >= _MAX_DRIVER_CREATIONS:
+            print(f"  Maximum selenium driver creations ({_MAX_DRIVER_CREATIONS}) reached for this session")
+            raise Exception("Maximum selenium driver creations reached - preventing infinite loops")
+        
+        # Create new driver if none exists or if the old one is too old (5 minutes timeout)
+        if _GLOBAL_DRIVER is None or (current_time - _DRIVER_LAST_USED) > 300:
+            _DRIVER_CREATION_IN_PROGRESS = True
+            _DRIVER_CREATION_COUNT += 1
+            
+            try:
+                if _GLOBAL_DRIVER is not None:
+                    try:
+                        _GLOBAL_DRIVER.quit()
+                    except:
+                        pass
+                
+                chrome_options = Options()
+                
+                # Basic configuration - DISABLE HEADLESS for Google News redirects
+                # chrome_options.add_argument('--headless=new')  # DISABLED - headless interferes with JS redirects
+                chrome_options.add_argument('--no-sandbox')
+                chrome_options.add_argument('--disable-dev-shm-usage')
+                chrome_options.add_argument('--disable-gpu')
+                chrome_options.add_argument('--window-size=1920,1080')
+                
+                # Make window minimized instead of headless
+                chrome_options.add_argument('--window-position=-2000,-2000')  # Move window off screen
+                
+                # SSL and network optimizations
+                chrome_options.add_argument('--ignore-ssl-errors-on-localhost')
+                chrome_options.add_argument('--ignore-ssl-errors')
+                chrome_options.add_argument('--ignore-certificate-errors')
+                chrome_options.add_argument('--allow-running-insecure-content')
+                chrome_options.add_argument('--disable-web-security')
+                chrome_options.add_argument('--disable-features=VizDisplayCompositor')
+                
+                # Performance optimizations - BUT ENABLE JAVASCRIPT for redirects
+                chrome_options.add_argument('--disable-extensions')
+                chrome_options.add_argument('--disable-plugins')
+                chrome_options.add_argument('--disable-images')
+                # REMOVED --enable-javascript to ensure JS is fully enabled for Google News redirects
+                chrome_options.add_argument('--disable-background-timer-throttling')
+                chrome_options.add_argument('--disable-backgrounding-occluded-windows')
+                chrome_options.add_argument('--disable-renderer-backgrounding')
+                chrome_options.add_argument('--disable-background-networking')
+                chrome_options.add_argument('--disable-sync')
+                chrome_options.add_argument('--disable-translate')
+                chrome_options.add_argument('--disable-ipc-flooding-protection')
+                
+                # Memory optimizations
+                chrome_options.add_argument('--memory-pressure-off')
+                chrome_options.add_argument('--max_old_space_size=4096')
+                
+                # Anti-detection (more robust)
+                chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+                chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+                chrome_options.add_experimental_option('useAutomationExtension', False)
+                chrome_options.add_argument('--disable-default-apps')
+                
+                # Logging optimizations (reduce console spam)
+                chrome_options.add_argument('--log-level=3')  # Suppress INFO, WARNING, ERROR
+                chrome_options.add_argument('--silent')
+                chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
+                chrome_options.add_experimental_option('useAutomationExtension', False)
+                
+                # User agent randomization
+                chrome_options.add_argument(f'--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+            
+                try:
+                    _GLOBAL_DRIVER = webdriver.Chrome(options=chrome_options)
+                    
+                    # Enhanced anti-detection
+                    _GLOBAL_DRIVER.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+                    _GLOBAL_DRIVER.execute_cdp_cmd('Network.setUserAgentOverride', {
+                        "userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                    })
+                    _GLOBAL_DRIVER.execute_script("Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en']})")
+                    _GLOBAL_DRIVER.execute_script("Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]})")
+                    
+                    # Strict timeouts per TODO requirements
+                    _GLOBAL_DRIVER.set_page_load_timeout(10)  # Max 10 seconds as per TODO
+                    _GLOBAL_DRIVER.implicitly_wait(3)  # Reduced for faster failures
+                    
+                    print("  Selenium driver initialized with optimized settings")
+                    
+                except Exception as e:
+                    print(f"  WARNING: Selenium driver creation failed: {e}")
+                    _GLOBAL_DRIVER = None
+                    _SELENIUM_ERROR_COUNT += 3  # Penalize creation failures more heavily
+                    raise e
+                
+            finally:
+                _DRIVER_CREATION_IN_PROGRESS = False
+        
+        _DRIVER_LAST_USED = current_time
+        return _GLOBAL_DRIVER
+    
+    @classmethod
+    def cleanup_selenium_driver(cls):
+        """Cleanup the global selenium driver"""
+        global _GLOBAL_DRIVER
+        if _GLOBAL_DRIVER is not None:
+            try:
+                _GLOBAL_DRIVER.quit()
+            except:
+                pass
+            _GLOBAL_DRIVER = None
+    
+    def make_request_with_selenium(self, url: str, wait_for_selector: str = None, 
+                                  wait_timeout: int = 10, enable_javascript: bool = True) -> tuple:
+        """
+        Make a request using selenium for JavaScript-heavy sites or anti-bot protection
+        
+        Args:
+            url: URL to fetch
+            wait_for_selector: CSS selector to wait for before returning
+            wait_timeout: How long to wait for the selector
+            enable_javascript: Whether to enable JavaScript execution
+            
+        Returns:
+            tuple: (page_source, final_url) or (None, None) if failed
+        """
+        global _SELENIUM_ERROR_COUNT, _SELENIUM_DISABLED_UNTIL
+        
+        if not SELENIUM_AVAILABLE:
+            if self.debug:
+                print("      Selenium not available, falling back to requests")
+            return None, None
+        
+        max_retries = 2
+        for attempt in range(max_retries):
+            try:
+                driver = self.get_selenium_driver()
+                if driver is None:
+                    if self.debug:
+                        print("      Selenium driver not available")
+                    return None, None
+                
+                self._selenium_used = True
+                
+                # Enhanced error handling for navigation
+                if self.debug:
+                    print(f"      Selenium: Attempt {attempt + 1} - Navigating to {url[:80]}...")
+                
+                # Set strict timeouts per TODO requirements (5-10 seconds)
+                driver.set_page_load_timeout(8)  # 8 seconds max
+                
+                # Navigate with timeout handling
+                try:
+                    driver.get(url)
+                    
+                    # For Google News URLs, wait for potential redirects
+                    if 'news.google.com' in url and '/articles/' in url:
+                        if self.debug:
+                            print(f"      Selenium: Waiting for Google News redirect...")
+                        
+                        # Wait up to 8 seconds for URL to change (redirect)
+                        redirect_detected = False
+                        for i in range(80):  # 80 * 0.1s = 8s max
+                            try:
+                                current_url = driver.current_url
+                                if current_url != url:
+                                    if self.debug:
+                                        print(f"      Selenium: URL changed to: {current_url}")
+                                    # If not google.com, we have a successful redirect
+                                    if 'google.com' not in current_url:
+                                        if self.debug:
+                                            print(f"      Selenium: Successful redirect detected!")
+                                        redirect_detected = True
+                                        break
+                                time.sleep(0.1)
+                            except Exception as e:
+                                if self.debug:
+                                    print(f"      Selenium: Error checking URL: {e}")
+                                break
+                        
+                        # Additional wait for page to fully load after redirect
+                        if redirect_detected:
+                            time.sleep(2)  # Longer wait for page to stabilize
+                            if self.debug:
+                                print(f"      Selenium: Final URL after redirect: {driver.current_url}")
+                    
+                except TimeoutException:
+                    if self.debug:
+                        print(f"      Selenium: Page load timeout, but continuing...")
+                    # Continue anyway, partial load might be sufficient
+                
+                # Wait strategy with multiple fallbacks
+                wait_successful = False
+                
+                if wait_for_selector:
+                    try:
+                        # Strict timeout limits per TODO (5-10 seconds max)
+                        WebDriverWait(driver, min(wait_timeout, 6)).until(
+                            EC.presence_of_element_located((By.CSS_SELECTOR, wait_for_selector))
+                        )
+                        wait_successful = True
+                        if self.debug:
+                            print(f"      Selenium: Successfully found selector '{wait_for_selector}'")
+                    except TimeoutException:
+                        # Try alternative waiting strategies
+                        try:
+                            WebDriverWait(driver, 2).until(  # Reduced from 3 to 2 seconds
+                                EC.presence_of_element_located((By.TAG_NAME, "body"))
+                            )
+                            wait_successful = True
+                            if self.debug:
+                                print(f"      Selenium: Selector timeout, but body loaded")
+                        except TimeoutException:
+                            if self.debug:
+                                print(f"      Selenium: Both selectors failed, using minimal wait")
+                
+                if not wait_successful:
+                    # Minimal wait as last resort
+                    time.sleep(1)
+                
+                # Get page content with error handling
+                try:
+                    page_source = driver.page_source
+                    final_url = driver.current_url
+                    
+                    if page_source and len(page_source) > 100:  # Basic validation
+                        # Reset error count on successful operation
+                        _SELENIUM_ERROR_COUNT = max(0, _SELENIUM_ERROR_COUNT - 1)  # Gradually reduce error count
+                        
+                        if self.debug:
+                            print(f"      Selenium: Success! Final URL: {final_url[:60]}...")
+                            print(f"      Selenium: Page source length: {len(page_source)} chars")
+                        return page_source, final_url
+                    else:
+                        if self.debug:
+                            print(f"      Selenium: Page source too short ({len(page_source) if page_source else 0} chars)")
+                        
+                except Exception as content_error:
+                    if self.debug:
+                        print(f"      Selenium: Failed to get page content: {content_error}")
+                    
+            except WebDriverException as wde:
+                _SELENIUM_ERROR_COUNT += 1
+                
+                if self.debug:
+                    error_msg = str(wde)
+                    if "handshake failed" in error_msg or "SSL" in error_msg:
+                        print(f"      Selenium: SSL/Network error on attempt {attempt + 1} (total errors: {_SELENIUM_ERROR_COUNT})")
+                    elif "timeout" in error_msg.lower():
+                        print(f"      Selenium: Timeout error on attempt {attempt + 1} (total errors: {_SELENIUM_ERROR_COUNT})")
+                    else:
+                        print(f"      Selenium: WebDriver error on attempt {attempt + 1}: {error_msg[:100]} (total errors: {_SELENIUM_ERROR_COUNT})")
+                
+                # For certain errors, recreate the driver
+                if any(error_phrase in str(wde).lower() for error_phrase in 
+                       ["handshake failed", "connection refused", "session not created"]):
+                    if self.debug:
+                        print(f"      Selenium: Recreating driver due to connection error")
+                    self.cleanup_selenium_driver()
+                
+                # If too many errors, disable selenium temporarily
+                if _SELENIUM_ERROR_COUNT >= 5:
+                    _SELENIUM_DISABLED_UNTIL = time.time() + 300  # Disable for 5 minutes
+                    if self.debug:
+                        print(f"      Selenium: Disabled for 5 minutes due to {_SELENIUM_ERROR_COUNT} consecutive errors")
+                    self.cleanup_selenium_driver()
+                    return None, None
+                    
+                if attempt == max_retries - 1:
+                    return None, None
+                    
+                time.sleep(min(2 * attempt, 5))  # Exponential backoff
+                
+            except Exception as e:
+                if self.debug:
+                    print(f"      Selenium: Unexpected error on attempt {attempt + 1}: {e}")
+                if attempt == max_retries - 1:
+                    return None, None
+                time.sleep(1)
+        
+        return None, None
+    
+    def make_request_enhanced(self, url: str, use_selenium_fallback: bool = True, 
+                            selenium_wait_selector: str = None, **kwargs) -> requests.Response:
+        """
+        Enhanced request method that tries requests first, then selenium if needed
+        
+        Args:
+            url: URL to fetch
+            use_selenium_fallback: Whether to try selenium if requests fails
+            selenium_wait_selector: CSS selector to wait for in selenium
+            **kwargs: Additional arguments for requests
+            
+        Returns:
+            requests.Response or custom response object
+        """
+        # Try regular requests first
+        try:
+            response = self.make_request(url, **kwargs)
+            
+            # Check if we got blocked/redirected to anti-bot page
+            if self._is_likely_blocked(response):
+                if use_selenium_fallback and SELENIUM_AVAILABLE:
+                    if self.debug:
+                        print(f"      Request appears blocked, trying selenium fallback...")
+                    return self._selenium_to_response(url, selenium_wait_selector)
+                else:
+                    if self.debug:
+                        print(f"      Request appears blocked but selenium fallback disabled")
+            
+            return response
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      Regular request failed: {e}")
+            
+            if use_selenium_fallback and SELENIUM_AVAILABLE:
+                if self.debug:
+                    print(f"      Trying selenium fallback...")
+                return self._selenium_to_response(url, selenium_wait_selector)
+            else:
+                raise e
+    
+    def _is_likely_blocked(self, response: requests.Response) -> bool:
+        """Check if response indicates we were blocked by anti-bot measures"""
+        # Check status codes that suggest blocking
+        if response.status_code in [403, 429, 503]:
+            return True
+        
+        # Check for common anti-bot content
+        content_lower = response.text.lower()
+        block_indicators = [
+            'cloudflare', 'captcha', 'blocked', 'access denied', 
+            'please verify', 'security check', 'bot detected',
+            'suspicious activity', 'rate limit', 'too many requests'
+        ]
+        
+        return any(indicator in content_lower for indicator in block_indicators)
+    
+    def _selenium_to_response(self, url: str, wait_selector: str = None) -> object:
+        """Convert selenium result to requests.Response-like object"""
+        page_source, final_url = self.make_request_with_selenium(url, wait_selector)
+        
+        if page_source is None:
+            raise Exception("Selenium request failed")
+        
+        # Create a minimal response-like object
+        class SeleniumResponse:
+            def __init__(self, content, url, status_code=200):
+                self.text = content
+                self.content = content.encode('utf-8')
+                self.url = url
+                self.status_code = status_code
+                self.headers = {}
+            
+            def raise_for_status(self):
+                if self.status_code >= 400:
+                    raise requests.HTTPError(f"{self.status_code} Error")
+        
+        return SeleniumResponse(page_source, final_url or url)
+    
+    def fetch_full_article(self, url: str, max_length: int = 3000) -> str:
+        """Fetch and extract full article text using newspaper3k (preferred) or fallback methods"""
+        if not url or not url.startswith('http'):
+            return ""
+        
+        # Try newspaper3k first (much more reliable)
+        if NEWSPAPER3K_AVAILABLE:
+            return self._extract_with_newspaper3k(url, max_length)
+        
+        # Fallback to custom extraction methods
+        return self._extract_with_custom_methods(url, max_length)
+    
+    def _extract_with_newspaper3k(self, url: str, max_length: int) -> str:
+        """Extract article content using newspaper3k library"""
+        try:
+            if self.debug:
+                print(f"      Starting newspaper3k extraction for: {url[:80]}...")
+            
+            # Configure newspaper3k
+            config = Config()
+            config.browser_user_agent = self.get_random_user_agent()
+            config.request_timeout = 20
+            config.fetch_images = False
+            config.memoize_articles = False
+            
+            if self.debug:
+                print(f"      Config set - User Agent: {config.browser_user_agent[:50]}...")
+            
+            # Create and process article
+            article = Article(url, config=config)
+            
+            # Note: Google News redirect resolution is now handled in enhance_article_data() before calling this method
+            
+            # Download and parse
+            if self.debug:
+                print(f"      Downloading article...")
+            article.download()
+            
+            if self.debug:
+                print(f"      Download status: {article.download_state}")
+                print(f"      Response code: {getattr(article, 'response', {}).get('status_code', 'Unknown')}")
+            
+            if self.debug:
+                print(f"      Parsing article...")
+            article.parse()
+            
+            # Get the main article text
+            article_text = article.text
+            article_title = article.title
+            article_authors = article.authors
+            article_summary = article.summary
+            
+            if self.debug:
+                print(f"      NEWSPAPER3K DEBUG:")
+                print(f"        Title: {article_title[:100] if article_title else 'None'}...")
+                print(f"        Authors: {article_authors}")
+                print(f"        Summary length: {len(article_summary) if article_summary else 0}")
+                print(f"        Article text length: {len(article_text) if article_text else 0}")
+                print(f"        Article URL: {article.url}")
+                print(f"        Top image: {article.top_image}")
+                
+                if article_text:
+                    print(f"        First 200 chars of text: {article_text[:200]}...")
+                else:
+                    print(f"        Article text is EMPTY or None")
+                    print(f"        HTML length: {len(article.html) if article.html else 0}")
+                    if article.html:
+                        print(f"        HTML sample: {article.html[:300]}...")
+            
+            if not article_text or len(article_text.strip()) < 100:
+                if self.debug:
+                    print(f"      newspaper3k: Article text too short or empty - FAILED")
+                return ""
+            
+            # Additional metadata that might be useful
+            title = article.title
+            summary = article.summary
+            
+            # Combine title with article text if title is substantial and different
+            if (title and len(title) > 10 and 
+                title.lower() not in article_text.lower()[:200]):
+                full_text = f"{title}. {article_text}"
+            else:
+                full_text = article_text
+            
+            # Clean and limit the text
+            full_text = self.clean_text(full_text)
+            
+            # Check if content seems legitimate
+            if not self._is_legitimate_article_content(full_text):
+                if self.debug:
+                    print(f"      newspaper3k: Content failed legitimacy check")
+                return ""
+            
+            # Smart truncation at sentence boundaries
+            if len(full_text) > max_length:
+                sentences = full_text.split('.')
+                truncated = ""
+                for sentence in sentences:
+                    if len(truncated) + len(sentence) + 1 <= max_length:
+                        truncated += sentence + "."
+                    else:
+                        break
+                full_text = truncated.strip()
+                if not full_text.endswith('.'):
+                    full_text += "..."
+            
+            if self.debug and full_text:
+                print(f"      newspaper3k: Successfully extracted {len(full_text)} characters")
+                print(f"      newspaper3k: First 200 chars: {full_text[:200]}...")
+            elif self.debug:
+                print(f"      newspaper3k: No content extracted or failed validation")
+            
+            return full_text
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      newspaper3k extraction failed: {e}")
+            return ""
+    
+    def _extract_with_custom_methods(self, url: str, max_length: int) -> str:
+        """Fallback to custom extraction methods when newspaper3k is not available"""
+        try:
+            # Handle Google News redirect URLs
+            if 'news.google.com' in url and '/articles/' in url:
+                # Try to extract the actual article URL
+                response = self.make_request(url, timeout=10)
+                if response.status_code in [301, 302]:
+                    url = response.headers.get('Location', url)
+            
+            # Enhanced headers for better content access
+            headers = {
+                'User-Agent': self.get_random_user_agent(),
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'Cache-Control': 'no-cache',
+                'Pragma': 'no-cache',
+                'Sec-Fetch-Dest': 'document',
+                'Sec-Fetch-Mode': 'navigate',
+                'Sec-Fetch-Site': 'none',
+                'Upgrade-Insecure-Requests': '1'
+            }
+            
+            response = self.make_request(url, headers=headers, timeout=20)
+            if response.status_code != 200:
+                return ""
+            
+            # Check if we got redirected to a paywall or login page
+            final_url = response.url
+            if any(indicator in final_url.lower() for indicator in ['login', 'subscribe', 'paywall', 'signin']):
+                if self.debug:
+                    print(f"Article appears to be behind paywall: {final_url}")
+                return ""
+                
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Check for paywall indicators in content
+            if self._is_paywalled_content(soup):
+                if self.debug:
+                    print(f"Content appears to be paywalled")
+                return ""
+            
+            # Remove unwanted elements early
+            self._clean_soup_for_extraction(soup)
+            
+            # Try multiple strategies to extract article content
+            article_text = self._extract_article_content(soup)
+            
+            if article_text:
+                # Clean and validate text
+                article_text = self.clean_text(article_text)
+                
+                # Filter out very short extractions (likely failed)
+                if len(article_text) < 100:
+                    return ""
+                
+                # Check if content seems legitimate (not just navigation/ads)
+                if not self._is_legitimate_article_content(article_text):
+                    return ""
+                
+                # Limit length but allow more content
+                if len(article_text) > max_length:
+                    # Try to cut at sentence boundary
+                    sentences = article_text.split('.')
+                    truncated = ""
+                    for sentence in sentences:
+                        if len(truncated) + len(sentence) + 1 <= max_length:
+                            truncated += sentence + "."
+                        else:
+                            break
+                    article_text = truncated.strip() + "..."
+                
+                return article_text
+                
+        except Exception as e:
+            if self.debug:
+                print(f"Failed to fetch full article from {url}: {e}")
+        
+        return ""
+    
+    def _clean_soup_for_extraction(self, soup: BeautifulSoup):
+        """Remove unwanted elements before content extraction"""
+        # Remove scripts, styles, and other non-content elements
+        for element in soup(['script', 'style', 'noscript', 'svg']):
+            element.decompose()
+        
+        # Remove common navigation and promotional elements
+        unwanted_selectors = [
+            'nav', 'header', 'footer', 'aside',
+            '[class*="nav"]', '[class*="menu"]', '[class*="sidebar"]',
+            '[class*="ad"]', '[class*="advertisement"]', '[class*="promo"]',
+            '[class*="social"]', '[class*="share"]', '[class*="follow"]',
+            '[class*="newsletter"]', '[class*="subscribe"]', '[class*="signup"]',
+            '[class*="related"]', '[class*="recommended"]', '[class*="trending"]',
+            '[class*="comment"]', '[class*="discuss"]', '[class*="feedback"]',
+            '[class*="cookie"]', '[class*="gdpr"]', '[class*="consent"]',
+            '[id*="ad"]', '[id*="social"]', '[id*="comment"]'
+        ]
+        
+        for selector in unwanted_selectors:
+            try:
+                for element in soup.select(selector):
+                    element.decompose()
+            except:
+                continue
+    
+    def _is_paywalled_content(self, soup: BeautifulSoup) -> bool:
+        """Check if content appears to be behind a paywall"""
+        paywall_indicators = [
+            'subscribe', 'subscription', 'paywall', 'premium', 'member only',
+            'sign in to continue', 'login to read', 'free trial', 'unlock',
+            'this article is for subscribers', 'become a member'
+        ]
+        
+        page_text = soup.get_text().lower()
+        return any(indicator in page_text for indicator in paywall_indicators)
+    
+    def _is_legitimate_article_content(self, text: str) -> bool:
+        """Check if extracted text appears to be legitimate article content"""
+        text_lower = text.lower()
+        
+        # Check for common non-article content patterns
+        junk_patterns = [
+            'click here', 'subscribe now', 'sign up', 'follow us',
+            'terms of service', 'privacy policy', 'cookie policy',
+            'advertisement', 'sponsored content'
+        ]
+        
+        junk_count = sum(1 for pattern in junk_patterns if pattern in text_lower)
+        if junk_count > 3:  # Too much promotional content
+            return False
+        
+        # Check for reasonable sentence structure
+        sentences = text.split('.')
+        good_sentences = sum(1 for s in sentences if len(s.strip()) > 20)
+        
+        if good_sentences < 3:  # Need at least 3 substantial sentences
+            return False
+        
+        return True
+    
+    def _extract_article_content(self, soup: BeautifulSoup) -> str:
+        """Intelligently extract main article content using advanced strategies"""
+        
+        # Strategy 1: Use readability-based content extraction
+        content = self._extract_with_readability_heuristics(soup)
+        if content:
+            return content
+        
+        # Strategy 2: JSON-LD structured data extraction
+        content = self._extract_from_structured_data(soup)
+        if content:
+            return content
+        
+        # Strategy 3: Advanced semantic article detection
+        content = self._extract_with_semantic_analysis(soup)
+        if content:
+            return content
+        
+        # Strategy 4: Content density analysis
+        content = self._extract_by_content_density(soup)
+        if content:
+            return content
+        
+        # Strategy 5: Fallback to basic extraction
+        return self._extract_basic_content(soup)
+    
+    def _extract_with_readability_heuristics(self, soup: BeautifulSoup) -> str:
+        """Extract content using readability-based scoring similar to Mozilla's Readability"""
+        
+        # Remove obviously non-content elements
+        for element in soup(['script', 'style', 'nav', 'aside', 'footer', 'header', 
+                           'form', 'button', 'input', 'select', 'textarea']):
+            element.decompose()
+        
+        # Prioritized article container selectors
+        article_containers = [
+            'article',
+            '[role="main"]',
+            'main',
+            '.post-content',
+            '.entry-content', 
+            '.article-content',
+            '.article-body',
+            '.story-body',
+            '.content-body',
+            '.post-body',
+            '.entry-body',
+            '#content',
+            '.content',
+            '#main-content',
+            '.main-content'
+        ]
+        
+        best_container = None
+        best_score = 0
+        
+        for selector in article_containers:
+            try:
+                containers = soup.select(selector)
+                for container in containers:
+                    score = self._score_content_container(container)
+                    if score > best_score:
+                        best_score = score
+                        best_container = container
+            except:
+                continue
+        
+        if best_container and best_score > 50:  # Minimum quality threshold
+            return self._extract_text_from_container(best_container)
+        
+        return ""
+    
+    def _score_content_container(self, element) -> int:
+        """Score a container based on content quality indicators"""
+        if not element:
+            return 0
+            
+        score = 0
+        text_length = len(element.get_text(strip=True))
+        
+        # Base score from text length
+        score += min(text_length // 10, 100)  # Cap at 100 for length
+        
+        # Count paragraph elements (good indicator)
+        paragraphs = element.find_all('p')
+        score += len(paragraphs) * 10
+        
+        # Penalize if too few paragraphs relative to text
+        if text_length > 500 and len(paragraphs) < 3:
+            score -= 30
+        
+        # Reward good paragraph length distribution
+        good_paragraphs = sum(1 for p in paragraphs if 50 < len(p.get_text(strip=True)) < 800)
+        score += good_paragraphs * 15
+        
+        # Check for article-like class names
+        class_attr = element.get('class', [])
+        id_attr = element.get('id', '')
+        
+        good_indicators = ['article', 'content', 'post', 'story', 'entry', 'main', 'body']
+        bad_indicators = ['comment', 'sidebar', 'nav', 'menu', 'ad', 'footer', 'header', 'social']
+        
+        for indicator in good_indicators:
+            if any(indicator in str(attr).lower() for attr in class_attr + [id_attr]):
+                score += 25
+        
+        for indicator in bad_indicators:
+            if any(indicator in str(attr).lower() for attr in class_attr + [id_attr]):
+                score -= 30
+        
+        # Check link density (too many links = probably not main content)
+        links = element.find_all('a')
+        if text_length > 0:
+            link_density = sum(len(link.get_text(strip=True)) for link in links) / text_length
+            if link_density > 0.3:  # More than 30% links
+                score -= 40
+        
+        # Reward presence of time/date indicators
+        if element.find(['time', '[datetime]']) or any(word in element.get_text().lower() 
+            for word in ['published', 'updated', 'posted', 'ago', 'am', 'pm']):
+            score += 15
+        
+        return max(0, score)
+    
+    def _extract_from_structured_data(self, soup: BeautifulSoup) -> str:
+        """Extract content from JSON-LD structured data"""
+        try:
+            scripts = soup.find_all('script', type='application/ld+json')
+            for script in scripts:
+                try:
+                    import json
+                    data = json.loads(script.string)
+                    
+                    # Handle both single objects and arrays
+                    if isinstance(data, list):
+                        data = data[0]
+                    
+                    # Look for article content
+                    if data.get('@type') in ['Article', 'NewsArticle', 'BlogPosting']:
+                        article_body = data.get('articleBody', '')
+                        if article_body and len(article_body) > 200:
+                            return article_body
+                        
+                        # Try description as fallback
+                        description = data.get('description', '')
+                        if description and len(description) > 100:
+                            return description
+                            
+                except (json.JSONDecodeError, KeyError, TypeError):
+                    continue
+        except Exception:
+            pass
+        return ""
+    
+    def _extract_with_semantic_analysis(self, soup: BeautifulSoup) -> str:
+        """Extract content using semantic HTML analysis"""
+        
+        # Look for semantic elements in order of preference
+        semantic_selectors = [
+            'article',
+            'section[class*="article"]',
+            'section[class*="story"]', 
+            'section[class*="content"]',
+            'div[class*="article-text"]',
+            'div[class*="story-text"]',
+            'div[class*="post-text"]',
+            'div[itemtype*="Article"]',  # Schema.org markup
+            '[role="article"]',
+            '[role="main"]'
+        ]
+        
+        for selector in semantic_selectors:
+            try:
+                elements = soup.select(selector)
+                for element in elements:
+                    content = self._extract_text_from_container(element)
+                    if len(content) > 300:  # Minimum content length
+                        return content
+            except:
+                continue
+        
+        return ""
+    
+    def _extract_by_content_density(self, soup: BeautifulSoup) -> str:
+        """Find content by analyzing text density in different page regions"""
+        
+        # Get all divs and sections that might contain content
+        candidates = soup.find_all(['div', 'section', 'article'], recursive=True)
+        
+        best_candidate = None
+        best_density = 0
+        
+        for candidate in candidates:
+            # Skip small elements
+            total_text = candidate.get_text(strip=True)
+            if len(total_text) < 200:
+                continue
+            
+            # Calculate text density (text per HTML element)
+            child_elements = len(candidate.find_all())
+            if child_elements == 0:
+                continue
+                
+            density = len(total_text) / child_elements
+            
+            # Bonus for paragraph-rich content
+            paragraphs = candidate.find_all('p')
+            if paragraphs:
+                avg_para_length = sum(len(p.get_text(strip=True)) for p in paragraphs) / len(paragraphs)
+                if 50 < avg_para_length < 500:  # Good paragraph length range
+                    density *= 1.5
+            
+            # Penalty for too many links or images
+            links = len(candidate.find_all('a'))
+            images = len(candidate.find_all('img'))
+            if links + images > child_elements * 0.3:
+                density *= 0.7
+            
+            if density > best_density:
+                best_density = density
+                best_candidate = candidate
+        
+        if best_candidate and best_density > 5:  # Minimum density threshold
+            return self._extract_text_from_container(best_candidate)
+        
+        return ""
+    
+    def _extract_text_from_container(self, container) -> str:
+        """Extract clean text from a content container"""
+        if not container:
+            return ""
+        
+        # Remove unwanted nested elements
+        for element in container(['script', 'style', 'nav', 'aside', 'footer', 'header',
+                                'div[class*="ad"]', 'div[class*="social"]', 'div[class*="share"]',
+                                'div[class*="related"]', 'div[class*="comment"]', 'form']):
+            element.decompose()
+        
+        # Get text from paragraphs and headings primarily
+        text_parts = []
+        
+        # Extract headings (but not too many)
+        headings = container.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+        heading_texts = []
+        for heading in headings[:3]:  # Limit to first 3 headings
+            h_text = heading.get_text(strip=True)
+            if h_text and len(h_text) > 10 and len(h_text) < 200:
+                heading_texts.append(h_text)
+        
+        # Extract paragraphs
+        paragraphs = container.find_all('p')
+        para_texts = []
+        for para in paragraphs:
+            p_text = para.get_text(strip=True)
+            # Filter out short paragraphs and likely navigation/metadata
+            if (p_text and len(p_text) > 30 and 
+                not any(word in p_text.lower() for word in ['copyright', 'subscribe', 'follow us', 'share this', 'read more'])):
+                para_texts.append(p_text)
+        
+        # Combine headings and paragraphs
+        if heading_texts:
+            text_parts.extend(heading_texts)
+        if para_texts:
+            text_parts.extend(para_texts)
+        
+        # If we didn't get enough from paragraphs, try other elements
+        if len(' '.join(text_parts)) < 200:
+            other_elements = container.find_all(['div', 'span', 'section'])
+            for elem in other_elements:
+                # Only direct text, not nested
+                direct_text = ''.join(elem.find_all(text=True, recursive=False)).strip()
+                if direct_text and len(direct_text) > 50:
+                    text_parts.append(direct_text)
+        
+        full_text = ' '.join(text_parts)
+        
+        # Clean up the text
+        full_text = re.sub(r'\s+', ' ', full_text)  # Normalize whitespace
+        full_text = re.sub(r'[\r\n]+', ' ', full_text)  # Remove line breaks
+        
+        return full_text.strip()
+    
+    def _extract_basic_content(self, soup: BeautifulSoup) -> str:
+        """Fallback basic content extraction"""
+        # Find all paragraphs and filter by quality
+        paragraphs = soup.find_all('p')
+        if paragraphs:
+            text_parts = []
+            for p in paragraphs:
+                text = p.get_text(strip=True)
+                if (text and len(text) > 40 and  # Longer paragraphs
+                    not any(word in text.lower() for word in ['cookie', 'privacy', 'subscribe', 'newsletter'])):
+                    text_parts.append(text)
+            
+            if len(text_parts) >= 3:  # Need at least 3 good paragraphs
+                return ' '.join(text_parts)
+        
+        return ""
+    
+    def _try_google_news_redirect(self, url: str) -> str:
+        """Try multiple strategies to resolve Google News URLs to actual article URLs"""
+        try:
+            # Strategy 1: Try with minimal headers first
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1'
+            }
+            
+            response = self.session.get(url, headers=headers, allow_redirects=True, timeout=10)
+            
+            # Check if we got redirected to a real news site
+            final_url = response.url
+            if (final_url != url and 
+                'google.com' not in final_url and
+                len(final_url) > 20 and
+                any(domain in final_url for domain in 
+                    ['yahoo.com', 'reuters.com', 'cnn.com', 'bbc.com', 'marketwatch.com',
+                     'bloomberg.com', 'wsj.com', 'fortune.com', 'cnbc.com', 'ap.com',
+                     'washingtonpost.com', 'nytimes.com', 'businessinsider.com', 'forbes.com',
+                     'benzinga.com', 'seekingalpha.com', 'fool.com', 'zacks.com'])):
+                return final_url
+            
+            # Strategy 2: Try to parse HTML for canonical URL or actual article link
+            if response.status_code == 200:
+                from bs4 import BeautifulSoup
+                soup = BeautifulSoup(response.content, 'html.parser')
+                
+                # Look for canonical URL
+                canonical = soup.find('link', rel='canonical')
+                if canonical and canonical.get('href'):
+                    canonical_url = canonical['href']
+                    if ('google.com' not in canonical_url and 
+                        any(domain in canonical_url for domain in 
+                            ['yahoo.com', 'reuters.com', 'cnn.com', 'bbc.com', 'marketwatch.com',
+                             'bloomberg.com', 'wsj.com', 'fortune.com', 'cnbc.com'])):
+                        return canonical_url
+                
+                # Look for article links in the page
+                article_links = soup.find_all('a', href=True)
+                for link in article_links:
+                    href = link['href']
+                    if (href.startswith('http') and 
+                        'google.com' not in href and
+                        any(domain in href for domain in 
+                            ['yahoo.com', 'reuters.com', 'cnn.com', 'bbc.com', 'marketwatch.com',
+                             'bloomberg.com', 'wsj.com', 'fortune.com', 'cnbc.com'])):
+                        return href
+        
+        except Exception:
+            pass
+        
+        return None
+    
+    def _extract_urls_from_decoded_text(self, decoded_text: str) -> str:
+        """Extract valid news URLs from decoded Google News text"""
+        try:
+            import re
+            url_pattern = r'https?://[^\s<>"\'`]+'
+            urls = re.findall(url_pattern, decoded_text)
+            
+            for url in urls:
+                # Skip Google URLs and look for actual news sites
+                if ('google.com' not in url and 
+                    any(domain in url for domain in 
+                        ['yahoo.com', 'reuters.com', 'cnn.com', 'bbc.com', 'marketwatch.com',
+                         'bloomberg.com', 'wsj.com', 'fortune.com', 'cnbc.com', 'ap.com',
+                         'washingtonpost.com', 'nytimes.com', 'businessinsider.com', 'forbes.com',
+                         'benzinga.com', 'seekingalpha.com', 'fool.com', 'zacks.com', 'thetradable.com'])):
+                    return url
+            
+            # If no recognized news site, return first non-Google URL
+            for url in urls:
+                if 'google.com' not in url and len(url) > 20:
+                    return url
+                    
+        except Exception:
+            pass
+        
+        return None
+    
+    def _resolve_google_news_url(self, google_news_url: str) -> str:
+        """Resolve Google News URL to actual article URL using improved strategies"""
+        try:
+            # Use the improved Google News resolver
+            from google_news_resolver import GoogleNewsResolver
+            resolver = GoogleNewsResolver(debug=self.debug)
+            resolved_url = resolver.resolve_url(google_news_url)
+            return resolved_url
+        except ImportError:
+            # Fallback to original method if resolver not available
+            return self._resolve_google_news_url_fallback(google_news_url)
+        except Exception as e:
+            if self.debug:
+                print(f"    Improved resolver failed: {e}, falling back to original method")
+            return self._resolve_google_news_url_fallback(google_news_url)
+    
+    def _resolve_google_news_url_fallback(self, google_news_url: str) -> str:
+        """Fallback Google News URL resolution method"""
+        # Track resolution attempt
+        self.track_url_resolution_attempt("Google News")
+        
+        try:
+            import base64
+            import urllib.parse
+            
+            # Extract the encoded part from URL
+            parts = google_news_url.split('/articles/')
+            if len(parts) > 1:
+                encoded_part = parts[1].split('?')[0]  # Remove query params
+                
+                if self.debug:
+                    print(f"      Trying fallback decode: {encoded_part[:50]}...")
+                
+                # Enhanced Base64 decode attempts with more methods
+                decode_methods = [
+                    # Method 1: CBM prefix handling + Base64
+                    lambda x: self._try_cbm_decode(x),
+                    # Method 2: Standard Base64 with padding
+                    lambda x: base64.b64decode(x + '=' * (4 - len(x) % 4), validate=True),
+                    # Method 3: Base64 without validation
+                    lambda x: base64.b64decode(x, validate=False),
+                    # Method 4: URL decode + Base64
+                    lambda x: base64.b64decode(urllib.parse.unquote(x), validate=False),
+                    # Method 5: Base64URL (URL-safe base64)
+                    lambda x: base64.b64decode(x.replace('-', '+').replace('_', '/') + '=' * (4 - len(x.replace('-', '+').replace('_', '/')) % 4)),
+                ]
+                
+                for i, decode_func in enumerate(decode_methods):
+                    try:
+                        decoded_bytes = decode_func(encoded_part)
+                        decoded_text = decoded_bytes.decode('utf-8', errors='ignore')
+                        decoded_url = self._extract_urls_from_decoded_text(decoded_text)
+                        if decoded_url:
+                            if self.debug:
+                                print(f"      SUCCESS: Method {i+1} decoded to: {decoded_url}")
+                            # Track successful resolution
+                            self.track_url_resolution_success("Google News")
+                            return decoded_url
+                    except Exception as e:
+                        if self.debug and i < 2:  # Only show first few failures to avoid spam
+                            print(f"      Method {i+1} failed: {e}")
+                        continue
+                
+                if self.debug:
+                    print(f"      All decode methods failed, trying Selenium approach...")
+                
+                # Use Selenium for JavaScript-based redirects (Google News requires JS)
+                if self.debug:
+                    print(f"      Using Selenium for Google News redirect...")
+                
+                try:
+                    page_source, final_url = self.make_request_with_selenium(
+                        google_news_url, 
+                        wait_for_selector="body",  # Wait for page to load
+                        wait_timeout=10,  # Longer timeout for redirects
+                        enable_javascript=True
+                    )
+                except Exception as selenium_error:
+                    if self.debug:
+                        print(f"      Selenium error: {selenium_error}")
+                    page_source, final_url = None, None
+                
+                if page_source and final_url and final_url != google_news_url:
+                    # Check if we got redirected to a real news site
+                    news_domains = [
+                        'yahoo.com', 'reuters.com', 'cnn.com', 'bbc.com', 'marketwatch.com',
+                        'bloomberg.com', 'wsj.com', 'fortune.com', 'cnbc.com', 'ap.com',
+                        'washingtonpost.com', 'nytimes.com', 'businessinsider.com', 'forbes.com',
+                        'benzinga.com', 'seekingalpha.com', 'fool.com', 'zacks.com', 
+                        'carboncredits.com', 'newser.com', 'thetradable.com', 'thehill.com',
+                        'usatoday.com', 'abcnews.go.com', 'cbsnews.com', 'nbcnews.com'
+                    ]
+                    
+                    if ('google.com' not in final_url and
+                        len(final_url) > 25 and
+                        any(domain in final_url for domain in news_domains)):
+                        if self.debug:
+                            print(f"      SUCCESS: Selenium redirect to: {final_url}")
+                        self.track_url_resolution_success("Google News")
+                        return final_url
+                
+                # Fallback to HTTP approach if Selenium didn't work
+                if self.debug:
+                    print(f"      Selenium failed, trying HTTP approach...")
+                
+                headers = {
+                    'User-Agent': self.get_random_user_agent(),
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                    'Accept-Encoding': 'gzip, deflate',
+                    'Connection': 'keep-alive',
+                    'Referer': 'https://news.google.com/',
+                    'Upgrade-Insecure-Requests': '1',
+                    'Cache-Control': 'no-cache'
+                }
+                
+                response = self.session.get(google_news_url, headers=headers, allow_redirects=True, timeout=15)
+                
+                # Enhanced domain list
+                news_domains = [
+                    'yahoo.com', 'reuters.com', 'cnn.com', 'bbc.com', 'marketwatch.com',
+                    'bloomberg.com', 'wsj.com', 'fortune.com', 'cnbc.com', 'ap.com',
+                    'washingtonpost.com', 'nytimes.com', 'businessinsider.com', 'forbes.com',
+                    'benzinga.com', 'seekingalpha.com', 'fool.com', 'zacks.com', 
+                    'carboncredits.com', 'newser.com', 'thetradable.com', 'thehill.com',
+                    'usatoday.com', 'abcnews.go.com', 'cbsnews.com', 'nbcnews.com'
+                ]
+                
+                # Check if we got redirected to a real news site
+                final_url = response.url
+                if (final_url != google_news_url and 
+                    'google.com' not in final_url and
+                    len(final_url) > 25 and
+                    any(domain in final_url for domain in news_domains)):
+                    if self.debug:
+                        print(f"      SUCCESS: HTTP redirect to: {final_url}")
+                    # Track successful resolution
+                    self.track_url_resolution_success("Google News")
+                    return final_url
+                
+                # Parse HTML for links if no redirect
+                if response.status_code == 200:
+                    soup = BeautifulSoup(response.content, 'html.parser')
+                    
+                    # Look for canonical URL
+                    canonical = soup.find('link', rel='canonical')
+                    if canonical and canonical.get('href'):
+                        canonical_url = canonical['href']
+                        if ('google.com' not in canonical_url and 
+                            any(domain in canonical_url for domain in news_domains)):
+                            if self.debug:
+                                print(f"      SUCCESS: Canonical URL found: {canonical_url}")
+                            # Track successful resolution
+                            self.track_url_resolution_success("Google News")
+                            return canonical_url
+                    
+                    # Look for article links in the page (expanded search)
+                    for link in soup.find_all('a', href=True)[:30]:  # Check more links
+                        href = link['href']
+                        if (href.startswith('http') and 
+                            'google.com' not in href and
+                            len(href) > 25 and
+                            any(domain in href for domain in news_domains)):
+                            if self.debug:
+                                print(f"      SUCCESS: Article link found: {href}")
+                            # Track successful resolution
+                            self.track_url_resolution_success("Google News")
+                            return href
+        
+        except Exception as e:
+            if self.debug:
+                print(f"    Fallback Google News URL resolution failed: {e}")
+        
+        return None
+    
+    def _try_cbm_decode(self, encoded_part: str) -> bytes:
+        """Handle CBM-prefixed Google News URLs"""
+        if encoded_part.startswith('CBM'):
+            # Remove CBM prefix and decode the rest
+            without_prefix = encoded_part[3:]
+            return base64.b64decode(without_prefix + '=' * (4 - len(without_prefix) % 4))
+        else:
+            # Standard decode
+            return base64.b64decode(encoded_part + '=' * (4 - len(encoded_part) % 4))
+    
+    def enhance_article_data(self, article_data: 'SentimentData') -> 'SentimentData':
+        """Enhance article data by fetching full article content"""
+        if not article_data.url:
+            if self.debug:
+                print(f"    No URL to enhance article")
+            return article_data
+        
+        if self.debug:
+            print(f"    Enhancing article from URL: {article_data.url}")
+            print(f"    Original text length: {len(article_data.text)} chars")
+        
+        # Pre-resolve Google News URLs before newspaper3k processing
+        effective_url = article_data.url
+        if 'news.google.com' in article_data.url and '/articles/' in article_data.url:
+            if self.debug:
+                print(f"    Pre-resolving Google News redirect...")
+            resolved_url = self._resolve_google_news_url(article_data.url)
+            if resolved_url and resolved_url != article_data.url:
+                effective_url = resolved_url
+                if self.debug:
+                    print(f"    SUCCESS: Resolved to: {effective_url}")
+            else:
+                if self.debug:
+                    print(f"    Could not resolve Google News URL, skipping enhancement")
+                # Don't waste time trying newspaper3k on unresolved Google URLs
+                return article_data
+            
+        full_text = self.fetch_full_article(effective_url)
+        
+        if full_text and len(full_text) > len(article_data.text):
+            # Store the raw extracted text for debugging/verification
+            article_data.raw_extracted_text = full_text
+            
+            # Combine title/summary with full article
+            original_length = len(article_data.text)
+            enhanced_text = f"{article_data.text} {full_text}"
+            article_data.text = enhanced_text
+            
+            if self.debug:
+                print(f"    SUCCESS Enhanced! Original: {original_length} -> Enhanced: {len(article_data.text)} chars")
+                print(f"    Enhancement added {len(full_text)} chars of article content")
+        elif self.debug:
+            if not full_text:
+                print(f"    X No article content extracted")
+            else:
+                print(f"    X Extracted content ({len(full_text)} chars) not longer than original ({len(article_data.text)} chars)")
+            
+        return article_data

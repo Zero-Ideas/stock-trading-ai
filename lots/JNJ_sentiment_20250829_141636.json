@@ -1,0 +1,422 @@
+{
+  "symbol": "JNJ",
+  "company_name": "Johnson Johnson",
+  "analysis_timestamp": "2025-08-29T14:16:36.265529",
+  "total_sources_analyzed": 37,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.039,
+    "average_compound": 0.153
+  },
+  "sentiment_distribution": {
+    "positive": 14,
+    "neutral": 20,
+    "negative": 3,
+    "positive_percentage": 37.8,
+    "negative_percentage": 8.1
+  },
+  "stock_context": {
+    "current_price": 6481.4,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Bloomberg": 4,
+    "Seeking Alpha": 8,
+    "Google News": 15,
+    "MarketWatch": 10
+  },
+  "sample_articles": [
+    {
+      "text": "Freedom Investment Management Inc. Sells 1,396 Shares of Johnson & Johnson $JNJ - MarketBeat. Freedom Investment Management Inc. Sells 1,396 Shares of Johnson & Johnson $JNJ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.915,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T18:54:44",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQTBFWDFWN0ZPTy1EaV9qRWlVSHU1MjY3ZGk1MjMyTnE4dVJyeW1RTFhKckZCTHhlODJ5MnBfZ01uOXJDNHFhdkpMd2xqRzlQZGM3U0tHZ1pGQzI2cmFzT3B0ak9RbE9TdnlFdnZxWXZveEdnTmR6dnBpY21tc3VhTklKMUMtYllGU0JGYjdrNzRJcTNXYXRNQmFkMmJ3TkdWd1J3Yk5pLV9kWXZYM2Z5RnRyMzItRktOaDRUejktRUJwU2ZRVEZpR3ZTc3pFRTVucmc?oc=5"
+    },
+    {
+      "text": "Health Care Stocks Climb on Rate Cute Hopes -- Health Care Roundup",
+      "source": "MarketWatch",
+      "sentiment_score": 0.904,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T08:16:11.504867",
+      "url": "https://www.marketwatch.com/story/health-care-stocks-climb-on-rate-cute-hopes-health-care-roundup-828a00c8?mod=mw_quote_news"
+    },
+    {
+      "text": "Health Care Up After J&J Earnings - Health Care Roundup",
+      "source": "MarketWatch",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T11:16:11.505866",
+      "url": "https://www.marketwatch.com/story/health-care-up-after-j-j-earnings-health-care-roundup-4cb0b67a?mod=mw_quote_news"
+    },
+    {
+      "text": "Johnson & Johnson Gets Speedy FDA Review of TAR-200 in Bladder Cancer",
+      "source": "MarketWatch",
+      "sentiment_score": -0.66,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T13:16:11.505866",
+      "url": "https://www.marketwatch.com/story/johnson-johnson-gets-speedy-fda-review-of-tar-200-in-bladder-cancer-ab8bb618?mod=mw_quote_news"
+    },
+    {
+      "text": "Johnson & Johnson: The Worst Is Baked In",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.625,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T18:16:17.079598",
+      "url": "https://seekingalpha.com/article/4801981-johnson-and-johnson-the-worst-is-baked-in#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Caisse DE Depot ET Placement DU Quebec Boosts Holdings in Johnson & Johnson $JNJ - MarketBeat. Caisse DE Depot ET Placement DU Quebec Boosts Holdings in Johnson & Johnson $JNJ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:05:55",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWVRORGZ6OERFUXNfNHlrMVNoa3ZZYURSMDR1OFdWMFBBTWpidjJWamJadG9pYzUzRnBGQ1lyUUlDV0M3N2Y2aHlZUUlta1I4RU54QnZEY0hiNzNVMUJWRUh6ZmJiN3gweXR2dWxQZU1UWGtocjhyZG1PMlNSdUxPeTBxU2F6elR2SDdLSkM4bTExOWsxVWNUcTJhSkFXYlBaLTQxbER5dnV4TXJMRk1yVGJZcVJHSmRrSUFKOFdJM1VaQ0JVRVVpQzNqTWZjS1F4REhrOUVGT21vX0lQ?oc=5"
+    },
+    {
+      "text": "South Plains Financial Inc. Sells 1,397 Shares of Johnson & Johnson $JNJ - MarketBeat. South Plains Financial Inc. Sells 1,397 Shares of Johnson & Johnson $JNJ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:00:54",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWnYxLWhTU2h6SkgxbmJ4UFIzOVFSNURfQjhXSjZEbkd4NFpZYUtVWklBOVExSGg0UFVYM0lXS2g0aUtMZVQ0eTlhU3R6TVF4bjlOWkJhR3laQ0JBaFR3eUN6VDY3OUhRYTRKX1VSbFF2R2NqZWtsZWN0cmp0WU5QT1RUOHU1a3pNRkczbWlJQXF0c041dXl5Mk15a2lOckd2eWVqVWRkcjZNVlJBYXhicGNBMEYxNU8tTVdtSEt6OA?oc=5"
+    },
+    {
+      "text": "Johnson & Johnson $JNJ Shares Sold by Corebridge Financial Inc. - MarketBeat. Johnson & Johnson $JNJ Shares Sold by Corebridge Financial Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T18:55:13",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVVUxWF9mNEZ5MUtjdFlURWc5NW9sMW5OMWhTYkY0YzVMUnVmc3hZeFp0RW1rWmxpby1ZLTdQM25DT0NpNngyX243c1lITUxqRzliZC1RTkVnbWhvRmJMR2hVV1ZqV1BiNjhFeklhRnJ0aVlWbnpTamJOTzJtQUh6aVZJYzRYUko3SkhVak1mbmh6ZTJ2dGRpcVdQdTFtaUQwaHEwRW40ay1Vc3RpcUsyZnJ0ajZJaHZ3QW9VcmtTejZyS2JOWkJhTEE1U2ZvQQ?oc=5"
+    },
+    {
+      "text": "Johnson & Johnson $JNJ Shares Sold by Lansforsakringar Fondforvaltning AB publ - MarketBeat. Johnson & Johnson $JNJ Shares Sold by Lansforsakringar Fondforvaltning AB publ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:35:59",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd0pCYzI5bVJIaWpoUnVVbWFxQWRvS240M00yU2U4OVczSGFrZGxnWTRkME1qOEs1VlVNWGFaenlpd1BMY05IcEpOLWVUSTU0ZnNaVWlHZXFXZlZ2NDk5Szh1QjdoOHB0UDJXNTVXT2lsWHFIek1RRlZWTng5cGNjc1lpd1JhemhfQkw0MGZ6cUYzZzhHSEF0LUN6bnNCWW8tMU1hU3JKY0tQczJ2M0F3ZlR1WXFkNnlRV09tQ2xGWlJTaldDZ0sxQ2JmZjN2ZmdTZ1E?oc=5"
+    },
+    {
+      "text": "HealthcareHealthcare Stocks Are ‘Priced at Panic Levels.’ It’s Time to Buy.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.511,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T21:16:11.503861",
+      "url": "https://www.barrons.com/articles/healthcare-stocks-drug-prices-lilly-abbvie-925c0877?mod=mw_quote_news"
+    },
+    {
+      "text": "Health Care Roundup: Market Talk",
+      "source": "MarketWatch",
+      "sentiment_score": 0.494,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T13:16:11.505866",
+      "url": "https://www.wsj.com/health/health-care-roundup-market-talk-e857b88e?mod=mw_quote_news"
+    },
+    {
+      "text": "Johnson & Johnson: Patience Will Be Rewarded",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.494,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T19:16:17.079598",
+      "url": "https://seekingalpha.com/article/4798325-johnson-and-johnson-patience-will-be-rewarded#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Johnson & Johnson Q2 Earnings Review: This Is As Safe As Pharma Investing Gets",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.44,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T14:16:17.079598",
+      "url": "https://seekingalpha.com/article/4801629-johnson-and-johnson-q2-earnings-review-this-is-as-safe-as-pharma-investing-gets#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Back To Basics: Why I Favor Amgen Over Johnson & Johnson",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.402,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T10:16:17.078596",
+      "url": "https://seekingalpha.com/article/4813785-back-to-basics-why-i-favor-amgen-over-johnson-and-johnson#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Why Johnson & Johnson (JNJ) is a Top Dividend Stock for Your Portfolio - Yahoo Finance. Why Johnson & Johnson (JNJ) is a Top Dividend Stock for Your Portfolio&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-06T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PNzhyMUFpNXNoN3BTV295ME0wSG1HaW5MUVAzRHBTdmhUVmhzcXVOZHg1c1lYdTAzOTlvQi1WZlJLTWY1MzNhRkFBQkxxWVM3Y3dCakNNbmlMSGRNYkViYU9oN0tscEFPQldfVHFxcDlsa3hYZEk1TUxCRXpqdw?oc=5"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T07:16:29.799691",
+      "url": "https://www.bloomberg.com/quote/JNJ:US"
+    },
+    {
+      "text": "CompaniesBuy Graham Holdings Stock. Its Parts Are Worth More Than the Whole.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.226,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T02:16:11.505866",
+      "url": "https://www.barrons.com/articles/buy-graham-holdings-stock-price-pick-c3b18dbe?mod=mw_quote_news"
+    },
+    {
+      "text": "How Is Johnson & Johnson’s Stock Performance Compared To Other Healthcare Stocks? - Barchart.com. How Is Johnson & Johnson’s Stock Performance Compared To Other Healthcare Stocks?&nbsp;&nbsp;Barchart.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T06:53:22",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYk1lbUVsMExhZ0tTckNYVjJJTzZFZjk2VWxpNFJwd2VleHR5M0M3MU54YlRiVE1wLU80WHB3ZGJCekR3azExMDhyMVhoLV9SZU4xUVREcG9rVFR5anpsc0tEdm16M0dBU01ISEZUdjVvR2puOWRPWTRWZTYwUTRCcU9xLVpkb0RGUHk0UFhIY0luOHZ1MExKcUluWWRuOUxJTExEWkpReWNDWDJtU3ZYcUFQbWtmMlZvMlJxUW44WQ?oc=5"
+    },
+    {
+      "text": "Johnson & Johnson (JNJ) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo Finance. Johnson & Johnson (JNJ) Is a Trending Stock: Facts to Know Before Betting on It&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:00:05",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPb09vdXQyUTVBUEpDRjQxYnd2dUZ2R3ZLV09TOGN5b0VpRXJRb1hXeWJmdmVOYUZ6YWUwUXJneTNFcEJXSVJMb0R5ZHN3azJFQm9Sb0RuMWgxV3JVWG1iUndickNlTEZSUGY2RThDUTg2OUwwcE5yRVcyRGdfYUVReHdNelVsYTQ?oc=5"
+    },
+    {
+      "text": "How Is Johnson & Johnson’s Stock Performance Compared to Other Healthcare Stocks? - MSN. How Is Johnson & Johnson’s Stock Performance Compared to Other Healthcare Stocks?&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:50:53",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQUkF4U3lxYWVnLTNVMlE4VWRCdmJKSmNjZklEZHJ6STFVS2FnbVhhWmFpQ0V4a1BMSzlHdkU1cFNKUDNKaGVza1UwSGplcG1xdkswZm80SUdlRUpxU21VTnlDdVpuZG44WHRWc21wbzU1WThoaG8xMlRUZnVFVjV1NkRqa095MjlYNU5sZ2xGMlF2XzhnYi1hSU9uYk4wc0pFSVNXS3M4NHEzMUZTUWIwTTJfelk0WU9uVm9ZQkZLaEFneFBPYkpoR3dkLUs?oc=5"
+    },
+    {
+      "text": "What's Going On With Johnson & Johnson Stock Friday? - Johnson & Johnson (NYSE:JNJ) - Benzinga. What's Going On With Johnson & Johnson Stock Friday? - Johnson & Johnson (NYSE:JNJ)&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:21:48",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZ19vYTJwbXpUX1JObWdrSFVxaHB1RTdWRHdLX0xLWW5lOGhsdzVRcjdrTmRxVG96a2htV0Y5ZTRnWGdkNWJMeUtmVFdvM2hjZTlSdnp4OUlyNzFhRUVXOGhXVnBtOWZsSVNabmgwbGhsM0Fkem5kQW5WNzlXeVFhZ2gybF9USnl4NHY1T0p3d1M1QnNFNDg0U2x6V0s4OXA5aE4zR0dNZnZza2NtSk1xV2VWd0pSb1B0?oc=5"
+    },
+    {
+      "text": "Major Stock Sale by Johnson & Johnson’s CEO! - TipRanks. Major Stock Sale by Johnson & Johnson’s CEO!&nbsp;&nbsp;TipRanks",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T02:47:28",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSFl5NmhBdkJrbFB5TFhlNVZ6RkRpRDF3ZE4zVVFvVzVSb1FJbi15ZVlFMmhhekNkcFpNSEQxVi1FMk9NRHRvdkdtYnlId2J0S1ZKZ180bmltb2lSeDFsb3FBUTJwY1NhOW1vY19CdTVfSC1uSXh4RzNTVVd3U3Q1bkRIZ1BBNXdlZXN0WFVtMHROWUpDRzRMNThZXzVDS3l5eFFiUw?oc=5"
+    },
+    {
+      "text": "If You Invested $10K In Johnson & Johnson Stock 10 Years Ago, How Much Would You Have Now? - Yahoo Finance. If You Invested $10K In Johnson & Johnson Stock 10 Years Ago, How Much Would You Have Now?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-09T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSk1Cb04wVlBFcEpOQVJBRVphQXJ0ZVlBSlJNTUp3Y0htQWlCNndHd0NRc0tNTkJfN0lCWHM3c1N5NElDOXlJV0NidTR1Q1VoUURtMDNJZ3F5VUo3bWNXLVZKM1BQejNNb1A0YWVsX3c2QTZsRTBrczZjX3dBS3FJM1MyWlNaSFE?oc=5"
+    },
+    {
+      "text": "Why Is Johnson & Johnson (JNJ) Up 7.2% Since Last Earnings Report? - Yahoo Finance. Why Is Johnson & Johnson (JNJ) Up 7.2% Since Last Earnings Report?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-15T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ablF2cXRKT3BKZUdHckY3V2dwUE4wdjZrUVJNWWpuaHFoeE5hc3NEWi02YjVBMHlEM2FlU0hWWFlLQnoweml5N0Z5Y1ZBNlZ6dzdoMjdEbzdSZ0RFS2xIa09fb0Ywb0F0X3F1UHFhbHZENXRrWkppZEhoSQ?oc=5"
+    },
+    {
+      "text": "Johnson & Johnson $JNJ Stake Reduced by Bank of Hawaii - MarketBeat. Johnson & Johnson $JNJ Stake Reduced by Bank of Hawaii&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T18:54:44",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYlgydVlUc3NPeWtyeFdVT2t2SnFJWUw0UXh0ajdWQmlQWHpBWlBWd3l3cXpibjl0VGU3TVhicW5xRzZRX1JmUmQtdHR1UTFkRWRGaW1KQ1VpaV9hX0x4Y2lpRl8wSDFYby1pT3RyVnA0d3l4U3h0TUtCRkZERWJZdjQySXpxcjZqYjZUek1kLWNSUXFLUU5xa2ZRdXZPVHpReEdQd0RUekRmeTNBYm1GLQ?oc=5"
+    },
+    {
+      "text": "Kayne Anderson Rudnick Investment Management LLC Has $15.61 Million Stake in Johnson & Johnson $JNJ - MarketBeat. Kayne Anderson Rudnick Investment Management LLC Has $15.61 Million Stake in Johnson & Johnson $JNJ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T18:56:43",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQclgxdFNtNjIyTmRtb2RBZXd5c25FT1N6THFxVElSS0phT3lJenA1a2FVYzNzdGVjMzlSS3VvaXRCczU1aS1RQlc5enNLUDRuVFZtZHlUdTZRaTlkTUVVczVVNnhQb043TkQwS3RDWTZhZWp2VDR3UDZjbzBmTGxrbXd0bXFTSldOcDl2eUs5aEtMYV9NTjg2TVUyZTlQZWdUbklrZ3p1S3VnLVpIWndlOU91OGYwUVVNOWQ2MjUzVWY1SGRYaU05Yy1CUTBpanFpdnBRVFVkYWJrOXM2Q2RjenkwcE8yQQ?oc=5"
+    },
+    {
+      "text": "Economy & PolicyEarnings Season Highlights on Tariffs, Consumer Spending, and More",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:16:11.503861",
+      "url": "https://www.barrons.com/articles/earnings-tariffs-stocks-interest-rates-ecb-agriculture-investing-4400f333?mod=mw_quote_news"
+    },
+    {
+      "text": "Barron's8 Undervalued Stocks for a Rocky Market",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T19:16:11.504867",
+      "url": "https://www.barrons.com/articles/8-undervalued-stocks-screen-7c21dc66?mod=mw_quote_news"
+    },
+    {
+      "text": "CorrectedWhy Drug Prices for Some Big Medicines Will Remain High for a Longer Time",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:16:11.504867",
+      "url": "https://www.wsj.com/health/pharma/trump-tax-spending-bill-drug-prices-medicare-5465f4e2?mod=mw_quote_news"
+    },
+    {
+      "text": "Biotech and PharmaMerck Earnings Beat Analyst Estimates. Why the Stock Is Dropping.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:16:11.505866",
+      "url": "https://www.barrons.com/articles/merck-earnings-stock-price-14ee6662?mod=mw_quote_news"
+    },
+    {
+      "text": "Why Johnson & Johnson Stock Still Has Room To Run",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T16:16:17.078596",
+      "url": "https://seekingalpha.com/article/4808465-why-johnson-and-johnson-stock-still-has-room-to-run#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Johnson & Johnson Stock Could Be Waking Up",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:16:17.078596",
+      "url": "https://seekingalpha.com/article/4803175-johnson-and-johnson-stock-could-be-waking-up#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Johnson & Johnson: What To Expect From The Upcoming Q2 Earnings?",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:16:17.079598",
+      "url": "https://seekingalpha.com/article/4800137-johnson-and-johnson-what-to-expect-from-the-upcoming-q2-earnings#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Johnson & Johnson: Undervalued Dividend King With 65% Upside Potential",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T20:16:17.079598",
+      "url": "https://seekingalpha.com/article/4796893-johnson-and-johnson-undervalued-dividend-king-with-65-percent-upside-potential#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Johnson & JohnsonFollowFollowingFollowFollowFollowFollowJNJ:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T08:16:26.778611",
+      "url": ""
+    },
+    {
+      "text": "Johnson & JohnsonFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:16:26.778611",
+      "url": ""
+    },
+    {
+      "text": "Reeves Faces Renewed Calls for Bank Tax, Pulte Ups Cook Scrutiny | The Opening Trade 8/29/2025",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:16:29.799691",
+      "url": "https://www.bloomberg.com/news/videos/2025-08-29/the-opening-trade-8-29-2025-video"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Freedom Investment Management Inc. Sells 1,396 Shares of Johnson & Johnson $JNJ - MarketBeat. Freedom Investment Management Inc. Sells 1,396 Shares of Johnson & Johnson $JNJ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.915,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T18:54:44",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQTBFWDFWN0ZPTy1EaV9qRWlVSHU1MjY3ZGk1MjMyTnE4dVJyeW1RTFhKckZCTHhlODJ5MnBfZ01uOXJDNHFhdkpMd2xqRzlQZGM3U0tHZ1pGQzI2cmFzT3B0ak9RbE9TdnlFdnZxWXZveEdnTmR6dnBpY21tc3VhTklKMUMtYllGU0JGYjdrNzRJcTNXYXRNQmFkMmJ3TkdWd1J3Yk5pLV9kWXZYM2Z5RnRyMzItRktOaDRUejktRUJwU2ZRVEZpR3ZTc3pFRTVucmc?oc=5"
+    },
+    {
+      "text": "Health Care Stocks Climb on Rate Cute Hopes -- Health Care Roundup",
+      "source": "MarketWatch",
+      "sentiment_score": 0.904,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T08:16:11.504867",
+      "url": "https://www.marketwatch.com/story/health-care-stocks-climb-on-rate-cute-hopes-health-care-roundup-828a00c8?mod=mw_quote_news"
+    },
+    {
+      "text": "Health Care Up After J&J Earnings - Health Care Roundup",
+      "source": "MarketWatch",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T11:16:11.505866",
+      "url": "https://www.marketwatch.com/story/health-care-up-after-j-j-earnings-health-care-roundup-4cb0b67a?mod=mw_quote_news"
+    },
+    {
+      "text": "Johnson & Johnson Gets Speedy FDA Review of TAR-200 in Bladder Cancer",
+      "source": "MarketWatch",
+      "sentiment_score": -0.66,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T13:16:11.505866",
+      "url": "https://www.marketwatch.com/story/johnson-johnson-gets-speedy-fda-review-of-tar-200-in-bladder-cancer-ab8bb618?mod=mw_quote_news"
+    },
+    {
+      "text": "Johnson & Johnson: The Worst Is Baked In",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.625,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T18:16:17.079598",
+      "url": "https://seekingalpha.com/article/4801981-johnson-and-johnson-the-worst-is-baked-in#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Caisse DE Depot ET Placement DU Quebec Boosts Holdings in Johnson & Johnson $JNJ - MarketBeat. Caisse DE Depot ET Placement DU Quebec Boosts Holdings in Johnson & Johnson $JNJ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:05:55",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWVRORGZ6OERFUXNfNHlrMVNoa3ZZYURSMDR1OFdWMFBBTWpidjJWamJadG9pYzUzRnBGQ1lyUUlDV0M3N2Y2aHlZUUlta1I4RU54QnZEY0hiNzNVMUJWRUh6ZmJiN3gweXR2dWxQZU1UWGtocjhyZG1PMlNSdUxPeTBxU2F6elR2SDdLSkM4bTExOWsxVWNUcTJhSkFXYlBaLTQxbER5dnV4TXJMRk1yVGJZcVJHSmRrSUFKOFdJM1VaQ0JVRVVpQzNqTWZjS1F4REhrOUVGT21vX0lQ?oc=5"
+    },
+    {
+      "text": "South Plains Financial Inc. Sells 1,397 Shares of Johnson & Johnson $JNJ - MarketBeat. South Plains Financial Inc. Sells 1,397 Shares of Johnson & Johnson $JNJ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:00:54",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWnYxLWhTU2h6SkgxbmJ4UFIzOVFSNURfQjhXSjZEbkd4NFpZYUtVWklBOVExSGg0UFVYM0lXS2g0aUtMZVQ0eTlhU3R6TVF4bjlOWkJhR3laQ0JBaFR3eUN6VDY3OUhRYTRKX1VSbFF2R2NqZWtsZWN0cmp0WU5QT1RUOHU1a3pNRkczbWlJQXF0c041dXl5Mk15a2lOckd2eWVqVWRkcjZNVlJBYXhicGNBMEYxNU8tTVdtSEt6OA?oc=5"
+    },
+    {
+      "text": "Johnson & Johnson $JNJ Shares Sold by Corebridge Financial Inc. - MarketBeat. Johnson & Johnson $JNJ Shares Sold by Corebridge Financial Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T18:55:13",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVVUxWF9mNEZ5MUtjdFlURWc5NW9sMW5OMWhTYkY0YzVMUnVmc3hZeFp0RW1rWmxpby1ZLTdQM25DT0NpNngyX243c1lITUxqRzliZC1RTkVnbWhvRmJMR2hVV1ZqV1BiNjhFeklhRnJ0aVlWbnpTamJOTzJtQUh6aVZJYzRYUko3SkhVak1mbmh6ZTJ2dGRpcVdQdTFtaUQwaHEwRW40ay1Vc3RpcUsyZnJ0ajZJaHZ3QW9VcmtTejZyS2JOWkJhTEE1U2ZvQQ?oc=5"
+    },
+    {
+      "text": "Johnson & Johnson $JNJ Shares Sold by Lansforsakringar Fondforvaltning AB publ - MarketBeat. Johnson & Johnson $JNJ Shares Sold by Lansforsakringar Fondforvaltning AB publ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:35:59",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd0pCYzI5bVJIaWpoUnVVbWFxQWRvS240M00yU2U4OVczSGFrZGxnWTRkME1qOEs1VlVNWGFaenlpd1BMY05IcEpOLWVUSTU0ZnNaVWlHZXFXZlZ2NDk5Szh1QjdoOHB0UDJXNTVXT2lsWHFIek1RRlZWTng5cGNjc1lpd1JhemhfQkw0MGZ6cUYzZzhHSEF0LUN6bnNCWW8tMU1hU3JKY0tQczJ2M0F3ZlR1WXFkNnlRV09tQ2xGWlJTaldDZ0sxQ2JmZjN2ZmdTZ1E?oc=5"
+    },
+    {
+      "text": "HealthcareHealthcare Stocks Are ‘Priced at Panic Levels.’ It’s Time to Buy.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.511,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T21:16:11.503861",
+      "url": "https://www.barrons.com/articles/healthcare-stocks-drug-prices-lilly-abbvie-925c0877?mod=mw_quote_news"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.225,
+    "last_week_average": 0.155,
+    "overall_average": 0.153,
+    "articles_last_24h": 21,
+    "articles_last_week": 34
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

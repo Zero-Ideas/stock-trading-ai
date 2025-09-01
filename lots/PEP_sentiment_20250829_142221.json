@@ -1,0 +1,479 @@
+{
+  "symbol": "PEP",
+  "company_name": "PepsiCo, Inc.",
+  "analysis_timestamp": "2025-08-29T14:22:21.708754",
+  "total_sources_analyzed": 44,
+  "unique_sources_count": 5,
+  "source_diversity_score": 0.62,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.041,
+    "average_compound": 0.178
+  },
+  "sentiment_distribution": {
+    "positive": 18,
+    "neutral": 23,
+    "negative": 3,
+    "positive_percentage": 40.9,
+    "negative_percentage": 6.8
+  },
+  "stock_context": {
+    "current_price": 6480.32,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "MarketWatch": 7,
+    "Bloomberg": 2,
+    "Yahoo Finance": 12,
+    "Google News": 15,
+    "Seeking Alpha": 8
+  },
+  "sample_articles": [
+    {
+      "text": "PepsiCo, Inc. $PEP Shares Bought by Southeast Asset Advisors LLC - MarketBeat. PepsiCo, Inc. $PEP Shares Bought by Southeast Asset Advisors LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.813,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:05:30",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMGFSZUZ0QW5haVlzZFgyTTBWMkV5STkyVGNkdU9uS1hSeHV1Z2tUZEtiaHpaZzJDdkp1QmVSanBBZ3VGLU9VbGV1aGtjX3MwM2ZfSUd1NnpKQW04N2VsYlRiT3YwQ2tudjNrQm1BRG1ESFJWVG82emlIVjJ3SXMtT1pTVUxtZ19VN2h1YUpRcnlYdkNoSV95UnNYRzBSVkNrWmpuTU01ekFSN2FTTWdFOTZ6T1FlaGJzRlNYZDQ1aFZwaXhBNlZFcDRR?oc=5"
+    },
+    {
+      "text": "Rafferty Asset Management LLC Sells 21,318 Shares of PepsiCo, Inc. $PEP - MarketBeat. Rafferty Asset Management LLC Sells 21,318 Shares of PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.813,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:25:57",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeEU0bEpLZlo0cTFjMFk5VnZMWjVXM3lJMzlBczJCYnFVVGRQMml1LVBHUnlwUHU5QmdNX1pZbFlUYzUyQXphYWN6b0M2SnpQVHpITkt3NGwtTjFSMlhhazl0S3ZlSkZyUVBBUzFNMGhqUGVCb1EzSXUzeGdlZ3lwQzBVRWVZSVJ3c0M1ZWhJVUlLLTEzYkxoSG41T01YSzFwWlhidnZ0N2xBaDRDWkM1eVgwUmFDSkM0OVkwZ0FPbDloWTdFTUdn?oc=5"
+    },
+    {
+      "text": "1832 Asset Management L.P. Has $10.68 Million Stock Holdings in PepsiCo, Inc. $PEP - MarketBeat. 1832 Asset Management L.P. Has $10.68 Million Stock Holdings in PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.612,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:19:12",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOck1ic0hYZXJjWEZfdDJ5WnV3SG9fc0k4Mm9uY1h5VjVKUWdld0dGNXR4YVRQZm41WDAwM3NSSjlxOTljTDdza25MQjdUejdoZW9hVXNzS2JCVlBRTGIzRVUweEJnWUd5U212T2E0czNaRmxEVkpoQVBDQ2h0N1JqTjFKX0xaUGV5NUM3RkdwU1A0YkN2djdFNFh3QlMwOTBwdEtfRUVuWWdYQ2tYWktlNXg4M2MtOGZnY284bEh2ODA?oc=5"
+    },
+    {
+      "text": "Celsius Stock Gains More Energy With This $585 Million Deal. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.585,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:21:56.694621",
+      "url": ""
+    },
+    {
+      "text": "Celsius Stock Gains More Energy With This $585 Million Deal",
+      "source": "MarketWatch",
+      "sentiment_score": 0.585,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T13:21:58.588340",
+      "url": "https://www.investors.com/news/celsius-stock-celh-pepsico-rockstar/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "PepsiCo, Inc. $PEP Shares Sold by Synovus Financial Corp - MarketBeat. PepsiCo, Inc. $PEP Shares Sold by Synovus Financial Corp&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:19:11",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaGU2eGxTMG1fWUFIUnViZWxCcElaSWdJa2pIVzBZTmVSTms2UnM1bVd1cHNpcHZ1ZXRDRVdwWDlXWndnRXlzVkV0SmxOQ1c2MDh2YlNfd3ozZHl5eFhaVW45UnZDU1dabmZWVGI3VkpvNGgxU21QbHVfR21Kb1VLd2FHM2Q2R2thdjdjUmp3c3Z5UnNiY0lZYkhWbVpRdjhXOEFKcUFhd3VfSzdKU3BCYkFEM3p6TTJpOWc?oc=5"
+    },
+    {
+      "text": "PepsiCo, Inc. $PEP Shares Sold by Groupe la Francaise - MarketBeat. PepsiCo, Inc. $PEP Shares Sold by Groupe la Francaise&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:21:10",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdE42YXZhcHM4R19JNHBtcFBZcHIxZUt4M0pCdURTc1l2MFFxZDdXZ3FzN1VhZF92dGlIRHhucDd0LTJzcVVIcEwzVnBhUXplN3lsLVgwS1J6ZExTeEtfNjAyUjdUOGRmV01ia19TNTN0UnUzdHpGUVJ3NmlsYkdmR0E1MWd0azJQYk1NZ2Z5NW8tMEZfaVMyOEx5VGNVeUN1dmdxRmtFekZNOXlSXzZISzB2S3RRbVVDUnc?oc=5"
+    },
+    {
+      "text": "ICONIQ Capital LLC Acquires 5,823 Shares of PepsiCo, Inc. $PEP - MarketBeat. ICONIQ Capital LLC Acquires 5,823 Shares of PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:19:20",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUFJxMGRPRUJSLTgzQmVGRDZIa3VLYW0yV1BaTHQtZkY2U3g1bHpTaDNjQlBqZzNOVW1wUEZ5c2VCWFhFM1doMHRSSEpOYktTOUlsLVA0WC1QM01uNlg1RjFpdUNYS1FPbXhXRnFhSmFwMTZhU1R3d2wwWjJYTzdQZkVlT0lCX1BhaWI5WjZUc3FCdk8tYzZFaVE3eHI5RTViVzlTejFDQmxMMV9DMUZDZA?oc=5"
+    },
+    {
+      "text": "Price T Rowe Associates Inc. MD Sells 1,376,759 Shares of PepsiCo, Inc. $PEP - MarketBeat. Price T Rowe Associates Inc. MD Sells 1,376,759 Shares of PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:58:19",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZjVicG9pZFZzb3A2SVpiS0wzcXdFTjNzMmo5SEctUmRVMk8yMlktV3FTOU9jTGtzcFhZTDQzM3IzeXpZbFZaTy11NnRzZHNFYjIzTGxxUE82eEhUSHdNM0JwRTV4WlhxM0Uwd2JZa21TLTgyR3RyTjY2SlV4ZXZzMFFnOW1KdW9LUEFURXhBeUwtR21UbTV3V0czMWsxcGJESS05ZUhXX1dGMHh1REVOaFRUVGlqWERuSHRPY0c3YmZuQWlvMXluX0N5cUQ3WXptdHdib3R4Tnhra2M?oc=5"
+    },
+    {
+      "text": "PepsiCo Boosting Stake in Celsius in Deal Worth $585 Million",
+      "source": "MarketWatch",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:21:58.589365",
+      "url": "https://www.wsj.com/business/retail/pepsico-boosting-stake-in-celsius-in-deal-worth-585-million-0fb0aa81?mod=mw_quote_news"
+    },
+    {
+      "text": "PepsiCo Boosting Stake in Celsius in Deal Worth $585M -- Update",
+      "source": "MarketWatch",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T11:21:58.589365",
+      "url": "https://www.marketwatch.com/story/pepsico-boosting-stake-in-celsius-in-deal-worth-585m-update-edac4044?mod=mw_quote_news"
+    },
+    {
+      "text": "Celsius Holdings (CELH) Expands Partnership With PepsiCo; Acquires Rockstar Energy For US$585M. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.361,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T09:21:56.691035",
+      "url": ""
+    },
+    {
+      "text": "PepsiCo (PEP) Expands Energy Drink Portfolio; New US$585 Million Partnership with Celsius. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.361,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T01:21:56.692033",
+      "url": ""
+    },
+    {
+      "text": "PepsiCo Boosts Stake in Celsius. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.318,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T23:21:56.696126",
+      "url": ""
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T03:22:17.533048",
+      "url": "https://www.bloomberg.com/quote/PEP:US"
+    },
+    {
+      "text": "PepsiCo Charges Ahead With Battery-Electric Big Rigs",
+      "source": "MarketWatch",
+      "sentiment_score": -0.273,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T18:21:58.588340",
+      "url": "https://www.wsj.com/articles/pepsico-charges-ahead-with-battery-electric-big-rigs-d239aeec?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Celsius to Acquire Rockstar Energy in U.S. as Part of Partnership with PepsiCo",
+      "source": "MarketWatch",
+      "sentiment_score": 0.273,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T05:21:58.589365",
+      "url": "https://www.marketwatch.com/story/celsius-to-acquire-rockstar-energy-in-u-s-as-part-of-partnership-with-pepsico-8c5f529c?mod=mw_quote_news"
+    },
+    {
+      "text": "Guggenheim Capital LLC Lowers Position in PepsiCo, Inc. $PEP - MarketBeat. Guggenheim Capital LLC Lowers Position in PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.25,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T11:56:19",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeDdTT3N6NDFzQVhfb0VkaVV1dnlQZjVrOVJxUVM2TlVIdEI0SGpEY0lVdUpCQlZCWjJTa3BIV214UVF3UExEQ2tLWlk1T2FmY19kME1PNDlZUHJaNUVic1VHdDd1NWo2aUIyN2FlX2ZDM0NsQzhVTFZWbHQ5OUtranVEQVZERElITjhKaE05aWF0amdBYURNNlBNcXNpZUtyaHRZd3dtQkJuVS0zZWRJbUVzeWg5ZnM4QXc?oc=5"
+    },
+    {
+      "text": "PepsiCo: The Company's Slowing Volume Sales Show Growth Has Stalled",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.202,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T15:22:04.992075",
+      "url": "https://seekingalpha.com/article/4816745-pepsico-pep-company-slowing-volume-sales-show-growth-stalled#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "PepsiCo: Dividend Supported Buy Amid Valuation Lows And Product Transitions",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.128,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T21:22:04.993082",
+      "url": "https://seekingalpha.com/article/4816684-pepsico-dividend-supported-buy-amid-valuation-lows-and-product-transitions#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "PepsiCo: Continued Share Losses Mandate A Downgrade",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.128,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T03:22:04.993082",
+      "url": "https://seekingalpha.com/article/4816282-pepsico-continued-share-losses-mandate-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Compound Planning Inc. Has $1.16 Million Position in PepsiCo, Inc. $PEP - MarketBeat. Compound Planning Inc. Has $1.16 Million Position in PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:19:14",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcmlTbjRYUXdENTBWd2FvQXRKcFItWUJGS05NaVFrY0ZRc0J2WkdPTUdLcHl2MTBjelJyUV83cUtwU3VMalRWdHBvZTVUQ0p4NkdBUEZpZm96OHdRUkdjSmdOc1ZlSUZQYWFZN3k2Z0E0eko1bDlKWWdWUFlJYkpfZnNKbk5ncDFFbWUxWWNWYk9zOUthejhCX2tFZnBCUzZFSDVZeWY0cjhCNmNRaTFHc2RDbThvVktyZkkzU0FkNA?oc=5"
+    },
+    {
+      "text": "PepsiCo Stock Shows Renewed Momentum: Buy the Rally or Step Back? - Yahoo Finance. PepsiCo Stock Shows Renewed Momentum: Buy the Rally or Step Back?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-12T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSlUwd0J5elBBOUt1TVZ3U19EdGZNMUpEN3h4dTVJTzRJWmJoN1BQTzFNb08wbmw0RU0ybFNiaUNyN21UN2E3d19HWjU5M0k0cDFLLVR6MTE2RVh3SW9yQ2NUUlUzeW1BazhQUEpyMldhU282ZXpJcW1uX2gxUFR3d0YtcUtoRjktemc?oc=5"
+    },
+    {
+      "text": "Celsius Stock Hits 52-Week Highs After Pepsi Increases Stake - Schaeffer's Investment Research. Celsius Stock Hits 52-Week Highs After Pepsi Increases Stake&nbsp;&nbsp;Schaeffer's Investment Research",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T15:00:48",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORzdSbGRmbGpZYlk4VTJ4YmFRSXVHdTVod2RITGFaSi0tc1c2blVfcV9OeGR4N2x1OFVhanNZNWNpa0tXUDRKQmJ3b0tTWW5KLTlPNVBiRHJMWDNwOHotVVdDV2VLdnA5VXdTekI5NXpMcU5xVks0YjR6dVdWcWZHWll1VWVyM3dILTNIcWpDMmQ3aHI3TFg2eXRBR1JCOE5LNVplYTJhUHpWdjV5WHN5UmJTdTlmTUxPZElB?oc=5"
+    },
+    {
+      "text": "Campbell & CO Investment Adviser LLC Grows Stock Holdings in PepsiCo, Inc. $PEP - MarketBeat. Campbell & CO Investment Adviser LLC Grows Stock Holdings in PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T21:21:10",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbUVNYlZPeGxXTjAtTlU2ZGtGZ3gtVjhCRGwyUGlPcTFZWlFOSkhwblZncEVHeU9KSGozZDYwOUU1UFphOFBSV2cxNExvMkFKYzR2MW1hMExyUngtYXRaZUNTeUw5Y0V5SjBfZDljOWZfcVoxSHV6eDN6RVlSTVk4LVhLYWdNR0QtU0RDcnBLcEJZdUR1VGNYdXhMOF9wS0hrUVFULVk2UFZ1MmJob1FtUGNtSU90bEMxLUxhVUFKLXllaUs4WEFidnIyVlI?oc=5"
+    },
+    {
+      "text": "Comerica Bank Trims Stock Position in PepsiCo, Inc. $PEP - MarketBeat. Comerica Bank Trims Stock Position in PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:58:19",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRVFGN0Fwdmx2UmM1VGpsSEFPR1NtOXA3MlItWFZnTE1YbUwwb0JUaXlQckJUZW45b20wY3BTdDBwMnNlNzlCM0pBa2ZQekhhUnhhT1hhTmVMLU9Jd1ViWEtJQ1U1M2pzV3pLYTZzYmE2V0JDNTBrc1phbTROSHBlR0ZTcXVMczhlZDJ6ZkJtdVpNeWwtYk9tLWtRWDZwTWlLWDZIZlZmamNFNk0zTFJVX3hR?oc=5"
+    },
+    {
+      "text": "Gamco Investors INC. ET AL Trims Stake in PepsiCo, Inc. $PEP - MarketBeat. Gamco Investors INC. ET AL Trims Stake in PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:55:09",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZV9yRFhWY1BHSkF4X0R2VHI4alo2MjRxMF9MT21McmZNdFdOTEFCeXFQa0NUVTY2Nm1aU2UybjYzNGprWTNyVDAzam9wVUhBMEVrbjFZVi0tbGhEcnZoampLMFU5cFJMNmxXRFh2SW5TOEVaU25YWHRPSER5VlFkcEhKcVZ0VmxpY24yQkszN1pRcDJqek1tdUtYUjBtZXZHYzBKdUIxYmstQ0tmMDhkY21fTW5rTmZB?oc=5"
+    },
+    {
+      "text": "Gabelli Funds LLC Decreases Position in PepsiCo, Inc. $PEP - MarketBeat. Gabelli Funds LLC Decreases Position in PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:32:15",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdGdSYlN5dzB4Q0prVVM2VXgyMEVoZnp0bXVwOXJUYXBpX2p5WUc2cnRha0FucG85aDgxTlBXSGJSVkQ4SEs3d09DX0hmREdham50OU5DUzBEM2czT0pGM3pCSkQtQmtmQ1V6cUMwV3pJQnFOQjdxemktWGtLVlljTUFzWnZ0WVRxRnlYOXRfdHp6bzJRcGVpNWs1Q29KNTZjbTFqTHM1RjlpZ2tzRkN6U1NmSXlERUk?oc=5"
+    },
+    {
+      "text": "Chip stocks, Caterpillar, PepsiCo & Celsius: Trending Tickers. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T18:21:56.686018",
+      "url": ""
+    },
+    {
+      "text": "PepsiCo Increases Stake in Celsius With $585 Million Deal. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:21:56.687020",
+      "url": ""
+    },
+    {
+      "text": "Sector Update: Consumer Stocks Mixed Late Afternoon. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T05:21:56.688524",
+      "url": ""
+    },
+    {
+      "text": "PepsiCo ups stake in Celsius Holdings. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:21:56.689028",
+      "url": ""
+    },
+    {
+      "text": "Celsius (CELH) Stock Trades Up, Here Is Why. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:21:56.690032",
+      "url": ""
+    },
+    {
+      "text": "Celsius Stock Is Spiking After PepsiCo Increases Stake. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:21:56.693032",
+      "url": ""
+    },
+    {
+      "text": "PepsiCo ups stake in Celsius to 11% with $585M deal. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T23:21:56.694621",
+      "url": ""
+    },
+    {
+      "text": "Celsius Stock Goes From Rock Star to Rockstar. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T01:21:56.696126",
+      "url": ""
+    },
+    {
+      "text": "M&ACelsius Stock Is Spiking After PepsiCo Increases Stake",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T09:21:58.586836",
+      "url": "https://www.barrons.com/articles/celsius-stock-pepsico-stake-e84921c9?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Agricultural CommoditiesThis Meatpacker Stock Is a Quality Buy at a Discount Price",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T18:21:58.589365",
+      "url": "https://www.barrons.com/articles/buy-jbs-stock-price-pick-8f42f412?mod=mw_quote_news"
+    },
+    {
+      "text": "PepsiCo: Revenue Holds Up, But Investors May Look Elsewhere",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T05:22:04.992075",
+      "url": "https://seekingalpha.com/article/4817116-pepsico-revenue-holds-up-but-investors-may-look-elsewhere#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "PepsiCo's Valuation Is Looking 25% Sweeter Compared To Coca-Cola",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:22:04.993082",
+      "url": "https://seekingalpha.com/article/4812501-pepsi-valuation-looking-25-percent-sweeter-compared-to-coca-cola#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "PepsiCo: Traction, But Path To Turnaround Still Bumpy",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T14:22:04.994079",
+      "url": "https://seekingalpha.com/article/4803114-pepsico-traction-but-path-to-turnaround-still-bumpy#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "PepsiCo: Tariff Headwinds Become Apparent (Rating Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:22:04.994079",
+      "url": "https://seekingalpha.com/article/4803648-pepsico-tariff-headwinds-become-apparent-rating-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "PepsiCo: An Undervalued Blue-Chip Stock, A Steady Long-Term Investment",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:22:04.994079",
+      "url": "https://seekingalpha.com/article/4802578-pepsico-pep-undervalued-blue-chip-stock-steady-long-term-investment#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "PepsiCo IncFollowFollowingFollowFollowFollowFollowPEP:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:22:12.033511",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "PepsiCo, Inc. $PEP Shares Bought by Southeast Asset Advisors LLC - MarketBeat. PepsiCo, Inc. $PEP Shares Bought by Southeast Asset Advisors LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.813,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:05:30",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMGFSZUZ0QW5haVlzZFgyTTBWMkV5STkyVGNkdU9uS1hSeHV1Z2tUZEtiaHpaZzJDdkp1QmVSanBBZ3VGLU9VbGV1aGtjX3MwM2ZfSUd1NnpKQW04N2VsYlRiT3YwQ2tudjNrQm1BRG1ESFJWVG82emlIVjJ3SXMtT1pTVUxtZ19VN2h1YUpRcnlYdkNoSV95UnNYRzBSVkNrWmpuTU01ekFSN2FTTWdFOTZ6T1FlaGJzRlNYZDQ1aFZwaXhBNlZFcDRR?oc=5"
+    },
+    {
+      "text": "Rafferty Asset Management LLC Sells 21,318 Shares of PepsiCo, Inc. $PEP - MarketBeat. Rafferty Asset Management LLC Sells 21,318 Shares of PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.813,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:25:57",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeEU0bEpLZlo0cTFjMFk5VnZMWjVXM3lJMzlBczJCYnFVVGRQMml1LVBHUnlwUHU5QmdNX1pZbFlUYzUyQXphYWN6b0M2SnpQVHpITkt3NGwtTjFSMlhhazl0S3ZlSkZyUVBBUzFNMGhqUGVCb1EzSXUzeGdlZ3lwQzBVRWVZSVJ3c0M1ZWhJVUlLLTEzYkxoSG41T01YSzFwWlhidnZ0N2xBaDRDWkM1eVgwUmFDSkM0OVkwZ0FPbDloWTdFTUdn?oc=5"
+    },
+    {
+      "text": "1832 Asset Management L.P. Has $10.68 Million Stock Holdings in PepsiCo, Inc. $PEP - MarketBeat. 1832 Asset Management L.P. Has $10.68 Million Stock Holdings in PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBea...",
+      "source": "Google News",
+      "sentiment_score": 0.612,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:19:12",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOck1ic0hYZXJjWEZfdDJ5WnV3SG9fc0k4Mm9uY1h5VjVKUWdld0dGNXR4YVRQZm41WDAwM3NSSjlxOTljTDdza25MQjdUejdoZW9hVXNzS2JCVlBRTGIzRVUweEJnWUd5U212T2E0czNaRmxEVkpoQVBDQ2h0N1JqTjFKX0xaUGV5NUM3RkdwU1A0YkN2djdFNFh3QlMwOTBwdEtfRUVuWWdYQ2tYWktlNXg4M2MtOGZnY284bEh2ODA?oc=5"
+    },
+    {
+      "text": "Celsius Stock Gains More Energy With This $585 Million Deal. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.585,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:21:56.694621",
+      "url": ""
+    },
+    {
+      "text": "Celsius Stock Gains More Energy With This $585 Million Deal",
+      "source": "MarketWatch",
+      "sentiment_score": 0.585,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T13:21:58.588340",
+      "url": "https://www.investors.com/news/celsius-stock-celh-pepsico-rockstar/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "PepsiCo, Inc. $PEP Shares Sold by Synovus Financial Corp - MarketBeat. PepsiCo, Inc. $PEP Shares Sold by Synovus Financial Corp&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:19:11",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaGU2eGxTMG1fWUFIUnViZWxCcElaSWdJa2pIVzBZTmVSTms2UnM1bVd1cHNpcHZ1ZXRDRVdwWDlXWndnRXlzVkV0SmxOQ1c2MDh2YlNfd3ozZHl5eFhaVW45UnZDU1dabmZWVGI3VkpvNGgxU21QbHVfR21Kb1VLd2FHM2Q2R2thdjdjUmp3c3Z5UnNiY0lZYkhWbVpRdjhXOEFKcUFhd3VfSzdKU3BCYkFEM3p6TTJpOWc?oc=5"
+    },
+    {
+      "text": "PepsiCo, Inc. $PEP Shares Sold by Groupe la Francaise - MarketBeat. PepsiCo, Inc. $PEP Shares Sold by Groupe la Francaise&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:21:10",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdE42YXZhcHM4R19JNHBtcFBZcHIxZUt4M0pCdURTc1l2MFFxZDdXZ3FzN1VhZF92dGlIRHhucDd0LTJzcVVIcEwzVnBhUXplN3lsLVgwS1J6ZExTeEtfNjAyUjdUOGRmV01ia19TNTN0UnUzdHpGUVJ3NmlsYkdmR0E1MWd0azJQYk1NZ2Z5NW8tMEZfaVMyOEx5VGNVeUN1dmdxRmtFekZNOXlSXzZISzB2S3RRbVVDUnc?oc=5"
+    },
+    {
+      "text": "ICONIQ Capital LLC Acquires 5,823 Shares of PepsiCo, Inc. $PEP - MarketBeat. ICONIQ Capital LLC Acquires 5,823 Shares of PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:19:20",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUFJxMGRPRUJSLTgzQmVGRDZIa3VLYW0yV1BaTHQtZkY2U3g1bHpTaDNjQlBqZzNOVW1wUEZ5c2VCWFhFM1doMHRSSEpOYktTOUlsLVA0WC1QM01uNlg1RjFpdUNYS1FPbXhXRnFhSmFwMTZhU1R3d2wwWjJYTzdQZkVlT0lCX1BhaWI5WjZUc3FCdk8tYzZFaVE3eHI5RTViVzlTejFDQmxMMV9DMUZDZA?oc=5"
+    },
+    {
+      "text": "Price T Rowe Associates Inc. MD Sells 1,376,759 Shares of PepsiCo, Inc. $PEP - MarketBeat. Price T Rowe Associates Inc. MD Sells 1,376,759 Shares of PepsiCo, Inc. $PEP&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:58:19",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZjVicG9pZFZzb3A2SVpiS0wzcXdFTjNzMmo5SEctUmRVMk8yMlktV3FTOU9jTGtzcFhZTDQzM3IzeXpZbFZaTy11NnRzZHNFYjIzTGxxUE82eEhUSHdNM0JwRTV4WlhxM0Uwd2JZa21TLTgyR3RyTjY2SlV4ZXZzMFFnOW1KdW9LUEFURXhBeUwtR21UbTV3V0czMWsxcGJESS05ZUhXX1dGMHh1REVOaFRUVGlqWERuSHRPY0c3YmZuQWlvMXluX0N5cUQ3WXptdHdib3R4Tnhra2M?oc=5"
+    },
+    {
+      "text": "PepsiCo Boosting Stake in Celsius in Deal Worth $585 Million",
+      "source": "MarketWatch",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:21:58.589365",
+      "url": "https://www.wsj.com/business/retail/pepsico-boosting-stake-in-celsius-in-deal-worth-585-million-0fb0aa81?mod=mw_quote_news"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.226,
+    "last_week_average": 0.182,
+    "overall_average": 0.178,
+    "articles_last_24h": 31,
+    "articles_last_week": 43
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

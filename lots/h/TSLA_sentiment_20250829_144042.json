@@ -1,0 +1,389 @@
+{
+  "symbol": "TSLA",
+  "company_name": "Tesla",
+  "analysis_timestamp": "2025-08-29T14:40:42.485717",
+  "total_sources_analyzed": 33,
+  "unique_sources_count": 3,
+  "source_diversity_score": 0.38,
+  "overall_sentiment": "Neutral",
+  "sentiment_scores": {
+    "average_polarity": 0.014,
+    "average_compound": 0.011
+  },
+  "sentiment_distribution": {
+    "positive": 12,
+    "neutral": 11,
+    "negative": 10,
+    "positive_percentage": 36.4,
+    "negative_percentage": 30.3
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": 0.17
+  },
+  "sources": {
+    "Yahoo Finance": 12,
+    "Google News": 15,
+    "MarketWatch": 6
+  },
+  "sample_articles": [
+    {
+      "text": "Tesla Stock (TSLA) Weakens as BYD Steals the Spotlight in Europe - TipRanks. Tesla Stock (TSLA) Weakens as BYD Steals the Spotlight in Europe&nbsp;&nbsp;TipRanks",
+      "source": "Google News",
+      "sentiment_score": -0.881,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T11:39:42",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMHUzbFhVOXI4Q0N2Rjh6M3RyTnZ2TUEwZ2ZJLXZVOXNWcHp1RTdtTGdOaVBRbjJ1eUNmc05Fa2J4eS0xNExsbmJvb0V5OENIQmNmZkVqblF2Tl80X3gwc3dVa01KOTVybFBzczRkbDdMYnpFUkEzQ29QcUk2VGN3RGhLbXFUR3lpeHhB?oc=5"
+    },
+    {
+      "text": "Why Tesla Stock is Going Up Today? TSLA Shares Jump to June Highs on Elon Musk’s FSD Optimism - Finance Magnates. Why Tesla Stock is Going Up Today? TSLA Shares Jump to June Highs on Elon Musk’s FSD Optimism&nbsp;&nbsp;Finance Magnates",
+      "source": "Google News",
+      "sentiment_score": 0.805,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T09:31:32",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcHhOOHFLYzJESUNCT1g3VFVIUzJYQ0FXbUFkeFJPdm5uYzFFNFhTVG1OYXpfWjh4YUQtbi1nUWU0ekM2UjNteVVzaVMtNnI0eFZDM2h2N0x0ckljQzdjTWcwM1ZYQUVTb3ZZb2FSNS1rYzc2WkRVOGNSc1NYWU9HSXl6OVdNWENQMF9hWHBNSmNUR3d4aTdxZ3lOSEFsQVBqbWs3VUwyMVUwcmlkdFF4eWtaN1o1SXZ1LUhGWld1RlJTMlFybVo0NkRjUHNkd9IB0wFBVV95cUxPeWM1Q1c1OE93elJYcVYyMWhjQXpLUG42TGY0NGxZenk1Y2I2MDFpbmRhc3daQll1ZlZ1QUhzVTZvanlXa2NfTEF4R2lQdldRbnFCRUthVG5GZnZjTEFBZ2xQTmVNaFBMcWw0MUlZMjF4OUQ0TE9yNzhZblVKZUkxTnZIUGZJbkUyY2lzUmdzS2phM1FlR01RTFM0ZlhJZGZYMmxsOE1PWlRIa1JhVlBpVmtNZDM3a0tzdnhsT1dHekdYTWxuX2V4ZUtINGd2LUZ2d2Nv?oc=5"
+    },
+    {
+      "text": "MarketsWhy Does This Crazy Stock Market Keep Ignoring Jack Bogle’s ‘Iron Rule’?",
+      "source": "MarketWatch",
+      "sentiment_score": -0.665,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T15:40:38.837665",
+      "url": "https://www.barrons.com/articles/stock-market-reversion-to-the-mean-f7b57c1d?mod=mw_quote_news"
+    },
+    {
+      "text": "Tesla’s Stock Is in Trouble, but This Fund Manager Sees a Comeback in 2026 - Morningstar. Tesla’s Stock Is in Trouble, but This Fund Manager Sees a Comeback in 2026&nbsp;&nbsp;Morningstar",
+      "source": "Google News",
+      "sentiment_score": -0.66,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T10:10:18",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeDgtdk5KVUVQMjhzV0pFSmhTUHBseERfSm9ieDBLUkl5ZktkQU9nNk5qaEJRRVI4bU40bzNGazRFYXIzd2hzQ2F2S01yS2FlSkVnWmZLNFcteURUdndEOHhWeFZDa2JhSXoxd2JlcnIyY1owSjdDeUR1ZlRLWWx6aVVLNDNPVWNjeU1VQ3F2aG9ZaXlvZGg5UmF3?oc=5"
+    },
+    {
+      "text": "This Analyst Says Tesla Stock Is Ready to Rip Higher. Should You Buy TSLA Now? - Yahoo Finance. This Analyst Says Tesla Stock Is Ready to Rip Higher. Should You Buy TSLA Now?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.655,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T17:42:33",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeTJ6N0JvNkpMcEdqSHJJcVY2SGs3LW9na3JkcWJHV1gtNnhxVXQ0MWNjQlJ2MkpiZW5RNTVMRjgtM010Y3NzOGR1eTBqMUFZMjRtb3VOUThybWRlNnNSV0R4dTV6ZXR2bVo0czd3bnMtRjBsRzIzU20zQmoxX0RyaEJR?oc=5"
+    },
+    {
+      "text": "Time’s running out to use the EV tax credit. How to shop for an electric car right now without panic buying.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.649,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T14:40:38.835668",
+      "url": "https://www.marketwatch.com/story/times-running-out-to-use-the-ev-tax-credit-how-to-shop-for-an-electric-car-right-now-without-panic-buying-a6abf2bb?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Tesla Stock Drops as Musk’s SEC Battle Takes New Twist. What to Know. - Barron's. Tesla Stock Drops as Musk’s SEC Battle Takes New Twist. What to Know.&nbsp;&nbsp;Barron's",
+      "source": "Google News",
+      "sentiment_score": -0.637,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T20:13:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9lN0lsb0FvNERKRW8tNFdTU2VGUHVoRW1SNy0wSldTNlZyeDZSZ2V1NnJKdG5IMGVMWXJfX2FDYUxyTzBlRDRvZnNjUzVJWVI5Y1NEMmFJdmpra1c1YTFPYlBVZkFZb0NtYklTRzVzN3kydHhPZkd3MzVGczZWQQ?oc=5"
+    },
+    {
+      "text": "Tesla Stock Keeps Climbing Despite All Its Woes: Should You Buy Or Sell TSLA Here? - Barchart.com. Tesla Stock Keeps Climbing Despite All Its Woes: Should You Buy Or Sell TSLA Here?&nbsp;&nbsp;Barchart.com",
+      "source": "Google News",
+      "sentiment_score": 0.634,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T20:32:43",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaUpRN085cjhSQ1FtaGdxZHlUTi1vWGUzUjl5NmpmVld4a2lmOWVaMXQ0UlRaLWJFWFVUa0ZKZXRnVFRZaW5CeHhlQjBlRVhmWWRPTjRNZ3dEeGE1WjdjS3lGbFgySVZPQkpuZDJWbnlkN0NwRDlva0NPaE1KSWkwUFp5czlic3I0QUJTUzl5TDVhOEN4cWdIWkttNi1sekM4MkFVRDgtR092WWY0VFN3WEgzeDBMT2wwVnhFQUdSTzYteDA?oc=5"
+    },
+    {
+      "text": "Tesla's Struggles In China Come At Bad Time: Electric Vehicles Hit 51% Market Share In Most Populous Country. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.586,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T16:40:36.677796",
+      "url": ""
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.582,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T11:40:38.837665",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    },
+    {
+      "text": "Tesla (NASDAQ:TSLA) Shares Down 1.3% - What's Next? - MarketBeat. Tesla (NASDAQ:TSLA) Shares Down 1.3% - What's Next?&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.58,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T18:05:41",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUF9xcXBIbU1yQ0t0eVFPbEFxaEtEUG4ya2FWRFJ3cWw3eGFKeWNfVVBRbmE4OXc5dEJXcldVd0tQazlwWmFnLTZMQlhrN0tPd0ZfOEU3QkRmRElvMVpMYVlWdDlETURJVVRMREVwenI2QXdCVjRZcTRDMjU1OTVSQjUzZmlsaXJ6aUtVbkZUYlFLcjF3ellCYm5iUjk?oc=5"
+    },
+    {
+      "text": "Half of consumers say Tesla’s FSD tech should be illegal. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.557,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T17:40:36.682834",
+      "url": ""
+    },
+    {
+      "text": "Tesla, Inc. (TSLA) “Is A Terrific Buy Here,” Says Jim Cramer. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.477,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T22:40:36.675797",
+      "url": ""
+    },
+    {
+      "text": "Tesla Stock Falls. Be ‘Cautious’ After Gains Warns Analyst. - Barron's. Tesla Stock Falls. Be ‘Cautious’ After Gains Warns Analyst.&nbsp;&nbsp;Barron's",
+      "source": "Google News",
+      "sentiment_score": 0.459,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-26T20:12:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1BVnFoZWZOVnM2cGViQ19QZzNIU2VMWUEtM0Rob3VkNndFanY5S1AxQmw3cmRVem1OZERPYjN2ZW1pOHR3Ui1kS3BzVEs2LTlzdDg1M2hKaEJ5dEltdVRhUnduQW12WXpqU080SEtyN0FIc1c5VmlXc21R?oc=5"
+    },
+    {
+      "text": "Tesla challenges $243 million verdict in Autopilot death trial. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.459,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T03:40:36.683835",
+      "url": ""
+    },
+    {
+      "text": "The Stock Market’s End-of-August Slide Abated a Bit. Breadth Is Improving.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.421,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T05:40:36.685834",
+      "url": ""
+    },
+    {
+      "text": "RegulationSEC Says Its Case Against Musk Is Beyond Dispute",
+      "source": "MarketWatch",
+      "sentiment_score": -0.402,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T00:40:38.836666",
+      "url": "https://www.barrons.com/articles/sec-says-its-case-against-musk-is-beyond-dispute-d39d715d?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Tesla Stock Drops as Musk’s SEC Battle Takes New Twist. What to Know.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.382,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T04:40:36.679301",
+      "url": ""
+    },
+    {
+      "text": "EVsTesla Stock Drops as Musk’s SEC Battle Takes New Twist. What to Know.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.382,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T17:40:38.836666",
+      "url": "https://www.barrons.com/articles/tesla-stock-price-elon-musk-sec-d5811963?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "How ‘Magnificent Seven’ earnings growth in second quarter stacks up against rest of S&P 500",
+      "source": "MarketWatch",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T02:40:38.836666",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/how-magnificent-seven-earnings-growth-in-second-quarter-stacks-up-against-rest-of-s-p-500-hkcje8nQe8S3LweS8MJ0?mod=mw_quote_news"
+    },
+    {
+      "text": "Tesla Stock In Buy Zone As EV Giant Expands 'Robotaxi' Service. Then There's Nvidia. - Investor's Business Daily. Tesla Stock In Buy Zone As EV Giant Expands 'Robotaxi' Service. Then There's Nvidia.&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.202,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T20:06:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRzF5cG5NQVg2VGtfcE5xYUxCYXF0WDQ1eUFDZ1FMaE9rR3hCYlNxc1A3Mm1NeUJmRGxKa3RWY181SzZ0QnhMc01CbTVZcFhGaTV5dTF4WmlmeUg0WHVWMEZ1eUlkTGhuam5OX1U4bC1GMWp0R1J1aTI3a2VWNzdqaEhlSEhwc3BGMWxZSkp6WU9rYmJZZ0VLM0RFMi1aejg?oc=5"
+    },
+    {
+      "text": "Gold pushes to highs, BYD profit drop, Tesla stock extends losses. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.128,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T08:40:36.670287",
+      "url": ""
+    },
+    {
+      "text": "Tesla Banks On Nvidia For Autonomous Driving. This Is What Nvidia Said On The Earnings Call. - Investor's Business Daily. Tesla Banks On Nvidia For Autonomous Driving. This Is What Nvidia Said On The Earnings Call.&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:49:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRWlMUUNublRuSUUzRTYzc3lUeEdOeFpnRWg4Tzc3bWNZaF93NktjVjhVdkZYNU9qTnFTMVlrTVZXdlNoVW1IaGV0ZmsxdUZ5em40Z05OX0g5U1djdEZrMWtoS1VaUHp3d3luMkpzMG4yOVQwbUhDY2w4MW1vZUdyS1ZTeHdrcDdLUzZJSjV3eHNRdUZFb3Z2d1NOdVRRUWYydHc?oc=5"
+    },
+    {
+      "text": "TSLA: Tesla Stock Slips as European Sales Plunge 40% - Yahoo Finance. TSLA: Tesla Stock Slips as European Sales Plunge 40%&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:01:13",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNUJlejhjRk5BRFplOEdUMy16TGU1Rzg3RWVRRWcweldiM0loZlVFODNRU3RKWHRaSjVObHhrNzVKNHpIREluTnZjcVNyMk9QeEdFc0pyRFAxQ3h5a3ZDWmlibV9PU1E5YzBQbHNIbXpqejZJYmRmUTdvek52MFowdWFSRQ?oc=5"
+    },
+    {
+      "text": "TSLA: Tesla Stock Nears Breakout as China Sales Slide Weigh on Outlook - TradingView. TSLA: Tesla Stock Nears Breakout as China Sales Slide Weigh on Outlook&nbsp;&nbsp;TradingView",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T21:14:15",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQS19USldkY1lhOW5sSUZqaTNXMjQtenRrcUY1dnpvREhsZm9sNUJraGJmaXRKeGxDMTk3Zm52VTNlNE04WHBmMmxRY1cxV3pwNVpJbjZoNXVjSU40YWdsQmxVX3ZaN01wYzdjaVpYNkh0QlJWZ0w2QkFXNnp4RWZiZ1Q3OTVMZURYTE1sM0hTRDhPc0E2bkhnbWlDTDREYi1CNTl2SlVTMXM2aURXUFdDWXl5dm5URnplUHE1WEg5ZUJ3RHpUMERZUw?oc=5"
+    },
+    {
+      "text": "What's Going On With Tesla Stock Today? - Tesla (NASDAQ:TSLA) - Benzinga. What's Going On With Tesla Stock Today? - Tesla (NASDAQ:TSLA)&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T16:12:42",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLUZoLVFQQ2h4SnBrc2wxRGZqdm5zSnQ1SDU1QUtwU3BWUzRER0tsLXN3UDZwOG9Pcy0zSnB6LXoxcGVkbUZQY0FWUEdjd3MwNGc0RWNxVXduSHZmMzVZTzdZdjBUZV9WUDZhMFdmNS1MaHBtdXBuSDNjeUs2eWt4VWpEM2Z4X2FHTG8xVi05T0c3Uk5jZlByMEhxSDlONGRpenc?oc=5"
+    },
+    {
+      "text": "What's Going On With Tesla Stock Today? - Benzinga. What's Going On With Tesla Stock Today?&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T20:50:32",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaHZHdWNTME9qYmprZ0tScEJVMWNicHFGWnBVRWNPcUJEYm9hV3E5S19lYmp0ZmM4TmJhWjlkU2g2STVETmMyLWpoRXBheklyaGxxRGxLb3ZRVEZYLXFCZFlXVG9hQU9MUXVRNHRJYVVpREUxX1NJcWhVQjUtZmVWUElBeGZvYXh2Tno0Um91NVc5SGowUF9zOVYycllMbTQ5cHc?oc=5"
+    },
+    {
+      "text": "Tesla (NASDAQ: TSLA) Stock Price Prediction and Forecast 2025-2030 (Aug 28) - 24/7 Wall St.. Tesla (NASDAQ: TSLA) Stock Price Prediction and Forecast 2025-2030 (Aug 28)&nbsp;&nbsp;24/7 Wall St.",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:50:09",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRzVhcmhETDUtejlITU15LTdIbGFER2JLaDJTLWROZDhhZ2Nkb1liVFpwZXQ4VXI0bUx4MEhWdTZ4NEtCX2dGTFhQTGd1SUNReGljbHBZQXFqV3cta2RiMFhsUExFdmZVbTV1WWFqOGE1ZEtjOFhkeWRJaE1qMGRXaGUyejVnRTUwU2RCQQ?oc=5"
+    },
+    {
+      "text": "Tesla reveals Model Y Performance trim for Europe, where sales are tanking. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:40:36.670287",
+      "url": ""
+    },
+    {
+      "text": "Why Tesla (TSLA) Shares Are Trading Lower Today. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T14:40:36.672798",
+      "url": ""
+    },
+    {
+      "text": "Tesla Rival BYD Reports Earnings Tumble 30%. The Stock Is Selling Off.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T01:40:36.673795",
+      "url": ""
+    },
+    {
+      "text": "Dow Jones Futures: Alibaba News Hits Nvidia, AI Stocks. Why This Isn't DeepSeek 2.0.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:40:36.674795",
+      "url": ""
+    },
+    {
+      "text": "Tesla Banks On Nvidia For Autonomous Driving. This Is What Nvidia Said On The Earnings Call.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T20:40:36.680325",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Tesla Stock (TSLA) Weakens as BYD Steals the Spotlight in Europe - TipRanks. Tesla Stock (TSLA) Weakens as BYD Steals the Spotlight in Europe&nbsp;&nbsp;TipRanks",
+      "source": "Google News",
+      "sentiment_score": -0.881,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T11:39:42",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMHUzbFhVOXI4Q0N2Rjh6M3RyTnZ2TUEwZ2ZJLXZVOXNWcHp1RTdtTGdOaVBRbjJ1eUNmc05Fa2J4eS0xNExsbmJvb0V5OENIQmNmZkVqblF2Tl80X3gwc3dVa01KOTVybFBzczRkbDdMYnpFUkEzQ29QcUk2VGN3RGhLbXFUR3lpeHhB?oc=5"
+    },
+    {
+      "text": "Why Tesla Stock is Going Up Today? TSLA Shares Jump to June Highs on Elon Musk’s FSD Optimism - Finance Magnates. Why Tesla Stock is Going Up Today? TSLA Shares Jump to June Highs on Elon Musk’s FSD O...",
+      "source": "Google News",
+      "sentiment_score": 0.805,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T09:31:32",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcHhOOHFLYzJESUNCT1g3VFVIUzJYQ0FXbUFkeFJPdm5uYzFFNFhTVG1OYXpfWjh4YUQtbi1nUWU0ekM2UjNteVVzaVMtNnI0eFZDM2h2N0x0ckljQzdjTWcwM1ZYQUVTb3ZZb2FSNS1rYzc2WkRVOGNSc1NYWU9HSXl6OVdNWENQMF9hWHBNSmNUR3d4aTdxZ3lOSEFsQVBqbWs3VUwyMVUwcmlkdFF4eWtaN1o1SXZ1LUhGWld1RlJTMlFybVo0NkRjUHNkd9IB0wFBVV95cUxPeWM1Q1c1OE93elJYcVYyMWhjQXpLUG42TGY0NGxZenk1Y2I2MDFpbmRhc3daQll1ZlZ1QUhzVTZvanlXa2NfTEF4R2lQdldRbnFCRUthVG5GZnZjTEFBZ2xQTmVNaFBMcWw0MUlZMjF4OUQ0TE9yNzhZblVKZUkxTnZIUGZJbkUyY2lzUmdzS2phM1FlR01RTFM0ZlhJZGZYMmxsOE1PWlRIa1JhVlBpVmtNZDM3a0tzdnhsT1dHekdYTWxuX2V4ZUtINGd2LUZ2d2Nv?oc=5"
+    },
+    {
+      "text": "MarketsWhy Does This Crazy Stock Market Keep Ignoring Jack Bogle’s ‘Iron Rule’?",
+      "source": "MarketWatch",
+      "sentiment_score": -0.665,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T15:40:38.837665",
+      "url": "https://www.barrons.com/articles/stock-market-reversion-to-the-mean-f7b57c1d?mod=mw_quote_news"
+    },
+    {
+      "text": "Tesla’s Stock Is in Trouble, but This Fund Manager Sees a Comeback in 2026 - Morningstar. Tesla’s Stock Is in Trouble, but This Fund Manager Sees a Comeback in 2026&nbsp;&nbsp;Morningstar",
+      "source": "Google News",
+      "sentiment_score": -0.66,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T10:10:18",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeDgtdk5KVUVQMjhzV0pFSmhTUHBseERfSm9ieDBLUkl5ZktkQU9nNk5qaEJRRVI4bU40bzNGazRFYXIzd2hzQ2F2S01yS2FlSkVnWmZLNFcteURUdndEOHhWeFZDa2JhSXoxd2JlcnIyY1owSjdDeUR1ZlRLWWx6aVVLNDNPVWNjeU1VQ3F2aG9ZaXlvZGg5UmF3?oc=5"
+    },
+    {
+      "text": "This Analyst Says Tesla Stock Is Ready to Rip Higher. Should You Buy TSLA Now? - Yahoo Finance. This Analyst Says Tesla Stock Is Ready to Rip Higher. Should You Buy TSLA Now?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.655,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T17:42:33",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOeTJ6N0JvNkpMcEdqSHJJcVY2SGs3LW9na3JkcWJHV1gtNnhxVXQ0MWNjQlJ2MkpiZW5RNTVMRjgtM010Y3NzOGR1eTBqMUFZMjRtb3VOUThybWRlNnNSV0R4dTV6ZXR2bVo0czd3bnMtRjBsRzIzU20zQmoxX0RyaEJR?oc=5"
+    },
+    {
+      "text": "Time’s running out to use the EV tax credit. How to shop for an electric car right now without panic buying.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.649,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T14:40:38.835668",
+      "url": "https://www.marketwatch.com/story/times-running-out-to-use-the-ev-tax-credit-how-to-shop-for-an-electric-car-right-now-without-panic-buying-a6abf2bb?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Tesla Stock Drops as Musk’s SEC Battle Takes New Twist. What to Know. - Barron's. Tesla Stock Drops as Musk’s SEC Battle Takes New Twist. What to Know.&nbsp;&nbsp;Barron's",
+      "source": "Google News",
+      "sentiment_score": -0.637,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T20:13:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9lN0lsb0FvNERKRW8tNFdTU2VGUHVoRW1SNy0wSldTNlZyeDZSZ2V1NnJKdG5IMGVMWXJfX2FDYUxyTzBlRDRvZnNjUzVJWVI5Y1NEMmFJdmpra1c1YTFPYlBVZkFZb0NtYklTRzVzN3kydHhPZkd3MzVGczZWQQ?oc=5"
+    },
+    {
+      "text": "Tesla Stock Keeps Climbing Despite All Its Woes: Should You Buy Or Sell TSLA Here? - Barchart.com. Tesla Stock Keeps Climbing Despite All Its Woes: Should You Buy Or Sell TSLA Here?&nbsp;&nbsp;Barchar...",
+      "source": "Google News",
+      "sentiment_score": 0.634,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T20:32:43",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaUpRN085cjhSQ1FtaGdxZHlUTi1vWGUzUjl5NmpmVld4a2lmOWVaMXQ0UlRaLWJFWFVUa0ZKZXRnVFRZaW5CeHhlQjBlRVhmWWRPTjRNZ3dEeGE1WjdjS3lGbFgySVZPQkpuZDJWbnlkN0NwRDlva0NPaE1KSWkwUFp5czlic3I0QUJTUzl5TDVhOEN4cWdIWkttNi1sekM4MkFVRDgtR092WWY0VFN3WEgzeDBMT2wwVnhFQUdSTzYteDA?oc=5"
+    },
+    {
+      "text": "Tesla's Struggles In China Come At Bad Time: Electric Vehicles Hit 51% Market Share In Most Populous Country. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.586,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T16:40:36.677796",
+      "url": ""
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.582,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T11:40:38.837665",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": -0.064,
+    "last_week_average": 0.011,
+    "overall_average": 0.011,
+    "articles_last_24h": 10,
+    "articles_last_week": 33
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Low",
+    "data_recency": "Current"
+  }
+}

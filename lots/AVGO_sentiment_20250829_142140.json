@@ -1,0 +1,390 @@
+{
+  "symbol": "AVGO",
+  "company_name": "Broadcom Inc.",
+  "analysis_timestamp": "2025-08-29T14:21:40.548876",
+  "total_sources_analyzed": 33,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": -0.026,
+    "average_compound": 0.145
+  },
+  "sentiment_distribution": {
+    "positive": 12,
+    "neutral": 18,
+    "negative": 3,
+    "positive_percentage": 36.4,
+    "negative_percentage": 9.1
+  },
+  "stock_context": {
+    "current_price": 6481.4,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Seeking Alpha": 8,
+    "Bloomberg": 3,
+    "Google News": 15,
+    "MarketWatch": 7
+  },
+  "sample_articles": [
+    {
+      "text": "ChipsNvidia Stock Slips. Why Wall Street Still Loves the Shares.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.71,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T11:21:14.220606",
+      "url": "https://www.barrons.com/articles/nvidia-stock-price-earnings-ai-bubble-7af2de97?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Broadcom Q3 Preview: Anticipating Strong Networking Business Growth",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.71,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T14:21:20.115551",
+      "url": "https://seekingalpha.com/article/4812352-broadcom-q3-preview-anticipating-strong-networking-business-growth#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Broadcom: No More Room For Disappointment",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.697,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T22:21:20.115551",
+      "url": "https://seekingalpha.com/article/4813101-broadcom-no-more-room-for-disappointment#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Broadcom Inc. Stock (AVGO) Opinions on AI Growth and Analyst Upgrades - Quiver Quantitative. Broadcom Inc. Stock (AVGO) Opinions on AI Growth and Analyst Upgrades&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T17:38:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQzJJTUlKcTRSZnVONGtBN1Q2WmlHelFySDBERDlQQ0Rkb21qV3FTOElZWmlSbU1nTS1OYXR6SHM5Nl9VcERUeTRxbGJaR3QzeDlMV19ybkVLaTZSQUNHOGVkSUdxbXAwM0JUREtyWG1kVkRuVmdaUXpZd3R5Q3A0djZOSDFuV0JlMFM1UUtXcXpsdXRfU2hmX1hxWDlDUWZBMkM4Q2E2eHAwUQ?oc=5"
+    },
+    {
+      "text": "Dear Broadcom Stock Fans, Mark Your Calendars For September 4 - Barchart.com. Dear Broadcom Stock Fans, Mark Your Calendars For September 4&nbsp;&nbsp;Barchart.com",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T20:10:07",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTEdrekZXM1NXWnBxalZySEotMXR4eFpJRlFpbFVVRm9QTlR0RzNYUlYzenhPOWVsWnd3VUY3Tk4wVkZYSFJwVzhMWWIzX1BlazRJV0w5VW5WOU9jXzdFZnhyYThlNTlob1o5dF9LUUJ0ankweGkzMW1pSnN6c3ZnY21XYUNOQlFKUHB4LW42OUIyTlBzYW5valFUNVE2S09Sd1VtM2U2T3A?oc=5"
+    },
+    {
+      "text": "Broadcom Inc. Stock (AVGO) Opinions on AI Growth and Market Momentum - Quiver Quantitative. Broadcom Inc. Stock (AVGO) Opinions on AI Growth and Market Momentum&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-13T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc0NFT1RqVGpldGE5VFRiR0FkRGxCNFFVMU9nQTFEVjk2akJ0LUpwOTRicUpUX1ZuQl9aeER3VzZnd2JVQzZ6N2RpQWl6YThTS3hfYThqd2lSZGxTTzFSaDd5dDNZVkpQekV0Sjk5aFkzbnVzajV0YnoyMGtpR3ZUcnpkZWZ0YjQ0dEx3c0dhQVljUHpNYkx2dHZrWmozeDJCZlYxZVBpOTg?oc=5"
+    },
+    {
+      "text": "Broadcom: AI Boom And Innovation To Sustain Growth In The Long Run",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T15:21:20.116552",
+      "url": "https://seekingalpha.com/article/4802351-broadcom-ai-boom-and-innovation-to-sustain-growth-in-the-long-run#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Should You Buy Broadcom Stock Before Sept. 4? The Answer Might Surprise You. - Yahoo Finance. Should You Buy Broadcom Stock Before Sept. 4? The Answer Might Surprise You.&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.551,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T08:15:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1GX3F2QlY2OG9oUThFS1ZRZzJWaEgxc3A0Z0RvOXBDdVVQdXdZTy1sM3FhU1JzcTUyQWF4TkdqZkhZcUljNmt5SG5wMThOdmw3Wk9KWmNBcmtXMXlhMHA2UEhvQ2NCbDdyQ01za1dpVkRfTXFqTWg1Yksxbw?oc=5"
+    },
+    {
+      "text": "Citi Reiterates Buy on Broadcom (AVGO) Amid AI, Wireless Market Optimism - Insider Monkey. Citi Reiterates Buy on Broadcom (AVGO) Amid AI, Wireless Market Optimism&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.542,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:29:05",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNc1lLY2dNdDVJZGdDdEpxQnMteGtvdjU0Y1dzaGhZWHNfVjZxLTFaR3FoYXkyMk96VkJ5NUFDVlpETmxjR0NHQWRxR3BxYzhFRVdMcWRlNVM1WVBsUVN0eG1mcmJDanB0VUoweWVIV0ptS0ZfYlhDZG9wRTBEWE5NSVF6UndsdGNNSkphM0piWmo2aG8zejBWYllzWXBjdE14djlCM0hyUERmbEhfVzgtTnRYTdIBuwFBVV95cUxPZVdHYkV6bDlzM3kxZjB2ZkVpY0dQN0dqaE9RYzFaUWFPU3AxYk1QTFVKdFVqTzdIQUVDdUozVm5NUEF2WDV0WVNiZ2JEY3pYN3NyNlJyeWNGYUVZTWtRYmdlNjFNZHlwRmVOelpLTWY2MnZQY2RRYUxzWEt0bDJzZzE5bUF1dUwzTWpjN0VfWS1YYXJlWGc5TmM4Yi1UTGItTDdEZkJJck1ZZk1rNGc0eDV2T0dfNG5ib3Fz?oc=5"
+    },
+    {
+      "text": "ChipsMarvell Stock Tumbles. Why the AI Chip Player Keeps Disappointing the Market.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T23:21:14.220606",
+      "url": "https://www.barrons.com/articles/marvell-technology-stock-price-earnings-news-331ce67e?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "SiTime Stock Gets Relative Strength Rating Lift",
+      "source": "MarketWatch",
+      "sentiment_score": 0.494,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-26T19:21:14.222606",
+      "url": "https://www.investors.com/news/technology/sitime-stock-gets-relative-strength-rating-lift/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Broadcom Inc. Stock (AVGO) Opinions on AI Sector Growth - Quiver Quantitative. Broadcom Inc. Stock (AVGO) Opinions on AI Sector Growth&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-24T14:04:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdGVCT2xvZWx1QUkxNlB1SFZyd29KcG5wQnhjdEx5amtEbkFyQ3dJaDVROGdTT0FDMW1RbFFrM21DZHAyOC0wT2pnYnlBa0o5eTRvb3dNem04ODE3ckVZdmw4aDNEdmpUQWN4OVpFZHgtNUVJNHlQQWZIRUZLUU5vcmlXR2dMdWpVNXFVNDA0YTFZaWtIb1l3?oc=5"
+    },
+    {
+      "text": "Nvidia's earnings are sending AMD and other chip stocks lower",
+      "source": "MarketWatch",
+      "sentiment_score": -0.296,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T02:21:14.222606",
+      "url": "https://www.marketwatch.com/livecoverage/nvidia-earnings-stock-results-guidance-china-ai-q2/card/nvidia-s-earnings-are-sending-amd-and-other-chip-stocks-lower-1yU4xUArmL2txDTrznb8?mod=mw_quote_news"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T14:21:31.550937",
+      "url": "https://www.bloomberg.com/quote/AVGO:US"
+    },
+    {
+      "text": "Broadcom Inc. (AVGO) Has Gained A Massive 117% After Jim Cramer Criticized Sellers In September - uk.finance.yahoo.com. Broadcom Inc. (AVGO) Has Gained A Massive 117% After Jim Cramer Criticized Sellers In September&nbsp;&nbsp;uk.finance.yahoo.com",
+      "source": "Google News",
+      "sentiment_score": 0.052,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-26T21:21:40",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOU9RZHY2R0hEazJSYjZLcmt1dzJmZEtFVDB6UXFXeW1CSjZXX2ljc2NZcFdSd0FVUHRjcXFTdWRuNDFkbG11X0F6N0lxM2RGb09mSkRpUlViRTNMQkN5WG94azRZRkk4OHEzTGFNd0ktZjRvWGhZZWt6aDJKTndheXFlWi12NEdo?oc=5"
+    },
+    {
+      "text": "What Does Wall Street Think About Broadcom (AVGO), Ahead of its Earnings Release? - uk.finance.yahoo.com. What Does Wall Street Think About Broadcom (AVGO), Ahead of its Earnings Release?&nbsp;&nbsp;uk.finance.yahoo.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:13:08",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYWhvdlYtaEJpcVZtRnFkUnd5VU50QXA0MmNxRXVFZkd0YXhsXzkxRmxTcjcxb0c0aWtvNWJ2aGxqYXlyUXhhYnpiRXF5R1BSX3djc0VKWWhhdVFpclByOTFJaDdiTmNuY3ZPSjBKTFI3SVBSSktsczdNUE5vN29SOXJVejFNZDQ?oc=5"
+    },
+    {
+      "text": "How Will Broadcom Stock React To Its Upcoming Earnings? - Trefis. How Will Broadcom Stock React To Its Upcoming Earnings?&nbsp;&nbsp;Trefis",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T15:11:14",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQzNWcnlPYUpHeDdXX0lBNTZ4OFNURmR1TmNVT05ZVHk4WHAwRWlSd2J0TS01S0ZDNXVvSWhPWDJlRnRacENFYXAtUjlURlgtcW5SMFpEOVltV2xjcUQ1NmY2aWwydXV2TXpDYlBmWkhMaE11cFU0VjdFbFplS2ljNG8wNnhTYXhDVmUxLWtDbVFyaDVVT2VZS1ljMGRWMnVUNEtKY0wxMDE0UHpMcUpOTXdnSUQzZw?oc=5"
+    },
+    {
+      "text": "What Is Going On With Broadcom Stock Thursday? - Broadcom (NASDAQ:AVGO) - Benzinga. What Is Going On With Broadcom Stock Thursday? - Broadcom (NASDAQ:AVGO)&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T14:37:15",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZmFZNE0xTmFqQlJEbXRyTDJaZjA1V2w5OTBiZmthWnhlSGNVZUt0Q3EwRWxDNUFUMVZTLURlVlhBZkRmb2dHWlRuN0VQY0EtQXllWjNIcHNEaEJhNnFkcHJfNTRqVVpOQVBKSzdaVHhnU0s4ZFlNNVZ3czRQWGJ4TmRlSXNfc25sVXM1MnB6NklUZmJfNzJydUU0Ni1uQ3VhSHpmSkZyT0U5dUoweFVmaTQ5cEE?oc=5"
+    },
+    {
+      "text": "Broadcom in focus as UBS sees upside to Q4 guidance (AVGO:NASDAQ) - Seeking Alpha. Broadcom in focus as UBS sees upside to Q4 guidance (AVGO:NASDAQ)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T13:56:20",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTzFERWpBanlWd0Vha3JRWEFBQ05Lb01yTk11Qmx6dHU2X1RkUHlhZC1Ldm40ZGdtdXdhLW9EaHltQTJlMVQ0bEFaLTA5a0lkV3VJSjVsVTUzcldfY3YxN3JXN3dXc040RTF0blJVLTRUS1ZkXzd0eThwbVFNUVY3czBEcUhveGFzZzVDVmpIN0h1Z1E?oc=5"
+    },
+    {
+      "text": "Why Broadcom Inc. (AVGO) Outpaced the Stock Market Today - Yahoo Finance. Why Broadcom Inc. (AVGO) Outpaced the Stock Market Today&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T21:45:02",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNRWRBeVZINVVjaXBaWmpxajBjak13N1VMRURETmhXLS0ySmxSUGZHUHNiRGt4ZlR3c0poQk5rRk16c1VlYS1xRUREN0NjN0Z0WjhTWVBaQ0RSWG12VHdFUHJTTGl2QmJySHJIZ0lUYUFWT2pOUGdLTHI3S1d6OGtRTW9n?oc=5"
+    },
+    {
+      "text": "Broadcom (AVGO) and Canonical Announce An Expanded Collaboration - Insider Monkey. Broadcom (AVGO) and Canonical Announce An Expanded Collaboration&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:26:31",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeDM2R0R3RGpia1dKX0RQY1ZfSnlrN2oyS3EyYlZyQzBtMGh1T3JFNkx0ZmxXVWV5RjdBUGxrSjFDRHUwbmk1NC1MXzlOY05hSVFBUDdkeEExazEzOTZRdzhjZzJlWmpiOE9nVVk0UWJ5d1gwOHV4dy1CVUJuSkktMTJVUmQ5akFnYThmdHBjcU9lZXhtc0hZU3pkTjFNM2VQR1FxMTFKXy04d9IBsgFBVV95cUxQTnpzOGlUcEllOEwtT3llalJ3Qk1QQmRhYXNvV0FyNUZvZjBzLVVtaUZYaWpURnpLOWNCNVR0QThuby05R1BOQTVlZnRFMnJGS21hSjhuSUFYaDJvZnFYYkxEY29OZzd3Q2FDOHY0YUYyMlR3WlR2UXNGNmY1SExwRkMydkV0V3k3R0JNT01GRWdPdTJkVWZMbnhDemJ5Q1FPX2UzZWJHQ044dDFPLWotOUd3?oc=5"
+    },
+    {
+      "text": "UBS Lifts Broadcom (AVGO) Price Target to $345 Ahead of Earnings - Yahoo Finance. UBS Lifts Broadcom (AVGO) Price Target to $345 Ahead of Earnings&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T19:16:31",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVmFtQmRTNFZSY2pUd2tpR2xneEIwOEFiLTVSQk9tVEZZeHBGRG83cmxDSHNiNDZSaERFMlhtUktFYmZDaDdHbTZXSUE2eHlTenNUVkdrQWdhcEJDaFU0MkpEYTRGb3J1QTdNWS1qQjh4a2FuNkFOUmlWTk1WYXBpOA?oc=5"
+    },
+    {
+      "text": "A Combination of Factors Lifted Broadcom (AVGO) in Q2 - Yahoo Finance. A Combination of Factors Lifted Broadcom (AVGO) in Q2&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-06T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTGFqbWtwQTkwV24zaG5iYnFFX3AwcDBNY2xwblhjOTAtZkZUcVRmQ1lldUR5Y1Zzckt2YndLcDJPcllWaVpYYkIzTDFXdFRFLWlhdjNIclJocWZpd1RNTG5mSG03SV9kUEt4UnVRYkVzeEN2SG9WMm9fUDZ3MHJiX0RQcHFBS1duTWlla2JsVQ?oc=5"
+    },
+    {
+      "text": "Broadcom Seen Getting AI Lift In Quarterly Report",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T01:21:14.219606",
+      "url": "https://www.investors.com/news/technology/broadcom-stock-ai-lift-fiscal-q3-earnings-preview/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "ChipsBroadcom Stock Rises After Nvidia Earnings. How the Results Impact the Chip Sector.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T07:21:14.221606",
+      "url": "https://www.barrons.com/articles/broadcom-stock-price-chips-nvidia-earnings-54bc35af?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow Jones Futures Rise; Nvidia Falls On Earnings, Leads Big Movers",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:21:14.221606",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-earnings-snowflake-crowdstrike/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Broadcom: 4 Reasons To Stay Bullish Heading Into The Q3 Report",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T16:21:20.115551",
+      "url": "https://seekingalpha.com/article/4816843-broadcom-4-reasons-to-stay-bullish-heading-into-the-q3-report#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Broadcom: How AI Transformed Its Semicon Business",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T15:21:20.116552",
+      "url": "https://seekingalpha.com/article/4810142-broadcom-how-ai-transformed-its-semicon-business#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Broadcom: Margin Machine Joins Trillion Mega Cap Club",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:21:20.116552",
+      "url": "https://seekingalpha.com/article/4810086-broadcom-margin-machine-joins-trillion-mega-cap-club#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Broadcom: A Key AI Player Will Continue To Grow",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T06:21:20.116552",
+      "url": "https://seekingalpha.com/article/4806610-broadcom-a-key-ai-player-will-continue-to-grow#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Broadcom: The Bishop In The AI Ecosystem",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:21:20.116552",
+      "url": "https://seekingalpha.com/article/4803405-broadcom-the-bishop-in-the-ai-ecosystem#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Broadcom IncFollowFollowingFollowFollowFollowFollowAVGO:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:21:27.902884",
+      "url": ""
+    },
+    {
+      "text": "Broadcom IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T17:21:27.903884",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "ChipsNvidia Stock Slips. Why Wall Street Still Loves the Shares.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.71,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T11:21:14.220606",
+      "url": "https://www.barrons.com/articles/nvidia-stock-price-earnings-ai-bubble-7af2de97?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Broadcom Q3 Preview: Anticipating Strong Networking Business Growth",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.71,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T14:21:20.115551",
+      "url": "https://seekingalpha.com/article/4812352-broadcom-q3-preview-anticipating-strong-networking-business-growth#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Broadcom: No More Room For Disappointment",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.697,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T22:21:20.115551",
+      "url": "https://seekingalpha.com/article/4813101-broadcom-no-more-room-for-disappointment#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Broadcom Inc. Stock (AVGO) Opinions on AI Growth and Analyst Upgrades - Quiver Quantitative. Broadcom Inc. Stock (AVGO) Opinions on AI Growth and Analyst Upgrades&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T17:38:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQzJJTUlKcTRSZnVONGtBN1Q2WmlHelFySDBERDlQQ0Rkb21qV3FTOElZWmlSbU1nTS1OYXR6SHM5Nl9VcERUeTRxbGJaR3QzeDlMV19ybkVLaTZSQUNHOGVkSUdxbXAwM0JUREtyWG1kVkRuVmdaUXpZd3R5Q3A0djZOSDFuV0JlMFM1UUtXcXpsdXRfU2hmX1hxWDlDUWZBMkM4Q2E2eHAwUQ?oc=5"
+    },
+    {
+      "text": "Dear Broadcom Stock Fans, Mark Your Calendars For September 4 - Barchart.com. Dear Broadcom Stock Fans, Mark Your Calendars For September 4&nbsp;&nbsp;Barchart.com",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T20:10:07",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTEdrekZXM1NXWnBxalZySEotMXR4eFpJRlFpbFVVRm9QTlR0RzNYUlYzenhPOWVsWnd3VUY3Tk4wVkZYSFJwVzhMWWIzX1BlazRJV0w5VW5WOU9jXzdFZnhyYThlNTlob1o5dF9LUUJ0ankweGkzMW1pSnN6c3ZnY21XYUNOQlFKUHB4LW42OUIyTlBzYW5valFUNVE2S09Sd1VtM2U2T3A?oc=5"
+    },
+    {
+      "text": "Broadcom Inc. Stock (AVGO) Opinions on AI Growth and Market Momentum - Quiver Quantitative. Broadcom Inc. Stock (AVGO) Opinions on AI Growth and Market Momentum&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-13T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc0NFT1RqVGpldGE5VFRiR0FkRGxCNFFVMU9nQTFEVjk2akJ0LUpwOTRicUpUX1ZuQl9aeER3VzZnd2JVQzZ6N2RpQWl6YThTS3hfYThqd2lSZGxTTzFSaDd5dDNZVkpQekV0Sjk5aFkzbnVzajV0YnoyMGtpR3ZUcnpkZWZ0YjQ0dEx3c0dhQVljUHpNYkx2dHZrWmozeDJCZlYxZVBpOTg?oc=5"
+    },
+    {
+      "text": "Broadcom: AI Boom And Innovation To Sustain Growth In The Long Run",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T15:21:20.116552",
+      "url": "https://seekingalpha.com/article/4802351-broadcom-ai-boom-and-innovation-to-sustain-growth-in-the-long-run#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Should You Buy Broadcom Stock Before Sept. 4? The Answer Might Surprise You. - Yahoo Finance. Should You Buy Broadcom Stock Before Sept. 4? The Answer Might Surprise You.&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.551,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T08:15:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1GX3F2QlY2OG9oUThFS1ZRZzJWaEgxc3A0Z0RvOXBDdVVQdXdZTy1sM3FhU1JzcTUyQWF4TkdqZkhZcUljNmt5SG5wMThOdmw3Wk9KWmNBcmtXMXlhMHA2UEhvQ2NCbDdyQ01za1dpVkRfTXFqTWg1Yksxbw?oc=5"
+    },
+    {
+      "text": "Citi Reiterates Buy on Broadcom (AVGO) Amid AI, Wireless Market Optimism - Insider Monkey. Citi Reiterates Buy on Broadcom (AVGO) Amid AI, Wireless Market Optimism&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.542,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:29:05",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNc1lLY2dNdDVJZGdDdEpxQnMteGtvdjU0Y1dzaGhZWHNfVjZxLTFaR3FoYXkyMk96VkJ5NUFDVlpETmxjR0NHQWRxR3BxYzhFRVdMcWRlNVM1WVBsUVN0eG1mcmJDanB0VUoweWVIV0ptS0ZfYlhDZG9wRTBEWE5NSVF6UndsdGNNSkphM0piWmo2aG8zejBWYllzWXBjdE14djlCM0hyUERmbEhfVzgtTnRYTdIBuwFBVV95cUxPZVdHYkV6bDlzM3kxZjB2ZkVpY0dQN0dqaE9RYzFaUWFPU3AxYk1QTFVKdFVqTzdIQUVDdUozVm5NUEF2WDV0WVNiZ2JEY3pYN3NyNlJyeWNGYUVZTWtRYmdlNjFNZHlwRmVOelpLTWY2MnZQY2RRYUxzWEt0bDJzZzE5bUF1dUwzTWpjN0VfWS1YYXJlWGc5TmM4Yi1UTGItTDdEZkJJck1ZZk1rNGc0eDV2T0dfNG5ib3Fz?oc=5"
+    },
+    {
+      "text": "ChipsMarvell Stock Tumbles. Why the AI Chip Player Keeps Disappointing the Market.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T23:21:14.220606",
+      "url": "https://www.barrons.com/articles/marvell-technology-stock-price-earnings-news-331ce67e?mod=mw_quote_news_topstories"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.08,
+    "last_week_average": 0.134,
+    "overall_average": 0.145,
+    "articles_last_24h": 11,
+    "articles_last_week": 31
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

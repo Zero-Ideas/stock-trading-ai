@@ -1,0 +1,406 @@
+{
+  "symbol": "ABBV",
+  "company_name": "AbbVie Inc.",
+  "analysis_timestamp": "2025-08-29T14:19:28.108172",
+  "total_sources_analyzed": 35,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.089,
+    "average_compound": 0.131
+  },
+  "sentiment_distribution": {
+    "positive": 15,
+    "neutral": 14,
+    "negative": 6,
+    "positive_percentage": 42.9,
+    "negative_percentage": 17.1
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Google News": 14,
+    "MarketWatch": 10,
+    "Bloomberg": 3,
+    "Seeking Alpha": 8
+  },
+  "sample_articles": [
+    {
+      "text": "AbbVie Investors Beware: Strong Growth Potential, Rising Risks (NYSE:ABBV) - Seeking Alpha. AbbVie Investors Beware: Strong Growth Potential, Rising Risks (NYSE:ABBV)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.823,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-23T14:31:16",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbHVEWWs4QWdPT1NNMFJFUi1nOEZsQnJ2QXN3bjFXT3d0NjJQQ1diVXJ2YmJRMHFQbHY5MVh1SjF1c2lWMGdOSC0tVDFkVTVWdkdhclh6NjYwOHRMZ0Y2bHNFUG03MEVKNUVrY1pfYmlCakg1VmduSmhQblVlY3RBWHc3QnE5anF0OVhfLUdGSktrQkJ6Z3VOUDZNSzEyWW93MFlr?oc=5"
+    },
+    {
+      "text": "AbbVie to buy Gilgamesh’s depression program for up to $1.2B (ABBV:NYSE) - Seeking Alpha. AbbVie to buy Gilgamesh’s depression program for up to $1.2B (ABBV:NYSE)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.813,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T13:20:56",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUVFIUkY3ODYwUDdQdmxOazBHdXBEaGx3SWNsNE1LVVJUT29nQkFsRVpycnpXb2JxZTRSYVZrbGx1RDRnYTdJcGlPSUtLOUdkMkNnYWlEZ1c2cWVmdzN6TzdpMzRmZC1FbDhKQVhtSm5LenNXTmk2bGU1cGlJYlVtVjhDRmo5Ty16YnhnX1R0cmlwVC1NMFg1NHpyYw?oc=5"
+    },
+    {
+      "text": "AbbVie to Acquire Gilgamesh Pharmaceuticals' Bretisilocin, a Novel, Investigational Therapy for Major Depressive Disorder, Expanding Psychiatry Pipeline - PR Newswire. AbbVie to Acquire Gilgamesh Pharmaceuticals' Bretisilocin, a Novel, Investigational Therapy for Major Depressive Disorder, Expanding...",
+      "source": "Google News",
+      "sentiment_score": -0.799,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T12:59:00",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOSkhUSUx4R2trT1p3WlFSck91MHZ5RVNXZDR4X2Y3eml4cG5jWEk0UjZqTEVPQy1LcnlISUlwNkNMQkZ4cUtKNTBaSEF6cGZ0ZFN4LUNxbkJVTEtaQlN5ajJ0YWZqakp5NEo0V3NPenphdFBEaTlPTVJFQ2pjVHplaDlmdnlPLUdnaTBHMm9pVWExbDlUNW5yMUdQN0lNUFUtSktDc1pZMmoxdWlMdGJKT19FOXlPakhVMy1VVGZEb3FhQjM5YWQwa3N0a1B5MXRheEZDajFsWGQ1bUtWY1ZGcGoyOEhqQ1ZqemlrcG1ockxtMFZLeFllbGhRQUU0Y282QWxZZ1h4ZjBWa25lNVI3QURycWhSbWszZHlWZlNXMTR0OWJ3T3l4SDNiSWU?oc=5"
+    },
+    {
+      "text": "AbbVie: Plenty Of Positives (NYSE:ABBV) - Seeking Alpha. AbbVie: Plenty Of Positives (NYSE:ABBV)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.778,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T17:24:25",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9SeGczTjJHVHlMRXB3U0o2Q1N2VHNleVE3bXZFQW1icWpnYjFBcEFQOXZha0xRXzBjc3p1c3Q2YVhsSTNFVFpEMmtyLVNGRlR5VG5NYjV4NGpLdnpHUkVUUS1abE1hRFZmLUNweDVfM3c1bEs3THc?oc=5"
+    },
+    {
+      "text": "AbbVie Inc. (ABBV) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance. AbbVie Inc. (ABBV) is Attracting Investor Attention: Here is What You Should Know&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.735,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-05T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeWJHQV82YV91c3o0VVRSN2pVTGJJTlpndzI2MlcyQW1uTzNPRFRxY2RzTGp5cEc3SzF6aXpPSE45NUI5RUotNE5CUXRoQ2RSQ3FJU2h3WmxwVzN5RF9QeEtxY2t4a2xPQ0YwZHBFV3RuS1FHWVp6R1l3MERuMTU1enY4bVJXWXdS?oc=5"
+    },
+    {
+      "text": "AbbVie Inc. (ABBV) Stock Analysis: Unveiling Growth Potential With A 3.11% Dividend Yield - DirectorsTalk Interviews. AbbVie Inc. (ABBV) Stock Analysis: Unveiling Growth Potential With A 3.11% Dividend Yield&nbsp;&nbsp;DirectorsTalk Interviews",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T09:29:29",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQcXc4SjYxMlRvbkk1aEdnZHBaUjdINzJ4TGF4TU1TaUt0WklHYXlrZWdrM0syUnYybFlTeXFhSUlWYmp5NWYtRFkwanZEQUxOdzhncW5KekVRNGNxeFNUQVNWaHN0VGdSeTNndjlDU3J5N0NCNG52c2N3WjU1a3Bua0dyQnRpUGFmeVdwdGhYR3ZXMENDYkhqd2RtSDFaMV8xcTVvNHRmc3duMlkzaVhrZVBDeW1JZ0wyUHdmT3ZwdTE1SlpMU210LWhnalRPMVR6?oc=5"
+    },
+    {
+      "text": "AbbVie Adds More Than $24B in 6 Months: How to Play ABBV Stock - Yahoo Finance. AbbVie Adds More Than $24B in 6 Months: How to Play ABBV Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-06-27T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBCSFNPSmx4UG5aMWZYWGlKbjB5a1hYSVV0OXFnU0dkb0lObGk2bDBxQVhqLXpLc2xLTXJZQjVKSHJWeDU1cFAxRV9ESlFlQXJLUlVMeXBlaUthVTdCWGRFMHZxY2tVa0tfLVdkZkdWeFRqMXFrb2M4?oc=5"
+    },
+    {
+      "text": "AbbVie Investors Beware: Strong Growth Potential, Rising Risks",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:19:10.678931",
+      "url": "https://seekingalpha.com/article/4816232-abbvie-investors-beware-strong-growth-potential-rising-risks#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "AbbVie Smashes Earnings, Bets Big On Depression Drug Bretisilocin",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.572,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T00:19:10.677930",
+      "url": "https://seekingalpha.com/article/4817921-abbvie-smashes-earnings-bets-big-on-depression-drug-bretisilocin#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Sales of Skyrizi, Rinvoq Help AbbVie Results Top Wall Street’s Forecasts",
+      "source": "MarketWatch",
+      "sentiment_score": 0.542,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:19:04.207604",
+      "url": "https://www.wsj.com/business/retail/sales-of-skyrizi-rinvoq-help-abbvie-results-top-wall-streets-forecasts-0595a1e4?mod=mw_quote_news"
+    },
+    {
+      "text": "AbbVie 2Q Results Top Wall Street's Forecasts with Boost from Skyrizi, Rinvoq Sales",
+      "source": "MarketWatch",
+      "sentiment_score": 0.542,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T09:19:04.208605",
+      "url": "https://www.marketwatch.com/story/abbvie-2q-results-top-wall-street-s-forecasts-with-boost-from-skyrizi-rinvoq-sales-4304397f?mod=mw_quote_news"
+    },
+    {
+      "text": "AbbVie: Plenty Of Positives",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T02:19:10.678931",
+      "url": "https://seekingalpha.com/article/4816853-abbvie-plenty-of-positives#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "AbbVie Inc. stock outperforms competitors on strong trading day",
+      "source": "MarketWatch",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T11:19:04.205605",
+      "url": "https://www.marketwatch.com/data-news/abbvie-inc-stock-outperforms-competitors-on-strong-trading-day-d5e47b87-f992e10be3d8?mod=mw_quote_news"
+    },
+    {
+      "text": "HealthcareHealthcare Stocks Are ‘Priced at Panic Levels.’ It’s Time to Buy.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.511,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T00:19:04.206606",
+      "url": "https://www.barrons.com/articles/healthcare-stocks-drug-prices-lilly-abbvie-925c0877?mod=mw_quote_news"
+    },
+    {
+      "text": "AbbVie: Q2 Earnings Warning Reflects Poor R&D, But It's Not A Red Flag",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.412,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T21:19:10.679930",
+      "url": "https://seekingalpha.com/article/4799333-abbvie-q2-earnings-warning-reflects-poor-r-and-d-but-its-not-a-red-flag#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "AbbVie Is A Top Biotech Pick (NYSE:ABBV) - Seeking Alpha. AbbVie Is A Top Biotech Pick (NYSE:ABBV)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-25T13:18:06",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBMNk1vSFZoWkUxaTlnd2JhMFppLXNONEV3dHNncnZ0ZnVBZTZHWFNUQTNwbl9ac2xDb0MtMGRkZ3Z3MmJfY1gtVmQ3cl9QckMtMktWbkNfQXZGeGxDQzV1bnJha2poSkduZXNkZTJjNHBIZw?oc=5"
+    },
+    {
+      "text": "AbbVie: H1 2025 Earnings Strengthen Case For Targeting Gilgamesh Acquisition",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.318,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T08:19:10.678931",
+      "url": "https://seekingalpha.com/article/4812797-abbvie-h1-2025-earnings-strengthen-case-for-targeting-gilgamesh-acquisition#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Biotech and PharmaAbbVie Stock Pops After Earnings. What’s Driving Shares Higher.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T22:19:04.207604",
+      "url": "https://www.barrons.com/articles/abbvie-earnings-stock-price-7f8a0844?mod=mw_quote_news"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T04:19:24.303781",
+      "url": "https://www.bloomberg.com/quote/ABBV:US"
+    },
+    {
+      "text": "AbbVie Is A Top Biotech Pick",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.202,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T20:19:10.678931",
+      "url": "https://seekingalpha.com/article/4816462-abbvie-top-biotech-pick#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Biotech and PharmaTrump Talks Tough on Drug Prices but His Demands Have Softened",
+      "source": "MarketWatch",
+      "sentiment_score": -0.064,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T14:19:04.207604",
+      "url": "https://www.barrons.com/articles/trump-drug-prices-most-favored-nation-35a4f043?mod=mw_quote_news"
+    },
+    {
+      "text": "Investors Heavily Search AbbVie Inc. (ABBV): Here is What You Need to Know - MSN. Investors Heavily Search AbbVie Inc. (ABBV): Here is What You Need to Know&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T17:01:49",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZmtvbTVXU0FOUEdFMDFscUg2YTdmdmNQYkVxR1lGcTIxLWxlcndQWkM4U1NjSmJLcldUUDRZVTVwUXlKa0FSbW16ZWU2Q3lmdExZblRzNlVmdnRQeElMNTZWSXYzNi1KbXc0OHJfMldMMzJHMWQ0Wm5UY3Y0QjlPN3ctdUZBb0dYd0d4VjFpYkNjbGNJdFNpVWpDRjB6Q3RXeHJOWE9RaGJzallDVVVhVmoydUtpNXkxR0t1eDhieFNRQQ?oc=5"
+    },
+    {
+      "text": "ABBV or MRK: Which Stock Should Investors Place Their Bet on in 2025? - The Globe and Mail. ABBV or MRK: Which Stock Should Investors Place Their Bet on in 2025?&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T15:30:52",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdGtjOFNHTndteXBQSlNTVUd2aW5DRHdNMXpuSnYxSUdTemZKOFRrZ0h0dHMxZUExa1d0SG9FOUpKMVBLdjhTZUlGVGxpd2ludFJjVVJRQ2ZXYkdVZEY0UG5TQ3ZtRnNNWGgxS3FYcFNXb2dRU1JLN0JYWXZHSFBkYTMwbk4yeDBoWjhXaHcwNEtSTGo4cUZGMTVGWlVSYmtoRVVNeHZaZFRNZ3dUa0w2SEUzYWQtTWVnV3FRVUxXUDRiYnc3Q05OYlNZS3VQeXpDMzc3amVqWEdnUk1jN0xOXzFteDJGT1U?oc=5"
+    },
+    {
+      "text": "AbbVie’s (ABBV) Fell in Line with the Broader Biopharmaceutical Industry - Yahoo Finance. AbbVie’s (ABBV) Fell in Line with the Broader Biopharmaceutical Industry&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T13:05:59",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUkpHdmxmTmFyQjdFb095U3Z6U0EtbzhwbjZVTmp6S2lwNWQwYU5XVks1MmdlMW1vUTBlekEtN3pqTU8tSXU5NGtuUEpCbjNFanplUmlaSkVsM09COFFPUW5vaW5UMUJPX3JwMV9zOVJMUmtxZXVNWkdUdG44bkJaaQ?oc=5"
+    },
+    {
+      "text": "AbbVie Inc. (ABBV) Is a Trending Stock: Facts to Know Before Betting on It - Nasdaq. AbbVie Inc. (ABBV) Is a Trending Stock: Facts to Know Before Betting on It&nbsp;&nbsp;Nasdaq",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-04-29T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPS2MxX0xRU1VCQU9iRW1OcDlNbnZBQnRIbHVIVVVWeE14VVpZY1djdVY4ZmVySWRreVFDeFJzelFYTE5tcERncExVd2pRbmVPZzdmZy1vR2F5dURJRUMwUVUzZHIyLWJXYXdsd0VYaDhmUklUVjZUSjh1aVNoTFFQb0NBcU44REo5d3JSdG9VSQ?oc=5"
+    },
+    {
+      "text": "Here is What to Know Beyond Why AbbVie Inc. (ABBV) is a Trending Stock - Yahoo Finance. Here is What to Know Beyond Why AbbVie Inc. (ABBV) is a Trending Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-18T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1nemxtLU45Q1ZRa1VCSDJmTmpGTm1HSDhIR3NNM0k2YnhXNGt6OFMyUURIV3Uxb01QejJwOGVpa0FmV0hKbFQ5UWl0UXZ3dm95aU9yWnFEaW41LWF0UW1xdFdKX2RTUm81MFRQbUFWTWRrb0JiNnAya1JSN3U?oc=5"
+    },
+    {
+      "text": "Why AbbVie (ABBV) Stock Is Up Today - Yahoo Finance. Why AbbVie (ABBV) Stock Is Up Today&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-01T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB5cWNDR0UtMmZfUGNINTRFR1JuRjJaSnM1Z3JzOEx5d3VmdnNhQjBnNHlrZ3Z4enlKbjlxaURVTmJPQkJKcFhiaThFdks4aUdKcDR0YWFVdGhTcWEtVDVKbERGTzJNNVVaZllPdnMta0lNWFBlX2FycG9MTHAyUQ?oc=5"
+    },
+    {
+      "text": "AbbVie Inc. stock underperforms Monday when compared to competitors",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T00:19:04.206606",
+      "url": "https://www.marketwatch.com/data-news/abbvie-inc-stock-underperforms-monday-when-compared-to-competitors-dc5237ac-3be88946fbe7?mod=mw_quote_news"
+    },
+    {
+      "text": "AbbVie's Rinvoq Hits Key Endpoints in 2nd Alopecia Areata Phase 3 Study",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T14:19:04.206606",
+      "url": "https://www.marketwatch.com/story/abbvie-s-rinvoq-hits-key-endpoints-in-2nd-alopecia-areata-phase-3-study-68e76df3?mod=mw_quote_news"
+    },
+    {
+      "text": "AbbVie to Invest $195M in New Illinois Manufacturing Plant",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T14:19:04.206606",
+      "url": "https://www.marketwatch.com/story/abbvie-to-invest-195m-in-new-illinois-manufacturing-plant-b1759a08?mod=mw_quote_news"
+    },
+    {
+      "text": "CorrectedWhy Drug Prices for Some Big Medicines Will Remain High for a Longer Time",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:19:04.207604",
+      "url": "https://www.wsj.com/health/pharma/trump-tax-spending-bill-drug-prices-medicare-5465f4e2?mod=mw_quote_news"
+    },
+    {
+      "text": "4 Reasons To Buy AbbVie",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:19:10.679930",
+      "url": "https://seekingalpha.com/article/4803048-4-reasons-to-buy-abbvie#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "AbbVie: Why I Set A $175 Buy Order",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:19:10.679930",
+      "url": "https://seekingalpha.com/article/4801965-abbvie-why-i-set-a-175-buy-order#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "AbbVie IncFollowFollowingFollowFollowFollowFollowABBV:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:19:18.090174",
+      "url": ""
+    },
+    {
+      "text": "AbbVie IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:19:18.090174",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "AbbVie Investors Beware: Strong Growth Potential, Rising Risks (NYSE:ABBV) - Seeking Alpha. AbbVie Investors Beware: Strong Growth Potential, Rising Risks (NYSE:ABBV)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.823,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-23T14:31:16",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbHVEWWs4QWdPT1NNMFJFUi1nOEZsQnJ2QXN3bjFXT3d0NjJQQ1diVXJ2YmJRMHFQbHY5MVh1SjF1c2lWMGdOSC0tVDFkVTVWdkdhclh6NjYwOHRMZ0Y2bHNFUG03MEVKNUVrY1pfYmlCakg1VmduSmhQblVlY3RBWHc3QnE5anF0OVhfLUdGSktrQkJ6Z3VOUDZNSzEyWW93MFlr?oc=5"
+    },
+    {
+      "text": "AbbVie to buy Gilgamesh’s depression program for up to $1.2B (ABBV:NYSE) - Seeking Alpha. AbbVie to buy Gilgamesh’s depression program for up to $1.2B (ABBV:NYSE)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.813,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T13:20:56",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUVFIUkY3ODYwUDdQdmxOazBHdXBEaGx3SWNsNE1LVVJUT29nQkFsRVpycnpXb2JxZTRSYVZrbGx1RDRnYTdJcGlPSUtLOUdkMkNnYWlEZ1c2cWVmdzN6TzdpMzRmZC1FbDhKQVhtSm5LenNXTmk2bGU1cGlJYlVtVjhDRmo5Ty16YnhnX1R0cmlwVC1NMFg1NHpyYw?oc=5"
+    },
+    {
+      "text": "AbbVie to Acquire Gilgamesh Pharmaceuticals' Bretisilocin, a Novel, Investigational Therapy for Major Depressive Disorder, Expanding Psychiatry Pipeline - PR Newswire. AbbVie to Acquire Gilgamesh Phar...",
+      "source": "Google News",
+      "sentiment_score": -0.799,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T12:59:00",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOSkhUSUx4R2trT1p3WlFSck91MHZ5RVNXZDR4X2Y3eml4cG5jWEk0UjZqTEVPQy1LcnlISUlwNkNMQkZ4cUtKNTBaSEF6cGZ0ZFN4LUNxbkJVTEtaQlN5ajJ0YWZqakp5NEo0V3NPenphdFBEaTlPTVJFQ2pjVHplaDlmdnlPLUdnaTBHMm9pVWExbDlUNW5yMUdQN0lNUFUtSktDc1pZMmoxdWlMdGJKT19FOXlPakhVMy1VVGZEb3FhQjM5YWQwa3N0a1B5MXRheEZDajFsWGQ1bUtWY1ZGcGoyOEhqQ1ZqemlrcG1ockxtMFZLeFllbGhRQUU0Y282QWxZZ1h4ZjBWa25lNVI3QURycWhSbWszZHlWZlNXMTR0OWJ3T3l4SDNiSWU?oc=5"
+    },
+    {
+      "text": "AbbVie: Plenty Of Positives (NYSE:ABBV) - Seeking Alpha. AbbVie: Plenty Of Positives (NYSE:ABBV)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.778,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T17:24:25",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9SeGczTjJHVHlMRXB3U0o2Q1N2VHNleVE3bXZFQW1icWpnYjFBcEFQOXZha0xRXzBjc3p1c3Q2YVhsSTNFVFpEMmtyLVNGRlR5VG5NYjV4NGpLdnpHUkVUUS1abE1hRFZmLUNweDVfM3c1bEs3THc?oc=5"
+    },
+    {
+      "text": "AbbVie Inc. (ABBV) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance. AbbVie Inc. (ABBV) is Attracting Investor Attention: Here is What You Should Know&nbsp;&nbsp;Yahoo Fi...",
+      "source": "Google News",
+      "sentiment_score": 0.735,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-05T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeWJHQV82YV91c3o0VVRSN2pVTGJJTlpndzI2MlcyQW1uTzNPRFRxY2RzTGp5cEc3SzF6aXpPSE45NUI5RUotNE5CUXRoQ2RSQ3FJU2h3WmxwVzN5RF9QeEtxY2t4a2xPQ0YwZHBFV3RuS1FHWVp6R1l3MERuMTU1enY4bVJXWXdS?oc=5"
+    },
+    {
+      "text": "AbbVie Inc. (ABBV) Stock Analysis: Unveiling Growth Potential With A 3.11% Dividend Yield - DirectorsTalk Interviews. AbbVie Inc. (ABBV) Stock Analysis: Unveiling Growth Potential With A 3.11% Dividen...",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T09:29:29",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQcXc4SjYxMlRvbkk1aEdnZHBaUjdINzJ4TGF4TU1TaUt0WklHYXlrZWdrM0syUnYybFlTeXFhSUlWYmp5NWYtRFkwanZEQUxOdzhncW5KekVRNGNxeFNUQVNWaHN0VGdSeTNndjlDU3J5N0NCNG52c2N3WjU1a3Bua0dyQnRpUGFmeVdwdGhYR3ZXMENDYkhqd2RtSDFaMV8xcTVvNHRmc3duMlkzaVhrZVBDeW1JZ0wyUHdmT3ZwdTE1SlpMU210LWhnalRPMVR6?oc=5"
+    },
+    {
+      "text": "AbbVie Adds More Than $24B in 6 Months: How to Play ABBV Stock - Yahoo Finance. AbbVie Adds More Than $24B in 6 Months: How to Play ABBV Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-06-27T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBCSFNPSmx4UG5aMWZYWGlKbjB5a1hYSVV0OXFnU0dkb0lObGk2bDBxQVhqLXpLc2xLTXJZQjVKSHJWeDU1cFAxRV9ESlFlQXJLUlVMeXBlaUthVTdCWGRFMHZxY2tVa0tfLVdkZkdWeFRqMXFrb2M4?oc=5"
+    },
+    {
+      "text": "AbbVie Investors Beware: Strong Growth Potential, Rising Risks",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:19:10.678931",
+      "url": "https://seekingalpha.com/article/4816232-abbvie-investors-beware-strong-growth-potential-rising-risks#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "AbbVie Smashes Earnings, Bets Big On Depression Drug Bretisilocin",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.572,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T00:19:10.677930",
+      "url": "https://seekingalpha.com/article/4817921-abbvie-smashes-earnings-bets-big-on-depression-drug-bretisilocin#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Sales of Skyrizi, Rinvoq Help AbbVie Results Top Wall Street’s Forecasts",
+      "source": "MarketWatch",
+      "sentiment_score": 0.542,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:19:04.207604",
+      "url": "https://www.wsj.com/business/retail/sales-of-skyrizi-rinvoq-help-abbvie-results-top-wall-streets-forecasts-0595a1e4?mod=mw_quote_news"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.086,
+    "last_week_average": 0.109,
+    "overall_average": 0.131,
+    "articles_last_24h": 12,
+    "articles_last_week": 30
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

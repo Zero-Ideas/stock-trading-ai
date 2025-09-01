@@ -1,0 +1,414 @@
+{
+  "symbol": "MRK",
+  "company_name": "Merck & Co., Inc.",
+  "analysis_timestamp": "2025-08-29T14:18:01.680453",
+  "total_sources_analyzed": 36,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.067,
+    "average_compound": 0.095
+  },
+  "sentiment_distribution": {
+    "positive": 12,
+    "neutral": 17,
+    "negative": 7,
+    "positive_percentage": 33.3,
+    "negative_percentage": 19.4
+  },
+  "stock_context": {
+    "current_price": 6481.4,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Seeking Alpha": 8,
+    "Google News": 15,
+    "MarketWatch": 10,
+    "Bloomberg": 3
+  },
+  "sample_articles": [
+    {
+      "text": "Leading Pharma Giant Merck's Top Executives to Share Strategic Insights at Wells Fargo Healthcare Conference - Stock Titan. Leading Pharma Giant Merck's Top Executives to Share Strategic Insights at Wells Fargo Healthcare Conference&nbsp;&nbsp;Stock Titan",
+      "source": "Google News",
+      "sentiment_score": 0.84,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T10:47:55",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVDgwWXRQSzN6N0pKbVVSV19ocTgtX1hEQVl2bjlQbDg4Y2EweXFQcEhZOUVGRDNXZjIzeUN5TGZoZml4OUl1MmFnUl9ud1NDLVY3alhIYzQ5Q29hMjljbm5mQjgzTGQteXEyMWt4OUM0Sl9iYk5JcXB6amtwanFDZ3dTVl80MWdkemtPR0VrMEdPRlZLTVAyWUFJeTBhVm1aNHhFRXEtN01QdHdTLXc?oc=5"
+    },
+    {
+      "text": "Shareholders Can Be Confident That Merck's (NYSE:MRK) Earnings Are High Quality - simplywall.st. Shareholders Can Be Confident That Merck's (NYSE:MRK) Earnings Are High Quality&nbsp;&nbsp;simplywall.st",
+      "source": "Google News",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-12T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRjR0TTk1aVd0M0NmckJZNGpoMXFMenVsYTJqa3NnTS1INm1WR0lXMFlpT25DdWttUnBGbE9VQzJRMVJYd1pjNThJZ244a2lNbTg5d3FLaW9YWkNFX2ZiS0JURFc5UFlzQ3ZjU20tNS1ZNi1CY0t2YWFoSkh2SjlUaFNsM0dhVFVpTkxzNWpsc3JHdS1ZRmw0VVNFd1N5OE1xc1hNdjYzRWYxc3d4LW9mSEFXUmI0MnNLbG9ZRHEySlphZnFyNUVLMzl0NUwwdDNHZXfSAdcBQVVfeXFMTlZGTnB0ZDZMM1hZTDZabmtRd3h5bDRtOUFaT01MMnM1ZDdWU2FuVUNjenB4TDFFcUFfdkRXbXA2ZTU4UzQ1UVIyUkc2akktWjV5Zm5HMjVsN0JvSXBDbzdLRXRXa3VadS0xdG9QYlR5Y05CWW1wcEp1Q0hNZG5pVDJHX2xuellZRDA1RVFVbmdyYUdrRFBzQ1NEZFBsUUZ4aFVqRlpKZkNVZ1VreVRpZEc2UERZRnZ2T0h1b0t6TkZJM2RFblZVS01SOFllZ29NaF8xcDJqM1E?oc=5"
+    },
+    {
+      "text": "Exelixis vs. Merck: Which Oncology Stock Is a Better Pick as of Now? - The Globe and Mail. Exelixis vs. Merck: Which Oncology Stock Is a Better Pick as of Now?&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.732,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T13:50:00",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQmktd2JpcUJWdXFaSWxxd2dfOEh2TUxabWtoUzNWVnk2YTFrOWZQODlnOG1BalprdzB2T1pxNXlQaW1EVFItM3ljQldIRzVRX0M4ZHpncVVTbmZVUjFRQTBybVE3dGFHSnFhMDdGUmJud2IwSUVrd0VMZTBiU290RW1RSGNabllobW1nSXkyd2ZWN2l5NTRBR19DMTFfVHlIT085T29PbWZZR0ZRcmxiOWhfS0FWT2VING1hbWpmZHlnNTQxaFRQSjJacy0zc0pBR2VwQ2Y0TnRJblpmTlBIRUJMSXI?oc=5"
+    },
+    {
+      "text": "Merck & Co., Inc. (MRK) Impresses Jim Cramer With Its Toughness - Yahoo Finance. Merck & Co., Inc. (MRK) Impresses Jim Cramer With Its Toughness&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.718,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-15T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1mSWxrMG4yTi1STjdVa0NVMXJ6RDhGWmV1TGpsUW03dTNHVS1XV2hkeEo4clBpSHFwNkxxMy1LQ1VhclowSGNHbzZmeGlldzZJSXBGR0VBdnZOVUh6bDVIVU4yajFMU21QZkQ4VGNhRGpkRk9YWlNnRHREYUk?oc=5"
+    },
+    {
+      "text": "Merck & Co. (MRK) Slid on Weaker Market Sentiment and Concerns About Drug Pipeline - Yahoo Finance. Merck & Co. (MRK) Slid on Weaker Market Sentiment and Concerns About Drug Pipeline&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": -0.7,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-06T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5rZC1JU2puUU9aX1J4OEY2YzRENVlhbFdWMXVBSlJKN3IwbmdGSERZNldZTTR2Tlp1emlOYXZGYnNtajd1amVUVlRKMVVhMEVyQnoyLU9lakNSeS1VSThZb3pJVnRrZFFNOTV3cUVIeFJCRmxtLUFrSENn?oc=5"
+    },
+    {
+      "text": "Merck, Pfizer, Astellas Drug Combo Hits Key Goals in Bladder Cancer",
+      "source": "MarketWatch",
+      "sentiment_score": -0.66,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T00:17:37.586416",
+      "url": "https://www.marketwatch.com/story/merck-pfizer-astellas-drug-combo-hits-key-goals-in-bladder-cancer-139ca146?mod=mw_quote_news"
+    },
+    {
+      "text": "Merck Stock Down 4% Since Q2 Results: How to Play the Stock - Yahoo Finance. Merck Stock Down 4% Since Q2 Results: How to Play the Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-11T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0yNnE2a056bGdKbkR3QkRtUmJnQW5WQnFhb0VRb1pqc3ozbEJVSXJSMFk4V1Fid1NSZVBkejlKUmVnYWdOM3NUbFFzb3dHS2ZoZVpvUE1BM29PWm5RSkJ3UUZDTVhkX3dFQS1JRTJ1Mk9XZVNjZnVDSHF3?oc=5"
+    },
+    {
+      "text": "Dow up 380 points on gains for shares of Boeing, Honeywell",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T18:17:37.586416",
+      "url": "https://www.marketwatch.com/data-news/dow-up-380-points-on-gains-for-shares-of-boeing-honeywell-f9c3d7a7-3120edc5fe02?mod=mw_quote_news"
+    },
+    {
+      "text": "Merck & Co. Inc. stock outperforms competitors on strong trading day",
+      "source": "MarketWatch",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T03:17:37.585417",
+      "url": "https://www.marketwatch.com/data-news/merck-co-inc-stock-outperforms-competitors-on-strong-trading-day-36e4cdc3-a3850ed9033b?mod=mw_quote_news"
+    },
+    {
+      "text": "Why Merck Is A Better Dividend Stock Than Gilead Sciences",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.44,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T06:17:42.986079",
+      "url": "https://seekingalpha.com/article/4801702-why-merck-is-a-better-dividend-stock-than-gilead-sciences#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Merck: Buy The Weakness",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.421,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T07:17:42.986079",
+      "url": "https://seekingalpha.com/article/4814259-merck-buy-weakness#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Merck, Sherwin-Williams Co. share losses lead Dow's 125-point drop",
+      "source": "MarketWatch",
+      "sentiment_score": -0.382,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T09:17:37.586416",
+      "url": "https://www.marketwatch.com/data-news/merck-sherwin-williams-co-share-losses-lead-dow-s-125-point-drop-a4e516f7-907d4e41e5d5?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow Loses About 350 Points After Record-Breaking Run",
+      "source": "MarketWatch",
+      "sentiment_score": -0.318,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T09:17:37.586416",
+      "url": "https://www.wsj.com/finance/stocks/dow-loses-about-350-points-after-record-breaking-run-4fa9744f?mod=mw_quote_news"
+    },
+    {
+      "text": "Merck: Don't Let Today's Bargain Opportunity Pass You By",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.298,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T12:17:42.987080",
+      "url": "https://seekingalpha.com/article/4798039-merck-dont-let-todays-bargain-opportunity-pass-you-by#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T01:17:55.703168",
+      "url": "https://www.bloomberg.com/quote/MRK:US"
+    },
+    {
+      "text": "Merck Buys Verona Pharma: A Good Deal, But M&A Spree Must Continue",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.238,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T19:17:42.986079",
+      "url": "https://seekingalpha.com/article/4800176-merck-buys-verona-pharma-good-deal-m-and-a-spree-must-continue#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Merck & Co., Inc. (MRK) Expands Targeted Therapy Pipeline with ADC Advances - Yahoo Finance. Merck & Co., Inc. (MRK) Expands Targeted Therapy Pipeline with ADC Advances&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.202,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T09:02:38",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9saTZoOFNuTlg5MllGd3lya3FJSGhQdGJ3dF83RkNuRzlCUGNlMy04VnE1SzBiRnFKVEFWNlVXUnYyVGhKSG1ueEhuM3QteG1WREJSX2t1N3lJaUVUZjFJdFdkbnluQ19iRlphQWdOZnkyMGt3ai1IenBB?oc=5"
+    },
+    {
+      "text": "Dow's nearly 250-point fall led by losses for shares of Merck, Sherwin-Williams Co.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.128,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T07:17:37.586416",
+      "url": "https://www.marketwatch.com/data-news/dow-s-nearly-250-point-fall-led-by-losses-for-shares-of-merck-sherwin-williams-co-423df10d-5daa50d72f21?mod=mw_quote_news"
+    },
+    {
+      "text": "Merck: Shares Bucking The Gardasil Problem, Hiking My Price Target",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.128,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T19:17:42.986079",
+      "url": "https://seekingalpha.com/article/4814494-merck-shares-bucking-the-gardasil-problem-hiking-my-price-target#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Biotech and PharmaA Tweak to Medicare is Good for Merck. Can It Cure the Troubled Stock?",
+      "source": "MarketWatch",
+      "sentiment_score": -0.026,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:17:37.586416",
+      "url": "https://www.barrons.com/articles/merck-medicare-keytruda-stock-966cdca9?mod=mw_quote_news"
+    },
+    {
+      "text": "Is Merck Stock Outperforming the Dow? - MSN. Is Merck Stock Outperforming the Dow?&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T14:42:18",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWG9KSUJGZmEyUG9zdWM2VGNKeFVZbi1kWGJSOW42b2h1cEtkb0VMcy1iZTM0YmVxTGdtR2pXcDJCSkh0NjlrbUNaSWZSQnQwQ2piZFdfUnNTTEtqOE9Lei1VX05HVWVKelNuUzU3ZDVUM0VoWWtJQ0NfRFAyRHdNR3gwQzVDejd6NnIyTlg1eWQ0Y3Yzdi1KcFEwd2ZNYVhuLXlpRW5pSDBMNU55aXBaOGh6MC0?oc=5"
+    },
+    {
+      "text": "ABBV or MRK: Which Stock Should Investors Place Their Bet on in 2025? - The Globe and Mail. ABBV or MRK: Which Stock Should Investors Place Their Bet on in 2025?&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T15:26:00",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPX3lOQnF2STFQWGMxNEtvSTU1aHRfSm9vWEl5RkdhaHpXb1FLT1NheWFaampBb2dmbHlmQ01NWkhCSk5FQk85MjZBRUZDSENnb1VsYnBycEhKRVVaSmp3cmhiQUdjWVF5T3RTV2VqRlBIdmRQUEkyS3BSM1VZVExMc2Y3YnNGRG92Ui1DRjZXSkVMM1pEN3dudUhNMVlmRlFUT3Nlblp4eW9rZ1FXX3l6Sjhzd3JOdk1odWFHMzZCdnI5VG80SFh1V1hwLWcwTkNiWWVaS1hsNHQxUDdwR2xoLVhoVW95eEU?oc=5"
+    },
+    {
+      "text": "How Merck & Company Inc. (MRK) Affects Rotational Strategy Timing - news.stocktradersdaily.com. How Merck & Company Inc. (MRK) Affects Rotational Strategy Timing&nbsp;&nbsp;news.stocktradersdaily.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:06:02",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaV9OSGRzNzBVYkJiYU10UE5WRHBEdXdCak9FcExIbkxQOVdwWGJMOXgxMWJkeWZjT0hCWTVLRFJmWEs1VlRjVTdHREZ2THB4S2dsc0dxRjBXXzEtMHlrNW5nSkdaNkNPMDVQUVhEMU9zMWJsTlFRNFhMdGJKdjVsLVR5cEJpbWVKVVF6SUVnandsT09rVENVaE16R3Z5cnVpOEhRWU90d1pxSlZNZWhaTWZ3dmgxX2RGTjk4VmVHU3JxQUhTT0k3UUdXWGpyWnBvN3N4NEZHelZPQQ?oc=5"
+    },
+    {
+      "text": "Merck & Co., Inc. (MRK) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo Finance. Merck & Co., Inc. (MRK) Is a Trending Stock: Facts to Know Before Betting on It&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-21T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1iRGJnZmhsTlVvZlptSTVaTHZ0d1hhNHIxWmNFT1BQUHRGM2NPa2ZNOERHTGF0bm15RUJrVzFtNjVvODIySUdZeTFRNUtEN1JmMm9ibEpCYkI1WXVoam1PX01Fak54ZUhBVFptTmN3NENxOU0wQ2dUa1BBdw?oc=5"
+    },
+    {
+      "text": "Goldman Sachs Reduced the PT on Merck & Co., Inc. (MRK), Kept a Buy Rating - Yahoo Finance. Goldman Sachs Reduced the PT on Merck & Co., Inc. (MRK), Kept a Buy Rating&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-07T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQVdzUDVKRHBUeVY4YUNqUWxwQ09GX1VaTjU1Z1BzTDRQOW9oNmt3bENuS3BaUUdyZk9vczU4eG9mQWYtSUxyZUw2VGI2RVM3bm1NSnhKR1Q3U0NuRmVkR1NqYU44ejhnRUUxWHVGMF92WWpEbUw1MnBhTzFSRzFjSWxR?oc=5"
+    },
+    {
+      "text": "Merck & Co., Inc. (MRK)’s CEO Thinks He’s Got $50 Billion Of New Drugs, Says Jim Cramer - Yahoo Finance. Merck & Co., Inc. (MRK)’s CEO Thinks He’s Got $50 Billion Of New Drugs, Says Jim Cramer&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-07-12T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAzdVZmVnZ6YUxOMVQwZE1KRjhnTTBjRHUzVzk0ODlRVU4td2FTbDNBa2pBZGd4VGplOGM1TFBtSDhlSzlaSDBWWlQzWFlnanRQNEdTZVloX3NQVG1DMzNzV21WUUl6eW5hMk82VGozWVZ4Wi1r?oc=5"
+    },
+    {
+      "text": "Merck (MRK) Stock Falls Amid Market Uptick: What Investors Need to Know - Yahoo Finance. Merck (MRK) Stock Falls Amid Market Uptick: What Investors Need to Know&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-06-26T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4zY19mQ18tYjlna01IbGhwVmp3SnpMeVdacE1ZRUdQZVlWUUhTU2R2bkVQVlZFTTVXQXNwNGtMcmRia0wtZV9JTmhKakNCSF9JemdlTWdvQk8xSUMyU3FieExGRUg0STFyWGVNeDd0azZRZ0pHd0liRWpXT2I?oc=5"
+    },
+    {
+      "text": "Investors Heavily Search Merck & Co., Inc. (MRK): Here is What You Need to Know - Yahoo Finance. Investors Heavily Search Merck & Co., Inc. (MRK): Here is What You Need to Know&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-07T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVzh1RUdnVDMxTTVmNW1QU0tySERoblR6ZmVmdmEzazF3WHliTTVoaGZWMHhyQWY2VVR5SnV2elM4LWYyVGd3ZVRXUDFMejRaVTZfYlZYQmVOeWtfaDVkdFJxeS1sNDV6M25ZaklRaHVmNXFNZTNOUW56NUQ3R0RwM3V6YW00dw?oc=5"
+    },
+    {
+      "text": "Merck & Co. Inc. stock underperforms Thursday when compared to competitors",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T23:17:37.585417",
+      "url": "https://www.marketwatch.com/data-news/merck-co-inc-stock-underperforms-thursday-when-compared-to-competitors-41e3fd55-3eed29a5d00d?mod=mw_quote_news"
+    },
+    {
+      "text": "Merck & Co. Inc. stock underperforms Wednesday when compared to competitors",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T11:17:37.586416",
+      "url": "https://www.marketwatch.com/data-news/merck-co-inc-stock-underperforms-wednesday-when-compared-to-competitors-d15ce0c4-8730e5fa5bfe?mod=mw_quote_news"
+    },
+    {
+      "text": "Repay Taps Conduent Executive Houser for CFO Role",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:17:37.587416",
+      "url": "https://www.marketwatch.com/story/repay-taps-conduent-executive-houser-for-cfo-role-2c0e0017?mod=mw_quote_news"
+    },
+    {
+      "text": "Merck Stock Is Almost A Classical Benjamin Graham Investment",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:17:42.986079",
+      "url": "https://seekingalpha.com/article/4805670-merck-stock-is-almost-a-classical-benjamin-graham-investment#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Merck & Co.: A Pharma Titan At A Discount",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T16:17:42.987080",
+      "url": "https://seekingalpha.com/article/4799702-merck-and-co-a-pharma-titan-at-a-discount#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Dividend Yield Theory Says Merck Is A Buy",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T21:17:42.987080",
+      "url": "https://seekingalpha.com/article/4798671-dividend-yield-theory-says-merck-is-a-buy#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Merck & Co IncFollowFollowingFollowFollowFollowFollowMRK:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T22:17:52.603069",
+      "url": ""
+    },
+    {
+      "text": "Merck & Co IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T19:17:52.604072",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Leading Pharma Giant Merck's Top Executives to Share Strategic Insights at Wells Fargo Healthcare Conference - Stock Titan. Leading Pharma Giant Merck's Top Executives to Share Strategic Insights at W...",
+      "source": "Google News",
+      "sentiment_score": 0.84,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T10:47:55",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVDgwWXRQSzN6N0pKbVVSV19ocTgtX1hEQVl2bjlQbDg4Y2EweXFQcEhZOUVGRDNXZjIzeUN5TGZoZml4OUl1MmFnUl9ud1NDLVY3alhIYzQ5Q29hMjljbm5mQjgzTGQteXEyMWt4OUM0Sl9iYk5JcXB6amtwanFDZ3dTVl80MWdkemtPR0VrMEdPRlZLTVAyWUFJeTBhVm1aNHhFRXEtN01QdHdTLXc?oc=5"
+    },
+    {
+      "text": "Shareholders Can Be Confident That Merck's (NYSE:MRK) Earnings Are High Quality - simplywall.st. Shareholders Can Be Confident That Merck's (NYSE:MRK) Earnings Are High Quality&nbsp;&nbsp;simplywall.s...",
+      "source": "Google News",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-12T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRjR0TTk1aVd0M0NmckJZNGpoMXFMenVsYTJqa3NnTS1INm1WR0lXMFlpT25DdWttUnBGbE9VQzJRMVJYd1pjNThJZ244a2lNbTg5d3FLaW9YWkNFX2ZiS0JURFc5UFlzQ3ZjU20tNS1ZNi1CY0t2YWFoSkh2SjlUaFNsM0dhVFVpTkxzNWpsc3JHdS1ZRmw0VVNFd1N5OE1xc1hNdjYzRWYxc3d4LW9mSEFXUmI0MnNLbG9ZRHEySlphZnFyNUVLMzl0NUwwdDNHZXfSAdcBQVVfeXFMTlZGTnB0ZDZMM1hZTDZabmtRd3h5bDRtOUFaT01MMnM1ZDdWU2FuVUNjenB4TDFFcUFfdkRXbXA2ZTU4UzQ1UVIyUkc2akktWjV5Zm5HMjVsN0JvSXBDbzdLRXRXa3VadS0xdG9QYlR5Y05CWW1wcEp1Q0hNZG5pVDJHX2xuellZRDA1RVFVbmdyYUdrRFBzQ1NEZFBsUUZ4aFVqRlpKZkNVZ1VreVRpZEc2UERZRnZ2T0h1b0t6TkZJM2RFblZVS01SOFllZ29NaF8xcDJqM1E?oc=5"
+    },
+    {
+      "text": "Exelixis vs. Merck: Which Oncology Stock Is a Better Pick as of Now? - The Globe and Mail. Exelixis vs. Merck: Which Oncology Stock Is a Better Pick as of Now?&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.732,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T13:50:00",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQmktd2JpcUJWdXFaSWxxd2dfOEh2TUxabWtoUzNWVnk2YTFrOWZQODlnOG1BalprdzB2T1pxNXlQaW1EVFItM3ljQldIRzVRX0M4ZHpncVVTbmZVUjFRQTBybVE3dGFHSnFhMDdGUmJud2IwSUVrd0VMZTBiU290RW1RSGNabllobW1nSXkyd2ZWN2l5NTRBR19DMTFfVHlIT085T29PbWZZR0ZRcmxiOWhfS0FWT2VING1hbWpmZHlnNTQxaFRQSjJacy0zc0pBR2VwQ2Y0TnRJblpmTlBIRUJMSXI?oc=5"
+    },
+    {
+      "text": "Merck & Co., Inc. (MRK) Impresses Jim Cramer With Its Toughness - Yahoo Finance. Merck & Co., Inc. (MRK) Impresses Jim Cramer With Its Toughness&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.718,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-15T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1mSWxrMG4yTi1STjdVa0NVMXJ6RDhGWmV1TGpsUW03dTNHVS1XV2hkeEo4clBpSHFwNkxxMy1LQ1VhclowSGNHbzZmeGlldzZJSXBGR0VBdnZOVUh6bDVIVU4yajFMU21QZkQ4VGNhRGpkRk9YWlNnRHREYUk?oc=5"
+    },
+    {
+      "text": "Merck & Co. (MRK) Slid on Weaker Market Sentiment and Concerns About Drug Pipeline - Yahoo Finance. Merck & Co. (MRK) Slid on Weaker Market Sentiment and Concerns About Drug Pipeline&nbsp;&nbsp;Yahoo ...",
+      "source": "Google News",
+      "sentiment_score": -0.7,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-06T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5rZC1JU2puUU9aX1J4OEY2YzRENVlhbFdWMXVBSlJKN3IwbmdGSERZNldZTTR2Tlp1emlOYXZGYnNtajd1amVUVlRKMVVhMEVyQnoyLU9lakNSeS1VSThZb3pJVnRrZFFNOTV3cUVIeFJCRmxtLUFrSENn?oc=5"
+    },
+    {
+      "text": "Merck, Pfizer, Astellas Drug Combo Hits Key Goals in Bladder Cancer",
+      "source": "MarketWatch",
+      "sentiment_score": -0.66,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T00:17:37.586416",
+      "url": "https://www.marketwatch.com/story/merck-pfizer-astellas-drug-combo-hits-key-goals-in-bladder-cancer-139ca146?mod=mw_quote_news"
+    },
+    {
+      "text": "Merck Stock Down 4% Since Q2 Results: How to Play the Stock - Yahoo Finance. Merck Stock Down 4% Since Q2 Results: How to Play the Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-11T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0yNnE2a056bGdKbkR3QkRtUmJnQW5WQnFhb0VRb1pqc3ozbEJVSXJSMFk4V1Fid1NSZVBkejlKUmVnYWdOM3NUbFFzb3dHS2ZoZVpvUE1BM29PWm5RSkJ3UUZDTVhkX3dFQS1JRTJ1Mk9XZVNjZnVDSHF3?oc=5"
+    },
+    {
+      "text": "Dow up 380 points on gains for shares of Boeing, Honeywell",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T18:17:37.586416",
+      "url": "https://www.marketwatch.com/data-news/dow-up-380-points-on-gains-for-shares-of-boeing-honeywell-f9c3d7a7-3120edc5fe02?mod=mw_quote_news"
+    },
+    {
+      "text": "Merck & Co. Inc. stock outperforms competitors on strong trading day",
+      "source": "MarketWatch",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T03:17:37.585417",
+      "url": "https://www.marketwatch.com/data-news/merck-co-inc-stock-outperforms-competitors-on-strong-trading-day-36e4cdc3-a3850ed9033b?mod=mw_quote_news"
+    },
+    {
+      "text": "Why Merck Is A Better Dividend Stock Than Gilead Sciences",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.44,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T06:17:42.986079",
+      "url": "https://seekingalpha.com/article/4801702-why-merck-is-a-better-dividend-stock-than-gilead-sciences#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": -0.007,
+    "last_week_average": 0.076,
+    "overall_average": 0.095,
+    "articles_last_24h": 9,
+    "articles_last_week": 27
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

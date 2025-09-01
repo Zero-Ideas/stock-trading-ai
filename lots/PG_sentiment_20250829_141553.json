@@ -1,0 +1,309 @@
+{
+  "symbol": "PG",
+  "company_name": "Procter Gamble",
+  "analysis_timestamp": "2025-08-29T14:15:53.723731",
+  "total_sources_analyzed": 23,
+  "unique_sources_count": 3,
+  "source_diversity_score": 0.38,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.04,
+    "average_compound": 0.05
+  },
+  "sentiment_distribution": {
+    "positive": 9,
+    "neutral": 7,
+    "negative": 7,
+    "positive_percentage": 39.1,
+    "negative_percentage": 30.4
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": 0.2
+  },
+  "sources": {
+    "MarketWatch": 10,
+    "Seeking Alpha": 8,
+    "Bloomberg": 5
+  },
+  "sample_articles": [
+    {
+      "text": "Procter & Gamble: Alexandra Keith, CEO of Beauty, to Retire in February 2026 >PG",
+      "source": "MarketWatch",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T08:15:26.848250",
+      "url": ""
+    },
+    {
+      "text": "Procter & Gamble: Muted Near Term Growth Prospects Justifies Valuation Discount",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T17:15:32.831998",
+      "url": "https://seekingalpha.com/article/4798686-procter-and-gamble-muted-near-term-growth-prospects-justifies-valuation-discount#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Procter & Gamble: Despite The Slowing Growth And The Macro Uncertainty, We Maintain Our Buy Rating",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.555,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T17:15:32.832512",
+      "url": "https://seekingalpha.com/article/4798278-procter-and-gamble-despite-the-slowing-growth-and-the-macro-uncertainty-we-maintain-our-buy-rating#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "P&G Open to Acquisitions in Consumer Health Care, CEO Says",
+      "source": "Bloomberg",
+      "sentiment_score": 0.494,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T12:15:46.431610",
+      "url": "https://www.bloomberg.com/news/articles/2025-07-29/p-g-open-to-acquisitions-in-consumer-health-care-ceo-says"
+    },
+    {
+      "text": "Tariffs will push Procter & Gamble’s prices higher, but maker of consumer products is wary of the discounting frenzy",
+      "source": "MarketWatch",
+      "sentiment_score": -0.45,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-26T17:15:26.849253",
+      "url": "https://www.marketwatch.com/story/tariffs-will-push-procter-gambles-prices-higher-but-maker-of-consumer-products-is-wary-of-the-discounting-frenzy-aa10fd24?mod=mw_quote_news"
+    },
+    {
+      "text": "StaplesFlight to Safety? Maybe Take a Stroll to Staples Stocks.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.421,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-26T22:15:26.849253",
+      "url": "https://www.barrons.com/articles/walmart-stock-costco-staples-766228b2?mod=mw_quote_news"
+    },
+    {
+      "text": "Procter & Gamble Says Consumers Are Under Stress",
+      "source": "MarketWatch",
+      "sentiment_score": -0.421,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T19:15:26.849253",
+      "url": "https://www.wsj.com/business/retail/procter-gamble-pg-q4-earnings-report-2025-ae53f6f9?mod=mw_quote_news"
+    },
+    {
+      "text": "TradeTrump Tariffs Are Here. The Road Ahead Still Isn’t Clear.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T08:15:26.849253",
+      "url": "https://www.barrons.com/articles/trump-tariffs-trade-cc6a281c?mod=mw_quote_news"
+    },
+    {
+      "text": "Procter & Gamble Q4 Earnings: Deceleration Of Market Growth Continues",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T14:15:32.831998",
+      "url": "https://seekingalpha.com/article/4806295-procter-and-gamble-q4-earnings-deceleration-of-market-growth-continues#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Procter & Gamble: Recent Earnings Report Shows That Its Growth Has Stagnated",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T15:15:32.833135",
+      "url": "https://seekingalpha.com/article/4790388-procter-and-gamble-recent-earnings-report-shows-companys-growth-stagnated#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Procter & Gamble: Margins Rise Amidst Sales Struggles",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.361,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T15:15:32.832512",
+      "url": "https://seekingalpha.com/article/4798089-procter-and-gamble-margins-rise-amidst-sales-struggles#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Procter & Gamble: A Juggernaut Cannot Escape Consumers Being Pressured",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.344,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T20:15:32.832512",
+      "url": "https://seekingalpha.com/article/4798110-procter-and-gamble-juggernaut-cannot-escape-consumers-being-pressured#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Procter & Gamble: The Outlook Is Worrying (Rating Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.34,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T08:15:32.830494",
+      "url": "https://seekingalpha.com/article/4806542-procter-and-gamble-outlook-worrying-rating-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T06:15:46.429610",
+      "url": "https://www.bloomberg.com/quote/PG:US"
+    },
+    {
+      "text": "Procter & Gamble: 3.7% Free Cash Flow Yield Is Not Good Enough",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.225,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T14:15:32.833135",
+      "url": "https://seekingalpha.com/article/4790361-procter-and-gamble-3-7-percent-free-cash-flow-yield-is-not-good-enough#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Dow's nearly 250-point fall led by losses for shares of Merck, Sherwin-Williams Co.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.128,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-26T19:15:26.847245",
+      "url": "https://www.marketwatch.com/data-news/dow-s-nearly-250-point-fall-led-by-losses-for-shares-of-merck-sherwin-williams-co-423df10d-5daa50d72f21?mod=mw_quote_news"
+    },
+    {
+      "text": "DividendsChevron, IBM, and 10 More High-Yielding Dividend Stocks",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T16:15:26.848250",
+      "url": "https://www.barrons.com/articles/12-high-yielding-dividend-stocks-0f26743d?mod=mw_quote_news"
+    },
+    {
+      "text": "CorrectedAmerican Consumers Are Getting Thrifty Again",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T02:15:26.848250",
+      "url": "https://www.wsj.com/economy/consumers/consumer-spending-stagnant-uncertainty-c4e3d043?mod=mw_quote_news"
+    },
+    {
+      "text": "ConsumerProcter & Gamble Posts Earnings Beat and Names New CEO. What to Know.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T21:15:26.849253",
+      "url": "https://www.barrons.com/articles/procter-gamble-earnings-stock-price-6839dcc3?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow components UnitedHealth, Boeing and Visa lead busy earnings slate",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T03:15:26.849253",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p500-nasdaq-called-higher-as-fed-decision-jobs-data-tech-earnings-loom/card/dow-components-unitedhealth-boeing-and-visa-lead-busy-earnings-slate-C9TObP1kFV2lmDwZl8JD?mod=mw_quote_news"
+    },
+    {
+      "text": "Procter & Gamble Co/TheFollowFollowingFollowFollowFollowFollowPG:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T21:15:42.357978",
+      "url": ""
+    },
+    {
+      "text": "Procter & Gamble Co/TheFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:15:42.357978",
+      "url": ""
+    },
+    {
+      "text": "Procter & Gamble Co/The",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T21:15:46.430615",
+      "url": "https://www.bloomberg.com/quote/PG:US"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Procter & Gamble: Alexandra Keith, CEO of Beauty, to Retire in February 2026 >PG",
+      "source": "MarketWatch",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T08:15:26.848250",
+      "url": ""
+    },
+    {
+      "text": "Procter & Gamble: Muted Near Term Growth Prospects Justifies Valuation Discount",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T17:15:32.831998",
+      "url": "https://seekingalpha.com/article/4798686-procter-and-gamble-muted-near-term-growth-prospects-justifies-valuation-discount#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Procter & Gamble: Despite The Slowing Growth And The Macro Uncertainty, We Maintain Our Buy Rating",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.555,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T17:15:32.832512",
+      "url": "https://seekingalpha.com/article/4798278-procter-and-gamble-despite-the-slowing-growth-and-the-macro-uncertainty-we-maintain-our-buy-rating#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "P&G Open to Acquisitions in Consumer Health Care, CEO Says",
+      "source": "Bloomberg",
+      "sentiment_score": 0.494,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T12:15:46.431610",
+      "url": "https://www.bloomberg.com/news/articles/2025-07-29/p-g-open-to-acquisitions-in-consumer-health-care-ceo-says"
+    },
+    {
+      "text": "Tariffs will push Procter & Gamble’s prices higher, but maker of consumer products is wary of the discounting frenzy",
+      "source": "MarketWatch",
+      "sentiment_score": -0.45,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-26T17:15:26.849253",
+      "url": "https://www.marketwatch.com/story/tariffs-will-push-procter-gambles-prices-higher-but-maker-of-consumer-products-is-wary-of-the-discounting-frenzy-aa10fd24?mod=mw_quote_news"
+    },
+    {
+      "text": "StaplesFlight to Safety? Maybe Take a Stroll to Staples Stocks.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.421,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-26T22:15:26.849253",
+      "url": "https://www.barrons.com/articles/walmart-stock-costco-staples-766228b2?mod=mw_quote_news"
+    },
+    {
+      "text": "Procter & Gamble Says Consumers Are Under Stress",
+      "source": "MarketWatch",
+      "sentiment_score": -0.421,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T19:15:26.849253",
+      "url": "https://www.wsj.com/business/retail/procter-gamble-pg-q4-earnings-report-2025-ae53f6f9?mod=mw_quote_news"
+    },
+    {
+      "text": "TradeTrump Tariffs Are Here. The Road Ahead Still Isn’t Clear.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T08:15:26.849253",
+      "url": "https://www.barrons.com/articles/trump-tariffs-trade-cc6a281c?mod=mw_quote_news"
+    },
+    {
+      "text": "Procter & Gamble Q4 Earnings: Deceleration Of Market Growth Continues",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T14:15:32.831998",
+      "url": "https://seekingalpha.com/article/4806295-procter-and-gamble-q4-earnings-deceleration-of-market-growth-continues#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Procter & Gamble: Recent Earnings Report Shows That Its Growth Has Stagnated",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T15:15:32.833135",
+      "url": "https://seekingalpha.com/article/4790388-procter-and-gamble-recent-earnings-report-shows-companys-growth-stagnated#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": -0.143,
+    "last_week_average": 0.05,
+    "overall_average": 0.05,
+    "articles_last_24h": 7,
+    "articles_last_week": 23
+  },
+  "confidence_metrics": {
+    "sample_size": "Limited",
+    "source_diversity": "Low",
+    "data_recency": "Current"
+  }
+}

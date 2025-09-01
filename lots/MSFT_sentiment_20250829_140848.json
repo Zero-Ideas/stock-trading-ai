@@ -1,0 +1,495 @@
+{
+  "symbol": "MSFT",
+  "company_name": "Microsoft Corporation",
+  "analysis_timestamp": "2025-08-29T14:08:48.876813",
+  "total_sources_analyzed": 46,
+  "unique_sources_count": 5,
+  "source_diversity_score": 0.62,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.018,
+    "average_compound": 0.125
+  },
+  "sentiment_distribution": {
+    "positive": 17,
+    "neutral": 20,
+    "negative": 9,
+    "positive_percentage": 37.0,
+    "negative_percentage": 19.6
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": -3.65
+  },
+  "sources": {
+    "Google News": 15,
+    "Yahoo Finance": 12,
+    "MarketWatch": 7,
+    "Bloomberg": 4,
+    "Seeking Alpha": 8
+  },
+  "sample_articles": [
+    {
+      "text": "Microsoft: Buy Wonderful Businesses At Fair Prices (NASDAQ:MSFT) - Seeking Alpha. Microsoft: Buy Wonderful Businesses At Fair Prices (NASDAQ:MSFT)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.9,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T18:56:19",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZGtVbjV0c3ZfZnloWG5ieTB1aFR0UlpKbzJfX1VSVURrVVJNTXp4Wm9UNWpMQUtQb2VVOUZFQmhjMW4temdJUHNnd3BTX1hpTVdzRmcwclhLY3dJV3UwTzR5VERlSjJ5UzVLSG16OXdKdk9fUXRham5zS01IUnNhMnZ1ckJ0Q1U5Z2Raa0hvdVZTWTM0?oc=5"
+    },
+    {
+      "text": "Microsoft Corporation’s (MSFT) AI Investment Gained Confidence Amid Operational Discipline - Insider Monkey. Microsoft Corporation’s (MSFT) AI Investment Gained Confidence Amid Operational Discipline&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.896,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T12:11:31",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaXhHbWlMR1VVMHoxLUpnWC1sNXFBakgxaUtUMVJxZHpHQWlSaF9hdlVURmtBMklIZUVsVmlMQXpZbDFLU2RwSzUxNW1mazVfTnF3NlZ5aUtqTjV3cVlhdEttS1RINERDU1NrcEx2anBpdFp0d0RHbC15aC1jajltV0dXeTJrVXRpTXNwTWR0M3lSUkNyQmRXT3hwQjhNTHJlNW9ZUVF0eF9VM2JXMUlmQmI1TVB3Wk9JaHVtd0hFUmJ3YkNMbk5wVVhxQdIB0wFBVV95cUxNdmZxMXZvVktwVFA3cy0yX3JFMHFMdzFqSWhXa1hXaDB1R2RmTEVqeHFndWtZY1FpenpuNmRfdXJyUDd1SV9xdGVQRTJqSWVYYmJieXFnM0xmZzhobnYxWUFBRDNKWFNtcGJVZG5pYzZPdWI4WHhXRUR1b0YzNEI0SFo3V0RYNXZEakZOcUNJZnhOT09oMW9nNE9yQzlNSTR3enRoOUE2SFdSVnBjMTJKTkRKUWRvTU96RDljZWFJV3BBMHkzMDdVRWRobl90UXRJLWZV?oc=5"
+    },
+    {
+      "text": "Microsoft Stock Forecast: (NASDAQ:MSFT) AI Growth Keeps Shares Near $510 With $600 Target - tradingnews.com. Microsoft Stock Forecast: (NASDAQ:MSFT) AI Growth Keeps Shares Near $510 With $600 Target&nbsp;&nbsp;tradingnews.com",
+      "source": "Google News",
+      "sentiment_score": 0.823,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T20:24:05",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOekF6M0ZUZkhqNVd5UlRrbVV6alN0NWpDanhBNkRsMFozM3c3X0xFMjlyeTAwMGVQVW9QbmlnNEFpdFNNeGhlWnNOZUFyUWE1czhMN3NfMzdPRHJsRDZpTlRESGp2TTVZQlRfVnRZX2wtejBkeWZUNklUQUdsVFV0ckhvcDFPVUtQZUFHTHFncEpvdw?oc=5"
+    },
+    {
+      "text": "Free Cash Flow Boom Keeps Microsoft Ahead of the Pack - MarketBeat. Free Cash Flow Boom Keeps Microsoft Ahead of the Pack&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T16:25:06",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPakRSVUdDcmw4SWpaVEFQOHg1ZTlOTzY2NDdELVBJeFQzdmt3UTBITU5vWkVBVkFfMjltazlob2cwSENQY2duN0NkdDU5RWlocldteUR3R3NCYVVFRHhVand1b3RRMEs4S0dRVW8wdlVxbnlxNEFQcFV3SjUwS281OW8wajYzS05PVjR2aUlLVUtFZG1MY0E?oc=5"
+    },
+    {
+      "text": "UBS Maintains Buy on Microsoft (MSFT), Citing Confidence from Pricing Moves - MSN. UBS Maintains Buy on Microsoft (MSFT), Citing Confidence from Pricing Moves&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T05:13:29",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSUNKb0F0SUxNbHZxYWttWEQ4MFpQTGRqWjRnZl9sT1I0MUd3dzhIWUFPZ3dhbXFwTU1mUnM3UWh3ekptaDVCQ244ZTNMUjJiYTdtU1VOU0hlREE2SE0tako0T1ZKM05JNV8yYlhUS1FMUmp1RUZrUENYVE5HUWRpS0pJTTJqY3dfUEJ3bG9vcHFfdHR0YlUtMWN5WjRzdGR5WVRfRW1FcU9rMmlIWExkRWVxOXRzTTUycl9BY1ZzaGxYRDB1?oc=5"
+    },
+    {
+      "text": "Microsoft: Buy Wonderful Businesses At Fair Prices",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.718,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:08:33.226344",
+      "url": "https://seekingalpha.com/article/4817634-microsoft-buy-wonderful-businesses-at-fair-prices#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "MarketsWhy Does This Crazy Stock Market Keep Ignoring Jack Bogle’s ‘Iron Rule’?",
+      "source": "MarketWatch",
+      "sentiment_score": -0.665,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T19:08:25.800511",
+      "url": "https://www.barrons.com/articles/stock-market-reversion-to-the-mean-f7b57c1d?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Microsoft: On The Right Side Of The Generative AI War Against Software",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.599,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T23:08:33.227346",
+      "url": "https://seekingalpha.com/article/4815003-microsoft-right-side-of-generative-ai-war-against-software#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Marvell Technology (MRVL) Reports Surging US$2 Billion Sales with Positive Earnings Guidance. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T00:08:23.410357",
+      "url": ""
+    },
+    {
+      "text": "Nvidia's Big Tech clientele looks like a vulnerability but acts like a chokehold. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.55,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T16:08:23.403664",
+      "url": ""
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T19:08:25.801510",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    },
+    {
+      "text": "AMD's AI Journey Rides on Strong Partner Base: What's the Path Ahead?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.511,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T09:08:23.413352",
+      "url": ""
+    },
+    {
+      "text": "ChipsMarvell Stock Tumbles. Why the AI Chip Player Keeps Disappointing the Market.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-26T17:08:25.800511",
+      "url": "https://www.barrons.com/articles/marvell-technology-stock-price-earnings-news-331ce67e?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Nvidia And Microsoft: Uptrends Broken As Sellers Take Charge (Technical Analysis)",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.477,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T06:08:33.227346",
+      "url": "https://seekingalpha.com/article/4816089-nvidia-microsoft-uptrends-broken-sellers-take-charge-technical-analysis#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "The Stock Market’s End-of-August Slide Abated a Bit. Breadth Is Improving.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.421,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T21:08:23.409359",
+      "url": ""
+    },
+    {
+      "text": "How ‘Magnificent Seven’ earnings growth in second quarter stacks up against rest of S&P 500",
+      "source": "MarketWatch",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T07:08:25.801510",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/how-magnificent-seven-earnings-growth-in-second-quarter-stacks-up-against-rest-of-s-p-500-hkcje8nQe8S3LweS8MJ0?mod=mw_quote_news"
+    },
+    {
+      "text": "Marvell Stock Plunges As Wall Street Warns Of Limited Near-Term Growth Prospects. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.361,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T21:08:23.411353",
+      "url": ""
+    },
+    {
+      "text": "Microsoft: Not Worth Your Money At Current Price Level (Downgrade) - Seeking Alpha. Microsoft: Not Worth Your Money At Current Price Level (Downgrade)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.325,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-25T13:00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVml2dkplRmVJZFlfdUhVTWFVS3dHWXVOcWoxYkZwRmx0SENhMzNoNnlvWmFIYlpacGFhVnZJSnczY1gtZ3hZdHZQSWZ0YmtRNldGbjJXRzRnY1JjbElWNDJ5SmRxMkNXQkRjaWN5bU02cWw3TGtiekRwZGRNbzMzdjV0aC13VmJrcTdzQjQ5Q0hfcHY1YlFhNW9IbHVNNi1PdFc3a1pudw?oc=5"
+    },
+    {
+      "text": "If Alphabet 'Missed The AI Boat', What Does That Mean For Microsoft?",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.296,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T05:08:33.226344",
+      "url": "https://seekingalpha.com/article/4816663-alphabet-missed-ai-boat-microsoft#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T20:08:41.320088",
+      "url": "https://www.bloomberg.com/quote/MSFT:US"
+    },
+    {
+      "text": "Microsoft Corporation (MSFT) Gains 21% Since Cramer Said Had “No Idea” If There Was Any Weakness - Yahoo Finance. Microsoft Corporation (MSFT) Gains 21% Since Cramer Said Had “No Idea” If There Was Any Weakness&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.25,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-26T21:22:48",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQXoyeks0NjFxT3N5YWFuV1Qwd2wyZEgxNDNMM1Z4MXlxazRRMFp1X25ZR3d1VGVQYUZLbmg2ODIxZU1rdURPd0R1YmQ3SW9FSnFYT096VFVrN0pRZ0pFdDlfV1ZrV25qMHpBckgyRklQQkhxa3BEOXNLTFVEQTYzZXBBVTNaaU9B?oc=5"
+    },
+    {
+      "text": "A comprehensive list of 2025 tech layoffs. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.25,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T18:08:23.413352",
+      "url": ""
+    },
+    {
+      "text": "Big Tech investment powers Nvidia results, but Wall Street says 'inevitable' slowdown looms. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.226,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T05:08:23.404664",
+      "url": ""
+    },
+    {
+      "text": "Microsoft: Not Worth Your Money At Current Price Level (Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.17,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T12:08:33.227346",
+      "url": "https://seekingalpha.com/article/4816394-microsoft-not-worth-your-money-at-current-price-level-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Why Broadcom (AVGO) Shares Are Falling Today. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.153,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T04:08:23.409359",
+      "url": ""
+    },
+    {
+      "text": "Caterpillar, NVIDIA Corp. share losses lead Dow's nearly 225-point fall",
+      "source": "MarketWatch",
+      "sentiment_score": -0.128,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T00:08:25.802510",
+      "url": "https://www.marketwatch.com/data-news/caterpillar-nvidia-corp-share-losses-lead-dow-s-nearly-225-point-fall-bc0847fd-33950d80d57e?mod=mw_quote_news"
+    },
+    {
+      "text": "What Does Wall Street Think About Microsoft Corporation (MSFT)? - uk.finance.yahoo.com. What Does Wall Street Think About Microsoft Corporation (MSFT)?&nbsp;&nbsp;uk.finance.yahoo.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:13:02",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRm82WVY5VmY2OVlLQ3I0ellpbDBkQTFER2RERjRjOVRTOFVGbzRGS2pwdTh6SDVDZlBRS2dlVXh0UzB3dXUtQ0x1empJWUNzeDJRWWhnNmZVRXBvYzhmTWpaTW9ENEozZXFadXVJUzg3ejF3NWpuMUxDRllXQ25PWURjM3NCNVFD?oc=5"
+    },
+    {
+      "text": "RBC Capital Sees Microsoft (MSFT) Leading Amid Long-Term Software Transformation - Insider Monkey. RBC Capital Sees Microsoft (MSFT) Leading Amid Long-Term Software Transformation&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:29:06",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcUN3d3R3Y0FoSnJQcGRCYk1JLUpqMTlUSmNrM01MUXlqQkRKWGJHN0UtNTZmYy16VW51Zy1ucUdPVE9yTHZmWnJTb2dyQTh5Ty1vY09OS2kyRGZyR3Y1aDFrWWhlNHlOMGN6NVNmdzFwTnhHUTBidHRvcTZ6c2F3cmJaZ19ldnJfcWhZTWxLaHVOUHpnbENWVXBfWkpPY2tmajd2LUt1MklDWWhPNnZyZDZITU5ETE9Ecm5Cc2pOZ9IBxwFBVV95cUxOV3RxV0tCTW9oR29uRjRXaGRNcHRldWZPT0EySXJaZDhLQXZmY2xCSjJ3WUxfbFVQLWhCVHo0cFZ3ekRrb0VBTkFna2o2LXNJSlY3OGQ5VnFVdWZyZ2VFd09Db3J4UWdDY1dYelZyYmFvRDlTMW9JMEJrQ2VNNzFIOFhYeWdhWWktZE9od1B2RkUwSEtCV2lKZE1hc1J6ei1IYnhOb2xwd1FIaHI5U0ZJLUJIR1RuUWxVS3daaGV1RDJvYzZWNzNn?oc=5"
+    },
+    {
+      "text": "Microsoft Corporation (MSFT) Is Up 19% Since Jim Cramer’s Quantum Computing Comments - Yahoo Finance. Microsoft Corporation (MSFT) Is Up 19% Since Jim Cramer’s Quantum Computing Comments&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T17:23:11",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTTUwRHBMNHMtTlpxTmFtTWFsUTZta3cwOVJyX1dtb0JyaGpRbV9PcmNrYjllQlR1ZlB3LUtCM1JVRlZzdHVNbmhaR0dhMkx5LUpULWJWLVRabWlfanZNSC0xS2p3Q1l3NkcwOGtNQkFIS3AtNEMwdGJ2cUhhenFaeTVDcVVKdl9k?oc=5"
+    },
+    {
+      "text": "Microsoft: Why Musk's Macrohard Is Far From Denting Azure (NASDAQ:MSFT) - Seeking Alpha. Microsoft: Why Musk's Macrohard Is Far From Denting Azure (NASDAQ:MSFT)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T19:09:15",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdnhFVzAyUGJfYzhyZ2hSdFF6LWRQaE1jMlNXSG5sc3hOcFpIUzB1WXN2SUItTFpJcU0tQ1NWM2RsV1Z0ME9LTlRJZ2E1cWRNSFJTME02MHZfTzhEWnYxR0RQQ245VWpEcDRpT2E3X1czY1FFdTYtWU96NVI0dVBpTFpXWXNXWnAyWENWeWc0ODRzRXNYdU9V?oc=5"
+    },
+    {
+      "text": "Microsoft Corporation (MSFT): A Bull Case Theory - Yahoo Finance. Microsoft Corporation (MSFT): A Bull Case Theory&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T09:14:53",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGNydFhITmF4bURaYkRQbjRJbTRDY21tSmtkUFVLLU10YkdGTzIwb1dJTG93RmYzRFFnR3lfTlFVSmk4SlhNMzZ3THgzR2N1U1hWRzRLWnFVcGFtTWI4NmZyQTJUNWVaSlFqSXNoVmhtbDZ6YlhBRXNuSjBnVTZjVmItTDVpQl9aY0E?oc=5"
+    },
+    {
+      "text": "Investors Heavily Search Microsoft Corporation (MSFT): Here is What You Need to Know - Yahoo Finance. Investors Heavily Search Microsoft Corporation (MSFT): Here is What You Need to Know&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T13:00:03",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeXE2Ti1fbnpYUzBxSFNQaWIxZFFFc1A3UGhjaVdzaGhUdnpfNXFGbks1amZadlh4SzkxQm1SSGQ0aVhNdk9DWEo0VUxEQnVZa0kzeWd6QVlVZlNkYlJFZlRzSXM5bVdkQlpHUGdVQldHMGt2eER2R1hpU0RObnJHWjY2b0lYT1podEg5akNTdnB5RlNLUENR?oc=5"
+    },
+    {
+      "text": "Microsoft Corporation (MSFT) Sees Nearly 29% Upside as Truist Lifts Target - Yahoo Finance. Microsoft Corporation (MSFT) Sees Nearly 29% Upside as Truist Lifts Target&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-24T05:24:30",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaWgtSFNvLWtPeG5ENWxvWWRiWmd5d0RtakJNNXJua1ZvV21SUG1BMzBsTW9VRzZneVZlUVdBblEwSm0tWXluRlpVMlNXRTZkeFVmcldGWFpuYm4zRWFaMW9nMVY2bkFnOTZnOVVPdzgwU2Zqel9kT1NxaE82VU9ESHhGWlROUXNPLWNGMw?oc=5"
+    },
+    {
+      "text": "Microsoft Is Bringing AI to the NFL. What Does This Mean for MSFT Stock? - Yahoo Finance. Microsoft Is Bringing AI to the NFL. What Does This Mean for MSFT Stock?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T18:05:53",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZDNtTmpFMkx1U3dVc2d0Z2FIYUt3SHVMNFN0RDY3MWxDT01iV3BPV1JpTXNtcmRvbFVmSFlSY2RDS1ZLaFVCT2NzTFB6QUdDSGRKNDVyZGNjSFdSTGloaWFsS1plN2VHQ0psUnFNRW5HNXhPbnFVLWozTXpoaFlteVhR?oc=5"
+    },
+    {
+      "text": "Bill Gates Told NBA's Steph Curry How He'd Answer 'What's Your Salary Expectation?' in a Job Interview — 'I Prefer Stock Options More Than Cash'. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:08:23.405664",
+      "url": ""
+    },
+    {
+      "text": "What Does Wall Street Think About Microsoft Corporation (MSFT)?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T23:08:23.406843",
+      "url": ""
+    },
+    {
+      "text": "What's Going On With Broadcom Stock Friday?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T22:08:23.408347",
+      "url": ""
+    },
+    {
+      "text": "Is Apple Stock a Buy Now?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T02:08:23.412353",
+      "url": ""
+    },
+    {
+      "text": "The Boss Has Had It With All the Office Activists",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T13:08:25.801510",
+      "url": "https://www.wsj.com/lifestyle/workplace/workplace-employee-activism-company-response-7ef095f6?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "TechnologyDell Beat Earnings Estimates. Why the Stock Is Down.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:08:25.802510",
+      "url": "https://www.barrons.com/articles/dell-technologies-earnings-stock-price-a32f36e5?mod=mw_quote_news"
+    },
+    {
+      "text": "Microsoft: Why Musk's Macrohard Is Far From Denting Azure",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:08:33.226344",
+      "url": "https://seekingalpha.com/article/4816564-microsoft-why-musk-macrohard-far-from-denting-azure#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Platform Consolidation Pair Trade: Long Microsoft, Short Asana",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T21:08:33.227346",
+      "url": "https://seekingalpha.com/article/4816094-platform-consolidation-pair-trade-long-microsoft-short-asana#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Microsoft Remains A Buy Near All-Time Highs",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T16:08:33.227346",
+      "url": "https://seekingalpha.com/article/4814399-microsoft-stock-remains-a-buy-near-all-time-highs#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Microsoft CorpFollowFollowingFollowFollowFollowFollowMSFT:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T07:08:39.071654",
+      "url": ""
+    },
+    {
+      "text": "Microsoft CorpFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:08:39.072659",
+      "url": ""
+    },
+    {
+      "text": "Stock Movers: Figma, Carvana, Microsoft",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:08:44.051893",
+      "url": "https://www.bloomberg.com/news/audio/2025-08-01/stock-movers-figma-carvana-microsoft-podcast"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Microsoft: Buy Wonderful Businesses At Fair Prices (NASDAQ:MSFT) - Seeking Alpha. Microsoft: Buy Wonderful Businesses At Fair Prices (NASDAQ:MSFT)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.9,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T18:56:19",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZGtVbjV0c3ZfZnloWG5ieTB1aFR0UlpKbzJfX1VSVURrVVJNTXp4Wm9UNWpMQUtQb2VVOUZFQmhjMW4temdJUHNnd3BTX1hpTVdzRmcwclhLY3dJV3UwTzR5VERlSjJ5UzVLSG16OXdKdk9fUXRham5zS01IUnNhMnZ1ckJ0Q1U5Z2Raa0hvdVZTWTM0?oc=5"
+    },
+    {
+      "text": "Microsoft Corporation’s (MSFT) AI Investment Gained Confidence Amid Operational Discipline - Insider Monkey. Microsoft Corporation’s (MSFT) AI Investment Gained Confidence Amid Operational Discipline&...",
+      "source": "Google News",
+      "sentiment_score": 0.896,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T12:11:31",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaXhHbWlMR1VVMHoxLUpnWC1sNXFBakgxaUtUMVJxZHpHQWlSaF9hdlVURmtBMklIZUVsVmlMQXpZbDFLU2RwSzUxNW1mazVfTnF3NlZ5aUtqTjV3cVlhdEttS1RINERDU1NrcEx2anBpdFp0d0RHbC15aC1jajltV0dXeTJrVXRpTXNwTWR0M3lSUkNyQmRXT3hwQjhNTHJlNW9ZUVF0eF9VM2JXMUlmQmI1TVB3Wk9JaHVtd0hFUmJ3YkNMbk5wVVhxQdIB0wFBVV95cUxNdmZxMXZvVktwVFA3cy0yX3JFMHFMdzFqSWhXa1hXaDB1R2RmTEVqeHFndWtZY1FpenpuNmRfdXJyUDd1SV9xdGVQRTJqSWVYYmJieXFnM0xmZzhobnYxWUFBRDNKWFNtcGJVZG5pYzZPdWI4WHhXRUR1b0YzNEI0SFo3V0RYNXZEakZOcUNJZnhOT09oMW9nNE9yQzlNSTR3enRoOUE2SFdSVnBjMTJKTkRKUWRvTU96RDljZWFJV3BBMHkzMDdVRWRobl90UXRJLWZV?oc=5"
+    },
+    {
+      "text": "Microsoft Stock Forecast: (NASDAQ:MSFT) AI Growth Keeps Shares Near $510 With $600 Target - tradingnews.com. Microsoft Stock Forecast: (NASDAQ:MSFT) AI Growth Keeps Shares Near $510 With $600 Target&n...",
+      "source": "Google News",
+      "sentiment_score": 0.823,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T20:24:05",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOekF6M0ZUZkhqNVd5UlRrbVV6alN0NWpDanhBNkRsMFozM3c3X0xFMjlyeTAwMGVQVW9QbmlnNEFpdFNNeGhlWnNOZUFyUWE1czhMN3NfMzdPRHJsRDZpTlRESGp2TTVZQlRfVnRZX2wtejBkeWZUNklUQUdsVFV0ckhvcDFPVUtQZUFHTHFncEpvdw?oc=5"
+    },
+    {
+      "text": "Free Cash Flow Boom Keeps Microsoft Ahead of the Pack - MarketBeat. Free Cash Flow Boom Keeps Microsoft Ahead of the Pack&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T16:25:06",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPakRSVUdDcmw4SWpaVEFQOHg1ZTlOTzY2NDdELVBJeFQzdmt3UTBITU5vWkVBVkFfMjltazlob2cwSENQY2duN0NkdDU5RWlocldteUR3R3NCYVVFRHhVand1b3RRMEs4S0dRVW8wdlVxbnlxNEFQcFV3SjUwS281OW8wajYzS05PVjR2aUlLVUtFZG1MY0E?oc=5"
+    },
+    {
+      "text": "UBS Maintains Buy on Microsoft (MSFT), Citing Confidence from Pricing Moves - MSN. UBS Maintains Buy on Microsoft (MSFT), Citing Confidence from Pricing Moves&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T05:13:29",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSUNKb0F0SUxNbHZxYWttWEQ4MFpQTGRqWjRnZl9sT1I0MUd3dzhIWUFPZ3dhbXFwTU1mUnM3UWh3ekptaDVCQ244ZTNMUjJiYTdtU1VOU0hlREE2SE0tako0T1ZKM05JNV8yYlhUS1FMUmp1RUZrUENYVE5HUWRpS0pJTTJqY3dfUEJ3bG9vcHFfdHR0YlUtMWN5WjRzdGR5WVRfRW1FcU9rMmlIWExkRWVxOXRzTTUycl9BY1ZzaGxYRDB1?oc=5"
+    },
+    {
+      "text": "Microsoft: Buy Wonderful Businesses At Fair Prices",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.718,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:08:33.226344",
+      "url": "https://seekingalpha.com/article/4817634-microsoft-buy-wonderful-businesses-at-fair-prices#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "MarketsWhy Does This Crazy Stock Market Keep Ignoring Jack Bogle’s ‘Iron Rule’?",
+      "source": "MarketWatch",
+      "sentiment_score": -0.665,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T19:08:25.800511",
+      "url": "https://www.barrons.com/articles/stock-market-reversion-to-the-mean-f7b57c1d?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Microsoft: On The Right Side Of The Generative AI War Against Software",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.599,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T23:08:33.227346",
+      "url": "https://seekingalpha.com/article/4815003-microsoft-right-side-of-generative-ai-war-against-software#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Marvell Technology (MRVL) Reports Surging US$2 Billion Sales with Positive Earnings Guidance. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T00:08:23.410357",
+      "url": ""
+    },
+    {
+      "text": "Nvidia's Big Tech clientele looks like a vulnerability but acts like a chokehold. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.55,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T16:08:23.403664",
+      "url": ""
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.16,
+    "last_week_average": 0.125,
+    "overall_average": 0.125,
+    "articles_last_24h": 18,
+    "articles_last_week": 46
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

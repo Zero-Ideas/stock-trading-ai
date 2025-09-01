@@ -1,0 +1,430 @@
+{
+  "symbol": "KO",
+  "company_name": "Coca Cola",
+  "analysis_timestamp": "2025-08-29T14:20:12.730398",
+  "total_sources_analyzed": 38,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.169,
+    "average_compound": 0.138
+  },
+  "sentiment_distribution": {
+    "positive": 16,
+    "neutral": 17,
+    "negative": 5,
+    "positive_percentage": 42.1,
+    "negative_percentage": 13.2
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Seeking Alpha": 8,
+    "Google News": 15,
+    "Bloomberg": 3,
+    "Yahoo Finance": 12
+  },
+  "sample_articles": [
+    {
+      "text": "PepsiCo Vs. Coca-Cola: Value Buy Opportunity Vs. Most Valuable Beverage Brand",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.822,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T18:19:54.051576",
+      "url": "https://seekingalpha.com/article/4802441-pepsico-vs-coca-cola-value-buy-opportunity-vs-most-valuable-beverage-brand#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "FourKites Recognizes Ardent Mills, Kimberly-Clark, The Coca-Cola Company and Others for Outstanding Achievements in Supply Chain Transformation. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.796,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T03:19:44.671409",
+      "url": ""
+    },
+    {
+      "text": "A Fresh Look at Coca-Cola’s (KO) Valuation as Shares Quietly Climb Higher - simplywall.st. A Fresh Look at Coca-Cola’s (KO) Valuation as Shares Quietly Climb Higher&nbsp;&nbsp;simplywall.st",
+      "source": "Google News",
+      "sentiment_score": 0.791,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T14:31:41",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPenlJaDhDemkzSFF1Z3dpekFxbUJQZmFwdTIyRjZibGtMeEdmNmREWFR1QUp0Z0MyTER3cllzOFVRd3c4bjVJa3ZYdUdQNlFCdVI3X05GNjdKc1ZCam5CWEVVTE8wWHVIVzhmcnQ1LUpNaTVRUVk5bXVFTlI4eThPTzRjVEdiem5SbW0zemNzdTVkSHc1SzJfMUw4VXFSanRsM0otc0tYdC1acXI5Z0Q3YUJQNk1EOFNRVzNjUlVfdk5Od1JGTDNaOUgxY0Y3RjNHNEFj0gHYAUFVX3lxTE94QUZzZzktVWtLdGpoRzZfYTNMNmgxaXZMV2dQZ29Ua3lPQU12WHFxMGRYdFRfaDJGYkJDNzd2RXBVT3ZaLVlwYVFHQUU1aFVTY3dDckpPRFJBWTgycDQxQTJ6cVpldWgwYS1McWdKeFZ6V1hYU3pVNHBmTGE4MUpHOE9CZlZHaVczV0x6WEtGVjBDSWxHekhmV29pdW1iU2tUb3VKaUlnYm5jY1RZUmNHQUdnQzdTRU1Fc0ptSWk1U3dxM2JFbS1fbXBHa2V0OXJDYmhHaURrMQ?oc=5"
+    },
+    {
+      "text": "Buffett Might Not Buy AI -- But He'd Love This Chipmaker's Margins. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.778,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T00:19:44.673920",
+      "url": ""
+    },
+    {
+      "text": "Coca-Cola: Good Revenue Growth Prospects But Slowing Margin Expansion And Balanced Risk Reward",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.775,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T09:19:54.050576",
+      "url": "https://seekingalpha.com/article/4806651-coca-cola-revenue-growth-prospects-slowing-margin-expansion-balanced-risk-reward#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Stock Analysis | The Coca-Cola Outlook - A Cautionary Tale Amid Strong Fundamentals - AInvest. Stock Analysis | The Coca-Cola Outlook - A Cautionary Tale Amid Strong Fundamentals&nbsp;&nbsp;AInvest",
+      "source": "Google News",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T14:37:20",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTWM4U2ptWGdXM0trWlFXdS1jdWRuaERfdTFlanRueEx6QXJ0ODQxblh2VmdOMGN4bTZlVnhqOVFyWldONVVPVUNPQ2dqdUFSWHhtTktmakpTODJGWDAzeVFKeGIzc185R2ZTMjZMbDdudHJUQi1DbXc1aUdYNUlzRkNpSXpwWUM5TlM2MzhpM3JKdFFOSGlYcEgwTjZTcXhSZXQwbEV3?oc=5"
+    },
+    {
+      "text": "Where Will Coca-Cola Stock Be in 5 Years? - The Motley Fool. Where Will Coca-Cola Stock Be in 5 Years?&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.732,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T07:25:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQ1JTR0ItYV9IakhpRVMxRWY0VE1IT09pWEpWMXBMMzV1S1BVSUpWUUUxY0xiVDlZbDVHOUVoZE9DemRUT2hmVjFWUnd4ZHhjb3ptV05rR2lJZU44TlNjUGlXbHlMcHJIb0hMVVVOMWxFZ2lISnY3TXc3aTVwalFrQWgyX19kbVA3aTdr?oc=5"
+    },
+    {
+      "text": "Coca-Cola Stock Price (NYSE:KO) Holding $70 Support - Company Considers Costa Coffee Sale - AskTraders.com. Coca-Cola Stock Price (NYSE:KO) Holding $70 Support - Company Considers Costa Coffee Sale&nbsp;&nbsp;AskTraders.com",
+      "source": "Google News",
+      "sentiment_score": 0.66,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T10:16:34",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNN3VNR0FfQm9WT2ZUazJRalI3X292Y0U5SzdSVTRtbE1TQS1TT1ZvNzF5MXRNRWtQbm9CQ1A2UmphMW1HYnhsb2NXUzJSTmFKeFRESlVEd3lIWkplUnZwaER4S2pQYW5qOEJvQjJhYWp0QzhRRDBoTnhXUUZwY28xNTlvOVdjSm9TUXJ3NGQ3NGdjeUJXMHVHTFV6bDg3dlZodEl5ZXVzUXlfaUt5RHRLYVducEotcklGX3RYRA?oc=5"
+    },
+    {
+      "text": "4 Reasons to Buy Coca-Cola Stock Like There's No Tomorrow - The Motley Fool. 4 Reasons to Buy Coca-Cola Stock Like There's No Tomorrow&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.637,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T08:40:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWkU5Q3kzZ0VaVUtRZ1dZNG1WWU9sLUxvT3J4M0ZVY2tieWVkZllIXzhmWWwzMGRyQ204dzlzSWhqTkRjV2FrazhDS0xkUE1DVHhxR0lraEVwZXB4dmlxQk12MnVSRlRwYkUyYl9oT0NHUTl3UUllWXZzY3ZhRWJTVDNMbG80Wl8zR3ZlMEJJaFk5R0didVE?oc=5"
+    },
+    {
+      "text": "After Earnings, Is Coca-Cola Stock a Buy, a Sell, or Fairly Valued? - Morningstar. After Earnings, Is Coca-Cola Stock a Buy, a Sell, or Fairly Valued?&nbsp;&nbsp;Morningstar",
+      "source": "Google News",
+      "sentiment_score": 0.504,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-07-31T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObTJJYVVaYTNLUVFFc3Y5ZnpuRzc2dFA5dzhYRENLN1lsLUYwOE9PQ2tlSnVfa25LcnJ6V3RScWNWb2owNFFHaWFsdk5RVDlUM2xsYXNJNk5UN19oY0Y4YkhRVmY3V1JLNXkxNGk5c1VZSmpRbEVSWEJUNVozTE5WWVViM2tjY2E5RFVPazFhWU9sVk5iYWhZQ3NiYVc?oc=5"
+    },
+    {
+      "text": "Precision Trading with Coca-cola Company (the) (KO) Risk Zones - news.stocktradersdaily.com. Precision Trading with Coca-cola Company (the) (KO) Risk Zones&nbsp;&nbsp;news.stocktradersdaily.com",
+      "source": "Google News",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T03:30:02",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNHp5QVNMbE5MM1E0dVJ6b1B4Xy12UXhTc01OUmQ0RzFkOElVS25TU1BCdFE3eVVpejBaeXJtSzctc0hNM0t0b2NYMlF0anptRVNJVWtyVUFBbm80NzliZWJ5Q0w0dXBIWXNTcmR3REMxd3VrVXZCQU4wLW05c1FnSkdNNkM1YWJraEQ0N19tWW91R214aFhOWDhfTWNGZUFiNWxqTGFlMFR1WWYxc3lOSDE5QndTY0dQT0FGREVEOENlb3BiOU5Ea3lfM3RQS3Y1d2VrVw?oc=5"
+    },
+    {
+      "text": "Coca-Cola Volumes Dip in Key Markets: Premium Pricing to Save the Day?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.494,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T21:19:44.663897",
+      "url": ""
+    },
+    {
+      "text": "Coca-Cola Says IRS Using 'Arbitrary' Tax Model in Transfer Pricing Dispute. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.402,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T17:19:44.669408",
+      "url": ""
+    },
+    {
+      "text": "Coca-Cola: Maybe The Old Way Of Looking At Dividends Is Losing Its Appeal (Rating Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.382,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T21:19:54.050576",
+      "url": "https://seekingalpha.com/article/4815128-coca-cola-stock-maybe-old-way-of-looking-at-dividends-losing-its-appeal-downgrade-hold#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Coca-Cola: Recent Earnings Report Shows Growth Has Stagnated While Clouds Are Building",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T21:19:54.050576",
+      "url": "https://seekingalpha.com/article/4815151-coca-cola-recent-earnings-report-shows-growth-has-stagnated-while-clouds-are-building#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Coca-Cola: Top Choice In Times Of Uncertainty At An Opportunity Cost",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T03:19:54.049571",
+      "url": "https://seekingalpha.com/article/4815914-coca-cola-top-choice-in-times-of-uncertainty-at-an-opportunity-cost#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T15:20:05.410568",
+      "url": "https://www.bloomberg.com/quote/KO:US"
+    },
+    {
+      "text": "BofA Stays Bullish on Coca-Cola (KO), Sees Upside Despite Volume Pressures - Yahoo Finance. BofA Stays Bullish on Coca-Cola (KO), Sees Upside Despite Volume Pressures&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.241,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-09T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CNEk4WnhjdUZ4THc5c0RReFN3RUdZQWx3MV9PRDFmTVF0ZGd3TnBwb2pnbWtJSDc1VDJHeXBUVlZPYnhIRG5MVEM5aXBlVHFfSC1jUlY1SkNvQVhzSnFvVjFrMXVPZGN2VU84UzBxTVRLejNQZTU4Wk9UeEF5OFk?oc=5"
+    },
+    {
+      "text": "Why Broadcom (AVGO) Shares Are Falling Today. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.153,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T15:19:44.662523",
+      "url": ""
+    },
+    {
+      "text": "4 Reasons to Buy Coca-Cola Stock Like There's No Tomorrow. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.077,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T15:19:44.675425",
+      "url": ""
+    },
+    {
+      "text": "Coca-Cola: Sweet Dividends, Bitter Valuation, And Prepping For The Next Downturn",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.052,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T18:19:54.050576",
+      "url": "https://seekingalpha.com/article/4815645-coca-cola-sweet-dividends-bitter-valuation-and-prepping-for-the-next-downturn#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Coca-Cola (NYSE: KO) Price Prediction and Forecast 2025-2030 (September 2025) - 24/7 Wall St.. Coca-Cola (NYSE: KO) Price Prediction and Forecast 2025-2030 (September 2025)&nbsp;&nbsp;24/7 Wall St.",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:00:04",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5UNnA2eG5VbGtpeEZjeVVhaDBLNzBtMnJKZU9fajZmZXk4REs2QzRpXy16T1hWOWZ0NWw0cFNyYUV5MDNGMWdF?oc=5"
+    },
+    {
+      "text": "Here is What to Know Beyond Why CocaCola Company (The) (KO) is a Trending Stock - Yahoo Finance. Here is What to Know Beyond Why CocaCola Company (The) (KO) is a Trending Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:00:03",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYTRMUWpsWDNScmN4Rk5pUm1CdjduaHlaTHZHUDhEc2N0THFQdFlqcjdKVE9pY2lEZkx4SWxIbVVaUW9UNDJWSE5Lc0JjekhQZXBkT0ZuaDVpbm9TaUIxU1BfQUZuSWZxNW91YzJVWHhqWnFvMzFKZ3hWX0VWay1HbjFBQWc?oc=5"
+    },
+    {
+      "text": "Apollo Explores Costa Acquisition from Coca-Cola (KO) - Insider Monkey. Apollo Explores Costa Acquisition from Coca-Cola (KO)&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:51:16",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM2tVM1IyZm1XalRDVF9RYlQwOTYtUXFKWDVub0s4MVo4UG5pZl8tMGtoa1lXendUdFZFNmQ4alpCeTFBc2Z6X3RnTjI1dzV3c0tfSl81eXUzRVVuTFFKUFVSc19nMkszN0ZuZmpqbXRCdHlpSFVEaHVoX1BJU0hSQW1WNkpTVGNPeWdicFZwUnJiTUg3Y2xWcGEzVdIBowFBVV95cUxOWDQxOHJtY204ZzZ0UUlNVV9qc1hUdzhlc2VXQ1BGX19xc3N0SmtKZ3AzOTAtNGprSFlBSUdkOTgxQWdKMDY1dHBadlJwcWJ1dnZjdzVUWXZSM0JxdFk4b2NOTkItcVRaRTNMYUYxNDhVRGphQWRPb1pfWVVxT3JyMjBZMWljZnRnX1pLZ0VmUHFMVmozc3BnLTdVV0ZEOVR3aUhj?oc=5"
+    },
+    {
+      "text": "Coca-Cola Stock (KO) Opinions on Recent Earnings Report - Quiver Quantitative. Coca-Cola Stock (KO) Opinions on Recent Earnings Report&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-03T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYzNlREIyRkd1MVVjUWtyVU9iTmowS1RYT2hyczI5dVBzTW5JMjBLbFNUdkpfaXlxcGpSYmsxZ3RrOEMzaGNiakk3SlNPdFFoVTUySHpON3UwNUtoM1ZXekgzYnN0UUxkVklSaDQtNV9PZWFocjR3UzFoUDJWR3c3QVpXSmd3cTBWRWE4S3R1TkJjYUY4Mm5V?oc=5"
+    },
+    {
+      "text": "How Will Coca-Cola Stock React To Its Upcoming Earnings? - Trefis. How Will Coca-Cola Stock React To Its Upcoming Earnings?&nbsp;&nbsp;Trefis",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-07-18T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSlNfR1ZXRXZQQ2hmTnJZd0MwS1Zmd2tYX0h5RXpSNlJidW95QjFHWnV5V0FMY0V3UHhLNFk3dXlJY3NrYlhuUGRvb2ZiYjVreTlhaGdoLWs5RmRneFZRMjI1MTh1QnZ1czR2NWNqLWc5M0J2TkYtRHIwaVBKUmdwOHMwS2JHdnBLSjMtblhMclZ2WEpqQTRncEoyNUI5aDN4MmxkcmdpRTRXa1VYeEZwTjRIaFJZNnM?oc=5"
+    },
+    {
+      "text": "Coca-Cola vs. Monster Beverage: Which Stock Offers Refreshing Returns? - The Globe and Mail. Coca-Cola vs. Monster Beverage: Which Stock Offers Refreshing Returns?&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T15:58:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQWgwLWl3UWhXbVVUYWhfZjl1UU9ySXR5SnJsRmRGd2RVU3o3TG14VFprQXBHWmUwOUZsUXNzdm0zSTAwN0RNUU9zNXNYU2FyUjg1U3BsNEd5ZWVqRGRSNms3bTZLM29VeTNwQmNQX0lRSU0wWGNJSTJHZFBzVTIzblVwN3Zzb2RLV3A1Qk1YSFJjOUhjMEZ4T1ZGbEZpTjJmTXIzV2RGd2Nzc1dSR0ZKenF3ZVZ6TjhiRzhKcjIweC1PV1Y5TmxpRGxVb19qbjdZNWh2cDZ6MlgtSWhldThxOFBZOHlxUQ?oc=5"
+    },
+    {
+      "text": "Coca-Cola Stock Isn’t The Compounder The Market Thinks It Is (NYSE:KO) - Seeking Alpha. Coca-Cola Stock Isn’t The Compounder The Market Thinks It Is (NYSE:KO)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-20T09:15:04",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZWt6aE91dmxMWlAxdFRVY2FCb29JX21WT2NXMy1JYUtjT1ZGM05SZnBmT0kyVGpNc3JBSHVBRGdMQnVCTk9yUGU2dWdIUW1kemZsLVR3X0FXeDBkLXJxeWJLeVh4NEVqblZlVHYwZ3FjYXNtU1ViY3lvb3R2UDNQYXhuR3BaM3hadlF5am1oQ1BXU0tOQXQ0cThR?oc=5"
+    },
+    {
+      "text": "1 Incredible Reason to Buy This Dividend Stock Before Oct. 22. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:19:44.666408",
+      "url": ""
+    },
+    {
+      "text": "Apollo Explores Costa Acquisition from Coca-Cola (KO). Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T20:19:44.667408",
+      "url": ""
+    },
+    {
+      "text": "Campbell's Gears Up for Q4 Earnings: Here's What Investors Should Know. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:19:44.668408",
+      "url": ""
+    },
+    {
+      "text": "Here is What to Know Beyond Why CocaCola Company (The) (KO) is a Trending Stock. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T19:19:44.670409",
+      "url": ""
+    },
+    {
+      "text": "5 Things to Know About Coca-Cola Stock Before You Buy. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T20:19:44.672914",
+      "url": ""
+    },
+    {
+      "text": "Where Will Coca-Cola Stock Be in 5 Years?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T21:19:44.675425",
+      "url": ""
+    },
+    {
+      "text": "Warren Buffett's Berkshire Hathaway Should Sell Coca-Cola",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:19:54.049571",
+      "url": "https://seekingalpha.com/article/4817069-warren-buffett-berkshire-hathaway-should-sell-coca-cola#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Coca-Cola May Not Be The Compounder The Market Thinks It Is",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T06:19:54.050576",
+      "url": "https://seekingalpha.com/article/4815134-coca-cola-isnt-the-compounder-the-market-thinks-it-is#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Coca-Cola Co/TheFollowFollowingFollowFollowFollowFollowKO:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T09:20:02.194734",
+      "url": ""
+    },
+    {
+      "text": "Coca-Cola Co/TheFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:20:02.196244",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "PepsiCo Vs. Coca-Cola: Value Buy Opportunity Vs. Most Valuable Beverage Brand",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.822,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T18:19:54.051576",
+      "url": "https://seekingalpha.com/article/4802441-pepsico-vs-coca-cola-value-buy-opportunity-vs-most-valuable-beverage-brand#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "FourKites Recognizes Ardent Mills, Kimberly-Clark, The Coca-Cola Company and Others for Outstanding Achievements in Supply Chain Transformation. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.796,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T03:19:44.671409",
+      "url": ""
+    },
+    {
+      "text": "A Fresh Look at Coca-Cola’s (KO) Valuation as Shares Quietly Climb Higher - simplywall.st. A Fresh Look at Coca-Cola’s (KO) Valuation as Shares Quietly Climb Higher&nbsp;&nbsp;simplywall.st",
+      "source": "Google News",
+      "sentiment_score": 0.791,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T14:31:41",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPenlJaDhDemkzSFF1Z3dpekFxbUJQZmFwdTIyRjZibGtMeEdmNmREWFR1QUp0Z0MyTER3cllzOFVRd3c4bjVJa3ZYdUdQNlFCdVI3X05GNjdKc1ZCam5CWEVVTE8wWHVIVzhmcnQ1LUpNaTVRUVk5bXVFTlI4eThPTzRjVEdiem5SbW0zemNzdTVkSHc1SzJfMUw4VXFSanRsM0otc0tYdC1acXI5Z0Q3YUJQNk1EOFNRVzNjUlVfdk5Od1JGTDNaOUgxY0Y3RjNHNEFj0gHYAUFVX3lxTE94QUZzZzktVWtLdGpoRzZfYTNMNmgxaXZMV2dQZ29Ua3lPQU12WHFxMGRYdFRfaDJGYkJDNzd2RXBVT3ZaLVlwYVFHQUU1aFVTY3dDckpPRFJBWTgycDQxQTJ6cVpldWgwYS1McWdKeFZ6V1hYU3pVNHBmTGE4MUpHOE9CZlZHaVczV0x6WEtGVjBDSWxHekhmV29pdW1iU2tUb3VKaUlnYm5jY1RZUmNHQUdnQzdTRU1Fc0ptSWk1U3dxM2JFbS1fbXBHa2V0OXJDYmhHaURrMQ?oc=5"
+    },
+    {
+      "text": "Buffett Might Not Buy AI -- But He'd Love This Chipmaker's Margins. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.778,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T00:19:44.673920",
+      "url": ""
+    },
+    {
+      "text": "Coca-Cola: Good Revenue Growth Prospects But Slowing Margin Expansion And Balanced Risk Reward",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.775,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T09:19:54.050576",
+      "url": "https://seekingalpha.com/article/4806651-coca-cola-revenue-growth-prospects-slowing-margin-expansion-balanced-risk-reward#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Stock Analysis | The Coca-Cola Outlook - A Cautionary Tale Amid Strong Fundamentals - AInvest. Stock Analysis | The Coca-Cola Outlook - A Cautionary Tale Amid Strong Fundamentals&nbsp;&nbsp;AInvest",
+      "source": "Google News",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T14:37:20",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTWM4U2ptWGdXM0trWlFXdS1jdWRuaERfdTFlanRueEx6QXJ0ODQxblh2VmdOMGN4bTZlVnhqOVFyWldONVVPVUNPQ2dqdUFSWHhtTktmakpTODJGWDAzeVFKeGIzc185R2ZTMjZMbDdudHJUQi1DbXc1aUdYNUlzRkNpSXpwWUM5TlM2MzhpM3JKdFFOSGlYcEgwTjZTcXhSZXQwbEV3?oc=5"
+    },
+    {
+      "text": "Where Will Coca-Cola Stock Be in 5 Years? - The Motley Fool. Where Will Coca-Cola Stock Be in 5 Years?&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.732,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T07:25:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQ1JTR0ItYV9IakhpRVMxRWY0VE1IT09pWEpWMXBMMzV1S1BVSUpWUUUxY0xiVDlZbDVHOUVoZE9DemRUT2hmVjFWUnd4ZHhjb3ptV05rR2lJZU44TlNjUGlXbHlMcHJIb0hMVVVOMWxFZ2lISnY3TXc3aTVwalFrQWgyX19kbVA3aTdr?oc=5"
+    },
+    {
+      "text": "Coca-Cola Stock Price (NYSE:KO) Holding $70 Support - Company Considers Costa Coffee Sale - AskTraders.com. Coca-Cola Stock Price (NYSE:KO) Holding $70 Support - Company Considers Costa Coffee Sale&nb...",
+      "source": "Google News",
+      "sentiment_score": 0.66,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T10:16:34",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNN3VNR0FfQm9WT2ZUazJRalI3X292Y0U5SzdSVTRtbE1TQS1TT1ZvNzF5MXRNRWtQbm9CQ1A2UmphMW1HYnhsb2NXUzJSTmFKeFRESlVEd3lIWkplUnZwaER4S2pQYW5qOEJvQjJhYWp0QzhRRDBoTnhXUUZwY28xNTlvOVdjSm9TUXJ3NGQ3NGdjeUJXMHVHTFV6bDg3dlZodEl5ZXVzUXlfaUt5RHRLYVducEotcklGX3RYRA?oc=5"
+    },
+    {
+      "text": "4 Reasons to Buy Coca-Cola Stock Like There's No Tomorrow - The Motley Fool. 4 Reasons to Buy Coca-Cola Stock Like There's No Tomorrow&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.637,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T08:40:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWkU5Q3kzZ0VaVUtRZ1dZNG1WWU9sLUxvT3J4M0ZVY2tieWVkZllIXzhmWWwzMGRyQ204dzlzSWhqTkRjV2FrazhDS0xkUE1DVHhxR0lraEVwZXB4dmlxQk12MnVSRlRwYkUyYl9oT0NHUTl3UUllWXZzY3ZhRWJTVDNMbG80Wl8zR3ZlMEJJaFk5R0didVE?oc=5"
+    },
+    {
+      "text": "After Earnings, Is Coca-Cola Stock a Buy, a Sell, or Fairly Valued? - Morningstar. After Earnings, Is Coca-Cola Stock a Buy, a Sell, or Fairly Valued?&nbsp;&nbsp;Morningstar",
+      "source": "Google News",
+      "sentiment_score": 0.504,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-07-31T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObTJJYVVaYTNLUVFFc3Y5ZnpuRzc2dFA5dzhYRENLN1lsLUYwOE9PQ2tlSnVfa25LcnJ6V3RScWNWb2owNFFHaWFsdk5RVDlUM2xsYXNJNk5UN19oY0Y4YkhRVmY3V1JLNXkxNGk5c1VZSmpRbEVSWEJUNVozTE5WWVViM2tjY2E5RFVPazFhWU9sVk5iYWhZQ3NiYVc?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.096,
+    "last_week_average": 0.136,
+    "overall_average": 0.138,
+    "articles_last_24h": 18,
+    "articles_last_week": 33
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

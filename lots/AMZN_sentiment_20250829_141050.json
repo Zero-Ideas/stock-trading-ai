@@ -1,0 +1,487 @@
+{
+  "symbol": "AMZN",
+  "company_name": "Amazon",
+  "analysis_timestamp": "2025-08-29T14:10:50.651800",
+  "total_sources_analyzed": 45,
+  "unique_sources_count": 5,
+  "source_diversity_score": 0.62,
+  "overall_sentiment": "Very Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.066,
+    "average_compound": 0.212
+  },
+  "sentiment_distribution": {
+    "positive": 27,
+    "neutral": 11,
+    "negative": 7,
+    "positive_percentage": 60.0,
+    "negative_percentage": 15.6
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "MarketWatch": 6,
+    "Yahoo Finance": 12,
+    "Bloomberg": 4,
+    "Seeking Alpha": 8,
+    "Google News": 15
+  },
+  "sample_articles": [
+    {
+      "text": "“…Is Slowing Growth for AWS a True Red Flag?” Amazon Stock (NASDAQ:AMZN) Notches Up Despite Concerns - TipRanks. “…Is Slowing Growth for AWS a True Red Flag?” Amazon Stock (NASDAQ:AMZN) Notches Up Despite Concerns&nbsp;&nbsp;TipRanks",
+      "source": "Google News",
+      "sentiment_score": 0.911,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T17:05:03",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbGM2Mzg2Zmh1N1BONkkxR1VKS1RMamZqUm02WkZrY3psZS1yXzdUQTdYR3h2T0lwcWhTaW9RTklHWFZzLUl1U0RONWQ1TEpSQXVxZGd0STJKZ000U1J0Nm9SZnl4RGo3RnJ0cjlqcHNiNjJ3RnFYZmNDUGJjQ1RLZ1F3Ykh0M1JwM1BQQWxtdVFicWE0U2pKRXh3VkVFZkdKOTdXZUJfdkZEU2F3TzN6c0lHZlh1ZW41NlduTlFWYnE?oc=5"
+    },
+    {
+      "text": "Amazon: Snatch Up This Deep Value Growth Stock Now - Seeking Alpha. Amazon: Snatch Up This Deep Value Growth Stock Now&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.886,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:30:33",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR0k1QUdhU1AxcXQtcy1qRlNjWEw0c1Z5bmZKR1lnMmpraHhUdzJfSW95U0FUb2Fta1RvWXVPVUFUZnBSTDRJTXZocWYzR0lvbWlDMENIcTQzWnBDQlRSRk95WmV0aFVNYTNBNnU5ZFctOWVyVUFRb0l1dUdqWTR1M25XencyNXVCbTBjc0oxYnpJdEZ4?oc=5"
+    },
+    {
+      "text": "MSFT vs. AAPL vs. AMZN: Which Mega-Cap Tech Stock Is the Best Pick, According to Wall Street? - TipRanks. MSFT vs. AAPL vs. AMZN: Which Mega-Cap Tech Stock Is the Best Pick, According to Wall Street?&nbsp;&nbsp;TipRanks",
+      "source": "Google News",
+      "sentiment_score": 0.868,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T12:50:29",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnZNZkJ5a0Y2bUdLMWlDUGh0bWhTRHBrN3JHZHFDRkFvdS04eGhnamxHbFpNR00yeUZKWThiOGdESzRhMVlzQVpkZ183UGJ3NEg2emcxa3dkd01QTW1DQkpDVGdWenF1aTdQWTFCZUtWUlVuV0pQYkxiYzNXMzdTd1NIbmRkcEpPMVQyay1lTmdhOWNlNTlabDJ3THVfUWxrNzBfWHI2YnpoWllsMDIzMk5lN1d2ZEEyeEE?oc=5"
+    },
+    {
+      "text": "Analyst Explains Why He Likes Amazon (AMZN) Stock – ‘Really Bullish on Where AWS is Going’ - Yahoo Finance. Analyst Explains Why He Likes Amazon (AMZN) Stock – ‘Really Bullish on Where AWS is Going’&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.791,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T20:06:52",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORU5leDhMRnpEUjJFb1M4YWVuQVdocUhMdm9mTENTT3ItUDNzOTJVNGRLZE5FMXZocHdOWXFlbmZub2g3eURVRnd2anJGaGwtT1pMSVRUTVFzem5TM3lfOXlrcUVxaEdyMGc1TVVOTFNBYzJqeHpPcG9mUHpuSUsyeWdYeGh0QQ?oc=5"
+    },
+    {
+      "text": "5 No-Brainer Warren Buffett Stocks to Buy Right Now -- Including Amazon.com - The Motley Fool. 5 No-Brainer Warren Buffett Stocks to Buy Right Now -- Including Amazon.com&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.7,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-24T16:15:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYTM1VUM4TVJEbnhSNzRTQ0wzZWVLcFEzQnhhZkZPUl9aa1JxRTVubThEMjVDSnpHUk5FS3NnMThNbi1CRERhblZiWkpvN1lCNk4wX3MtcUhPeC1nSE9RZHN5VXhXTEItcjNuM2E0eV9PTjljSmpEOHZVQ3BQTl9kdV9RSkRSR2sxV3JLMVVydDBLQQ?oc=5"
+    },
+    {
+      "text": "Amazon: Snatch Up This Deep Value Growth Stock Now",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.691,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T20:10:33.559263",
+      "url": "https://seekingalpha.com/article/4817788-amazon-snatch-up-this-deep-value-growth-stock-now#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "MarketsWhy Does This Crazy Stock Market Keep Ignoring Jack Bogle’s ‘Iron Rule’?",
+      "source": "MarketWatch",
+      "sentiment_score": -0.665,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T19:10:26.617114",
+      "url": "https://www.barrons.com/articles/stock-market-reversion-to-the-mean-f7b57c1d?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Amazon Rebounds From Post-Q2 Selloff. Is Amazon Stock A Buy? - Investor's Business Daily. Amazon Rebounds From Post-Q2 Selloff. Is Amazon Stock A Buy?&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.632,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T19:01:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWUNJblpmOHRmTm91T0hfMGFDYmRhZlpiY3BKNTlnWDJxV3J6YTZPMVJHYnlCV3VqVjUtcjhNa2p0WUlFSjI5SWxNeVp0aXMyZ3NSV2pGMWpRcXRGMlg4NThGU093dDlPeEcycmtWNVhmLWg4ZDlMSV9JVTRnVGRDRW5HZFQ?oc=5"
+    },
+    {
+      "text": "Comcast, Amazon Expand Streaming Distribution Agreements",
+      "source": "MarketWatch",
+      "sentiment_score": 0.625,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T13:10:26.620113",
+      "url": "https://www.wsj.com/business/media/comcast-amazon-expand-streaming-distribution-agreements-d43ab58d?mod=mw_quote_news"
+    },
+    {
+      "text": "Amazon: Strength On All Fronts",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.599,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:10:33.560265",
+      "url": "https://seekingalpha.com/article/4816863-amazon-strength-on-all-fronts#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Amazon Stock Fell 8%. Learn Why, What CEO Jassy Can Do And Why To Skip $AMZN Shares - Forbes. Amazon Stock Fell 8%. Learn Why, What CEO Jassy Can Do And Why To Skip $AMZN Shares&nbsp;&nbsp;Forbes",
+      "source": "Google News",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-03T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOc2dNVEl1VXVwemFOQmFFZldCZTI4TU5CdjFXOGVqUk00Mm14ZndxRnNFNVBaaUI4bHJQbjZFbENlcVpzd2FwWmoyQXM4c3pMLWdVYjdrX1pmVEVGNlJYMndYeFpYQ0dFTmtjMjRjVDBfdVhyVG8tcjBaQ2NiaVV3dS1ZSnVFcEdjQWY1MmV1Sm5kYTctQ2h0NGJSUWYxS2xrdDNVVVo0U0dvaEY1U3luSmx6QQ?oc=5"
+    },
+    {
+      "text": "Nvidia's Big Tech clientele looks like a vulnerability but acts like a chokehold. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.55,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:10:24.067754",
+      "url": ""
+    },
+    {
+      "text": "NVIDIA, Meta and Amazon: Top Momentum Plays in the Mag 7. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.542,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T02:10:24.072085",
+      "url": ""
+    },
+    {
+      "text": "1 Reason to Buy Amazon (AMZN) Stock - The Motley Fool. 1 Reason to Buy Amazon (AMZN) Stock&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-24T10:45:00",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTEV0NmZMU01rYVYwNl9seXMzZ0pmNUVYWFV5Z0FhbUVTVW5hbDhyalctYTRpT0xSNHp5ZkpFMWhHWE9VbTlfVzRack5rbXg1YWNKZHJyc29NVW1CUUlXbXc1X212UWs4Mk41RXltV2xmV0xZZlV2Y1ZBaDhkVVU0dXln?oc=5"
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T15:10:26.619114",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    },
+    {
+      "text": "Amazon Stock AMZN Fails at Resistance Despite Streaming Partnership - FXLeaders. Amazon Stock AMZN Fails at Resistance Despite Streaming Partnership&nbsp;&nbsp;FXLeaders",
+      "source": "Google News",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T16:36:30",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOd2tUdHpQT3YtT2JpbWlkc01ZZlJ2aUNiRk9TdDhzR2wwSFZiQU9xYi1ELUF0ZkZDWjMwZGdmMjFURUtBV2JoOU5SYnhHMElrS3oxMEtTUGVmeVFNNXczMWh4eDNWZGd1c3M4UzNTTmpLMUptZ1hfdHVDbDQzSlRZZWY3cmRRTUFHZF83Ul82NWVjbGUxR21rTEJZN00zWHBSM3FnSi0ybXNFSndVX3hR?oc=5"
+    },
+    {
+      "text": "ChipsMarvell Stock Tumbles. Why the AI Chip Player Keeps Disappointing the Market.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T00:10:26.617114",
+      "url": "https://www.barrons.com/articles/marvell-technology-stock-price-earnings-news-331ce67e?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "The Stock Market’s End-of-August Slide Abated a Bit. Breadth Is Improving.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.421,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T08:10:24.073085",
+      "url": ""
+    },
+    {
+      "text": "What's Going On With Amazon Stock Wednesday? - Amazon.com (NASDAQ:AMZN) - Benzinga. What's Going On With Amazon Stock Wednesday? - Amazon.com (NASDAQ:AMZN)&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": 0.414,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T16:44:04",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQS21NZUJsOVNSZmdZSnVSZEVmLW5PWWMtNlV6UnY1MEh6VHA3WVM1NGtQZ1QzajV5cWpldG00U1BHaThPc3RVOWNrWUZ5SEFDQ2Y3YjQ3X0lYUng3NHlTTFJhODFSRFRxNGh4WVNrMmZNUUJkdEFqNEc4ejdsbHlYNVpONFo4cTk2US1pU2JCT1pieVZmaGk0MmY5OU13N0dYVm1fSFc1TUFWNkp2S19jX2VTd1FlN0dOUElsSlFTMnBKSkZXMzA4MGxNSG1yUHI3M0FtRVlGcjI?oc=5"
+    },
+    {
+      "text": "What’s Driving Amazon Stock To New Highs? - Forbes. What’s Driving Amazon Stock To New Highs?&nbsp;&nbsp;Forbes",
+      "source": "Google News",
+      "sentiment_score": 0.414,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T11:15:39",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQd0NjaTZGZlp0bEFuR2NqVHFkWkhHLUl0NmN4QVUxbVAxWGQxVmRZYjdDcTlDVGxSTkdrWWo5Z0ZtblV1QkdiSkxZVXltQUthTGp3RU55Ri1PNE9GcWFicUdDQ3F1dGo1YVFmUTZiX0gzb1YzUWVLZnl3SnlCeVZ6dlp5UGpDSE0xUkdyX05uNjlsZHhzZElxWWRSeERiOUE?oc=5"
+    },
+    {
+      "text": "Barron'sConsumer Discretionary Stocks Are Back in Fashion. There’s a Case for More Gains.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.401,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-26T16:10:26.618113",
+      "url": "https://www.barrons.com/articles/consumer-discretionary-stocks-outlook-81f6759b?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "How ‘Magnificent Seven’ earnings growth in second quarter stacks up against rest of S&P 500",
+      "source": "MarketWatch",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T09:10:26.618113",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/how-magnificent-seven-earnings-growth-in-second-quarter-stacks-up-against-rest-of-s-p-500-hkcje8nQe8S3LweS8MJ0?mod=mw_quote_news"
+    },
+    {
+      "text": "Marvell Stock Plunges As Wall Street Warns Of Limited Near-Term Growth Prospects. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.361,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T04:10:24.077085",
+      "url": ""
+    },
+    {
+      "text": "Amazon Is 'Catching Up' To Microsoft In This Key AI Metric - Investor's Business Daily. Amazon Is 'Catching Up' To Microsoft In This Key AI Metric&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.34,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T20:26:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWWdlX012dnplNUJiRGxxV1Q1emNVMG9PSEEwUzU2UU1jWG9NUmNoeWZBVnNwQmdTa3ROMUxrWnNZNU1JRHNqcFYzYUpBSV9PTUVaeHhYY3k0YXpJT2Q4VkhFZ2dwM1pkcGZnMHduUVJlcGt4OEVVUWlGRVR0NFVhUlR1VXlVRnhiTnR6eF9B?oc=5"
+    },
+    {
+      "text": "Amazon (NASDAQ: AMZN) Stock Price Prediction in 2030: Bull, Bear, & Baseline Forecasts (Aug 29) - 24/7 Wall St.. Amazon (NASDAQ: AMZN) Stock Price Prediction in 2030: Bull, Bear, & Baseline Forecasts (Aug 29)&nbsp;&nbsp;24/7 Wall St.",
+      "source": "Google News",
+      "sentiment_score": 0.34,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T12:45:58",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQM1ZsN0hIUHk2T0xIdDVrUzZ6Qno0eDJlbHE5ZGlSRVZnU3Z3MHV0WTdTeVdqazdGN3hOOEwyRmszWnZIbG00M0E2MTZnRU5TYnRWdDVfLUtPb1JfUEMtYlBCVmUtd1hXM3U3Y3NTNWFMTkNRTFpyYXRqQWhJeUxjZW54TU5hMk12TzhCbTc3MTJ6bDBweFV0TFdyelZmcURlSjVlTTM3VDM0bXVjM1hyYg?oc=5"
+    },
+    {
+      "text": "Amazon Stock (AMZN) Opinions on Streaming Partnership and AI Investment - Quiver Quantitative. Amazon Stock (AMZN) Opinions on Streaming Partnership and AI Investment&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.34,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T17:38:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdTlUUlFQM3FHZW85Qk5qVG43VVVzaVViMGg4ZVFtb2EybUhaVXdLSEtEQnNfV3kzcXBHNWlBR1ZYVll0Ymw1OERxYV9uVDVuUkRzOGhrU2lVVnBtTTJTNExpVlhORDVhSmVFLWhpaloyV3Jya1k1U3c4NXVuUGFQQ0NuS1Awd2hNR3FZVkRUUEVUQmhOeFRRMDBOTndDdmVZNFpfMjlkSTVPNURN?oc=5"
+    },
+    {
+      "text": "Amazon's Grocery Gambit: Turning Strawberries Into Value",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.34,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T15:10:33.560265",
+      "url": "https://seekingalpha.com/article/4814539-amazon-grocery-gambit-turning-strawberries-into-value#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T12:10:43.386559",
+      "url": "https://www.bloomberg.com/quote/AMZN:US"
+    },
+    {
+      "text": "Amazon.com (AMZN) Expands Amazon Business With LPL Financial Nationwide Partnership. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.273,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T18:10:24.076085",
+      "url": ""
+    },
+    {
+      "text": "Amazon: AWS Continues To Lose Ground",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.25,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T22:10:33.560265",
+      "url": "https://seekingalpha.com/article/4815798-amazon-aws-continues-to-lose-ground#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Big Tech investment powers Nvidia results, but Wall Street says 'inevitable' slowdown looms. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.226,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T18:10:24.068754",
+      "url": ""
+    },
+    {
+      "text": "Amazon: Wide Moat And Prime Monetization - Outsized Upside Potential Ahead",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.178,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T18:10:33.559263",
+      "url": "https://seekingalpha.com/article/4817235-amazon-wide-moat-and-prime-monetization-outsized-upside-potential-ahead#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Amazon: Why We Built A Position Amid Tariff-Related Volatility",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.178,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T08:10:33.560265",
+      "url": "https://seekingalpha.com/article/4816702-amazon-why-we-built-a-position-amid-tariff-related-volatility#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Amazon Stock Is Falling. Analysts Say to Buy the Dip. - Investopedia. Amazon Stock Is Falling. Analysts Say to Buy the Dip.&nbsp;&nbsp;Investopedia",
+      "source": "Google News",
+      "sentiment_score": 0.052,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-01T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObXBHQ2RNLUw3UzM5VFJMQlZyYTJuMVRsV2hjQ00tMFl5Nzk3Q0RLOTF5akJ2a2ZrRVVzWnI5LTBCZWV3bzlWekg5T3ZpdTdaTGl1al9LOW4xUWI3d3FmTS1qSUViYk4wMnZwVm9yWkZZajVKLU1HV3BMZVljczBISXV0WVM1RjE2Q1MxTE05WEtCbEE?oc=5"
+    },
+    {
+      "text": "Anthropic Gives Claude Users More Control On Data Use. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:10:24.069754",
+      "url": ""
+    },
+    {
+      "text": "Citi Reiterates a Buy Rating on Amazon.com (AMZN), Keeps PT. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:10:24.070754",
+      "url": ""
+    },
+    {
+      "text": "What's Going On With Broadcom Stock Friday?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:10:24.073085",
+      "url": ""
+    },
+    {
+      "text": "Layoffs hit International Paper, J.B. Hunt, Hormel and more. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T19:10:24.074085",
+      "url": ""
+    },
+    {
+      "text": "OLN Inc Calls for a Return to Real Connection in a Digital World. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:10:24.075084",
+      "url": ""
+    },
+    {
+      "text": "Americans kept spending last month despite elevated inflation. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:10:24.076085",
+      "url": ""
+    },
+    {
+      "text": "Amazon's Ambition In Groceries: Part 2",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T19:10:33.559263",
+      "url": "https://seekingalpha.com/article/4817199-amazons-ambition-groceries-part-2#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "AWS Backlog Fuels Amazon's Future",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:10:33.560265",
+      "url": "https://seekingalpha.com/article/4817086-aws-backlog-fuels-amazon-future#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Amazon.com IncFollowFollowingFollowFollowFollowFollowAMZN:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:10:40.362377",
+      "url": ""
+    },
+    {
+      "text": "Amazon.com IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T23:10:40.363377",
+      "url": ""
+    },
+    {
+      "text": "COP30 Chief Calls on CEOs to Come to Brazil in Rebuff to Trump",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T05:10:43.388077",
+      "url": "https://www.bloomberg.com/news/articles/2025-08-29/cop30-chief-calls-on-ceos-to-come-to-brazil-in-rebuff-to-trump"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "“…Is Slowing Growth for AWS a True Red Flag?” Amazon Stock (NASDAQ:AMZN) Notches Up Despite Concerns - TipRanks. “…Is Slowing Growth for AWS a True Red Flag?” Amazon Stock (NASDAQ:AMZN) Notches Up Des...",
+      "source": "Google News",
+      "sentiment_score": 0.911,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T17:05:03",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbGM2Mzg2Zmh1N1BONkkxR1VKS1RMamZqUm02WkZrY3psZS1yXzdUQTdYR3h2T0lwcWhTaW9RTklHWFZzLUl1U0RONWQ1TEpSQXVxZGd0STJKZ000U1J0Nm9SZnl4RGo3RnJ0cjlqcHNiNjJ3RnFYZmNDUGJjQ1RLZ1F3Ykh0M1JwM1BQQWxtdVFicWE0U2pKRXh3VkVFZkdKOTdXZUJfdkZEU2F3TzN6c0lHZlh1ZW41NlduTlFWYnE?oc=5"
+    },
+    {
+      "text": "Amazon: Snatch Up This Deep Value Growth Stock Now - Seeking Alpha. Amazon: Snatch Up This Deep Value Growth Stock Now&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.886,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:30:33",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR0k1QUdhU1AxcXQtcy1qRlNjWEw0c1Z5bmZKR1lnMmpraHhUdzJfSW95U0FUb2Fta1RvWXVPVUFUZnBSTDRJTXZocWYzR0lvbWlDMENIcTQzWnBDQlRSRk95WmV0aFVNYTNBNnU5ZFctOWVyVUFRb0l1dUdqWTR1M25XencyNXVCbTBjc0oxYnpJdEZ4?oc=5"
+    },
+    {
+      "text": "MSFT vs. AAPL vs. AMZN: Which Mega-Cap Tech Stock Is the Best Pick, According to Wall Street? - TipRanks. MSFT vs. AAPL vs. AMZN: Which Mega-Cap Tech Stock Is the Best Pick, According to Wall Street?&...",
+      "source": "Google News",
+      "sentiment_score": 0.868,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T12:50:29",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnZNZkJ5a0Y2bUdLMWlDUGh0bWhTRHBrN3JHZHFDRkFvdS04eGhnamxHbFpNR00yeUZKWThiOGdESzRhMVlzQVpkZ183UGJ3NEg2emcxa3dkd01QTW1DQkpDVGdWenF1aTdQWTFCZUtWUlVuV0pQYkxiYzNXMzdTd1NIbmRkcEpPMVQyay1lTmdhOWNlNTlabDJ3THVfUWxrNzBfWHI2YnpoWllsMDIzMk5lN1d2ZEEyeEE?oc=5"
+    },
+    {
+      "text": "Analyst Explains Why He Likes Amazon (AMZN) Stock – ‘Really Bullish on Where AWS is Going’ - Yahoo Finance. Analyst Explains Why He Likes Amazon (AMZN) Stock – ‘Really Bullish on Where AWS is Going’&n...",
+      "source": "Google News",
+      "sentiment_score": 0.791,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T20:06:52",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORU5leDhMRnpEUjJFb1M4YWVuQVdocUhMdm9mTENTT3ItUDNzOTJVNGRLZE5FMXZocHdOWXFlbmZub2g3eURVRnd2anJGaGwtT1pMSVRUTVFzem5TM3lfOXlrcUVxaEdyMGc1TVVOTFNBYzJqeHpPcG9mUHpuSUsyeWdYeGh0QQ?oc=5"
+    },
+    {
+      "text": "5 No-Brainer Warren Buffett Stocks to Buy Right Now -- Including Amazon.com - The Motley Fool. 5 No-Brainer Warren Buffett Stocks to Buy Right Now -- Including Amazon.com&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.7,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-24T16:15:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYTM1VUM4TVJEbnhSNzRTQ0wzZWVLcFEzQnhhZkZPUl9aa1JxRTVubThEMjVDSnpHUk5FS3NnMThNbi1CRERhblZiWkpvN1lCNk4wX3MtcUhPeC1nSE9RZHN5VXhXTEItcjNuM2E0eV9PTjljSmpEOHZVQ3BQTl9kdV9RSkRSR2sxV3JLMVVydDBLQQ?oc=5"
+    },
+    {
+      "text": "Amazon: Snatch Up This Deep Value Growth Stock Now",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.691,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T20:10:33.559263",
+      "url": "https://seekingalpha.com/article/4817788-amazon-snatch-up-this-deep-value-growth-stock-now#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "MarketsWhy Does This Crazy Stock Market Keep Ignoring Jack Bogle’s ‘Iron Rule’?",
+      "source": "MarketWatch",
+      "sentiment_score": -0.665,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T19:10:26.617114",
+      "url": "https://www.barrons.com/articles/stock-market-reversion-to-the-mean-f7b57c1d?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Amazon Rebounds From Post-Q2 Selloff. Is Amazon Stock A Buy? - Investor's Business Daily. Amazon Rebounds From Post-Q2 Selloff. Is Amazon Stock A Buy?&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.632,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T19:01:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWUNJblpmOHRmTm91T0hfMGFDYmRhZlpiY3BKNTlnWDJxV3J6YTZPMVJHYnlCV3VqVjUtcjhNa2p0WUlFSjI5SWxNeVp0aXMyZ3NSV2pGMWpRcXRGMlg4NThGU093dDlPeEcycmtWNVhmLWg4ZDlMSV9JVTRnVGRDRW5HZFQ?oc=5"
+    },
+    {
+      "text": "Comcast, Amazon Expand Streaming Distribution Agreements",
+      "source": "MarketWatch",
+      "sentiment_score": 0.625,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T13:10:26.620113",
+      "url": "https://www.wsj.com/business/media/comcast-amazon-expand-streaming-distribution-agreements-d43ab58d?mod=mw_quote_news"
+    },
+    {
+      "text": "Amazon: Strength On All Fronts",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.599,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:10:33.560265",
+      "url": "https://seekingalpha.com/article/4816863-amazon-strength-on-all-fronts#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.194,
+    "last_week_average": 0.208,
+    "overall_average": 0.212,
+    "articles_last_24h": 18,
+    "articles_last_week": 43
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

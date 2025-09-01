@@ -1,0 +1,679 @@
+{
+  "symbol": "AAPL",
+  "company_name": "Apple Inc",
+  "analysis_timestamp": "2025-08-29T15:41:50.268095",
+  "total_sources_analyzed": 69,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Negative",
+  "sentiment_scores": {
+    "average_polarity": 0.032,
+    "average_compound": -0.191
+  },
+  "sentiment_distribution": {
+    "positive": 7,
+    "neutral": 39,
+    "negative": 23,
+    "positive_percentage": 10.1,
+    "negative_percentage": 33.3
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Bloomberg": 7,
+    "MarketWatch": 20,
+    "Yahoo Finance": 20,
+    "Seeking Alpha": 22
+  },
+  "sentiment_model": "FinBERT (Financial BERT)",
+  "sample_articles": [
+    {
+      "text": "New Study Finds AI Is Cutting Entry-Level Hiring as Young Workers Lose Jobs",
+      "source": "MarketWatch",
+      "sentiment_score": -0.972,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T12:41:24.763416",
+      "url": "https://www.tipranks.com/news/new-study-finds-ai-is-cutting-entry-level-hiring-as-young-workers-lose-jobs?mod=mw_quote_news"
+    },
+    {
+      "text": "Huawei's H1 net profit falls 32% amid R&D spending: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.971,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T19:41:31.362679",
+      "url": "https://seekingalpha.com/news/4490317-huaweis-h1-net-profit-falls-32-amid-rd-spending#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "The Stock Market’s End-of-August Slide Abated a Bit. Breadth Is Improving.. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.95,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T06:41:21.097558",
+      "url": ""
+    },
+    {
+      "text": "Apple warns changes to UK mobile market could hurt users, developers: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.946,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T03:41:31.440424",
+      "url": "https://seekingalpha.com/news/4490030-apple-warns-changes-to-uk-mobile-market-could-hurt-users-developers-report#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Apple has an AI problem — and a Google partnership could actually make things worse",
+      "source": "MarketWatch",
+      "sentiment_score": -0.942,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T03:41:24.405592",
+      "url": "https://www.marketwatch.com/story/apple-has-an-ai-problem-and-a-google-partnership-could-actually-make-things-worse-e0a5c0bf?mod=mw_quote_news"
+    },
+    {
+      "text": "Apple faces antitrust probe in Colombia related to App Store",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.939,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T08:41:31.402910",
+      "url": "https://seekingalpha.com/news/4490119-apple-faces-antitrust-probe-in-colombia-related-to-app-store#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Roku's Devices Segment Under Pressure: A Temporary Setback or Trend?. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.936,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T13:41:21.295723",
+      "url": ""
+    },
+    {
+      "text": "Stock Market Today: Dow Sinks, But Nasdaq Fares Much Worse; Nvidia Extends A Losing Streak (Live Coverage). 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.931,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T20:41:20.837764",
+      "url": ""
+    },
+    {
+      "text": "DOJ antitrust head blasts Big Law for obstructive tactics. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.89,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T02:41:20.942002",
+      "url": ""
+    },
+    {
+      "text": "MarketsTrump Fires Another Shot at the Fed. The Economy Could Be Collateral Damage.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.88,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T20:41:24.625016",
+      "url": "https://www.barrons.com/articles/trump-fed-lisa-cook-things-to-know-today-2fee34e4?mod=mw_quote_news"
+    },
+    {
+      "text": "Apple snaps six straight sessions of losses",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.867,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T13:41:31.745727",
+      "url": "https://seekingalpha.com/news/4488430-apple-snaps-six-straight-sessions-of-losses#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A11"
+    },
+    {
+      "text": "US mulls sanctions on officials implementing EU's Digital Services Act: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.823,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T02:41:31.635454",
+      "url": "https://seekingalpha.com/news/4489049-us-mulls-sanctions-on-officials-implementing-eus-digital-services-act#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Apple To Invest $2.5 Billion For This Company's Glass, Making Its Shares Jump",
+      "source": "MarketWatch",
+      "sentiment_score": -0.81,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T23:41:24.536776",
+      "url": "https://www.investors.com/research/corning-stock-fiber-optics-glw-apple-aapl-commscope-comm/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Elon Musk’s companies sue Apple, OpenAI alleging anticompetitive scheme",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.778,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T10:41:31.710366",
+      "url": "https://seekingalpha.com/news/4488844-elon-musks-companies-sue-appleopenai-alleging-anticompetitive-scheme#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "SA analyst upgrades/downgrades: AAPL, MSFT, HOOD, and MSGE",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.776,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T02:41:31.524961",
+      "url": "https://seekingalpha.com/news/4489277-sa-analyst-upgradesdowngrades-aapl-msft-hood-and-msge#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Is Apple Stock Underperforming the Nasdaq?. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.758,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T23:41:21.602295",
+      "url": ""
+    },
+    {
+      "text": "Trump threatens more tariffs and export curbs on nations with digital taxes",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.724,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T13:41:31.671975",
+      "url": "https://seekingalpha.com/news/4489011-trump-threatens-with-more-tariffs-and-export-curbs-on-nations-with-digital-taxes#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Apple's 'Invisible' AI Strategy Weighs On Its Stock. What Worries Wall Street.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.72,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T05:41:23.878523",
+      "url": "https://www.investors.com/news/technology/apple-stock-problem-apple-ai/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Apple Makes Music Push in Radio After Losing Ground to Spotify",
+      "source": "MarketWatch",
+      "sentiment_score": 0.696,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T02:41:24.267759",
+      "url": "https://www.wsj.com/business/media/apple-makes-music-push-in-radio-after-losing-ground-to-spotify-5931c467?mod=mw_quote_news"
+    },
+    {
+      "text": "MarketsBoring Is Better Than Amazon, Apple, and Alphabet. These 3 Stocks Prove It.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.671,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T03:41:24.580621",
+      "url": "https://www.barrons.com/articles/boring-stocks-beat-apple-amazon-alphabet-f2b54f62?mod=mw_quote_news"
+    },
+    {
+      "text": "Musk's xAI sues engineer for allegedly taking secrets to OpenAI. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.644,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T17:41:21.147856",
+      "url": ""
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T12:41:24.039499",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    },
+    {
+      "text": "Nvidia Is Leading a Mag 7 Selloff, But Breadth Is Mixed. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.537,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T17:41:21.398561",
+      "url": ""
+    },
+    {
+      "text": "Trump's 100% Chip Tariff Rocks Tech -- But Apple Just Scored the Biggest Exemption Deal Yet. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.504,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T07:41:20.890746",
+      "url": ""
+    },
+    {
+      "text": "Nvidia’s Hyper-Growth Keeps Stock Valuation Out of Bubble Zone. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.468,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T00:41:21.658740",
+      "url": ""
+    },
+    {
+      "text": "MarketsU.S. Stocks Are Expensive, and Still Set to Outperform the World",
+      "source": "MarketWatch",
+      "sentiment_score": 0.458,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T20:41:24.116876",
+      "url": "https://www.barrons.com/articles/u-s-stocks-expensive-rally-continue-ab3065de?mod=mw_quote_news"
+    },
+    {
+      "text": "Mag 7 stocks deliver earnings beats but results get mixed market response. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.386,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T13:41:21.347538",
+      "url": ""
+    },
+    {
+      "text": "Stock Market Today: Dow Drops, Apple Firm Despite Musk Threat; Cathie Wood Loads Up On This Stock (Live Coverage)",
+      "source": "MarketWatch",
+      "sentiment_score": -0.378,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T04:41:24.720279",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-earnings-inflation-data-palantir-pltr-stock/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Apple: Breakdown Of $600B Investment Commitment (Rating Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.2,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T22:41:31.092406",
+      "url": "https://seekingalpha.com/article/4816858-apple-breakdown-of-600b-investment-commitment-rating-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Apple: An Inflection Point May Have Arrived (Rating Upgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.2,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T17:41:31.128591",
+      "url": "https://seekingalpha.com/article/4816574-apple-an-inflection-point-may-have-arrived-upgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Trump tariffs are increasingly forcing countries to pick sides between the US and China. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:41:20.713594",
+      "url": ""
+    },
+    {
+      "text": "Apple Inc. (AAPL): The AI “Will Come Into Play Soon,” Says Jim Cramer. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T07:41:20.767991",
+      "url": ""
+    },
+    {
+      "text": "TikTok now lets users send voice notes and images in DMs. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:41:20.994606",
+      "url": ""
+    },
+    {
+      "text": "WhatsApp fixes ‘zero-click’ bug used to hack Apple users with spyware. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T06:41:21.047383",
+      "url": ""
+    },
+    {
+      "text": "Is Apple Stock a Buy Now?. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:41:21.194891",
+      "url": ""
+    },
+    {
+      "text": "ChatGPT: Everything you need to know about the AI-powered chatbot. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:41:21.245757",
+      "url": ""
+    },
+    {
+      "text": "U.S. Stocks Are Expensive, and Still Set to Outperform the World. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T07:41:21.446094",
+      "url": ""
+    },
+    {
+      "text": "Do you wish you'd started investing earlier? Yahoo Finance readers have their say. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:41:21.494517",
+      "url": ""
+    },
+    {
+      "text": "How Is Alphabet's Stock Performance Compared to Other Internet Stocks?. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T03:41:21.543425",
+      "url": ""
+    },
+    {
+      "text": "Should You Buy the Low-Cost ETF With 62% Invested in \"Ten Titans\" Growth Stocks?. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T17:41:21.717704",
+      "url": ""
+    },
+    {
+      "text": "Investors are turning to this neglected part of the stock market. And it’s still cheap.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:41:23.791218",
+      "url": "https://www.marketwatch.com/story/investors-are-turning-to-this-neglected-part-of-the-stock-market-and-its-still-cheap-6a7006d2?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "How ‘Magnificent Seven’ earnings growth in second quarter stacks up against rest of S&P 500",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:41:24.002896",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/how-magnificent-seven-earnings-growth-in-second-quarter-stacks-up-against-rest-of-s-p-500-hkcje8nQe8S3LweS8MJ0?mod=mw_quote_news"
+    },
+    {
+      "text": "MarketsFall Should Be Colorful. The Stock Market Outlook Calls for Bargain Buys and More Gains.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T15:41:24.156227",
+      "url": "https://www.barrons.com/articles/stock-market-outlook-f25a09ec?mod=mw_quote_news"
+    },
+    {
+      "text": "Trump Leans on National Security to Justify Next Wave of Tariffs",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T11:41:24.193417",
+      "url": "https://www.wsj.com/economy/trade/trump-tariffs-national-security-86cb5eea?mod=mw_quote_news"
+    },
+    {
+      "text": "Hey, Siri: Why this iPhone user is switching to the new Google Pixel 10",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T16:41:24.233478",
+      "url": "https://www.marketwatch.com/story/sorry-siri-why-this-iphone-user-is-switching-to-the-new-google-pixel-10-3621f6d0?mod=mw_quote_news"
+    },
+    {
+      "text": "MarketsIt’s Trump’s Market Now. How to Navigate Fed Threats, State Stock Buying, Economic Curveballs.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T00:41:24.318828",
+      "url": "https://www.barrons.com/articles/trump-stock-market-fed-things-to-know-today-a4579e2b?mod=mw_quote_news"
+    },
+    {
+      "text": "Apple Promises 'Awe Dropping' Event Sept. 9",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:41:24.362301",
+      "url": "https://www.investors.com/news/technology/apple-stock-iphone-17-reveal-set-september-9-2025/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "TechnologyApple’s Annual Event Will Be Sept 9. What to Expect for the iPhone and AI.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T23:41:24.449370",
+      "url": "https://www.barrons.com/articles/apple-stock-annual-product-event-iphone-ai-90cd9036?mod=mw_quote_news"
+    },
+    {
+      "text": "TechnologyTrump Takes Aim at Digital Taxes. What It Means for Tech Stocks.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T21:41:24.492922",
+      "url": "https://www.barrons.com/articles/tech-stocks-trump-digital-tax-7679469a?mod=mw_quote_news"
+    },
+    {
+      "text": "OpinionApple no longer innovates — it waits. And with AI, anyone playing it safe will get left behind.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T05:41:24.673333",
+      "url": "https://www.marketwatch.com/story/apple-is-blowing-its-chance-for-ai-leadership-but-what-else-would-you-expect-88bc1ed2?mod=mw_quote_news"
+    },
+    {
+      "text": "Apple: Building A Bull Case Is As Easy As A-B-Gen Z!",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:41:30.980496",
+      "url": "https://seekingalpha.com/article/4817808-apple-building-a-bull-case-is-as-easy-as-a-b-gen-z#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "A Small Cap In A Big Cap's Clothing",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:41:31.016991",
+      "url": "https://seekingalpha.com/article/4817689-small-cap-big-caps-clothing#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "The Most Overvalued Of Mag7: Why Apple Gets My Sell",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T23:41:31.055913",
+      "url": "https://seekingalpha.com/article/4816999-the-most-overvalued-of-mag7-why-apple-gets-my-sell#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Apple: The Generative AI Threat Becomes A Pixel",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T22:41:31.167950",
+      "url": "https://seekingalpha.com/article/4816570-apple-the-generative-ai-threat-becomes-a-pixel#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Alphabet's Gemini Is Apple's Saving Grace: Who's The Bigger Winner?",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T02:41:31.208950",
+      "url": "https://seekingalpha.com/article/4816553-alphabet-gemini-apples-saving-grace-whos-the-bigger-winner#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Apple: The Future Is Bright, But That Doesn't Mean To Buy",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:41:31.247923",
+      "url": "https://seekingalpha.com/article/4816427-apple-future-bright-but-doesnt-mean-to-buy#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Apple's AI Supercycle Is Just Getting Started",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:41:31.282696",
+      "url": "https://seekingalpha.com/article/4815516-apples-ai-supercycle-is-just-getting-started#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Apple Is No Longer A Rocket Ship, But Still A Fortress",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:41:31.320477",
+      "url": "https://seekingalpha.com/article/4815411-apple-is-no-longer-a-rocket-ship-but-still-a-fortress#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "Apple teams up with audio streaming platform TuneIn for Apple radio stations: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T03:41:31.483717",
+      "url": "https://seekingalpha.com/news/4489600-apple-teams-up-with-audio-streaming-platform-tunein-for-apple-radio-stations#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Apple reveals iPhone 17 launch event's date and time",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:41:31.560400",
+      "url": "https://seekingalpha.com/news/4489262-apple-reveals-iphone-17-launch-events-date-and-time#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "German court rules Apple Watch not a 'CO2-neutral product' - report",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:41:31.598848",
+      "url": "https://seekingalpha.com/news/4489072-german-court-rules-apple-watch-not-a-co2-neutral-product#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Apple mulls using Google's AI model Gemini to power new Siri: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T20:41:31.792483",
+      "url": "https://seekingalpha.com/news/4488418-apple-mulls-using-googles-ai-model-gemini-to-power-new-siri#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A12"
+    },
+    {
+      "text": "Apple IncFollowFollowingFollowFollowFollowFollowAAPL:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T17:41:39.681384",
+      "url": ""
+    },
+    {
+      "text": "Apple IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:41:39.720631",
+      "url": ""
+    },
+    {
+      "text": "www.apple.com. Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related accessories. The Company also offers payment, digital content, cloud and advertising services. Apple Inc.'s customers are primarily in cons...",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:41:39.795180",
+      "url": "https://www.apple.com"
+    },
+    {
+      "text": "AboutApple IncApple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related accessories. The Company also offers pay.... Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearabl...",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:41:40.011534",
+      "url": ""
+    },
+    {
+      "text": "www.apple.com. www.apple.com",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T02:41:40.043908",
+      "url": "https://www.apple.com"
+    },
+    {
+      "text": "Address1 Apple Park Way Cupertino, CA 95014 United States",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T03:41:40.081676",
+      "url": ""
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T23:41:43.196542",
+      "url": "https://www.bloomberg.com/quote/AAPL:US"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "New Study Finds AI Is Cutting Entry-Level Hiring as Young Workers Lose Jobs",
+      "source": "MarketWatch",
+      "sentiment_score": -0.972,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T12:41:24.763416",
+      "url": "https://www.tipranks.com/news/new-study-finds-ai-is-cutting-entry-level-hiring-as-young-workers-lose-jobs?mod=mw_quote_news"
+    },
+    {
+      "text": "Huawei's H1 net profit falls 32% amid R&D spending: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.971,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T19:41:31.362679",
+      "url": "https://seekingalpha.com/news/4490317-huaweis-h1-net-profit-falls-32-amid-rd-spending#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "The Stock Market’s End-of-August Slide Abated a Bit. Breadth Is Improving.. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.95,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T06:41:21.097558",
+      "url": ""
+    },
+    {
+      "text": "Apple warns changes to UK mobile market could hurt users, developers: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.946,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T03:41:31.440424",
+      "url": "https://seekingalpha.com/news/4490030-apple-warns-changes-to-uk-mobile-market-could-hurt-users-developers-report#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Apple has an AI problem — and a Google partnership could actually make things worse",
+      "source": "MarketWatch",
+      "sentiment_score": -0.942,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T03:41:24.405592",
+      "url": "https://www.marketwatch.com/story/apple-has-an-ai-problem-and-a-google-partnership-could-actually-make-things-worse-e0a5c0bf?mod=mw_quote_news"
+    },
+    {
+      "text": "Apple faces antitrust probe in Colombia related to App Store",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.939,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T08:41:31.402910",
+      "url": "https://seekingalpha.com/news/4490119-apple-faces-antitrust-probe-in-colombia-related-to-app-store#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Roku's Devices Segment Under Pressure: A Temporary Setback or Trend?. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.936,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T13:41:21.295723",
+      "url": ""
+    },
+    {
+      "text": "Stock Market Today: Dow Sinks, But Nasdaq Fares Much Worse; Nvidia Extends A Losing Streak (Live Coverage). 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.931,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T20:41:20.837764",
+      "url": ""
+    },
+    {
+      "text": "DOJ antitrust head blasts Big Law for obstructive tactics. 登入存取你的投資組合",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.89,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T02:41:20.942002",
+      "url": ""
+    },
+    {
+      "text": "MarketsTrump Fires Another Shot at the Fed. The Economy Could Be Collateral Damage.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.88,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T20:41:24.625016",
+      "url": "https://www.barrons.com/articles/trump-fed-lisa-cook-things-to-know-today-2fee34e4?mod=mw_quote_news"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": -0.126,
+    "last_week_average": -0.191,
+    "overall_average": -0.191,
+    "articles_last_24h": 34,
+    "articles_last_week": 69
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

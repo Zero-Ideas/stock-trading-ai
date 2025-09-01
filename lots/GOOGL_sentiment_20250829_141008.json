@@ -1,0 +1,341 @@
+{
+  "symbol": "GOOGL",
+  "company_name": "Alphabet Google",
+  "analysis_timestamp": "2025-08-29T14:10:08.911218",
+  "total_sources_analyzed": 27,
+  "unique_sources_count": 3,
+  "source_diversity_score": 0.38,
+  "overall_sentiment": "Neutral",
+  "sentiment_scores": {
+    "average_polarity": 0.034,
+    "average_compound": -0.049
+  },
+  "sentiment_distribution": {
+    "positive": 5,
+    "neutral": 15,
+    "negative": 7,
+    "positive_percentage": 18.5,
+    "negative_percentage": 25.9
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": -3.65
+  },
+  "sources": {
+    "Seeking Alpha": 8,
+    "Bloomberg": 4,
+    "Google News": 15
+  },
+  "sample_articles": [
+    {
+      "text": "Jim Cramer Missed Out On Alphabet Inc. (GOOGL)’s Shares As They Gain 14% While He Was Selling - Insider Monkey. Jim Cramer Missed Out On Alphabet Inc. (GOOGL)’s Shares As They Gain 14% While He Was Selling&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.778,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T21:20:58",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYlFtdjUxVGVNTzUtdWxCbjVNaXN5ZFBFY3k3ZUlYZkd3TnpYUWJodHZ3NG9sVFRpc2gwMkptYlJsMzNxeTExUldBd1QyQUJUU1ZJRkRhT1N2N1MwTFhHei1lVFVXVmdHNDkwSTRISGFtbGNRZ25NMXNyNmdYX2xCeVVsSE5UZGI5c0d4b1RwczVSUm1fU3lVZGhDV29sRy1zNEpnbE83Y3RWeWNlNVNGLTU5SExOaWxqQnJoNWZtTzh1eWduaVBxT09QMVPSAdQBQVVfeXFMTU1MbUswZUUyUkMzUHBNZlpvcmhjb1NZVkxvb0tXallmZnZlVmp5LWM1V2hQZkxpczY1MFBUYUgwZzA0QjV6N2RNdzRabjhKVURNNDl1VGdJZ2pxMlZBVzFUM2tObThfVlh0RXQzWTBRT3Z5UEdRWmJqTGgyOW4zcmgyS1I2VGVZemFVT1NSeEVvd3RIbjJva0xwVUhTQWViUnExRmh6ZS1nSGtlek9aeUtrQnpyTm5pZWR5VzE5SlIwQzdVUGUtUU50bUtKZmVYQnFEMFQ?oc=5"
+    },
+    {
+      "text": "While Others Worry About An AI Bubble, Alphabet Is Cashing In - Seeking Alpha. While Others Worry About An AI Bubble, Alphabet Is Cashing In&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.7,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T01:57:16",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQazdTUjZBMzYyQUlsUHBRQmJRRnlSWkNHcE1yZnN2UHVMZmtvV2RGZFlCQklySzlyNU1LWXpsMlBST2k5ejFKMjdiWGFKWGszNjNyaXdsZ0tYd0VVMkFRSEkyNURZRks2aW9rNHRIYXZsWTlZQ25iSXp6bWp0bk9kMmowM2RueHNJdGotcEFWLXl4M2t3VExxWmxIRkhlTmdRSU1z?oc=5"
+    },
+    {
+      "text": "Alphabet: Maintaining An Overweight Rating At All-Time High (NASDAQ:GOOGL) - Seeking Alpha. Alphabet: Maintaining An Overweight Rating At All-Time High (NASDAQ:GOOGL)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.612,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T10:22:58",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdlNYbW5ycER3S2xlcWQ0dHktbjBtS0VWbnNLdTExNmgwcEQtUHNNeEt6XzN3TG12ZUJ6RnM1M2pnaGRqc3Q3UlpVV2RCeVhkTk85dGZRdEtRQTVmSE55Qmk0U3dYdld6SVVGN2V2Z21DX1FNWUNTbG41Tm1JTnp0aFBwNml3YzctdXByRmpUS0o?oc=5"
+    },
+    {
+      "text": "Alphabet’s Google (GOOGL) Likely to Avoid Breakup, But Antitrust Remedies Could Hit Core Revenue - Yahoo Finance. Alphabet’s Google (GOOGL) Likely to Avoid Breakup, But Antitrust Remedies Could Hit Core Revenue&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-20T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOa2ZtaENSeU1KbEpVc1Y2bkJ6clozaEMtYnhPSDZDRFpSWWxCbnBzWEJiZzUtRzF1dHo0RjJfdmREUDRnaGNVc0hndXBGcTZITU5pQ1ZPdUlMT3Z0ejF4T0MwV2pZTXJ0a2J1ZzJCQVRvLWtFSmFvZmFwSDdxdWNlblB2ZEZlbWc?oc=5"
+    },
+    {
+      "text": "Alphabet Just Scored Big With Meta: Is GOOGL Stock Poised for Another Leg Higher? - The Motley Fool. Alphabet Just Scored Big With Meta: Is GOOGL Stock Poised for Another Leg Higher?&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.487,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-25T01:45:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZEFCWFNXdHphbHg3N2NuMkQ4NVN2RUU5bTd6ZkFOaFBsTHJKXzNLQXA3U1BxZ3hQZjRTX2lnS2JZNVlETnFkWUUyLUhWT2U0cVh6SXk3YTFuSFFDZ0l4WHMwdVdweWtiOWJjd1lyQktQRDZ2TnFyUTBLdWFzNGgzRGF1YTFFWEZXdEs5WWFQYy1pX0I5TVlj?oc=5"
+    },
+    {
+      "text": "While Others Worry About An AI Bubble, Alphabet Is Cashing In",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.44,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T07:09:54.337314",
+      "url": "https://seekingalpha.com/article/4817729-while-others-worry-about-ai-bubble-alphabet-stock-cashing-in#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Alphabet Stock Continues to Rise on Urban Mobility Innovation - The Globe and Mail. Alphabet Stock Continues to Rise on Urban Mobility Innovation&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T13:34:00",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPV3FPU1FoSERtTENta0dYb3pOOW1GZDB5RWdEOUdXWFRLQXl2MGJUTTRkZWVXMEVwdXExa05NQVRTVmM1aEVTNjJfOFRvcUtuM3FIdHdnOF9YbmFQaDgwUS1Jc1JuUXMtZmQtXzZTR1ZsUHFzTjdJS2doZVhnT2RCLUxQSU5kQ1RReG5obFFFU09aQnZDUEh1YlpvR2Q1dnlDZ3B1amN5dHQxTDM1V3F0alBGcy1iVy1Idl92M1FQbUNJRlhEVjQxbjl2bWVJampMWlFwMkQ3bk8xcHZLQnpaYg?oc=5"
+    },
+    {
+      "text": "If Alphabet 'Missed The AI Boat', What Does That Mean For Microsoft?",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.296,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T07:09:54.339330",
+      "url": "https://seekingalpha.com/article/4816663-alphabet-missed-ai-boat-microsoft#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T09:10:03.363549",
+      "url": "https://www.bloomberg.com/quote/YGOG:CN"
+    },
+    {
+      "text": "Alphabet At The Crossroads: Legal Minefield Or Money Machine (NASDAQ:GOOGL) - Seeking Alpha. Alphabet At The Crossroads: Legal Minefield Or Money Machine (NASDAQ:GOOGL)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.25,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T16:32:55",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY1lCU1RpSEY3M2hCR2l4X2hBcmFFUUM2bjFSV2xWNnpRUXR4dndqMU14eWs4YUxnMFgtQTNXenFmaVRkUmVOS1N6eE1tRjFHSkFLLVE1NVFlZXNzVEo3WEtxRzFWU243eUN2MTZDaDl6ck1kN0NnbUNOTUpNTGt4SmJGeWFmUzFhNE05Nnd0UHc5dk0yeE9GMEpjVmpKQUFVRUE?oc=5"
+    },
+    {
+      "text": "Alphabet At The Crossroads: Legal Minefield Or Money Machine",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.128,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T23:09:54.337314",
+      "url": "https://seekingalpha.com/article/4817177-alphabet-at-the-crossroads-legal-minefield-or-money-machine#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Alphabet: Fear Pushes Price To Bargain Levels Investors Dream Of",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.103,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T01:09:54.339330",
+      "url": "https://seekingalpha.com/article/4816829-alphabet-fear-pushes-price-to-bargain-levels-investors-dream-of#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "What’s New With Alphabet Inc’s (GOOGL) Pixel Smartphones? - uk.finance.yahoo.com. What’s New With Alphabet Inc’s (GOOGL) Pixel Smartphones?&nbsp;&nbsp;uk.finance.yahoo.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:13:05",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdm1hNTlzMzNZYk13NVJJX3NEMVZ2U2JoYmNhczhqdkhHQmlCaDRockp0cWVfUzFRcmpIVFQ3NE4yTE9XTG9CdHlnaS13dFZDODR1XzlGMTUwTXhKa1BfLXNlNXUydWdOdjRtQ3lQTVgtZnRLWlBmN1hLcGRJYWFyb0tkUEUtZ1o2cUhiZUxB?oc=5"
+    },
+    {
+      "text": "Alphabet Inc. Stock (GOOGL) Opinions on Cloud Deal and AI Expansion - Quiver Quantitative. Alphabet Inc. Stock (GOOGL) Opinions on Cloud Deal and AI Expansion&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T17:34:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdW44dkduVzkweGhLQ083QWJrc0VoWTRZYWV1NTVyaUt6QkREVTRKVFo2dG9ERHNrTzFWMkVOSG5YVUR1cWszRmlPUWZ5T2dhaC1uZ21QNkdBdnBMRkVOSExUalduV1RRZl9GYnVqUGZlYUplQW1kVlRadnQ3TjV1eGJhd2szLUJLeWJrU1RfR1phUUwwTG5icXoxaFRHY21YZGdZTkxOaw?oc=5"
+    },
+    {
+      "text": "A $10 Billion Reason to Buy Google Stock Now - Yahoo Finance. A $10 Billion Reason to Buy Google Stock Now&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:22:33",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1nY2Vfc3BuVTRrbHh2SmFjclEySWliYkE0S2p0OUstUjZnN1BWcGVLN3VGWEQ1cFVSZGdvRWFVa2JmQURJUlE3RnY1bG1VNU11ZTFkMzBOZzJlWEFCcmpkcEVqZFFkRGczMHg1RTJIRDV0Z3JFN2piSkJIZzNzLUk?oc=5"
+    },
+    {
+      "text": "Alphabet (GOOGL) Draws Bullish View from Goldman Amid AI Strategy Execution - Insider Monkey. Alphabet (GOOGL) Draws Bullish View from Goldman Amid AI Strategy Execution&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:29:07",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVXVaNjI4eVFRRlA5YzdzLXNMd2RqdEZibWgxRmROLW5iTV9RVF9BMUF4dzBJdGdtZTQtOUU2cmNTd3dPak9GekdKYzZfODB5Z2oxRlE0LWRBcU1nNUxYNUNBUGJyZTdUdDJkcXBjdlFyU1RtTEpSbFhkcEdoUldCRXVYem5ta3pFSHNKeno4a05rSHNObEZiN3dGYWJyWk1ITE8yYTlId09PX3MxLXpTU1p3Y1dneHNy0gHAAUFVX3lxTFBwT2lYLTFOM1dVSnFQanJrR2tSWUo0b2hfd0ZYT0psTF95Y0VTR1RmZklLb09HTF82WEdyMDJYNUJma1pWMjlJdmpPWVlkVERjMDBjM2gyNEU5V3ZlY185dW9UTHBoN04zTW52ZV9CM0JJdFpieERsQ24yVFp4WDk0QVNBTzY1dmhZLWpNT1kyR3lrUHdHNzlCQ0lhNmhCMXBQbHFKRF95ZVgwSkwyVngzU09rZFBPZUtYMXRrUHViUg?oc=5"
+    },
+    {
+      "text": "Alphabet Google Stock Forecast: NASDAQ:GOOGL at $193 Targets $225 on AI and Cloud Deals - tradingnews.com. Alphabet Google Stock Forecast: NASDAQ:GOOGL at $193 Targets $225 on AI and Cloud Deals&nbsp;&nbsp;tradingnews.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T21:47:23",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNM3hyR2pEc21ENXJlUlJkWU5OZ0ZCRXV3cXUzNldxSHBzQWZOdjNRSXB3UnRlZnRFWUxJLXBLcWJIN0RpRWM0b3VEZkh2dGxXN1JjbkhSTHlRMk43RXJ6RzBHMFBIZExJTU5mVlZxSm5NZ0RNQ1RCTnF1eGVLWTJRMzBtWUw4SjduZm1GSmxLSlEyS2xpcVB4dXFGRk14LVRvdjBUMWM4WjYycXYwSEJBaGYzS3ZuYi1TVm84a2NfUXZKZVdW?oc=5"
+    },
+    {
+      "text": "Alphabet Inc. Stock (GOOGL) Opinions on Q2 Earnings and DOJ Case - Quiver Quantitative. Alphabet Inc. Stock (GOOGL) Opinions on Q2 Earnings and DOJ Case&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-14T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaktYLXhSZS1jSXM0R1pIVVI2SkJXRC1IR3U5VHRPc0ZkNFQ4cVRhNlQwejlDQnQwNnBLRUFBVkYzb2ltVjBxNU5FMUdYUE1Zc3NuMzBiUkZwVlZVWHBzZFphVDhPSXFvZ1pjUlk5V204dk56ZFV6NXRTOFVxVTR1VXYydW9WSFA0RnFUaUNWUFdDbmhiZVBRTVZxaHVRdy13YmxN?oc=5"
+    },
+    {
+      "text": "Alphabet Inc. (GOOGL): Jim Cramer Changes His Mind About Quantum Computing Potential - Yahoo Finance. Alphabet Inc. (GOOGL): Jim Cramer Changes His Mind About Quantum Computing Potential&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T17:23:55",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT2J6ek1OempxSzZBRzhWM29SQVZyN1p0VmtYbzNtcUtSM2FrTFFMNDJhMlEwWkNISGRZbVl5YmdJXzJ0Slk3UXZ0c0RVR1NGLXBxSGJHcHl5ZmcwZ1QtaTdzZGZfWk1ESVZjd2VMTEx0MnVqT1BmS25WWHFrRE5QVw?oc=5"
+    },
+    {
+      "text": "Alphabet: Momentum Keeps Building, And The Stock Remains A Buy - Seeking Alpha. Alphabet: Momentum Keeps Building, And The Stock Remains A Buy&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T16:31:36",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZEFjQThZOXRwdGlqOW1LclNXbzRySlFjYkc2cGdpLVJvZjhLSUVwTUhiU1g5cXFqY2ppWlZlbFFPTG1DT09NeWh0cjNsQ0FvQ2ZCTjVCRTRQaUhCZTJuQ1BOSEQ0QU1Sc0Z0OTlWc3NCaEhIVjBNaC1lOGtqa0VEQkNWU2ZKS3N2SmZzaW9aWThDaEhtSE01aVV2cHhYTk83OElR?oc=5"
+    },
+    {
+      "text": "Is Alphabet A Buy As It Retests The All Time Peak?",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:09:54.337314",
+      "url": "https://seekingalpha.com/article/4817847-is-alphabet-a-buy-as-it-retests-the-all-time-peak#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Alphabet: Tremendous Business Momentum, But Still Trades At A Discount",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:09:54.337314",
+      "url": "https://seekingalpha.com/article/4816961-alphabet-tremendous-business-momentum-trades-discount#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Alphabet Lands $10B Meta Cloud Deal--Is A Siri-Gemini Deal Close?",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:09:54.338816",
+      "url": "https://seekingalpha.com/article/4816928-alphabet-lands-10b-meta-cloud-deal-is-a-siri-gemini-deal-close#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Alphabet: Momentum Keeps Building, And The Stock Remains A Buy",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:09:54.338816",
+      "url": "https://seekingalpha.com/article/4816833-alphabet-momentum-keeps-building-and-the-stock-remains-a-buy#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Alphabet IncFollowFollowingFollowFollowFollowFollowGOOGL:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:10:00.821603",
+      "url": ""
+    },
+    {
+      "text": "Alphabet IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T03:10:00.821603",
+      "url": ""
+    },
+    {
+      "text": "Google to Invest Additional $9 Billion in Virginia Data Centers",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:10:03.364580",
+      "url": "https://www.bloomberg.com/news/articles/2025-08-27/google-to-invest-additional-9-billion-in-virginia-data-centers"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Jim Cramer Missed Out On Alphabet Inc. (GOOGL)’s Shares As They Gain 14% While He Was Selling - Insider Monkey. Jim Cramer Missed Out On Alphabet Inc. (GOOGL)’s Shares As They Gain 14% While He Was Se...",
+      "source": "Google News",
+      "sentiment_score": 0.778,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T21:20:58",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYlFtdjUxVGVNTzUtdWxCbjVNaXN5ZFBFY3k3ZUlYZkd3TnpYUWJodHZ3NG9sVFRpc2gwMkptYlJsMzNxeTExUldBd1QyQUJUU1ZJRkRhT1N2N1MwTFhHei1lVFVXVmdHNDkwSTRISGFtbGNRZ25NMXNyNmdYX2xCeVVsSE5UZGI5c0d4b1RwczVSUm1fU3lVZGhDV29sRy1zNEpnbE83Y3RWeWNlNVNGLTU5SExOaWxqQnJoNWZtTzh1eWduaVBxT09QMVPSAdQBQVVfeXFMTU1MbUswZUUyUkMzUHBNZlpvcmhjb1NZVkxvb0tXallmZnZlVmp5LWM1V2hQZkxpczY1MFBUYUgwZzA0QjV6N2RNdzRabjhKVURNNDl1VGdJZ2pxMlZBVzFUM2tObThfVlh0RXQzWTBRT3Z5UEdRWmJqTGgyOW4zcmgyS1I2VGVZemFVT1NSeEVvd3RIbjJva0xwVUhTQWViUnExRmh6ZS1nSGtlek9aeUtrQnpyTm5pZWR5VzE5SlIwQzdVUGUtUU50bUtKZmVYQnFEMFQ?oc=5"
+    },
+    {
+      "text": "While Others Worry About An AI Bubble, Alphabet Is Cashing In - Seeking Alpha. While Others Worry About An AI Bubble, Alphabet Is Cashing In&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.7,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T01:57:16",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQazdTUjZBMzYyQUlsUHBRQmJRRnlSWkNHcE1yZnN2UHVMZmtvV2RGZFlCQklySzlyNU1LWXpsMlBST2k5ejFKMjdiWGFKWGszNjNyaXdsZ0tYd0VVMkFRSEkyNURZRks2aW9rNHRIYXZsWTlZQ25iSXp6bWp0bk9kMmowM2RueHNJdGotcEFWLXl4M2t3VExxWmxIRkhlTmdRSU1z?oc=5"
+    },
+    {
+      "text": "Alphabet: Maintaining An Overweight Rating At All-Time High (NASDAQ:GOOGL) - Seeking Alpha. Alphabet: Maintaining An Overweight Rating At All-Time High (NASDAQ:GOOGL)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.612,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T10:22:58",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdlNYbW5ycER3S2xlcWQ0dHktbjBtS0VWbnNLdTExNmgwcEQtUHNNeEt6XzN3TG12ZUJ6RnM1M2pnaGRqc3Q3UlpVV2RCeVhkTk85dGZRdEtRQTVmSE55Qmk0U3dYdld6SVVGN2V2Z21DX1FNWUNTbG41Tm1JTnp0aFBwNml3YzctdXByRmpUS0o?oc=5"
+    },
+    {
+      "text": "Alphabet’s Google (GOOGL) Likely to Avoid Breakup, But Antitrust Remedies Could Hit Core Revenue - Yahoo Finance. Alphabet’s Google (GOOGL) Likely to Avoid Breakup, But Antitrust Remedies Could Hit Co...",
+      "source": "Google News",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-20T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOa2ZtaENSeU1KbEpVc1Y2bkJ6clozaEMtYnhPSDZDRFpSWWxCbnBzWEJiZzUtRzF1dHo0RjJfdmREUDRnaGNVc0hndXBGcTZITU5pQ1ZPdUlMT3Z0ejF4T0MwV2pZTXJ0a2J1ZzJCQVRvLWtFSmFvZmFwSDdxdWNlblB2ZEZlbWc?oc=5"
+    },
+    {
+      "text": "Alphabet Just Scored Big With Meta: Is GOOGL Stock Poised for Another Leg Higher? - The Motley Fool. Alphabet Just Scored Big With Meta: Is GOOGL Stock Poised for Another Leg Higher?&nbsp;&nbsp;The Mo...",
+      "source": "Google News",
+      "sentiment_score": -0.487,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-25T01:45:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZEFCWFNXdHphbHg3N2NuMkQ4NVN2RUU5bTd6ZkFOaFBsTHJKXzNLQXA3U1BxZ3hQZjRTX2lnS2JZNVlETnFkWUUyLUhWT2U0cVh6SXk3YTFuSFFDZ0l4WHMwdVdweWtiOWJjd1lyQktQRDZ2TnFyUTBLdWFzNGgzRGF1YTFFWEZXdEs5WWFQYy1pX0I5TVlj?oc=5"
+    },
+    {
+      "text": "While Others Worry About An AI Bubble, Alphabet Is Cashing In",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.44,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T07:09:54.337314",
+      "url": "https://seekingalpha.com/article/4817729-while-others-worry-about-ai-bubble-alphabet-stock-cashing-in#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Alphabet Stock Continues to Rise on Urban Mobility Innovation - The Globe and Mail. Alphabet Stock Continues to Rise on Urban Mobility Innovation&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T13:34:00",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPV3FPU1FoSERtTENta0dYb3pOOW1GZDB5RWdEOUdXWFRLQXl2MGJUTTRkZWVXMEVwdXExa05NQVRTVmM1aEVTNjJfOFRvcUtuM3FIdHdnOF9YbmFQaDgwUS1Jc1JuUXMtZmQtXzZTR1ZsUHFzTjdJS2doZVhnT2RCLUxQSU5kQ1RReG5obFFFU09aQnZDUEh1YlpvR2Q1dnlDZ3B1amN5dHQxTDM1V3F0alBGcy1iVy1Idl92M1FQbUNJRlhEVjQxbjl2bWVJampMWlFwMkQ3bk8xcHZLQnpaYg?oc=5"
+    },
+    {
+      "text": "If Alphabet 'Missed The AI Boat', What Does That Mean For Microsoft?",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.296,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T07:09:54.339330",
+      "url": "https://seekingalpha.com/article/4816663-alphabet-missed-ai-boat-microsoft#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T09:10:03.363549",
+      "url": "https://www.bloomberg.com/quote/YGOG:CN"
+    },
+    {
+      "text": "Alphabet At The Crossroads: Legal Minefield Or Money Machine (NASDAQ:GOOGL) - Seeking Alpha. Alphabet At The Crossroads: Legal Minefield Or Money Machine (NASDAQ:GOOGL)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.25,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T16:32:55",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOY1lCU1RpSEY3M2hCR2l4X2hBcmFFUUM2bjFSV2xWNnpRUXR4dndqMU14eWs4YUxnMFgtQTNXenFmaVRkUmVOS1N6eE1tRjFHSkFLLVE1NVFlZXNzVEo3WEtxRzFWU243eUN2MTZDaDl6ck1kN0NnbUNOTUpNTGt4SmJGeWFmUzFhNE05Nnd0UHc5dk0yeE9GMEpjVmpKQUFVRUE?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": -0.044,
+    "last_week_average": -0.032,
+    "overall_average": -0.049,
+    "articles_last_24h": 11,
+    "articles_last_week": 25
+  },
+  "confidence_metrics": {
+    "sample_size": "Limited",
+    "source_diversity": "Low",
+    "data_recency": "Current"
+  }
+}

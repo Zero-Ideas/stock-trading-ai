@@ -1,0 +1,2 @@
+Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Sentiment,Weighted_Avg_From_Sources,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,NewsAPI_Yahoo_Entertainment_Count,NewsAPI_Yahoo_Entertainment_Avg_Sentiment,MarketWatch_Count,MarketWatch_Avg_Sentiment,Yahoo_Finance_Count,Yahoo_Finance_Avg_Sentiment,Google_News_Count,Google_News_Avg_Sentiment
+HD,HD,2025-08-31T23:18:25.338111,32,Very Positive,0.098,0.131,8,3,21,25.0,9.4,65.6,1,0.0,9,0.054,1,0.0,21,0.176

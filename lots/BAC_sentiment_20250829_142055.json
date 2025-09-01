@@ -1,0 +1,446 @@
+{
+  "symbol": "BAC",
+  "company_name": "Bank of America Corporation",
+  "analysis_timestamp": "2025-08-29T14:20:55.484565",
+  "total_sources_analyzed": 40,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Very Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.08,
+    "average_compound": 0.239
+  },
+  "sentiment_distribution": {
+    "positive": 22,
+    "neutral": 16,
+    "negative": 2,
+    "positive_percentage": 55.0,
+    "negative_percentage": 5.0
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Yahoo Finance": 12,
+    "Google News": 15,
+    "Seeking Alpha": 8,
+    "Bloomberg": 5
+  },
+  "sample_articles": [
+    {
+      "text": "BAC vs. C: Which Bank Stock is Poised to Offer Better Value? - The Globe and Mail. BAC vs. C: Which Bank Stock is Poised to Offer Better Value?&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.89,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T14:38:00",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNT19jTW1aT1I1dWFsdDU2YTVnQ1FGVVpuS2xYQXIwSnc5M2h2dTA5VXNvRGhySm1peHJCVGVFQU5nTGtDM1hDeV9nb1NLeHpVckFWQzBKRGxXZlJySlFEX1pEZmgwU0ZNZ1pETERtUlgyM1pUTHJZNFIwcGRRYW5kcTJfMGttNWRtRXNQLXZVVl9sWHJVUVVoZ1JsM1hEcjAzWHRsS01selZ6enJEeldzMUgzOW5nbG1PTmlDODJBVG1LbmZtRS1Sa1g3Rm56TFF2MTRkOWcxQQ?oc=5"
+    },
+    {
+      "text": "Bank of America Corporation $BAC Shares Sold by WCG Wealth Advisors LLC - MarketBeat. Bank of America Corporation $BAC Shares Sold by WCG Wealth Advisors LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.869,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:25:24",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcWktNEFhWkNiNmJ3dnBrODFKY0pWVjFwd0hMdEFJSUluUXRwMWh0WlpPQzlSTFpibGR6QnQ5MzA5eVFyS2poUkVPc0xOaE9tOE0wb1BlUS1BMElqU2FEZTExQUc0NzBVeFRxOTd4REcxT3gxWk03amhfZmpDUmNQaUQ3OTRLZkRKNkRYTGE4WVIyQklxcVExZXFOYTVTNGh3dndVcVQ1N3dWcEhMNjlZWTBOcXhBS0lPaDYyRTZiWWRfbm1tMmE4Vlc3UndRT0xHR0JaellrTTFjM3hJ?oc=5"
+    },
+    {
+      "text": "Freedom Broker Lifts Bank of America (BAC) Price Target on Industry Tailwinds - Yahoo Finance. Freedom Broker Lifts Bank of America (BAC) Price Target on Industry Tailwinds&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.856,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:23:31",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPX3VRVXhsNjU0V2RxYTdXVkh2S293ZVZCX3RBNFRfSTBXMWpzNTZ3MGFtWnBHVk53bjhWVU9qZXZFa2FoUW9wS3puSTd6blFWN0tOZUplYndHbks2QWJyWDJXcGJTc0pweXNETG9qQjB4Skt5SlBobmJfT2NHWDdsaGd0M1dOdw?oc=5"
+    },
+    {
+      "text": "BAC vs. C: Which Bank Stock is Poised to Offer Better Value?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.743,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T03:20:28.687626",
+      "url": ""
+    },
+    {
+      "text": "Freedom Broker Lifts Bank of America (BAC) Price Target on Industry Tailwinds. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T23:20:28.690255",
+      "url": ""
+    },
+    {
+      "text": "Are Robinhood Shares Justified After BofA's Raised $119 Price Target and Surging 2025 Rally?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.599,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T00:20:28.691846",
+      "url": ""
+    },
+    {
+      "text": "OMERS ADMINISTRATION Corp Sells 6,325 Shares of Bank of America Corporation $BAC - MarketBeat. OMERS ADMINISTRATION Corp Sells 6,325 Shares of Bank of America Corporation $BAC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:01:54",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcmlBTFc0Wk9leUdseFI5VmFiVUpvWWdxb213QkFLOVJLa0JUaDQxOFg5SWZnR2pLT0FNVUEzamNRWjZteUZvU3I4bUpZTTNhbmNHeGpyYThNdDlVN1ZqRkZQc1V5cUM2U0FXUkhJLWRaUGZ5VmtCNlI4UlJsWWl5TzhLbnBCYmxSejBLQ1pPQXZzWnFSV05JeTNiX1pqTHN3VUNoWXJMWGQ5ckR1NjVEOGpwTlQ5NWticGJQQVRuTklaZHVjNVg4dnF1NHJYUlE0WkFJbjB3?oc=5"
+    },
+    {
+      "text": "Gabelli Funds LLC Sells 5,702 Shares of Bank of America Corporation $BAC - MarketBeat. Gabelli Funds LLC Sells 5,702 Shares of Bank of America Corporation $BAC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:03:52",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWHp3Rk5JQk15ZnpRLUo4dTliSmxRQ001dUR3QzlHajIxX1lpWXdmUE5QSklWclZWYXpIUkhxUkxha0R3VVVHWXpDVUtkdXAwYlFxU3Y3T09qR1RoN285TUpNQmFLS3MzRjhjODhITHZEUVZMVzk3R2lvT3NoUk5ZMFNrelFWbW5nTUpYUnBUb29SODFBZG14ZW11SlNBZjIwN3ZaR0dUbHA0dmJ1cWVFQ1dZQm5kNlVSUEdGaTVFYnVVSVVSTU5UYWpJQQ?oc=5"
+    },
+    {
+      "text": "Bank of America Corporation $BAC Shares Sold by Lansforsakringar Fondforvaltning AB publ - MarketBeat. Bank of America Corporation $BAC Shares Sold by Lansforsakringar Fondforvaltning AB publ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:36:11",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWEhDR0xxdGQ5c3RlVEdxUHRQTG01WTVvTlJqUHpUbkdqb1l0a2dnVy11bnlib09RS2pBbFduYVdMVnNhUkdTU1BTWXFFZnFlVk1teEhNZHAyTnBsSVhGYnVHVm9ibWZkeXdaMlM2MFRsTHZvUXJBdmdfVzhscm16aDZXcHlheEJrZ1QwcERGRmZYcGxYLVM3Q3NocDNHeDE0QXRUbWI2b1RnOXlnVVdhMVMyYWpFdTBzSXY5MzQ3cm5VQlhvc3BMUHIyVDBCLVdmczEwQVhXbDhNMGFkTDc4Ui1n?oc=5"
+    },
+    {
+      "text": "10,991 Shares in Bank of America Corporation $BAC Purchased by Redwood Investment Management LLC - MarketBeat. 10,991 Shares in Bank of America Corporation $BAC Purchased by Redwood Investment Management LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:03:55",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQajI5UUJFZHB4RlIwZGpWa054RXdwN0VSVlRyYkdaSWdaUjVvV3l2S0M0T3FKVEwzVmlJeS1KazB2UGNobnNxNko4QnAtakFKUGV0LUxCdmY4V01CNjBiYXVScGM2X01Ba3MzcTdfY3VrenFfVnZYRGJZd2o0bl9EWmxaYUNVQTh4djR5Q3o1TnF2MTlmZUVQdHNJNlVnZG5rZ3BkQ19HTVRJaUpRci1EVk8yc3dOWjVqZTlBcHYxTTJwSXdMZy1QdldwcUdiS0VGZmNJcDU0N1ZtUVM5ZzZzbkZ1R0luWkQwSFRn?oc=5"
+    },
+    {
+      "text": "Quantbot Technologies LP Purchases Shares of 15,525 Bank of America Corporation $BAC - MarketBeat. Quantbot Technologies LP Purchases Shares of 15,525 Bank of America Corporation $BAC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T05:07:00",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbldFNzRwVzc3cWNBSW1Ya3dOalB4bWstTVkzRE5QZlVrbWxEa2VCbW1HcDlGS2R2YnZvQjBWN2hSN2I5VjRjSFgtamJ1WFBXM0toTEpNNWNITU4wOTMzYVB4LUxKVFV4UndaTWxxWE1OczhHSlFreXcxVjF5eENsZkZTYV9LTVp0aDRVOUdJcWVHb2R3T3Z2eWxfaXRkempQblZZX2tYRmlYdC1aYjdMenNsWXJXQjlrdENiUk9uMEcteE9qX0p5TFFCWVVUZEhDZUNjaGtubkh4SzFwekpR?oc=5"
+    },
+    {
+      "text": "Precision Trading with Bank Of America Corporation (BAC) Risk Zones - news.stocktradersdaily.com. Precision Trading with Bank Of America Corporation (BAC) Risk Zones&nbsp;&nbsp;news.stocktradersdaily.com",
+      "source": "Google News",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T14:20:02",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUXlKeWpZU2lhdGRhNXJJX3NKcjNXWGV5UHI5cEVfVDFwNURMR09mMlJRcHZ3UUNQYnJWcW9BWG94TWJtR1NlaEVtbXMxWXNjR0VTNUJTRUZNVHd3Xy03WHJBSHRDb0RtdGVHMDNIS3lKNUNKX2pWeEJfVGh5dWdJRl9FNm9oLVF6ZG1UN3p0T040d3FlckFIUUtVNGZWOHNZcUd0RmIxbjRrR1BZbWZGR1RIRW9HbzNpWEpqcGl5V1VHT0FvdlQ4NmdXU24zOE1Nckp5RklSbTYtZFBYbXRZ?oc=5"
+    },
+    {
+      "text": "Bank of America: Higher Yielding Preferred Stock Is Still Attractive",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.44,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T14:20:36.534060",
+      "url": "https://seekingalpha.com/article/4804706-bank-of-america-higher-yielding-preferred-stock-is-still-attractive#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Bank of America: Structural Compounder, But No Urgency To Buy Today",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.421,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T09:20:36.534060",
+      "url": "https://seekingalpha.com/article/4800154-bank-of-america-structural-compounder-but-no-urgency-to-buy-today#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "BofA update shows where active managers are putting money. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.402,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T16:20:28.688183",
+      "url": ""
+    },
+    {
+      "text": "More Than Two-Thirds Of Gen Z Values Financial Responsibility From Their Potential Partners. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.402,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T16:20:28.690785",
+      "url": ""
+    },
+    {
+      "text": "Bank of America (BAC) Launches Premium Credit Card with Alaska Airlines. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T11:20:28.689722",
+      "url": ""
+    },
+    {
+      "text": "Bank of America: CPI Report, Robust Q2 Earnings, Moderate Valuation",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.34,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T18:20:36.534060",
+      "url": "https://seekingalpha.com/article/4802555-bank-of-america-cpi-report-robust-q2-earnings-moderate-valuation#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T01:20:47.953051",
+      "url": "https://www.bloomberg.com/quote/BAC:US"
+    },
+    {
+      "text": "Bank of America's New 6% Bond: Fixed Income Alternative To CDs And Treasuries",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.226,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T19:20:36.533555",
+      "url": "https://seekingalpha.com/article/4809192-bank-of-americas-new-6-percent-bond-fixed-income-alternative-to-cds-and-treasuries#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Top Stocks at 52-Week Highs: They Aren't What You Think. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.202,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T13:20:28.686563",
+      "url": ""
+    },
+    {
+      "text": "Bank of America: A Top Bank Buy For 2025",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.202,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T00:20:36.534060",
+      "url": "https://seekingalpha.com/article/4802698-bank-of-america-a-top-bank-buy-for-2025#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Bank of America Q2 2025 Earnings: Don't Overreact To Summer Doldrums",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.188,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T00:20:36.534060",
+      "url": "https://seekingalpha.com/article/4799951-bank-of-america-q2-2025-earnings-dont-overreact-to-summer-doldrums#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Spirit Airlines Tumbles After Filing Second Bankruptcy in a Year",
+      "source": "Bloomberg",
+      "sentiment_score": 0.178,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T13:20:47.954158",
+      "url": "https://www.bloomberg.com/news/articles/2025-08-29/spirit-airlines-files-second-bankruptcy-in-less-than-one-year"
+    },
+    {
+      "text": "Bank Of America Stock: Is BAC Outperforming The Financial Sector? - Barchart.com. Bank Of America Stock: Is BAC Outperforming The Financial Sector?&nbsp;&nbsp;Barchart.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T14:23:16",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSEdCMEFVRV85dmtBOUh6bzJoUFhGMkYwOW1oWWl3NXFSQ28xa3EzcVFTdEZTTkMxZHUwcU02T1h4WkRvMXgzeXFCa2dJb1lpLU9QNXQ0Ykh4a2N1YnJRRS1lRlQ2d1NydHQ2N1UzT3N2SndYY1RHWVRabm1TdmFlSk55cnRvS0g3OGxFNjRIeGFQaUw4QmxZdWwtRXdRZGpNY3NCX19CTXhZSVNk?oc=5"
+    },
+    {
+      "text": "Bank of America's Preferred Stock Series LL Hits 6% Yield Threshold, Trading at Discount of 15.48% - AInvest. Bank of America's Preferred Stock Series LL Hits 6% Yield Threshold, Trading at Discount of 15.48%&nbsp;&nbsp;AInvest",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T18:59:23",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPLTd1MzcxOEtGVFJGdklaR2l2X3FsSlEzYlBraGVKRXF0eGRDNjgxdmFsZEhBZlhrN08yb1NCWmdLNU9TR2RRbDU0YzRtbkMzcU4tMHB5WW1xWEpENGFaQ3JHb21vOVR3LURsLTVSSzhGWEJqMndnRGtQX3F5cVBVenRjV0M1dHprOWI1UDZMUkJCRzlIVFB4QjgwX0h5ejFGZTAyczZaOEluekphT29ZUFcwMzN6T2RxMV9v?oc=5"
+    },
+    {
+      "text": "Bank of Hawaii Makes New $544,000 Investment in Bank of America Corporation $BAC - MarketBeat. Bank of Hawaii Makes New $544,000 Investment in Bank of America Corporation $BAC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:25:25",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNm9qdjdUUjNyOVBSWjF1YnZhUWJ4NEpIWGFiVk5vWjFXc25YTjhPY29JT0RZVnpJTDA2SkNCU2EwSGNCTTk3ZWNhaV91TzRXLUkybDc4SjdIbFZOUEh5WW5hT3ZTX3Qxa1VVLTRHdmFHdzlxQkNJN0hTM3c3YUxmcW5wU00xR2UzNXBuY2ExRU54X2c2ZWNlczV4cVM1WkZvZmlaRWxYTTNRZUVQRFdMb0J3dFFWUmpLWEV1MnY2VlZPRkVObnh0dGdSRm5ydi00Y3c?oc=5"
+    },
+    {
+      "text": "Bank of America (BAC) Names New Co-Heads of Investment Banking - Yahoo Finance. Bank of America (BAC) Names New Co-Heads of Investment Banking&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:54:06",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE40TUNMSG81akJuTE5TUjJPTUFfM0FKUmc3WWFHejdMUTdvd1Z2VEt5WUJIU2RMUGpZd1N4ZnpGcHh1dm9LMTBnenNrNzZLUG9rYUI4Z2NIbW83WXNkV1hEdEdMYUE2c01tRm9JdDY0TmE3dHd0cFV0LVdkcw?oc=5"
+    },
+    {
+      "text": "Harvest Portfolios Group Inc. Has $6.39 Million Stock Position in Bank of America Corporation $BAC - MarketBeat. Harvest Portfolios Group Inc. Has $6.39 Million Stock Position in Bank of America Corporation $BAC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:25:31",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQa2paRFZjYlExYnhvcTNZcmkteHdnZjJkbzBHc3lXLU1FalIwVzMyQzZsVkxaNGR4dGFLb3NrWlhObG51MXlXWG1kUXVTTHcyY3N0Ti1mVzNVQWdobHNYU0NlMHdYakJTNTAyUURrUkJXSlRfUWlIekpEc2VIelVZZmM5M0VYVHZ5X2NncW9FcmtEMGhpcmp0SVV4QnU2RnVCeUNhYkN6YXlkX1V4aGVYNVU4M09WV01EZ2FzVWlienNGNEFFNFUyYXYxOEplY09wV2REQ3o0RjQ?oc=5"
+    },
+    {
+      "text": "Bank of America Corporation $BAC Stock Holdings Decreased by Transamerica Financial Advisors LLC - MarketBeat. Bank of America Corporation $BAC Stock Holdings Decreased by Transamerica Financial Advisors LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:03:26",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNd1RhM3NCZWFhWkk2VzhTM0RJbE04Xy1ZRUxKYUNUM2dpZ09VakZlSjVtRmtpT3F1dWVuVXVtclI5M2tXdnFHaFQyVENTWVo3a2dfdXEwWk50VEo4Zk81bUhCWDZaZkd0czJCZWlEV09DT3A2V0lUMXl3OG9HMDIxM0U0Q0NRQlM0ZEl1ZUFUaGowRGdnb0hzdlpnNjBZSDh4WkdvMmhFU2xLYndaYmhGRWtWQlliMFVyc0tURVUxWG1qaDVCdFpzbzlXQ0hWRjJwR081TGRkbHFvUVpkbDRUZFozVzNuS2o0bEl6MA?oc=5"
+    },
+    {
+      "text": "Bank of America’s (BAC) AI Assistant Erica Surpasses 3B Interactions. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T08:20:28.684980",
+      "url": ""
+    },
+    {
+      "text": "Fed's Powell Sparks Bullish Shift For This Dow Jones Leader; Stock Races To New High. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T01:20:28.685510",
+      "url": ""
+    },
+    {
+      "text": "Bank of America Stock: Is BAC Outperforming the Financial Sector?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:20:28.687094",
+      "url": ""
+    },
+    {
+      "text": "Citadel’s Ken Griffin on Markets, the Fed, and Building His Firm for the Next Century. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T01:20:28.689208",
+      "url": ""
+    },
+    {
+      "text": "12 Stocks Warren Buffett's Berkshire Hathaway Has Been Loading Up On in 2025. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:20:28.691315",
+      "url": ""
+    },
+    {
+      "text": "Bank of America: A Mispriced Capital Return Engine",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:20:36.533555",
+      "url": "https://seekingalpha.com/article/4812003-bank-of-america-mispriced-capital-return-engine#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Bank of America: Q2 Earnings, What I Expect",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:20:36.534060",
+      "url": "https://seekingalpha.com/article/4799938-bank-of-america-q2-earnings-what-i-expect#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Bank of America CorpFollowFollowingFollowFollowFollowFollowBAC:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:20:44.049831",
+      "url": ""
+    },
+    {
+      "text": "Bank of America CorpFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:20:44.050832",
+      "url": ""
+    },
+    {
+      "text": "Bank of America Corp",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T00:20:47.954158",
+      "url": "https://www.bloomberg.com/quote/BAC:US"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "BAC vs. C: Which Bank Stock is Poised to Offer Better Value? - The Globe and Mail. BAC vs. C: Which Bank Stock is Poised to Offer Better Value?&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.89,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T14:38:00",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNT19jTW1aT1I1dWFsdDU2YTVnQ1FGVVpuS2xYQXIwSnc5M2h2dTA5VXNvRGhySm1peHJCVGVFQU5nTGtDM1hDeV9nb1NLeHpVckFWQzBKRGxXZlJySlFEX1pEZmgwU0ZNZ1pETERtUlgyM1pUTHJZNFIwcGRRYW5kcTJfMGttNWRtRXNQLXZVVl9sWHJVUVVoZ1JsM1hEcjAzWHRsS01selZ6enJEeldzMUgzOW5nbG1PTmlDODJBVG1LbmZtRS1Sa1g3Rm56TFF2MTRkOWcxQQ?oc=5"
+    },
+    {
+      "text": "Bank of America Corporation $BAC Shares Sold by WCG Wealth Advisors LLC - MarketBeat. Bank of America Corporation $BAC Shares Sold by WCG Wealth Advisors LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.869,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:25:24",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcWktNEFhWkNiNmJ3dnBrODFKY0pWVjFwd0hMdEFJSUluUXRwMWh0WlpPQzlSTFpibGR6QnQ5MzA5eVFyS2poUkVPc0xOaE9tOE0wb1BlUS1BMElqU2FEZTExQUc0NzBVeFRxOTd4REcxT3gxWk03amhfZmpDUmNQaUQ3OTRLZkRKNkRYTGE4WVIyQklxcVExZXFOYTVTNGh3dndVcVQ1N3dWcEhMNjlZWTBOcXhBS0lPaDYyRTZiWWRfbm1tMmE4Vlc3UndRT0xHR0JaellrTTFjM3hJ?oc=5"
+    },
+    {
+      "text": "Freedom Broker Lifts Bank of America (BAC) Price Target on Industry Tailwinds - Yahoo Finance. Freedom Broker Lifts Bank of America (BAC) Price Target on Industry Tailwinds&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.856,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:23:31",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPX3VRVXhsNjU0V2RxYTdXVkh2S293ZVZCX3RBNFRfSTBXMWpzNTZ3MGFtWnBHVk53bjhWVU9qZXZFa2FoUW9wS3puSTd6blFWN0tOZUplYndHbks2QWJyWDJXcGJTc0pweXNETG9qQjB4Skt5SlBobmJfT2NHWDdsaGd0M1dOdw?oc=5"
+    },
+    {
+      "text": "BAC vs. C: Which Bank Stock is Poised to Offer Better Value?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.743,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T03:20:28.687626",
+      "url": ""
+    },
+    {
+      "text": "Freedom Broker Lifts Bank of America (BAC) Price Target on Industry Tailwinds. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T23:20:28.690255",
+      "url": ""
+    },
+    {
+      "text": "Are Robinhood Shares Justified After BofA's Raised $119 Price Target and Surging 2025 Rally?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.599,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T00:20:28.691846",
+      "url": ""
+    },
+    {
+      "text": "OMERS ADMINISTRATION Corp Sells 6,325 Shares of Bank of America Corporation $BAC - MarketBeat. OMERS ADMINISTRATION Corp Sells 6,325 Shares of Bank of America Corporation $BAC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:01:54",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcmlBTFc0Wk9leUdseFI5VmFiVUpvWWdxb213QkFLOVJLa0JUaDQxOFg5SWZnR2pLT0FNVUEzamNRWjZteUZvU3I4bUpZTTNhbmNHeGpyYThNdDlVN1ZqRkZQc1V5cUM2U0FXUkhJLWRaUGZ5VmtCNlI4UlJsWWl5TzhLbnBCYmxSejBLQ1pPQXZzWnFSV05JeTNiX1pqTHN3VUNoWXJMWGQ5ckR1NjVEOGpwTlQ5NWticGJQQVRuTklaZHVjNVg4dnF1NHJYUlE0WkFJbjB3?oc=5"
+    },
+    {
+      "text": "Gabelli Funds LLC Sells 5,702 Shares of Bank of America Corporation $BAC - MarketBeat. Gabelli Funds LLC Sells 5,702 Shares of Bank of America Corporation $BAC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:03:52",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWHp3Rk5JQk15ZnpRLUo4dTliSmxRQ001dUR3QzlHajIxX1lpWXdmUE5QSklWclZWYXpIUkhxUkxha0R3VVVHWXpDVUtkdXAwYlFxU3Y3T09qR1RoN285TUpNQmFLS3MzRjhjODhITHZEUVZMVzk3R2lvT3NoUk5ZMFNrelFWbW5nTUpYUnBUb29SODFBZG14ZW11SlNBZjIwN3ZaR0dUbHA0dmJ1cWVFQ1dZQm5kNlVSUEdGaTVFYnVVSVVSTU5UYWpJQQ?oc=5"
+    },
+    {
+      "text": "Bank of America Corporation $BAC Shares Sold by Lansforsakringar Fondforvaltning AB publ - MarketBeat. Bank of America Corporation $BAC Shares Sold by Lansforsakringar Fondforvaltning AB publ&nbsp;&nb...",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:36:11",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWEhDR0xxdGQ5c3RlVEdxUHRQTG01WTVvTlJqUHpUbkdqb1l0a2dnVy11bnlib09RS2pBbFduYVdMVnNhUkdTU1BTWXFFZnFlVk1teEhNZHAyTnBsSVhGYnVHVm9ibWZkeXdaMlM2MFRsTHZvUXJBdmdfVzhscm16aDZXcHlheEJrZ1QwcERGRmZYcGxYLVM3Q3NocDNHeDE0QXRUbWI2b1RnOXlnVVdhMVMyYWpFdTBzSXY5MzQ3cm5VQlhvc3BMUHIyVDBCLVdmczEwQVhXbDhNMGFkTDc4Ui1n?oc=5"
+    },
+    {
+      "text": "10,991 Shares in Bank of America Corporation $BAC Purchased by Redwood Investment Management LLC - MarketBeat. 10,991 Shares in Bank of America Corporation $BAC Purchased by Redwood Investment Managem...",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:03:55",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQajI5UUJFZHB4RlIwZGpWa054RXdwN0VSVlRyYkdaSWdaUjVvV3l2S0M0T3FKVEwzVmlJeS1KazB2UGNobnNxNko4QnAtakFKUGV0LUxCdmY4V01CNjBiYXVScGM2X01Ba3MzcTdfY3VrenFfVnZYRGJZd2o0bl9EWmxaYUNVQTh4djR5Q3o1TnF2MTlmZUVQdHNJNlVnZG5rZ3BkQ19HTVRJaUpRci1EVk8yc3dOWjVqZTlBcHYxTTJwSXdMZy1QdldwcUdiS0VGZmNJcDU0N1ZtUVM5ZzZzbkZ1R0luWkQwSFRn?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.253,
+    "last_week_average": 0.239,
+    "overall_average": 0.239,
+    "articles_last_24h": 25,
+    "articles_last_week": 40
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

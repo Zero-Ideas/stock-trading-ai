@@ -1,0 +1,711 @@
+{
+  "symbol": "RBLX",
+  "company_name": "Roblox Corporation",
+  "analysis_timestamp": "2025-08-29T15:56:18.906337",
+  "total_sources_analyzed": 73,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.047,
+    "average_compound": 0.073
+  },
+  "sentiment_distribution": {
+    "positive": 15,
+    "neutral": 49,
+    "negative": 9,
+    "positive_percentage": 20.5,
+    "negative_percentage": 12.3
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Yahoo Finance": 19,
+    "Bloomberg": 7,
+    "Seeking Alpha": 22,
+    "Google News": 25
+  },
+  "sentiment_model": "FinBERT (Financial BERT)",
+  "sample_articles": [
+    {
+      "text": "Roblox (NYSE:RBLX) Shares Gap Up After Analyst Upgrade - MarketBeat. Roblox (NYSE:RBLX) Shares Gap Up After Analyst Upgrade&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 1.0,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:39:26",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOejlOaXlzc2xIejZ0STlJbjBrc1MyMlZObXJNRzZiVUtrZmgtZXdQcFlGOW9hZWFsbXh1OTUtVkZkbzJ6OGZOMHlBQWVkQkszaDl1NWY5eWNUM0RoN3hFQjZ2bDJkWUZkcllDdUxKaFd1TEhGMkpIQ1RvM213OGFjaExULWw3UXNDX0NrSjZMNW9UdXZNT0RYUFhpcmpPaXREblJzZA?oc=5"
+    },
+    {
+      "text": "Roblox Shares Slip Amid Legal Scrutiny and Mixed Market Signals - Benzinga. Roblox Shares Slip Amid Legal Scrutiny and Mixed Market Signals&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": -0.971,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T19:18:08",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOUNzbHk5OTRselRtYTMzT3gzdEFtcFc1XzhYSzF3Ymp3WWttMjlwV0EydVpZSmMxUGJxN25zMnB0YUtIS2gwcGJSNkRINk10aUUzM1FGTUlwNU1Dd2x5TkptV0lsMzhmQUI1QmVraDVtOTM1MG51Wk9Pa3RwUjlOWGp5U3h3VVNvZmdNTUN2YzRidWZnd2U5dlNtYWFiYXc0ZHY3YkxrYUw3bEp6YzExaWlGUjZ5UjVsX2YzLU5ZR0pWUQ?oc=5"
+    },
+    {
+      "text": "RBLX: Roblox Shares Climb After Bullish Analyst Upgrade. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.971,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T06:55:47.574253",
+      "url": ""
+    },
+    {
+      "text": "Roblox: Hold Rating Due To Growth Mismatch And Revenue Expectation",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.962,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T14:55:55.356765",
+      "url": "https://seekingalpha.com/article/4791593-roblox-hold-rating-due-to-growth-mismatch-and-revenue-expectation#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Roblox Corporation $RBLX Stock Position Decreased by Raymond James Financial Inc. - MarketBeat. Roblox Corporation $RBLX Stock Position Decreased by Raymond James Financial Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.946,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T08:08:49",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbVdINDBsWWFUNDl1aFR0cExFSU00Nk83a25ZUVRRVm9nVGhkLVhIbnNGYVpPekpsNmVtZDFhWW1DN19tWF9peEdNeG1OOHJvODBXQTR1TGNuVlNPM3lhbE1iTjFVQURZR2trcXVWaHJIWklxbEp0T2xySHVYWTR3NW9qWVlCT0FzbTFxS1JNOXNFZTFQajRNdjB0b0dtRGRxYnVrSjZEWGlxNzk0WWNIakJCSXA3THBOTk5ieDZPVzJhY1lVSDM2SS12cw?oc=5"
+    },
+    {
+      "text": "Roblox: The Pathway To Improved Margins Is Opening Up",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.936,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T17:55:55.449896",
+      "url": "https://seekingalpha.com/article/4788981-roblox-the-pathway-to-improved-margins-is-opening-up#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Earnings Call InsightsRoblox raises 2025 guidance, targets 10% global gaming market share amid viral content surge",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.926,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:55:55.959122",
+      "url": "https://seekingalpha.com/market-news/earnings-calls-insights"
+    },
+    {
+      "text": "Roblox's upbeat bookings outlook drives investor optimism; shares soar",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.923,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:55:56.068516",
+      "url": "https://seekingalpha.com/news/4475517-robloxs-upbeat-bookings-outlook-drives-investor-optimism-shares-soar#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "S&P Global ups rating on Roblox to 'BBB-'",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.917,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T13:55:55.685892",
+      "url": "https://seekingalpha.com/news/4484875-sp-global-ups-rating-on-roblox-to-bbb#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Roblox stock gets punished as outrage rises against platform for enabling child abuse",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.913,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T04:55:55.638255",
+      "url": "https://seekingalpha.com/news/4486117-roblox-stock-gets-battered-as-outrage-rises-against-platform-for-enabling-child-abuse#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Candriam S.C.A. Boosts Stake in Roblox Corporation $RBLX - MarketBeat. Candriam S.C.A. Boosts Stake in Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.908,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T22:16:01",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQVkyc0NrdXRKektHUHp4aHRCRk5TWUxjMlNMZGo0VThXTDFIMUQ0WTEwTWhULXlzLUhWeTlicldERG5xejdLSjFIX19Uc1JjMnlzUENrTjEzMVZWdjcwZnZkNEdWN29qeU5fbFFWLXE5Sm15cUFkaHB5d3dhdkJOWUZMcmJwRXkxWTgzVU9ZeEtYbEpLSUx0NE5fZ0xLazlvVFdDNU94Ny1fYVU1X1dkY0E5YTcteDhEdlB0eUJfOA?oc=5"
+    },
+    {
+      "text": "Roblox (RBLX) Jumps 8% as Firm Gains Compelling Edge in Video Game Sector. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.892,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T17:55:46.983516",
+      "url": ""
+    },
+    {
+      "text": "Roblox Gets an Upgrade in a Rough Month. The Stock Is Rising.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.875,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T21:55:47.702881",
+      "url": ""
+    },
+    {
+      "text": "Credit Agricole S A Raises Position in Roblox Corporation $RBLX - MarketBeat. Credit Agricole S A Raises Position in Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.846,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T22:37:45",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPLXZXaE9QWjZIdjNxNFZtWFNpODNTYjllWHRyUlRuUWtuY3VGNzZhU25oR2d0ZDA2aWFSczkwT1JjOWNhY0RPOHRaaFZlejN2M3ZtVnB5TWU3MjhrVGM4YmVReTVYX1Y2SDN0bDFCWHlfYmFqVjhQZzljbG5lTVdtQXI2cjYxbjNwUTRPWW9rX3hieDBJZW1Mamt3REszY3lvTGE4Z2xYZmJXakhJbFZ4d29IUVU5SDgwcGlXSVZkUXA?oc=5"
+    },
+    {
+      "text": "Here’s Why Roblox (RBLX) is a Relative Performance Headwind for the ClearBridge Mid Cap Growth Strategy - Yahoo Finance. Here’s Why Roblox (RBLX) is a Relative Performance Headwind for the ClearBridge Mid Cap Growth Strategy&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": -0.834,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T12:04:26",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdjRGTUEwcTdIVlhMTzM3MVFyeXdGYW56bTJYTmhDRF84UVZoQlRGTUJXUTBKYjIwV2RGbXRmZ2hoR3c3Mms5THdpczl0WjM0TUotT1RKOWZyQW5vUDFyVVg4WG8xOURCb2RZeXIydm81akhienVJMDFWYWJtV1RrbU1ROTVjU2RWYmc?oc=5"
+    },
+    {
+      "text": "Jump Financial LLC Trims Stock Position in Roblox Corporation $RBLX - MarketBeat. Jump Financial LLC Trims Stock Position in Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.83,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T10:41:22",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPYVJBZVRVaENjLWlJZmc0dFN4RkV6RkJKdFlKNzFxcHZ1aWhaMGZ1Rkp4WVVxbWpRcUFjekw2cHVsV1FTc2tIaXh4TmlPUHNwaHdZU2VtZjdEdl82dHNhbEp6anBTWllrMXNLZ3lHZW9naktwaHZyRVFSOXVNaGNwN0Z4ZjVpZXg3VmVwVVQ4azJyOEJReC1YZ1lfeXBXZThyUnVNU1FTMm9VWWNNYXRjNlJVQjdGQW1EdnMzUC1aOEFIQVpsOEktT2MxU3VqdFhtd1B3?oc=5"
+    },
+    {
+      "text": "Roblox: Surge In DAUs Justifies The Bull Case, But Watch Valuation (Rating Upgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.8,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T02:55:55.249241",
+      "url": "https://seekingalpha.com/article/4798833-roblox-surge-in-daus-justifies-bull-case-but-watch-valuation#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "1832 Asset Management L.P. Increases Stock Position in Roblox Corporation $RBLX - MarketBeat. 1832 Asset Management L.P. Increases Stock Position in Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.777,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:07:30",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUGFWUWdwYUIwRjZtRWNhTEdzeGNPU3d4XzQ2c3pGZDZJRUp0WmgwX1ZMWFktNEF3bWZobDFSSGVjZUZOend0RU5LZW9ETFFiMU5uN3Vvbm8yMUpIVUd5X0NpWTFjVGdHYkRkd1NwYTlBMUxiSllLRERQYVl6QWpuVm9LVkdvcFkxaEg3QjlfMkpiTUdVc0hNQnhvNG13QzVHSW90dWl2a242N1JkUWtOcFoxeFdGcFY4WU5DTG1zV0hKekdCcWZKek1yMA?oc=5"
+    },
+    {
+      "text": "Roblox Is Delivering Growth, But I'm Staying Cautious",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.732,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T05:55:55.406804",
+      "url": "https://seekingalpha.com/article/4791222-roblox-delivering-growth-im-staying-cautious#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Roblox (RBLX) Sees Executive Shakeup with Chief Product Officer Resignation. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.704,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T15:55:46.775838",
+      "url": ""
+    },
+    {
+      "text": "Roblox's Explosive Growth Too Expensive Here - Potential Bull Trap",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.605,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T07:55:55.033974",
+      "url": "https://seekingalpha.com/article/4808252-roblox-stock-q2-explosive-growth-too-expensive-here-potential-bull-trap-reiterate-hold#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Tech Voices: Nvidia defends H20 chips, Figma IPO, Roblox's 10% goal",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.565,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:55:55.889362",
+      "url": "https://seekingalpha.com/news/4475828-tech-voices-nvidia-defends-h20-chips-figma-ipo-robloxs-10-goal#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Roblox Corporation Stock (RBLX) Opinions on Analyst Upgrade and Lawsuit - Quiver Quantitative. Roblox Corporation Stock (RBLX) Opinions on Analyst Upgrade and Lawsuit&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.2,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-25T17:32:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNM3RzN1p4cDdDRnJpQTh4SnVoQ3dxQVhRS3B2VHR6NGQ2VkZYNnY0aS1RMXU1aGdEWmhOb29CNkRaTEM1Q1pXY0dlVjBLa0Nhd2xRTWlZVzR5WWlnVy1nbXA3R1NEV3ZlWWM1Z1M4TzBTQnNtM25wd05ZcG1QYUNpRTZTWDJaYjViM3pkYXVCLUF5QkF1UTg1WjlGX1dhTHBUbTNjUFloRHNJZGVF?oc=5"
+    },
+    {
+      "text": "Gap downgraded, Ulta upgraded: Wall Street's top analyst calls. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": -0.2,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T01:55:47.764528",
+      "url": ""
+    },
+    {
+      "text": "Roblox Corporation $RBLX Shares Sold by Algert Global LLC - MarketBeat. Roblox Corporation $RBLX Shares Sold by Algert Global LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T22:37:47",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORVZJRlpZMllqc0FnZDRPQU5Oc1prNjI0NWRfNE9KNnBmYVRNSHpUdzZrOWhSNUtIYTlaVGRlQ2dIdXVVbDBBUVZNa3p3bDE3eU5Hb29BQjVGMzJWUUFNM3NtdWh6blZQLVJkc0FmOVFQdHJrZUJXZTJxbWlFRFhTZy1SUmgydkVTNFJraVdPdjFlZ0dpcTVieWpCamIyNkQxR2N5bmdkZVJHaEg0a2FVdVFVYWZoa09Nb1dGMUhlYXc?oc=5"
+    },
+    {
+      "text": "Roblox Corp (RBLX) is an ‘Outperform’ Amid Platform Issues: Oppenheimer - Yahoo Finance. Roblox Corp (RBLX) is an ‘Outperform’ Amid Platform Issues: Oppenheimer&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T04:28:57",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdi1tZFNsc3dxUmlkamRFWUpHaElzaG1sX291amhqRHlQNUxvek12ZnpnVlFCZ1VuOFVJZkEzQWg0MWQxU29fWnZXSWpuR0RMVEJ1SzFNOV9kdTFkUFlCQWtDOVRhcjJJX2M0czBTcE52R0puZk83azNJbnJrbG9yMEZ5ZHU?oc=5"
+    },
+    {
+      "text": "Price T Rowe Associates Inc. MD Has $195.40 Million Position in Roblox Corporation $RBLX - MarketBeat. Price T Rowe Associates Inc. MD Has $195.40 Million Position in Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T22:37:45",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaVJUSTg3VnkyTUtjLUYyUFZ1R2NVa0V0aWRHRG53bW9yRmJwdGFRb01UMk9PS2FYdmo3QnZUN0JFSm05ekUzVmZBQWNzNDhXS0J5S0I1N183dGwtcjJZc2lCd0xBcEpvU1FzRkFyeTJ0S196dmVWQl8wbnJ3bGhYQi1VRjJoUFFfamhONkhFM2EzaGs0cWpVUW8xU3ByOVYxOC1uT0xXY1B5Ml9RN19IM1k0MGFEZjBWRlFMb0t2b3d0NEpremh2dnNHM0VzZi1t?oc=5"
+    },
+    {
+      "text": "Ieq Capital LLC Buys 2,297,350 Shares of Roblox Corporation $RBLX - MarketBeat. Ieq Capital LLC Buys 2,297,350 Shares of Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:25:17",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMXJFZDAyZ2xrcGFkWVBQY19EYmd4TEVhMHViWHNLVGlrY0ZXekU5dEpMQ2JkQzlIelBqMjd6VWpZeGtFMTVnWTdIdW84LUZScDg2cVBRUHVWX0FGR1RwTXhJc05NMXZWM1ZVbUoxWi0zRVlvY3hoaGJ6MF9oaUJUWFFEaHNNT1B4bnUzNnRraUlpN2VDcW9kSVJnU3ZQSFJGV1JrN2h0MzZSQkUwTWVUeFYwcGRFX1FUR0ZYbm5wSkU?oc=5"
+    },
+    {
+      "text": "APG Asset Management N.V. Sells 13,691 Shares of Roblox Corporation $RBLX - MarketBeat. APG Asset Management N.V. Sells 13,691 Shares of Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:25:34",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTnkySFo2WFEwbzZyR002bGQ3ck9QVUVpREhKTG5IaXhBVmc2el9yLVlxaEhMRVpPRUtlc0t4bTRkQkdmNjQwWFpLdFhOd2k2NUZRcC1zUmQ3ZGdFeUhhMVJZSVUzTlFHMkRJYUtROWE2c1k2RmxYbGJoTFJYVWpKR0YzdFktZnBrT19zWUpDaU1lRFFWYlh1RHZZUVZzMXBnZHk4THhJZzRickxBNDdiVmJ5VVpDZnpDME0xcUxTeVdFeVA3RFhaWWV3?oc=5"
+    },
+    {
+      "text": "Roblox Corporation $RBLX Shares Sold by HighTower Advisors LLC - MarketBeat. Roblox Corporation $RBLX Shares Sold by HighTower Advisors LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T08:18:26",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbUR2T2RqXzF0SWZWRnlDbWRLLW5XZ1N6ZWhGb1Bibm14RU1YRHFTc3k5bmR1dl95Q3VlVTdkczFMZ0V5WXVzTjBHV3ZWTjkyVFMyeFNzdnc3cWxEOV9FOHRpdnhleEV1dmxCd3ItWVJadUNWR2dlTUVjVHVteVJSamV0ckVWN3MtOFdlZDdPdkJuLTRjVjNjWFVXN0xqRGF5dXFRdkNtVGRPcktZal9CcGZQX0g5ZGpVLTA2NnRLTQ?oc=5"
+    },
+    {
+      "text": "Wellington Management Group LLP Sells 58,928 Shares of Roblox Corporation $RBLX - MarketBeat. Wellington Management Group LLP Sells 58,928 Shares of Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T05:15:00",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZUptYzBmNG83OVAtOG9yTVk4blJTYmVIQlFsX0hFbXpORHdQSnFBcUFBQmZxa05veEZjdXBPR2FHcjBsNWVpNEFIME93cHROR29PYW9Wc0xzcHZDc3RFYXFVaHFxQWFIX0YzN3pHQUo5S1g3RXV3U3luRVM5dlJhbE1IYXRERDNESW5tS2ZLRjFoT0NwcWhPdl9CTUozb1poS3JtVDlNOUJpUUJWcHJUbjVOb0RoTE5VTm5Vb1QyWjREcnlRSU5FV2dhLVNLTUZRT0NOZ2J3?oc=5"
+    },
+    {
+      "text": "Hsbc Holdings PLC Buys 291,750 Shares of Roblox Corporation $RBLX - MarketBeat. Hsbc Holdings PLC Buys 291,750 Shares of Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T02:03:45",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMjRYQjhtZWlpdHV3cEtMaUZaXzNQekRTZU1vYlNIdWlCcWhBcWs2RlFPOXNPSzYwSXNWM0Y1WDlRZnJYTU1NYnlDYjNLWHlpSE95UWtTaGl3ekNOTkktUkdBS0Z6dC1lZUs5bHo3MzRRcjBYcl9xU2JZSGlzUXFDZHUxQ1ZuQXFKSlF2a0NLRXFyQ1JhRG1ENWN5dUt0SEptelJFNXMtcDZYcVFmemFOTE9DOEJCdGFoOVRmLVd3?oc=5"
+    },
+    {
+      "text": "Roblox Corporation $RBLX Shares Bought by Jasper Ridge Partners L.P. - MarketBeat. Roblox Corporation $RBLX Shares Bought by Jasper Ridge Partners L.P.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdk5lcllpN3dnNjZ3N080TGtWNWU0blh2Z2hrMDRIc1pxM0l5bGZpc1dXU19DYl9aX1NJclJiekk3aGIyMWFuX2hIbnhhbER0MkpnY3J2T0lBZjJPRDVITHV4cXFQOFN3VWdMaDlSOC03dXBQQzFxU1hXZlR2M3lKR3RXUXNvYklvNTkzRDlGZDV5aXREMTJHYUFxVHdTY2xkQ25MeWRhTmd6bXBuS3ltU1NQdl8yR3FMcFJqRUJmSnJ5dG8zRXR3UkVsSW5QRms?oc=5"
+    },
+    {
+      "text": "Allstate Corp Acquires 3,572 Shares of Roblox Corporation $RBLX - MarketBeat. Allstate Corp Acquires 3,572 Shares of Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T10:00:13",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNam9qSGJ4TU9uajdfb3NWY0dKX2RiUkw5ajBFaXViV09CQTROUWxLSFFvZDI5VWE1dmJEcTZ0akJ3QjhyM0xrSFpIV3NlbjNBdmdNRG9NRlgxYUhJY1VpRUJIZjZBOWUyTGJraU93YXRnM3E2YnBsNXc4WDNPY1ExVHN0aW5XVmh0bFdscnNXOFZ6MVozZ3hMVXdlVzBhUkFMMlNrSHBmYVlVUlpMamNXc1Fyd3psZ0ZQaGc?oc=5"
+    },
+    {
+      "text": "Ethic Inc. Buys Shares of 8,758 Roblox Corporation $RBLX - MarketBeat. Ethic Inc. Buys Shares of 8,758 Roblox Corporation $RBLX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYUZaR1JldDhxaV96cEhwZTlyc2htdVl3X3RZTElfQTRIU0MzX1dSUU9Vb2tXdjBzd0FqUHlpSFFaX2dQdXd2UmY4UFotbGJWQ3BkVTZtc296b1ZFM3dEV0ZSdVJLc2t5VnJNaTNkcUhHNER0aE1vWlJieHFIRUtvUEdaS25uTWQ2Zkw4SmthMldqbktmYVpfMHBsYkNtT0lNYnlGMnMwaDVDcGpFdnlkOEFyLUlsQnJTQnc0?oc=5"
+    },
+    {
+      "text": "Roblox Corporation $RBLX Shares Purchased by Northern Trust Corp - MarketBeat. Roblox Corporation $RBLX Shares Purchased by Northern Trust Corp&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc3N3dEVjcGtUQ0xMWXlnaDg4Vm41OWRseXp0V0dKci1qVTQxMnpGT1Y1aXRmUVQ2Y2Joc0lGNHNRQ1MwVWRaNjVkb2d0VzFEcGp6VzJzZU1sV0NnWnM5YkVzbjk5ekJfcGxwZl8tUHBiMzFKMTNDVWR0ZkRjZXZNZHZ5dTExOHAteTVsNFd0SGRDcndGWVd6VUhXNWFBZlplM0IxeE5JTzZXd2FPYWtGUWtRTFA2aXhNbTZZ?oc=5"
+    },
+    {
+      "text": "Roblox Stocks: Is the Surge Here to Stay? - StocksToTrade. Roblox Stocks: Is the Surge Here to Stay?&nbsp;&nbsp;StocksToTrade",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T20:04:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1VeEJsVTN5d1F2NlhHc3RvX3lnaFFFMlJyZ0tubkl3Q3A4N1JYbXdWTDNEMlE5eGc2SFFsa2laTC1BM3JPTU1oSnphQ1lobl9nNWZSdmlTSV90bUp5a2FCdDJyMXZLdGd1OUJ6RVV2QlNpX0NmQ0M1MDAxX2pMdw?oc=5"
+    },
+    {
+      "text": "Roblox Stock Skyrockets: Should You Be Interested? - StocksToTrade. Roblox Stock Skyrockets: Should You Be Interested?&nbsp;&nbsp;StocksToTrade",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T14:02:00",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HaHhWZkNYbG5rUjJyT0x1TnZxZk9YOXQ4cnBySEt6VXdsVHU3WTFuR2E1WDdjaHMzb0s1QWdrdmZ5ZUJzaFdnVVdJWGQ4cEdaeVlNbm5OZ2ZubFAzUGd6V0JrbWJyTEd1WjRGVWk2M0VjMy1qRUJvTUhQZw?oc=5"
+    },
+    {
+      "text": "Roblox Corporation $RBLX Shares Sold by RWA Wealth Partners LLC - MarketBeat. Roblox Corporation $RBLX Shares Sold by RWA Wealth Partners LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONlNvVFFCcGJDVEtCanFVdERqeDJhM0hUc1NEV3FLRjNab3UzRHg2QjItcmNHU3pTNE0wYy1CTDhnNGJXanlMTGZYaDRka3dWdzlfa0tySGFzYThOclNSRm9QVmtjVVRUMnB5MGJGWlROZFRRZ0FqeHBpeURCZ05fR3ZBc3VndTlrY1FKYUJ6YTQ0azVIWEVoT1hDVTdOWEVFQjNiUldhTXBsMldwSDhpU18xSmJwelJSSk85eDdvMGlmQmlKWmlCZDg1UmNBbEFVQ0E?oc=5"
+    },
+    {
+      "text": "Roblox Corporation (RBLX) Stock: Jumps as Analysts Raise Targets and User Growth Explodes - parameter.io. Roblox Corporation (RBLX) Stock: Jumps as Analysts Raise Targets and User Growth Explodes&nbsp;&nbsp;parameter.io",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T14:42:41",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSXZhcmgycEY4Vkg2ajFRQUZiUTQxRklfWmxJZlVxMTNseG1IZ3lRc3U4Y0xjOE9lWmp5RnFfc054bzhqd0tmS09GMm5udFpUWWk3R0ZGaUN6R25FSE5LUjUyamE4TG1OTVlJZkZfakNqalRJTHkxV1VjYTBfdXlJZm9CdUpYYmlqcHpLSHZDbGh3Tk1SV3dvaXdzYU1GcDZvd1J2V0RnMkhnbGFU?oc=5"
+    },
+    {
+      "text": "Does Rising Engagement on Roblox Translate Into Financial Strength?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T19:55:46.830905",
+      "url": ""
+    },
+    {
+      "text": "My 3 Favorite Stocks to Buy Right Now. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:55:46.928232",
+      "url": ""
+    },
+    {
+      "text": "Unity vs. Roblox: Which 3D Content Stock Is the Better Buy Now?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:55:47.041399",
+      "url": ""
+    },
+    {
+      "text": "Will Roblox’s (RBLX) New Safety Push Shift the Platform’s Long-Term Growth Trajectory?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T01:55:47.101296",
+      "url": ""
+    },
+    {
+      "text": "Dow Jones Futures Fall: Nvidia, Palantir, Roblox Are Big Movers; Tesla Stock Hits Buy Point. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T21:55:47.156702",
+      "url": ""
+    },
+    {
+      "text": "Elon Musk sues Apple & OpenAI, Roblox rises, Alphabet's new high. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:55:47.221617",
+      "url": ""
+    },
+    {
+      "text": "Why Roblox Stock Popped Today. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T09:55:47.274708",
+      "url": ""
+    },
+    {
+      "text": "Wall Street Analysts Think Roblox (RBLX) Is a Good Investment: Is It?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:55:47.341187",
+      "url": ""
+    },
+    {
+      "text": "Roblox Corp (RBLX) is an ‘Outperform’ Amid Platform Issues: Oppenheimer. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:55:47.406910",
+      "url": ""
+    },
+    {
+      "text": "1 Reason to Be Very, Very Excited About Roblox Stock Right Now. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:55:47.461730",
+      "url": ""
+    },
+    {
+      "text": "Has Roblox Stock Run Too Far After 166% Gain Amid Legal Risks?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:55:47.514448",
+      "url": ""
+    },
+    {
+      "text": "Roblox vs. Electronic Arts: Which Stock Has More Upside Now?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T19:55:47.641087",
+      "url": ""
+    },
+    {
+      "text": "Can Roblox's Creator Economy Unlock Its Next Phase of Monetization?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T19:55:47.827901",
+      "url": ""
+    },
+    {
+      "text": "Unity Leans Into Partnerships: Will it Unlock Shareholder Value?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T18:55:47.894639",
+      "url": ""
+    },
+    {
+      "text": "Roblox: The Flywheel Is Real, And So Is The Cash Flow",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T08:55:55.086805",
+      "url": "https://seekingalpha.com/article/4807712-roblox-rblx-flywheel-is-real-cash-flow#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Roblox: Massive Asia User Growth Turns The Tide (Upgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T15:55:55.138808",
+      "url": "https://seekingalpha.com/article/4807635-roblox-massive-asia-user-growth-turns-the-tide-upgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Roblox's Buy Case Is Quite Compelling, But The Rally Is Overly Fast And Furious",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:55:55.193516",
+      "url": "https://seekingalpha.com/article/4799006-roblox-stock-buy-case-quite-compelling-but-rally-overly-fast-furious-hold#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Roblox: You Should Have Bought At The Bottom--But It's Still Not Too Late",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T17:55:55.303917",
+      "url": "https://seekingalpha.com/article/4791988-roblox-you-should-have-bought-at-the-bottom-but-its-still-not-too-late#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Roblox: Discounts Don't Last Long",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:55:55.495796",
+      "url": "https://seekingalpha.com/article/4778428-roblox-discounts-do-not-last-long#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "Roblox added as a new long idea at Hedgeye",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:55:55.540111",
+      "url": "https://seekingalpha.com/news/4486614-roblox-added-as-a-new-long-idea-at-hedgeye#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "CrowdStrike added, Adobe removed from IVES AI 30 list: Wedbush",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T19:55:55.589402",
+      "url": "https://seekingalpha.com/news/4486371-crowdstrike-added-adobe-removed-from-ives-ai-30-list-wedbush#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Insider trades: AbbVie, Coca Cola, Roblox among notable names this week",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T16:55:55.736840",
+      "url": "https://seekingalpha.com/news/4482915-insider-trades-abbvie-coca-cola-roblox-among-notable-names-this-week#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Wall Street analysts set new price targets for Roblox after Q2 report impresses",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:55:55.792908",
+      "url": "https://seekingalpha.com/news/4476547-wall-street-analysts-set-new-price-targets-for-roblox-after-q2-report-impresses#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Roblox Corporation (RBLX) Q2 2025 Earnings Call Transcript",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:55:56.016706",
+      "url": "https://seekingalpha.com/article/4806974-roblox-corporation-rblx-q2-2025-earnings-call-transcript#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Roblox Corporation SEC Filing - Quarterly Report (10-Q) July 31, 2025",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:55:56.123198",
+      "url": "https://seekingalpha.com/filing/10241892#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A11"
+    },
+    {
+      "text": "Roblox GAAP EPS of -$0.41 misses by $0.05, bookings of $1.44B beats by $170M",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T19:55:56.180714",
+      "url": "https://seekingalpha.com/news/4475471-roblox-gaap-eps-of-041-misses-by-005-bookings-of-144b-beats-by-170m#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A12"
+    },
+    {
+      "text": "ROBLOX CorpFollowFollowingFollowFollowFollowFollowRBLX:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T05:56:07.080222",
+      "url": ""
+    },
+    {
+      "text": "corporate.roblox.com. Roblox Corporation provides entertainment products and services. The Company designs and develops a wide range of online games such as internet three-dimensional and tutorial games for kids, teens, and adults. Roblox serves customers worldwide.",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T02:56:07.146526",
+      "url": "https://corporate.roblox.com"
+    },
+    {
+      "text": "AboutROBLOX CorpRoblox Corporation provides entertainment products and services. The Company designs and develops a wide range of online games such as internet three-dimensional and tutorial games for.... Roblox Corporation provides entertainment products and services. The Company designs and develo...",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:56:07.371928",
+      "url": ""
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:56:11.273829",
+      "url": "https://www.bloomberg.com/quote/RBLX:US"
+    },
+    {
+      "text": "Stock Movers: Keurig Dr Pepper, Roblox, Alphabet",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:56:13.679839",
+      "url": "https://www.bloomberg.com/news/audio/2025-08-25/stock-movers-keurig-dr-pepper-roblox-alphabet-podcast"
+    },
+    {
+      "text": "Stock Movers: Keurig Dr Pepper, Roblox, Olaplex",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:56:13.868751",
+      "url": "https://www.bloomberg.com/news/audio/2025-08-25/stock-movers-keurig-dr-pepper-roblox-olaplex-podcast"
+    },
+    {
+      "text": "Stock Movers: Applied Materials, Roblox, UnitedHealth",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:56:14.056293",
+      "url": "https://www.bloomberg.com/news/audio/2025-08-15/stock-movers-applied-materials-roblox-unitedhealth-podcast"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Roblox (NYSE:RBLX) Shares Gap Up After Analyst Upgrade - MarketBeat. Roblox (NYSE:RBLX) Shares Gap Up After Analyst Upgrade&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 1.0,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:39:26",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOejlOaXlzc2xIejZ0STlJbjBrc1MyMlZObXJNRzZiVUtrZmgtZXdQcFlGOW9hZWFsbXh1OTUtVkZkbzJ6OGZOMHlBQWVkQkszaDl1NWY5eWNUM0RoN3hFQjZ2bDJkWUZkcllDdUxKaFd1TEhGMkpIQ1RvM213OGFjaExULWw3UXNDX0NrSjZMNW9UdXZNT0RYUFhpcmpPaXREblJzZA?oc=5"
+    },
+    {
+      "text": "Roblox Shares Slip Amid Legal Scrutiny and Mixed Market Signals - Benzinga. Roblox Shares Slip Amid Legal Scrutiny and Mixed Market Signals&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": -0.971,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T19:18:08",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOUNzbHk5OTRselRtYTMzT3gzdEFtcFc1XzhYSzF3Ymp3WWttMjlwV0EydVpZSmMxUGJxN25zMnB0YUtIS2gwcGJSNkRINk10aUUzM1FGTUlwNU1Dd2x5TkptV0lsMzhmQUI1QmVraDVtOTM1MG51Wk9Pa3RwUjlOWGp5U3h3VVNvZmdNTUN2YzRidWZnd2U5dlNtYWFiYXc0ZHY3YkxrYUw3bEp6YzExaWlGUjZ5UjVsX2YzLU5ZR0pWUQ?oc=5"
+    },
+    {
+      "text": "RBLX: Roblox Shares Climb After Bullish Analyst Upgrade. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.971,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T06:55:47.574253",
+      "url": ""
+    },
+    {
+      "text": "Roblox: Hold Rating Due To Growth Mismatch And Revenue Expectation",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.962,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T14:55:55.356765",
+      "url": "https://seekingalpha.com/article/4791593-roblox-hold-rating-due-to-growth-mismatch-and-revenue-expectation#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Roblox Corporation $RBLX Stock Position Decreased by Raymond James Financial Inc. - MarketBeat. Roblox Corporation $RBLX Stock Position Decreased by Raymond James Financial Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.946,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T08:08:49",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbVdINDBsWWFUNDl1aFR0cExFSU00Nk83a25ZUVRRVm9nVGhkLVhIbnNGYVpPekpsNmVtZDFhWW1DN19tWF9peEdNeG1OOHJvODBXQTR1TGNuVlNPM3lhbE1iTjFVQURZR2trcXVWaHJIWklxbEp0T2xySHVYWTR3NW9qWVlCT0FzbTFxS1JNOXNFZTFQajRNdjB0b0dtRGRxYnVrSjZEWGlxNzk0WWNIakJCSXA3THBOTk5ieDZPVzJhY1lVSDM2SS12cw?oc=5"
+    },
+    {
+      "text": "Roblox: The Pathway To Improved Margins Is Opening Up",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.936,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T17:55:55.449896",
+      "url": "https://seekingalpha.com/article/4788981-roblox-the-pathway-to-improved-margins-is-opening-up#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Earnings Call InsightsRoblox raises 2025 guidance, targets 10% global gaming market share amid viral content surge",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.926,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:55:55.959122",
+      "url": "https://seekingalpha.com/market-news/earnings-calls-insights"
+    },
+    {
+      "text": "Roblox's upbeat bookings outlook drives investor optimism; shares soar",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.923,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:55:56.068516",
+      "url": "https://seekingalpha.com/news/4475517-robloxs-upbeat-bookings-outlook-drives-investor-optimism-shares-soar#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "S&P Global ups rating on Roblox to 'BBB-'",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.917,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T13:55:55.685892",
+      "url": "https://seekingalpha.com/news/4484875-sp-global-ups-rating-on-roblox-to-bbb#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Roblox stock gets punished as outrage rises against platform for enabling child abuse",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.913,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T04:55:55.638255",
+      "url": "https://seekingalpha.com/news/4486117-roblox-stock-gets-battered-as-outrage-rises-against-platform-for-enabling-child-abuse#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.133,
+    "last_week_average": 0.073,
+    "overall_average": 0.073,
+    "articles_last_24h": 37,
+    "articles_last_week": 73
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

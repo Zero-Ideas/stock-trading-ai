@@ -1,0 +1,703 @@
+{
+  "symbol": "NVDA",
+  "company_name": "NVIDIA Corporation",
+  "analysis_timestamp": "2025-08-29T15:40:12.849723",
+  "total_sources_analyzed": 72,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Neutral",
+  "sentiment_scores": {
+    "average_polarity": 0.069,
+    "average_compound": -0.036
+  },
+  "sentiment_distribution": {
+    "positive": 12,
+    "neutral": 46,
+    "negative": 14,
+    "positive_percentage": 16.7,
+    "negative_percentage": 19.4
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Google News": 24,
+    "Bloomberg": 5,
+    "MarketWatch": 21,
+    "Seeking Alpha": 22
+  },
+  "sentiment_model": "FinBERT (Financial BERT)",
+  "sample_articles": [
+    {
+      "text": "Huawei's H1 net profit falls 32% amid R&D spending: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.971,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T20:39:51.768231",
+      "url": "https://seekingalpha.com/news/4490317-huaweis-h1-net-profit-falls-32-amid-rd-spending#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Nvidia Q2: Stock Drops Over China Concerns",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.966,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T07:39:51.354405",
+      "url": "https://seekingalpha.com/article/4817482-nvidia-q2-stock-drops-over-china-concerns#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Nvidia stock slips, Q2 data center revenue disappoints - Yahoo Finance. Nvidia stock slips, Q2 data center revenue disappoints&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": -0.961,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T20:36:26",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45cTVVeEJrTzh4dHRSS1hHN3F6VVZjLTk5ZkE4MTRYSW1Mb2piQWRrRk9Ccmx0SThCV1hrTnJHNnduYnVjZ3BWUWIwOXBXbjBEX3RiempBcGtJdXdNNmZWMnhIc2w2QnU4TFdUYkc2empsY3BKQWNMemNGUXAyZw?oc=5"
+    },
+    {
+      "text": "ChinaCambricon Stock Falls. China’s Hot AI Chip Maker Faces Competition.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.959,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T17:39:45.017735",
+      "url": "https://www.barrons.com/articles/cambricon-stock-price-nvidia-alibaba-46b38168?mod=mw_quote_news"
+    },
+    {
+      "text": "Nvidia is benefiting from 'clear' growth acceleration in AI, even with China uncertainties",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.957,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T03:39:52.064533",
+      "url": "https://seekingalpha.com/news/4489992-nvidia-is-benefiting-from-clear-growth-acceleration-in-ai-even-with-china-uncertainties#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Nvidia Q2: Stock Drops Over China Concerns (NASDAQ:NVDA) - Seeking Alpha. Nvidia Q2: Stock Drops Over China Concerns (NASDAQ:NVDA)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.948,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T14:05:14",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbXVKSGE0OEdWWUZiUm9YZ2VCbm9BcEJudy1raGRRMUFVUmFRbjdaVFhMMUp4OTIyVlRmenQxYUZMa3IwU25YU2loRmFMOVIyYWNyUEJTSmthazV0R29udDU2MHZ0ejlmdldCNk90Q2l6UDFoRll3NmtYQ1hHWHVqYmRhQUJYdzAzQ1E?oc=5"
+    },
+    {
+      "text": "Nvidia: Data Center Growth Slowdown Is Expected To Continue Into CY2026",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.941,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T12:39:51.079015",
+      "url": "https://seekingalpha.com/article/4817821-nvidia-stock-q2-data-center-growth-slowdown-expected-continue-into-cy2026-hold#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Bitcoin Miner And AI Play Iren Jumps 15% On Earnings And This New Nvidia Status",
+      "source": "MarketWatch",
+      "sentiment_score": 0.932,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T09:39:44.283309",
+      "url": "https://www.investors.com/news/bitcoin-miner-ai-data-center-play-iren-jumps-earnings-nvidia-status/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "More Bulls Boost Nvidia Targets as Expectations Climb Ahead of Earnings - Investopedia. More Bulls Boost Nvidia Targets as Expectations Climb Ahead of Earnings&nbsp;&nbsp;Investopedia",
+      "source": "Google News",
+      "sentiment_score": 0.927,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T20:38:56",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPY29aam5VbUdGWk5Jd2NoYVZtWnIyOVpsdjUtTGtxSE0xWG9OV1dzdW5Oc0g1RFBvS1poVkhPNkdGY3JBMXlWQjhrcUZuN1FMVkt2RlNCeWR6b1lBbmxKOVhxMXdNdDlpa1JZZzNWZ1dGeS1zWVpwSUFYeWpoZU9LZXhlcndIeEpBaEpMVGY5b0ptOEkzMjdlWHhDYnZOaXlTQThyZS15WENGWWIyTFE?oc=5"
+    },
+    {
+      "text": "AINvidia and Other AI Stocks Are Falling. Why Investors Are Souring on Artificial Intelligence.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.925,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T04:39:44.579715",
+      "url": "https://www.barrons.com/articles/nvidia-ai-stocks-fall-f1443223?mod=mw_quote_news"
+    },
+    {
+      "text": "NVIDIA Corporation (NVDA)’s Shares Gain 40% Since Jim Cramer Prediced “Pain” Last Year - Yahoo Finance. NVIDIA Corporation (NVDA)’s Shares Gain 40% Since Jim Cramer Prediced “Pain” Last Year&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.923,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T21:15:05",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPb0ViN3MwTVhydGpPQk5rVkV2UmNGOEFzajc0RTBSQXMxeGNrRlpSQ0o5cXprZlRjRlRIYTZYOHczM1daRVFtZ0RFdlZkUlZOcHZkM1doSThUcWxEZDhVLWRBQXluZ0RORUxBcFNBZ0xsbDh0alJ1VUNuTG55RDdPUXRyWVFNd1NM?oc=5"
+    },
+    {
+      "text": "Stock Market Today: Dow Sinks, But Nasdaq Fares Much Worse; Nvidia Extends A Losing Streak (Live Coverage)",
+      "source": "MarketWatch",
+      "sentiment_score": -0.922,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T11:39:44.166826",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-inflation-data-nvidia-palantir/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Nvidia Earnings Live: Results Come in Slightly Above Wall Street Expectations; Stock Slips in Extended Trading - Investopedia. Nvidia Earnings Live: Results Come in Slightly Above Wall Street Expectations; Stock Slips in Extended Trading&nbsp;&nbsp;Investopedia",
+      "source": "Google News",
+      "sentiment_score": -0.919,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T22:35:04",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUHhTSnh4a1hJb0hKZUxMM1dYNFVBUjdRc2hhRVZxem1TVEgtVFA2X0d1WkU4TnZlOGdQMHBvOVVVcHFwVHM1VjZxbTBhMEdha3FZR2Q2SS1HNkxNaWZZR0lmSi15TWs5X1dXem1XWmRzbmc4eVd6Q3JGVEVzdzN1VkFFNXNqRHczQnFsT0RGa2JFSXJC?oc=5"
+    },
+    {
+      "text": "ChipsNvidia Can Hit $1 Trillion in Annual Revenue in 5 Years, Analyst Says",
+      "source": "MarketWatch",
+      "sentiment_score": 0.897,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T02:39:44.668354",
+      "url": "https://www.barrons.com/articles/nvidia-1-trillion-annual-revenue-749a90b5?mod=mw_quote_news"
+    },
+    {
+      "text": "NVIDIA (NASDAQ:NVDA) Stock Price Expected to Rise, JPMorgan Chase & Co. Analyst Says - MarketBeat. NVIDIA (NASDAQ:NVDA) Stock Price Expected to Rise, JPMorgan Chase & Co. Analyst Says&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.862,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T14:19:47",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOV2FOUmlPTl9JRUEwRXpvaXpwakRBQkFKZnNVUnpwTFA3UmhpRmdLMmd6UUZsWW1LS085NXl4WUd4ZGc2WkVmM004ZVN3eE42RFhRQjZ2Wm5SUmgwY0F1V0dPeDVpa1dCTlBaZzFBMkVlRXVqQ1NIb3RqaFlfRXhxcTJfbzVqNHJVM0hjdjVna0c1czlNTUtxVTZ0bG8tZnN2b2hsNXFMNEE5eUJNWDNfWTRmbkJuRWNxYzNVcnZ4dktoanR4VFNXWUlsdw?oc=5"
+    },
+    {
+      "text": "ChipsNvidia Stock Slips. Why Wall Street Still Loves the Shares.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.752,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T18:39:44.906664",
+      "url": "https://www.barrons.com/articles/nvidia-stock-price-earnings-ai-bubble-7af2de97?mod=mw_quote_news"
+    },
+    {
+      "text": "Nvidia is caught between the U.S. and China and AI chip battle",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.712,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T11:39:52.003274",
+      "url": "https://seekingalpha.com/news/4490086-nvidia-is-caught-between-the-u-s-and-china-and-ai-chip-battle#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Earnings Call InsightsNVIDIA outlines $3T–$4T AI infrastructure opportunity through next five years as Blackwell ramps",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.641,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:39:52.181601",
+      "url": "https://seekingalpha.com/market-news/earnings-calls-insights"
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T02:39:44.623374",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    },
+    {
+      "text": "Nvidia: Set For New All-Time Highs",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.587,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T03:39:51.458313",
+      "url": "https://seekingalpha.com/article/4817476-nvidia-set-for-new-all-time-highs#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Nvidia Q2 2026 Earnings: The Achilles' Heel That Confirmed Our Flip To Short",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.579,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T16:39:51.519268",
+      "url": "https://seekingalpha.com/article/4817468-nvidia-q2-2026-earnings-the-achilles-heel-that-confirmed-our-flip-to-short#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "Nvidia: The China Obsession Has Gone Too Far (Rating Upgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.568,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T08:39:51.024224",
+      "url": "https://seekingalpha.com/article/4817959-nvidia-the-china-obsession-has-gone-too-far-rating-upgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Nvidia: Priced For Perfection And Still Delivering",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.5,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T03:39:51.244499",
+      "url": "https://seekingalpha.com/article/4817557-nvidia-priced-for-perfection-and-still-delivering#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Semiconductors largely higher as Nvidia spurs AI optimism",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.498,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T17:39:51.945676",
+      "url": "https://seekingalpha.com/news/4490120-semiconductors-largely-higher-as-nvidia-spurs-ai-optimism#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Nvidia: The China Obsession Has Gone Too Far (Rating Upgrade) (NASDAQ:NVDA) - Seeking Alpha. Nvidia: The China Obsession Has Gone Too Far (Rating Upgrade) (NASDAQ:NVDA)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.2,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T18:41:11",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNzNXeVg2Qkt2YVNWbXBLS3JHRDdfa1RreU9fNnhlUDNhZVBfYTlZcTNKcHZnVV9NZVEzTldDbnk3cGxxb1dsSXZnaWpVTlp6YV9oRHRwSWVCTTI4cTR6QnpFbzJrNkpLTGZLWi0tMUtOc09mbzAxT2JfYzhGdEREc1Qwd05IbXIxWW84RFVCRVEwQ1AzdWNaN0o3VDNzZTdJ?oc=5"
+    },
+    {
+      "text": "Game Over For Nvidia And The AI Theme (Rating Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.2,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T02:39:51.407930",
+      "url": "https://seekingalpha.com/article/4817477-game-over-for-nvidia-and-the-ai-theme-rating-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2026 - NVIDIA Newsroom. NVIDIA Announces Financial Results for Second Quarter Fiscal 2026&nbsp;&nbsp;NVIDIA Newsroom",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:26:15",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQamxIZnNxSmxsamFuZEtkSlZraHpSdWhxMDd0clNtQTE2VElUMUVuN3A3TUFrWFZDeHZTbGFBNHZhNzE2SF91d2lBY2J3NWViLXFlMTJuSVBtNXlSbktyc040TXRXSFJ5a21aTHJXMnljWXpmbzBzTkRwRmFtQUlZM0h1dS1kbzd4SFhhVTBhYVQ0cWZEdlFfaXdwTmozdXVJUWc?oc=5"
+    },
+    {
+      "text": "NVIDIA Corporation (NVDA): Jim Cramer Says Biggest Concern Is NVIDIA Making Money While No One Else Does - MSN. NVIDIA Corporation (NVDA): Jim Cramer Says Biggest Concern Is NVIDIA Making Money While No One Else Does&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T22:10:44",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNMUNzR3kwa0F3MWxCdUZOVnVfZ3JNdldWc01FT2ZsRFBYYTJ3c2lzbVdyc29LVloxazFQczhIVkUya05ranJCNEVYdEVROUVid0JtQS05NXJCa2h1UXBlbWVqTnpOS2Q2Y1BuQlgzSzRvRmdFR3V1RWJmVXRobVNVM2xuSEtUZHd0TUdCTFljRDQxVXdPei1OZnFUZkN0ZmloSWVIdlhSVXpSdzZKV3JlR1BJRzNrbWIyV0t1eU1xa3ljOGUzQ2xwTGkyZmVQS001eFE4cDJyYldUeVZxQ09fWnk1cThuY1F1RkVPbUk4M2lCMHVTVERTeDQ4VWhWV3lEUU1TY2NRdDJtUGs?oc=5"
+    },
+    {
+      "text": "WIM INVESTMENT MANAGEMENT Ltd Buys 36,000 Shares of NVIDIA Corporation $NVDA - MarketBeat. WIM INVESTMENT MANAGEMENT Ltd Buys 36,000 Shares of NVIDIA Corporation $NVDA&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:13:16",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNUjBxZzctVmFwbHlscnBLYm5QZ0gzOWQ3LWtZanNuejVmaDdCSUlwMUdfYWFoVU5HbVNpWmNPTnlRRmRtLVh0YVkxQ3JscVlKN1lxUHo1OHlMMy15ME8ySTQxSzlpV0E0dG8zeHdPbkZ2Q2R6NGVscnB0cTRMX3hyTjlJMkk3dXFtcXc5YXVnSENWVmdKdmF4NUFKVDlkY2QweWZWQi15cURCSW5RRExHUGdDSEJvRFlsOE1YUS1zVTNWeXJ5VmtOb1l6YVFQU2s0?oc=5"
+    },
+    {
+      "text": "What Wall Street Analysts Think of Nvidia's Stock Ahead of Earnings - Investopedia. What Wall Street Analysts Think of Nvidia's Stock Ahead of Earnings&nbsp;&nbsp;Investopedia",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T14:58:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNLW9CN25PT29QbF8wb3k4WlA4YmEybjdkcE92ZWVxUmlvcFZ0ZVBYNlJ1ZjJubTFuaTlLZl9YQ2ljbUc5eU1GaTdIamRzaTJmeWNLLU5FX0JsM195YmZpd0dLN0lMSThlbXFIMG5yMXZKcjZXSkd2NUczV3V6eWZpUjRVeFFWTkp0dkdGenVERGcxZTZJSkNvM0Z2eGtCR3BueXQwNkFEdmQ4OExBcHJ3?oc=5"
+    },
+    {
+      "text": "The Zacks Analyst Blog Highlights NVIDIA and CoreWeave - The Globe and Mail. The Zacks Analyst Blog Highlights NVIDIA and CoreWeave&nbsp;&nbsp;The Globe and Mail",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T17:50:00",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRVhXYmh0UXZDWm1CcVlVNGNSajk0UzNHU0tyUENCOUxLOUdGMXU0Y1RJTjB0dkZLTGg4am5hNVNpZE5ha011Xzh4S1BGcjllZTlvTzdJZUpQLXlyMF9fa25ia0ZCaTcwR2xlcVhDcmk5QVpUM2JNNm9seWZDWUFzV2wzSHNVdGd5Y2NmWUs2OFVOLXZxQ2ZLc1VDNmY0TG8zYVZJM09ONnlpYVEzdlRfUGhSNjNNT2JFMnYzNVF5UExMZ3ZzZ1FsMHkwTHJwOEJubjZUZ3ZpQQ?oc=5"
+    },
+    {
+      "text": "Nvidia (NASDAQ: NVDA) Stock Price Prediction for 2025: Where Will It Be in 1 Year (Aug 27) - 24/7 Wall St.. Nvidia (NASDAQ: NVDA) Stock Price Prediction for 2025: Where Will It Be in 1 Year (Aug 27)&nbsp;&nbsp;24/7 Wall St.",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T12:00:16",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObGNyVVFsdy1sVnpIcVVUekJoX1VGVXVuVFBsb045N0c5bHRnSVFhX0JGMjFCOTE2Umw4MHhTaUQ0SmRCaDVGNUpaLTU3WlFMMERTN2NTR1F1enk3c0NkcnZ6ek1QZzZzZEZDbDNMWW9pM0dDV2F2akNHd25BVzEyNUp1ekxOYWZ1S3ZHcXcwSGh1c2IyVVpIQlVaLUlTWk9kajdIMVplZ3NOTEl3ZUI2SFQxdEJfeHc5X0tEcXpn?oc=5"
+    },
+    {
+      "text": "Susquehanna Reiterates Buy Rating on NVIDIA (NVDA) Stock - Yahoo Finance. Susquehanna Reiterates Buy Rating on NVIDIA (NVDA) Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:17:36",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcVVINTZ4VzZUY0t3RTIxNHc4VmZMdC00SENJczE4WGdBZ2dkYzV6NjNJd1ZrQndROTc4S2Fzc0lfUDJzci1iN1N0RnRFWU4zekpUSDk5eGZZVkI3U3E1dk9MNThDb0hKQmVvcXVEVlFHUFNHa1BNVGQ0NzNoVjFqSG8xTE8yVWVGQkZna3l5TQ?oc=5"
+    },
+    {
+      "text": "NVIDIA Corporation (NVDA) Grapples With China’s H20 Chip Restrictions; Invests in Nuro’s $203 Million Autonomous Driving Fundraise - MSN. NVIDIA Corporation (NVDA) Grapples With China’s H20 Chip Restrictions; Invests in Nuro’s $203 Million Autonomous Driving Fundraise&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:55:41",
+      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQWFp1di1DWkdRRFlkLWU1TURNajlQb2hFLVZSeUVjS2lvSWo1bVV5WTd1aFgxT1VJeTVYQTVvMXFNd0QzbHdpa1VMdFhMSmFoVHJmby1nZmpJd1ZUSkRrTWFub00tdDN4b1pkU2VSRTJxeFR2Q1Vfa1JJM19QSjRLRkMtUFhyVU1JSU52VklJRmo3Q2ZwOVlqbnIzRWwzNFdlM1lMdGVtSmFtaDJYcVlrZmdzcUFkNXhMR3ltVTBJSEM1RUtfWVRYY3lVakxKZm9QMHRBQjFPd24wSDdteGZuVk4zUklXMFY5WUNCXzN4RnVEMXJucGkwR3BVMmtUVzFqelBTWnBSaW8zcTl4X3FuNkVxX2tmVklJRjlYUWRfVHlSbENEUjBTNUhDLWo?oc=5"
+    },
+    {
+      "text": "Here's what to watch as Nvidia reports earnings today (NVDA:NASDAQ) - Seeking Alpha. Here's what to watch as Nvidia reports earnings today (NVDA:NASDAQ)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T11:23:32",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNb1lfTkk0VGtBckZ1NjVDenByWTJQc3RZUlhMamh6RVk3WmF2Mllvc3pCWGxGRVg0TG50YnROV3VYQXpicU5Nb2RhbVlLWnJyYWhNbXVSclFNQ1U2SXUycGRhVkZKc3c3VUlsVWUzb3lzMlZGR3NDVm5WUU8tQnh5Rjg2RmNpc2FxOWo0LWs5VVdFekNQ?oc=5"
+    },
+    {
+      "text": "NVIDIA (NVDA) Stock Target Raised as Earnings Loom - Yahoo Finance. NVIDIA (NVDA) Stock Target Raised as Earnings Loom&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T17:10:46",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ0Z6c0xqUTkyRjVxY3daSjZwYTRNdE5zZTNGeFJONm96d1haaVpGQ1FVNmY0R1hQUFdNaEwwMDUxRnl1WDJlb180MzNKWmh6ZHBvTVlyNE5lSDU0OXEtOGhWYXVWX2Y3NEpzWWpLQV84d2thOWlsbTd5bkRmX0FBdENKcw?oc=5"
+    },
+    {
+      "text": "NVIDIA (NASDAQ:NVDA) Given Buy Rating at Needham & Company LLC - MarketBeat. NVIDIA (NASDAQ:NVDA) Given Buy Rating at Needham & Company LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:33:54",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSEtYRGJGTlZ0aU9FbUwteUswN1B1SWVPTURRU2hDSWZyNXhvS1c2b2ZVZG80ejgwZmV5MFVFVGNaZE1OVTNIb2pFSDFxRFEtMGtYMmhwT2hRUnBxekpWS2ZCcVd5c2ZLQllYMDNJZm55Q1NiM1hxbTNESzNJM3pCZ0Vhem9tTGVDaUZMZ1lxQlM4STduTTZxdURVS0ZqX0VKT3ZEZjViNmphRThjcDIycA?oc=5"
+    },
+    {
+      "text": "Nvidia earnings set to test AI trade with stocks near record highs: What to watch this week - Yahoo Finance. Nvidia earnings set to test AI trade with stocks near record highs: What to watch this week&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T07:31:55",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQlNfMG9YZWR1ZVZlMjl5T1EtSkdJTVF2Y2twNjE0OEFmSFVrNXdURzctNFlxR0JvaW03Ry1iRDNjXzFMS3B0MF9HX1lKRW1XSjBSa0Z3R0txWVBxMmszTEFtal9PbHdTanZJeVVDTkxNbF9ac0tDcmtrbFFmMHlYUElsWUF3bElWMVFWeHBQSjd1amRPUmNFUVhMT0lrZ1pFZy1vQndUaDBLbEhIbDVLNDhBSjBucmtTRExkRWJ2VnpJdWJQa2RpSW1adFNoWjZaV1E?oc=5"
+    },
+    {
+      "text": "NVIDIA Earnings Miss but Revenue Surges 69.2%: Impact on NVDA Stock and Market Outlook - AInvest. NVIDIA Earnings Miss but Revenue Surges 69.2%: Impact on NVDA Stock and Market Outlook&nbsp;&nbsp;AInvest",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T11:04:39",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQb1dBM2VXOXlUeXJjNlloaE00SnFoZmRsTjEybkEzeFl6Q2s0YUZYTy1SaGk3c3RIUlFaRm1UVzA1eVNFR0t0bDV2XzRiRVQwRVB3X1JnekpYSU94czFkNkdXVWo2VGlUREdkZmZUcUVoajJLTThjdTZaWlFmMlRCN2UteWRoYU9Ea0hMQ09DME1YOC1rVW9tLUNZQWNBXzVrMTVjNmpn?oc=5"
+    },
+    {
+      "text": "The 2 Key Takeaways From The Nvidia Q2 Earnings Report (NASDAQ:NVDA) - Seeking Alpha. The 2 Key Takeaways From The Nvidia Q2 Earnings Report (NASDAQ:NVDA)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T20:46:34",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNnpENDNMYmV0NUxjZEVWUVZzMUtSaWJpdHROYjZ5WnZaaF9VRzB4bU9qVVRKT1ZSRURmYTJyOW1yTzJ4dWRvRGtBeFNwRWRwa3hfOF9zY1VnS1ZmbklsdkhuaWU0SkMzZWZGajNlckQ5SHZZVTc3Q2pRT1o5S1phenF2OF90NS1Wemw5c2tXLWZMX3BDcnc?oc=5"
+    },
+    {
+      "text": "Nvidia's Free Cash Flow Falters From Higher Capex - Is NVDA Stock Fully Valued? - Barchart.com. Nvidia's Free Cash Flow Falters From Higher Capex - Is NVDA Stock Fully Valued?&nbsp;&nbsp;Barchart.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:00:02",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNN2VaeDliU283RXRqUGpDUGRYdG5IMDZsR2VnbDROREIxTHBjaS1IekluVUkxM0pJdGpQM3lHUmpXOGJPeTFRTWRGeXlkRTdoWktzUmdPVnpqYTk0b3k1YnVDck5mLTRhTlE4cjYzV2Vpc1ZlUjZjbE02QTFYMTJHTVlEOEZhbS1YLXhqa0NjSGxUOW9SWElhSGJ4REVybXJlcmhWcVptOHV3dWIyX1IzandjakI0S3ZOUmx2Qm5n?oc=5"
+    },
+    {
+      "text": "Nvidia: Not Good Enough (NASDAQ:NVDA) - Seeking Alpha. Nvidia: Not Good Enough (NASDAQ:NVDA)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T22:00:29",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JVGtKMUxrTENZQ2puR1pmZEhBa1k1MVE1c1N2SWtLTFNyam12clRYclVrak1GbTdCUjkyNk1iT3YwWmxHbEpmbGdBcDRNa3lZS19tOFhNSXJLQjJaYkxCZHNKQkZkOXRGTUp3cUNwdW8?oc=5"
+    },
+    {
+      "text": "Nvidia Reports Earnings Today. What You Need To Know - Investopedia. Nvidia Reports Earnings Today. What You Need To Know&nbsp;&nbsp;Investopedia",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T17:35:36",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaF9nLUZqdzFGcmZPU2pOR25teDFOQ20wR1ZmMENfYWIxWG5CV3JVMzRCN19QSkltZlpQY0hlN3NLX2pEYk5LeUtVMGFpLUhFelpnVWROQWQ1bWd1VHlpRlhwbGZOMVEtMzM0WmxhbndiSmxzeGJQVlNuMUxycXhrN0k0V3lVZmwyR0lfRnN2cjM3WFE?oc=5"
+    },
+    {
+      "text": "To fuel AI’s insatiable appetite, Nvidia and Big Tech are doubling down on nuclear",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T14:39:43.891041",
+      "url": "https://www.marketwatch.com/story/to-fuel-ais-insatiable-appetite-nvidia-and-big-tech-are-doubling-down-on-nuclear-0cf9d122?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Investors are turning to this neglected part of the stock market. And it’s still cheap.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:39:43.941829",
+      "url": "https://www.marketwatch.com/story/investors-are-turning-to-this-neglected-part-of-the-stock-market-and-its-still-cheap-6a7006d2?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Dow Jones Futures: Alibaba News Hits Nvidia, AI Stocks. Why This Isn't DeepSeek 2.0.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:39:43.998129",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-alibaba-news-nvidia-ai-stocks-deepseek/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "The Score: Cracker Barrel, Nvidia, Kohl’s and More Stocks That Defined the Week",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T21:39:44.111654",
+      "url": "https://www.wsj.com/finance/stocks/kohls-cracker-barrel-nvidia-eli-lilly-0de34c24?mod=mw_quote_news"
+    },
+    {
+      "text": "TechnologyThese Stocks Moved the Most Today: Alibaba, Marvell, Affirm, Nvidia, Dell, Autodesk, Ambarella, IREN, and More",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:39:44.230551",
+      "url": "https://www.barrons.com/articles/stock-movers-089656fa?mod=mw_quote_news"
+    },
+    {
+      "text": "Tesla Banks On Nvidia For Autonomous Driving. This Is What Nvidia Said On The Earnings Call.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T14:39:44.333953",
+      "url": "https://www.investors.com/news/tesla-stock-autonomous-driving-what-nvidia-said-on-the-earnings-call/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Nvidia Breaks Key Level As Alibaba Makes AI Chip; Is Nvidia A Buy Or Sell Now?",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:39:44.388911",
+      "url": "https://www.investors.com/research/nvidia-nvda-stock-buy-or-sell-now-2/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "How ‘Magnificent Seven’ earnings growth in second quarter stacks up against rest of S&P 500",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T09:39:44.439027",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/how-magnificent-seven-earnings-growth-in-second-quarter-stacks-up-against-rest-of-s-p-500-hkcje8nQe8S3LweS8MJ0?mod=mw_quote_news"
+    },
+    {
+      "text": "North AmericaWhat the Stock Market Learned About Earnings and Consumers This Summer",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T01:39:44.533175",
+      "url": "https://www.barrons.com/articles/stocks-inflation-consumer-rbc-e1cf7f1a?mod=mw_quote_news"
+    },
+    {
+      "text": "Stock Market Erases Gains As Alibaba News Hits Nvidia, AI Plays: Weekly Review",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T13:39:44.715602",
+      "url": "https://www.investors.com/news/stock-market-erases-gains-alibaba-news-hits-nvidia-ai-plays/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "AIQuantinuum CEO Weighs In on Quantum Programming and What’s Next for the Industry",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T18:39:44.811551",
+      "url": "https://www.barrons.com/articles/quantinuum-ceo-weighs-in-on-quantum-programming-and-whats-next-for-the-industry-b31828e3?mod=mw_quote_news"
+    },
+    {
+      "text": "PCE Inflation Data Passes First Test Of Fed Rate-Cut Shift (Live Coverage)",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:39:44.860383",
+      "url": "https://www.investors.com/news/economy/pce-inflation-federal-reserve-rate-cut-july-sp-500/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "MarketsWhy Does This Crazy Stock Market Keep Ignoring Jack Bogle’s ‘Iron Rule’?",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T21:39:44.963881",
+      "url": "https://www.barrons.com/articles/stock-market-reversion-to-the-mean-f7b57c1d?mod=mw_quote_news"
+    },
+    {
+      "text": "NVIDIA (NVDA) and Alibaba (BABA) Lead Market Movements Amid PCE Index News. NVIDIA (NVDA) and Alibaba (BABA) Lead Market Movements Amid PCE Index News",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:39:45.084176",
+      "url": "https://www.gurufocus.com/news/3088029/nvidia-nvda-and-alibaba-baba-lead-market-movements-amid-pce-index-news/?utm_source=marketwatch&utm_medium=syndication&utm_campaign=headlines&r=4bf001661e6fdd88d0cd7a5659ff9748&mod=mw_quote_news"
+    },
+    {
+      "text": "The 2 Key Takeaways From The Nvidia Q2 Earnings Report",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:39:51.130923",
+      "url": "https://seekingalpha.com/article/4817682-the-2-key-takeaways-from-nvidia-q2-earnings-report#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Nvidia Will Never Be This Cheap Again: The AI Revolution Has Just Begun",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T22:39:51.185941",
+      "url": "https://seekingalpha.com/article/4817658-nvidia-will-never-be-this-cheap-again-the-ai-revolution-has-just-begun#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Nvidia: AI Fatigue Is Here",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T06:39:51.300793",
+      "url": "https://seekingalpha.com/article/4817487-nvidia-ai-fatigue-is-here#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "DeepSeek said to use some Huawei chips to train small AI models: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:39:51.582845",
+      "url": "https://seekingalpha.com/news/4490490-deepseek-said-to-use-some-huawei-chips-to-train-small-ai-models-report#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Dividend Roundup: Nvidia, Deere, Bank of America, and more",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T15:39:51.645967",
+      "url": "https://seekingalpha.com/news/4490321-dividend-roundup-nvidia-deere-bank-of-america-and-more#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Alibaba develops new AI chip to help fill Nvidia's absence in China: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T18:39:51.708528",
+      "url": "https://seekingalpha.com/news/4490363-alibaba-develops-new-ai-chip-to-help-fill-nvidias-absence-in-china#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Nvidia declares $0.01 dividend",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:39:51.824882",
+      "url": "https://seekingalpha.com/news/4490305-nvidia-declares-0_01-dividend#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Tech Voices: Nvidia on Blackwell, AI job losses, Intel's Trump deal",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T01:39:51.889066",
+      "url": "https://seekingalpha.com/news/4490167-tech-voices-nvidia-on-blackwell-ai-job-losses-intels-trump-deal#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Nvidia CFO: Still waiting for Trump's 15% commission plan to be codified",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:39:52.120905",
+      "url": "https://seekingalpha.com/news/4489840-nvidia-cfo-trump-commission-plan-ai-chip-sales-china#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "NVIDIA Corporation (NVDA) Q2 2026 Earnings Call Transcript",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:39:52.245589",
+      "url": "https://seekingalpha.com/article/4817296-nvidia-corporation-nvda-q2-2026-earnings-call-transcript#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A12"
+    },
+    {
+      "text": "NVIDIA CorpFollowFollowingFollowFollowFollowFollowNVDA:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T14:39:59.449168",
+      "url": ""
+    },
+    {
+      "text": "NVIDIA CorpFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:39:59.501227",
+      "url": ""
+    },
+    {
+      "text": "www.nvidia.com. NVIDIA Corporation operates as a tech company. The Company develops a platform for scientific computing, AI, data science, autonomous vehicles, robotics, metaverse, and 3D internet applications, as well as focuses on PC graphics. NVIDIA serves clients worldwide.",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:39:59.584315",
+      "url": "https://www.nvidia.com"
+    },
+    {
+      "text": "AboutNVIDIA CorpNVIDIA Corporation operates as a tech company. The Company develops a platform for scientific computing, AI, data science, autonomous vehicles, robotics, metaverse, and 3D internet app.... NVIDIA Corporation operates as a tech company. The Company develops a platform for scientific c...",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T09:39:59.851164",
+      "url": ""
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:40:04.630811",
+      "url": "https://www.bloomberg.com/quote/NVDA:US"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Huawei's H1 net profit falls 32% amid R&D spending: report",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.971,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T20:39:51.768231",
+      "url": "https://seekingalpha.com/news/4490317-huaweis-h1-net-profit-falls-32-amid-rd-spending#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Nvidia Q2: Stock Drops Over China Concerns",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.966,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T07:39:51.354405",
+      "url": "https://seekingalpha.com/article/4817482-nvidia-q2-stock-drops-over-china-concerns#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Nvidia stock slips, Q2 data center revenue disappoints - Yahoo Finance. Nvidia stock slips, Q2 data center revenue disappoints&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": -0.961,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T20:36:26",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45cTVVeEJrTzh4dHRSS1hHN3F6VVZjLTk5ZkE4MTRYSW1Mb2piQWRrRk9Ccmx0SThCV1hrTnJHNnduYnVjZ3BWUWIwOXBXbjBEX3RiempBcGtJdXdNNmZWMnhIc2w2QnU4TFdUYkc2empsY3BKQWNMemNGUXAyZw?oc=5"
+    },
+    {
+      "text": "ChinaCambricon Stock Falls. China’s Hot AI Chip Maker Faces Competition.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.959,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T17:39:45.017735",
+      "url": "https://www.barrons.com/articles/cambricon-stock-price-nvidia-alibaba-46b38168?mod=mw_quote_news"
+    },
+    {
+      "text": "Nvidia is benefiting from 'clear' growth acceleration in AI, even with China uncertainties",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.957,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T03:39:52.064533",
+      "url": "https://seekingalpha.com/news/4489992-nvidia-is-benefiting-from-clear-growth-acceleration-in-ai-even-with-china-uncertainties#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Nvidia Q2: Stock Drops Over China Concerns (NASDAQ:NVDA) - Seeking Alpha. Nvidia Q2: Stock Drops Over China Concerns (NASDAQ:NVDA)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.948,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T14:05:14",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbXVKSGE0OEdWWUZiUm9YZ2VCbm9BcEJudy1raGRRMUFVUmFRbjdaVFhMMUp4OTIyVlRmenQxYUZMa3IwU25YU2loRmFMOVIyYWNyUEJTSmthazV0R29udDU2MHZ0ejlmdldCNk90Q2l6UDFoRll3NmtYQ1hHWHVqYmRhQUJYdzAzQ1E?oc=5"
+    },
+    {
+      "text": "Nvidia: Data Center Growth Slowdown Is Expected To Continue Into CY2026",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.941,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T12:39:51.079015",
+      "url": "https://seekingalpha.com/article/4817821-nvidia-stock-q2-data-center-growth-slowdown-expected-continue-into-cy2026-hold#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Bitcoin Miner And AI Play Iren Jumps 15% On Earnings And This New Nvidia Status",
+      "source": "MarketWatch",
+      "sentiment_score": 0.932,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T09:39:44.283309",
+      "url": "https://www.investors.com/news/bitcoin-miner-ai-data-center-play-iren-jumps-earnings-nvidia-status/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "More Bulls Boost Nvidia Targets as Expectations Climb Ahead of Earnings - Investopedia. More Bulls Boost Nvidia Targets as Expectations Climb Ahead of Earnings&nbsp;&nbsp;Investopedia",
+      "source": "Google News",
+      "sentiment_score": 0.927,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-25T20:38:56",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPY29aam5VbUdGWk5Jd2NoYVZtWnIyOVpsdjUtTGtxSE0xWG9OV1dzdW5Oc0g1RFBvS1poVkhPNkdGY3JBMXlWQjhrcUZuN1FMVkt2RlNCeWR6b1lBbmxKOVhxMXdNdDlpa1JZZzNWZ1dGeS1zWVpwSUFYeWpoZU9LZXhlcndIeEpBaEpMVGY5b0ptOEkzMjdlWHhDYnZOaXlTQThyZS15WENGWWIyTFE?oc=5"
+    },
+    {
+      "text": "AINvidia and Other AI Stocks Are Falling. Why Investors Are Souring on Artificial Intelligence.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.925,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T04:39:44.579715",
+      "url": "https://www.barrons.com/articles/nvidia-ai-stocks-fall-f1443223?mod=mw_quote_news"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": -0.012,
+    "last_week_average": -0.036,
+    "overall_average": -0.036,
+    "articles_last_24h": 31,
+    "articles_last_week": 72
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

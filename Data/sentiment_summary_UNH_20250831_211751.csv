@@ -1,0 +1,2 @@
+Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Polarity,Average_Compound,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,MarketWatch_Count,MarketWatch_Avg_Sentiment,NewsAPI_Yahoo_Entertainment_Count,NewsAPI_Yahoo_Entertainment_Avg_Sentiment,Yahoo_Finance_Count,Yahoo_Finance_Avg_Sentiment,Google_News_Count,Google_News_Avg_Sentiment
+UNH,UNH,2025-08-31T21:17:51.555583,20,Very Negative,-0.107,-0.107,2,5,13,10.0,25.0,65.0,6,-0.318,3,-0.215,1,0.448,10,-0.004

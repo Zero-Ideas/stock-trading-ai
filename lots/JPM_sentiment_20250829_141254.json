@@ -1,0 +1,398 @@
+{
+  "symbol": "JPM",
+  "company_name": "JPMorgan Chase",
+  "analysis_timestamp": "2025-08-29T14:12:54.211876",
+  "total_sources_analyzed": 34,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.094,
+    "average_compound": 0.178
+  },
+  "sentiment_distribution": {
+    "positive": 12,
+    "neutral": 19,
+    "negative": 3,
+    "positive_percentage": 35.3,
+    "negative_percentage": 8.8
+  },
+  "stock_context": {
+    "current_price": 6480.28,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "MarketWatch": 7,
+    "Seeking Alpha": 8,
+    "Bloomberg": 4,
+    "Google News": 15
+  },
+  "sample_articles": [
+    {
+      "text": "Freedom Broker Lifts JPMorgan Chase (JPM) Price Target After Strong Q2 Earnings - Insider Monkey. Freedom Broker Lifts JPMorgan Chase (JPM) Price Target After Strong Q2 Earnings&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.943,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:29:08",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZm5xZG13YkhQbm9LZE8xcHFrb1g2R29mUFduTjlONWRzdlYzQ1QzMllnSmNUanh2cmpJMHk0eWl5T1JRZ2pSdFRoUkNlU1d1WGVQUFgwQ0szNDVkTGtEM2RRQ09WUUZ6RFdvdEF3V1dCQlBKWWxtMXlfTEt6bDIxY2dTU0cybzV6dGJkaU1CSHB4YmlRN3p5VHFsRDNOdVlWa0tsQlJ3M3BpMzZQQnFNVDhXYUR3UER0VDhXOUNR0gHGAUFVX3lxTE9YUnMwWml1eFk0NDcySHNqQ0x1XzlIM0x3U181SHB1VlNWTHd3LUpaYjRuaC1YWkFLQ2pTMERRX19iVk5aUTI4SUtIRE1TTG1VZXhmc2NyV1pfOUdXMkUzcTNYN2t6VmVyR25nN1BYSHV1MEtKalZYVGs5eXNfUlV5NnFTTEpwdlRGZUF1SUdSdUVMN1FZWWpVNUszVkNJNE1wdTZHOHlNdFlveE5oZVhvdWFXTVl6MHpUaVd0cjFLb3U5UG42Zw?oc=5"
+    },
+    {
+      "text": "Muted Profit Growth Flatlines Outlook for J.P. Morgan Chase Stock (JPM) - TipRanks. Muted Profit Growth Flatlines Outlook for J.P. Morgan Chase Stock (JPM)&nbsp;&nbsp;TipRanks",
+      "source": "Google News",
+      "sentiment_score": 0.875,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T06:22:30",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeG54SUJ0YXlHV0tTNlhtY084cHRWX1p5T1k0czA3cXNSWEtyYTJXVmVBRThRdGdsZHl1dXdjQWdyNGVHMTRvcW84NThHb2JTdG55aVpSWEZaR3Q1Q2JYTmt4RDF6RlRhbkJJUy1wcnNMQjFXc1BRY0NQNFZrX3dGU1hQb3RFY20yVFVrYzI5T1ByRkJsNE1DWVdDSE5mOEE?oc=5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Position Increased by Gerber Kawasaki Wealth & Investment Management - MarketBeat. JPMorgan Chase & Co. $JPM Position Increased by Gerber Kawasaki Wealth & Investment Management&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.863,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:52:03",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNejU1Y1kxbXZWOXRLU3BGNllWMTVhMXFuZWlQNk13NlJJYm1YN0tVWHB0dGVqR3pCa2J2ZWNhNi1NT25BZnlrdjBNRjNMTl96c05SLXhBMUNfbmdXMTRsWXdkNHRKaEZMQ3d3YVFNU1FsSFVsNWFtTy11bnROQlRwRkdHWXdJZUtNNmlqdEFOc1dkS1g4ejdkYzU2MEZMYkJYdmJ5a3ZnOHFZUzNMaDY2bG50dF9PcTNsbDVrUGl0RTZEU19HQ2YzdUZOWGlrR0FEdjZCSXlxXy1pNzhYU1pOcHVkaw?oc=5"
+    },
+    {
+      "text": "If You'd Invested $1,000 in JPMorgan Chase Stock 5 Years Ago, Here's How Much You'd Have Today - The Motley Fool. If You'd Invested $1,000 in JPMorgan Chase Stock 5 Years Ago, Here's How Much You'd Have Today&nbsp;&nbsp;The Motley Fool",
+      "source": "Google News",
+      "sentiment_score": -0.7,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T11:48:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTms2Y2gzNmtIM3JxSW9xbUlEeHRrcHhQUTAtTjVRZ3pfZ25sMzlnTEZfUnVjRE9tc1IzQ1JicU8ybVJIV2ZOOTVBTjdfekxrY2hFTXo4UUZScDNBaEd3ajFrUGRlUmp5cElwaXQyTEw1cWl2YUtFWXYtYTFLVk5BQlJOUndxYS14R0ZkdDVXS1RZQWtiNFZSeg?oc=5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Position Lowered by WCG Wealth Advisors LLC - MarketBeat. JPMorgan Chase & Co. $JPM Position Lowered by WCG Wealth Advisors LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.66,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:05:48",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR1pPX01qSGNZUU9qMnhpNV90NUgzME1nbEY1V1dpZUJqUGFrcWZXaHowQ21pVVJxTjB0Ym9ZdXZPQUcxaXlucm9XVTVheWJCSEprNGlWMmtkNldPeXlVZWNuTmw5TjN2bXllcDlMVFdjd3NXdGY2UGEwd3huNXc1RzFibVI0SEtfUmNVbExJNlR5NThSbTh0Mk5XZGN3MlhMclZrcjdrUFlpM3F1MzFyaUt1VUEybXp3ZUUxNlJMdV8?oc=5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. (JPM) Stock Price Prediction 2025, 2026 & 2030: Analyst Consensus & Growth Outlook - Benzinga. JPMorgan Chase & Co. (JPM) Stock Price Prediction 2025, 2026 & 2030: Analyst Consensus & Growth Outlook&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T15:04:03",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SQnFfQlNyakFwdVQ2QklzbTVNSU44cGZ6QW9acW5sUFY4ZWxZYUl2Vmg0elV1OUVOQTV5R3d2QllzZG4xOG0zb2tsQVM3Mmg4dzVGT2NqTUN2MnF3eEEyUXkwS0p2VkRNaVhHa0daeFdoNVVsUEZieFNYRQ?oc=5"
+    },
+    {
+      "text": "JPMorgan: Set To Win Big From Goldman's Apple Card Divestiture",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T14:12:36.495591",
+      "url": "https://seekingalpha.com/article/4810269-jpmorgan-set-to-win-big-from-goldmans-apple-card-divestiture#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "JPMorgan Chase's Newest 6% Bond Appears Better Than CDs Or Treasuries",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T12:12:36.495591",
+      "url": "https://seekingalpha.com/article/4805244-jpmorgan-chases-newest-6-percent-bond-appears-better-than-cds-and-treasuries#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "JPMorgan: Life's Good At The Top",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.572,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:12:36.495591",
+      "url": "https://seekingalpha.com/article/4812340-jpmorgan-lifes-good-at-the-top#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Shares Sold by Virtus Advisers LLC - MarketBeat. JPMorgan Chase & Co. $JPM Shares Sold by Virtus Advisers LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T07:13:12",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVkVmSS00VjdQempNSUtXTExZdkp2V2c2RnRualpCaEpyWS1YUFVOMldiSXFacEVzWnlQYzhTVmpxVHVBQlJpUm9UeUhHV2dVV01Zc2hSWEdIY0c1ckZJbnhCaXEzQWM2ejItT2JwWTZlR1luUEhQTUQxa25NUlVScFlMaWdQTTZFLXhjWEFGVUcwN0xDTDB0WGVOX3MzQ1FlNDRHYzRyTGx4b0NsTFJnWFNnQXJrYzNOSS03cFNTaHY?oc=5"
+    },
+    {
+      "text": "Stock Of The Day In Bullish Chart Formation As Sector Cheers Powell's Views",
+      "source": "MarketWatch",
+      "sentiment_score": 0.477,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-26T23:12:29.110541",
+      "url": "https://www.investors.com/research/ibd-stock-of-the-day/jpmorgan-jpm-stock-of-the-day/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T03:12:47.416759",
+      "url": "https://www.bloomberg.com/quote/JPM:US"
+    },
+    {
+      "text": "Bory and Misra on Labor Market, Rate Cuts, Fed's Dual Mandate",
+      "source": "Bloomberg",
+      "sentiment_score": -0.296,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T11:12:47.417762",
+      "url": "https://www.bloomberg.com/news/videos/2025-08-29/bory-and-misra-on-labor-market-rate-cuts-dual-mandate-video"
+    },
+    {
+      "text": "Suze Orman reveals her favorite stock right now and the investing mistake that shaped her strategy",
+      "source": "MarketWatch",
+      "sentiment_score": 0.153,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T14:12:29.109539",
+      "url": "https://www.marketwatch.com/story/suze-orman-is-known-for-money-advice-now-shes-sharing-her-stock-picks-and-biggest-investing-mistake-62fcebbc?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "JPMorgan Chase: Political Considerations Dominate",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.128,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T19:12:36.496590",
+      "url": "https://seekingalpha.com/article/4801510-jpmorgan-chase-political-considerations-dominate#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Stock Position Raised by Caisse DE Depot ET Placement DU Quebec - MarketBeat. JPMorgan Chase & Co. $JPM Stock Position Raised by Caisse DE Depot ET Placement DU Quebec&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:06:03",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZWh1emZLa29TZEhoZnJ5eHZaSGktbm12RV9RVUxTQVpRSXNfX3VYOHdkMEI3MUJ0b2Iyd2J6dnZQdUwxLW9ESWYyMHFUY1NYMTFmR0llSTdFMDNqdjlsLWt5Z1NoOUhvYVpKMzEzeUcwbExoeklNVWtCUE5uSjcxZmN0QTdwTHpVa1lyNk51eFpsSkUwZGEwcGhOT0xkLUNvRkRNeGJRa0FvVlNiZG80dW1JNHRtdkQ4QU40MWh1V0VEbU90a0phTDZtUXZDekhYVThnRzU3Vjc?oc=5"
+    },
+    {
+      "text": "Stock Analysis | Jpmorgan Chase Outlook - Technical Neutrality and Mixed Analyst Sentiment - AInvest. Stock Analysis | Jpmorgan Chase Outlook - Technical Neutrality and Mixed Analyst Sentiment&nbsp;&nbsp;AInvest",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T15:02:41",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPU2FHR19JVU5HcnAxSmNZem1sR2hkajduUndQVlRmdnpMU25zT015eGExc2NiMjBPS0dmRHFyM0hJdWw4ZnVZbVZyN2k1d2lQVFJfX2syZTlZTExlU25hc2M2b2hUcDdNN3NBMnA2S0RHdm1wRVRiXzQ5bUVSZEFmX2FKQl9kRU1nQWdBcTBYT3VqUURrbEJuRVZ1TDA2U21UcnlKeHpaMEFTS3BnbUlrN0NUVkVxWTMwUU9FYQ?oc=5"
+    },
+    {
+      "text": "Here is What to Know Beyond Why JPMorgan Chase & Co. (JPM) is a Trending Stock - Yahoo Finance. Here is What to Know Beyond Why JPMorgan Chase & Co. (JPM) is a Trending Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T13:00:02",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYmZtM2xQMmNGWE5UZFpSbVhNY1g2SlpEbkgyOFB4UzV3RTJKR01QT2dIWlczVERCWXZMdl9LdlRwbURPajVONThqX2QxOXdlT1M3aUhBOFBmelFSMlBxZ1N4Tm4zRlVadmdUWkNsQk9oMEk3Uk1PU0ZnOWxVNmJONElB?oc=5"
+    },
+    {
+      "text": "How Jpmorgan Chase & Co. (JPM) Affects Rotational Strategy Timing - news.stocktradersdaily.com. How Jpmorgan Chase & Co. (JPM) Affects Rotational Strategy Timing&nbsp;&nbsp;news.stocktradersdaily.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:28:01",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPOGFqT040Y3RsdkVSc3NXWldUZkR5UGFlTktMd2k5QTV5VDFBem9tOFJnTzlFYjdwdmlIRlAybFBPRmdkUkI1UU5nOF95YTROREJLV3c1M0dabUgwbGp2T2F3Nm1GSVFiOXVoRzQ1V1Yxd2Zvc0hJeFg4YXRiaXlQZ0VWRDJYYkUzRWtDUlJmNXJGZGZxb2JZWENNT283dElFc1hwdEptN3lENkRJVHBhbGNmalJuNkt1VDV4el93SXBoMU9FNVpHTi1sQVBrVktMTWR4a3p2RmU?oc=5"
+    },
+    {
+      "text": "Bank of Hawaii Decreases Stake in JPMorgan Chase & Co. $JPM - MarketBeat. Bank of Hawaii Decreases Stake in JPMorgan Chase & Co. $JPM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:06:26",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdGFudHlRWFVmQWlfc2hzeDFzZnd6TlVJX0VLN094VmhtclowLXN4MURsLUxKQ21nUHAyWDhIRDhUaGdoeTZVYkdNWl82U0lJZkowNi1jcm5WejRINzExdS1tc19ibHNkYkdUOUphVklPdXBlcGRxeUo3bTRrY0RGMDF5RTVtVTliY3VOc2VseUVBODRuZDRjdGtrb084cVRoM0Mtd00tLUpMSTlfOEFsSkF1U09rdl94Vmc?oc=5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Position Reduced by Schwerin Boyle Capital Management Inc. - MarketBeat. JPMorgan Chase & Co. $JPM Position Reduced by Schwerin Boyle Capital Management Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:14:10",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNS2x1UXg4SHZ2Q2NWbjdVUHlQaDgyUE9VYjF0VEFTN2JBaTU0UHgxMm92VThSVWVTZFFqX3lzY1RsU19QR2hsamxCR1dXdWJZLWVLTVBHeHA3YXFPMUl0RWpCUklkVzgyQ2hfZVJ3eUNFM2Zfb3A5UmxEUzI2bVBXZGU1bkFoV0VLRjRRN042YVVuMWxFZjNGWlFsa09CVFhrU2tyRFAwYVJ0TkRjT19WeURHSzA3NGlTLVlyQ1RFOHhoYUhTVHdqQ2JPYWwwcHpK?oc=5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Stock Position Lessened by Lansforsakringar Fondforvaltning AB publ - MarketBeat. JPMorgan Chase & Co. $JPM Stock Position Lessened by Lansforsakringar Fondforvaltning AB publ&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:35:40",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZ2owcFdmc3loWnVaQ3ZWWU9DdEZITHRXa3dqX3pZZFVxM282Zmtkek1oNTRVbU0tSEN4Ykt2UkI3V2JHZWtuUEgyRTdJZGRLVHdPM2Q1OU5xYW9nVmVaNURqWno1dWhpNTFtUnpkTVFOaE1qY3ZDTXVfRWxZYzRGMVJYWkdycjBIVlJSQ0stTGQwTHlJLVUyR0NkTHBYZ3JqbW93aDJKdWZSZHZ2MTZXbDN2eHBHakJYM2F0SEtZb01PcVZZUTF4cU9IQzhueVZBYW5KTnpDdUJyUHJ2UXJrRzhxcEY?oc=5"
+    },
+    {
+      "text": "Okabena Investment Services Inc. Has $3.61 Million Stock Position in JPMorgan Chase & Co. $JPM - MarketBeat. Okabena Investment Services Inc. Has $3.61 Million Stock Position in JPMorgan Chase & Co. $JPM&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:01:57",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQkRQYWxVdjNZcTBGaXlNUnFMQlA4NEtTV3JWTGtlTURmNnY1Q0R5S0tOYy1tcHZqOFluMml4T2xMQ3Q1TmtSSHhXWkJrcE9TbzhzdS1xRjJCaWYwMHdPQ1BzR2RCaV9yUzVvLUFDbTZFN0J3a0h1NzdEaENUTmNXNXJKV29WMzUwWTk5dXRabGtaYWJ4bGs4cHJvTTJuZlVRUDZIX1JBaFIyN3g5NkRiTjJlWjRod1BIU3BmcGtjMW5zbVgyOEhKT0J6d096MmlWZzJuZmJSVVdEREw5Zy1pSVNB?oc=5"
+    },
+    {
+      "text": "Advisor Practice ManagementJPMorgan Recruits Ex-UBS Advisors Who Oversaw $1.3 Billion",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:12:29.109539",
+      "url": "https://www.barrons.com/advisor/articles/jpmorgan-ubs-recruits-advisors-9985d3b4?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "JPMorgan, Already No. 1 in Card Spending, Wants Even More",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T06:12:29.109539",
+      "url": "https://www.wsj.com/finance/banking/jpmorgan-credit-card-spending-growth-064e1d52?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "JPMorgan Chase & Co. stock rises Tuesday, outperforms market",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T23:12:29.110541",
+      "url": "https://www.marketwatch.com/data-news/jpmorgan-chase-co-stock-rises-tuesday-outperforms-market-0be6d200-5a1fd86a930f?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow Jones Futures: Nvidia Is Next Big Market Test After Powell-Led Rally",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:12:29.111541",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rallies-highs-dovish-powell-nvidia-earnings/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Uber Leads 5 Stocks Near Buy Points As Market Rebounds",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T13:12:29.111541",
+      "url": "https://www.investors.com/news/uber-stock-jpmorgan-rtx-booking-bkng-boston-scientific-buy-point-market-rally-fed-rate-cuts/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "JPMorgan Chase: The First Trillion Dollar Bank?",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:12:36.496590",
+      "url": "https://seekingalpha.com/article/4804431-jpmorgan-chase-the-first-trillion-dollar-bank#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Wall Street Lunch: June CPI Shows Tariff Impact On Prices",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T19:12:36.496590",
+      "url": "https://seekingalpha.com/article/4801417-wall-street-lunch-june-cpi-data-shows-tariffs-impact-on-prices#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "JPMorgan Chase Q2 2025: Outperforming Once Again",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:12:36.496590",
+      "url": "https://seekingalpha.com/article/4801328-jpmorgan-chase-q2-2025-outperforming-once-again#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Public Storage Vs. JPMorgan Chase Preferred Stock Spreads",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T23:12:36.496590",
+      "url": "https://seekingalpha.com/article/4801071-public-storage-vs-jpmorgan-chase-preferred-stock-spreads#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "JPMorgan Chase & CoFollowFollowingFollowFollowFollowFollowJPM:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:12:43.305184",
+      "url": ""
+    },
+    {
+      "text": "JPMorgan Chase & CoFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:12:43.305184",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Freedom Broker Lifts JPMorgan Chase (JPM) Price Target After Strong Q2 Earnings - Insider Monkey. Freedom Broker Lifts JPMorgan Chase (JPM) Price Target After Strong Q2 Earnings&nbsp;&nbsp;Insider Mon...",
+      "source": "Google News",
+      "sentiment_score": 0.943,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:29:08",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZm5xZG13YkhQbm9LZE8xcHFrb1g2R29mUFduTjlONWRzdlYzQ1QzMllnSmNUanh2cmpJMHk0eWl5T1JRZ2pSdFRoUkNlU1d1WGVQUFgwQ0szNDVkTGtEM2RRQ09WUUZ6RFdvdEF3V1dCQlBKWWxtMXlfTEt6bDIxY2dTU0cybzV6dGJkaU1CSHB4YmlRN3p5VHFsRDNOdVlWa0tsQlJ3M3BpMzZQQnFNVDhXYUR3UER0VDhXOUNR0gHGAUFVX3lxTE9YUnMwWml1eFk0NDcySHNqQ0x1XzlIM0x3U181SHB1VlNWTHd3LUpaYjRuaC1YWkFLQ2pTMERRX19iVk5aUTI4SUtIRE1TTG1VZXhmc2NyV1pfOUdXMkUzcTNYN2t6VmVyR25nN1BYSHV1MEtKalZYVGs5eXNfUlV5NnFTTEpwdlRGZUF1SUdSdUVMN1FZWWpVNUszVkNJNE1wdTZHOHlNdFlveE5oZVhvdWFXTVl6MHpUaVd0cjFLb3U5UG42Zw?oc=5"
+    },
+    {
+      "text": "Muted Profit Growth Flatlines Outlook for J.P. Morgan Chase Stock (JPM) - TipRanks. Muted Profit Growth Flatlines Outlook for J.P. Morgan Chase Stock (JPM)&nbsp;&nbsp;TipRanks",
+      "source": "Google News",
+      "sentiment_score": 0.875,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T06:22:30",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeG54SUJ0YXlHV0tTNlhtY084cHRWX1p5T1k0czA3cXNSWEtyYTJXVmVBRThRdGdsZHl1dXdjQWdyNGVHMTRvcW84NThHb2JTdG55aVpSWEZaR3Q1Q2JYTmt4RDF6RlRhbkJJUy1wcnNMQjFXc1BRY0NQNFZrX3dGU1hQb3RFY20yVFVrYzI5T1ByRkJsNE1DWVdDSE5mOEE?oc=5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Position Increased by Gerber Kawasaki Wealth & Investment Management - MarketBeat. JPMorgan Chase & Co. $JPM Position Increased by Gerber Kawasaki Wealth & Investment Managem...",
+      "source": "Google News",
+      "sentiment_score": 0.863,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:52:03",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNejU1Y1kxbXZWOXRLU3BGNllWMTVhMXFuZWlQNk13NlJJYm1YN0tVWHB0dGVqR3pCa2J2ZWNhNi1NT25BZnlrdjBNRjNMTl96c05SLXhBMUNfbmdXMTRsWXdkNHRKaEZMQ3d3YVFNU1FsSFVsNWFtTy11bnROQlRwRkdHWXdJZUtNNmlqdEFOc1dkS1g4ejdkYzU2MEZMYkJYdmJ5a3ZnOHFZUzNMaDY2bG50dF9PcTNsbDVrUGl0RTZEU19HQ2YzdUZOWGlrR0FEdjZCSXlxXy1pNzhYU1pOcHVkaw?oc=5"
+    },
+    {
+      "text": "If You'd Invested $1,000 in JPMorgan Chase Stock 5 Years Ago, Here's How Much You'd Have Today - The Motley Fool. If You'd Invested $1,000 in JPMorgan Chase Stock 5 Years Ago, Here's How Much You'd Ha...",
+      "source": "Google News",
+      "sentiment_score": -0.7,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T11:48:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTms2Y2gzNmtIM3JxSW9xbUlEeHRrcHhQUTAtTjVRZ3pfZ25sMzlnTEZfUnVjRE9tc1IzQ1JicU8ybVJIV2ZOOTVBTjdfekxrY2hFTXo4UUZScDNBaEd3ajFrUGRlUmp5cElwaXQyTEw1cWl2YUtFWXYtYTFLVk5BQlJOUndxYS14R0ZkdDVXS1RZQWtiNFZSeg?oc=5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Position Lowered by WCG Wealth Advisors LLC - MarketBeat. JPMorgan Chase & Co. $JPM Position Lowered by WCG Wealth Advisors LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.66,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:05:48",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR1pPX01qSGNZUU9qMnhpNV90NUgzME1nbEY1V1dpZUJqUGFrcWZXaHowQ21pVVJxTjB0Ym9ZdXZPQUcxaXlucm9XVTVheWJCSEprNGlWMmtkNldPeXlVZWNuTmw5TjN2bXllcDlMVFdjd3NXdGY2UGEwd3huNXc1RzFibVI0SEtfUmNVbExJNlR5NThSbTh0Mk5XZGN3MlhMclZrcjdrUFlpM3F1MzFyaUt1VUEybXp3ZUUxNlJMdV8?oc=5"
+    },
+    {
+      "text": "JPMorgan Chase & Co. (JPM) Stock Price Prediction 2025, 2026 & 2030: Analyst Consensus & Growth Outlook - Benzinga. JPMorgan Chase & Co. (JPM) Stock Price Prediction 2025, 2026 & 2030: Analyst Consens...",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T15:04:03",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1SQnFfQlNyakFwdVQ2QklzbTVNSU44cGZ6QW9acW5sUFY4ZWxZYUl2Vmg0elV1OUVOQTV5R3d2QllzZG4xOG0zb2tsQVM3Mmg4dzVGT2NqTUN2MnF3eEEyUXkwS0p2VkRNaVhHa0daeFdoNVVsUEZieFNYRQ?oc=5"
+    },
+    {
+      "text": "JPMorgan: Set To Win Big From Goldman's Apple Card Divestiture",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T14:12:36.495591",
+      "url": "https://seekingalpha.com/article/4810269-jpmorgan-set-to-win-big-from-goldmans-apple-card-divestiture#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "JPMorgan Chase's Newest 6% Bond Appears Better Than CDs Or Treasuries",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.586,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T12:12:36.495591",
+      "url": "https://seekingalpha.com/article/4805244-jpmorgan-chases-newest-6-percent-bond-appears-better-than-cds-and-treasuries#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "JPMorgan: Life's Good At The Top",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.572,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T22:12:36.495591",
+      "url": "https://seekingalpha.com/article/4812340-jpmorgan-lifes-good-at-the-top#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "JPMorgan Chase & Co. $JPM Shares Sold by Virtus Advisers LLC - MarketBeat. JPMorgan Chase & Co. $JPM Shares Sold by Virtus Advisers LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T07:13:12",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVkVmSS00VjdQempNSUtXTExZdkp2V2c2RnRualpCaEpyWS1YUFVOMldiSXFacEVzWnlQYzhTVmpxVHVBQlJpUm9UeUhHV2dVV01Zc2hSWEdIY0c1ckZJbnhCaXEzQWM2ejItT2JwWTZlR1luUEhQTUQxa25NUlVScFlMaWdQTTZFLXhjWEFGVUcwN0xDTDB0WGVOX3MzQ1FlNDRHYzRyTGx4b0NsTFJnWFNnQXJrYzNOSS03cFNTaHY?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.218,
+    "last_week_average": 0.178,
+    "overall_average": 0.178,
+    "articles_last_24h": 19,
+    "articles_last_week": 34
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

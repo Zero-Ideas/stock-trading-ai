@@ -1,0 +1,406 @@
+{
+  "symbol": "CVX",
+  "company_name": "Chevron Corporation",
+  "analysis_timestamp": "2025-08-29T14:18:45.987574",
+  "total_sources_analyzed": 35,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Very Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.069,
+    "average_compound": 0.209
+  },
+  "sentiment_distribution": {
+    "positive": 16,
+    "neutral": 15,
+    "negative": 4,
+    "positive_percentage": 45.7,
+    "negative_percentage": 11.4
+  },
+  "stock_context": {
+    "current_price": 6480.18,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Bloomberg": 2,
+    "Google News": 15,
+    "MarketWatch": 10,
+    "Seeking Alpha": 8
+  },
+  "sample_articles": [
+    {
+      "text": "Freedom Investment Management Inc. Trims Stake in Chevron Corporation $CVX - MarketBeat. Freedom Investment Management Inc. Trims Stake in Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.856,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:27:06",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQ1NTdUN4NUdMcVBUZVU5TDFyX2ZXaEdaYmtaVmxlNG5IRUg1aUsyTzVpRkM4RTR4ZU9SY2hTVGVBNzhLblZyTzJ4ZTFSc0xjRE9GQ1F3V3VHNVBienNORGtJTGpyM2NjYzc5VFgxRjFONjVvNEZDYktYVkdJN0ZvT1lyY1psMFNzTEthSHR1SnRyZVRzZENDWjJma0M2Zy15MENSbDZ2M29DQi1PSmxCVUJCSUpVQ1BqS2JsdlU0ejFJa2R4eVJWQ3lhNmFlXzhMSk5qb1Vn?oc=5"
+    },
+    {
+      "text": "Chevron: A Strong Buy On Growth Prospects",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.796,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T19:18:27.527363",
+      "url": "https://seekingalpha.com/article/4812425-chevron-strong-buy-growth-prospects#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Technical AnalysisAs Nuclear Stalls, Oil Could Be the Surprise Winner.  3 Stocks to Buy Now.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.71,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T15:18:21.941749",
+      "url": "https://www.barrons.com/articles/3-oil-stocks-to-buy-now-d578a58f?mod=mw_quote_news"
+    },
+    {
+      "text": "Chevron Corp. (CVX) Declined Due to a Combination of Uncertainty in Oil Markets - Yahoo Finance. Chevron Corp. (CVX) Declined Due to a Combination of Uncertainty in Oil Markets&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": -0.586,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T13:07:13",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZ3BOU3JFbGpMRzhSZVg3VkhhMzJZbmtPVGFvejJWT0pwYnIxalE1ejB1MTRkbFFqNFp3cmF1a0tYWXpQRm5SRGQ1VGR4QWhDUy1BMXFJY3BsbDNWYndmcWsyT3BOdkdkYUlPWDd4aGRKOURBaGNxbkpJNG9oQWc2Tg?oc=5"
+    },
+    {
+      "text": "Dow's nearly 125-point rally highlighted by gains for shares of Salesforce, UnitedHealth",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T00:18:21.940741",
+      "url": "https://www.marketwatch.com/data-news/dow-s-nearly-125-point-rally-highlighted-by-gains-for-shares-of-salesforce-unitedhealth-8fa2f4d4-3b8fd0bcfe17?mod=mw_quote_news"
+    },
+    {
+      "text": "CSM Advisors LLC Sells 1,630 Shares of Chevron Corporation $CVX - MarketBeat. CSM Advisors LLC Sells 1,630 Shares of Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:27:12",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS1pTWTVrOTkzRDV2dUNaOWNoQm1SRVNKTi1Hc2lKQ3hueEFSVWtSRERkN1BjLXoybUJlOXFLY09JNGVjVGhSN2FaWGhScmV0NUdNREJnSGlVT2tLeGlLRkt1bXdwN0NGaEMybjZwcHNRSTZsV2JYT2NSeEZNNEJuNGgtQVNzUkt6UFpfcFladlBpMmVULVhnRnNGMlYtMTVXUDU3UnRMMmwxTnl0bEcyU0NEaWFlVzNEOW9CNV9vaw?oc=5"
+    },
+    {
+      "text": "Corebridge Financial Inc. Sells 32,248 Shares of Chevron Corporation $CVX - MarketBeat. Corebridge Financial Inc. Sells 32,248 Shares of Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:48:12",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOUI0ZnhsUHdPbWF4XzR1Q3g2TDJHOTBvMVZ0cjdqYTd6Zk14Rk5yMWhjTnVpd2t6aGd3eWx0QzdMaVFFXzk3YnJaeWZWa0NRVXZtQjl0bHlrUGgtSU1ubV82am9KTVVZZUdMS0NVaVZhTmtTR01waVJQckQ2enNuR3EwdndLZVRsM1ROcm93RHdkUkJLQkZDbjh1U1pzZXlJcmQ0Mkk2RHpzM2F2bVhjMUR4WHloSjdpempRXzQwN2VIQQ?oc=5"
+    },
+    {
+      "text": "John B. Hess Sells 375,000 Shares of Chevron (NYSE:CVX) Stock - MarketBeat. John B. Hess Sells 375,000 Shares of Chevron (NYSE:CVX) Stock&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:27:07",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPM21GaWpqSWdlbDZFcFFlR1lER1FpQTFKcGZ5N1BRVHNqbzlTR2dxUkxVQVNVYnd0VFhFeHYxMk9sSFFIRGFha1drT21EWExHbk5rT1BMc1hKSW5lNXZ3SzJXRXFMbnVjTmgtQUtTYmNvc0t5V3BjcFNUOWlneGhFNkJEdnVlZnlDWTBhVDY5dXR3c3FUbkx0dWE0QjhrVUNFN3dLSE1FSUN2V3A0R09BSG4zY0NmeDBHN05ibGNWdkI?oc=5"
+    },
+    {
+      "text": "Bank of Hawaii Sells 1,778 Shares of Chevron Corporation $CVX - MarketBeat. Bank of Hawaii Sells 1,778 Shares of Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:27:09",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMEpfYzNfUWllOVZKcXZfVElDb2Jvd0RVa0w4RDQxTkFaREVJMlpSaVpCZ00yTlA2LW8tLUF3cVdnZ3hXSmFzSUVMcXVONzFjNHcyZGhnbjJtdC11a0hfUl9JV3BEMWpGWXoybW5vUTd0WFBoNldCNHkybDZKMTI0cXpwVktodDE0bDNORl83azFsUjcybThYVk5SZ0pPc0lKZV9mTEJqdElQTF9RUzJlX3ZNSUhzakpGUGwwdQ?oc=5"
+    },
+    {
+      "text": "Campbell & CO Investment Adviser LLC Sells 8,480 Shares of Chevron Corporation $CVX - MarketBeat. Campbell & CO Investment Adviser LLC Sells 8,480 Shares of Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:11:10",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUGRWaDNVWEM1V1gtMG52eHU2RFp3MTQ1eDZ1TWkzTDcxSzdPeHdyMTBtbHdUNE5YekoyamwzM0p5WjBFbFJjeHhEY1BLSUtVaTNPa1JIUU1FelpmOUFqbUhKakpuTld5VHFHcUtUd3lqZ0dERFJuTXlOSVJaUDhsaURaZ1ltMndfdXVoYnlzSXY5cUxYNVJhdlhKSkQxUThoSzJsWkxjc0tFUXZiVWExcUc0VG9EMG5ISEVyczVaTERtTW9zTWgxVlJndkNqbFdxQXc2LTh3SQ?oc=5"
+    },
+    {
+      "text": "Chevron Corporation $CVX Shares Sold by OMERS ADMINISTRATION Corp - MarketBeat. Chevron Corporation $CVX Shares Sold by OMERS ADMINISTRATION Corp&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:01:59",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNS0hvdy1sWGZyYU1vS1gxUE9VUDE1NmF2NWVBN3Z3Z0praGZPU2ZPZ0tKWGs5eUJEVWNZNDNzb3UxcmxJcVU2ZE40TWg2dE5IM2ZwaEVoUVJKZC1MenpWeXZzMUltdlVhekE2VHhlTlp6bFhSNHByVnFpeHJhR18ycDJTUFRvblhCUlRXZjRpQ3JaS0IyVWtEQVpCSGdScWJCckh2SkRoMElXamxpWU5RNlE2NXN4dFhISXlJVEpZcjJ1LVU?oc=5"
+    },
+    {
+      "text": "3,033 Shares in Chevron Corporation $CVX Purchased by Warwick Investment Management Inc. - MarketBeat. 3,033 Shares in Chevron Corporation $CVX Purchased by Warwick Investment Management Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T11:15:54",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMVB0cTdrSFJUMXRBSnJIS2Y5cXhjRk9PME00cDRwak1EWUM0X1BNdllRM2JrMW1ZR2tWaldfcHJtSjNKNHNhNHk4aWF0OG1vdDgxbUttMVk0cHNVRDFzaHlBdXVLdjdybGN3cmZaN1A5M3hHWWFYU0VEWVRtdy1faXdHM0tLVnV0eEJ3cEltTXpzYk9VRWdSU0c4QklUZmM5bnd4cmhvU004c01VYWxXMFEtSGY0UERDX2ppYlNDTHYtVDRwY1RBQ2ZuOUw5M05JQWp0ZkE3R2lmZWs?oc=5"
+    },
+    {
+      "text": "Chevron Corporation $CVX Shares Bought by B. Metzler seel. Sohn & Co. AG - MarketBeat. Chevron Corporation $CVX Shares Bought by B. Metzler seel. Sohn & Co. AG&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T12:33:08",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVWZUNkRLU3NGQ2hHTnhqX3FybUJfTkhCMHN3c0p3V1FMNUxBR3lwckZVN1Y5ei1JWXNROUFSZWhJR3hldFV2cnlicGxMdy1Ba0NDa3hvV0Q5ZUhOVmVIQTFmdTFlWVdaaW44eG9USE9xOG1aeWRjQWlQb0J2N2ZRTV9nM3FrU010bWc3bkhtTmxNbVRxMEpzd0JWNmM3djVqYWRsWmQ4bnZTRC1WUThXcEdGc1VPNTlhd3JMSE9FbFZ3STNNUkE?oc=5"
+    },
+    {
+      "text": "Why Exxon Mobil Crushes Chevron In 2025",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.44,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T14:18:27.527363",
+      "url": "https://seekingalpha.com/article/4812151-why-exxon-mobil-crushes-chevron-in-2025#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Chevron Plus Hess Is A Good Investment",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.44,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T11:18:27.528363",
+      "url": "https://seekingalpha.com/article/4802516-chevron-plus-hess-is-good-investment#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Chevron: The Recent Rally Is A Selling Opportunity (Rating Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.421,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T22:18:27.528363",
+      "url": "https://seekingalpha.com/article/4800285-chevron-the-recent-rally-is-a-selling-opportunity#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Chevron Needs The Hess Acquisition For Future Growth",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T07:18:27.528363",
+      "url": "https://seekingalpha.com/article/4800088-chevron-needs-the-hess-acquisition-for-future-growth#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T09:18:39.942063",
+      "url": "https://www.bloomberg.com/quote/CVX:US"
+    },
+    {
+      "text": "Chevron Corp. stock underperforms Friday when compared to competitors despite daily gains",
+      "source": "MarketWatch",
+      "sentiment_score": -0.258,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T12:18:21.941749",
+      "url": "https://www.marketwatch.com/data-news/chevron-corp-stock-underperforms-friday-when-compared-to-competitors-despite-daily-gains-111b9e34-3ab5eaec0c8f?mod=mw_quote_news"
+    },
+    {
+      "text": "MarketsWill Paramount Leave the S&P 500 After Skydance Deal? Here’s What to Know.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.052,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T22:18:21.942748",
+      "url": "https://www.barrons.com/articles/s-p-500-paramount-robinhood-applovin-index-4564987e?mod=mw_quote_news"
+    },
+    {
+      "text": "The Leaner, Meaner Chevron Is Ready to Fight",
+      "source": "MarketWatch",
+      "sentiment_score": -0.026,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T11:18:21.942748",
+      "url": "https://www.wsj.com/business/energy-oil/chevron-leadership-mean-strategy-598f5c84?mod=mw_quote_news"
+    },
+    {
+      "text": "Is Trending Stock Chevron Corporation (CVX) a Buy Now? - Yahoo Finance. Is Trending Stock Chevron Corporation (CVX) a Buy Now?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:00:05",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNWpwSm9FVEpsNFMzb2ZKdUNUeHo5VjVfSHZyRmdnMVgzNmgyZTZsNVJvaFNnYVktUWpueWNnWTRCaEdmTlpDZlEzV2gzYWM0M2lNVkVOWGhmTkhLbDBjNndvcDZFYTVNUk9QLUxYNG5XUF9GcTBZcmhVVnFQQ0RPMWtuOXRicE9uSWVyZQ?oc=5"
+    },
+    {
+      "text": "Chevron Corporation (CVX) Releases Second-Quarter 2025 Results - Yahoo Finance. Chevron Corporation (CVX) Releases Second-Quarter 2025 Results&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-09T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMnJQeF96WWtfUHB1dHROOXBiMDVWUEtiS2w0elU3dGo1TEJiSWZfZDRqZ2ZFZE5icnBjWVF3cHZ6cWUwX1loWVp0STZEVWM2SllXTUhWbUw3eHVVa3AzaVBjMmFoOF9oRndBY3VZa0toRmt2ZHhFaUNSaURxeUNBZTdZZUQyNWtBREE2TFRR?oc=5"
+    },
+    {
+      "text": "Here’s Why Chevron Corp. (CVX) Traded Down in Q2 - Yahoo Finance. Here’s Why Chevron Corp. (CVX) Traded Down in Q2&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T12:11:47",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00c2RvRF95OXltMnUyU2RMX3dxRzBRcGE0OTkyQ0g2cEp1eGZnMFNLS2J4Wmg3cmw4a3FYc3htTEFxNWVVUmpPQmZpLUJ5Z1d2Q2puUEFkVVFpcUFYdVN1QmhQbi01WmFBTk0zVUdmQjhGdlVaX0owZE9aSGF0UQ?oc=5"
+    },
+    {
+      "text": "Jump Financial LLC Has $7.03 Million Holdings in Chevron Corporation $CVX - MarketBeat. Jump Financial LLC Has $7.03 Million Holdings in Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:19:36",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMFlSYjk2bjRDckttVm5KZ0lJZ1ZGU3l0LVJKM3MyTGZWalNFUWU5REZ1QTdQczVzUVI4ai15MU1wTkd5d25sYTJjOVpKU2xVY3UwSWdmSF9PdTNud1BneGJFSGJncFAwejEyejlMY3JhTlh6aS1ENERudHBZQ211Y1M2ekF5cmtoeHFQaDZEZzNyXzBsTjBjMUlRaFN1TklKeXVWRzRRUF8tNW1LT1V4YUxwQmpTUzVfdkdDUkFtUnZ0dkZ5OURJdXpuZw?oc=5"
+    },
+    {
+      "text": "Guggenheim Capital LLC Has $47.32 Million Stock Holdings in Chevron Corporation $CVX - MarketBeat. Guggenheim Capital LLC Has $47.32 Million Stock Holdings in Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:39:50",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY09vTXFGQlkzNEZXLTJfVU8zaDBKajVBa21rczdES2VEOVp5MVFpR3RicGd5WnRwZkdaTkE1MlV1Ym5aeXV6MEdfdUtkeUMzTERudU14bzhUYmV0V2tSdGlBM3hNUUdYcC1oMThJUlZnM1h3TnM4c3Z3cllxZXV0UnZVLXZUMGN3VmVXWFQyUkVUZlZBY3BGVjQ0ZkJlVVZTN2RYNFFTbXB6Y01LSlhfTWZZT0FDclBEX2dBX2lLbW95RHhZdzNPbEtPVFZadw?oc=5"
+    },
+    {
+      "text": "The Buffett effect: about 190 Dow points",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T05:18:21.941749",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-set-for-300-point-rise-as-s-p-500-eyes-record-ahead-of-retail-sales/card/the-buffett-effect-about-190-dow-points--0c49J4UnOJ5IJAxKuIv0?mod=mw_quote_news"
+    },
+    {
+      "text": "Warren Buffett’s Berkshire Further Pares Stake in Apple, Adds UnitedHealth Position",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:18:21.941749",
+      "url": "https://www.wsj.com/finance/stocks/berkshire-hathaway-apple-stock-holdings-d8f5ed65?mod=mw_quote_news"
+    },
+    {
+      "text": "DividendsChevron, IBM, and 10 More High-Yielding Dividend Stocks",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:18:21.942748",
+      "url": "https://www.barrons.com/articles/12-high-yielding-dividend-stocks-0f26743d?mod=mw_quote_news"
+    },
+    {
+      "text": "Trump Turns His Back on Venezuela",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T10:18:21.942748",
+      "url": "https://www.wsj.com/opinion/trump-turns-his-back-on-venezuela-chevron-tariffs-politics-5d45689e?mod=mw_quote_news"
+    },
+    {
+      "text": "It’s a Scorching Hot Summer for Deals on Wall Street. Vacation Can Wait.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T04:18:21.942748",
+      "url": "https://www.wsj.com/business/deals/its-a-scorching-hot-summer-for-deals-on-wall-street-vacation-can-wait-38c8e3c0?mod=mw_quote_news"
+    },
+    {
+      "text": "Chevron Q2: Berkshire Hathaway Added More, So Did I",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:18:27.527363",
+      "url": "https://seekingalpha.com/article/4814798-chevron-q2-berkshire-hathaway-added-more-so-did-i#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Chevron: The Hess Payoff Begins, Reinforcing The Long-Term Case",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T23:18:27.527363",
+      "url": "https://seekingalpha.com/article/4810258-chevron-hess-payoff-begins-reinforcing-long-term-case#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Chevron Aims To Cut Costs With Increased Production",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T01:18:27.528363",
+      "url": "https://seekingalpha.com/article/4808097-chevron-aims-to-cut-costs-with-increased-production#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Showing405,207results. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T09:18:39.943071",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Freedom Investment Management Inc. Trims Stake in Chevron Corporation $CVX - MarketBeat. Freedom Investment Management Inc. Trims Stake in Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.856,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:27:06",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQ1NTdUN4NUdMcVBUZVU5TDFyX2ZXaEdaYmtaVmxlNG5IRUg1aUsyTzVpRkM4RTR4ZU9SY2hTVGVBNzhLblZyTzJ4ZTFSc0xjRE9GQ1F3V3VHNVBienNORGtJTGpyM2NjYzc5VFgxRjFONjVvNEZDYktYVkdJN0ZvT1lyY1psMFNzTEthSHR1SnRyZVRzZENDWjJma0M2Zy15MENSbDZ2M29DQi1PSmxCVUJCSUpVQ1BqS2JsdlU0ejFJa2R4eVJWQ3lhNmFlXzhMSk5qb1Vn?oc=5"
+    },
+    {
+      "text": "Chevron: A Strong Buy On Growth Prospects",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.796,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T19:18:27.527363",
+      "url": "https://seekingalpha.com/article/4812425-chevron-strong-buy-growth-prospects#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Technical AnalysisAs Nuclear Stalls, Oil Could Be the Surprise Winner.  3 Stocks to Buy Now.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.71,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T15:18:21.941749",
+      "url": "https://www.barrons.com/articles/3-oil-stocks-to-buy-now-d578a58f?mod=mw_quote_news"
+    },
+    {
+      "text": "Chevron Corp. (CVX) Declined Due to a Combination of Uncertainty in Oil Markets - Yahoo Finance. Chevron Corp. (CVX) Declined Due to a Combination of Uncertainty in Oil Markets&nbsp;&nbsp;Yahoo Financ...",
+      "source": "Google News",
+      "sentiment_score": -0.586,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-26T13:07:13",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZ3BOU3JFbGpMRzhSZVg3VkhhMzJZbmtPVGFvejJWT0pwYnIxalE1ejB1MTRkbFFqNFp3cmF1a0tYWXpQRm5SRGQ1VGR4QWhDUy1BMXFJY3BsbDNWYndmcWsyT3BOdkdkYUlPWDd4aGRKOURBaGNxbkpJNG9oQWc2Tg?oc=5"
+    },
+    {
+      "text": "Dow's nearly 125-point rally highlighted by gains for shares of Salesforce, UnitedHealth",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T00:18:21.940741",
+      "url": "https://www.marketwatch.com/data-news/dow-s-nearly-125-point-rally-highlighted-by-gains-for-shares-of-salesforce-unitedhealth-8fa2f4d4-3b8fd0bcfe17?mod=mw_quote_news"
+    },
+    {
+      "text": "CSM Advisors LLC Sells 1,630 Shares of Chevron Corporation $CVX - MarketBeat. CSM Advisors LLC Sells 1,630 Shares of Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:27:12",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS1pTWTVrOTkzRDV2dUNaOWNoQm1SRVNKTi1Hc2lKQ3hueEFSVWtSRERkN1BjLXoybUJlOXFLY09JNGVjVGhSN2FaWGhScmV0NUdNREJnSGlVT2tLeGlLRkt1bXdwN0NGaEMybjZwcHNRSTZsV2JYT2NSeEZNNEJuNGgtQVNzUkt6UFpfcFladlBpMmVULVhnRnNGMlYtMTVXUDU3UnRMMmwxTnl0bEcyU0NEaWFlVzNEOW9CNV9vaw?oc=5"
+    },
+    {
+      "text": "Corebridge Financial Inc. Sells 32,248 Shares of Chevron Corporation $CVX - MarketBeat. Corebridge Financial Inc. Sells 32,248 Shares of Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:48:12",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOUI0ZnhsUHdPbWF4XzR1Q3g2TDJHOTBvMVZ0cjdqYTd6Zk14Rk5yMWhjTnVpd2t6aGd3eWx0QzdMaVFFXzk3YnJaeWZWa0NRVXZtQjl0bHlrUGgtSU1ubV82am9KTVVZZUdMS0NVaVZhTmtTR01waVJQckQ2enNuR3EwdndLZVRsM1ROcm93RHdkUkJLQkZDbjh1U1pzZXlJcmQ0Mkk2RHpzM2F2bVhjMUR4WHloSjdpempRXzQwN2VIQQ?oc=5"
+    },
+    {
+      "text": "John B. Hess Sells 375,000 Shares of Chevron (NYSE:CVX) Stock - MarketBeat. John B. Hess Sells 375,000 Shares of Chevron (NYSE:CVX) Stock&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:27:07",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPM21GaWpqSWdlbDZFcFFlR1lER1FpQTFKcGZ5N1BRVHNqbzlTR2dxUkxVQVNVYnd0VFhFeHYxMk9sSFFIRGFha1drT21EWExHbk5rT1BMc1hKSW5lNXZ3SzJXRXFMbnVjTmgtQUtTYmNvc0t5V3BjcFNUOWlneGhFNkJEdnVlZnlDWTBhVDY5dXR3c3FUbkx0dWE0QjhrVUNFN3dLSE1FSUN2V3A0R09BSG4zY0NmeDBHN05ibGNWdkI?oc=5"
+    },
+    {
+      "text": "Bank of Hawaii Sells 1,778 Shares of Chevron Corporation $CVX - MarketBeat. Bank of Hawaii Sells 1,778 Shares of Chevron Corporation $CVX&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T20:27:09",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOMEpfYzNfUWllOVZKcXZfVElDb2Jvd0RVa0w4RDQxTkFaREVJMlpSaVpCZ00yTlA2LW8tLUF3cVdnZ3hXSmFzSUVMcXVONzFjNHcyZGhnbjJtdC11a0hfUl9JV3BEMWpGWXoybW5vUTd0WFBoNldCNHkybDZKMTI0cXpwVktodDE0bDNORl83azFsUjcybThYVk5SZ0pPc0lKZV9mTEJqdElQTF9RUzJlX3ZNSUhzakpGUGwwdQ?oc=5"
+    },
+    {
+      "text": "Campbell & CO Investment Adviser LLC Sells 8,480 Shares of Chevron Corporation $CVX - MarketBeat. Campbell & CO Investment Adviser LLC Sells 8,480 Shares of Chevron Corporation $CVX&nbsp;&nbsp;MarketB...",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T21:11:10",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUGRWaDNVWEM1V1gtMG52eHU2RFp3MTQ1eDZ1TWkzTDcxSzdPeHdyMTBtbHdUNE5YekoyamwzM0p5WjBFbFJjeHhEY1BLSUtVaTNPa1JIUU1FelpmOUFqbUhKakpuTld5VHFHcUtUd3lqZ0dERFJuTXlOSVJaUDhsaURaZ1ltMndfdXVoYnlzSXY5cUxYNVJhdlhKSkQxUThoSzJsWkxjc0tFUXZiVWExcUc0VG9EMG5ISEVyczVaTERtTW9zTWgxVlJndkNqbFdxQXc2LTh3SQ?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.365,
+    "last_week_average": 0.215,
+    "overall_average": 0.209,
+    "articles_last_24h": 14,
+    "articles_last_week": 34
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

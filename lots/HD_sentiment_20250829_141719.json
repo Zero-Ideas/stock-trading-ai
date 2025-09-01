@@ -1,0 +1,390 @@
+{
+  "symbol": "HD",
+  "company_name": "The Home Depot, Inc.",
+  "analysis_timestamp": "2025-08-29T14:17:19.295129",
+  "total_sources_analyzed": 33,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.081,
+    "average_compound": 0.147
+  },
+  "sentiment_distribution": {
+    "positive": 13,
+    "neutral": 13,
+    "negative": 7,
+    "positive_percentage": 39.4,
+    "negative_percentage": 21.2
+  },
+  "stock_context": {
+    "current_price": 6480.15,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Google News": 15,
+    "MarketWatch": 7,
+    "Seeking Alpha": 8,
+    "Bloomberg": 3
+  },
+  "sample_articles": [
+    {
+      "text": "What’s next for The Home Depot Inc. stock price - July 2025 Update & Free Long-Term Investment Growth Plans - Newser. What’s next for The Home Depot Inc. stock price - July 2025 Update & Free Long-Term Investment Growth Plans&nbsp;&nbsp;Newser",
+      "source": "Google News",
+      "sentiment_score": 0.896,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T17:01:45",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMU1veEkwNmg0cFZPak44NU5aak9UeGNuSVNIc3VFa2JtWE0wUXdlX0NFdk12S0t5RlBQSVktNEpwN2hKMUcyT0tCQ1RVOXZua0Noc1RoM1FkSFNKUHZLWjUxUmhLNjlOODNsbnhrZzlsb2UwbTNhNE9va1RfeGdqRWFXUmd1U2RaWDNnT2Zna2h6VmM?oc=5"
+    },
+    {
+      "text": "Lowe's Or Home Depot? The Surprise Winner In Home Improvement",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.836,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T00:17:00.862114",
+      "url": "https://seekingalpha.com/article/4816797-lowes-or-home-depot-the-surprise-winner-in-home-improvement#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Southeast Asset Advisors LLC Buys 1,817 Shares of The Home Depot, Inc. $HD - MarketBeat. Southeast Asset Advisors LLC Buys 1,817 Shares of The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.813,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:19:48",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOGYtRmI3eGdudENIQjlSOU1SanRMeUJ6bjVQWFN6WFNXVk5VNG9Xc2NtczViLVJ1UlhLYkJobmVHczhJcEVBaEdqbnF4TmtrQWZJOVpINEN4eDlhSXlKMWpyV0RXOHNTSGV6UmVoRHdpNGptWUNCYjlnM1BfZFduc1RQWVFRbTdUWHRpbjlfUC1YMTRISktIS1owS002WGlwWlplS2NmX3dtSUJFbWtpR2cxME05VFp0bng5dkQxQ1N2RmlnSUVHMlFqWQ?oc=5"
+    },
+    {
+      "text": "Dow Jones Hits Record High On Dovish Powell After AI Worries, Walmart Woes: Weekly Review",
+      "source": "MarketWatch",
+      "sentiment_score": -0.691,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T06:16:54.291881",
+      "url": "https://www.investors.com/news/dow-jones-hits-high-on-dovish-powell-after-ai-worries-walmart-woes/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Home Depot: I Know It's Overvalued, But Core Strengths And Technicals Are So Tempting That I Want To Add More (Rating Upgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.612,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:17:00.863119",
+      "url": "https://seekingalpha.com/article/4803415-home-depot-core-strengths-and-technicals-are-so-tempting#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Dow soars 967 points on gains for shares of Caterpillar, Home Depot",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T13:16:54.292886",
+      "url": "https://www.marketwatch.com/data-news/dow-soars-967-points-on-gains-for-shares-of-caterpillar-home-depot-e3f6b6b9-e3850b20ec3f?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow rallies 850 points on gains for shares of American Express, Caterpillar",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T12:16:54.292886",
+      "url": "https://www.marketwatch.com/data-news/dow-rallies-850-points-on-gains-for-shares-of-american-express-caterpillar-9617547e-967b377f2b7e?mod=mw_quote_news"
+    },
+    {
+      "text": "Insider Selling: Home Depot (NYSE:HD) EVP Sells 5,483 Shares of Stock - MarketBeat. Insider Selling: Home Depot (NYSE:HD) EVP Sells 5,483 Shares of Stock&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:17:24",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaFpEQUt3OWE0QThFQkF5UWNzWkFybnV0OHV3OHllTmktOGxnVEdrSW5IUzM2UjJsZFB0dnBpeGF4SHRSWTBqSXQ5akNUd2hkQ3BaS1Z0WHBJZ2lvaVNveUZQbnJXNGpwVndnUXBnc0x1VEQ4WmNrRnNSOWhONnhjd2ZJWmJmNUV5ZEhBNW9yTTMwdHd4UlNQdFRmRmd6VWxtdGc?oc=5"
+    },
+    {
+      "text": "Synovus Financial Corp Cuts Stake in The Home Depot, Inc. $HD - MarketBeat. Synovus Financial Corp Cuts Stake in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T19:17:26",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVUlrTWVKd0lHMEMyVVQzMER0Qno2OXJhSWZvTmdlVjJyZVpFYVJhTTUzLVVTTi1sZm52Ujd3Y0hJYlU2S1kxdS1ZWTIxaVNiY3hzajluSjY0YnBTYVdHNzhPN3VWVzBGYkZ6R3FSa3haUWpETXFWejdIenVzSDkyUVktak5BRUs1SUhEYmdQN01WR0JYZi1uZlIyQ2hZemtWSWVUWmJNcHNXTGtCSjVURzlpanNHOEdaNU9sMkJidWxaRm9w?oc=5"
+    },
+    {
+      "text": "Quantbot Technologies LP Buys New Shares in The Home Depot, Inc. $HD - MarketBeat. Quantbot Technologies LP Buys New Shares in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:17:20",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDJTeGgzSzJWb3phX1pfeU8tdnFiczNMRUNhTWROS0ZXQUdEMlUwYVA4QzhJN3cxUmtfX21Xb29lbWRrWnhPZjlwMnNFejN1cUFSYjJ4Vm1IR2p1MlV0Nl91ejVDY2doUGVWRk1vUV9MQUYyeENtV1p3UWtVZXNZazUtcGtlbDFhOEE0WGVBR3d3RGIzUHlRNWw3YlNMbTl6Umh2WUowQzl5VUV6WDNkQV9RWDRNbF9KRHhSUmM5ZUYzekRZWXc?oc=5"
+    },
+    {
+      "text": "The Home Depot, Inc. $HD Shares Purchased by Oak Harvest Investment Services - MarketBeat. The Home Depot, Inc. $HD Shares Purchased by Oak Harvest Investment Services&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:34:05",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOGlEMzJYSjVTQS0yeVNYS1JfSjN4N1JCM2lORHFCaW5GN1UzY3lnUXFKaldZdGMxSFlMVWowaDBlQ3BfcnlwZ3hsZWNiOGxjUFdJa08wS3pXbjlmS25KdHZjWU5qdjg2bUZPUlBpQXYtb01ydzNFa3JPVVhMcEk5Y2JDVzhSUDIxMERyX3JPeDJFYTh1YUJaMXUtT2xUN3N6UU9sMTlDVnB0TGNXakE4bW9GejF1WVZ6U1FaNDhZY2FXbW9UeWRuMWdKaWwwUQ?oc=5"
+    },
+    {
+      "text": "After Earnings, Is Home Depot Stock a Buy, a Sell, or Fairly Valued? - Morningstar. After Earnings, Is Home Depot Stock a Buy, a Sell, or Fairly Valued?&nbsp;&nbsp;Morningstar",
+      "source": "Google News",
+      "sentiment_score": 0.504,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T19:56:31",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSXRkNE5WMFlpZnRSR2hUX1E2b2VBM3lCTTU0MURWeENwV3lQWjBWX3R1UDBJeXFVUGdocWJyS1FIUmtCSy16c0g0Tm1kSmJ2T1djSXdPVXdzRXBPRWdfTWN5aEJod29BdnZqNXBtYjZPelkxaUtiUWRPcUxNOW1QTmZlbWxxOGdMY19iajFJNERNZTFrNmZlbEhmZWQzZw?oc=5"
+    },
+    {
+      "text": "CompaniesWorkers Lose Out as Stock Buybacks Jump and CEO Pay Skyrockets, Study Says",
+      "source": "MarketWatch",
+      "sentiment_score": -0.477,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T09:16:54.291881",
+      "url": "https://www.barrons.com/articles/worker-ceo-pay-stock-buybacks-206ad8f4?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Home Depot Vs. Lowe's: Contemplating Selling 1 In Favor Of The Other",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.402,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T16:17:00.862114",
+      "url": "https://seekingalpha.com/article/4816496-home-depot-vs-lowes-contemplating-selling-1-in-favor-of-the-other#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Merck, Sherwin-Williams Co. share losses lead Dow's 125-point drop",
+      "source": "MarketWatch",
+      "sentiment_score": -0.382,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T11:16:54.291881",
+      "url": "https://www.marketwatch.com/data-news/merck-sherwin-williams-co-share-losses-lead-dow-s-125-point-drop-a4e516f7-907d4e41e5d5?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow's 850-point rally highlighted by gains for Caterpillar, Home Depot stocks",
+      "source": "MarketWatch",
+      "sentiment_score": 0.34,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T06:16:54.292886",
+      "url": "https://www.marketwatch.com/data-news/dow-s-850-point-rally-highlighted-by-gains-for-caterpillar-home-depot-stocks-fbf1d71a-52df23294e8c?mod=mw_quote_news"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T03:17:12.799497",
+      "url": "https://www.bloomberg.com/quote/HD:US"
+    },
+    {
+      "text": "Dodge & Cox Lowers Position in The Home Depot, Inc. $HD - MarketBeat. Dodge & Cox Lowers Position in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.25,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T20:22:50",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQUpDaG1WamNKd2c2OWxUZG5OeWpmYkJ0cXRRTndxOHllcFBhdlVzM3c1YUhrNjVDaW5EQXJIaUl4Y21wYjNPUDFYRUFITUFmWkdrYXI0eDRMWUFycmp4Tl8zaGVHUS1YQXN5NllRRjlhOHVYQ1pGZTkyWWtmMzQ0US1wQTZJR0o2dXlqNDdVNVNBTEU1WkxQUU1sSHlOQkppbUxvZTBqMHROeG84Vi11ZG5GdDU2dVlDbWN3cA?oc=5"
+    },
+    {
+      "text": "Home Depot: A Contrarian Call To Buy Despite A Challenging Macro-Environment",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.114,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T02:17:00.863119",
+      "url": "https://seekingalpha.com/article/4803757-home-depot-a-contrarian-call-to-buy-despite-a-challenging-macro-environment#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Home Depot: From Stalwart To Stalled Out But For How Long?",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.103,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T21:17:00.863119",
+      "url": "https://seekingalpha.com/article/4815214-home-depot-from-stalwart-to-stalled-out-but-how-long#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Is Home Depot Stock Outperforming the S&P 500? - Yahoo Finance. Is Home Depot Stock Outperforming the S&P 500?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T14:19:58",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLWpJMmFLNGNMRWF4dWZtUkRCeDN2Q1VzN1BDLVZtSFM3RzV0LTB5RmtoY0pmMnBWYWUtMm5NdkpxSjRLMURsLTRfZ3U2RmduQ1c5cXFBeTZXM0FJNENhUnJsMTlET2tLOXlIMjlaZzRDbms2ejRTdVgwVklkR3RlWVpsbnM?oc=5"
+    },
+    {
+      "text": "Is Home Depot Stock Outperforming the S&P 500? - MSN. Is Home Depot Stock Outperforming the S&P 500?&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T17:19:28",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQkFnT0VqV3FaNjJkNk45Mzd4LWc1dGd0c2U5LS1kS1NUQ2I5ZzRHV3hmbldBS2tRMHF2NXdWbnBRcHRMc0NTcDk2dHJOVERiVkFwQ0lhX08ycE9xaUpVOVBEYm1qalo1M1pqWVRVcWY5cXY2Q1lGZG9pRjRjX1JaQ0hmdl9xLVktQmlaOWNWSVpwSURsRDRTYzhTeDVkbzhG?oc=5"
+    },
+    {
+      "text": "Comerica Bank Has $217.04 Million Stock Holdings in The Home Depot, Inc. $HD - MarketBeat. Comerica Bank Has $217.04 Million Stock Holdings in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:19:29",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbU5mNEtXRXJfclhTenRLaHNXYndDS1IwWXlwRV93YkpSVW40YVZzbzRCRVNyQXkyckhRYkZUREtTRHdoY1g3clZMYlhhX3Zwb1ZEczdEU09zQUhCNWR3bmRaQkJzTEZTVERHZVhkdXpjNFI2Q0NUZnI2Q3JabkxDbDExSUVTTnNjTG42WjlTVUJYdkNNdlB4QzFHSWx0YzBVejZ6QlZvVmJGNnNKQXVtd285RHNhS2h3Z0E?oc=5"
+    },
+    {
+      "text": "MetLife Investment Management LLC Has $107.18 Million Stock Position in The Home Depot, Inc. $HD - MarketBeat. MetLife Investment Management LLC Has $107.18 Million Stock Position in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:18:43",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPM2dpZ3FjNTdlSnlQYmJodEkxTTV0RFlFWTJoQjZKNk5QX0lkSThBQmhHTzN3aWdtWEkwOG9ocFo1ZkVrQkVUbHMyUW9UYjhrRERmYUVIMWZ1QzUxLWxCeVRRWGpCVlEwdW1ibFFQdmo3aW80ampRRXRqNGc5bWMzRjR3b2JlaWZsSnJkeUhxbnFoOTh3elZuc3NLQUg5Z29MMUpZUG0yRHVMWTlRekxHOXhBNGpwUloxeTZFa25NeWRDZlpyRUd5R0hncnY?oc=5"
+    },
+    {
+      "text": "Home Depot (NYSE:HD) EVP Sells $1,551,900.09 in Stock - MarketBeat. Home Depot (NYSE:HD) EVP Sells $1,551,900.09 in Stock&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:18:05",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVkxhVWpxaFVEX0RsbUJ6SVBXSWZyZFdjeWxfQkpiZDhUWFB3YVI1TmtEODdJUV9xWFU0RTZ5bExhd1k1UnM5WHFnVmJnNHo1b3lRSXRYS0kxdW42Uy1ReVdxUklKODl5SGxwUEhyaWJYdWpiMktWc0MzU1NuNl9kV24yMG1vZW0zanJycnMyN0lFbE5McjNSUjZCczFsU0ZESEllSERQeFc2aXcx?oc=5"
+    },
+    {
+      "text": "Trinity Legacy Partners LLC Has $4.25 Million Stock Holdings in The Home Depot, Inc. $HD - MarketBeat. Trinity Legacy Partners LLC Has $4.25 Million Stock Holdings in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:54:03",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaGtiTGljVE5jQlNBZWJfWmZ5d1d3N3IydlVWNjY3Z1ZkY0c2eFU1WF9zX3NzX1c0M3ZwYWV0dTBzcXdCb0lBT0FCWmZPZDh0MXhWcE1WODVMSndIZTVvaHdSOHZiRnYyZXE4cFdmZGhySlc5dHVCYVZfNzBrc0lrckZLT25mR1gxQ0dtTVhUQ3M4Ri1YMzZHYTB4c3VTRnFFSWR1ZGwwWV9jU2FCWDRtS3RacW1LNXZnSVFkMFdiRlVUSnZFbWJsVG5DOS1obVYy?oc=5"
+    },
+    {
+      "text": "Ieq Capital LLC Decreases Position in The Home Depot, Inc. $HD - MarketBeat. Ieq Capital LLC Decreases Position in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:18:34",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNGdnck81Mi1kZHRYM2RVRDhvZ1hsdE8wMWRCWGNKNjRkSEZTNUEyNGRpSTlNMlRGa0IxWmJndEpxdkc4LXRIbWcxUU0xZnRKaGVnMmxnVXJCY0ItMVg2NGFkbEhKUEZXNmJGY1lzeHZXdlNsaFFsWWx5dlUxdmdvNmJWcVN2LVo2bEduWDczd2hIaGR4djcwNzFUbGJwS29aZmczaXQtY3Q3aUJNODU4VDVCS2pTLVV3YmYwMw?oc=5"
+    },
+    {
+      "text": "The Score: Intel, Home Depot, Meta and More Stocks That Defined the Week",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:16:54.291881",
+      "url": "https://www.wsj.com/finance/stocks/the-score-intel-home-depot-meta-and-more-stocks-that-defined-the-week-4c3a2ddd?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Home Depot: Sell The Post-Earnings Pop (Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:17:00.863119",
+      "url": "https://seekingalpha.com/article/4814910-home-depot-sell-the-post-earnings-pop-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Wall Street Lunch: SPAC King Returns With New Blank-Check Deal",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T16:17:00.863119",
+      "url": "https://seekingalpha.com/article/4814829-wall-street-lunch-spac-king-returns-with-new-blank-check-deal#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Home Depot: Recent Underperformance Is Just The Beginning",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:17:00.863119",
+      "url": "https://seekingalpha.com/article/4806775-home-depot-recent-underperformance-just-beginning#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Bloomberg Terminal Demo Request",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T22:17:08.548390",
+      "url": "https://www.bloomberg.com/company/?utm_source=bloomberg-menu&utm_medium=markets"
+    },
+    {
+      "text": "Home Depot Inc/TheFollowFollowingFollowFollowFollowFollowHD:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:17:08.549894",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "What’s next for The Home Depot Inc. stock price - July 2025 Update & Free Long-Term Investment Growth Plans - Newser. What’s next for The Home Depot Inc. stock price - July 2025 Update & Free Long-Ter...",
+      "source": "Google News",
+      "sentiment_score": 0.896,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T17:01:45",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMU1veEkwNmg0cFZPak44NU5aak9UeGNuSVNIc3VFa2JtWE0wUXdlX0NFdk12S0t5RlBQSVktNEpwN2hKMUcyT0tCQ1RVOXZua0Noc1RoM1FkSFNKUHZLWjUxUmhLNjlOODNsbnhrZzlsb2UwbTNhNE9va1RfeGdqRWFXUmd1U2RaWDNnT2Zna2h6VmM?oc=5"
+    },
+    {
+      "text": "Lowe's Or Home Depot? The Surprise Winner In Home Improvement",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.836,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T00:17:00.862114",
+      "url": "https://seekingalpha.com/article/4816797-lowes-or-home-depot-the-surprise-winner-in-home-improvement#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Southeast Asset Advisors LLC Buys 1,817 Shares of The Home Depot, Inc. $HD - MarketBeat. Southeast Asset Advisors LLC Buys 1,817 Shares of The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.813,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:19:48",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOGYtRmI3eGdudENIQjlSOU1SanRMeUJ6bjVQWFN6WFNXVk5VNG9Xc2NtczViLVJ1UlhLYkJobmVHczhJcEVBaEdqbnF4TmtrQWZJOVpINEN4eDlhSXlKMWpyV0RXOHNTSGV6UmVoRHdpNGptWUNCYjlnM1BfZFduc1RQWVFRbTdUWHRpbjlfUC1YMTRISktIS1owS002WGlwWlplS2NmX3dtSUJFbWtpR2cxME05VFp0bng5dkQxQ1N2RmlnSUVHMlFqWQ?oc=5"
+    },
+    {
+      "text": "Dow Jones Hits Record High On Dovish Powell After AI Worries, Walmart Woes: Weekly Review",
+      "source": "MarketWatch",
+      "sentiment_score": -0.691,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T06:16:54.291881",
+      "url": "https://www.investors.com/news/dow-jones-hits-high-on-dovish-powell-after-ai-worries-walmart-woes/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Home Depot: I Know It's Overvalued, But Core Strengths And Technicals Are So Tempting That I Want To Add More (Rating Upgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.612,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T11:17:00.863119",
+      "url": "https://seekingalpha.com/article/4803415-home-depot-core-strengths-and-technicals-are-so-tempting#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Dow soars 967 points on gains for shares of Caterpillar, Home Depot",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T13:16:54.292886",
+      "url": "https://www.marketwatch.com/data-news/dow-soars-967-points-on-gains-for-shares-of-caterpillar-home-depot-e3f6b6b9-e3850b20ec3f?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow rallies 850 points on gains for shares of American Express, Caterpillar",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T12:16:54.292886",
+      "url": "https://www.marketwatch.com/data-news/dow-rallies-850-points-on-gains-for-shares-of-american-express-caterpillar-9617547e-967b377f2b7e?mod=mw_quote_news"
+    },
+    {
+      "text": "Insider Selling: Home Depot (NYSE:HD) EVP Sells 5,483 Shares of Stock - MarketBeat. Insider Selling: Home Depot (NYSE:HD) EVP Sells 5,483 Shares of Stock&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:17:24",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaFpEQUt3OWE0QThFQkF5UWNzWkFybnV0OHV3OHllTmktOGxnVEdrSW5IUzM2UjJsZFB0dnBpeGF4SHRSWTBqSXQ5akNUd2hkQ3BaS1Z0WHBJZ2lvaVNveUZQbnJXNGpwVndnUXBnc0x1VEQ4WmNrRnNSOWhONnhjd2ZJWmJmNUV5ZEhBNW9yTTMwdHd4UlNQdFRmRmd6VWxtdGc?oc=5"
+    },
+    {
+      "text": "Synovus Financial Corp Cuts Stake in The Home Depot, Inc. $HD - MarketBeat. Synovus Financial Corp Cuts Stake in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T19:17:26",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVUlrTWVKd0lHMEMyVVQzMER0Qno2OXJhSWZvTmdlVjJyZVpFYVJhTTUzLVVTTi1sZm52Ujd3Y0hJYlU2S1kxdS1ZWTIxaVNiY3hzajluSjY0YnBTYVdHNzhPN3VWVzBGYkZ6R3FSa3haUWpETXFWejdIenVzSDkyUVktak5BRUs1SUhEYmdQN01WR0JYZi1uZlIyQ2hZemtWSWVUWmJNcHNXTGtCSjVURzlpanNHOEdaNU9sMkJidWxaRm9w?oc=5"
+    },
+    {
+      "text": "Quantbot Technologies LP Buys New Shares in The Home Depot, Inc. $HD - MarketBeat. Quantbot Technologies LP Buys New Shares in The Home Depot, Inc. $HD&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T19:17:20",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSDJTeGgzSzJWb3phX1pfeU8tdnFiczNMRUNhTWROS0ZXQUdEMlUwYVA4QzhJN3cxUmtfX21Xb29lbWRrWnhPZjlwMnNFejN1cUFSYjJ4Vm1IR2p1MlV0Nl91ejVDY2doUGVWRk1vUV9MQUYyeENtV1p3UWtVZXNZazUtcGtlbDFhOEE0WGVBR3d3RGIzUHlRNWw3YlNMbTl6Umh2WUowQzl5VUV6WDNkQV9RWDRNbF9KRHhSUmM5ZUYzekRZWXc?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.166,
+    "last_week_average": 0.147,
+    "overall_average": 0.147,
+    "articles_last_24h": 23,
+    "articles_last_week": 33
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

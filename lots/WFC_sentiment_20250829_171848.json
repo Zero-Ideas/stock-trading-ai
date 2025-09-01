@@ -1,0 +1,840 @@
+{
+  "symbol": "WFC",
+  "company_name": "Wells Fargo & Company",
+  "analysis_timestamp": "2025-08-29T17:18:48.420519",
+  "total_sources_analyzed": 89,
+  "unique_sources_count": 5,
+  "source_diversity_score": 0.62,
+  "overall_sentiment": "Neutral",
+  "sentiment_scores": {
+    "average_polarity": 0.055,
+    "average_compound": -0.025
+  },
+  "sentiment_distribution": {
+    "positive": 11,
+    "neutral": 66,
+    "negative": 12,
+    "positive_percentage": 12.4,
+    "negative_percentage": 13.5
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Google News": 25,
+    "Bloomberg": 3,
+    "MarketWatch": 19,
+    "Yahoo Finance": 20,
+    "Seeking Alpha": 22
+  },
+  "sentiment_model": "FinBERT (Financial BERT)",
+  "sample_articles": [
+    {
+      "text": "Wells Fargo & Company (NYSE:WFC) Trading 1% Higher Following Analyst Upgrade - MarketBeat. Wells Fargo & Company (NYSE:WFC) Trading 1% Higher Following Analyst Upgrade&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 1.0,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T18:52:00",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT2s5c1psVVdaWVNpdEROelZmbEg2VUU5ZnpKNkdEM19YMUZrR2xjN09FVXZ2RS1Fc1k5S19SU2dOYXVEOUJiTGNXWFlaYk55ZkRLVE83ZWsyT3pPeVhPcmpyNWtEcDFHOFRJZHN5SGE2dVlBQnZSa0lEdUFUUE53UW9pOE5ZYXh6Yk1JazRDZzFKbzZqTm53cHhuQWVJSUNjYjdlTEEwdlpDYW1Qb2JoOVRZVHItQ2tP?oc=5"
+    },
+    {
+      "text": "Wells Fargo & Company (NYSE:WFC) Stock Rating Upgraded by Wall Street Zen - MarketBeat. Wells Fargo & Company (NYSE:WFC) Stock Rating Upgraded by Wall Street Zen&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 1.0,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T03:00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUHNBUHQwYk1PUHNxLVlkbjl1cl9hM0FCQmdfSmJobEhNWUNLQ1RYSGhaNVNacVRYNnF0bE1VSWtYcEhZYThua3BuTjRyTWFwMVFwYXlkY1NHSi12Rmd1WURjUHFLU28yWDc0d1liOXNfOVJCUWN6SEZoX1pEbmFLaktGQ2hoRTY3VG1vNHk4UW93blB1WHpBN2laWmhONjFzNVkyY1AtMURZZ0J6WHRhVnByN184Zw?oc=5"
+    },
+    {
+      "text": "Wells Fargo stock slips after lower 2025 NII guidance",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.955,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T09:18:30.994248",
+      "url": "https://seekingalpha.com/news/4467396-wells-fargo-stock-slips-after-lower-2025-nii-guidance#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A12"
+    },
+    {
+      "text": "Earnings Call InsightsWells Fargo signals aggressive growth in deposits and loans after asset cap removal while maintaining 2025 net interest income target",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.953,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T17:18:30.889872",
+      "url": "https://seekingalpha.com/market-news/earnings-calls-insights"
+    },
+    {
+      "text": "BanksBanks Confront Weakening Economic Data After Strong Run",
+      "source": "MarketWatch",
+      "sentiment_score": -0.938,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T20:18:23.346067",
+      "url": "https://www.barrons.com/articles/bank-stocks-economic-data-jobs-report-330ed9a2?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo & Co. stock outperforms competitors on strong trading day",
+      "source": "MarketWatch",
+      "sentiment_score": 0.936,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T04:18:22.993423",
+      "url": "https://www.marketwatch.com/data-news/wells-fargo-co-stock-outperforms-competitors-on-strong-trading-day-3e8f806c-a0bc83502932?mod=mw_quote_news"
+    },
+    {
+      "text": "Apexium Financial LP Cuts Holdings in Wells Fargo & Company $WFC - MarketBeat. Apexium Financial LP Cuts Holdings in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.932,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T21:19:27",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObGh3enJ0bnZYTVJkWnFoRUhaZDBRNGdyUFZmNW1ZdjVuVnUwWktZQ1JkZVhkNThiVlo5TXpIaDdMcTZ0YlFzYXNvNXRSamFiT05zWFNQTnRYNmVxdkhfcnhLZXRZMjFHblRfSEI4ZTJaMlV6OVQteTl5bnJKaTJtV05XcElONnBwSlQxZmZqUGNFTVB1SXE0UHQ0OTNGME5tRXVUY2tVeHB5cDFab3dfTG5XYkZ1TnZBY2FzNkVhdG1vUWJK?oc=5"
+    },
+    {
+      "text": "BanksA Union Push at JPMorgan Reveals Tensions Inside America’s Largest Bank",
+      "source": "MarketWatch",
+      "sentiment_score": -0.928,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T16:18:23.183429",
+      "url": "https://www.barrons.com/articles/jpmorgan-chase-union-ffd01326?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo suspends travel to China after banker was refused exit",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.922,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T18:18:30.835191",
+      "url": "https://seekingalpha.com/news/4468505-wells-fargo-suspends-travel-to-china-after-banker-was-refused-exit#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Wells Fargo Is Feeling The Effects Of A Slowing Economy",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.892,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T23:18:30.121389",
+      "url": "https://seekingalpha.com/article/4814403-wells-fargo-stock-feeling-the-effects-of-slowing-economy-reiterate-sell#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Gamco Investors INC. ET AL Lowers Stock Holdings in Wells Fargo & Company $WFC - MarketBeat. Gamco Investors INC. ET AL Lowers Stock Holdings in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.871,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T12:51:47",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQldTY2pPWTJDa1R0bG5lbHltTHNvOGkwclRINloxWkJ1WDhjaTZKNXNIQ2RqQ3N0alp5OXVkU0tJSHM3Yk9VWC1TT2hBcVM3V3JkUGtWNkl1MzhaNGtjd29vNnc4eEdVZW45TGFTZnFlOTljeS1nTkh1WEJ5bmVRQ0NaNHdEa3BqT0NackJxQk42MzllY1ZhVVBLeVpBM2hOWWNWc01oUW9WUkRPTEtDdTh4NEZ3QzZNeXY5RVM4eHE0bXJoMDd1dTJYNlE?oc=5"
+    },
+    {
+      "text": "U.S. Says Government Employee Blocked From Leaving China",
+      "source": "MarketWatch",
+      "sentiment_score": -0.85,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T09:18:23.559807",
+      "url": "https://www.wsj.com/world/china/u-s-says-government-employee-blocked-from-leaving-china-e196e312?mod=mw_quote_news"
+    },
+    {
+      "text": "China Confirms Exit Ban on Wells Fargo Banker",
+      "source": "MarketWatch",
+      "sentiment_score": -0.825,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T04:18:23.597552",
+      "url": "https://www.wsj.com/world/china/china-confirms-exit-ban-on-wells-fargo-banker-9e592a6a?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo Has Strong Growth Potential Without Asset Cap",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.803,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T13:18:30.159006",
+      "url": "https://seekingalpha.com/article/4803891-wells-fargo-strong-growth-potential-without-asset-cap#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Wells Fargo shares snapped six consecutive sessions of losses",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.772,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T07:18:30.572482",
+      "url": "https://seekingalpha.com/news/4479094-wells-fargo-shares-snapped-six-consecutive-sessions-of-losses#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "U.S.-Based Wells Fargo Banker Blocked From Leaving China",
+      "source": "MarketWatch",
+      "sentiment_score": -0.764,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T11:18:23.639376",
+      "url": "https://www.wsj.com/world/china/wells-fargo-banker-china-89824413?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo: Very Tentative, Given Its Near-Term NII Prospects And Valuation",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.672,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T10:18:30.081617",
+      "url": "https://seekingalpha.com/article/4816822-wells-fargo-very-tentative-given-its-near-term-nii-prospects-and-valuation#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Wells Fargo Raises Quarterly Dividend by 12.5%",
+      "source": "MarketWatch",
+      "sentiment_score": 0.558,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T05:18:23.470020",
+      "url": "https://www.marketwatch.com/story/wells-fargo-raises-quarterly-dividend-by-12-5-1783007a?mod=mw_quote_news"
+    },
+    {
+      "text": "Advisor Practice ManagementWells Fargo Expands in Louisiana, Recruits $1.7 Billion Morgan Stanley Team",
+      "source": "MarketWatch",
+      "sentiment_score": 0.555,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T06:18:23.221596",
+      "url": "https://www.barrons.com/advisor/articles/wells-fargo-baton-rouge-recruits-morgan-stanley-c18a0580?mod=mw_quote_news"
+    },
+    {
+      "text": "This may slow the decline of mortgage rates — even if the Fed soon cuts interest rates",
+      "source": "MarketWatch",
+      "sentiment_score": -0.516,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T06:18:23.036109",
+      "url": "https://www.marketwatch.com/story/this-may-slow-the-decline-of-mortgage-rates-even-if-the-fed-soon-cuts-interest-rates-511926e3?mod=mw_quote_news"
+    },
+    {
+      "text": "Stocks look expensive relative to bonds as S&P 500 scores new record high",
+      "source": "MarketWatch",
+      "sentiment_score": 0.507,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T14:18:23.511359",
+      "url": "https://www.marketwatch.com/story/stocks-look-expensive-relative-to-bonds-as-s-p-500-attempts-new-record-high-d4e20864?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo: Higher Interest Rates Create Fixed Income Opportunities",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.504,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T06:18:30.345075",
+      "url": "https://seekingalpha.com/article/4794773-wells-fargo-higher-interest-rates-create-fixed-income-opportunities#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Wells Fargo: Fed Funds Futures Point To Upside In Series DD Preferred Shares",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.449,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T21:18:30.192193",
+      "url": "https://seekingalpha.com/article/4801588-wells-fargo-fed-funds-futures-point-to-upside-in-series-dd-preferred-shares#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Wells Fargo & Company Declares Cash Dividends on Preferred Stock - wellsfargo.com. Wells Fargo & Company Declares Cash Dividends on Preferred Stock&nbsp;&nbsp;wellsfargo.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-15T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUzZEWlF1VkhVUk5FdEtSZ1BsUDVaczNWbVplbFlnZWxtcEdHVFJwUThhWVVRQWhtTkZKdTJhRFFfODBGR3gxcFpXSmpWSVY3Z0daR2hCclRYN004WUs3UUdHZDZlZ2NSS0hUME91UmcxYjdSclByaVFUaEpiVmMwa3hKdzgyWjRHeVJqc0I2N25aaDdBajZfRG5JNzRVc2ZEeE9pQV9RbjhmVUh6S0pBYWlfM1VpWVhxTGQyWE1MTzFRQXJYWkcxSkNVSVA0cW9DVmpWdDMzLWwydw?oc=5"
+    },
+    {
+      "text": "Caisse DE Depot ET Placement DU Quebec Sells 27,754 Shares of Wells Fargo & Company $WFC - MarketBeat. Caisse DE Depot ET Placement DU Quebec Sells 27,754 Shares of Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T22:25:58",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRWg2cVQwX1ROckxTQ3hqdG1aTEFnMzEwcklQVXRFSU5FeWw5MjZNOG5Cc2Vmc0xranRLSlE5VU5LbF96a2JZR3NqTWpnNUxmTlpnX05tQ3FnNGNhSmw1UjJvbm9GNWh6LXRCcHMyemRqMnZsNGthMGlTZXY5SDdjVnotelVQczBEd1MzSU5udmtmaGdKNDgwMXlhVWNDX0pZb0IwM2JDY0VIb19jdmJjX2h2Wi1qS0dINGo3MUFINVdKcHNwQmdWVks1MG12MGRIbWZ0MG5LSHhfVU0?oc=5"
+    },
+    {
+      "text": "Wells Fargo & Company $WFC is Schwerin Boyle Capital Management Inc.'s 3rd Largest Position - MarketBeat. Wells Fargo & Company $WFC is Schwerin Boyle Capital Management Inc.'s 3rd Largest Position&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:04:31",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSllUTGdSZmFpYk5lWklLMDYzTzlRb1ZIOGJxU3FDZVFmVU1QQm5yVjJ4bjRYZDdLOGZaenRtRjlfLVlIaXdubjNXeExRXzAxZC1sSDV4MDU5SjZPVGl0NjQ2U0ZRdVlsWnAtTVpUaFdpZ1hYOFBMY1psNjRMU20zdVRIWV9VR09wcy1wZ2NVblZfb3ZtUEdxQmJYQUItVTJqWWxGSTJDbmttUXp3Z215c0lJZVRwY2ttdEFRV1ZzdUtJU0R4VHhmakxYYUpsVHNIUE1ycGtYbmdHVUItbjhLZ1Jn?oc=5"
+    },
+    {
+      "text": "WCG Wealth Advisors LLC Sells 3,984 Shares of Wells Fargo & Company $WFC - MarketBeat. WCG Wealth Advisors LLC Sells 3,984 Shares of Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T19:09:37",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZjdqRnY3Q2xHaTlLNjU3TFowQjY4aW9yTUJ4SGlmOW92cTQtcHlZNjFhM2lNbzJuSHFCSm1ZQUt5QTV1anZMWWxJV2w2LTJMTTJCQnAyLWtYaWp5NjJNWlpvN2xmc2Y1RmpzS0NmZ1BFOWRzS1NaazhfdFhjZy01UGNheS1pWjIzYUc3T0gtVE9UTDcyUDJZY1hmcS1XLVpaY0tRbVpoRHU5RzJ0S01KcnNpV3dNZDd6Smpab0dta0ZKeTRjRWxCRTQ5M3hOUFlGWVE?oc=5"
+    },
+    {
+      "text": "Wells Fargo & Company $WFC Shares Sold by Corebridge Financial Inc. - MarketBeat. Wells Fargo & Company $WFC Shares Sold by Corebridge Financial Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:27:18",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQX0FkMzNVenlfc01ISnBoU0N1WXBRRU9WQVEtdW5QT1VieDVMYXJ5Z3ZVYTBRUEZwbnVvRGZvNDhrWE10VHlpUlNMcjRQVmZ1ODZVamhZX1JacG5idmdqaU9VbXFFc1VoNm1fMmZMN1cxVDAyWGt1TU5MYnVZMVlXUlJ3azZpcTRLcFZOX2tlTmFPYU9PVHZrcHhsZ0R3cVVnRzIza0xUSmE3WGtwUmFMRWRLVncwS18zZGMwMWkxVG9rY3c?oc=5"
+    },
+    {
+      "text": "Taikang Asset Management Hong Kong Co Ltd Takes Position in Wells Fargo & Company $WFC - MarketBeat. Taikang Asset Management Hong Kong Co Ltd Takes Position in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T22:33:47",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQUjNvRmRlckdlQXNKX0kyRWNoWFU4bk1JdmFLWXV3aHhLd3g0WnpTY2xJV1Z0TDVSSEtOcjI3dUxMc1hOWER1azhHR1RsQlJTNUgzQXozcWdrSzJlSFQ4anBuaFI2RXVwUmc1UmpvNWNWSWlhQzI0cHN5YTdSVGdWLWlfdTJvZHNONVQ1RmpQM2RaWFplZ3pSNnhEVHVIVFJEWmZJVzlvbVllMXh3WlFrSm1WSWN3LVNTWFY2cS1haE5icGd4cjZGQjdOSjZPTE1oTk84MzVLX1RhU0ptaWJ0aUNiZw?oc=5"
+    },
+    {
+      "text": "Quantitative Investment Management LLC Purchases Shares of 24,688 Wells Fargo & Company $WFC - MarketBeat. Quantitative Investment Management LLC Purchases Shares of 24,688 Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:27:26",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPLWV3NHk0SzFBTzlZWE1hV1loSUo5bjRZdk45ZXBzX05jSnp5RndMOTZVUXdTQ3ZBTGJiLU5aUi0wLThBUGQzNWtsbTJJYUdRVnFDVW9hTDcyOHdodkt6eHN1dG96ZFFLQmpIMEdzb0o2YUV6M3VPOGc1Wk5tSDZ5UzhpaE0wMWJOUXd1YWoxQVJnbHZxbEkxOTVGYmVLT2lwWFA2QzBzdmhHSmVGOUpYUkFSYmJISFo1V3hNQUluOW5ySm5xWm9vNHJMd3lWTl80WjVSRkhBZWl1UQ?oc=5"
+    },
+    {
+      "text": "Old West Investment Management LLC Acquires New Holdings in Wells Fargo & Company $WFC - MarketBeat. Old West Investment Management LLC Acquires New Holdings in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T20:27:21",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPLTJJVTYxSzMySFNsZmlFRUU1VjZneWZyVXhvVmY3SmRTNzhVc1B5TzY1U19HdzA2N2xXMGNQYTRkTWhHdThFcWRNTnJWYXk1N2RuTjJRd1lncm5oOTgwaGRnOW1oZnF6aUttX0JMZm1PUWMyWF8yRnFUSDhLOG52NnNrNzF4LTNUSVkyMy0tcS04cWZuREJsV3J1bEpzenFueF9UM21KZ0QwWkhuWG5KTHppRWc2c1dGNGthdS1JVUtpODIzVkxzcENfSHF2TWxXWGZNc3YwbUlhWGgwa3c?oc=5"
+    },
+    {
+      "text": "FORA Capital LLC Takes Position in Wells Fargo & Company $WFC - MarketBeat. FORA Capital LLC Takes Position in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:23:41",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYnVCNHRiMjUtMFpWdXJUc3d2aWRqcW9MalpMYWVhSEJZcWNhWEZYdGZUYVBUck1naWhyNkFYR3lTc3VhVmJMdjlOQzRrRDZZZHZ3NkhNQ2t2WXk4bVQ0UkNsZnQ3bkw2ekpLNFRnZlJLNmlKaDJCRVJmc2JvaU5wOG9kMU1JRE1yS3F3d1VBbHN2T1lqelduT1dsVy15and0LXlmdE1EZFVSRVNTQm1KZFM3U1JJSjIxTTRR?oc=5"
+    },
+    {
+      "text": "OMERS ADMINISTRATION Corp Sells 14,094 Shares of Wells Fargo & Company $WFC - MarketBeat. OMERS ADMINISTRATION Corp Sells 14,094 Shares of Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:02:13",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOVUYzakJ5ZmdFYmFnLVRhSnE2VVpSOGlXVUh4UXJjM2NhdE4xV2Jub292Y2VYdVF0a0RLVG44UU9nVDBBd2dNcEV2NmxaZl9DdFZJVlRpNlllZHRFclJpTWQtdnp4bzd0VXZQN291ZEU0ckJwa3kwRzhYNVlQdDZ6cFdzV3JWWWVhanYtZGtyZ0xUdE9Qb2lFOTlQVUYzdUFXMlFfMTl0STBia0pSVHIwRmxodHlsYUdpWGpVU2wxbkt2eXNSZUktaXZpMUY?oc=5"
+    },
+    {
+      "text": "Beck Bode LLC Invests $1.63 Million in Wells Fargo & Company $WFC - MarketBeat. Beck Bode LLC Invests $1.63 Million in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:50:54",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOelBzOVAxUmZtUkJ6VU1XZmhHU0htVjNxTTFxSk8wdDZ5aUFlZVJVYnpsaFVlUFhFbGY1bjF4MlNLZERyV0kzX2ZySjVoa0hndGhRMmtpdG8wcE4wM2tJT1VJbTdtRHBqREtxaVpLQldKZFlLb2hlYVZzZXFnTVF5RThKclBVQkVheUxIUlMtQnZ6TGVOZndOUHRrblZoQXplSHNTYUJodm85Yi1NTTFuNk9BUkkzSGJha1R5aEhR?oc=5"
+    },
+    {
+      "text": "Lansforsakringar Fondforvaltning AB publ Has $78.74 Million Position in Wells Fargo & Company $WFC - MarketBeat. Lansforsakringar Fondforvaltning AB publ Has $78.74 Million Position in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:34:55",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOQ2RJOU1mSGxBQjBZMkFzSkZwZllYVjB2dmVzYjlBMzVqLXJtcDNhX0xvY3hUU0hKQ21GTzJmd3hBZS1LUFE3d3JldjV0eFZxdEgxYzJqbVk0cjdiSEphN2N3MmpXclFnUzBqREcxTXpNZm9NcWJMUUJ4TWpBdDI3TWtwbm5kX2R1bDItYUNna0ZhVTdVcENIMGFSSFhaMVgyNmVTUmFnNUlfWnNYR01mVmsyaHc1YjRubXFhMUVsbElkb1FwTVFlN0NMR29Ka2FZaDE2R3hDRzUwOHVwMzBKNnpnbmMzZkJtWnc?oc=5"
+    },
+    {
+      "text": "Redwood Investment Management LLC Makes New Investment in Wells Fargo & Company $WFC - MarketBeat. Redwood Investment Management LLC Makes New Investment in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:54:01",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUUhiVW5DQ1dQUkctLXlRcnhZMFVwSFlfOFd3amNQNnUzbnpZbm13enZHR1dlQkFFdDlzVkltcUFHd2xUbWhBbko2TlNrMVYzS0xkbFpuTTBHanFJVk0wMko3Qkc0RUk0NU03RXZoUU5Td2JpYTN4ZXpTSFU5ZnZBSUtnSjI2eEtJalFQVWtFMm1hTTRjZTAwMjRheW1KcWtHNHhham8zbW05YTR0MWVOSHpYeFJTX2N4ZXk3VXZZVUdCVEU0MTZuOGpwZGNfMGJhdUxxTmpuRTRFUQ?oc=5"
+    },
+    {
+      "text": "B. Metzler seel. Sohn & Co. AG Trims Stock Position in Wells Fargo & Company $WFC - MarketBeat. B. Metzler seel. Sohn & Co. AG Trims Stock Position in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:17:54",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOeWFKd25iZERfYk44Ri1NSU81VnAydkpjdmxTNk8wX19odHMwMGJPQUtlR0NGWmVKTTRteHlqNDZIX3lLclZqRm5yYkZGTEhlbDM1cUdEcnBEa083STNCZ0lObm9NaEhiUkRGa2tTSGZkZWFiNGFyZEdiVVFiR2RuR3dGbHNyTlB0clFUYjlWZnI0UHJwNTFmVUxQejc2cmxBZC1xdXZrc3RUcUpCLVdzU00zTUV4SVpTeWlPTVVfbkg0NWtPNFVVRE8xaTIxejg?oc=5"
+    },
+    {
+      "text": "Harvest Portfolios Group Inc. Has $23.83 Million Position in Wells Fargo & Company $WFC - MarketBeat. Harvest Portfolios Group Inc. Has $23.83 Million Position in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T11:37:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVndZaDFueFVGTERBRlRtMHNVVEdydkNOSWFiNG8wZnlpdFpqVXpacnZHeUdqcjVoR3RFOTBsMW9MWm1PUGRlOFNJdC1GU2xmVEFzM2xDdDBjeVpMbjFteGRoVm1fM1dtMjUyY3k2SXVKM19XVkIwSVNjQkpEX3h5RGRaTmRHQ2FsUVQ5YmlvdmJPRlpmelpPT0paOUZNOGNOTEZ4VnhpVV9hNWxJbzBvVFJSMXUzSXhleWZ3ajFqSGVqMXhtTktqMy1ILXFiZ0NfZXpBVg?oc=5"
+    },
+    {
+      "text": "Wells Fargo & Company $WFC Shares Bought by Epoch Investment Partners Inc. - MarketBeat. Wells Fargo & Company $WFC Shares Bought by Epoch Investment Partners Inc.&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:33:19",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxObjB5U0ZYcFFVVDFmNlVUQndDakFTaGJDSlBHb01OWEk1MjJGcmxPaWR4MWRZUlRHOGppeFNlNTBmcGI3SEsxWFJSNW5jVWRRcmtQNU5pMUoxa3htVmM1QUtDSXd1aklHcDN1azA5OWJHWWgwaThnZ3QtRGJNSHRrVDBqMWhKX1Z6QUw4Y2xyRkZDU3o2NGtqMUZMSDdMVE5GSm1PeWRYcDRERTFhbF9ZVXVqa2xwZk50a2ZqVEthb3VOM2lkUmZabUVBaGxGMlY1eDU5Y2J5TU1lRXhBTGpRTkdNVQ?oc=5"
+    },
+    {
+      "text": "Truvestments Capital LLC Acquires 29,618 Shares of Wells Fargo & Company $WFC - MarketBeat. Truvestments Capital LLC Acquires 29,618 Shares of Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:32:18",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWURtdHVtMmhEWUY2enZBMmM5ZWVLd2EySkdFemNIek1qcl9fdlJqSE4zcmlBUUVVQnVGb1JKalZ6c2VhbnZ3ellnRURqUkctWWV1eEp2SS1pcXlxaXFGR1ZzVl9rdUVkWGNQQUs0bVRHaHltZTRxNDQxa3RhRUJmRVBCbENGc09SNUdrQkFyUmtXNnlMcm5tS2d5ZE94anhkdzA4R3JkWnl4cWF0WGhiajl5SDlIRFpJNURTYjI1ZmpnUXROczRlN3AtbXgwR3l5?oc=5"
+    },
+    {
+      "text": "Wealth Preservation Advisors LLC Invests $445,000 in Wells Fargo & Company $WFC - MarketBeat. Wealth Preservation Advisors LLC Invests $445,000 in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:31:50",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOYzBBX0V1bGtONHFvcFZDTlZNbElfTTQ3WVVBQ3V3UDZrZUxnOTNSN185WlRWVXRxSHJoN1E5SE5FbzJHY3ZNcF9hNDhpQ18tWTlHY2RjdjI5NFBqTXBnRG1xWkxXbDZPZEtqcTY2Q1ZzYkVUSTVzaVFlMnViTElOUEp5RFh2YTRENWVjTzlGdnFIR19lZVNUbzR0WW56WC1sXzZubVRacHNXVlZ6MFRWenRmRVJTeDJnUG5UOTBxTk11QXVRejQtc1haSG1GNVF0N3pWRklxS3VHQQ?oc=5"
+    },
+    {
+      "text": "Guggenheim Capital LLC Acquires 71,038 Shares of Wells Fargo & Company $WFC - MarketBeat. Guggenheim Capital LLC Acquires 71,038 Shares of Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:47:09",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcE11T01DVnUya292VmdBUV9SYmxuQmctb3dtNS1lUjIzZmd0QkN2ODFpdjJ4Wnp6Q2RmWm9uY3lXaFdab0gwYUlncnZWOVpibHl0aVpMZlFpaFZIWUtMdkNzNUVvX0E5dFFLOHNzMFZGU3AyYjJnTXNDT1pDQkdXZVl6bFpub3FvYl8td0hKSzJNY3VrdmZ3Qi12Y21KVVM4UE9Tdk1DVkxxTjVPS2VkOENzZ2dZNEJEQU45eWMyMjk1VXR1M3c?oc=5"
+    },
+    {
+      "text": "Wells Fargo: Very Tentative, Given Its Near-Term NII Prospects And Valuation (NYSE:WFC) - Seeking Alpha. Wells Fargo: Very Tentative, Given Its Near-Term NII Prospects And Valuation (NYSE:WFC)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T15:57:45",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPalN2dnNvampZLTMyLTA0VVlPcTQ4eExtNnRIT2l4ZG1NMUZLcEYzdUxFcVlMZG9makpHQlNHak04WXYxNENGWHhuTkN5ZUpIb0Z5YmEwbm1yRFl1SFdYSzFrMEhOZFh1RU1KSWM5QnJ2SXYwb04zMGFvbDFkSF9yZHVEMTdtRkg2c1czcGZJS2ZYYnRVYnU1MzBDU2xKOWtJUmpOYThCMEpFYWk3VDcwSEpQcVlNUQ?oc=5"
+    },
+    {
+      "text": "Wells Fargo & Company $WFC Stake Lessened by Gabelli Funds LLC - MarketBeat. Wells Fargo & Company $WFC Stake Lessened by Gabelli Funds LLC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T12:51:47",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcmNFc3lZWnh1ZWw5QzZtVk40cVhuSjJNQ1BLMF9ETFdoUndHZWVQczFZa0NlS0o5bmtvdHNMNEs0RTY2WEVjNzVBYUgxdExXR181N29sejZzaThhMXNiY0tvamxVT2MtR2NvN3E2UlpQYkZXVzlMRm9qR3lCX090dl8zWk8zSEhSM2JkTlBWOEdXM0F3bkxzTE9hT3hOMWF4VXZDcXViSnU2STdmQ3ZVN2R2LU5PYW53eW1sSmJGU3otQQ?oc=5"
+    },
+    {
+      "text": "How This Advisor Went From a Career in Law and Government to Managing Money. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:18:18.657545",
+      "url": ""
+    },
+    {
+      "text": "Wells Fargo Initiates Coverage on Commercial Metals (CMC) Amid Rebar Price Increases. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T01:18:18.721327",
+      "url": ""
+    },
+    {
+      "text": "Does Wells Fargo's (WFC) Latest Capital Moves Reveal Deeper Priorities for Shareholder Value?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T20:18:18.781216",
+      "url": ""
+    },
+    {
+      "text": "Wells Fargo Adds Private Markets to its UMA. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:18:18.845362",
+      "url": ""
+    },
+    {
+      "text": "Fed Turns Dovish, Signals Upcoming Rate Cut: What This Means for Banks. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T02:18:18.901792",
+      "url": ""
+    },
+    {
+      "text": "Update: Market Chatter: JPMorgan, Other Banks Lobby Regulator for National Standards That Override State Rules. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T01:18:18.961900",
+      "url": ""
+    },
+    {
+      "text": "Do Wells Fargo's (NYSE:WFC) Earnings Warrant Your Attention?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T05:18:19.017061",
+      "url": ""
+    },
+    {
+      "text": "Why Wells Fargo (WFC) Outpaced the Stock Market Today. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T05:18:19.069440",
+      "url": ""
+    },
+    {
+      "text": "Amazon’s Grocery Ambitions Are Enticing. ‘Proceed With Caution,’ Analyst Says.. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:18:19.130425",
+      "url": ""
+    },
+    {
+      "text": "Nucor Stock: Is Wall Street Bullish or Bearish?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:18:19.188924",
+      "url": ""
+    },
+    {
+      "text": "Market Chatter: JPMorgan, Other Banks Lobby Regulator for National Standards That Override State Rules. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T23:18:19.254500",
+      "url": ""
+    },
+    {
+      "text": "Should You Hold Wells Fargo Stock Now for Potential Fed Rate Cuts?. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:18:19.316779",
+      "url": ""
+    },
+    {
+      "text": "Wells Fargo (WFC) Could Be a Great Choice. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:18:19.372000",
+      "url": ""
+    },
+    {
+      "text": "4 Bank Accounts That Will Give You Free Money. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:18:19.425751",
+      "url": ""
+    },
+    {
+      "text": "A Union Push at JPMorgan Reveals Tensions Inside America’s Largest Bank. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:18:19.488523",
+      "url": ""
+    },
+    {
+      "text": "Wells Fargo Invests $1 Million Toward Rural Small Businesses in South Dakota. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:18:19.547956",
+      "url": ""
+    },
+    {
+      "text": "Wells Fargo & Company (WFC) is Attracting Investor Attention: Here is What You Should Know. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:18:19.611891",
+      "url": ""
+    },
+    {
+      "text": "Possible Bearish Signals With Wells Fargo Insiders Disposing Stock. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T23:18:19.665171",
+      "url": ""
+    },
+    {
+      "text": "Cogent (CCOI) Shares Skyrocket, What You Need To Know. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:18:19.725026",
+      "url": ""
+    },
+    {
+      "text": "Aqua Finance and Wells Fargo Inventory Finance Announce Retail Financing Program. Sign in to access your portfolio",
+      "source": "Yahoo Finance",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:18:19.778539",
+      "url": ""
+    },
+    {
+      "text": "Barron'sHow This Advisor Went From a Career in Law and Government to Managing Money",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:18:22.775250",
+      "url": "https://www.barrons.com/advisor/articles/emily-malone-financial-advisor-wells-fargo-a9972bbc?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Emily Malone: How Next-Gen Advisors Can Add Value to Their Teams",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T14:18:22.814569",
+      "url": "https://www.marketwatch.com/video/emily-malone-how-next-gen-advisors-can-add-value-to-their-teams/EF4A3A24-657A-41B9-94B7-F2AF20DE828D?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "‘Ditch the Binder’ and Other Tips for Working With Younger Clients",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:18:22.851248",
+      "url": "https://www.marketwatch.com/video/ditch-the-binder-and-other-tips-for-working-with-younger-clients/3FFE2454-0CBD-4997-A4C0-A92314BB6DF6?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "RetailAmazon’s Grocery Ambitions Are Enticing. ‘Proceed With Caution,’ Analyst Says.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T03:18:23.146392",
+      "url": "https://www.barrons.com/articles/amazon-grocery-margins-stock-90b8b5d4?mod=mw_quote_news"
+    },
+    {
+      "text": "Advisor Practice ManagementTrying to Expand Your Wealth Management Firm? Focus on Organic Growth First.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:18:23.264264",
+      "url": "https://www.barrons.com/articles/wells-fargo-deloitte-financial-advisor-organic-growth-55cb0957?mod=mw_quote_news"
+    },
+    {
+      "text": "BanksBerkshire Might Have Sold More Bank of America Stock",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T11:18:23.305850",
+      "url": "https://www.barrons.com/articles/bank-of-america-berkshire-stock-sale-89611bfb?mod=mw_quote_news"
+    },
+    {
+      "text": "BanksWells Fargo Pays CEO Charles Scharf $30 Million Incentive to Stick Around",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T02:18:23.392680",
+      "url": "https://www.barrons.com/articles/wells-fargo-ceo-scharf-pay-f5c40212?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo to Name CEO Charlie Scharf Chairman",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T03:18:23.429993",
+      "url": "https://www.wsj.com/finance/banking/wells-fargo-to-name-ceo-charlie-scharf-chairman-b04ad2d3?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo (WFC) Launches New Medium-Term Note Programs. Wells Fargo (WFC) Launches New Medium-Term Note Programs",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T12:18:23.687456",
+      "url": "https://www.gurufocus.com/news/3086425/wells-fargo-wfc-launches-new-mediumterm-note-programs/?utm_source=marketwatch&utm_medium=syndication&utm_campaign=headlines&r=4bf001661e6fdd88d0cd7a5659ff9748&mod=mw_quote_news"
+    },
+    {
+      "text": "What To Expect From Wells Fargo Q2 Report After Shares Reach All-Time Highs",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T14:18:30.231656",
+      "url": "https://seekingalpha.com/article/4799335-what-to-expect-from-wells-fargo-q2-report-after-shares-reach-all-time-highs#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Wells Fargo: Stress Test Win Changes Nothing",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T18:18:30.266722",
+      "url": "https://seekingalpha.com/article/4798079-wells-fargo-stress-test-win-changes-nothing#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Wells Fargo Is A Compliance-Constrained Compounder Now Set Free",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T01:18:30.304932",
+      "url": "https://seekingalpha.com/article/4796073-wells-fargo-is-a-compliance-constrained-compounder-now-set-free#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Wells Fargo's Eureka Moment Is Here",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:18:30.381559",
+      "url": "https://seekingalpha.com/article/4793699-wells-fargos-eureka-moment-is-here#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9"
+    },
+    {
+      "text": "Wells Fargo Is Finally Out Of Asset-Cap Jail (Buy)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T06:18:30.419289",
+      "url": "https://seekingalpha.com/article/4792947-wells-fargo-is-finally-out-of-asset-cap-jail-buy#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "Banks lobby to close loophole for stablecoin interest over deposit flight risk",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T08:18:30.461622",
+      "url": "https://seekingalpha.com/news/4489033-banks-lobby-to-close-loophole-for-stablecoin-interest#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Banks lobby US regulators for national standards - report",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T18:18:30.523414",
+      "url": "https://seekingalpha.com/news/4488321-banks-lobby-us-regulators-for-national-standards---report#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Wells Fargo & Company SEC Filing - Quarterly Report (10-Q) August 05, 2025",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:18:30.622650",
+      "url": "https://seekingalpha.com/filing/10266624#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Dividend Roundup: Wells Fargo, IBM, Visa, Occidental Petroleum, and more",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:18:30.681525",
+      "url": "https://seekingalpha.com/news/4476500-dividend-roundup-wells-fargo-ibm-visa-occidental-petroleum-and-more#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Wells Fargo board intends to name CEO Scharf to additional role of chairman",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T00:18:30.723631",
+      "url": "https://seekingalpha.com/news/4476070-wells-fargo-board-intends-to-name-ceo-scharf-to-additional-role-of-chairman#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Wells Fargo announces dates for previously declared dividend",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T21:18:30.768028",
+      "url": "https://seekingalpha.com/news/4473449-wells-fargo-announces-dates-for-previously-declared-dividend#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Wells Fargo & Company (WFC) Q2 2025 Earnings Call Transcript",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T15:18:30.930181",
+      "url": "https://seekingalpha.com/article/4801437-wells-fargo-and-company-wfc-q2-2025-earnings-call-transcript#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10"
+    },
+    {
+      "text": "Wells Fargo & Company 2025 Q2 - Results - Earnings Call Presentation",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T02:18:30.963346",
+      "url": "https://seekingalpha.com/article/4801432-wells-fargo-and-company-2025-q2-results-earnings-call-presentation#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A11"
+    },
+    {
+      "text": "Wells Fargo & CoFollowFollowingFollowFollowFollowFollowWFC:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:18:38.991492",
+      "url": ""
+    },
+    {
+      "text": "Wells Fargo & CoFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:18:39.030204",
+      "url": ""
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T08:18:42.580140",
+      "url": "https://www.bloomberg.com/quote/WFC:US"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Wells Fargo & Company (NYSE:WFC) Trading 1% Higher Following Analyst Upgrade - MarketBeat. Wells Fargo & Company (NYSE:WFC) Trading 1% Higher Following Analyst Upgrade&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 1.0,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T18:52:00",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT2s5c1psVVdaWVNpdEROelZmbEg2VUU5ZnpKNkdEM19YMUZrR2xjN09FVXZ2RS1Fc1k5S19SU2dOYXVEOUJiTGNXWFlaYk55ZkRLVE83ZWsyT3pPeVhPcmpyNWtEcDFHOFRJZHN5SGE2dVlBQnZSa0lEdUFUUE53UW9pOE5ZYXh6Yk1JazRDZzFKbzZqTm53cHhuQWVJSUNjYjdlTEEwdlpDYW1Qb2JoOVRZVHItQ2tP?oc=5"
+    },
+    {
+      "text": "Wells Fargo & Company (NYSE:WFC) Stock Rating Upgraded by Wall Street Zen - MarketBeat. Wells Fargo & Company (NYSE:WFC) Stock Rating Upgraded by Wall Street Zen&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": 1.0,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T03:00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUHNBUHQwYk1PUHNxLVlkbjl1cl9hM0FCQmdfSmJobEhNWUNLQ1RYSGhaNVNacVRYNnF0bE1VSWtYcEhZYThua3BuTjRyTWFwMVFwYXlkY1NHSi12Rmd1WURjUHFLU28yWDc0d1liOXNfOVJCUWN6SEZoX1pEbmFLaktGQ2hoRTY3VG1vNHk4UW93blB1WHpBN2laWmhONjFzNVkyY1AtMURZZ0J6WHRhVnByN184Zw?oc=5"
+    },
+    {
+      "text": "Wells Fargo stock slips after lower 2025 NII guidance",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.955,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T09:18:30.994248",
+      "url": "https://seekingalpha.com/news/4467396-wells-fargo-stock-slips-after-lower-2025-nii-guidance#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A12"
+    },
+    {
+      "text": "Earnings Call InsightsWells Fargo signals aggressive growth in deposits and loans after asset cap removal while maintaining 2025 net interest income target",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.953,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T17:18:30.889872",
+      "url": "https://seekingalpha.com/market-news/earnings-calls-insights"
+    },
+    {
+      "text": "BanksBanks Confront Weakening Economic Data After Strong Run",
+      "source": "MarketWatch",
+      "sentiment_score": -0.938,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T20:18:23.346067",
+      "url": "https://www.barrons.com/articles/bank-stocks-economic-data-jobs-report-330ed9a2?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo & Co. stock outperforms competitors on strong trading day",
+      "source": "MarketWatch",
+      "sentiment_score": 0.936,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T04:18:22.993423",
+      "url": "https://www.marketwatch.com/data-news/wells-fargo-co-stock-outperforms-competitors-on-strong-trading-day-3e8f806c-a0bc83502932?mod=mw_quote_news"
+    },
+    {
+      "text": "Apexium Financial LP Cuts Holdings in Wells Fargo & Company $WFC - MarketBeat. Apexium Financial LP Cuts Holdings in Wells Fargo & Company $WFC&nbsp;&nbsp;MarketBeat",
+      "source": "Google News",
+      "sentiment_score": -0.932,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T21:19:27",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObGh3enJ0bnZYTVJkWnFoRUhaZDBRNGdyUFZmNW1ZdjVuVnUwWktZQ1JkZVhkNThiVlo5TXpIaDdMcTZ0YlFzYXNvNXRSamFiT05zWFNQTnRYNmVxdkhfcnhLZXRZMjFHblRfSEI4ZTJaMlV6OVQteTl5bnJKaTJtV05XcElONnBwSlQxZmZqUGNFTVB1SXE0UHQ0OTNGME5tRXVUY2tVeHB5cDFab3dfTG5XYkZ1TnZBY2FzNkVhdG1vUWJK?oc=5"
+    },
+    {
+      "text": "BanksA Union Push at JPMorgan Reveals Tensions Inside America’s Largest Bank",
+      "source": "MarketWatch",
+      "sentiment_score": -0.928,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T16:18:23.183429",
+      "url": "https://www.barrons.com/articles/jpmorgan-chase-union-ffd01326?mod=mw_quote_news"
+    },
+    {
+      "text": "Wells Fargo suspends travel to China after banker was refused exit",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.922,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T18:18:30.835191",
+      "url": "https://seekingalpha.com/news/4468505-wells-fargo-suspends-travel-to-china-after-banker-was-refused-exit#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Wells Fargo Is Feeling The Effects Of A Slowing Economy",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.892,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T23:18:30.121389",
+      "url": "https://seekingalpha.com/article/4814403-wells-fargo-stock-feeling-the-effects-of-slowing-economy-reiterate-sell#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": -0.037,
+    "last_week_average": -0.025,
+    "overall_average": -0.025,
+    "articles_last_24h": 49,
+    "articles_last_week": 88
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

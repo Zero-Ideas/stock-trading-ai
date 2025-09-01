@@ -1,0 +1,152 @@
+{
+  "symbol": "NVDA",
+  "sector": "Technology",
+  "analysis_timestamp": "2025-08-30T16:29:46.658960",
+  "days_analyzed": 5,
+  "data_quality": {
+    "total_events_found": 3,
+    "average_quality_score": 0.52,
+    "average_relevance_score": 3.0,
+    "source_diversity": 2
+  },
+  "sentiment_metrics": {
+    "overall_score": 28.58,
+    "confidence": "low",
+    "sentiment_distribution": {
+      "positive": 33.3,
+      "negative": 0.0,
+      "neutral": 66.7
+    },
+    "urgency_breakdown": {
+      "high": 33.3,
+      "low": 66.7
+    },
+    "data_quality_metrics": {
+      "weighted_events": 3,
+      "total_weight": 3.19,
+      "average_event_quality": 0.52
+    }
+  },
+  "impact_analysis": {
+    "summary": "Sector sentiment is positive based on 3 high-quality events. Key drivers include ['Other Business News', 'Earnings & Financial Results'].",
+    "event_type_breakdown": {
+      "Earnings & Financial Results": {
+        "count": 1,
+        "avg_sentiment": 2.0,
+        "impact": 6.916874999999999,
+        "avg_impact": 6.916874999999999
+      },
+      "Other Business News": {
+        "count": 2,
+        "avg_sentiment": 0.0,
+        "impact": 3.01,
+        "avg_impact": 1.505
+      }
+    },
+    "geographic_impact": {
+      "Regional": 9.926874999999999
+    },
+    "timeline_pattern": {
+      "trend": "insufficient_data",
+      "data_points": 0
+    },
+    "key_themes": {
+      "top_themes": [
+        "Other Business News",
+        "Earnings & Financial Results"
+      ],
+      "theme_details": [
+        {
+          "theme": "Other Business News",
+          "frequency": 2,
+          "avg_sentiment": 0.0,
+          "sentiment_label": "neutral"
+        },
+        {
+          "theme": "Earnings & Financial Results",
+          "frequency": 1,
+          "avg_sentiment": 2.0,
+          "sentiment_label": "positive"
+        }
+      ]
+    },
+    "confidence_factors": [
+      "Small sample size reduces confidence",
+      "Limited source diversity",
+      "High proportion of urgent events increases reliability"
+    ]
+  },
+  "risk_analysis": {
+    "overall_risk_level": "minimal",
+    "risk_score": 0.0,
+    "key_risk_factors": [],
+    "risk_distribution": {
+      "regulatory": 0,
+      "market": 0,
+      "operational": 0,
+      "geopolitical": 0
+    }
+  },
+  "trend_analysis": {
+    "trend": "insufficient_data",
+    "pattern": "unknown"
+  },
+  "top_events": [
+    {
+      "title": "Nvidia Earnings Live : Wall Street Overwhelmingly Bullish on Chipmaker Stock Ahead of Quarterly Report",
+      "date": "20250827",
+      "source": "investopedia.com",
+      "url": "https://www.investopedia.com/nvidia-earnings-live-coverage-q2-fy2026-ai-chipmaker-11799006",
+      "sentiment": 2.0,
+      "sentiment_label": "positive",
+      "event_type": "Earnings & Financial Results",
+      "urgency": "high",
+      "impact_score": 6.92,
+      "sector_relevance": 3.0,
+      "content_quality": 0.55
+    },
+    {
+      "title": "2 AI Chip Stocks Poised to Win on Wall Street Next",
+      "date": "20250827",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/2-ai-chip-stocks-poised-163837775.html",
+      "sentiment": 0.0,
+      "sentiment_label": "neutral",
+      "event_type": "Other Business News",
+      "urgency": "low",
+      "impact_score": 1.6,
+      "sector_relevance": 3.0,
+      "content_quality": 0.51
+    },
+    {
+      "title": "1 Bargain Artificial Intelligence ( AI ) Stock You Cant Afford to Miss",
+      "date": "20250825",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/1-bargain-artificial-intelligence-ai-091500568.html",
+      "sentiment": 0.0,
+      "sentiment_label": "neutral",
+      "event_type": "Other Business News",
+      "urgency": "low",
+      "impact_score": 1.41,
+      "sector_relevance": 3.0,
+      "content_quality": 0.51
+    }
+  ],
+  "methodology_notes": {
+    "filtering_approach": "Multi-layered filtering using content quality, source reliability, and sector relevance",
+    "sentiment_calculation": "Weighted average based on event impact, quality, and sector relevance",
+    "confidence_factors": "Based on sample size, source diversity, content quality, and event urgency",
+    "limitations": [
+      "Analysis limited to English-language sources",
+      "Relies on GDELT event database availability",
+      "Sentiment analysis may miss nuanced context",
+      "Recent events may be weighted more heavily"
+    ],
+    "strengths": [
+      "Advanced content filtering reduces noise",
+      "Multi-dimensional relevance scoring",
+      "Quality-weighted sentiment calculation",
+      "Comprehensive risk and trend analysis"
+    ]
+  }
+}

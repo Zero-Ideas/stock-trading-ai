@@ -1,0 +1,422 @@
+{
+  "symbol": "UNH",
+  "company_name": "UnitedHealth Group Incorporated",
+  "analysis_timestamp": "2025-08-29T14:13:42.695100",
+  "total_sources_analyzed": 37,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.015,
+    "average_compound": 0.164
+  },
+  "sentiment_distribution": {
+    "positive": 14,
+    "neutral": 19,
+    "negative": 4,
+    "positive_percentage": 37.8,
+    "negative_percentage": 10.8
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": 2.51
+  },
+  "sources": {
+    "Google News": 15,
+    "Bloomberg": 4,
+    "MarketWatch": 10,
+    "Seeking Alpha": 8
+  },
+  "sample_articles": [
+    {
+      "text": "UnitedHealth shares log best day since 2020 after Buffett's new stake is revealed - CNBC. UnitedHealth shares log best day since 2020 after Buffett's new stake is revealed&nbsp;&nbsp;CNBC",
+      "source": "Google News",
+      "sentiment_score": 0.915,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-15T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQb09fbDM4M3p4bTBDU3pGZVNzN1RFdWNpbGtJNkFmQUdiZ3lxcWZVdC1qd1Y4XzBVbHl6SVRaTHdPYU1hVzNaZmlqbzU3b3JrSXFPQl9VbnVQN1VXaHEybENSXzZfUlJMUFdJQkJRdVpzcldaZUkteG1CT0FrS3NtX2NiNmlPandrN1NScUdLWnhvcFY1R2E2TE5UYzRxS011S1FlMER4VXhVakRTNVQxeENoVmhWMFJ2NWZiR0dqVW_SAcYBQVVfeXFMTTJ5UFVQU2VnRV9zaXRhRHdSd3FxLW9xUlJ0dkJDRERPTlNoRE9yaUp5czE2NHVRVVd0S05WTmh4YXVQeUxBMk9GTkhsSXVmbDl1RjNYZjllQkpXUlA0RmpCRzlYVk81WFo3ZTFDZE5jRHU3ZENVVDFQem5HV2sxa3AtVlhWN1NCSHoxOVU3akM5TllRZWxRcXpqbWNoRWhCQjJPbDZUQlFzRldNYTZnYTgtOGpYNHRfV0pBT1NsVHJLMTd4LWN3?oc=5"
+    },
+    {
+      "text": "Health Care Down as Rotation Out of Sector Continues -- Health Care Roundup",
+      "source": "MarketWatch",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T23:13:14.975556",
+      "url": "https://www.marketwatch.com/story/health-care-down-as-rotation-out-of-sector-continues-health-care-roundup-affd0eaf?mod=mw_quote_news"
+    },
+    {
+      "text": "Health Care Ticks as Investors Remain Wary -- Health Care Roundup",
+      "source": "MarketWatch",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T01:13:14.975556",
+      "url": "https://www.marketwatch.com/story/health-care-ticks-as-investors-remain-wary-health-care-roundup-1ae1c14d?mod=mw_quote_news"
+    },
+    {
+      "text": "UnitedHealth: A Generational Buying Opportunity (NYSE:UNH) - Seeking Alpha. UnitedHealth: A Generational Buying Opportunity (NYSE:UNH)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.681,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T12:09:18",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMTR1UUlOdmpIbmhLWHByb01pUTVQWEpiNzM1R0gwYi1uNGE0RlVkSnItd0NrblRLUmpWdU1ZbjdfWVVSN25tWFpqdW5La2VyZ1dSaDVYTFpUNld1NXRoLUVqUXpGdW9qMlJLSUl5MHBZX0lEWU9GNmNVRERabDJTS0V6NFd3SnQyc09XTXhYY3Y?oc=5"
+    },
+    {
+      "text": "UnitedHealth: One Of The Best In The Medical Services Industry",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T09:13:21.426130",
+      "url": "https://seekingalpha.com/article/4816004-unitedhealth-one-of-the-best-of-medical-services-industry#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "UnitedHealth: One Of The Best Risk-To-Reward Ratio On The Market",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T01:13:21.426130",
+      "url": "https://seekingalpha.com/article/4815612-unitedhealth-one-of-the-best-risk-to-reward-ratio-on-the-market#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Dow's nearly 125-point rally highlighted by gains for shares of Salesforce, UnitedHealth",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T21:13:14.974551",
+      "url": "https://www.marketwatch.com/data-news/dow-s-nearly-125-point-rally-highlighted-by-gains-for-shares-of-salesforce-unitedhealth-8fa2f4d4-3b8fd0bcfe17?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow up 380 points on gains for shares of Boeing, Honeywell",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T07:13:14.975556",
+      "url": "https://www.marketwatch.com/data-news/dow-up-380-points-on-gains-for-shares-of-boeing-honeywell-f9c3d7a7-3120edc5fe02?mod=mw_quote_news"
+    },
+    {
+      "text": "7 Hot Stocks Take Over As Palantir Drops In Troubling Sell-Off",
+      "source": "MarketWatch",
+      "sentiment_score": -0.542,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T04:13:14.976557",
+      "url": "https://www.investors.com/etfs-and-funds/sectors/sp500-stocks-take-over-as-palantir-drops-in-troubling-ai-sell-off/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "UnitedHealth's shares fell after news of escalating investigations - Finimize. UnitedHealth's shares fell after news of escalating investigations&nbsp;&nbsp;Finimize",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T21:01:53",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fSGJXQ2NEa1JyeDBCT09FdVFfYlJyVnJKSWhVd2NpdHMxZV8wMlJaTk5pU2NJQU83NWNJUHRlakRVQ0I2QzlRdTFpOW5XOTMwSUtv?oc=5"
+    },
+    {
+      "text": "Buffett's Berkshire acquires 5 million shares in UnitedHealth - Reuters. Buffett's Berkshire acquires 5 million shares in UnitedHealth&nbsp;&nbsp;Reuters",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-14T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVGhvVnZOaFVYTDRNQUVrWU9kRGFNdE5aZ3FCdHZTM094NnNFYTJseFZLUFl4TWttTjR2b2lsNmw2SGxKN0ZrWkFjNHBWYXprVHp4NlhVZE1qQ21IMkxvY0k4VFRuc2FzRG5WRlVUcGhkTFRyd0c1V0FRV0JXYmpWU0VxdlRFNUUzaUhOYWhqYUJJNHFmcTk5My1uc2c3ZEZTQ2VLTzRycHA0YmY3TzVVTVZUXzBic3MwZkNVN05Ya1JMbEVMQXR0Sg?oc=5"
+    },
+    {
+      "text": "UnitedHealth Stock: The Political Risk Means Sell The Bounce (NYSE:UNH) - Seeking Alpha. UnitedHealth Stock: The Political Risk Means Sell The Bounce (NYSE:UNH)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-21T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZDZ3cUVrNlJwbVRPcHNoWkg0dGdKaWNfLWRMc0JteTkyc0ZMNFh4bWh0Y2ROaUFSeGN1YjhwTEZJR01BQ3pzN2tWcXV6TEFIRWYwYWlnUG1uN3ZKMG92UXMydE42QlN4LVdFYnRaWkktQ0NxVWlOalAzMFlpeEpCWWg2OVVKU0dOLWFQRW10STd5TnNx?oc=5"
+    },
+    {
+      "text": "The Market Oversold UnitedHealth's Troubles",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.459,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T18:13:21.426130",
+      "url": "https://seekingalpha.com/article/4815947-the-market-oversold-unitedhealths-troubles#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "UnitedHealth: A Generational Buying Opportunity",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.421,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T11:13:21.425128",
+      "url": "https://seekingalpha.com/article/4817075-unitedhealth-a-generational-buying-opportunity#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Warren BuffettBerkshire Hathaway Has Had a Tough Summer. Will It Get a Buffett Swansong Boost?",
+      "source": "MarketWatch",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T08:13:14.976557",
+      "url": "https://www.barrons.com/articles/warren-buffett-berkshire-hathaway-stock-af6bc427?mod=mw_quote_news"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T07:13:38.159278",
+      "url": "https://www.bloomberg.com/quote/UNH:US"
+    },
+    {
+      "text": "UnitedHealth Group: The Risk Means Sell The Bounce",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.273,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T22:13:21.426130",
+      "url": "https://seekingalpha.com/article/4815821-unitedhealth-group-the-risk-means-sell-the-bounce#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "$6.5 Billion Medical Cost Surge: UnitedHealth Group Faces Credit Rating Cut as Medicare Expenses Soar - Stock Titan. $6.5 Billion Medical Cost Surge: UnitedHealth Group Faces Credit Rating Cut as Medicare Expenses Soar&nbsp;&nbsp;Stock Titan",
+      "source": "Google News",
+      "sentiment_score": 0.25,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T20:18:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOejlGWFVIRXhRVG9rT1N6OUs4UmktYVFWVzRnRk1pbHk3U2c3WW1YUml4NllnckxmZjBEMl9HNW5POGhERUNBNGowVzdwV2VwVzBxNmhyQ09BdldVR3pmVGVZTmh5ZVp0NlpwRHptaU5XbWRUZS1MZVlORlFKTzRKY2lOV0U1aGFBb3prcnhOZEpXRUpNMDhRMkJOOUdiZUxpLWk4Zk9wM3VJQl91aE1B?oc=5"
+    },
+    {
+      "text": "MarketsThese Were the Best & Worst S&P 500 Stocks in August",
+      "source": "MarketWatch",
+      "sentiment_score": 0.026,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T00:13:14.974551",
+      "url": "https://www.barrons.com/articles/best-worst-s-p-500-stocks-august-intel-dc9be007?mod=mw_quote_news"
+    },
+    {
+      "text": "Here’s What Pulled Down UnitedHealth (UNH) in Q2 - Yahoo Finance. Here’s What Pulled Down UnitedHealth (UNH) in Q2&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:49:13",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdk5tdkFBWXNLSV9DRW1IMjBoYUZOM3NYbkhjRzk2M1g3NTl1cFNvWTNjamE2OFRFR1dCbTZWTFRBX3NSOGZ1V3BPQ0VOYWd5bDRHMjhTYW1uRGlnTHViU3ZFNFNMS2l4RVYwN25aa0pRSlZBOXJoOXZ2QWJEUk9vQnZ6Zw?oc=5"
+    },
+    {
+      "text": "UnitedHealth Group (UNH) Laps the Stock Market: Here's Why - Nasdaq. UnitedHealth Group (UNH) Laps the Stock Market: Here's Why&nbsp;&nbsp;Nasdaq",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T21:45:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOM1V1cGhvRXNTbk5mUUMtbzVMRklqcGhnaENnLVc5c0ZoTkMxQlE3Um54WDNKRnBMcy1lQTVPQmFZcmptRmt2cEVWZnZNOGd4eWV6aE9XZkI4Y2kwV2V1VVIwS2dhdmRlMU9FMTVHWUxZR01WRm9fWU5zMHFFc1hVdWNua1d6cDB6RlE?oc=5"
+    },
+    {
+      "text": "Is UnitedHealth Stock Underperforming the S&P 500? - MSN. Is UnitedHealth Stock Underperforming the S&P 500?&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:13:33",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQk0wNE9qT0hSSWJza3JuY2pBMk5iNWcxSGlKTlJ5M19HTjJ3MThPQUZaWkItbnU0cFl1Y0dFSVJMUWFDdFRsSlNTRWc1OTdTLUZMV09IUWZ6YzRqcnZ5eWROZWtvanRmdzNSUEYtMXdLUi1wSU5FTGtVMlpVT1pTMk1uenl2RkYzTTNwbmFnZFVZdmM4YVVhTXVsRk4yNHhCb1BHd2R1VXJpbDJWR2NHUnpjcHYzaU9HLUNLczBqbHVwSFlwT3c?oc=5"
+    },
+    {
+      "text": "How Unitedhealth Group Incorporated (de) (UNH) Affects Rotational Strategy Timing - news.stocktradersdaily.com. How Unitedhealth Group Incorporated (de) (UNH) Affects Rotational Strategy Timing&nbsp;&nbsp;news.stocktradersdaily.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T09:00:02",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNVzRPa0pRZDJtSktjTHZ6Tng0X2hXSnJHV2hoa28wNFpuZ1FTVVRqWmJnNmdLci1XbXdPM1R1ZmRpc0Zpc0lZbWI0MVREcUtFQjVZazY1YlIxbHIzNUlQLUpBeTFsaWZSQ2hqN3BfcE53Z3VLRkVETkJ3X19ZLVVla0lvUGJhYUJ2eUVEcVZhV29WbVRMV0VGdWtCTEQ1YVZBZVdvZUJsenVsZUE4M20tOW5BalRKYWd5U094VnRkQ3VTeUVNNzVQRmx0bDNTTkpLVXVnY0NacVFxbi1GQUdQSWR5UVFEelZ0QzZaUzBubw?oc=5"
+    },
+    {
+      "text": "UnitedHealth: 2026 Repricing Will Be A Game Changer (NYSE:UNH) - Seeking Alpha. UnitedHealth: 2026 Repricing Will Be A Game Changer (NYSE:UNH)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T15:59:25",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeEM3dlpTZExvNXpmaDVSdGlRUW5GcmVSNFZOWnZrNUdjRTEtZGhZMFM5XzAzVFVnbndYN2dmRzF1UHQxcHRpc25TQ20tdzlyVzM3UkhmMFZjU2lEWFR2SzNmc0JEVFU2Zmp6eXl2czJyZmlNZWZWVkZKanBUSVNMaGxNV1NhbjlwZW5NN3dwMC1iM29vS0E?oc=5"
+    },
+    {
+      "text": "UnitedHealth: UNH Stock To $600? - Forbes. UnitedHealth: UNH Stock To $600?&nbsp;&nbsp;Forbes",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T14:10:46",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM18tUWdkMjl4Rzd5THBkZW1LMVpsN3RCQnVZVTZvc2pTd3doSmZmZjRmeDVfaU10MTNDUmttbDlKcnEzYUlFZUsxeFVqWk9mQzU0bklzeE9jOHdSVzNjTGVqdUxrM3lWY1hyQURQTmRMVm10UWNpNjd6cFNkRHVqMExjZVpoTHdrbVRaTWFmRXZXZw?oc=5"
+    },
+    {
+      "text": "Bernstein Reduces PT on UnitedHealth Group (UNH) Stock - Yahoo Finance. Bernstein Reduces PT on UnitedHealth Group (UNH) Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-07T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQLWQybWJubVZ2eWlhSEtyd2xONklnTGh3OV8xdTdrWHVaTTBVWElsVXRsTi1kSV8yZEJjWFJkTHlnQW1QREtpU0JwZkdhbXNibnhtNTRtN2JmRGx3cVB2cDhzQVhUSTZNZlU3ejE2YlN0QkcwU1c4R2ZGTGkwTzRkV2pZZGgybTNyU1ZzaUFB?oc=5"
+    },
+    {
+      "text": "UnitedHealth Group Incorporated (UNH) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo Finance. UnitedHealth Group Incorporated (UNH) Is a Trending Stock: Facts to Know Before Betting on It&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-07T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZXJUbVEtQUlnU1dnVExCTUR3UmRIYUV1NWhQUHlNRHhSWXhWZjc4SmFxb0NHYzFscUVNblpGUkp2VUZ0ZDN4MWhRdS1UZTV5YlFJRzRxUEI2T2pGTUs0dEs3eHJTUlBrYWdRbTBUNl9jZnBWWU5kQnM2azdHNHBEcTRGb1BlODU5ZFNLbGVxOEVTbnJj?oc=5"
+    },
+    {
+      "text": "Mizuho Keeps Buy Rating on UnitedHealth Group (UNH) Stock - Yahoo Finance. Mizuho Keeps Buy Rating on UnitedHealth Group (UNH) Stock&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-17T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNa2ZVcFNxQkhlUjctTzExNGR3akpmVGRnM05iVUhYMG5UVUxDNzgwVFk0WDJqbTZhSVBrc3BxX3pRT2pPT3k5bThuMFg5c0MtQWx5MEVEYjU2Qk03OUptWjZ5ajI4VUFwNktFa0s5emk4RnJxNEI1RHVHVS1NNEkxSTJESzh2dG9qRHc?oc=5"
+    },
+    {
+      "text": "Biotech and PharmaGilead Needs Insurers to Cover New HIV Prevention Shot. CVS Isn’t Paying.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T20:13:14.975556",
+      "url": "https://www.barrons.com/articles/gilead-insurers-cvs-hiv-yeztugo-79e758ef?mod=mw_quote_news"
+    },
+    {
+      "text": "HealthcareHealthcare Stocks Are the Cheapest They‘ve Been in 30 Years—and a Turnaround May Have Already Started",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:13:14.976557",
+      "url": "https://www.barrons.com/articles/healthcare-stocks-buy-unitedhealth-eli-lilly-sector-23ee0c9a?mod=mw_quote_news"
+    },
+    {
+      "text": "UnitedHealth Group Names Lead Independent Director",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T19:13:14.976557",
+      "url": "https://www.wsj.com/business/c-suite/unitedhealth-group-names-lead-independent-director-2186a8b9?mod=mw_quote_news"
+    },
+    {
+      "text": "UnitedHealth: 2026 Repricing Will Be A Game Changer",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T23:13:21.425128",
+      "url": "https://seekingalpha.com/article/4816516-unitedhealth-2026-repricing-will-be-a-game-changer#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "UnitedHealth: Contrarians Should Have A Stomach For Volatility Until 2026",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T03:13:21.425128",
+      "url": "https://seekingalpha.com/article/4816040-unitedhealth-contrarians-should-have-a-stomach-for-volatility-until-2026#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "UnitedHealth: With Buffett Or Not, The Rally Is On",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T08:13:21.426130",
+      "url": "https://seekingalpha.com/article/4815587-unitedhealth-with-buffett-or-not-the-rally-is-on#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "UnitedHealth Group IncFollowFollowingFollowFollowFollowFollowUNH:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T23:13:32.571847",
+      "url": ""
+    },
+    {
+      "text": "UnitedHealth Group IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:13:32.572848",
+      "url": ""
+    },
+    {
+      "text": "UnitedHealth Group Inc",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T06:13:38.160278",
+      "url": "https://www.bloomberg.com/quote/UNH:US"
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "UnitedHealth shares log best day since 2020 after Buffett's new stake is revealed - CNBC. UnitedHealth shares log best day since 2020 after Buffett's new stake is revealed&nbsp;&nbsp;CNBC",
+      "source": "Google News",
+      "sentiment_score": 0.915,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-15T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQb09fbDM4M3p4bTBDU3pGZVNzN1RFdWNpbGtJNkFmQUdiZ3lxcWZVdC1qd1Y4XzBVbHl6SVRaTHdPYU1hVzNaZmlqbzU3b3JrSXFPQl9VbnVQN1VXaHEybENSXzZfUlJMUFdJQkJRdVpzcldaZUkteG1CT0FrS3NtX2NiNmlPandrN1NScUdLWnhvcFY1R2E2TE5UYzRxS011S1FlMER4VXhVakRTNVQxeENoVmhWMFJ2NWZiR0dqVW_SAcYBQVVfeXFMTTJ5UFVQU2VnRV9zaXRhRHdSd3FxLW9xUlJ0dkJDRERPTlNoRE9yaUp5czE2NHVRVVd0S05WTmh4YXVQeUxBMk9GTkhsSXVmbDl1RjNYZjllQkpXUlA0RmpCRzlYVk81WFo3ZTFDZE5jRHU3ZENVVDFQem5HV2sxa3AtVlhWN1NCSHoxOVU3akM5TllRZWxRcXpqbWNoRWhCQjJPbDZUQlFzRldNYTZnYTgtOGpYNHRfV0pBT1NsVHJLMTd4LWN3?oc=5"
+    },
+    {
+      "text": "Health Care Down as Rotation Out of Sector Continues -- Health Care Roundup",
+      "source": "MarketWatch",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T23:13:14.975556",
+      "url": "https://www.marketwatch.com/story/health-care-down-as-rotation-out-of-sector-continues-health-care-roundup-affd0eaf?mod=mw_quote_news"
+    },
+    {
+      "text": "Health Care Ticks as Investors Remain Wary -- Health Care Roundup",
+      "source": "MarketWatch",
+      "sentiment_score": 0.751,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T01:13:14.975556",
+      "url": "https://www.marketwatch.com/story/health-care-ticks-as-investors-remain-wary-health-care-roundup-1ae1c14d?mod=mw_quote_news"
+    },
+    {
+      "text": "UnitedHealth: A Generational Buying Opportunity (NYSE:UNH) - Seeking Alpha. UnitedHealth: A Generational Buying Opportunity (NYSE:UNH)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.681,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T12:09:18",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMTR1UUlOdmpIbmhLWHByb01pUTVQWEpiNzM1R0gwYi1uNGE0RlVkSnItd0NrblRLUmpWdU1ZbjdfWVVSN25tWFpqdW5La2VyZ1dSaDVYTFpUNld1NXRoLUVqUXpGdW9qMlJLSUl5MHBZX0lEWU9GNmNVRERabDJTS0V6NFd3SnQyc09XTXhYY3Y?oc=5"
+    },
+    {
+      "text": "UnitedHealth: One Of The Best In The Medical Services Industry",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T09:13:21.426130",
+      "url": "https://seekingalpha.com/article/4816004-unitedhealth-one-of-the-best-of-medical-services-industry#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "UnitedHealth: One Of The Best Risk-To-Reward Ratio On The Market",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T01:13:21.426130",
+      "url": "https://seekingalpha.com/article/4815612-unitedhealth-one-of-the-best-risk-to-reward-ratio-on-the-market#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Dow's nearly 125-point rally highlighted by gains for shares of Salesforce, UnitedHealth",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T21:13:14.974551",
+      "url": "https://www.marketwatch.com/data-news/dow-s-nearly-125-point-rally-highlighted-by-gains-for-shares-of-salesforce-unitedhealth-8fa2f4d4-3b8fd0bcfe17?mod=mw_quote_news"
+    },
+    {
+      "text": "Dow up 380 points on gains for shares of Boeing, Honeywell",
+      "source": "MarketWatch",
+      "sentiment_score": 0.557,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T07:13:14.975556",
+      "url": "https://www.marketwatch.com/data-news/dow-up-380-points-on-gains-for-shares-of-boeing-honeywell-f9c3d7a7-3120edc5fe02?mod=mw_quote_news"
+    },
+    {
+      "text": "7 Hot Stocks Take Over As Palantir Drops In Troubling Sell-Off",
+      "source": "MarketWatch",
+      "sentiment_score": -0.542,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T04:13:14.976557",
+      "url": "https://www.investors.com/etfs-and-funds/sectors/sp500-stocks-take-over-as-palantir-drops-in-troubling-ai-sell-off/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "UnitedHealth's shares fell after news of escalating investigations - Finimize. UnitedHealth's shares fell after news of escalating investigations&nbsp;&nbsp;Finimize",
+      "source": "Google News",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T21:01:53",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1fSGJXQ2NEa1JyeDBCT09FdVFfYlJyVnJKSWhVd2NpdHMxZV8wMlJaTk5pU2NJQU83NWNJUHRlakRVQ0I2QzlRdTFpOW5XOTMwSUtv?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.282,
+    "last_week_average": 0.165,
+    "overall_average": 0.164,
+    "articles_last_24h": 13,
+    "articles_last_week": 31
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

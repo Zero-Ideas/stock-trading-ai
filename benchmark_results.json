@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-09-01T13:23:42.797786",
+  "symbol": "AAPL",
+  "target_articles": 25,
+  "collected_articles": 19,
+  "total_time": 60.290775775909424,
+  "analysis_time": 57.18598937988281,
+  "time_per_article": 3.0097889147306742,
+  "articles_per_second": 0.3322492135929351,
+  "working_sources": 4,
+  "total_sources": 4,
+  "url_resolution_stats": {},
+  "source_breakdown": {
+    "Google News": {
+      "count": 10,
+      "avg_sentiment": 0.1454890768527985
+    },
+    "MarketWatch": {
+      "count": 5,
+      "avg_sentiment": 0.16865198612213134
+    },
+    "NewsAPI (Yahoo Entertainment)": {
+      "count": 3,
+      "avg_sentiment": -0.1802609165509542
+    },
+    "Yahoo Finance": {
+      "count": 1,
+      "avg_sentiment": 0.789422163963318
+    }
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "symbol": "META",
+  "company_name": "Meta Facebook",
+  "analysis_timestamp": "2025-08-29T14:11:30.437250",
+  "total_sources_analyzed": 34,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Neutral",
+  "sentiment_scores": {
+    "average_polarity": 0.018,
+    "average_compound": 0.017
+  },
+  "sentiment_distribution": {
+    "positive": 9,
+    "neutral": 18,
+    "negative": 7,
+    "positive_percentage": 26.5,
+    "negative_percentage": 20.6
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Bloomberg": 4,
+    "Seeking Alpha": 8,
+    "Google News": 15,
+    "MarketWatch": 7
+  },
+  "sample_articles": [
+    {
+      "text": "Facebook is Dead; Long Live Meta - Stratechery by Ben Thompson. Facebook is Dead; Long Live Meta&nbsp;&nbsp;Stratechery by Ben Thompson",
+      "source": "Google News",
+      "sentiment_score": -0.863,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-14T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPb3dPbVJ5MU95TkxobnJ4NnpleVVwNE9MYzFEdmhZUUcyeUw0bUVtRExDRmt4S0E2X1R1aWNwby1XVjcyWFJTckw5T0N4T2sxclhBUVlsMWI4M245UHpPLUxvUjJPYmxEZE5jZHZaUXY2R3lQQnFZbDF5clJIcDFaM044WDFkUmVBTzg1bg?oc=5"
+    },
+    {
+      "text": "Meta Stock Slides Toward Worst Week Since April Amid AI Shake-Up - Investor's Business Daily. Meta Stock Slides Toward Worst Week Since April Amid AI Shake-Up&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": -0.848,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-21T20:25:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbjg2Y3NPUk1OUkg4cmh3bmhUTkVkSVh1VUljRy1HTi16V25MQVU2d0laemtvU0lGMjg3U0x3R3JkeE1iQjVCMjVGZ3NjQkZQTmE5ZlVNNHBhUE5JRGU0MlRGSGxNVlZaTzhpdF9RczZtYmtUMVZhMTZQclQzMnUtUw?oc=5"
+    },
+    {
+      "text": "Meta Stock Takes A Breathtaking Leap. What's In Mark Zuckerberg's Facebook AI Vision? - Investor's Business Daily. Meta Stock Takes A Breathtaking Leap. What's In Mark Zuckerberg's Facebook AI Vision?&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.81,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-07-24T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQ0c2SHVnZ1NmMGFlNE0zUUdkaGtkNEk2Ni1pR0F4YVRRRm5qTmVmMWxINGNFZEZOUVRJalV1UUJibFNlODZVektTbUZwTWxUWUNJTDFOem0yWWtaT3dJMHlyYXd0ZTFhZS1GdHBlU29FMnpDQW9HME1ING1NaTQxTFJmUmRvb1dNMktXOUdBSUdMOHg4ZHlBb2lhUXdxd2hY?oc=5"
+    },
+    {
+      "text": "Is Meta Stock A Buy? AI Push Powers Breakout With Tariff Threat Easing - Investor's Business Daily. Is Meta Stock A Buy? AI Push Powers Breakout With Tariff Threat Easing&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": -0.732,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-06-10T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVzZNOEJKNmdUWVVrR2ctaFlTSWdoYzVoeXRKcHByZmU1WDREQTNaVlR1RERJdkN5WU1rS3VpeG80b1B2ZG96RUVXWF9TWkhQYTMyaW96WjlZcTc4UW9wSXItYks1d1BvUHIyWnBHUzZfNi1jWmMwenUxN3Q4ZDM2YU5ldVZOWEtQcWJtdjN2blJ0RktzeE1NQ2ZwTQ?oc=5"
+    },
+    {
+      "text": "Cantor Calls Meta (META) Its Favorite Megacap Stock, Reiterates $920 Price Target - Insider Monkey. Cantor Calls Meta (META) Its Favorite Megacap Stock, Reiterates $920 Price Target&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.718,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T16:04:18",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOLXBBMmV1c1ZuOHRwSTZldE41TnZOdVlKclZDalRVNjlOQ1F5VWhoTDIzaEpRTFd1T19rY2NjYXRvVzh4Z2NaRHd4STlzNnVXMmFYZGYtTzRKSm1oNFo0Sm4wdW5HczVLQUdXNmg4SDctaS1OaTBaaHF4b3hWcjhxZTV6MUVfM2VuUmVUTEhYN2NqQTZhUGRPZGZrUmxnT19Gby1BdUVsTUhDNmh4dkl3c1g4ejF0ekpUWXZ0R3Z30gHGAUFVX3lxTE8xZnloQ3dVYmVNNTRnVXBMQ1dNTVExXzFwTkpvdFFCNFo0ZFdfb2Itc2xvY185T0xrajkycXE4TlBYc3BkMXNRQXhuQmp2MU9IRkN5VlZYQmhONUZFdjgteVdQMV9heU5NYVZWcGFQVzEtU0R6YVlsSG14WU5fdWgyNXd4YUNRN0Z3VU82cFkzLXNDSXJIYjVycXdESVVXR3YyX25kOUVBelZ3OFJaUmJrSlZUYVpNQUJtaHVoVnBfMHZnSDhoZw?oc=5"
+    },
+    {
+      "text": "Meta Stock Rockets On Results. 'What Was That? Wow!' - Investor's Business Daily. Meta Stock Rockets On Results. 'What Was That? Wow!'&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.695,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-07-31T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQzVhczdNSGVhcjlLVmJZc0M5aW94SE8xTkMzTzJfNWJLWkpVT0JZQWJYOWw2U1E5VjBHeDIyQnQ3eTRGZmxNZTFsMUlyazNRSjNTdlNqVk42c3NfSFl6a1F0SmtfaVBXODJQeVFQTHhmYURZOGZYdGhHWk1ta204UXVGUl81WllGRU81S0RsZFY4V18tZVdTdA?oc=5"
+    },
+    {
+      "text": "Software’s Death by AI Has Been Greatly Exaggerated",
+      "source": "MarketWatch",
+      "sentiment_score": -0.68,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T04:11:08.322532",
+      "url": "https://www.wsj.com/finance/softwares-death-by-ai-has-been-greatly-exaggerated-b639c0cd?mod=mw_quote_news"
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T12:11:08.321028",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    },
+    {
+      "text": "Leverage Shares -3x Short Facebook META ETP Securities",
+      "source": "Bloomberg",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T01:11:23.407003",
+      "url": "https://www.bloomberg.com/quote/FBE:LN"
+    },
+    {
+      "text": "Facebook Owner Meta Stock Surges After Beating Q2 Forecasts and Sustainability Milestone Progress - CarbonCredits.com. Facebook Owner Meta Stock Surges After Beating Q2 Forecasts and Sustainability Milestone Progress&nbsp;&nbsp;CarbonCredits.com",
+      "source": "Google News",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-07-31T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbDVlcUowZHhCT0xIb0MxanlqZGJpbWptRXJobW1QSWRwMGRqMVZfYUdXVkItSUdFOWljWkdKcFBVdkdzYk01aGEwWDEwNEpXaHYwaTEwZ3NHX09EU0t4ZFp1UTVmYWlIaG8wWFAybzR3RFNiREwydW1Vd3VaV1NWcHM4NUpqcjlITno3RjJMdE5VSmREaUZyQy1KNlVMR2JCTnhMQW5yVXVRNzBUdV8xRFl2RmtWTmtYdTNDUVBTNFdZUQ?oc=5"
+    },
+    {
+      "text": "Meta Platforms: Every Dip Is A Long-Term Entry Opportunity",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.421,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T03:11:13.431198",
+      "url": "https://seekingalpha.com/article/4815747-meta-platforms-every-dip-is-long-term-entry-opportunity#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "How ‘Magnificent Seven’ earnings growth in second quarter stacks up against rest of S&P 500",
+      "source": "MarketWatch",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T14:11:08.321028",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/how-magnificent-seven-earnings-growth-in-second-quarter-stacks-up-against-rest-of-s-p-500-hkcje8nQe8S3LweS8MJ0?mod=mw_quote_news"
+    },
+    {
+      "text": "Meta's Superintelligence Narrative Could Drive Years Of Compounding Growth",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T15:11:13.428981",
+      "url": "https://seekingalpha.com/article/4817045-meta-superintelligence-narrative-drive-years-of-compounding-growth#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Meta Platforms Stock Declines As AI Restructuring And Insider Sales Pressure Outlook (Technical Analysis)",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.296,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T13:11:13.429981",
+      "url": "https://seekingalpha.com/article/4816138-meta-platforms-stock-declines-ai-restructuring-insider-sales-pressure-outlook-technical-analysis#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T14:11:23.406003",
+      "url": "https://www.bloomberg.com/quote/FBE:LN"
+    },
+    {
+      "text": "Meta Platforms: Slim Margins And 3 Key Risks",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.273,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T05:11:13.428981",
+      "url": "https://seekingalpha.com/article/4816826-meta-platforms-slim-margins-and-3-key-risks#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Meta Platforms (NASDAQ: META) Stock Price Prediction for 2025: Where Will It Be in 1 Year (Aug 28) - 24/7 Wall St.. Meta Platforms (NASDAQ: META) Stock Price Prediction for 2025: Where Will It Be in 1 Year (Aug 28)&nbsp;&nbsp;24/7 Wall St.",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T10:25:44",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYzduUThKR2F5Z3c0U3hvQ2VZX05qSWlLdnItQWNYMzZhQXFiYkVxRnYydDc4Q09CS3ZHcnRUOFhWSW1kN1ptWEhiYXFvWmg4LUE4WEZtYnlZcE1qNXNDTGtmVlpPVGNJMWoxUVYxX3BSVVpUczhmdnNzdW14eHdWUEIyZFl1cjFFSW1ia0M1UVJJbTNGNThkNThyRTBSVVRXXzNUa01aWk1oN290YjN5R2xyRmxuR3NQdDNVTFdBQmFIVFRoNzdIaQ?oc=5"
+    },
+    {
+      "text": "If You Invested $10K In Meta Platforms Stock 10 Years Ago, How Much Would You Have Now? - Yahoo Finance. If You Invested $10K In Meta Platforms Stock 10 Years Ago, How Much Would You Have Now?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-06T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUVV5d2NLMHZGcktOSXhuTWFGV2haTXUxUFdmZ2VoZFhEajN4cGZXNlZrYlBMM0FyUGRRVVhWWEY3SFVoYW1QZ29vb1dEWXBCY0lzVjRLMzRpTUp1LVAyTjdlWnZyQTE1NHBIRVFsNXNqMFhUTTBIc3R3azBPcjl0a3ZVNFF0UQ?oc=5"
+    },
+    {
+      "text": "Facebook-Parent Meta Readies ‘Hypernova’ Glasses. What It Means for the Stock. - Barron's. Facebook-Parent Meta Readies ‘Hypernova’ Glasses. What It Means for the Stock.&nbsp;&nbsp;Barron's",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-18T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNk11TUlKMnJ5NDlSYk96dTg1aHZTZm5kNGtaTjBJaXFlLU5vMDlkNGNKWGVONEZDZ01RZnFIeVdEQkVia2ZtTHYyTVdKVFJrODNxV09VVnZ3MDZFZ19lRG1lX0ZaeHNQVzhtZzRJUDIyYjd2ZHBycnFYbHNHOUZZSnU4bUNyenM5d0YtTnp6TlJya2lCcV9j?oc=5"
+    },
+    {
+      "text": "Meta Stock Price Levels to Watch Ahead of Facebook Parent's Earnings Report - Investopedia. Meta Stock Price Levels to Watch Ahead of Facebook Parent's Earnings Report&nbsp;&nbsp;Investopedia",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-07-29T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNM1BpbEVPODI4UmJJQXJBNkpERURseG9rYzVVS1NtdVQ3MzV5MnFzdFVTRENsNVhsdlRiOGRvV3Q4TDc1dnZQS19hSndoRmJ0Mkd0R0ZsYmZlN2lTalNYblFIWWs2bFR6RU4xbkpCa3NpREJRWEtNSGpwTVdOV2FuSmt3VEVFTUF2LVVkQTV5elpKV3RoRUFBOXhpc0t4SWZfN3BlWE9aQ1NYU0dDM3lnSA?oc=5"
+    },
+    {
+      "text": "Meta Platforms, Inc. (META) Stock Price, News, Quote & History - ca.finance.yahoo.com. Meta Platforms, Inc. (META) Stock Price, News, Quote & History&nbsp;&nbsp;ca.finance.yahoo.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-11T20:44:07",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NdF9xWW1RaDk2MmNFdk5acnJHSVhGM0dqcF90M081cUplRkpyVjZmakJsdS11TFhOcnVVRnM0T1RXcEo5ZzBITzA1N1BsaWVacVE?oc=5"
+    },
+    {
+      "text": "Meta Stock Surges Near Record High. Everything to Know About the Facebook Parent’s Blowout Earnings. - Barron's. Meta Stock Surges Near Record High. Everything to Know About the Facebook Parent’s Blowout Earnings.&nbsp;&nbsp;Barron's",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-07-31T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQTg5UUFGMHJqNjR3NUFJZkUwM1dkdHF0U2k2NmtGb3JjTGFpY3ptWG1HdnFpV0xfbExyQkVYNEZ2NnhUblBYS2FTV0d6ZVNjQ1VXUlFycl9jYkU4WXJwM01BUWVWZXFUR3FYbThrUW42WnlVZmVaOV9zR1RUYzJwMGU4ZG5lZnM4TE9lSGkzRQ?oc=5"
+    },
+    {
+      "text": "Meta vs. Alphabet Stock: The Case for Buying One, Not the Other, After Earnings - Barron's. Meta vs. Alphabet Stock: The Case for Buying One, Not the Other, After Earnings&nbsp;&nbsp;Barron's",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-05T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZ0ZESDV4cFowUnl4aWRZQ3Z3ZlBGT0M2dVE0ZUtOY3V5dHR5a3kzODFjVnRmeVEwNkFxenVvenJZSG9fN1pPeXRHVmZ5SnVEU1EtcUJBRDRHNDAyR2ZHUE1Udmw2MWtOYkZXNm9vQjJrR3dBUWhsd2Z2OUdHbDdvVzRubw?oc=5"
+    },
+    {
+      "text": "Meta Earnings Due Today. Zuckerberg's Big AI Bets Will Be In Focus. - Investor's Business Daily. Meta Earnings Due Today. Zuckerberg's Big AI Bets Will Be In Focus.&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-07-30T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOc09ETUJwODV3SzQ2cnFKdHhMcUMwaGlWcVY0N0VKcUpQRWZaVmtzenEyNnRWd2FDSEpRQXdqZFNabUJFSEdHUGRObS02MWRPWF9FM09aNm5vY09SdW9VdUpLMGI1T0JSM0gweHFIWHBsT2Zmd1VhdS1yV2tEV0tTc2RNTXI2dFRzeEVETXRRU2haZHNubmFn?oc=5"
+    },
+    {
+      "text": "This under-the-radar storage stock is cashing in on Meta’s AI spending",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T01:11:08.320028",
+      "url": "https://www.marketwatch.com/story/this-under-the-radar-storage-stock-is-cashing-in-on-metas-ai-spending-34f8ac2a?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "A $400 billion bonanza? As AI spending estimates move higher, so do the stakes for investors.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T04:11:08.321028",
+      "url": "https://www.marketwatch.com/story/a-400-billion-bonanza-as-ai-spending-estimates-move-higher-so-do-the-stakes-for-investors-a6742a00?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "TechnologyPure Storage Stock Rallies 29%. A Meta Deal Has Something to Do With It, Say Analysts.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:11:08.321028",
+      "url": "https://www.barrons.com/articles/pure-storage-earnings-stock-price-meta-b080ccc6?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Even Nvidia Has Speed Limits",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T12:11:08.322532",
+      "url": "https://www.wsj.com/tech/ai/even-nvidia-has-speed-limits-fc801b89?mod=mw_quote_news"
+    },
+    {
+      "text": "Don't Cash Out On Meta Yet",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T08:11:13.428981",
+      "url": "https://seekingalpha.com/article/4816778-dont-cash-out-on-meta-yet#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Meta Platforms: Why The Stock Still Has Room To Run",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:11:13.430672",
+      "url": "https://seekingalpha.com/article/4816003-meta-platforms-why-the-stock-still-has-room-to-run#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Meta Platforms Stock: Grown 700% Over The Last Decade, Still Room To Grow",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T20:11:13.430672",
+      "url": "https://seekingalpha.com/article/4815906-meta-platforms-stock-grown-700-percent-last-decade-meta-still-room-to-grow#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Meta: An AI Powerhouse With Or Without Superintelligence",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T21:11:13.431198",
+      "url": "https://seekingalpha.com/article/4815908-meta-stock-an-ai-powerhouse-with-or-without-superintelligence#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Meta Platforms IncFollowFollowingFollowFollowFollowFollowMETA:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T05:11:20.438720",
+      "url": ""
+    },
+    {
+      "text": "Meta Platforms IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T10:11:20.439233",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Facebook is Dead; Long Live Meta - Stratechery by Ben Thompson. Facebook is Dead; Long Live Meta&nbsp;&nbsp;Stratechery by Ben Thompson",
+      "source": "Google News",
+      "sentiment_score": -0.863,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-14T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPb3dPbVJ5MU95TkxobnJ4NnpleVVwNE9MYzFEdmhZUUcyeUw0bUVtRExDRmt4S0E2X1R1aWNwby1XVjcyWFJTckw5T0N4T2sxclhBUVlsMWI4M245UHpPLUxvUjJPYmxEZE5jZHZaUXY2R3lQQnFZbDF5clJIcDFaM044WDFkUmVBTzg1bg?oc=5"
+    },
+    {
+      "text": "Meta Stock Slides Toward Worst Week Since April Amid AI Shake-Up - Investor's Business Daily. Meta Stock Slides Toward Worst Week Since April Amid AI Shake-Up&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": -0.848,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-21T20:25:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbjg2Y3NPUk1OUkg4cmh3bmhUTkVkSVh1VUljRy1HTi16V25MQVU2d0laemtvU0lGMjg3U0x3R3JkeE1iQjVCMjVGZ3NjQkZQTmE5ZlVNNHBhUE5JRGU0MlRGSGxNVlZaTzhpdF9RczZtYmtUMVZhMTZQclQzMnUtUw?oc=5"
+    },
+    {
+      "text": "Meta Stock Takes A Breathtaking Leap. What's In Mark Zuckerberg's Facebook AI Vision? - Investor's Business Daily. Meta Stock Takes A Breathtaking Leap. What's In Mark Zuckerberg's Facebook AI Vision?...",
+      "source": "Google News",
+      "sentiment_score": 0.81,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-07-24T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQ0c2SHVnZ1NmMGFlNE0zUUdkaGtkNEk2Ni1pR0F4YVRRRm5qTmVmMWxINGNFZEZOUVRJalV1UUJibFNlODZVektTbUZwTWxUWUNJTDFOem0yWWtaT3dJMHlyYXd0ZTFhZS1GdHBlU29FMnpDQW9HME1ING1NaTQxTFJmUmRvb1dNMktXOUdBSUdMOHg4ZHlBb2lhUXdxd2hY?oc=5"
+    },
+    {
+      "text": "Is Meta Stock A Buy? AI Push Powers Breakout With Tariff Threat Easing - Investor's Business Daily. Is Meta Stock A Buy? AI Push Powers Breakout With Tariff Threat Easing&nbsp;&nbsp;Investor's Busines...",
+      "source": "Google News",
+      "sentiment_score": -0.732,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-06-10T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVzZNOEJKNmdUWVVrR2ctaFlTSWdoYzVoeXRKcHByZmU1WDREQTNaVlR1RERJdkN5WU1rS3VpeG80b1B2ZG96RUVXWF9TWkhQYTMyaW96WjlZcTc4UW9wSXItYks1d1BvUHIyWnBHUzZfNi1jWmMwenUxN3Q4ZDM2YU5ldVZOWEtQcWJtdjN2blJ0RktzeE1NQ2ZwTQ?oc=5"
+    },
+    {
+      "text": "Cantor Calls Meta (META) Its Favorite Megacap Stock, Reiterates $920 Price Target - Insider Monkey. Cantor Calls Meta (META) Its Favorite Megacap Stock, Reiterates $920 Price Target&nbsp;&nbsp;Insider...",
+      "source": "Google News",
+      "sentiment_score": 0.718,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T16:04:18",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOLXBBMmV1c1ZuOHRwSTZldE41TnZOdVlKclZDalRVNjlOQ1F5VWhoTDIzaEpRTFd1T19rY2NjYXRvVzh4Z2NaRHd4STlzNnVXMmFYZGYtTzRKSm1oNFo0Sm4wdW5HczVLQUdXNmg4SDctaS1OaTBaaHF4b3hWcjhxZTV6MUVfM2VuUmVUTEhYN2NqQTZhUGRPZGZrUmxnT19Gby1BdUVsTUhDNmh4dkl3c1g4ejF0ekpUWXZ0R3Z30gHGAUFVX3lxTE8xZnloQ3dVYmVNNTRnVXBMQ1dNTVExXzFwTkpvdFFCNFo0ZFdfb2Itc2xvY185T0xrajkycXE4TlBYc3BkMXNRQXhuQmp2MU9IRkN5VlZYQmhONUZFdjgteVdQMV9heU5NYVZWcGFQVzEtU0R6YVlsSG14WU5fdWgyNXd4YUNRN0Z3VU82cFkzLXNDSXJIYjVycXdESVVXR3YyX25kOUVBelZ3OFJaUmJrSlZUYVpNQUJtaHVoVnBfMHZnSDhoZw?oc=5"
+    },
+    {
+      "text": "Meta Stock Rockets On Results. 'What Was That? Wow!' - Investor's Business Daily. Meta Stock Rockets On Results. 'What Was That? Wow!'&nbsp;&nbsp;Investor's Business Daily",
+      "source": "Google News",
+      "sentiment_score": 0.695,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-07-31T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQzVhczdNSGVhcjlLVmJZc0M5aW94SE8xTkMzTzJfNWJLWkpVT0JZQWJYOWw2U1E5VjBHeDIyQnQ3eTRGZmxNZTFsMUlyazNRSjNTdlNqVk42c3NfSFl6a1F0SmtfaVBXODJQeVFQTHhmYURZOGZYdGhHWk1ta204UXVGUl81WllGRU81S0RsZFY4V18tZVdTdA?oc=5"
+    },
+    {
+      "text": "Software’s Death by AI Has Been Greatly Exaggerated",
+      "source": "MarketWatch",
+      "sentiment_score": -0.68,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-29T04:11:08.322532",
+      "url": "https://www.wsj.com/finance/softwares-death-by-ai-has-been-greatly-exaggerated-b639c0cd?mod=mw_quote_news"
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T12:11:08.321028",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    },
+    {
+      "text": "Leverage Shares -3x Short Facebook META ETP Securities",
+      "source": "Bloomberg",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T01:11:23.407003",
+      "url": "https://www.bloomberg.com/quote/FBE:LN"
+    },
+    {
+      "text": "Facebook Owner Meta Stock Surges After Beating Q2 Forecasts and Sustainability Milestone Progress - CarbonCredits.com. Facebook Owner Meta Stock Surges After Beating Q2 Forecasts and Sustainability Mi...",
+      "source": "Google News",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-07-31T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbDVlcUowZHhCT0xIb0MxanlqZGJpbWptRXJobW1QSWRwMGRqMVZfYUdXVkItSUdFOWljWkdKcFBVdkdzYk01aGEwWDEwNEpXaHYwaTEwZ3NHX09EU0t4ZFp1UTVmYWlIaG8wWFAybzR3RFNiREwydW1Vd3VaV1NWcHM4NUpqcjlITno3RjJMdE5VSmREaUZyQy1KNlVMR2JCTnhMQW5yVXVRNzBUdV8xRFl2RmtWTmtYdTNDUVBTNFdZUQ?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.007,
+    "last_week_average": 0.095,
+    "overall_average": 0.017,
+    "articles_last_24h": 11,
+    "articles_last_week": 21
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

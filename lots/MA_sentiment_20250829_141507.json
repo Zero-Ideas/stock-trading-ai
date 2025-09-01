@@ -1,0 +1,414 @@
+{
+  "symbol": "MA",
+  "company_name": "Mastercard",
+  "analysis_timestamp": "2025-08-29T14:15:07.927618",
+  "total_sources_analyzed": 36,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.053,
+    "average_compound": 0.15
+  },
+  "sentiment_distribution": {
+    "positive": 14,
+    "neutral": 18,
+    "negative": 4,
+    "positive_percentage": 38.9,
+    "negative_percentage": 11.1
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "Seeking Alpha": 8,
+    "Bloomberg": 3,
+    "Google News": 15,
+    "MarketWatch": 10
+  },
+  "sample_articles": [
+    {
+      "text": "Stock Analysis | Mastercard Outlook - Technical Neutrality Amid Mixed Signals and Strong Analyst Optimism - AInvest. Stock Analysis | Mastercard Outlook - Technical Neutrality Amid Mixed Signals and Strong Analyst Optimism&nbsp;&nbsp;AInvest",
+      "source": "Google News",
+      "sentiment_score": 0.878,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T12:45:47",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSnRsM1o3U3lqNlhISmtkZGtiSXRid3hNSzVEMVlpY1pqSW44SGpJazAzLVRuTnF0TzlQaW1IWkwtRWVORXpzRDE5WWxlWHFZdkV1YVZ3cHk4VkRfYUxGOVJrbjM4UkJUYk9mdUhNcGxiWS0yQzZybGdLbTVwbHJtYl9QNnJ3RGNqYXBrU1lHM1dZMUdQcHNpMDJaeXlnNU51Z1VDV2h1elBheXEwYU5tSUFSaFBSWndweVQyTHFrQmFZV1dlU0E?oc=5"
+    },
+    {
+      "text": "Stock Analysis | Mastercard Outlook - Mixed Signals Amid Strong Analyst Confidence and Weak Technicals - AInvest. Stock Analysis | Mastercard Outlook - Mixed Signals Amid Strong Analyst Confidence and Weak Technicals&nbsp;&nbsp;AInvest",
+      "source": "Google News",
+      "sentiment_score": 0.813,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T13:00:28",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQzdMcE82ZXl3YXFHSm03QUNvR2V2NDJjdktUWFd0cXlJdmxVajFSUUxOV2NPRDZ1czBDZmZrQ01fak9UREVxc0xpS1RoZjJHX2E2SU05NlBWT3hJUTg1N1dDTkNnMG5XZlFOUEpHRXhWblMxQjBTTUZlU05yQk5jZElBQnN5bG0yZGNmUkt5bEUtQVZQclc0Q245S2R6NlZDYmtGR3pUTFpJLVFHVG84VEJqUzJrWkdLRVZTSzVDeWtYdw?oc=5"
+    },
+    {
+      "text": "Will Mastercard Stock Gain On Approaching Earnings? - Forbes. Will Mastercard Stock Gain On Approaching Earnings?&nbsp;&nbsp;Forbes",
+      "source": "Google News",
+      "sentiment_score": 0.8,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-07-22T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaGp0TkF2WDlTX3R3YlhsRFFfOXpsdndMUEZmbnpMLUVUZ1cyeDlPZk9scVpQb2NsMkp3SXR4VWlEQnpzYXFLdDFBV0ZuR3NDejNvM095d2FLM2RQVW1aSjlTWE1GYU44Tk5FMUNKelRUYjV1cGo1Z2pYcFRVdjJ5UjZMeEo3YUVCMWNKdFlHM1R3TmhVa0k0YUZPckZBU1RZWURVd3VoaHM2djRvd0E?oc=5"
+    },
+    {
+      "text": "MasterCard (MA) is an Incredible Growth Stock: 3 Reasons Why - Yahoo Finance. MasterCard (MA) is an Incredible Growth Stock: 3 Reasons Why&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.699,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-07T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPal9MS3JwampnS3ZqUERPVklpM19naGczMWFKUUdSbUppWDNiRmkxTy1qZDBqNGtJclNsR3N6UmdTNmNlcDRBQ1FVNDZfUzVZMDJjM19ObjdFcjhpblRnWU9hOEEzbk1KS0pJQWFOQkpDZ2ZpUzZFTnE5MkRGQkd0M2Z4Y0JrcUNxX0Zz?oc=5"
+    },
+    {
+      "text": "Mastercard Profit Climbs on Revenue Gains From Spending, Services",
+      "source": "MarketWatch",
+      "sentiment_score": 0.649,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T12:14:42.439140",
+      "url": "https://www.wsj.com/business/earnings/mastercard-profit-climbs-on-revenue-gains-from-spending-services-7aa4ebf8?mod=mw_quote_news"
+    },
+    {
+      "text": "Mastercard 2Q Profit Climbs on Revenue Gains From Spending, Services",
+      "source": "MarketWatch",
+      "sentiment_score": 0.649,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T04:14:42.439140",
+      "url": "https://www.marketwatch.com/story/mastercard-2q-profit-climbs-on-revenue-gains-from-spending-services-35e7538d?mod=mw_quote_news"
+    },
+    {
+      "text": "Mastercard (MA) Partners with Gemini, Ripple for XRP Credit Card - Insider Monkey. Mastercard (MA) Partners with Gemini, Ripple for XRP Credit Card&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:51:16",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdHp6S0VFZVFfUmltc3BTVWJiRFhsMDJyaE1obWJ4VVdfQWE0NjFuZ3Z5akdOdE1vVjBHUURuX1lxeXUwUmtHaUlZbE1hTEZzaExkTFJuUGY4QWIzVm54ZUdCYk9wcGpUUzlxd3pTa0NHcWpwc200ajZyLTFVaXFCc19ldExnZEhxV2E5NnZwd0xfX0tiYm13bThpc0hYSzBjM1BlM3F5WjDSAbABQVVfeXFMUE1DRVoxX00yTU9BVE14aVR5UlVJdUNqaWI0ZkhSSzRLSTlEWXdHVFp2YzV6cWRCSUxTSHBjRWk0YmJrV1ZZOHFYa1RiUWE3QnFMQ0RJSndsRzE0WkI1RXNUazVpWm1Xd3JxZjh6S3oyakxGVXMyNlhJSzBsT2FuVVJxZ2lyT1J3bkhBODdjWFJyM3h4M2FLVUMzc1FmQUdkUFZhcEEySDVfbk9qN285ams?oc=5"
+    },
+    {
+      "text": "Mastercard earnings show robust spending fueled by a healthy consumer",
+      "source": "MarketWatch",
+      "sentiment_score": 0.625,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T09:14:42.439140",
+      "url": "https://www.marketwatch.com/story/mastercard-earnings-show-robust-spending-and-send-an-upbeat-message-for-visa-investors-559d0202?mod=mw_quote_news"
+    },
+    {
+      "text": "Can Mastercard Outmaneuver The Threat Posed By Stablecoins?",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T11:14:48.323614",
+      "url": "https://seekingalpha.com/article/4797752-can-mastercard-outmaneuver-the-threat-posed-by-stablecoins#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Precision Trading with Mastercard Incorporated (MA) Risk Zones - news.stocktradersdaily.com. Precision Trading with Mastercard Incorporated (MA) Risk Zones&nbsp;&nbsp;news.stocktradersdaily.com",
+      "source": "Google News",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T15:52:02",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOT19aZG4tZVd4OENBV2trYmtCSmFiN05qM0wtSDh6VE5zN3o5OVlrZHhYRjZ5eWt4NnJZNlp2c3hZaERwQU5HSTBZNGE2ZmZUYV8tV05vOFRHblpGRHJ3aFE5YlREUGxzSDBybUZOTGZEUWJUd2xpMGNVWEdDdFhvY09OWXJEYUotR3BHbU1rS1R5NWs0S2dtUFEwalZPNjBLTnNrMTRNaGlkalpmRjFyZkhOR0VreTlzUDROSGEwWU5URElYS1hlOURuUk8tMTdDZFZzbFpn?oc=5"
+    },
+    {
+      "text": "Mastercard Is A Buy Amid Stablecoin Fear",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T23:14:48.322612",
+      "url": "https://seekingalpha.com/article/4804962-mastercard-is-a-buy-amid-stablecoin-fear#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "FinancialsVisa Profit Climbs 8% as Consumers Keep Spending",
+      "source": "MarketWatch",
+      "sentiment_score": 0.44,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T21:14:42.439140",
+      "url": "https://www.barrons.com/articles/visa-stock-price-earnings-78731984?mod=mw_quote_news"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T00:15:00.908817",
+      "url": "https://www.bloomberg.com/quote/MA:US"
+    },
+    {
+      "text": "Outranking Visa, Mastercard, This Fintech Charges Toward Breakout — With This Caveat",
+      "source": "MarketWatch",
+      "sentiment_score": -0.273,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-28T13:14:42.437635",
+      "url": "https://www.investors.com/research/breakout-stocks-technical-analysis/paymentus-fintech-peers-mastercard-visa-stoneco/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news"
+    },
+    {
+      "text": "Mastercard: Don't Miss The Forest For The Trees - Seeking Alpha. Mastercard: Don't Miss The Forest For The Trees&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.224,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T11:20:10",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPamlpZDRyejFCWmV4RXJ0TmZzRlVFUzhIQlM5OXJUSHljNUs5djR1R0FiQWtGbUdrYXAxUDNHRWRvQUE1VTVJUGRBRVR4YzZmWjhxWU9fYnlNZ1Y5TWQxY3pLMEM0Z0NoRVB2cnpqWGFVblZUbDQ4WU1tanhBMDJtQUFvVmY?oc=5"
+    },
+    {
+      "text": "MarketsAl Gore’s Investment Firm Sells Amazon Stock, Exits Mastercard, and Buys Visa",
+      "source": "MarketWatch",
+      "sentiment_score": 0.178,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T12:14:42.439140",
+      "url": "https://www.barrons.com/articles/al-gore-amazon-stock-mastercard-visa-3486a4f3?mod=mw_quote_news"
+    },
+    {
+      "text": "Apple and Amazon headline earnings slate",
+      "source": "MarketWatch",
+      "sentiment_score": 0.178,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T05:14:42.439140",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-nasdaq-surges-microsoft-meta-earnings-dow-sp500-up-apple-amazon-results-due/card/apple-and-amazon-headline-earnings-slate-U69EAjMT0OjWeDlrKUjT?mod=mw_quote_news"
+    },
+    {
+      "text": "Mastercard: Don't Miss The Forest For The Trees",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.114,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T14:14:48.321612",
+      "url": "https://seekingalpha.com/article/4817067-mastercard-dont-miss-forest-for-trees#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "Is Mastercard Stock Outperforming the Nasdaq? - MSN. Is Mastercard Stock Outperforming the Nasdaq?&nbsp;&nbsp;MSN",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T07:56:01",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOd0dmNjVySGRFYU5CMFFpQnc0ZlUyeXRReWZ4R0JJb2R1YUVpLVFoV01QdmNqSHg4X2pRa09YZ3lQaTNmNklGeHpIcWVNMldLeENELTJMcW5tblVZQmpKV09KdHVuSENMM0VKQkkyTXBENmtPcEZJUXhnRlZDNHhHenRscEtTZW5rTjZibHNhejczNk5VWHBXMDFzRmE0SlBpaWhMcGN4Y3NJa185d3JreGp6T0phQmJVMWt0ckVHbi1xdw?oc=5"
+    },
+    {
+      "text": "Mastercard to Participate in Upcoming Investor Conference | MA Stock News - GuruFocus. Mastercard to Participate in Upcoming Investor Conference | MA Stock News&nbsp;&nbsp;GuruFocus",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-25T20:32:32",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUmlJdWlBVjNDOTVsOTJJelBJTFBqUVVsOHdZQjRBRFFtNFozWjlVRl83ZTIyaFVQSGp5dWg4anpPQ0pQbjBac2ZLa3U2QVhBRmxnWEpNSGhFOEloRjZvYXBwMUEtWkpiaGg1R0wybFJfT2o5T2xMaGZLWmotMkI0X185Z3BBMlJoRDl0T0RRZ25LalJfbnVQTDVRazVhNGRQWWo4SV9QZTVER2JDZjFj?oc=5"
+    },
+    {
+      "text": "TD Cowen reiterates Buy rating on MasterCard stock, citing diverse model - Investing.com. TD Cowen reiterates Buy rating on MasterCard stock, citing diverse model&nbsp;&nbsp;Investing.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-11T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVkpEWTBHYURkT1NrWjFMMGxnbC1HMmNpd2lYcGxySWduX1FFdEg2b0p5Vnpsd2V5MzlzWURnOTJ6NHh0QUFGUUs0bjA0YjFNS0xVbFhDaEtnOEZMQTB3OXpYVkZ5OW5VdmhIM1FzOHMxX01ZdjVuRUk5dHB6YkcwTnhDVWR4cUxOOVgxS0FPYnN0MlhIYVpSSFNRdTktX1FQNWFqMHRUaEluNGtBUFVaaVZEZDlwTC1TZGNZYVhCTHBOd3ZQWjZyamx4bw?oc=5"
+    },
+    {
+      "text": "Mastercard: Why The Trillion Dollar Payments Giant Remains A Long-Term Compounder - Seeking Alpha. Mastercard: Why The Trillion Dollar Payments Giant Remains A Long-Term Compounder&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T08:42:09",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZk1HLW5BREMxLVRwUlNDMDVqaUREbEdMa2pUdXB5c01KODhUU3Z6SHpnWW5MOEEtUDFhd3RZRUpYd3V0RE55eE9wOXVZanBaMkJtOTBWRXZzZFlONDFoaUZlQXRDMm03dzdmM3RqdVllUlExaGFwdFRpLVVYaHgzNnE2TWZseGNxREp4cVZJN1k4Vi14VG9XbllocnZzNEJzZ2pPeXFOakhFOVRFdFgxYWdxS09CdGZpdlZBVTdn?oc=5"
+    },
+    {
+      "text": "Mastercard Stock: Analyst Estimates & Ratings - Yahoo Finance. Mastercard Stock: Analyst Estimates & Ratings&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-07T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSjA1MlZIbXQxYTItZy1DYlc1Z0x0N1dBN3FXZVhRUEV3UjVPOElONGU5SnZITGp6SmZyZ0pxT2VMWjRjM3dKUXk0S1RfcG1oR1Ftb0tOOWNHcHROaDBLOTVkbzRrTEVaakk3Z2VUNVBzeGJ0Zk9FWkRHSllnLWdOZGl1YkhJQ2FZTG4ydHk0czEzdw?oc=5"
+    },
+    {
+      "text": "How Mastercard Incorporated (MA) Affects Rotational Strategy Timing - news.stocktradersdaily.com. How Mastercard Incorporated (MA) Affects Rotational Strategy Timing&nbsp;&nbsp;news.stocktradersdaily.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T19:08:02",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQbFdUaHgxeVFmTHdic3VFclpCX2NYU2Y4NkF6VURZQjI5Q21UN2pWdW95VS1aRkFPSWNma2llYmROVDN6TEZTNVdiWlN5NDdWRmZtbkk3dC1pX1hzSDdXQXZKTG81TXg2YzgzWjBNN0R6NjBidTRxbmNfaDJTODFDUmtkYkg1aDFhVGZnR1BJVnlZSWthQ3duWE12SjF3RkRhY1kycEpVWDdwemlhbFJWQkhENHNEQ09yQS1PVW5JVVVPTkFuRzBQVVNRX1BTS1dTYmpuZkc3M3BVQUU4dENZ?oc=5"
+    },
+    {
+      "text": "Wall Street Analysts See MasterCard (MA) as a Buy: Should You Invest? - Yahoo Finance. Wall Street Analysts See MasterCard (MA) as a Buy: Should You Invest?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-07T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWmlIMWpxUEhUZ2JXdHVVbVhRMjg1d1ViOGItWkxLUk9mVXZYUGduSS1lTllaQjdBMTRsakRMWDRHdFpoSkhvYXdtS0xMbkJLeXNnUDBBcWVYM2VvVlcyb1F6bnI4c2ZEZnJDbHJ4Q3NwV0RERTQ3cEhjVnFINzNjdW56VWxCVVlp?oc=5"
+    },
+    {
+      "text": "Mastercard Just Took It To The Next Level (NYSE:MA) - Seeking Alpha. Mastercard Just Took It To The Next Level (NYSE:MA)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T15:23:21",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR21SSWJYSllTLTVrQ0ZGVTBrakNRUS1YZmVKaVBUZDM2dWI4RE40OGhlajFkc3BWX2NlMkt0dGg5NVBSOXBla1VWb3J6YldUSFI1azVncVFhOWpiQzFyM0p0VzhONzkyRDNDSmY3UWFzUGV0ZWFEVHJhUF9HUzBPTTZ3WC1UNGtaRmc?oc=5"
+    },
+    {
+      "text": "JPMorgan, Already No. 1 in Card Spending, Wants Even More",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T00:14:42.437635",
+      "url": "https://www.wsj.com/finance/banking/jpmorgan-credit-card-spending-growth-064e1d52?mod=mw_quote_news"
+    },
+    {
+      "text": "Mastercard Inc. stock rises Friday, still underperforms market",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T21:14:42.437635",
+      "url": "https://www.marketwatch.com/data-news/mastercard-inc-stock-rises-friday-still-underperforms-market-517e69d5-d4e98e965f99?mod=mw_quote_news"
+    },
+    {
+      "text": "FinancialsMastercard Stock Is Rising. Earnings and Revenue Beat Expectations.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T03:14:42.439140",
+      "url": "https://www.barrons.com/articles/mastercard-earnings-stock-price-aaa1a37a?mod=mw_quote_news"
+    },
+    {
+      "text": "Mastercard Just Took It To The Next Level",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T23:14:48.321612",
+      "url": "https://seekingalpha.com/article/4817150-mastercard-just-took-it-to-the-next-level#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Mastercard: Why The Trillion Dollar Payments Giant Remains A Long-Term Compounder",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T14:14:48.322612",
+      "url": "https://seekingalpha.com/article/4817029-mastercard-why-the-trillion-dollar-payments-giant-remains-a-long-term-compounder#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Mastercard Q2 Proves It's In A League Of Its Own",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:14:48.322612",
+      "url": "https://seekingalpha.com/article/4807535-mastercard-q2-proves-its-in-a-league-of-its-own#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Mastercard Q2 Preview: All Eyes On Stablecoins",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T22:14:48.322612",
+      "url": "https://seekingalpha.com/article/4803989-mastercard-q2-preview-all-eyes-on-stablecoins#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Mastercard: The Rally Has Come To An End, Time To Trim",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T02:14:48.322612",
+      "url": "https://seekingalpha.com/article/4803941-mastercard-the-rally-has-come-to-an-end-time-to-trim#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Mastercard IncFollowFollowingFollowFollowFollowFollowMA:USFollowFollowingFollowFollowFollowFollowNew York(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T16:14:57.598130",
+      "url": ""
+    },
+    {
+      "text": "Mastercard IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T23:14:57.598130",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Stock Analysis | Mastercard Outlook - Technical Neutrality Amid Mixed Signals and Strong Analyst Optimism - AInvest. Stock Analysis | Mastercard Outlook - Technical Neutrality Amid Mixed Signals and S...",
+      "source": "Google News",
+      "sentiment_score": 0.878,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T12:45:47",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSnRsM1o3U3lqNlhISmtkZGtiSXRid3hNSzVEMVlpY1pqSW44SGpJazAzLVRuTnF0TzlQaW1IWkwtRWVORXpzRDE5WWxlWHFZdkV1YVZ3cHk4VkRfYUxGOVJrbjM4UkJUYk9mdUhNcGxiWS0yQzZybGdLbTVwbHJtYl9QNnJ3RGNqYXBrU1lHM1dZMUdQcHNpMDJaeXlnNU51Z1VDV2h1elBheXEwYU5tSUFSaFBSWndweVQyTHFrQmFZV1dlU0E?oc=5"
+    },
+    {
+      "text": "Stock Analysis | Mastercard Outlook - Mixed Signals Amid Strong Analyst Confidence and Weak Technicals - AInvest. Stock Analysis | Mastercard Outlook - Mixed Signals Amid Strong Analyst Confidence and...",
+      "source": "Google News",
+      "sentiment_score": 0.813,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T13:00:28",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQzdMcE82ZXl3YXFHSm03QUNvR2V2NDJjdktUWFd0cXlJdmxVajFSUUxOV2NPRDZ1czBDZmZrQ01fak9UREVxc0xpS1RoZjJHX2E2SU05NlBWT3hJUTg1N1dDTkNnMG5XZlFOUEpHRXhWblMxQjBTTUZlU05yQk5jZElBQnN5bG0yZGNmUkt5bEUtQVZQclc0Q245S2R6NlZDYmtGR3pUTFpJLVFHVG84VEJqUzJrWkdLRVZTSzVDeWtYdw?oc=5"
+    },
+    {
+      "text": "Will Mastercard Stock Gain On Approaching Earnings? - Forbes. Will Mastercard Stock Gain On Approaching Earnings?&nbsp;&nbsp;Forbes",
+      "source": "Google News",
+      "sentiment_score": 0.8,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-07-22T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaGp0TkF2WDlTX3R3YlhsRFFfOXpsdndMUEZmbnpMLUVUZ1cyeDlPZk9scVpQb2NsMkp3SXR4VWlEQnpzYXFLdDFBV0ZuR3NDejNvM095d2FLM2RQVW1aSjlTWE1GYU44Tk5FMUNKelRUYjV1cGo1Z2pYcFRVdjJ5UjZMeEo3YUVCMWNKdFlHM1R3TmhVa0k0YUZPckZBU1RZWURVd3VoaHM2djRvd0E?oc=5"
+    },
+    {
+      "text": "MasterCard (MA) is an Incredible Growth Stock: 3 Reasons Why - Yahoo Finance. MasterCard (MA) is an Incredible Growth Stock: 3 Reasons Why&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.699,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-07T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPal9MS3JwampnS3ZqUERPVklpM19naGczMWFKUUdSbUppWDNiRmkxTy1qZDBqNGtJclNsR3N6UmdTNmNlcDRBQ1FVNDZfUzVZMDJjM19ObjdFcjhpblRnWU9hOEEzbk1KS0pJQWFOQkpDZ2ZpUzZFTnE5MkRGQkd0M2Z4Y0JrcUNxX0Zz?oc=5"
+    },
+    {
+      "text": "Mastercard Profit Climbs on Revenue Gains From Spending, Services",
+      "source": "MarketWatch",
+      "sentiment_score": 0.649,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T12:14:42.439140",
+      "url": "https://www.wsj.com/business/earnings/mastercard-profit-climbs-on-revenue-gains-from-spending-services-7aa4ebf8?mod=mw_quote_news"
+    },
+    {
+      "text": "Mastercard 2Q Profit Climbs on Revenue Gains From Spending, Services",
+      "source": "MarketWatch",
+      "sentiment_score": 0.649,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T04:14:42.439140",
+      "url": "https://www.marketwatch.com/story/mastercard-2q-profit-climbs-on-revenue-gains-from-spending-services-35e7538d?mod=mw_quote_news"
+    },
+    {
+      "text": "Mastercard (MA) Partners with Gemini, Ripple for XRP Credit Card - Insider Monkey. Mastercard (MA) Partners with Gemini, Ripple for XRP Credit Card&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:51:16",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdHp6S0VFZVFfUmltc3BTVWJiRFhsMDJyaE1obWJ4VVdfQWE0NjFuZ3Z5akdOdE1vVjBHUURuX1lxeXUwUmtHaUlZbE1hTEZzaExkTFJuUGY4QWIzVm54ZUdCYk9wcGpUUzlxd3pTa0NHcWpwc200ajZyLTFVaXFCc19ldExnZEhxV2E5NnZwd0xfX0tiYm13bThpc0hYSzBjM1BlM3F5WjDSAbABQVVfeXFMUE1DRVoxX00yTU9BVE14aVR5UlVJdUNqaWI0ZkhSSzRLSTlEWXdHVFp2YzV6cWRCSUxTSHBjRWk0YmJrV1ZZOHFYa1RiUWE3QnFMQ0RJSndsRzE0WkI1RXNUazVpWm1Xd3JxZjh6S3oyakxGVXMyNlhJSzBsT2FuVVJxZ2lyT1J3bkhBODdjWFJyM3h4M2FLVUMzc1FmQUdkUFZhcEEySDVfbk9qN285ams?oc=5"
+    },
+    {
+      "text": "Mastercard earnings show robust spending fueled by a healthy consumer",
+      "source": "MarketWatch",
+      "sentiment_score": 0.625,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T09:14:42.439140",
+      "url": "https://www.marketwatch.com/story/mastercard-earnings-show-robust-spending-and-send-an-upbeat-message-for-visa-investors-559d0202?mod=mw_quote_news"
+    },
+    {
+      "text": "Can Mastercard Outmaneuver The Threat Posed By Stablecoins?",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T11:14:48.323614",
+      "url": "https://seekingalpha.com/article/4797752-can-mastercard-outmaneuver-the-threat-posed-by-stablecoins#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Precision Trading with Mastercard Incorporated (MA) Risk Zones - news.stocktradersdaily.com. Precision Trading with Mastercard Incorporated (MA) Risk Zones&nbsp;&nbsp;news.stocktradersdaily.com",
+      "source": "Google News",
+      "sentiment_score": -0.494,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-29T15:52:02",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOT19aZG4tZVd4OENBV2trYmtCSmFiN05qM0wtSDh6VE5zN3o5OVlrZHhYRjZ5eWt4NnJZNlp2c3hZaERwQU5HSTBZNGE2ZmZUYV8tV05vOFRHblpGRHJ3aFE5YlREUGxzSDBybUZOTGZEUWJUd2xpMGNVWEdDdFhvY09OWXJEYUotR3BHbU1rS1R5NWs0S2dtUFEwalZPNjBLTnNrMTRNaGlkalpmRjFyZkhOR0VreTlzUDROSGEwWU5URElYS1hlOURuUk8tMTdDZFZzbFpn?oc=5"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.076,
+    "last_week_average": 0.126,
+    "overall_average": 0.15,
+    "articles_last_24h": 10,
+    "articles_last_week": 31
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}

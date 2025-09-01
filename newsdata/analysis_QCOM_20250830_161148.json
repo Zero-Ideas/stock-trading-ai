@@ -1,0 +1,51 @@
+{
+  "symbol": "QCOM",
+  "sector": "Technology",
+  "analysis_date": "2025-08-30T16:11:48.894224",
+  "days_analyzed": 1500,
+  "macro_sentiment_score": 0.0,
+  "total_events": 2,
+  "relevant_events": 2,
+  "impact_assessment": "Macro sentiment for Technology sector is neutral. Key event types affecting the sector: Geopolitical, Other.",
+  "top_events": [
+    {
+      "date": "20250601T190000Z",
+      "title": "  They Cant Afford To Move Out  CEO Meredith Whitney Warns Most Baby Boomers Are Stuck In Place , Squeezing Millennials From The Real Estate Market",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/cant-afford-move-ceo-meredith-175533689.html",
+      "tone": 0.0,
+      "event_type": "Geopolitical",
+      "impact_score": 1.9,
+      "countries": [
+        "United States"
+      ],
+      "themes": [],
+      "language": "English",
+      "word_count": 0,
+      "goldstein_scale": 0,
+      "num_mentions": 1
+    },
+    {
+      "date": "20250601T203000Z",
+      "title": "Bear Market Myths Debunked : Separating Fact From Fiction",
+      "source": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/bear-market-myths-debunked-separating-192000271.html",
+      "tone": 0.0,
+      "event_type": "Other",
+      "impact_score": 1.6,
+      "countries": [
+        "United States"
+      ],
+      "themes": [],
+      "language": "English",
+      "word_count": 0,
+      "goldstein_scale": 0,
+      "num_mentions": 1
+    }
+  ],
+  "event_breakdown": {
+    "Geopolitical": 1,
+    "Other": 1
+  },
+  "risk_factors": []
+}

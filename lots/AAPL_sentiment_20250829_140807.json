@@ -1,0 +1,390 @@
+{
+  "symbol": "AAPL",
+  "company_name": "Apple Inc",
+  "analysis_timestamp": "2025-08-29T14:08:07.221092",
+  "total_sources_analyzed": 33,
+  "unique_sources_count": 4,
+  "source_diversity_score": 0.5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_polarity": 0.089,
+    "average_compound": 0.122
+  },
+  "sentiment_distribution": {
+    "positive": 13,
+    "neutral": 14,
+    "negative": 6,
+    "positive_percentage": 39.4,
+    "negative_percentage": 18.2
+  },
+  "stock_context": {
+    "current_price": 6460.26,
+    "daily_change_percent": null
+  },
+  "sources": {
+    "MarketWatch": 7,
+    "Google News": 15,
+    "Seeking Alpha": 8,
+    "Bloomberg": 3
+  },
+  "sample_articles": [
+    {
+      "text": "Apple Inc (AAPL) Increases its Total Investment to $600 billion to Expand its Manufacturing in the United States - Yahoo Finance. Apple Inc (AAPL) Increases its Total Investment to $600 billion to Expand its Manufacturing in the United States&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.848,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-11T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVUh1blVHdUlkM1MzaEpvUEstRl9KTkhvY1p6NHNmTEhWTm5Wdm4yVGQ5c2NMUWhNVVNCRW9pampJdndmY3JILVVua1VvWXF5RE5INEFMSmxGc0Jrc05HZVM4eHJBSzBZR0xRUUxtaG9maFRCZGlXd1U4T2RuN1JJd3VR?oc=5"
+    },
+    {
+      "text": "Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds - Insider Monkey. Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.778,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:29:07",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcV9KWkJITHUzaF9iM2l1RUNjZ3c2UTlUVzllTmlId293WGJxLVRHZTB5NkgzUWRGWVl3WnViYTJPeVVIazdJMmphVl9faU1tbmJQWUlvM3pxaVdXeW5qR3VONzQtTGNwalNSMzVnV1FrU0VFY2tHS0FnbTk1R2hQcjhlMk5CNTFoN2w4bVFoRXlsaEh4QlAyZ21USS1yVWgwcV9Ma3lQU2x2UdIBsgFBVV95cUxNT25QckM3amxXNlZoam1JMndxdkV6UklseDdGN3ZzYndBSkJjSFd1TFRUN2lLT1lpYUtNdlFBT0RoNGhiT21HNEZhVHhwYlE3dVc5bExKTjRCVkFRSm1KV0ozQkJEZTRHeENDM3ZEaW5kYjF0X3JGMklOQy1JaWpXTGFSTnIzQS1HdTlvWjVMT3FpdjhCXzJHWk1YZmRKNmQ4QkVjQXRkaHhKYUhNQ3JjTWl3?oc=5"
+    },
+    {
+      "text": "Apple: The Generative AI Threat Becomes A Pixel (NASDAQ:AAPL) - Seeking Alpha. Apple: The Generative AI Threat Becomes A Pixel (NASDAQ:AAPL)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.778,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T19:32:06",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTUdScko3NmtuTDgzYjZwX2s0NVVvZTA5YW9naUhGVDlMZ0tENUZNb1dWaHZZbU1TOEVvT2dCcUhOaU44Z0FyVjVsNVg0aTdkZC1pa2V1VjlyaVFLLXNCcEk3b1E3VzRhMUU4b2QyRVlvSWRrYVVONTh0SnktY3JMaHVvMjA4OGFNWTFscVdzdlM?oc=5"
+    },
+    {
+      "text": "Stock Market Today: Dow Sinks, But Nasdaq Fares Much Worse; Nvidia Extends A Losing Streak (Live Coverage)",
+      "source": "MarketWatch",
+      "sentiment_score": -0.778,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T07:07:43.485551",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-inflation-data-nvidia-palantir/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Apple (AAPL) Stock Sees Trading Spike on Product Buzz and Strong Earnings - CarbonCredits.com. Apple (AAPL) Stock Sees Trading Spike on Product Buzz and Strong Earnings&nbsp;&nbsp;CarbonCredits.com",
+      "source": "Google News",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T16:24:04",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRkFiNHRIMnlyOEpPTXZUNWJ0cW9jeC02bW90ekdUVm1WcDNpbThxSTVIWmtCeVJCT3FYNnZyVVMzX045UjFuY1gyOXJIZjJyenNJUTBsM1pYeFBMQm1sQXBiSVNVbWNhN20xbGVfLUdzY2U2dmRsNGZ4ZDlaZGtVMGx4N1NpelNOM01CSEpRb1d4dWVYMVBwaVJYMDZIMXc?oc=5"
+    },
+    {
+      "text": "Alphabet's Gemini Is Apple's Saving Grace: Who's The Bigger Winner?",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T07:07:49.451889",
+      "url": "https://seekingalpha.com/article/4816553-alphabet-gemini-apples-saving-grace-whos-the-bigger-winner#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Apple: Building A Bull Case Is As Easy As A-B-Gen Z! - Seeking Alpha. Apple: Building A Bull Case Is As Easy As A-B-Gen Z!&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.749,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T09:46:05",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX3E0MDFMTEtpNFhfZDBjY2RMMFdJVzdZaDEzTnJvWFdjT1Y3QWhvc3lfN1NBb0pyM3NJM3FfNUVkWXQ0ZHlDdnN5Q1gwd0haMXhMZm9NUlJuQVpWa1FuUXVWenFOLVFWbHR1RmhwSFRuaFFFSDZHZWJXNXVxWllLSTFsUS1obUlIU01fWUZfMm9fYzZKVEE?oc=5"
+    },
+    {
+      "text": "Apple: Breakdown Of $600B Investment Commitment (Rating Downgrade) (NASDAQ:AAPL) - Seeking Alpha. Apple: Breakdown Of $600B Investment Commitment (Rating Downgrade) (NASDAQ:AAPL)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T17:31:54",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWlg1Zk5lTWpJaHdqTzBSV0RHb001ZzU0OVV5U3VoUkpFVXhLUjRuYTJkSjlaYUdNTDZrQjJHVXhrV3JIWE9JRlFqdHpuM29uWTNUOS04cTRNaFFkbjlmc25qYnNTZUhLUzYwcDRSTVQ3UTRNa0hUa0dNWVlaV1E0MmVMMmRlamtjZlRWOVNCYU9ZVE16Mk1PWDFzSm4xaDJpWXFZd3ZR?oc=5"
+    },
+    {
+      "text": "Investors are turning to this neglected part of the stock market. And it’s still cheap.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.612,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T17:07:43.485551",
+      "url": "https://www.marketwatch.com/story/investors-are-turning-to-this-neglected-part-of-the-stock-market-and-its-still-cheap-6a7006d2?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "MarketsFall Should Be Colorful. The Stock Market Outlook Calls for Bargain Buys and More Gains.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.541,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T10:07:43.486550",
+      "url": "https://www.barrons.com/articles/stock-market-outlook-f25a09ec?mod=mw_quote_news"
+    },
+    {
+      "text": "Big Tech ETF clings to weekly gain despite dropping sharply Friday",
+      "source": "MarketWatch",
+      "sentiment_score": 0.527,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-27T15:07:43.486550",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/big-tech-etf-clings-to-weekly-gain-despite-dropping-sharply-friday-jnlz7SHWxTUnTYrpolVR?mod=mw_quote_news"
+    },
+    {
+      "text": "Apple: The Generative AI Threat Becomes A Pixel",
+      "source": "Seeking Alpha",
+      "sentiment_score": -0.527,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T12:07:49.451889",
+      "url": "https://seekingalpha.com/article/4816570-apple-the-generative-ai-threat-becomes-a-pixel#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6"
+    },
+    {
+      "text": "Apple: Building A Bull Case Is As Easy As A-B-Gen Z!",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.493,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-29T13:07:49.450889",
+      "url": "https://seekingalpha.com/article/4817808-apple-building-a-bull-case-is-as-easy-as-a-b-gen-z#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1"
+    },
+    {
+      "text": "Apple's 'Invisible' AI Strategy Weighs On Its Stock. What Worries Wall Street.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.421,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-27T11:07:43.485551",
+      "url": "https://www.investors.com/news/technology/apple-stock-problem-apple-ai/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "How ‘Magnificent Seven’ earnings growth in second quarter stacks up against rest of S&P 500",
+      "source": "MarketWatch",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T06:07:43.486550",
+      "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/how-magnificent-seven-earnings-growth-in-second-quarter-stacks-up-against-rest-of-s-p-500-hkcje8nQe8S3LweS8MJ0?mod=mw_quote_news"
+    },
+    {
+      "text": "Apple: Breakdown Of $600B Investment Commitment (Rating Downgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.382,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-27T14:07:49.451889",
+      "url": "https://seekingalpha.com/article/4816858-apple-breakdown-of-600b-investment-commitment-rating-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4"
+    },
+    {
+      "text": "Securities. All types",
+      "source": "Bloomberg",
+      "sentiment_score": 0.296,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T03:07:59.933018",
+      "url": "https://www.bloomberg.com/quote/AAPL:US"
+    },
+    {
+      "text": "Apple Inc. Stock (AAPL) Opinions on AI Initiatives and iPhone Demand | AAPL Stock News - Quiver Quantitative. Apple Inc. Stock (AAPL) Opinions on AI Initiatives and iPhone Demand | AAPL Stock News&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": -0.25,
+      "sentiment_label": "Negative",
+      "timestamp": "2025-08-23T14:05:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTUJBZHlHbGpnNUhFZERJbHpfNEdRZGdLRjcybVBDRFpwUHVTdnIxRTJPd1J0M2hQSDU5MVI2Rm5zd2M5dldWUTRxTFlZZVIwak1qSTV5b2daYTIzT1h2TG1qSGxQMEk1Yjd3MlExRWdBTmUwZENTT0tfeHN0bFpzUDhJazE4dzVTam1taFJzRTFYd0NDYi1XXzRtN3BOR3o5MnAwYzdPN20?oc=5"
+    },
+    {
+      "text": "Apple: The Future Is Bright, But That Doesn't Mean To Buy",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.238,
+      "sentiment_label": "Positive",
+      "timestamp": "2025-08-28T17:07:49.451889",
+      "url": "https://seekingalpha.com/article/4816427-apple-future-bright-but-doesnt-mean-to-buy#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A8"
+    },
+    {
+      "text": "Investors Heavily Search Apple Inc. (AAPL): Here is What You Need to Know - Yahoo Finance. Investors Heavily Search Apple Inc. (AAPL): Here is What You Need to Know&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T13:00:03",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQmhlRlJuekhuSFVWQUZNdUdMZFBCSGIyVzdJc0ltLXVJR01VMmlQdXhfcklFUFZDSnFEV2JKc3N4M01pc2N3WXQwSjlsNFZtODJRMS1TdXR4VlQzQzFDdHFwaS01Wk4xR3ZxLWRHX0NEeHlMMVNHeUl3SUVzT2N4cEJtYzRMbEU?oc=5"
+    },
+    {
+      "text": "Apple Inc. Stock (AAPL) Opinions on Upcoming Product Launch and AI Innovations - Quiver Quantitative. Apple Inc. Stock (AAPL) Opinions on Upcoming Product Launch and AI Innovations&nbsp;&nbsp;Quiver Quantitative",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T17:31:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYzgtRFZkb3drM2ZqOGp2Rm53Uk5jN1FRRmI0dEt3NldwYm5Dd3Zwc3hkUmwyalkybFVBR3IzWjNORy1LWEdwMWRGOEx6QzBWdFdxanRxYVB6S1RWZWRCcXE4Zjd3VWtXajYxbzR4U0pzbXNUQVQ4SmJwRVE3TkJkQ1pKSkhtU25tRzJ4ZGRJR1laRWdBR2thTm5KS0dFQXJ1RGhoOUdtcG4xUjI3RnRONHQzWUJVQQ?oc=5"
+    },
+    {
+      "text": "Goldman Sachs reiterates Buy rating on Apple stock ahead of September event - Investing.com. Goldman Sachs reiterates Buy rating on Apple stock ahead of September event&nbsp;&nbsp;Investing.com",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-26T19:53:52",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSW1fMEpDN3pXSVo2SjNhRTYxbWJ2cXpCaUlpcnN2QlNCRXdQLURIVE1URGRCbld6a21Qc0hjZ0t5eG8xajhJdFVrWllIRXJqa0pacFh3MFFnV2tHZkdoVjFROUROV21KaXJORHFvdjlDd3hHU05idVBpQ2h5WnNKTXVuWDFtLU1SSVhPVU0yelhBTk9YME85Tzd1SEV2aERVS3diTGdmZ2s4YnFYdTIwNk9jM3MzNjY2aGlzcDdUSGhsWENyb1IwOWpJNVpNLXRm?oc=5"
+    },
+    {
+      "text": "Apple Stock Could Hit An 'All-Time High' The Day It Does This, Says Analyst - Benzinga. Apple Stock Could Hit An 'All-Time High' The Day It Does This, Says Analyst&nbsp;&nbsp;Benzinga",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T11:19:39",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSWVPdXRtWGZkLVRhcmRSQjc2aUxzaVVzSGwyeXYzeWRnR0hqZllWUW1GZWNiZTZENXJvcUtjQ0ZOWFI2RXZodlVZVVFWWVhsZXBONkVGb2VCckdZQzJFRUJLUmpOQXpIbjB0Y0swemdRMXNQT21aVVk1SGVkSFdPc1BOOHY5eVl4c0hLODZlemplZHNZQUVUbUpNQWRhdU1NV0RBajk3VHg3eVRlS29yeVdXekU0amlWQTYtTDBudi1BTEk?oc=5"
+    },
+    {
+      "text": "The Most Overvalued Of Mag7: Why Apple Gets My Sell (NASDAQ:AAPL) - Seeking Alpha. The Most Overvalued Of Mag7: Why Apple Gets My Sell (NASDAQ:AAPL)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T06:54:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOFdxWWFWS2h4aHhnaEN2bEwyeWtFS1p1T0JEb08tM09qbFN2Y3Z0b0IzSnBMUE9kcmNCanNiQmp5MHZoc09UUDBPclEzbHduUjZxS3BWanUyeXdxRE9HbVhIOFY5czFSSnJXNlp1dkVwcmVITmpkaV85V0NSLXAwR044TzlDclRPaFFTazUyWTdOVTI1T3c?oc=5"
+    },
+    {
+      "text": "Apple (AAPL) Explores Google Gemini AI for Siri Revamp - Insider Monkey. Apple (AAPL) Explores Google Gemini AI for Siri Revamp&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:37:05",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNHRJenVsVDRuMy1wQnRTMzRCTDRYUklRbGVZcnF0WUJyM2J5MlcxbmIwTkg5TEF3UTc2MTN5Vy1TV3pxdUtlVVM4dDVFWWhHOFRJSlRpVGwtRXJWTS03VTlIMXJwa0xpZlMwbmpubmlRZ2phb2dHNmFnMHdFUHdrSWRXd1huRFZmY2lwRUhqMWgyMDlmMU9qdHFEVXPSAaQBQVVfeXFMUEM0SlN3TmZ3RVRMT29heVRiWUd5c3RicFlwR1lQZ09JS3ZNMERRU2o5TUZmeHB3SjYwUm9aU05WR2FWYUx3RjNYQzY3WlBJWF9PUi15YU5vUklxV2R2aThWZUxoNHo3aDBNOTNOWC1sejRIZkM1SmZjOHg0LTZGODBnVXBoZ2JqUWt5RmY1VVZqU01rTElzTTl2ZE92YTYyel90WXY?oc=5"
+    },
+    {
+      "text": "Apple Inc. (AAPL): A Bull Case Theory - Yahoo Finance. Apple Inc. (AAPL): A Bull Case Theory&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-16T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5TZzFjUDdxSDZuSWQxdmdqUy01NlpmVDlqanpCdDhZZlE1akNOQ2RpbmEyNTBnNkhGYWY1MUhSZlN6d1B6S0pTa3hFWUt6RWJEOHp5cmRnR1lWcDlfUnp0OWZrU1hrUUR1QnNlRjJCMC1sLU1JWW5vVXRB?oc=5"
+    },
+    {
+      "text": "Is Trending Stock Apple Inc. (AAPL) a Buy Now? - Yahoo Finance. Is Trending Stock Apple Inc. (AAPL) a Buy Now?&nbsp;&nbsp;Yahoo Finance",
+      "source": "Google News",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-05T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUDZaU3RHX0hkTjFYMUxqdmpnTVN6N0RfUWtueEMzVE43YVRZLTV3a3h5WXRZczNCVFhmYzBONG5NaXdMaGhXMXpHRU82aGdLc2UwRFEtc0lKZnd2a2lubWUzRmlDR05yeURIb0tlRU5QQ0hpLTJFWG90WjB2T1M0bA?oc=5"
+    },
+    {
+      "text": "MarketsU.S. Stocks Are Expensive, and Still Set to Outperform the World",
+      "source": "MarketWatch",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-27T11:07:43.486550",
+      "url": "https://www.barrons.com/articles/u-s-stocks-expensive-rally-continue-ab3065de?mod=mw_quote_news"
+    },
+    {
+      "text": "A Small Cap In A Big Cap's Clothing",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T07:07:49.450889",
+      "url": "https://seekingalpha.com/article/4817689-small-cap-big-caps-clothing#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2"
+    },
+    {
+      "text": "The Most Overvalued Of Mag7: Why Apple Gets My Sell",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T09:07:49.451889",
+      "url": "https://seekingalpha.com/article/4816999-the-most-overvalued-of-mag7-why-apple-gets-my-sell#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3"
+    },
+    {
+      "text": "Apple: An Inflection Point May Have Arrived (Rating Upgrade)",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T04:07:49.451889",
+      "url": "https://seekingalpha.com/article/4816574-apple-an-inflection-point-may-have-arrived-upgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A5"
+    },
+    {
+      "text": "Apple IncFollowFollowingFollowFollowFollowFollowAAPL:USFollowFollowingFollowFollowFollowFollowNasdaq GS(USD)· Marketclosed",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-29T03:07:56.484115",
+      "url": ""
+    },
+    {
+      "text": "Apple IncFollowFollowingFollowFollowFollowFollow",
+      "source": "Bloomberg",
+      "sentiment_score": 0.0,
+      "sentiment_label": "Neutral",
+      "timestamp": "2025-08-28T08:07:56.485116",
+      "url": ""
+    }
+  ],
+  "top_sentiment_articles": [
+    {
+      "text": "Apple Inc (AAPL) Increases its Total Investment to $600 billion to Expand its Manufacturing in the United States - Yahoo Finance. Apple Inc (AAPL) Increases its Total Investment to $600 billion to Exp...",
+      "source": "Google News",
+      "sentiment_score": 0.848,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-11T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVUh1blVHdUlkM1MzaEpvUEstRl9KTkhvY1p6NHNmTEhWTm5Wdm4yVGQ5c2NMUWhNVVNCRW9pampJdndmY3JILVVua1VvWXF5RE5INEFMSmxGc0Jrc05HZVM4eHJBSzBZR0xRUUxtaG9maFRCZGlXd1U4T2RuN1JJd3VR?oc=5"
+    },
+    {
+      "text": "Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds - Insider Monkey. Apple’s (AAPL) Growth Momentum Intact Despite Antitrust Headwinds&nbsp;&nbsp;Insider Monkey",
+      "source": "Google News",
+      "sentiment_score": 0.778,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T04:29:07",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcV9KWkJITHUzaF9iM2l1RUNjZ3c2UTlUVzllTmlId293WGJxLVRHZTB5NkgzUWRGWVl3WnViYTJPeVVIazdJMmphVl9faU1tbmJQWUlvM3pxaVdXeW5qR3VONzQtTGNwalNSMzVnV1FrU0VFY2tHS0FnbTk1R2hQcjhlMk5CNTFoN2w4bVFoRXlsaEh4QlAyZ21USS1yVWgwcV9Ma3lQU2x2UdIBsgFBVV95cUxNT25QckM3amxXNlZoam1JMndxdkV6UklseDdGN3ZzYndBSkJjSFd1TFRUN2lLT1lpYUtNdlFBT0RoNGhiT21HNEZhVHhwYlE3dVc5bExKTjRCVkFRSm1KV0ozQkJEZTRHeENDM3ZEaW5kYjF0X3JGMklOQy1JaWpXTGFSTnIzQS1HdTlvWjVMT3FpdjhCXzJHWk1YZmRKNmQ4QkVjQXRkaHhKYUhNQ3JjTWl3?oc=5"
+    },
+    {
+      "text": "Apple: The Generative AI Threat Becomes A Pixel (NASDAQ:AAPL) - Seeking Alpha. Apple: The Generative AI Threat Becomes A Pixel (NASDAQ:AAPL)&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": -0.778,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-25T19:32:06",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTUdScko3NmtuTDgzYjZwX2s0NVVvZTA5YW9naUhGVDlMZ0tENUZNb1dWaHZZbU1TOEVvT2dCcUhOaU44Z0FyVjVsNVg0aTdkZC1pa2V1VjlyaVFLLXNCcEk3b1E3VzRhMUU4b2QyRVlvSWRrYVVONTh0SnktY3JMaHVvMjA4OGFNWTFscVdzdlM?oc=5"
+    },
+    {
+      "text": "Stock Market Today: Dow Sinks, But Nasdaq Fares Much Worse; Nvidia Extends A Losing Streak (Live Coverage)",
+      "source": "MarketWatch",
+      "sentiment_score": -0.778,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-28T07:07:43.485551",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-inflation-data-nvidia-palantir/?src=A00619&refcode=aflMarketWatch&mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "Apple (AAPL) Stock Sees Trading Spike on Product Buzz and Strong Earnings - CarbonCredits.com. Apple (AAPL) Stock Sees Trading Spike on Product Buzz and Strong Earnings&nbsp;&nbsp;CarbonCredits.com",
+      "source": "Google News",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T16:24:04",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRkFiNHRIMnlyOEpPTXZUNWJ0cW9jeC02bW90ekdUVm1WcDNpbThxSTVIWmtCeVJCT3FYNnZyVVMzX045UjFuY1gyOXJIZjJyenNJUTBsM1pYeFBMQm1sQXBiSVNVbWNhN20xbGVfLUdzY2U2dmRsNGZ4ZDlaZGtVMGx4N1NpelNOM01CSEpRb1d4dWVYMVBwaVJYMDZIMXc?oc=5"
+    },
+    {
+      "text": "Alphabet's Gemini Is Apple's Saving Grace: Who's The Bigger Winner?",
+      "source": "Seeking Alpha",
+      "sentiment_score": 0.765,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T07:07:49.451889",
+      "url": "https://seekingalpha.com/article/4816553-alphabet-gemini-apples-saving-grace-whos-the-bigger-winner#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7"
+    },
+    {
+      "text": "Apple: Building A Bull Case Is As Easy As A-B-Gen Z! - Seeking Alpha. Apple: Building A Bull Case Is As Easy As A-B-Gen Z!&nbsp;&nbsp;Seeking Alpha",
+      "source": "Google News",
+      "sentiment_score": 0.749,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-29T09:46:05",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX3E0MDFMTEtpNFhfZDBjY2RMMFdJVzdZaDEzTnJvWFdjT1Y3QWhvc3lfN1NBb0pyM3NJM3FfNUVkWXQ0ZHlDdnN5Q1gwd0haMXhMZm9NUlJuQVpWa1FuUXVWenFOLVFWbHR1RmhwSFRuaFFFSDZHZWJXNXVxWllLSTFsUS1obUlIU01fWUZfMm9fYzZKVEE?oc=5"
+    },
+    {
+      "text": "Apple: Breakdown Of $600B Investment Commitment (Rating Downgrade) (NASDAQ:AAPL) - Seeking Alpha. Apple: Breakdown Of $600B Investment Commitment (Rating Downgrade) (NASDAQ:AAPL)&nbsp;&nbsp;Seeking Al...",
+      "source": "Google News",
+      "sentiment_score": 0.637,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-26T17:31:54",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWlg1Zk5lTWpJaHdqTzBSV0RHb001ZzU0OVV5U3VoUkpFVXhLUjRuYTJkSjlaYUdNTDZrQjJHVXhrV3JIWE9JRlFqdHpuM29uWTNUOS04cTRNaFFkbjlmc25qYnNTZUhLUzYwcDRSTVQ3UTRNa0hUa0dNWVlaV1E0MmVMMmRlamtjZlRWOVNCYU9ZVE16Mk1PWDFzSm4xaDJpWXFZd3ZR?oc=5"
+    },
+    {
+      "text": "Investors are turning to this neglected part of the stock market. And it’s still cheap.",
+      "source": "MarketWatch",
+      "sentiment_score": -0.612,
+      "sentiment_label": "Very Negative",
+      "timestamp": "2025-08-27T17:07:43.485551",
+      "url": "https://www.marketwatch.com/story/investors-are-turning-to-this-neglected-part-of-the-stock-market-and-its-still-cheap-6a7006d2?mod=mw_quote_news_topstories"
+    },
+    {
+      "text": "MarketsFall Should Be Colorful. The Stock Market Outlook Calls for Bargain Buys and More Gains.",
+      "source": "MarketWatch",
+      "sentiment_score": 0.541,
+      "sentiment_label": "Very Positive",
+      "timestamp": "2025-08-28T10:07:43.486550",
+      "url": "https://www.barrons.com/articles/stock-market-outlook-f25a09ec?mod=mw_quote_news"
+    }
+  ],
+  "sentiment_trends": {
+    "last_24h_average": 0.302,
+    "last_week_average": 0.106,
+    "overall_average": 0.122,
+    "articles_last_24h": 10,
+    "articles_last_week": 30
+  },
+  "confidence_metrics": {
+    "sample_size": "Good",
+    "source_diversity": "Medium",
+    "data_recency": "Current"
+  }
+}
