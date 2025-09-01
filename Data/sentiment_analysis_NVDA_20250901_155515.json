@@ -1,0 +1,378 @@
+{
+  "symbol": "NVDA",
+  "company_name": "NVDA",
+  "analysis_timestamp": "2025-09-01T15:55:15.047282",
+  "total_articles": 18,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_sentiment": 0.077,
+    "weighted_avg_from_sources": 0.096
+  },
+  "sentiment_distribution": {
+    "positive": 3,
+    "negative": 1,
+    "neutral": 14,
+    "positive_percentage": 16.7,
+    "negative_percentage": 5.6,
+    "neutral_percentage": 77.8
+  },
+  "source_breakdown": {
+    "MarketWatch": {
+      "count": 4,
+      "avg_sentiment": 0.0
+    },
+    "NewsAPI (Yahoo Entertainment)": {
+      "count": 4,
+      "avg_sentiment": 0.0
+    },
+    "NewsAPI (Forbes)": {
+      "count": 1,
+      "avg_sentiment": -0.9496895670890808
+    },
+    "Yahoo Finance": {
+      "count": 1,
+      "avg_sentiment": 0.8132158517837524
+    },
+    "Google News": {
+      "count": 8,
+      "avg_sentiment": 0.2326544001698494
+    }
+  },
+  "recent_articles": [
+    {
+      "text": "Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings? - The Globe and Mail. Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings?  The Globe and Mail",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNOVI2OU92bElEeXpfMTJuWGpjQVltVmZSVUthanVscy1TekQ0TnJyOFNjbmQzRy1OVkxudzk3NFIyT3VQMEkzZnBGVm4yN1BNeExDdWcxZXlVVE1oNF9FS2FZci1Uc0h3M2ozSWJSZS10RU5MYWx4UVptN0JEb01rV1dGSERNMVJQVzdTYmdldnllZXhiTkF4dWRvN3pqd0RVbkdJTXNLbko5cTdRMndLNnIyWlFsaW9KYVl6UWZzVzZucHBwTVY0VlBRX3JKMDZEeHd3b2xwbEplOHRLTzhlLTBsR08?oc=5",
+      "timestamp": "2025-09-01T15:58:00"
+    },
+    {
+      "text": "Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings? - Yahoo Finance. Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings?  Yahoo FinanceNvidia: Beating Estimates Isn't Eno...",
+      "sentiment": 0.948237419128418,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TM2xfY3VGTTd3ZXd4eEtwdXVTMUY5eEMyaDVUSEpSckdkMlk1T0ViR2E4cTgwbnBsZ0g4Q2lickNPN2k4TWxTV3JPUDRwNU9iaHVkTVJKWWhSRXRhRTUzM3hvZGJtQXRzcTNSRm5mVWJPTmttYW5DQUtEdG4?oc=5",
+      "timestamp": "2025-09-01T14:42:00"
+    },
+    {
+      "text": "Nvidia's Best Days Look Well Behind Us (NASDAQ:NVDA) - Seeking Alpha. Nvidia's Best Days Look Well Behind Us (NASDAQ:NVDA)  Seeking Alpha Nvidia's Best Days Look Well Behind Us (NASDAQ:NVDA). JR Resea...",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVHBVcFg3UGdWZFJRekZrUmJYazNTeFlvQ2VxR1kweE82cDB1TVRHRXEtY0VLdEZHdHcyMjJvWGIyYzFKcGwyVkdFMHhsT2RubVJweGdKYzZOeF9oOHVUQTJWandyNHZWUGZSVkVtZm53bDBwWjNaX01SVW9ZbUgwUWd1UUE?oc=5",
+      "timestamp": "2025-09-01T13:00:00"
+    },
+    {
+      "text": "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"description\":\"NVDA | Complete NVIDIA Corp. stock news by MarketWatch. View real-time stock prices and stock quotes for a full financial overview.\",\"...",
+      "sentiment": 0.0,
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-09-01T10:53:41.778368"
+    },
+    {
+      "text": "Time to buy NVDA?. Connectez-vous pour accéder à votre portefeuille Nvidia (NVDA) Research Report. Leading designer of graphics chips Nvidia (NASDAQ:NVDA) met Wall Street’s revenue expectations in Q2 ...",
+      "sentiment": 0.8132158517837524,
+      "source": "Yahoo Finance",
+      "url": "https://stockstory.org/us/stocks/nasdaq/nvda?partner=yahoo&utm_source=yahoo&utm_medium=financequotetopnavigation&utm_campaign=quotetoppicktimetobuydesktop",
+      "timestamp": "2025-09-01T09:53:45.419286"
+    }
+  ],
+  "raw_articles": [
+    {
+      "title": "NVDA Stock Price | NVIDIA Corp",
+      "full_text": "NVDA Stock Price | NVIDIA Corp. Stock Quote (U.S.: Nasdaq) | MarketWatch",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-29T18:53:41.776338",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 72,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "{\"@context\":\"https://schema",
+      "full_text": "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"description\":\"NVDA | Complete NVIDIA Corp. stock news by MarketWatch. View real-time stock prices and stock quotes for a full financial overview.\",\"url\":\"https://www.marketwatch.com/investing/stock/nvda\",\"author\":{\"@type\":\"Organization\",\"name\":\"MarketWatch\"},\"headline\":\"NVDA Stock Price | NVIDIA Corp. Stock Quote (U.S.: Nasdaq) | MarketWatch\",\"inLanguage\":\"en-US\",\"isAccessibleForFree\":true,\"publisher\":{\"@type\":\"NewsMediaOrganization\",\"@id\":\"https://www.marketwatch.com/#publisher\",\"name\":\"MarketWatch\"}}",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-09-01T10:53:41.778368",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 559,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "NVIDIA Corporation (NVDA) Is a Trending Stock: Facts to Know Before Betting on It",
+      "full_text": "NVIDIA Corporation (NVDA) Is a Trending Stock: Facts to Know Before Betting on It",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-30T23:53:41.779368",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 81,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "var utag_data = { \"page_access\":\"free\",\"page_content_source\":\"MarketWatch\",\"page_site\":\"MarketWatch\",\"page_site_product\":\"MW\",\"page_content_type\":\"ResearchTools\",\"page_content_type_detail\":\"quote\",\"page_section\":\"Company Research\",\"page_name\":\"Quote_Page\",\"page_subsection\":\"Company Overview\",\"reengagement_refresh\":\"off\",\"user_type\":\"nonsubscriber\",\"page_ad_zone\":\"investing/quotes/stock/overview\",\"quote_ticker\":\"NVDA\",\"quote_company_name\":\"NVIDIA Corp",
+      "full_text": "var utag_data = { \"page_access\":\"free\",\"page_content_source\":\"MarketWatch\",\"page_site\":\"MarketWatch\",\"page_site_product\":\"MW\",\"page_content_type\":\"ResearchTools\",\"page_content_type_detail\":\"quote\",\"page_section\":\"Company Research\",\"page_name\":\"Quote_Page\",\"page_subsection\":\"Company Overview\",\"reengagement_refresh\":\"off\",\"user_type\":\"nonsubscriber\",\"page_ad_zone\":\"investing/quotes/stock/overview\",\"quote_ticker\":\"NVDA\",\"quote_company_name\":\"NVIDIA Corp.\",\"quote_exchange\":\"U.S.: Nasdaq\",\"quote_instrument_type\":\"Stock\"}; var utag_dataOriginal = {}; (function () { for (var prop in utag_data) { utag_dataOriginal[prop] = utag_data[prop]; } Object.freeze(utag_dataOriginal); })();",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-08-31T10:53:41.779368",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 680,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "NVIDIA Corporation (NVDA): Take A Look At Jim Cramer’s 1,000+ Words About The Stock After Q2 Earnings",
+      "full_text": "NVIDIA Corporation (NVDA): Take A Look At Jim Cramer’s 1,000+ Words About The Stock After Q2 Earnings. We recently published 11 Latest Stocks That Jim Cramer Just Talked About. NVIDIA Corporation (NASDAQ:NVDA) is one of the stocks Jim Cramer recently discussed.... The end of August is seeing some investor jitteriness when it comes to NVIDIA Corporation (NASDAQ:NVDA)s shares. After the stock failed to close higher following its fiscal Q2 earnings report, the sh… NVIDIA Corporation (NVDA): Take A Look At Jim Cramer’s 1,000+ Words About The Stock After Q2 Earnings. We recently published 11 Latest Stocks That Jim Cramer Just Talked About. NVIDIA Corporation (NASDAQ:NVDA) is one of the stocks Jim Cramer recently discussed. NVIDIA Corporation (NVDA): Take A Look At Jim Cramer's 1,000+ Words About The Stock After Q2 Earnings Posonskyi Andrey/Shutterstock.com The end of August is seeing some investor jitteriness when it comes to NVIDIA Corporation (NASDAQ:NVDA)’s shares. After the stock failed to close higher following its fiscal Q2 earnings report, the shares lost more than 2% on Friday after Chinese technology giant Alibaba unveiled its AI chips. Cramer commented on NVIDIA Corporation (NASDAQ:NVDA) after its earnings report and discussed it in quite a bit of detail:",
+      "raw_extracted_text": "NVIDIA Corporation (NVDA): Take A Look At Jim Cramer’s 1,000+ Words About The Stock After Q2 Earnings. We recently published 11 Latest Stocks That Jim Cramer Just Talked About. NVIDIA Corporation (NASDAQ:NVDA) is one of the stocks Jim Cramer recently discussed. NVIDIA Corporation (NVDA): Take A Look At Jim Cramer's 1,000+ Words About The Stock After Q2 Earnings Posonskyi Andrey/Shutterstock.com The end of August is seeing some investor jitteriness when it comes to NVIDIA Corporation (NASDAQ:NVDA)’s shares. After the stock failed to close higher following its fiscal Q2 earnings report, the shares lost more than 2% on Friday after Chinese technology giant Alibaba unveiled its AI chips. Cramer commented on NVIDIA Corporation (NASDAQ:NVDA) after its earnings report and discussed it in quite a bit of detail:",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/nvidia-corporation-nvda-look-jim-135827967.html",
+      "timestamp": "2025-08-31T13:58:27",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 1280,
+      "extracted_length": 814,
+      "enhancement_ratio": 63.6
+    },
+    {
+      "title": "NVIDIA Corporation (NVDA) Releases its FQ2 2026 Results",
+      "full_text": "NVIDIA Corporation (NVDA) Releases its FQ2 2026 Results. NVIDIA Corporation (NASDAQ:NVDA) is one of the Stocks That Will Make You Rich In 5 Years. On August 27, NVIDIA Corporation (NASDAQ:NVDA) released results for.... NVIDIA Corporation (NASDAQ:NVDA) is one of the Stocks That Will Make You Rich In 5 Years. On August 27, NVIDIA Corporation (NASDAQ:NVDA) released results for its fiscal second quarter of 2026. Wall S… NVIDIA Corporation (NVDA) Releases its FQ2 2026 Results. NVIDIA Corporation (NASDAQ:NVDA) is one of the Stocks That Will Make You Rich In 5 Years. On August 27, NVIDIA Corporation (NASDAQ:NVDA) released results for its fiscal second quarter of 2026. Wall Street is bullish on the stock as the company exceeded consensus for revenue and EPS by $609.1 million and $0.04, respectively. The analysts’ 12-month average price target of $200 reflects a 10.13% upside from current levels. Following the release, on August 28, Stifel Nicolaus analyst Ruben Roy maintained a Buy rating on NVIDIA Corporation (NASDAQ:NVDA) with a $212 price target. Management noted that the fiscal second quarter growth was driven by data center revenue, which reached $41.1 billion after growing 56% year-over-year. Looking ahead, the company expects fiscal third quarter revenue of around $54.0 billion, plus/minus 2%, with GAAP gross margins of around 73.3%. NVIDIA Corporation (NASDAQ:NVDA) is a computing company that focuses on accelerated computing and advanced graphics. While we acknowledge the potential of NVDA as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you’re looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: 30 Stocks That Should Double in 3 Years and 11 Hidden AI Stocks to Buy Right Now. Disclosure: None. This article is originally published at Insider Monkey.",
+      "raw_extracted_text": "NVIDIA Corporation (NVDA) Releases its FQ2 2026 Results. NVIDIA Corporation (NASDAQ:NVDA) is one of the Stocks That Will Make You Rich In 5 Years. On August 27, NVIDIA Corporation (NASDAQ:NVDA) released results for its fiscal second quarter of 2026. Wall Street is bullish on the stock as the company exceeded consensus for revenue and EPS by $609.1 million and $0.04, respectively. The analysts’ 12-month average price target of $200 reflects a 10.13% upside from current levels. Following the release, on August 28, Stifel Nicolaus analyst Ruben Roy maintained a Buy rating on NVIDIA Corporation (NASDAQ:NVDA) with a $212 price target. Management noted that the fiscal second quarter growth was driven by data center revenue, which reached $41.1 billion after growing 56% year-over-year. Looking ahead, the company expects fiscal third quarter revenue of around $54.0 billion, plus/minus 2%, with GAAP gross margins of around 73.3%. NVIDIA Corporation (NASDAQ:NVDA) is a computing company that focuses on accelerated computing and advanced graphics. While we acknowledge the potential of NVDA as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you’re looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: 30 Stocks That Should Double in 3 Years and 11 Hidden AI Stocks to Buy Right Now. Disclosure: None. This article is originally published at Insider Monkey.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/nvidia-corporation-nvda-releases-fq2-191303231.html",
+      "timestamp": "2025-08-29T19:13:03",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 1988,
+      "extracted_length": 1568,
+      "enhancement_ratio": 78.9
+    },
+    {
+      "title": "Nvidia (NVDA) Maintains AI Leadership, William Blair Says",
+      "full_text": "Nvidia (NVDA) Maintains AI Leadership, William Blair Says. If you click 'Accept all', we and our partners, including 237 who are part of the IAB Transparency & Consent Framework, will also store and/or access information on a device (in other words, use …",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_1bca7f77-9aa8-4573-ad7a-930956e8f429",
+      "timestamp": "2025-08-30T23:36:57",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 255,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Big Tech investment powers Nvidia results, but Wall Street says 'inevitable' slowdown looms",
+      "full_text": "Big Tech investment powers Nvidia results, but Wall Street says 'inevitable' slowdown looms. Big Tech's massive AI investments continued to fuel Nvidia's rapidly growing data center business this quarter — but Wall Street is flagging the risk of a.... Big Tech's massive artificial intelligence investments continued to fuel Nvidia's (NVDA) rapidly growing data center business this quarter, but Wall Street is flagging the risk of a slowdown and what… Big Tech investment powers Nvidia results, but Wall Street says 'inevitable' slowdown looms. Big Tech's massive artificial intelligence investments continued to fuel Nvidia's (NVDA) rapidly growing data center business in the second quarter, but Wall Street is flagging the risk of a slowdown and what that means for the AI chipmaker. Nvidia said in its quarterly filing to the Securities and Exchange Commission that large-scale cloud service providers made up roughly half of its data center revenue for the three months ending July 27, which tallied $41 billion, slightly below Wall Street's projections. And the company's top two customers accounted for roughly 40% of its revenue in the segment, the filing showed. Nvidia's data center segment is its largest revenue driver. It sells AI chips and servers to cloud providers, which use its AI GPUs and servers in data centers to remotely power artificial intelligence software, such as OpenAI's ChatGPT. Big Tech made up more of Nvidia's revenue in the second quarter than in the previous period and the prior year. Nvidia said large cloud service providers represented \"just under 50%\" of its data center revenue in the first quarter. Last year, those customers' share of that segment's revenue was in the mid-40% range, according to company filings. The biggest of Big Tech is driving that spending. According to the latest Bloomberg estimates, Microsoft (MSFT), Meta (META), Amazon (AMZN), and Alphabet (GOOGL, GOOG) collectively account for just over 41% of Nvidia's revenue on an annualized basis. Those companies have ramped up their investments in AI, raising their capital expenditure forecasts in their most recent quarterly earnings reports. The four companies are set to spend a cumulative $364 billion in their 2025 fiscal years. There lies the risk for Nvidia. Stifel analyst Ruben Roy told Yahoo Finance in an email that Nvidia's \"biggest risk\" is a pause in capital expenditures from tech giants, \"which is inevitable but not something that we are thinking will happen through 2026 based on various supply chain checks.\" William Blair analyst Sebastien Naji also told Yahoo Finance that any slowdown in AI spending would pose a \"major risk\" to Nvidia, but added that \"most indicators point to continued strong growth in AI investments over the next couple of years.\" DA Davidson Gil Luria said, \"The cloud service providers will continue to invest as long as their customers are willing to rent the capacity.\" \"If demand for compute eases, they may slow spending, but that hasn’t happened yet,\" he added. Still, Luria acknowledged that Big Tech's customers are generating very little to no returns on their investments in AI so far.",
+      "raw_extracted_text": "Big Tech investment powers Nvidia results, but Wall Street says 'inevitable' slowdown looms. Big Tech's massive artificial intelligence investments continued to fuel Nvidia's (NVDA) rapidly growing data center business in the second quarter, but Wall Street is flagging the risk of a slowdown and what that means for the AI chipmaker. Nvidia said in its quarterly filing to the Securities and Exchange Commission that large-scale cloud service providers made up roughly half of its data center revenue for the three months ending July 27, which tallied $41 billion, slightly below Wall Street's projections. And the company's top two customers accounted for roughly 40% of its revenue in the segment, the filing showed. Nvidia's data center segment is its largest revenue driver. It sells AI chips and servers to cloud providers, which use its AI GPUs and servers in data centers to remotely power artificial intelligence software, such as OpenAI's ChatGPT. Big Tech made up more of Nvidia's revenue in the second quarter than in the previous period and the prior year. Nvidia said large cloud service providers represented \"just under 50%\" of its data center revenue in the first quarter. Last year, those customers' share of that segment's revenue was in the mid-40% range, according to company filings. The biggest of Big Tech is driving that spending. According to the latest Bloomberg estimates, Microsoft (MSFT), Meta (META), Amazon (AMZN), and Alphabet (GOOGL, GOOG) collectively account for just over 41% of Nvidia's revenue on an annualized basis. Those companies have ramped up their investments in AI, raising their capital expenditure forecasts in their most recent quarterly earnings reports. The four companies are set to spend a cumulative $364 billion in their 2025 fiscal years. There lies the risk for Nvidia. Stifel analyst Ruben Roy told Yahoo Finance in an email that Nvidia's \"biggest risk\" is a pause in capital expenditures from tech giants, \"which is inevitable but not something that we are thinking will happen through 2026 based on various supply chain checks.\" William Blair analyst Sebastien Naji also told Yahoo Finance that any slowdown in AI spending would pose a \"major risk\" to Nvidia, but added that \"most indicators point to continued strong growth in AI investments over the next couple of years.\" DA Davidson Gil Luria said, \"The cloud service providers will continue to invest as long as their customers are willing to rent the capacity.\" \"If demand for compute eases, they may slow spending, but that hasn’t happened yet,\" he added. Still, Luria acknowledged that Big Tech's customers are generating very little to no returns on their investments in AI so far.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/big-tech-investment-powers-nvidia-results-but-wall-street-says-inevitable-slowdown-looms-193300481.html",
+      "timestamp": "2025-08-28T19:33:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 3154,
+      "extracted_length": 2701,
+      "enhancement_ratio": 85.6
+    },
+    {
+      "title": "Nvidia Stock Down 1",
+      "full_text": "Nvidia Stock Down 1.2%. Why Growth May Slow And Why Not To Buy $NVDA. Nvidia's growth keeps slowing down. Political barriers to selling in China and a low return on AI investment leave Nvidia investors with little upside.. Nvidia CEO Jensen Huang delivers a keynote address at the Consumer Electronics Show (CES) in Las Vegas, Nevada on January 6, 2025. Gadgets, robots and vehicles imbued with artificial intelligence wil… Nvidia Stock Down 1.2%. Why Growth May Slow And Why Not To Buy $NVDA. Nvidia CEO Jensen Huang delivers a keynote address at the Consumer Electronics Show (CES) in Las Vegas, Nevada on January 6, 2025. Gadgets, robots and vehicles imbued with artificial intelligence will once again vie for attention at the Consumer Electronics Show, as vendors behind the scenes will seek ways to deal with tariffs threatened by US President-elect Donald Trump. The annual Consumer Electronics Show (CES) opens formally in Las Vegas on January 7, 2025, but preceding days are packed with product announcements. (Photo by Patrick T. Fallon / AFP) (Photo by PATRICK T. FALLON/AFP via Getty Images) AFP via Getty Images Nvidia stock fell 1.2% Wednesday after reporting record sales, falling short on data-center revenue, and predicting cooler growth, according to the Wall Street Journal. Does this slight dip represent a buying opportunity? If Nvidia can accelerate revenue growth, its share price will rise. Here are three reasons that may not happen: Nvidia revenue from China could fall short. Nvidia’s revenue growth has continued to decelerate along with its stock price. AI’s failure to offer a compelling payoff for companies may slow data center demand. Nvidia is optimistic about the company’s future. “This year is a record-breaking year,” Nvidia CEO Jensen Huang said, reported the Journal. “I expect next year to be a record-breaking year” as well, he added. Nvidia’s Fiscal Year 2026 Second Quarter Performance And Prospects With the exception of its data center business, Nvidia beat expectations in Q2 2026 and issued slower Q3 growth guidance – still ahead of analyst forecasts. Overall, the chip designer reported “better-than-expected earnings and revenue on Wednesday, and said sales growth this quarter will remain above 50%,” according to CNBC. Here are the key numbers: Second quarter 2026 revenue: $46.74 billion – up 56% and $68 million more than the London Stock Exchange Group consensus, noted CNBC. – up 56% and $68 million more than the London Stock Exchange Group consensus, noted CNBC. Q2 data center revenue: $41.1 billion – up 56% and $200 million short of StreetAccount analyst expectations, reported the Journal. – up 56% and $200 million short of StreetAccount analyst expectations, reported the Journal. Q2 adjusted earnings per share: $1.05 – up 73% and 4 cents more than the LSEG estimate, wrote CNBC. – up 73% and 4 cents more than the LSEG estimate, wrote CNBC. Q3 revenue guidance: $54 billion, plus or minus 2%, while analysts expected $53.1 billion, according to LSEG. This guidance assumes no sales in China. The absence of revenue from China affected Nvidia’s data center results. The company generated $33.8 billion in GPU data center sales – a 1% decline from the first quarter. The company sold $4 billion fewer H20 chips – which are designated for the Chinese market, Nvidia chief financial officer Colleen Kress said in a statement.",
+      "raw_extracted_text": "Nvidia Stock Down 1.2%. Why Growth May Slow And Why Not To Buy $NVDA. Nvidia CEO Jensen Huang delivers a keynote address at the Consumer Electronics Show (CES) in Las Vegas, Nevada on January 6, 2025. Gadgets, robots and vehicles imbued with artificial intelligence will once again vie for attention at the Consumer Electronics Show, as vendors behind the scenes will seek ways to deal with tariffs threatened by US President-elect Donald Trump. The annual Consumer Electronics Show (CES) opens formally in Las Vegas on January 7, 2025, but preceding days are packed with product announcements. (Photo by Patrick T. Fallon / AFP) (Photo by PATRICK T. FALLON/AFP via Getty Images) AFP via Getty Images Nvidia stock fell 1.2% Wednesday after reporting record sales, falling short on data-center revenue, and predicting cooler growth, according to the Wall Street Journal. Does this slight dip represent a buying opportunity? If Nvidia can accelerate revenue growth, its share price will rise. Here are three reasons that may not happen: Nvidia revenue from China could fall short. Nvidia’s revenue growth has continued to decelerate along with its stock price. AI’s failure to offer a compelling payoff for companies may slow data center demand. Nvidia is optimistic about the company’s future. “This year is a record-breaking year,” Nvidia CEO Jensen Huang said, reported the Journal. “I expect next year to be a record-breaking year” as well, he added. Nvidia’s Fiscal Year 2026 Second Quarter Performance And Prospects With the exception of its data center business, Nvidia beat expectations in Q2 2026 and issued slower Q3 growth guidance – still ahead of analyst forecasts. Overall, the chip designer reported “better-than-expected earnings and revenue on Wednesday, and said sales growth this quarter will remain above 50%,” according to CNBC. Here are the key numbers: Second quarter 2026 revenue: $46.74 billion – up 56% and $68 million more than the London Stock Exchange Group consensus, noted CNBC. – up 56% and $68 million more than the London Stock Exchange Group consensus, noted CNBC. Q2 data center revenue: $41.1 billion – up 56% and $200 million short of StreetAccount analyst expectations, reported the Journal. – up 56% and $200 million short of StreetAccount analyst expectations, reported the Journal. Q2 adjusted earnings per share: $1.05 – up 73% and 4 cents more than the LSEG estimate, wrote CNBC. – up 73% and 4 cents more than the LSEG estimate, wrote CNBC. Q3 revenue guidance: $54 billion, plus or minus 2%, while analysts expected $53.1 billion, according to LSEG. This guidance assumes no sales in China. The absence of revenue from China affected Nvidia’s data center results. The company generated $33.8 billion in GPU data center sales – a 1% decline from the first quarter. The company sold $4 billion fewer H20 chips – which are designated for the Chinese market, Nvidia chief financial officer Colleen Kress said in a statement.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Forbes)",
+      "url": "https://www.forbes.com/sites/petercohan/2025/08/28/nvidia-stock-down-12-why-growth-may-slow-and-why-not-to-buy-nvda/",
+      "timestamp": "2025-08-28T17:18:29",
+      "polarity": -0.7598,
+      "compound": -0.9497,
+      "sentiment_label": "Negative",
+      "text_length": 3388,
+      "extracted_length": 2964,
+      "enhancement_ratio": 87.5
+    },
+    {
+      "title": "Time to buy NVDA?",
+      "full_text": "Time to buy NVDA?. Connectez-vous pour accéder à votre portefeuille Nvidia (NVDA) Research Report. Leading designer of graphics chips Nvidia (NASDAQ:NVDA) met Wall Street’s revenue expectations in Q2 CY2025, with sales up 55.6% year on year to $46.74 billion. The company expects next quarter’s revenue to be around $54 billion, close to analysts’ estimates. Its non-GAAP profit of $1.05 per share was 4% above analysts’ consensus estimates. Founded in 1993 by Jensen Huang and two former Sun Microsystems engineers, Nvidia (NASDAQ:NVDA) is a leading fabless designer of chips used in gaming, PCs, data centers, automotive, and a variety of end markets. Founded with the goal of bringing high end 3D computer graphics processing units (GPUs) to the mainstream PC market, Nvidia's business has exploded over the past decade as GPUs’ have changed the computing paradigm by enabling leading edge technologies like artificial intelligence, machine learning, and autonomous driving. GPUs differ from CPUs (most commonly associated with Intel) in that their multi-core structures are designed to operate in a parallel fashion, which makes them great at performing repeat operations at a fast pace, such as running repeated complex mathematical operations to render 3D graphics for video games. In recent years, technologists began applying GPUs “parallel processing” to new use cases like accelerating computing in data centers, powering artificial intelligence and machine learning, and modeling complex problems like taking in data from car cameras to guide autonomous safety features. Nvidia’s great differentiation was the introduction of the CUDA programming language back in 2006. Nvidia targeted software developers, giving away CUDA for free to developers, who all used it to code graphics in video games. Importantly, Nvidia kept its CUDA-GPU integration closed, meaning that CUDA could only run on Nvidia’s GPUs, creating a massive barrier to entry for other GPU rivals. In the early to mid 2010s, as developers began using CUDA to program GPUs for the new parallel processing use cases in data centers, Nvidia’s business began expanding dramatically. The exploding use cases for its GPUs and Nvidia’s proprietary programming language have generated one of the great growth stocks of the 2000s, with Nvidia market cap growing more than 20x. Nvidia now has its eyes on the ARM technology, aiming to pair ARM’s low power low cost CPUs with its GPUs to capture ever greater share in the datacenter from Intel’s x86 architecture CPUs.",
+      "raw_extracted_text": "Nvidia (NVDA) Research Report. Leading designer of graphics chips Nvidia (NASDAQ:NVDA) met Wall Street’s revenue expectations in Q2 CY2025, with sales up 55.6% year on year to $46.74 billion. The company expects next quarter’s revenue to be around $54 billion, close to analysts’ estimates. Its non-GAAP profit of $1.05 per share was 4% above analysts’ consensus estimates. Founded in 1993 by Jensen Huang and two former Sun Microsystems engineers, Nvidia (NASDAQ:NVDA) is a leading fabless designer of chips used in gaming, PCs, data centers, automotive, and a variety of end markets. Founded with the goal of bringing high end 3D computer graphics processing units (GPUs) to the mainstream PC market, Nvidia's business has exploded over the past decade as GPUs’ have changed the computing paradigm by enabling leading edge technologies like artificial intelligence, machine learning, and autonomous driving. GPUs differ from CPUs (most commonly associated with Intel) in that their multi-core structures are designed to operate in a parallel fashion, which makes them great at performing repeat operations at a fast pace, such as running repeated complex mathematical operations to render 3D graphics for video games. In recent years, technologists began applying GPUs “parallel processing” to new use cases like accelerating computing in data centers, powering artificial intelligence and machine learning, and modeling complex problems like taking in data from car cameras to guide autonomous safety features. Nvidia’s great differentiation was the introduction of the CUDA programming language back in 2006. Nvidia targeted software developers, giving away CUDA for free to developers, who all used it to code graphics in video games. Importantly, Nvidia kept its CUDA-GPU integration closed, meaning that CUDA could only run on Nvidia’s GPUs, creating a massive barrier to entry for other GPU rivals. In the early to mid 2010s, as developers began using CUDA to program GPUs for the new parallel processing use cases in data centers, Nvidia’s business began expanding dramatically. The exploding use cases for its GPUs and Nvidia’s proprietary programming language have generated one of the great growth stocks of the 2000s, with Nvidia market cap growing more than 20x. Nvidia now has its eyes on the ARM technology, aiming to pair ARM’s low power low cost CPUs with its GPUs to capture ever greater share in the datacenter from Intel’s x86 architecture CPUs.",
+      "extraction_successful": true,
+      "source": "Yahoo Finance",
+      "url": "https://stockstory.org/us/stocks/nasdaq/nvda?partner=yahoo&utm_source=yahoo&utm_medium=financequotetopnavigation&utm_campaign=quotetoppicktimetobuydesktop",
+      "timestamp": "2025-09-01T09:53:45.419286",
+      "polarity": 0.6506,
+      "compound": 0.8132,
+      "sentiment_label": "Very Positive",
+      "text_length": 2534,
+      "extracted_length": 2466,
+      "enhancement_ratio": 97.3
+    },
+    {
+      "title": "Nvidia Breaks Key Level As Alibaba Makes AI Chip; Is Nvidia A Buy Or Sell Now? - Investor's Business Daily",
+      "full_text": "Nvidia Breaks Key Level As Alibaba Makes AI Chip; Is Nvidia A Buy Or Sell Now? - Investor's Business Daily. Nvidia Breaks Key Level As Alibaba Makes AI Chip; Is Nvidia A Buy Or Sell Now?  Investor's Business Daily",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9TaUpCR3NJN3NpOWRLOFlabkpISU5DQ1NZVWFCelZIRkFQZm1xem1PX2xHSFJpb1dGOVp4R0JCbVJDVXNNbFJRMjFMTHYwQzJ4ZmxLQk52cnpQV1pwZVRhZ2NBaWdzbmtSRjJya1lkZTVvM3pjQTc4ODJjYw?oc=5",
+      "timestamp": "2025-08-29T19:55:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 213,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings? - Yahoo Finance",
+      "full_text": "Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings? - Yahoo Finance. Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings?  Yahoo FinanceNvidia: Beating Estimates Isn't Enough For A $4 Trillion AI Company  Seeking AlphaNvidia Just Sounded the Silent Alarm -- but Are Investors Paying Attention?  The Motley Fool Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings?. NVIDIA Corporation NVDA recently reported yet another stellar quarterly performance, reinforcing its dominance in the artificial intelligence (AI) and semiconductor markets. On Aug. 27, the company reported second-quarter fiscal 2026 revenues of $46.74 billion, marking a 56% year-over-year surge and surpassing the consensus estimate by 1.3%. Back-to-back strong quarterly financial results have instilled investors’ confidence in the stock. Shares of NVIDIA have soared 29.7% year to date, outpacing the Zacks Computer and Technology sector’s gain of 12.9%. NVDA stock has also outperformed other major semiconductor players, including Broadcom AVGO, QUALCOMM QCOM and Marvell Technology MRVL. Year to date, shares of Broadcom and QUALCOMM have risen 28.3% and 4.6%, respectively, while Marvell Technology stock has fallen 43.1%. YTD Price Return Performance Zacks Investment Research Image Source: Zacks Investment Research With a record-breaking data center segment and strong demand for AI-driven computing solutions, NVIDIA's growth story remains compelling. However, with the stock trading just 5.6% below its 52-week high of $184.48, investors might be wondering: Should they buy, sell or hold NVDA right now? Data Center Segment: NVIDIA’s Growth Powerhouse NVIDIA’s Data Center business remains the backbone of its financial strength. In the second quarter, the segment generated $41.1 billion in revenues, representing 87.9% of total sales. This marked a staggering 56% year-over-year increase and 5% sequential growth. This robust rise was mainly driven by higher shipments of the Blackwell GPU computing platforms that are used for the training and inference of large language models, recommendation engines and generative AI applications. The demand for NVIDIA’s Hopper 200 and Blackwell GPU computing platforms has been a key catalyst as cloud providers and enterprises scale their AI infrastructure. Large cloud service providers contributed the majority of Data Center revenues, indicating continued hyperscale investment in AI-driven computing. With AI adoption accelerating across industries, NVIDIA's stronghold in data centers makes it a critical beneficiary of this trend. The company’s leadership in AI chip development positions it well for sustained revenue growth in this segment. NVIDIA’s Strong Financial Execution and Profitability Beyond revenue growth, NVIDIA demonstrated exceptional financial discipline. The company reported non-GAAP gross margins of 61%, maintaining profitability despite rising operational expenses. Non-GAAP operating income jumped 51% year over year to $30.17 billion, reflecting the company’s ability to convert strong revenue growth into bottom-line gains.",
+      "raw_extracted_text": "Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings?. NVIDIA Corporation NVDA recently reported yet another stellar quarterly performance, reinforcing its dominance in the artificial intelligence (AI) and semiconductor markets. On Aug. 27, the company reported second-quarter fiscal 2026 revenues of $46.74 billion, marking a 56% year-over-year surge and surpassing the consensus estimate by 1.3%. Back-to-back strong quarterly financial results have instilled investors’ confidence in the stock. Shares of NVIDIA have soared 29.7% year to date, outpacing the Zacks Computer and Technology sector’s gain of 12.9%. NVDA stock has also outperformed other major semiconductor players, including Broadcom AVGO, QUALCOMM QCOM and Marvell Technology MRVL. Year to date, shares of Broadcom and QUALCOMM have risen 28.3% and 4.6%, respectively, while Marvell Technology stock has fallen 43.1%. YTD Price Return Performance Zacks Investment Research Image Source: Zacks Investment Research With a record-breaking data center segment and strong demand for AI-driven computing solutions, NVIDIA's growth story remains compelling. However, with the stock trading just 5.6% below its 52-week high of $184.48, investors might be wondering: Should they buy, sell or hold NVDA right now? Data Center Segment: NVIDIA’s Growth Powerhouse NVIDIA’s Data Center business remains the backbone of its financial strength. In the second quarter, the segment generated $41.1 billion in revenues, representing 87.9% of total sales. This marked a staggering 56% year-over-year increase and 5% sequential growth. This robust rise was mainly driven by higher shipments of the Blackwell GPU computing platforms that are used for the training and inference of large language models, recommendation engines and generative AI applications. The demand for NVIDIA’s Hopper 200 and Blackwell GPU computing platforms has been a key catalyst as cloud providers and enterprises scale their AI infrastructure. Large cloud service providers contributed the majority of Data Center revenues, indicating continued hyperscale investment in AI-driven computing. With AI adoption accelerating across industries, NVIDIA's stronghold in data centers makes it a critical beneficiary of this trend. The company’s leadership in AI chip development positions it well for sustained revenue growth in this segment. NVIDIA’s Strong Financial Execution and Profitability Beyond revenue growth, NVIDIA demonstrated exceptional financial discipline. The company reported non-GAAP gross margins of 61%, maintaining profitability despite rising operational expenses. Non-GAAP operating income jumped 51% year over year to $30.17 billion, reflecting the company’s ability to convert strong revenue growth into bottom-line gains.",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TM2xfY3VGTTd3ZXd4eEtwdXVTMUY5eEMyaDVUSEpSckdkMlk1T0ViR2E4cTgwbnBsZ0g4Q2lickNPN2k4TWxTV3JPUDRwNU9iaHVkTVJKWWhSRXRhRTUzM3hvZGJtQXRzcTNSRm5mVWJPTmttYW5DQUtEdG4?oc=5",
+      "timestamp": "2025-09-01T14:42:00",
+      "polarity": 0.7586,
+      "compound": 0.9482,
+      "sentiment_label": "Very Positive",
+      "text_length": 3120,
+      "extracted_length": 2780,
+      "enhancement_ratio": 89.1
+    },
+    {
+      "title": "Nvidia stock in focus amid post-earnings dip (NVDA:NASDAQ) - Seeking Alpha",
+      "full_text": "Nvidia stock in focus amid post-earnings dip (NVDA:NASDAQ) - Seeking Alpha. Nvidia stock in focus amid post-earnings dip (NVDA:NASDAQ)  Seeking Alpha",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxON2VzTzJYRzdPMlc4RHlTLTJYYTREdlpBNWt1dEMwWGoxMlREQXl0SkN5WGlzYXJtc051Z2dJYU1qWGE1YllBbXBlVG1WMFVoWU93MjhOS0t2UWl5TEpEZmpiY251T1FxSUR3TnF2d3FMaFJZOWlwd2hKUm1ac2ZGRXBmbUZMZw?oc=5",
+      "timestamp": "2025-08-30T18:52:25",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 149,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Nvidia's Best Days Look Well Behind Us (NASDAQ:NVDA) - Seeking Alpha",
+      "full_text": "Nvidia's Best Days Look Well Behind Us (NASDAQ:NVDA) - Seeking Alpha. Nvidia's Best Days Look Well Behind Us (NASDAQ:NVDA)  Seeking Alpha Nvidia's Best Days Look Well Behind Us (NASDAQ:NVDA). JR Research is an opportunistic investor. He was recognized by TipRanks as a Top Analyst. He was also recognized by Seeking Alpha as a \"Top Analyst To Follow\" for Technology, Software, and Internet, as well as for Growth and GARP. He identifies attractive risk/reward opportunities supported by robust price action to potentially generate alpha well above the S&P 500. He has also demonstrated outperformance with his picks. He focuses on identifying growth investing opportunities that present the most attractive risk/reward upside potential. His approach combines sharp price action analysis with fundamentals investing. He tends to avoid overhyped and overvalued stocks while capitalizing on battered stocks with significant upside recovery possibilities. He runs the investing group Ultimate Growth Investing which specializes in identifying high-potential opportunities across various sectors. He focuses on ideas that has strong growth potential and well-beaten contrarian plays, with an 18 to 24 month outlook for the thesis to play out. The group is designed for investors seeking to capitalize on growth stocks with robust fundamentals, buying momentum, and turnaround plays at highly attractive valuations. Learn more",
+      "raw_extracted_text": "Nvidia's Best Days Look Well Behind Us (NASDAQ:NVDA). JR Research is an opportunistic investor. He was recognized by TipRanks as a Top Analyst. He was also recognized by Seeking Alpha as a \"Top Analyst To Follow\" for Technology, Software, and Internet, as well as for Growth and GARP. He identifies attractive risk/reward opportunities supported by robust price action to potentially generate alpha well above the S&P 500. He has also demonstrated outperformance with his picks. He focuses on identifying growth investing opportunities that present the most attractive risk/reward upside potential. His approach combines sharp price action analysis with fundamentals investing. He tends to avoid overhyped and overvalued stocks while capitalizing on battered stocks with significant upside recovery possibilities. He runs the investing group Ultimate Growth Investing which specializes in identifying high-potential opportunities across various sectors. He focuses on ideas that has strong growth potential and well-beaten contrarian plays, with an 18 to 24 month outlook for the thesis to play out. The group is designed for investors seeking to capitalize on growth stocks with robust fundamentals, buying momentum, and turnaround plays at highly attractive valuations. Learn more",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVHBVcFg3UGdWZFJRekZrUmJYazNTeFlvQ2VxR1kweE82cDB1TVRHRXEtY0VLdEZHdHcyMjJvWGIyYzFKcGwyVkdFMHhsT2RubVJweGdKYzZOeF9oOHVUQTJWandyNHZWUGZSVkVtZm53bDBwWjNaX01SVW9ZbUgwUWd1UUE?oc=5",
+      "timestamp": "2025-09-01T13:00:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 1420,
+      "extracted_length": 1282,
+      "enhancement_ratio": 90.3
+    },
+    {
+      "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2026 - NVIDIA Newsroom",
+      "full_text": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2026 - NVIDIA Newsroom. NVIDIA Announces Financial Results for Second Quarter Fiscal 2026  NVIDIA Newsroom",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQamxIZnNxSmxsamFuZEtkSlZraHpSdWhxMDd0clNtQTE2VElUMUVuN3A3TUFrWFZDeHZTbGFBNHZhNzE2SF91d2lBY2J3NWViLXFlMTJuSVBtNXlSbktyc040TXRXSFJ5a21aTHJXMnljWXpmbzBzTkRwRmFtQUlZM0h1dS1kbzd4SFhhVTBhYVQ0cWZEdlFfaXdwTmozdXVJUWc?oc=5",
+      "timestamp": "2025-08-27T20:26:15",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 167,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings? - The Globe and Mail",
+      "full_text": "Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings? - The Globe and Mail. Should You Buy, Sell or Hold NVIDIA Stock Post Strong Q2 Earnings?  The Globe and Mail",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNOVI2OU92bElEeXpfMTJuWGpjQVltVmZSVUthanVscy1TekQ0TnJyOFNjbmQzRy1OVkxudzk3NFIyT3VQMEkzZnBGVm4yN1BNeExDdWcxZXlVVE1oNF9FS2FZci1Uc0h3M2ozSWJSZS10RU5MYWx4UVptN0JEb01rV1dGSERNMVJQVzdTYmdldnllZXhiTkF4dWRvN3pqd0RVbkdJTXNLbko5cTdRMndLNnIyWlFsaW9KYVl6UWZzVzZucHBwTVY0VlBRX3JKMDZEeHd3b2xwbEplOHRLTzhlLTBsR08?oc=5",
+      "timestamp": "2025-09-01T15:58:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 175,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Nvidia’s Earnings Call: Record Revenue and Growth - TipRanks",
+      "full_text": "Nvidia’s Earnings Call: Record Revenue and Growth - TipRanks. Nvidia’s Earnings Call: Record Revenue and Growth  TipRanks Nvidia’s Earnings Call: Record Revenue and Growth. Nvidia Corporation ((NVDA)) has held its Q2 earnings call. Read on for the main highlights of the call. Elevate Your Investing Strategy: Take advantage of TipRanks Premium at 50% off! Unlock powerful investing tools, advanced data, and expert analyst insights to help you invest with confidence. Nvidia’s Latest Earnings Call: A Strong Quarter with Record Revenue and Growth The latest earnings call from Nvidia Corporation painted a picture of robust performance, marked by record revenue and significant growth across key sectors such as data center, networking, and gaming. Despite some geopolitical challenges in China and increased operating expenses, the overall sentiment was overwhelmingly positive, with the company’s achievements overshadowing the concerns. Record Revenue Achievement Nvidia reported a total revenue of $46.7 billion, surpassing its outlook with sequential growth across all market platforms. This record achievement underscores the company’s strong market position and ability to capitalize on diverse opportunities. Data Center Revenue Growth The data center segment experienced a remarkable 56% year-over-year increase in revenue, despite a $4 billion decline in H20 revenue. This growth highlights Nvidia’s resilience and strategic focus on expanding its data center capabilities. Blackwell Platform Success The Blackwell platform reached record levels, with a 17% sequential growth. This success reflects Nvidia’s innovative prowess and its ability to deliver cutting-edge technology solutions. AI Infrastructure Opportunities Nvidia projects a staggering $3 to $4 trillion in AI infrastructure spending by the end of the decade. This forecast signals significant long-term growth opportunities for the company as it continues to lead in AI advancements. Networking Revenue Surge Networking revenue hit a record $7.3 billion, marking a 46% sequential and 98% year-on-year increase. This surge demonstrates Nvidia’s strength in the networking sector and its capacity to drive substantial growth. Gaming Revenue Growth The gaming sector also saw impressive growth, with revenue reaching a record $4.3 billion. This represents a 14% sequential increase and a 49% year-on-year jump, highlighting the ongoing demand for Nvidia’s gaming products. Sovereign AI Expansion Nvidia anticipates over $20 billion in Sovereign AI revenue this year, more than doubling last year’s figures. This expansion underscores the company’s leadership in AI and its ability to capture emerging market opportunities. AI Platform Leadership Nvidia’s AI platforms, including Blackwell and Rubin, are scaling into the global AI factory build-out, positioning the company as a leader in AI technology through the end of the decade. Geopolitical Challenges in China Geopolitical uncertainties and licensing issues in China are impacting Nvidia’s ability to ship H20, potentially affecting $2 to $5 billion in Q3 revenue.",
+      "raw_extracted_text": "Nvidia’s Earnings Call: Record Revenue and Growth. Nvidia Corporation ((NVDA)) has held its Q2 earnings call. Read on for the main highlights of the call. Elevate Your Investing Strategy: Take advantage of TipRanks Premium at 50% off! Unlock powerful investing tools, advanced data, and expert analyst insights to help you invest with confidence. Nvidia’s Latest Earnings Call: A Strong Quarter with Record Revenue and Growth The latest earnings call from Nvidia Corporation painted a picture of robust performance, marked by record revenue and significant growth across key sectors such as data center, networking, and gaming. Despite some geopolitical challenges in China and increased operating expenses, the overall sentiment was overwhelmingly positive, with the company’s achievements overshadowing the concerns. Record Revenue Achievement Nvidia reported a total revenue of $46.7 billion, surpassing its outlook with sequential growth across all market platforms. This record achievement underscores the company’s strong market position and ability to capitalize on diverse opportunities. Data Center Revenue Growth The data center segment experienced a remarkable 56% year-over-year increase in revenue, despite a $4 billion decline in H20 revenue. This growth highlights Nvidia’s resilience and strategic focus on expanding its data center capabilities. Blackwell Platform Success The Blackwell platform reached record levels, with a 17% sequential growth. This success reflects Nvidia’s innovative prowess and its ability to deliver cutting-edge technology solutions. AI Infrastructure Opportunities Nvidia projects a staggering $3 to $4 trillion in AI infrastructure spending by the end of the decade. This forecast signals significant long-term growth opportunities for the company as it continues to lead in AI advancements. Networking Revenue Surge Networking revenue hit a record $7.3 billion, marking a 46% sequential and 98% year-on-year increase. This surge demonstrates Nvidia’s strength in the networking sector and its capacity to drive substantial growth. Gaming Revenue Growth The gaming sector also saw impressive growth, with revenue reaching a record $4.3 billion. This represents a 14% sequential increase and a 49% year-on-year jump, highlighting the ongoing demand for Nvidia’s gaming products. Sovereign AI Expansion Nvidia anticipates over $20 billion in Sovereign AI revenue this year, more than doubling last year’s figures. This expansion underscores the company’s leadership in AI and its ability to capture emerging market opportunities. AI Platform Leadership Nvidia’s AI platforms, including Blackwell and Rubin, are scaling into the global AI factory build-out, positioning the company as a leader in AI technology through the end of the decade. Geopolitical Challenges in China Geopolitical uncertainties and licensing issues in China are impacting Nvidia’s ability to ship H20, potentially affecting $2 to $5 billion in Q3 revenue.",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPR0hFRjdfUmdUMHNJNnFoMkN0OHdaU3NlQ2JmZWpuZDRNbHRKaUtfVW5BQTRLY2dtLUpDTkpPS1BuY05iN3RlTG9VSzA2RFJQQWFNNkJXTkNDZVZ6NmIwRVJqTjdZWVhmYVRSLXNfTThTbzFiSDZsaFEyUUNOVWM2a0JmN3RndnpjOGZWb0pmWXNaQ3BaRWFHTGQ1NXhOVlVyZ293?oc=5",
+      "timestamp": "2025-09-01T01:37:40",
+      "polarity": 0.7304,
+      "compound": 0.913,
+      "sentiment_label": "Very Positive",
+      "text_length": 3094,
+      "extracted_length": 2972,
+      "enhancement_ratio": 96.1
+    },
+    {
+      "title": "Nvidia Just Sounded the Silent Alarm -- but Are Investors Paying Attention? - The Motley Fool",
+      "full_text": "Nvidia Just Sounded the Silent Alarm -- but Are Investors Paying Attention? - The Motley Fool. Nvidia Just Sounded the Silent Alarm -- but Are Investors Paying Attention?  The Motley FoolNvidia's Best Days Look Well Behind Us (NASDAQ:NVDA)  Seeking AlphaRetail Investors Pour $867 Million Into Nvidia (NVDA) as Palantir (PLTR) Draws $300 Million  TipRanks Nvidia Just Sounded the Silent Alarm -- but Are Investors Paying Attention?. Two subtle warnings in Nvidia's latest report point to possible trouble for Wall Street's most important artificial intelligence (AI) stock. Over the past three years, nothing has moved markets more than the rise of artificial intelligence (AI), and no stock has benefited more from the evolution of AI than Nvidia (NVDA -3.38%). The prospect of having software and systems empowered with AI making split-second decisions is a potential game-changer in most industries around the globe. Nvidia has found its niche as the leading supplier of graphics processing units (GPUs) used in enterprise data centers. GPUs are the \"brains\" that fuel split-second decision-making, as well as the training of large language models. No earnings report tends to garner more attention than Nvidia. While surpassing Wall Street's consensus revenue and profit forecasts has been something of the norm, Nvidia's latest report sounded a silent alarm that should serve as a warning to shareholders, as well as temper artificial intelligence hype. It was business as usual for Nvidia in the fiscal second quarter If there's one thing Nvidia has on its side, it's consistency. Its $46.7 billion in net sales (up 56% from the year-ago period), and its $1.05 in earnings per share (EPS), both handily leaped over the bars laid by Wall Street analysts. This was the 11th consecutive quarter that Nvidia's EPS surpassed expectations. The star of the show continues to be its data center segment, which accounted for more than 88% of reported sales. Exceptionally strong sales of Blackwell, coupled with \"extraordinary\" demand for next-gen chip Blackwell Ultra, according to CEO Jensen Huang, has powered the charge. Perhaps the most impressive operating metric in Nvidia's fiscal second quarter report (ended July 27) is its generally accepted accounting principles (GAAP) gross margin, which clocked in at 72.4%. Though this was down 270 basis points from the prior-year period, it represents the first sequential quarterly improvement in gross margin in more than a year. Huang hasn't been shy about his desire to maintain Nvidia's compute advantages and aims to bring a new advanced AI chip to market each year. The ramp-up of Blackwell Ultra will be followed by the expected debuts of Vera Rubin and Vera Rubin Ultra in the latter-halves of 2026 and 2027, respectively. This uptick we're seeing in GAAP gross margin indicates Nvidia is maintaining strong pricing on its AI hardware, at least for now. In addition, Nvidia's about-face with its gross margin may indicate ongoing AI-GPU scarcity. Enterprise demand outweighing supply has been one of Nvidia's core catalysts to this point.",
+      "raw_extracted_text": "Nvidia Just Sounded the Silent Alarm -- but Are Investors Paying Attention?. Two subtle warnings in Nvidia's latest report point to possible trouble for Wall Street's most important artificial intelligence (AI) stock. Over the past three years, nothing has moved markets more than the rise of artificial intelligence (AI), and no stock has benefited more from the evolution of AI than Nvidia (NVDA -3.38%). The prospect of having software and systems empowered with AI making split-second decisions is a potential game-changer in most industries around the globe. Nvidia has found its niche as the leading supplier of graphics processing units (GPUs) used in enterprise data centers. GPUs are the \"brains\" that fuel split-second decision-making, as well as the training of large language models. No earnings report tends to garner more attention than Nvidia. While surpassing Wall Street's consensus revenue and profit forecasts has been something of the norm, Nvidia's latest report sounded a silent alarm that should serve as a warning to shareholders, as well as temper artificial intelligence hype. It was business as usual for Nvidia in the fiscal second quarter If there's one thing Nvidia has on its side, it's consistency. Its $46.7 billion in net sales (up 56% from the year-ago period), and its $1.05 in earnings per share (EPS), both handily leaped over the bars laid by Wall Street analysts. This was the 11th consecutive quarter that Nvidia's EPS surpassed expectations. The star of the show continues to be its data center segment, which accounted for more than 88% of reported sales. Exceptionally strong sales of Blackwell, coupled with \"extraordinary\" demand for next-gen chip Blackwell Ultra, according to CEO Jensen Huang, has powered the charge. Perhaps the most impressive operating metric in Nvidia's fiscal second quarter report (ended July 27) is its generally accepted accounting principles (GAAP) gross margin, which clocked in at 72.4%. Though this was down 270 basis points from the prior-year period, it represents the first sequential quarterly improvement in gross margin in more than a year. Huang hasn't been shy about his desire to maintain Nvidia's compute advantages and aims to bring a new advanced AI chip to market each year. The ramp-up of Blackwell Ultra will be followed by the expected debuts of Vera Rubin and Vera Rubin Ultra in the latter-halves of 2026 and 2027, respectively. This uptick we're seeing in GAAP gross margin indicates Nvidia is maintaining strong pricing on its AI hardware, at least for now. In addition, Nvidia's about-face with its gross margin may indicate ongoing AI-GPU scarcity. Enterprise demand outweighing supply has been one of Nvidia's core catalysts to this point.",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOOGU4Z0Jxejcta29yS0NKanZJU2hoZ2M5d1cxZmhqdDNhVE4wM3lhcTJIN29ta2tIaTBFeXZZTjVMRW5FM2dyU3Zmc1otNlV3bHlpeTJPZEZnT2FyeUl3THBuckZTYjdEQjdqcnVaaVFJTDBPWmJHVzM4LU5FVnFzZ2VxeURIRnhYSTZwQ1FTTzQzeWs?oc=5",
+      "timestamp": "2025-09-01T07:51:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 3095,
+      "extracted_length": 2739,
+      "enhancement_ratio": 88.5
+    }
+  ],
+  "newspaper3k_stats": {
+    "total_articles": 18,
+    "enhanced_articles": 9,
+    "total_extracted_chars": 20286,
+    "avg_enhancement_ratio": 2254.0,
+    "sources_with_enhancement": [
+      {
+        "source": "NewsAPI (Yahoo Entertainment)",
+        "enhanced_count": 3,
+        "avg_extracted_chars": 1694.0
+      },
+      {
+        "source": "NewsAPI (Forbes)",
+        "enhanced_count": 1,
+        "avg_extracted_chars": 2964.0
+      },
+      {
+        "source": "Yahoo Finance",
+        "enhanced_count": 1,
+        "avg_extracted_chars": 2466.0
+      },
+      {
+        "source": "Google News",
+        "enhanced_count": 4,
+        "avg_extracted_chars": 2443.0
+      }
+    ]
+  }
+}

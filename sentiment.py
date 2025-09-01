@@ -1264,6 +1264,13 @@ class StockSentimentAnalyzer:
         # Save analysis data to ./Data directory
         self._save_analysis_data(results, all_sentiments)
         
+        # Clean up Selenium driver to prevent hanging
+        try:
+            from scrapers.base_scraper import BaseScraper
+            BaseScraper.cleanup_selenium_driver()
+        except Exception as e:
+            print(f"Warning: Selenium cleanup failed: {e}")
+        
         return results
 
 

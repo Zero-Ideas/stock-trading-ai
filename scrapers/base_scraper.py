@@ -11,6 +11,7 @@ import requests
 import time
 import random
 import re
+import threading
 from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
@@ -48,6 +49,9 @@ _MAX_DRIVER_CREATIONS = 3
 # Global URL resolution success tracking
 _URL_RESOLUTION_STATS = {}  # {source_name: {"attempts": int, "successes": int}}
 _DISABLED_SOURCES = set()  # Sources with <10% success rate
+
+# Thread safety lock for Selenium operations
+_SELENIUM_LOCK = threading.RLock()
 
 
 @dataclass
@@ -225,14 +229,15 @@ class BaseScraper(ABC):
             print(f"  Selenium temporarily disabled for {remaining_time} more seconds due to errors")
             raise Exception(f"Selenium disabled for {remaining_time} seconds due to repeated errors")
         
-        # Prevent infinite loops of driver creation
-        if _DRIVER_CREATION_IN_PROGRESS:
-            print(f"  Selenium driver creation already in progress, waiting...")
-            time.sleep(2)
-            if _GLOBAL_DRIVER is not None:
-                return _GLOBAL_DRIVER
-            else:
-                raise Exception("Driver creation failed or taking too long")
+        # Thread-safe check for driver creation in progress
+        with _SELENIUM_LOCK:
+            if _DRIVER_CREATION_IN_PROGRESS:
+                print(f"  Selenium driver creation already in progress, waiting...")
+                time.sleep(2)
+                if _GLOBAL_DRIVER is not None:
+                    return _GLOBAL_DRIVER
+                else:
+                    raise Exception("Driver creation failed or taking too long")
         
         # Prevent too many driver creations in one session
         if _DRIVER_CREATION_COUNT >= _MAX_DRIVER_CREATIONS:
@@ -334,14 +339,22 @@ class BaseScraper(ABC):
     
     @classmethod
     def cleanup_selenium_driver(cls):
-        """Cleanup the global selenium driver"""
+        """Cleanup the global selenium driver with thread safety"""
         global _GLOBAL_DRIVER
-        if _GLOBAL_DRIVER is not None:
-            try:
-                _GLOBAL_DRIVER.quit()
-            except:
-                pass
-            _GLOBAL_DRIVER = None
+        
+        with _SELENIUM_LOCK:  # Prevent concurrent cleanup
+            if _GLOBAL_DRIVER is not None:
+                try:
+                    _GLOBAL_DRIVER.quit()
+                    print("  Selenium driver cleaned up successfully")
+                except Exception as e:
+                    print(f"  Warning: Driver cleanup error ({e}), force-killing...")
+                    try:
+                        _GLOBAL_DRIVER.service.process.kill()
+                    except:
+                        pass
+                finally:
+                    _GLOBAL_DRIVER = None
     
     def make_request_with_selenium(self, url: str, wait_for_selector: str = None, 
                                   wait_timeout: int = 10, enable_javascript: bool = True) -> tuple:
