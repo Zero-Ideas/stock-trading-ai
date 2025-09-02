@@ -27,132 +27,326 @@ class SeekingAlphaScraper(BaseScraper):
         return {'polarity': 0.0, 'compound': 0.0}
     
     def scrape(self, max_articles: int = 8) -> List[SentimentData]:
-        """Enhanced Seeking Alpha scraper with improved anti-bot measures"""
+        """Enhanced Seeking Alpha scraper using Selenium to handle JavaScript and extract Analysis/News sections"""
         sentiments = []
         
         try:
-            # Multiple URL strategies with fallbacks
-            url_strategies = [
-                # Strategy 1: Symbol-specific pages
-                (f"https://seekingalpha.com/symbol/{self.symbol}/news", "news_page"),
-                (f"https://seekingalpha.com/symbol/{self.symbol}", "symbol_page"),
-                # Strategy 2: Alternative formats
-                (f"https://seekingalpha.com/symbol/{self.symbol.upper()}/news", "news_page_upper"),
-                (f"https://seekingalpha.com/symbol/{self.symbol.lower()}/analysis", "analysis_page"),
-                # Strategy 3: Search fallback
-                (f"https://seekingalpha.com/search?q={quote(self.symbol)}", "search_page"),
-                # Strategy 4: Mobile site (sometimes less protected)
-                (f"https://m.seekingalpha.com/symbol/{self.symbol}", "mobile_page")
-            ]
+            # Primary strategy: Use Selenium to load the main symbol page and extract articles
+            symbol_url = f"https://seekingalpha.com/symbol/{self.symbol}"
+            selenium_articles = self._scrape_with_selenium(symbol_url, max_articles)
+            sentiments.extend(selenium_articles)
             
-            for search_url, strategy_name in url_strategies:
-                if len(sentiments) >= max_articles:
-                    break
-                    
-                try:
-                    # Enhanced headers to mimic real browser
-                    headers = self._get_enhanced_headers()
-                    
-                    # Multiple retry attempts with different approaches
-                    response = self._make_resilient_request(search_url, headers, max_attempts=3)
-                    
-                    if not response or response.status_code != 200:
-                        if self.debug:
-                            status = response.status_code if response else "No Response"
-                            print(f"      Seeking Alpha {strategy_name} failed: HTTP {status}")
-                        continue
-                        
-                    soup = BeautifulSoup(response.content, 'html.parser')
-                    
-                    # Try multiple selectors for articles
-                    article_selectors = [
-                        'article[data-testid="post-list-item"]',
-                        'div[data-testid="post-list-item"]',
-                        'article',
-                        'div.mc-article',
-                        'div[data-test-id="post-list-item"]'
-                    ]
-                    
-                    articles = []
-                    for selector in article_selectors:
-                        found = soup.select(selector)[:max_articles - len(sentiments)]
-                        if found:
-                            articles = found
-                            break
-                    
-                    # Fallback to general search
-                    if not articles:
-                        articles = soup.find_all('div', class_='symbol-article')[:max_articles - len(sentiments)]
-                    
-                    for article in articles:
-                        if len(sentiments) >= max_articles:
-                            break
-                            
-                        try:
-                            title_elem = (article.find('h3') or 
-                                        article.find('h4') or 
-                                        article.find('a', {'data-testid': 'post-list-item-title'}) or
-                                        article.find('a'))
-                            if not title_elem:
-                                continue
-                                
-                            title = title_elem.get_text(strip=True)
-                            if not title or len(title) < 10:
-                                continue
-                            
-                            # Check relevance
-                            if not self.is_relevant_content(title):
-                                continue
-                            
-                            # Look for summary
-                            summary_elem = (article.find('p') or 
-                                          article.find('div', {'data-testid': 'post-list-content'}))
-                            summary = summary_elem.get_text(strip=True) if summary_elem else ""
-                            
-                            text = f"{title}. {summary}" if summary else title
-                            text = self.clean_text(text)
-                            
-                            # Get URL
-                            link_elem = article.find('a')
-                            url = ""
-                            if link_elem and link_elem.get('href'):
-                                href = link_elem.get('href')
-                                if href.startswith('/'):
-                                    url = f"https://seekingalpha.com{href}"
-                                elif href.startswith('http'):
-                                    url = href
-                            
-                            sentiment = self._analyze_text(text)
-                            sentiments.append(SentimentData(
-                                text=text,
-                                source="Seeking Alpha",
-                                timestamp=datetime.now() - timedelta(hours=random.randint(1, 48)),
-                                polarity=sentiment['polarity'],
-                                compound=sentiment['compound'],
-                                url=url
-                            ))
-                            
-                        except Exception as e:
-                            if self.debug:
-                                print(f"Error processing Seeking Alpha article: {e}")
-                            continue
-                            
-                    # Add delay between URLs
-                    self.random_delay(1.0, 2.0)
-                            
-                except Exception as e:
-                    if self.debug:
-                        print(f"Error with Seeking Alpha URL {search_url}: {e}")
-                    continue
-        
+            # If we got some articles but not enough, try fallback methods
+            if len(sentiments) < max_articles:
+                remaining = max_articles - len(sentiments)
+                fallback_articles = self._scrape_fallback_methods(remaining)
+                sentiments.extend(fallback_articles)
+            
         except Exception as e:
             if self.debug:
                 print(f"Seeking Alpha scraping error: {e}")
         
-        # If no articles found from any strategy, try RSS feed as last resort
-        if not sentiments and self.debug:
-            print("      Trying Seeking Alpha RSS feeds as fallback...")
-            sentiments = self._try_seekingalpha_rss(max_articles)
+        return sentiments[:max_articles]
+    
+    def _scrape_with_selenium(self, url: str, max_articles: int) -> List[SentimentData]:
+        """Use Selenium to scrape the JavaScript-rendered page and find Analysis/News sections"""
+        sentiments = []
+        
+        try:
+            # Track URL resolution attempt
+            self.track_url_resolution_attempt(self.source_name)
+            
+            if self.debug:
+                print(f"      Seeking Alpha: Using Selenium to load {url}")
+            
+            # Use Selenium to load the page and wait for content
+            page_source, final_url = self.make_request_with_selenium(
+                url, 
+                wait_for_selector="body", 
+                wait_timeout=10
+            )
+            
+            if not page_source:
+                if self.debug:
+                    print(f"      Seeking Alpha: Selenium failed to load page")
+                return sentiments
+            
+            # Track successful resolution
+            self.track_url_resolution_success(self.source_name)
+            
+            # Parse the rendered content
+            soup = BeautifulSoup(page_source, 'html.parser')
+            
+            # Strategy 1: Look for sections that contain "Analysis" or "News" with the symbol
+            if self.debug:
+                print(f"      Seeking Alpha: Looking for {self.symbol} Analysis and News sections...")
+            
+            # Find Analysis and News sections
+            analysis_articles = self._extract_analysis_section(soup, max_articles // 2)
+            news_articles = self._extract_news_section(soup, max_articles // 2)
+            
+            sentiments.extend(analysis_articles)
+            sentiments.extend(news_articles)
+            
+            # If we didn't find enough from sections, look for general article links
+            if len(sentiments) < max_articles:
+                general_articles = self._extract_general_articles(soup, max_articles - len(sentiments))
+                sentiments.extend(general_articles)
+            
+            if self.debug:
+                analysis_count = len(analysis_articles)
+                news_count = len(news_articles)
+                general_count = len(sentiments) - analysis_count - news_count
+                print(f"      Seeking Alpha: Found {analysis_count} analysis, {news_count} news, {general_count} general articles")
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      Seeking Alpha: Selenium scraping failed: {e}")
+        
+        return sentiments
+    
+    def _extract_analysis_section(self, soup: BeautifulSoup, max_articles: int) -> List[SentimentData]:
+        """Extract articles from the Analysis section"""
+        articles = []
+        
+        try:
+            # Look for sections/headers that mention Analysis
+            analysis_selectors = [
+                f'*[data-testid*="analysis"]',
+                f'section:has(*:contains("{self.symbol} Analysis"))',
+                f'div:has(h2:contains("Analysis"))',
+                f'div:has(h3:contains("Analysis"))',
+                f'*:contains("{self.symbol} Analysis")',
+                f'*:contains("Analysis")'
+            ]
+            
+            for selector in analysis_selectors:
+                try:
+                    sections = soup.select(selector)
+                    for section in sections:
+                        # Look for article links within this section
+                        links = section.find_all('a', href=lambda x: x and '/article/' in x)
+                        for link in links[:max_articles]:
+                            article = self._process_article_link(link, "Analysis")
+                            if article:
+                                articles.append(article)
+                                if len(articles) >= max_articles:
+                                    return articles
+                except:
+                    continue
+            
+            # If no specific analysis section found, look for analysis article links directly
+            if not articles:
+                analysis_links = soup.find_all('a', href=lambda x: x and '/article/' in x and 'analysis' in x.lower())
+                for link in analysis_links[:max_articles]:
+                    article = self._process_article_link(link, "Analysis")
+                    if article:
+                        articles.append(article)
+                        if len(articles) >= max_articles:
+                            break
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      Analysis section extraction error: {e}")
+        
+        return articles
+    
+    def _extract_news_section(self, soup: BeautifulSoup, max_articles: int) -> List[SentimentData]:
+        """Extract articles from the News section"""
+        articles = []
+        
+        try:
+            # Look for sections/headers that mention News
+            news_selectors = [
+                f'*[data-testid*="news"]',
+                f'section:has(*:contains("{self.symbol} News"))',
+                f'div:has(h2:contains("News"))',
+                f'div:has(h3:contains("News"))',
+                f'*:contains("{self.symbol} News")',
+                f'*:contains("News")'
+            ]
+            
+            for selector in news_selectors:
+                try:
+                    sections = soup.select(selector)
+                    for section in sections:
+                        # Look for article links within this section
+                        links = section.find_all('a', href=lambda x: x and ('/news/' in x or '/article/' in x))
+                        for link in links[:max_articles]:
+                            article = self._process_article_link(link, "News")
+                            if article:
+                                articles.append(article)
+                                if len(articles) >= max_articles:
+                                    return articles
+                except:
+                    continue
+            
+            # If no specific news section found, look for news article links directly
+            if not articles:
+                news_links = soup.find_all('a', href=lambda x: x and '/news/' in x)
+                for link in news_links[:max_articles]:
+                    article = self._process_article_link(link, "News")
+                    if article:
+                        articles.append(article)
+                        if len(articles) >= max_articles:
+                            break
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      News section extraction error: {e}")
+        
+        return articles
+    
+    def _extract_general_articles(self, soup: BeautifulSoup, max_articles: int) -> List[SentimentData]:
+        """Extract general articles from any links found on the page"""
+        articles = []
+        
+        try:
+            # Look for any article/news links on the page
+            all_article_links = soup.find_all('a', href=lambda x: x and ('/article/' in x or '/news/' in x))
+            
+            for link in all_article_links[:max_articles * 2]:  # Get more candidates to filter
+                article = self._process_article_link(link, "General")
+                if article and len(articles) < max_articles:
+                    articles.append(article)
+                    if len(articles) >= max_articles:
+                        break
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      General articles extraction error: {e}")
+        
+        return articles
+    
+    def _process_article_link(self, link, section_type: str) -> SentimentData:
+        """Process an individual article link and extract content"""
+        try:
+            href = link.get('href', '')
+            if not href:
+                return None
+            
+            # Ensure full URL
+            if href.startswith('/'):
+                href = f"https://seekingalpha.com{href}"
+            elif not href.startswith('http'):
+                return None
+            
+            # Get article title
+            title = link.get_text(strip=True)
+            if not title or len(title) < 10:
+                # Try to get title from nearby elements
+                parent = link.parent
+                if parent:
+                    title_elem = parent.find(['h1', 'h2', 'h3', 'h4', 'h5'])
+                    if title_elem:
+                        title = title_elem.get_text(strip=True)
+            
+            if not title or len(title) < 10:
+                return None
+            
+            # Check relevance to our symbol
+            if not self.is_relevant_content(title):
+                return None
+            
+            # Try to get article summary or description
+            summary = ""
+            parent = link.parent
+            if parent:
+                # Look for summary/description in nearby elements
+                summary_elem = (parent.find('p') or 
+                               parent.find('div', class_=lambda x: x and 'summary' in x.lower()) or
+                               parent.find('span', class_=lambda x: x and 'description' in x.lower()))
+                if summary_elem:
+                    summary = summary_elem.get_text(strip=True)
+            
+            # Combine title and summary
+            text = f"{title}. {summary}" if summary else title
+            text = self.clean_text(text)
+            
+            # Try to enhance with newspaper3k if available
+            enhanced_text = self._enhance_with_newspaper3k(href, text)
+            
+            # Create sentiment data
+            sentiment = self._analyze_text(enhanced_text)
+            return SentimentData(
+                text=enhanced_text,
+                source=f"Seeking Alpha ({section_type})",
+                timestamp=datetime.now() - timedelta(hours=random.randint(1, 48)),
+                polarity=sentiment['polarity'],
+                compound=sentiment['compound'],
+                url=href,
+                raw_extracted_text=enhanced_text if enhanced_text != text else ""
+            )
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      Error processing article link: {e}")
+            return None
+    
+    def _enhance_with_newspaper3k(self, url: str, fallback_text: str) -> str:
+        """Try to enhance article text using newspaper3k"""
+        try:
+            # Import newspaper3k if available
+            from newspaper import Article, Config
+            
+            config = Config()
+            config.browser_user_agent = self.get_random_user_agent()
+            config.request_timeout = 5
+            config.number_threads = 1
+            
+            article = Article(url, config=config)
+            article.download()
+            article.parse()
+            
+            if article.text and len(article.text) > len(fallback_text):
+                if self.debug:
+                    print(f"      Enhanced article with newspaper3k: {len(article.text)} chars vs {len(fallback_text)} chars")
+                return f"{article.title}. {article.text}" if article.title else article.text
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      newspaper3k enhancement failed: {e}")
+        
+        return fallback_text
+    
+    def _scrape_fallback_methods(self, max_articles: int) -> List[SentimentData]:
+        """Fallback scraping methods if Selenium doesn't get enough articles"""
+        sentiments = []
+        
+        try:
+            # Try direct news and analysis page URLs
+            fallback_urls = [
+                f"https://seekingalpha.com/symbol/{self.symbol}/news",
+                f"https://seekingalpha.com/symbol/{self.symbol}/analysis"
+            ]
+            
+            for url in fallback_urls:
+                if len(sentiments) >= max_articles:
+                    break
+                
+                try:
+                    # Try with requests first (faster)
+                    headers = self._get_enhanced_headers()
+                    response = self._make_resilient_request(url, headers, max_attempts=2)
+                    
+                    if response and response.status_code == 200:
+                        soup = BeautifulSoup(response.content, 'html.parser')
+                        articles = self._extract_general_articles(soup, max_articles - len(sentiments))
+                        sentiments.extend(articles)
+                    
+                except Exception as e:
+                    if self.debug:
+                        print(f"      Fallback URL {url} failed: {e}")
+                    continue
+            
+            # RSS feed as final fallback
+            if len(sentiments) < max_articles:
+                rss_articles = self._try_seekingalpha_rss(max_articles - len(sentiments))
+                sentiments.extend(rss_articles)
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      Fallback methods error: {e}")
         
         return sentiments
     

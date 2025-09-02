@@ -229,15 +229,14 @@ class BaseScraper(ABC):
             print(f"  Selenium temporarily disabled for {remaining_time} more seconds due to errors")
             raise Exception(f"Selenium disabled for {remaining_time} seconds due to repeated errors")
         
-        # Thread-safe check for driver creation in progress
-        with _SELENIUM_LOCK:
-            if _DRIVER_CREATION_IN_PROGRESS:
-                print(f"  Selenium driver creation already in progress, waiting...")
-                time.sleep(2)
-                if _GLOBAL_DRIVER is not None:
-                    return _GLOBAL_DRIVER
-                else:
-                    raise Exception("Driver creation failed or taking too long")
+        # Prevent infinite loops of driver creation
+        if _DRIVER_CREATION_IN_PROGRESS:
+            print(f"  Selenium driver creation already in progress, waiting...")
+            time.sleep(2)
+            if _GLOBAL_DRIVER is not None:
+                return _GLOBAL_DRIVER
+            else:
+                raise Exception("Driver creation failed or taking too long")
         
         # Prevent too many driver creations in one session
         if _DRIVER_CREATION_COUNT >= _MAX_DRIVER_CREATIONS:

@@ -228,7 +228,7 @@ class StockSentimentAnalyzer:
             
             # Improved scrapers with anti-bot protection
             'bloomberg': BloombergScraper(symbol, debug),  # Re-enabled - improved with fallbacks
-            '#seeking_alpha': SeekingAlphaScraper(symbol, debug),
+            'seeking_alpha': SeekingAlphaScraper(symbol, debug),  # Re-enabled with Selenium support
             'marketwatch': MarketWatchScraper(symbol, debug),
             #'reuters': ReutersScraper(symbol, debug),
             
