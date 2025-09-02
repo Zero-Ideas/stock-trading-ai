@@ -82,6 +82,7 @@ class BaseScraper(ABC):
         ]
         # Track selenium usage for this scraper instance
         self._selenium_used = False
+        self._last_selenium_request = 0  # Timestamp of last selenium request
         
     @abstractmethod
     def scrape(self, max_articles: int = 10) -> List[SentimentData]:
@@ -214,7 +215,7 @@ class BaseScraper(ABC):
     
     @classmethod
     def get_selenium_driver(cls):
-        """Get shared selenium driver instance for all scrapers with error tracking"""
+        """Get shared selenium driver instance for all scrapers with error tracking and auto-refresh"""
         global _GLOBAL_DRIVER, _DRIVER_LAST_USED, _SELENIUM_ERROR_COUNT, _SELENIUM_DISABLED_UNTIL, _DRIVER_CREATION_IN_PROGRESS, _DRIVER_CREATION_COUNT, _MAX_DRIVER_CREATIONS
         
         if not SELENIUM_AVAILABLE:
@@ -229,22 +230,32 @@ class BaseScraper(ABC):
             print(f"  Selenium temporarily disabled for {remaining_time} more seconds due to errors")
             raise Exception(f"Selenium disabled for {remaining_time} seconds due to repeated errors")
         
-        # Prevent infinite loops of driver creation
-        if _DRIVER_CREATION_IN_PROGRESS:
-            print(f"  Selenium driver creation already in progress, waiting...")
-            time.sleep(2)
-            if _GLOBAL_DRIVER is not None:
-                return _GLOBAL_DRIVER
-            else:
-                raise Exception("Driver creation failed or taking too long")
+        # Thread-safe check for driver creation in progress
+        with _SELENIUM_LOCK:
+            if _DRIVER_CREATION_IN_PROGRESS:
+                print(f"  Selenium driver creation already in progress, waiting...")
+                time.sleep(2)
+                if _GLOBAL_DRIVER is not None:
+                    return _GLOBAL_DRIVER
+                else:
+                    raise Exception("Driver creation failed or taking too long")
         
-        # Prevent too many driver creations in one session
-        if _DRIVER_CREATION_COUNT >= _MAX_DRIVER_CREATIONS:
+        # More lenient creation limits for heavy workloads
+        if _DRIVER_CREATION_COUNT >= 10:  # Increased from 3 to 10
             print(f"  Maximum selenium driver creations ({_MAX_DRIVER_CREATIONS}) reached for this session")
             raise Exception("Maximum selenium driver creations reached - preventing infinite loops")
         
-        # Create new driver if none exists or if the old one is too old (5 minutes timeout)
-        if _GLOBAL_DRIVER is None or (current_time - _DRIVER_LAST_USED) > 300:
+        # Auto-refresh driver conditions:
+        # 1. No driver exists
+        # 2. Driver is older than 3 minutes (reduced from 5 for freshness)
+        # 3. High error count suggests driver issues
+        needs_refresh = (
+            _GLOBAL_DRIVER is None or 
+            (current_time - _DRIVER_LAST_USED) > 180 or  # 3 minutes instead of 5
+            _SELENIUM_ERROR_COUNT >= 3  # Refresh if errors accumulate
+        )
+        
+        if needs_refresh:
             _DRIVER_CREATION_IN_PROGRESS = True
             _DRIVER_CREATION_COUNT += 1
             
@@ -257,15 +268,26 @@ class BaseScraper(ABC):
                 
                 chrome_options = Options()
                 
-                # Basic configuration - DISABLE HEADLESS for Google News redirects
-                # chrome_options.add_argument('--headless=new')  # DISABLED - headless interferes with JS redirects
+                # Enhanced configuration for heavy workloads and stability
                 chrome_options.add_argument('--no-sandbox')
                 chrome_options.add_argument('--disable-dev-shm-usage')
                 chrome_options.add_argument('--disable-gpu')
                 chrome_options.add_argument('--window-size=1920,1080')
                 
-                # Make window minimized instead of headless
+                # Make window minimized instead of headless for better JS support
                 chrome_options.add_argument('--window-position=-2000,-2000')  # Move window off screen
+                
+                # Additional stability options for heavy workloads
+                chrome_options.add_argument('--disable-extensions-file-access-check')
+                chrome_options.add_argument('--disable-extensions-http-throttling')
+                chrome_options.add_argument('--aggressive-cache-discard')
+                chrome_options.add_argument('--disable-background-timer-throttling')
+                chrome_options.add_argument('--disable-renderer-backgrounding')
+                chrome_options.add_argument('--disable-backgrounding-occluded-windows')
+                
+                # Memory management for sustained usage
+                chrome_options.add_argument('--max_old_space_size=2048')  # Reduced from 4096 for stability
+                chrome_options.add_argument('--memory-pressure-off')
                 
                 # SSL and network optimizations
                 chrome_options.add_argument('--ignore-ssl-errors-on-localhost')
@@ -318,11 +340,22 @@ class BaseScraper(ABC):
                     _GLOBAL_DRIVER.execute_script("Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en']})")
                     _GLOBAL_DRIVER.execute_script("Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]})")
                     
-                    # Strict timeouts per TODO requirements
-                    _GLOBAL_DRIVER.set_page_load_timeout(10)  # Max 10 seconds as per TODO
-                    _GLOBAL_DRIVER.implicitly_wait(3)  # Reduced for faster failures
+                    # Optimized timeouts for heavy workloads
+                    _GLOBAL_DRIVER.set_page_load_timeout(12)  # Slightly increased for stability
+                    _GLOBAL_DRIVER.implicitly_wait(2)  # Reduced further for speed
                     
-                    print("  Selenium driver initialized with optimized settings")
+                    # Clear any existing state to start fresh
+                    try:
+                        _GLOBAL_DRIVER.delete_all_cookies()
+                        _GLOBAL_DRIVER.execute_script("window.localStorage.clear();")
+                        _GLOBAL_DRIVER.execute_script("window.sessionStorage.clear();")
+                    except:
+                        pass  # Ignore if this fails
+                    
+                    # Reset error count on successful driver creation
+                    _SELENIUM_ERROR_COUNT = 0
+                    
+                    print("  Selenium driver initialized with heavy workload optimizations")
                     
                 except Exception as e:
                     print(f"  WARNING: Selenium driver creation failed: {e}")
@@ -334,6 +367,19 @@ class BaseScraper(ABC):
                 _DRIVER_CREATION_IN_PROGRESS = False
         
         _DRIVER_LAST_USED = current_time
+        
+        # Periodic state cleanup for heavy workloads
+        if _DRIVER_CREATION_COUNT > 1 and _DRIVER_CREATION_COUNT % 3 == 0:
+            try:
+                if _GLOBAL_DRIVER:
+                    # Clear accumulated state every few operations
+                    _GLOBAL_DRIVER.delete_all_cookies()
+                    _GLOBAL_DRIVER.execute_script("window.localStorage.clear();")
+                    _GLOBAL_DRIVER.execute_script("window.sessionStorage.clear();")
+                    print("  Selenium driver state cleared for fresh operation")
+            except:
+                pass  # Don't fail if cleanup fails
+        
         return _GLOBAL_DRIVER
     
     @classmethod
@@ -376,6 +422,18 @@ class BaseScraper(ABC):
                 print("      Selenium not available, falling back to requests")
             return None, None
         
+        # Add small delay between selenium requests to prevent driver overload
+        current_time = time.time()
+        if self._last_selenium_request > 0:
+            time_since_last = current_time - self._last_selenium_request
+            if time_since_last < 1.0:  # Less than 1 second since last request
+                delay = 1.0 - time_since_last
+                if self.debug:
+                    print(f"      Selenium: Adding {delay:.1f}s delay to prevent overload")
+                time.sleep(delay)
+        
+        self._last_selenium_request = time.time()
+        
         max_retries = 2
         for attempt in range(max_retries):
             try:
@@ -391,11 +449,24 @@ class BaseScraper(ABC):
                 if self.debug:
                     print(f"      Selenium: Attempt {attempt + 1} - Navigating to {url[:80]}...")
                 
-                # Set strict timeouts per TODO requirements (5-10 seconds)
-                driver.set_page_load_timeout(8)  # 8 seconds max
+                # Dynamic timeout based on URL complexity
+                if 'google.com' in url:
+                    page_timeout = 15  # Google News needs more time for redirects
+                else:
+                    page_timeout = 10   # Standard timeout for other sites
                 
-                # Navigate with timeout handling
+                driver.set_page_load_timeout(page_timeout)
+                
+                # Navigate with enhanced timeout handling
                 try:
+                    # Clear any existing page state before navigation
+                    try:
+                        if driver.current_url != "about:blank":
+                            driver.execute_script("window.stop();")  # Stop any pending operations
+                            time.sleep(0.5)
+                    except:
+                        pass
+                    
                     driver.get(url)
                     
                     # For Google News URLs, wait for potential redirects
@@ -493,21 +564,26 @@ class BaseScraper(ABC):
                         print(f"      Selenium: SSL/Network error on attempt {attempt + 1} (total errors: {_SELENIUM_ERROR_COUNT})")
                     elif "timeout" in error_msg.lower():
                         print(f"      Selenium: Timeout error on attempt {attempt + 1} (total errors: {_SELENIUM_ERROR_COUNT})")
+                    elif "session deleted" in error_msg.lower() or "invalid session" in error_msg.lower():
+                        print(f"      Selenium: Session error on attempt {attempt + 1} - driver needs refresh")
                     else:
                         print(f"      Selenium: WebDriver error on attempt {attempt + 1}: {error_msg[:100]} (total errors: {_SELENIUM_ERROR_COUNT})")
                 
-                # For certain errors, recreate the driver
-                if any(error_phrase in str(wde).lower() for error_phrase in 
-                       ["handshake failed", "connection refused", "session not created"]):
+                # Enhanced error recovery - force driver refresh for certain errors
+                critical_errors = ["handshake failed", "connection refused", "session not created", 
+                                 "session deleted", "invalid session", "chrome not reachable"]
+                if any(error_phrase in str(wde).lower() for error_phrase in critical_errors):
                     if self.debug:
-                        print(f"      Selenium: Recreating driver due to connection error")
+                        print(f"      Selenium: Critical error detected - forcing driver refresh")
                     self.cleanup_selenium_driver()
+                    # Clear error count since we're getting a fresh driver
+                    _SELENIUM_ERROR_COUNT = max(0, _SELENIUM_ERROR_COUNT - 2)
                 
-                # If too many errors, disable selenium temporarily
-                if _SELENIUM_ERROR_COUNT >= 5:
-                    _SELENIUM_DISABLED_UNTIL = time.time() + 300  # Disable for 5 minutes
+                # More lenient error threshold for heavy workloads
+                if _SELENIUM_ERROR_COUNT >= 8:  # Increased from 5 to 8
+                    _SELENIUM_DISABLED_UNTIL = time.time() + 180  # Reduced from 5 minutes to 3 minutes
                     if self.debug:
-                        print(f"      Selenium: Disabled for 5 minutes due to {_SELENIUM_ERROR_COUNT} consecutive errors")
+                        print(f"      Selenium: Disabled for 3 minutes due to {_SELENIUM_ERROR_COUNT} consecutive errors")
                     self.cleanup_selenium_driver()
                     return None, None
                     

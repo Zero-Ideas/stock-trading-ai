@@ -1,0 +1,58 @@
+{
+  "symbol": "MSFT",
+  "company_name": "MSFT",
+  "analysis_timestamp": "2025-09-01T22:15:31.886611",
+  "total_articles": 1,
+  "overall_sentiment": "Neutral",
+  "sentiment_scores": {
+    "average_sentiment": 0.0,
+    "weighted_avg_from_sources": 0.0
+  },
+  "sentiment_distribution": {
+    "positive": 0,
+    "negative": 0,
+    "neutral": 1,
+    "positive_percentage": 0.0,
+    "negative_percentage": 0.0,
+    "neutral_percentage": 100.0
+  },
+  "source_breakdown": {
+    "Seeking Alpha (RSS)": {
+      "count": 1,
+      "avg_sentiment": 0.0
+    }
+  },
+  "recent_articles": [
+    {
+      "text": "Microsoft Corporation (MSFT) Presents at Deutsche Bank's 2025 Technology Conference Transcript.",
+      "sentiment": 0.0,
+      "source": "Seeking Alpha (RSS)",
+      "url": "https://seekingalpha.com/article/4817691-microsoft-corporation-msft-presents-at-deutsche-banks-2025-technology-conference-transcript?source=feed_symbol_MSFT",
+      "timestamp": "2025-08-31T17:15:27.802329"
+    }
+  ],
+  "raw_articles": [
+    {
+      "title": "Microsoft Corporation (MSFT) Presents at Deutsche Bank's 2025 Technology Conference Transcript",
+      "full_text": "Microsoft Corporation (MSFT) Presents at Deutsche Bank's 2025 Technology Conference Transcript.",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Seeking Alpha (RSS)",
+      "url": "https://seekingalpha.com/article/4817691-microsoft-corporation-msft-presents-at-deutsche-banks-2025-technology-conference-transcript?source=feed_symbol_MSFT",
+      "timestamp": "2025-08-31T17:15:27.802329",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 95,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    }
+  ],
+  "newspaper3k_stats": {
+    "total_articles": 1,
+    "enhanced_articles": 0,
+    "total_extracted_chars": 0,
+    "avg_enhancement_ratio": 0.0,
+    "sources_with_enhancement": []
+  }
+}

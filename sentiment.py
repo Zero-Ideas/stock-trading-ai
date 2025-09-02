@@ -225,10 +225,10 @@ class StockSentimentAnalyzer:
             'newsapi': NewsAPIScraper(symbol, debug),  # Re-enabled - now works great with newspaper3k
             'google_news': GoogleNewsScraper(symbol, debug),
             'yahoo_finance': YahooFinanceScraper(symbol, debug),
-            
+        
             # Improved scrapers with anti-bot protection
             'bloomberg': BloombergScraper(symbol, debug),  # Re-enabled - improved with fallbacks
-            'seeking_alpha': SeekingAlphaScraper(symbol, debug),  # Re-enabled with Selenium support
+            'seeking_alpha': SeekingAlphaScraper(symbol, debug),  # Re-enabled with enhanced Selenium support
             'marketwatch': MarketWatchScraper(symbol, debug),
             #'reuters': ReutersScraper(symbol, debug),
             
@@ -1276,7 +1276,7 @@ class StockSentimentAnalyzer:
 
 if __name__ == "__main__":
     # Example usage
-    analyzer = StockSentimentAnalyzer("AAPL")
+    analyzer = StockSentimentAnalyzer("RBLX")
     results = analyzer.analyze_sentiment(target_articles=100)
     
     import json
