@@ -1261,6 +1261,17 @@ class StockSentimentAnalyzer:
             "recent_articles": recent_articles
         }
         
+        # Add raw_articles data to results before returning
+        results["raw_articles"] = []
+        for sentiment in all_sentiments:
+            results["raw_articles"].append({
+                "text": sentiment.text,
+                "sentiment": sentiment.compound,
+                "source": sentiment.source,
+                "url": sentiment.url,
+                "timestamp": sentiment.timestamp.isoformat()
+            })
+        
         # Save analysis data to ./Data directory
         self._save_analysis_data(results, all_sentiments)
         
@@ -1276,7 +1287,7 @@ class StockSentimentAnalyzer:
 
 if __name__ == "__main__":
     # Example usage
-    analyzer = StockSentimentAnalyzer("RBLX")
+    analyzer = StockSentimentAnalyzer("MSFT")
     results = analyzer.analyze_sentiment(target_articles=100)
     
     import json

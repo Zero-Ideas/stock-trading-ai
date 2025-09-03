@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Sentiment Analyzer - AI-Powered Financial Intelligence</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .feature-tag {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .search-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 15px;
+            align-items: end;
+            flex-wrap: wrap;
+        }
+
+        .form-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .analyze-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .analyze-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .analyze-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .examples-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .examples-title {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .example-symbols {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .example-symbol {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 8px 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .example-symbol:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .progress-section {
+            display: none;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .progress-section.show {
+            display: block;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e1e5e9;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .progress-text {
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .results-container {
+            display: none;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .results-container.show {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .main-results {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .result-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .result-card h3 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sentiment-overview {
+            grid-column: 1 / -1;
+        }
+
+        .sentiment-score {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .sentiment-positive { color: #27ae60; background: rgba(39, 174, 96, 0.1); }
+        .sentiment-negative { color: #e74c3c; background: rgba(231, 76, 60, 0.1); }
+        .sentiment-neutral { color: #f39c12; background: rgba(243, 156, 18, 0.1); }
+
+        .chart-container {
+            height: 300px;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .article-sidebar {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-height: 800px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-sidebar h3 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.3rem;
+        }
+
+        .articles-list {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .articles-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .articles-list::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        .articles-list::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 3px;
+        }
+
+        .article-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s ease;
+        }
+
+        .article-item:hover {
+            transform: translateX(5px);
+            background: #e9ecef;
+        }
+
+        .article-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            line-height: 1.3;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .article-sentiment {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .article-sentiment.positive { background: #d4edda; color: #155724; }
+        .article-sentiment.negative { background: #f8d7da; color: #721c24; }
+        .article-sentiment.neutral { background: #fff3cd; color: #856404; }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #dc3545;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .loading-spinner {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading-spinner.show {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 1024px) {
+            .results-container.show {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-results {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .search-form {
+                flex-direction: column;
+            }
+            
+            .form-group {
+                min-width: unset;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .example-symbols {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Stock Sentiment Analyzer</h1>
+            <p>AI-Powered Financial Intelligence Platform</p>
+            <div class="feature-tags">
+                <span class="feature-tag">📈 Real-time Analysis</span>
+                <span class="feature-tag">🤖 FinBERT AI</span>
+                <span class="feature-tag">📰 50+ Sources</span>
+                <span class="feature-tag">⚡ Enhanced with newspaper3k</span>
+            </div>
+        </div>
+
+        <div class="search-section">
+            <form class="search-form" id="analysisForm">
+                <div class="form-group">
+                    <label for="symbol">Stock Symbol</label>
+                    <input type="text" id="symbol" name="symbol" placeholder="e.g., MSFT, AAPL, TSLA" required>
+                </div>
+                <div class="form-group">
+                    <label for="articles">Target Articles</label>
+                    <select id="articles" name="articles">
+                        <option value="25">25 Articles (Fast - 30s)</option>
+                        <option value="50" selected>50 Articles (Balanced - 60s)</option>
+                        <option value="100">100 Articles (Comprehensive - 2min)</option>
+                    </select>
+                </div>
+                <button type="submit" class="analyze-btn" id="analyzeBtn">
+                    🚀 Analyze Sentiment
+                </button>
+            </form>
+
+            <div class="examples-section">
+                <div class="examples-title">Popular stocks:</div>
+                <div class="example-symbols" id="exampleSymbols">
+                    <span class="example-symbol" data-symbol="MSFT">MSFT</span>
+                    <span class="example-symbol" data-symbol="AAPL">AAPL</span>
+                    <span class="example-symbol" data-symbol="NVDA">NVDA</span>
+                    <span class="example-symbol" data-symbol="TSLA">TSLA</span>
+                    <span class="example-symbol" data-symbol="GOOGL">GOOGL</span>
+                    <span class="example-symbol" data-symbol="AMZN">AMZN</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-section" id="progressSection">
+            <h3>🔍 Analyzing Sentiment...</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Initializing analysis...</div>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <div class="results-container" id="resultsContainer">
+            <div class="main-results">
+                <div class="result-card sentiment-overview">
+                    <h3>📊 Overall Sentiment</h3>
+                    <div class="sentiment-score" id="overallSentiment">Analyzing...</div>
+                    <div class="stats-grid" id="statsGrid">
+                        <div class="stat-item">
+                            <div class="stat-value" id="totalArticles">-</div>
+                            <div class="stat-label">Total Articles</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="posPercent">-</div>
+                            <div class="stat-label">Positive %</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="negPercent">-</div>
+                            <div class="stat-label">Negative %</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="neutralPercent">-</div>
+                            <div class="stat-label">Neutral %</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3>📈 Sentiment Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3>🏢 Source Breakdown</h3>
+                    <div class="chart-container">
+                        <canvas id="sourceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-sidebar">
+                <h3>📰 Recent Articles</h3>
+                <div class="articles-list" id="articlesList">
+                    <!-- Articles will be populated dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let distributionChart = null;
+        let sourceChart = null;
+        let currentAnalysisId = null;
+        let pollInterval = null;
+
+        // API Functions
+        async function startAnalysis(symbol, targetArticles) {
+            const response = await fetch('/api/analyze', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    symbol: symbol,
+                    target_articles: parseInt(targetArticles)
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            return await response.json();
+        }
+
+        async function checkAnalysisStatus(analysisId) {
+            const response = await fetch(`/api/status/${analysisId}`);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            return await response.json();
+        }
+
+        // UI Update Functions
+        function getSentimentClass(compound) {
+            if (compound > 0.05) return 'positive';
+            if (compound < -0.05) return 'negative';
+            return 'neutral';
+        }
+
+        function getSentimentLabel(compound) {
+            if (compound > 0.1) return 'Very Positive';
+            if (compound > 0.05) return 'Positive';
+            if (compound < -0.1) return 'Very Negative';
+            if (compound < -0.05) return 'Negative';
+            return 'Neutral';
+        }
+
+        function updateProgress(progress, message) {
+            document.getElementById('progressFill').style.width = `${progress}%`;
+            document.getElementById('progressText').textContent = message;
+        }
+
+        function showProgress(show) {
+            document.getElementById('progressSection').classList.toggle('show', show);
+        }
+
+        function updateResults(data) {
+            // Update overall sentiment
+            const overallElement = document.getElementById('overallSentiment');
+            const sentimentClass = getSentimentClass(data.sentiment_scores.weighted_avg_from_sources);
+            overallElement.textContent = data.overall_sentiment;
+            overallElement.className = `sentiment-score sentiment-${sentimentClass}`;
+
+            // Update stats
+            document.getElementById('totalArticles').textContent = data.total_articles;
+            document.getElementById('posPercent').textContent = data.sentiment_distribution.positive_percentage + '%';
+            document.getElementById('negPercent').textContent = data.sentiment_distribution.negative_percentage + '%';
+            document.getElementById('neutralPercent').textContent = data.sentiment_distribution.neutral_percentage + '%';
+
+            // Update distribution chart
+            updateDistributionChart(data.sentiment_distribution);
+
+            // Update source chart
+            updateSourceChart(data.source_breakdown);
+
+            // Update articles list
+            updateArticlesList(data.recent_articles);
+        }
+
+        function updateDistributionChart(distribution) {
+            const ctx = document.getElementById('distributionChart').getContext('2d');
+            
+            if (distributionChart) {
+                distributionChart.destroy();
+            }
+
+            distributionChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Positive', 'Negative', 'Neutral'],
+                    datasets: [{
+                        data: [distribution.positive, distribution.negative, distribution.neutral],
+                        backgroundColor: ['#27ae60', '#e74c3c', '#f39c12'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateSourceChart(sourceBreakdown) {
+            const ctx = document.getElementById('sourceChart').getContext('2d');
+            
+            if (sourceChart) {
+                sourceChart.destroy();
+            }
+
+            const sources = Object.keys(sourceBreakdown);
+            const counts = sources.map(source => sourceBreakdown[source].count);
+
+            sourceChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: sources.map(s => s.replace(/[()]/g, '').substring(0, 15)),
+                    datasets: [{
+                        label: 'Articles',
+                        data: counts,
+                        backgroundColor: 'rgba(102, 126, 234, 0.8)',
+                        borderColor: 'rgba(102, 126, 234, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                maxRotation: 45
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateArticlesList(articles) {
+            const container = document.getElementById('articlesList');
+            container.innerHTML = '';
+
+            articles.forEach(article => {
+                const sentimentClass = getSentimentClass(article.sentiment);
+                const sentimentLabel = getSentimentLabel(article.sentiment);
+                
+                const articleDiv = document.createElement('div');
+                articleDiv.className = 'article-item';
+                
+                articleDiv.innerHTML = `
+                    <div class="article-title">${article.text}</div>
+                    <div class="article-meta">
+                        <span>${article.source}</span>
+                        <span class="article-sentiment ${sentimentClass}">${sentimentLabel}</span>
+                    </div>
+                `;
+
+                if (article.url) {
+                    articleDiv.style.cursor = 'pointer';
+                    articleDiv.onclick = () => window.open(article.url, '_blank');
+                }
+
+                container.appendChild(articleDiv);
+            });
+        }
+
+        function showError(message) {
+            const errorElement = document.getElementById('errorMessage');
+            errorElement.textContent = message;
+            errorElement.classList.add('show');
+            setTimeout(() => {
+                errorElement.classList.remove('show');
+            }, 8000);
+        }
+
+        // Polling function for background analysis
+        function startPolling(analysisId) {
+            pollInterval = setInterval(async () => {
+                try {
+                    const status = await checkAnalysisStatus(analysisId);
+                    
+                    updateProgress(status.progress || 10, status.message || 'Processing...');
+                    
+                    if (status.status === 'completed' && status.result) {
+                        clearInterval(pollInterval);
+                        showProgress(false);
+                        updateResults(status.result);
+                        document.getElementById('resultsContainer').classList.add('show');
+                        resetAnalyzeButton();
+                    } else if (status.status === 'error') {
+                        clearInterval(pollInterval);
+                        showProgress(false);
+                        showError(status.error || 'Analysis failed');
+                        resetAnalyzeButton();
+                    }
+                } catch (error) {
+                    console.error('Polling error:', error);
+                    clearInterval(pollInterval);
+                    showProgress(false);
+                    showError('Error checking analysis status');
+                    resetAnalyzeButton();
+                }
+            }, 2000); // Poll every 2 seconds
+        }
+
+        function resetAnalyzeButton() {
+            document.getElementById('analyzeBtn').disabled = false;
+            document.getElementById('analyzeBtn').textContent = '🚀 Analyze Sentiment';
+            currentAnalysisId = null;
+        }
+
+        // Event Handlers
+        document.getElementById('analysisForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const symbol = document.getElementById('symbol').value.toUpperCase().trim();
+            const articles = document.getElementById('articles').value;
+            
+            if (!symbol) {
+                showError('Please enter a stock symbol');
+                return;
+            }
+            
+            // Update UI for analysis start
+            document.getElementById('analyzeBtn').disabled = true;
+            document.getElementById('analyzeBtn').textContent = '🔍 Starting...';
+            document.getElementById('resultsContainer').classList.remove('show');
+            showProgress(true);
+            updateProgress(5, 'Starting analysis...');
+
+            try {
+                const response = await startAnalysis(symbol, articles);
+                
+                if (response.error) {
+                    showError(response.error);
+                    showProgress(false);
+                    resetAnalyzeButton();
+                    return;
+                }
+                
+                currentAnalysisId = response.analysis_id;
+                updateProgress(10, 'Analysis started, gathering articles...');
+                
+                // Start polling for status
+                startPolling(currentAnalysisId);
+                
+            } catch (error) {
+                console.error('Analysis error:', error);
+                showError(`Error starting analysis: ${error.message}`);
+                showProgress(false);
+                resetAnalyzeButton();
+            }
+        });
+
+        // Example symbol clicks
+        document.getElementById('exampleSymbols').addEventListener('click', (e) => {
+            if (e.target.classList.contains('example-symbol')) {
+                const symbol = e.target.getAttribute('data-symbol');
+                document.getElementById('symbol').value = symbol;
+                document.getElementById('symbol').focus();
+            }
+        });
+
+        // Auto-focus on symbol input
+        document.getElementById('symbol').focus();
+
+        // Cleanup polling on page unload
+        window.addEventListener('beforeunload', () => {
+            if (pollInterval) {
+                clearInterval(pollInterval);
+            }
+        });
+    </script>
+</body>
+</html>

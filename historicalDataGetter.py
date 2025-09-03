@@ -257,7 +257,7 @@ class HistoricalDataGetter:
 #    
 #    # Example: Get AAPL data for the last year
 #    symbol = "AAPL"
-#    start_date = "1975-01-01"
+#    start_date = "2020-01-01"
 #    end_date = "2025-08-28"
 #    
 #    print(f"Fetching historical data for {symbol} from {start_date} to {end_date}")
@@ -268,11 +268,10 @@ class HistoricalDataGetter:
 #        print("\nFirst few rows:")
 #        
 #        data.rename(columns={"Close   Close price adjusted for splits.": "close split","Adj Close   Adjusted close price adjusted for splits and dividend and/or capital gain distributions.":"Close splits and dividend"}, inplace=True)
-#        print(data.head(50))
+#        print(data.tail(50))
 #        # Save to CSV
 #        getter.save_to_csv(data, symbol, start_date, end_date)
 #    else:
 #        print("Failed to retrieve data")
-
 #if __name__ == "__main__":
 #    main()

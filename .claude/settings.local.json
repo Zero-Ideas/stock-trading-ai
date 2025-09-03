@@ -6,7 +6,14 @@
       "Bash(pip install:*)",
       "Bash(timeout 120 python:*)",
       "Bash(timeout 60 python:*)",
-      "Bash(timeout:*)"
+      "Bash(timeout:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_select_option",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_snapshot"
     ],
     "deny": [],
     "ask": []
