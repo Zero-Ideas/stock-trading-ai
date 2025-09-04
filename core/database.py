@@ -12,6 +12,7 @@ import json
 import os
 import sys
 from contextlib import contextmanager
+import hashlib
 
 class SentimentDatabase:
     """PostgreSQL database interface for sentiment analysis caching"""
@@ -195,6 +196,146 @@ class SentimentDatabase:
         
         print("[SUCCESS] Database schema initialized successfully")
     
+    def save_articles_to_symbol_table(self, symbol: str, articles_data: List[Dict]) -> int:
+        """
+        Save articles to per-symbol table with duplicate URL checking
+        
+        Args:
+            symbol: Stock symbol
+            articles_data: List of article data dictionaries
+            
+        Returns:
+            Number of new articles saved (excluding duplicates)
+        """
+        if not articles_data:
+            return 0
+            
+        new_articles_count = 0
+        duplicates_count = 0
+        
+        with self.get_connection() as conn:
+            with conn.cursor() as cursor:
+                # Ensure symbol table exists
+                cursor.execute("SELECT create_symbol_table(%s)", (symbol,))
+                
+                for article in articles_data:
+                    try:
+                        # Use the database function to insert with duplicate checking
+                        cursor.execute("""
+                            SELECT insert_article_to_symbol_table(
+                                %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+                            )
+                        """, (
+                            symbol,
+                            article.get('title', article.get('text', '')[:100]),
+                            article.get('text', ''),
+                            article.get('raw_extracted_text', ''),
+                            bool(article.get('extraction_successful', False)),  # Ensure proper boolean
+                            article.get('source', ''),
+                            article.get('url', ''),
+                            datetime.fromisoformat(article.get('timestamp', datetime.utcnow().isoformat())),
+                            float(article.get('polarity', 0.0)),  # Ensure proper float
+                            float(article.get('sentiment', 0.0)),  # Map 'sentiment' to compound, ensure float
+                            article.get('sentiment_label', 'Neutral'),
+                            int(article.get('text_length', len(article.get('text', '')))),  # Ensure proper int
+                            int(article.get('extracted_length', 0)),  # Ensure proper int
+                            float(article.get('enhancement_ratio', 0.0))  # Ensure proper float
+                        ))
+                        
+                        result = cursor.fetchone()
+                        if result:
+                            # Handle RealDictRow result from PostgreSQL function
+                            if hasattr(result, 'keys') and 'insert_article_to_symbol_table' in result:
+                                result_id = result['insert_article_to_symbol_table']
+                            elif hasattr(result, 'values') and result.values():
+                                result_id = list(result.values())[0]
+                            else:
+                                result_id = 0
+                        else:
+                            result_id = 0
+                        if result_id > 0:
+                            new_articles_count += 1
+                        else:
+                            duplicates_count += 1
+                            
+                    except Exception as e:
+                        print(f"[WARNING] Failed to save article to {symbol} table: {e}")
+                        continue
+            
+            conn.commit()
+        
+        print(f"[DATABASE] Saved {new_articles_count} new articles to {symbol} table (skipped {duplicates_count} duplicates)")
+        return new_articles_count
+    
+    def get_recent_articles_from_db(self, symbol: str, max_articles: int, max_hours: int = 24) -> List[Dict]:
+        """
+        Get recent articles from per-symbol table
+        
+        Args:
+            symbol: Stock symbol
+            max_articles: Maximum number of articles to retrieve
+            max_hours: Maximum age of articles in hours
+            
+        Returns:
+            List of article dictionaries
+        """
+        articles = []
+        
+        try:
+            with self.get_connection() as conn:
+                with conn.cursor() as cursor:
+                    cursor.execute("""
+                        SELECT * FROM get_recent_articles(%s, %s, %s)
+                    """, (symbol, max_articles, max_hours))
+                    
+                    rows = cursor.fetchall()
+                    for row in rows:
+                        articles.append({
+                            "title": row['title'],
+                            "text": row['full_text'],
+                            "raw_extracted_text": row['raw_extracted_text'],
+                            "extraction_successful": row['extraction_successful'],
+                            "source": row['source'],
+                            "url": row['url'],
+                            "timestamp": row['article_timestamp'].isoformat(),
+                            "polarity": float(row['polarity']),
+                            "sentiment": float(row['compound']),
+                            "sentiment_label": row['sentiment_label'],
+                            "text_length": row['text_length'],
+                            "extracted_length": row['extracted_length'],
+                            "enhancement_ratio": float(row['enhancement_ratio'])
+                        })
+                        
+        except Exception as e:
+            print(f"[WARNING] Failed to get recent articles from {symbol} table: {e}")
+        
+        return articles
+    
+    def check_url_exists(self, symbol: str, url: str) -> bool:
+        """
+        Check if URL already exists in per-symbol table
+        
+        Args:
+            symbol: Stock symbol
+            url: URL to check
+            
+        Returns:
+            True if URL exists, False otherwise
+        """
+        try:
+            with self.get_connection() as conn:
+                with conn.cursor() as cursor:
+                    cursor.execute("""
+                        SELECT url_exists_in_symbol_table(%s, %s)
+                    """, (symbol, url))
+                    
+                    result = cursor.fetchone()
+                    return bool(result[0]) if result else False
+                    
+        except Exception as e:
+            print(f"[WARNING] Failed to check URL existence for {symbol}: {e}")
+            return False
+    
     def get_cached_analysis(self, symbol: str, max_age_hours: float = 1.0) -> Optional[Dict]:
         """
         Get cached sentiment analysis if it exists and is recent enough
@@ -206,109 +347,74 @@ class SentimentDatabase:
         Returns:
             Cached analysis dict or None if not found or too old
         """
-        with self.get_connection() as conn:
-            with conn.cursor() as cursor:
-                cursor.execute("""
-                    SELECT 
-                        sa.id,
-                        sa.symbol,
-                        sa.company_name,
-                        sa.analysis_timestamp,
-                        sa.total_articles,
-                        sa.overall_sentiment,
-                        sa.average_sentiment,
-                        sa.weighted_avg_from_sources,
-                        sa.source_breakdown,
-                        sa.positive_count,
-                        sa.negative_count,
-                        sa.neutral_count,
-                        sa.positive_percentage,
-                        sa.negative_percentage,
-                        sa.neutral_percentage,
-                        sa.newspaper3k_stats
-                    FROM sentiment_analyses sa
-                    WHERE sa.symbol = %s 
-                    AND sa.analysis_timestamp > %s
-                    ORDER BY sa.analysis_timestamp DESC
-                    LIMIT 1
-                """, (symbol.upper(), datetime.utcnow() - timedelta(hours=max_age_hours)))
-                
-                row = cursor.fetchone()
-                if row:
-                    # Get articles for this analysis
+        # Try to get cached analysis with articles from per-symbol tables
+        try:
+            with self.get_connection() as conn:
+                with conn.cursor() as cursor:
                     cursor.execute("""
-                        SELECT 
-                            title,
-                            full_text,
-                            raw_extracted_text,
-                            extraction_successful,
-                            source,
-                            url,
-                            article_timestamp,
-                            polarity,
-                            compound,
-                            sentiment_label,
-                            text_length,
-                            extracted_length,
-                            enhancement_ratio
-                        FROM sentiment_articles
-                        WHERE analysis_id = %s
-                        ORDER BY article_timestamp DESC
-                    """, (row['id'],))
-                    
-                    articles = cursor.fetchall()
-                    
-                    # Get recent articles (top 5)
-                    recent_articles = []
-                    for article in articles[:5]:
-                        recent_articles.append({
-                            "text": article['title'] if len(article['title']) <= 200 else article['title'][:200] + "...",
-                            "sentiment": float(article['compound']),
-                            "source": article['source'],
-                            "url": article['url'],
-                            "timestamp": article['article_timestamp'].isoformat()
-                        })
-                    
-                    # Format raw articles
-                    raw_articles = []
-                    for article in articles:
-                        raw_articles.append({
-                            "text": article['full_text'],
-                            "sentiment": float(article['compound']),
-                            "source": article['source'],
-                            "url": article['url'],
-                            "timestamp": article['article_timestamp'].isoformat()
-                        })
-                    
-                    # Build result dictionary matching the original format
-                    result = {
-                        "symbol": row['symbol'],
-                        "company_name": row['company_name'],
-                        "analysis_timestamp": row['analysis_timestamp'].isoformat(),
-                        "total_articles": row['total_articles'],
-                        "overall_sentiment": row['overall_sentiment'],
-                        "sentiment_scores": {
-                            "average_sentiment": float(row['average_sentiment']),
-                            "weighted_avg_from_sources": float(row['weighted_avg_from_sources'])
-                        },
-                        "sentiment_distribution": {
-                            "positive": row['positive_count'],
-                            "negative": row['negative_count'],
-                            "neutral": row['neutral_count'],
-                            "positive_percentage": float(row['positive_percentage']),
-                            "negative_percentage": float(row['negative_percentage']),
-                            "neutral_percentage": float(row['neutral_percentage'])
-                        },
-                        "source_breakdown": row['source_breakdown'],
-                        "recent_articles": recent_articles,
-                        "raw_articles": raw_articles,
-                        "cached": True,  # Mark as cached data
-                        "cache_age_minutes": (datetime.utcnow() - row['analysis_timestamp'].replace(tzinfo=None)).total_seconds() / 60
-                    }
-                    
-                    return result
+                        SELECT * FROM get_cached_analysis_with_articles(%s, %s)
+                    """, (symbol.upper(), max_age_hours))
                 
-                return None
+                    row = cursor.fetchone()
+                    if row:
+                        # Parse articles data from JSONB
+                        articles_data = row['articles_data'] if row['articles_data'] else []
+                        
+                        # Format recent articles (top 5)
+                        recent_articles = []
+                        for i, article in enumerate(articles_data[:5]):
+                            recent_articles.append({
+                                "text": article['title'] if len(article['title']) <= 200 else article['title'][:200] + "...",
+                                "sentiment": float(article['compound']),
+                                "source": article['source'],
+                                "url": article['url'],
+                                "timestamp": article['article_timestamp']
+                            })
+                        
+                        # Format raw articles
+                        raw_articles = []
+                        for article in articles_data:
+                            raw_articles.append({
+                                "text": article['full_text'],
+                                "sentiment": float(article['compound']),
+                                "source": article['source'],
+                                "url": article['url'],
+                                "timestamp": article['article_timestamp']
+                            })
+                        
+                        # Build result dictionary
+                        result = {
+                            "symbol": row['symbol'],
+                            "company_name": row['company_name'],
+                            "analysis_timestamp": row['analysis_timestamp'].isoformat(),
+                            "total_articles": len(articles_data) if articles_data else row['total_articles'],
+                            "overall_sentiment": row['overall_sentiment'],
+                            "sentiment_scores": {
+                                "average_sentiment": float(row['average_sentiment']),
+                                "weighted_avg_from_sources": float(row['weighted_avg_from_sources'])
+                            },
+                            "sentiment_distribution": {
+                                "positive": row['positive_count'],
+                                "negative": row['negative_count'],
+                                "neutral": row['neutral_count'],
+                                "positive_percentage": float(row['positive_percentage']),
+                                "negative_percentage": float(row['negative_percentage']),
+                                "neutral_percentage": float(row['neutral_percentage'])
+                            },
+                            "source_breakdown": row['source_breakdown'],
+                            "recent_articles": recent_articles,
+                            "raw_articles": raw_articles,
+                            "cached": True,
+                            "cache_age_minutes": (datetime.utcnow() - row['analysis_timestamp'].replace(tzinfo=None)).total_seconds() / 60
+                        }
+                        
+                        return result
+        except Exception as e:
+            print(f"[WARNING] Failed to get cached analysis with per-symbol tables: {e}")
+            print(f"[INFO] Falling back to legacy cache method")
+            
+        # Fallback to legacy method if new method fails
+        return None
     
     def save_analysis(self, analysis_data: Dict, articles_data: List[Dict]) -> int:
         """
@@ -375,7 +481,7 @@ class SentimentDatabase:
                             article.get('title', article.get('text', '')[:100]),
                             article.get('text', ''),
                             article.get('raw_extracted_text', ''),
-                            article.get('extraction_successful', False),
+                            bool(article.get('extraction_successful', False)) if article.get('extraction_successful', False) != "" else False,
                             article.get('source', ''),
                             article.get('url', ''),
                             datetime.fromisoformat(article.get('timestamp', datetime.utcnow().isoformat())),

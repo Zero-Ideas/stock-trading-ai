@@ -474,9 +474,11 @@ class BaseScraper(ABC):
                         if self.debug:
                             print(f"      Selenium: Waiting for Google News redirect...")
                         
-                        # Wait up to 8 seconds for URL to change (redirect)
+                        # Wait up to 5 seconds for URL to change (redirect) - reduced timeout
                         redirect_detected = False
-                        for i in range(80):  # 80 * 0.1s = 8s max
+                        redirect_timeout = time.time() + 5  # Absolute timeout
+                        
+                        while time.time() < redirect_timeout:
                             try:
                                 current_url = driver.current_url
                                 if current_url != url:
@@ -488,15 +490,21 @@ class BaseScraper(ABC):
                                             print(f"      Selenium: Successful redirect detected!")
                                         redirect_detected = True
                                         break
-                                time.sleep(0.1)
+                                time.sleep(0.2)  # Increased sleep interval for less CPU usage
                             except Exception as e:
                                 if self.debug:
                                     print(f"      Selenium: Error checking URL: {e}")
                                 break
                         
+                        # If no redirect detected after timeout, abandon this URL
+                        if not redirect_detected:
+                            if self.debug:
+                                print(f"      Selenium: No redirect detected after 5s timeout - abandoning URL")
+                            return None, None
+                        
                         # Additional wait for page to fully load after redirect
                         if redirect_detected:
-                            time.sleep(2)  # Longer wait for page to stabilize
+                            time.sleep(1)  # Reduced wait time
                             if self.debug:
                                 print(f"      Selenium: Final URL after redirect: {driver.current_url}")
                     
@@ -798,7 +806,123 @@ class BaseScraper(ABC):
         except Exception as e:
             if self.debug:
                 print(f"      newspaper3k extraction failed: {e}")
+            
+            # If newspaper3k failed due to 403/401 errors, try Selenium fallback
+            if ("403" in str(e) or "401" in str(e) or "Forbidden" in str(e) or 
+                "Client Error" in str(e)):
+                if self.debug:
+                    print(f"      newspaper3k blocked - trying Selenium fallback...")
+                return self._extract_with_selenium_fallback(url, max_length)
+            
             return ""
+    
+    def _extract_with_selenium_fallback(self, url: str, max_length: int) -> str:
+        """Extract article content using Selenium when newspaper3k is blocked"""
+        if not SELENIUM_AVAILABLE:
+            if self.debug:
+                print(f"      Selenium not available for fallback extraction")
+            return ""
+        
+        try:
+            if self.debug:
+                print(f"      Starting Selenium article extraction for: {url[:80]}...")
+            
+            # Use Selenium to fetch the page content
+            page_source, final_url = self.make_request_with_selenium(
+                url, 
+                wait_for_selector="body",
+                wait_timeout=15,
+                enable_javascript=True
+            )
+            
+            if not page_source:
+                if self.debug:
+                    print(f"      Selenium extraction failed - no page source")
+                return ""
+            
+            # Parse with BeautifulSoup
+            soup = BeautifulSoup(page_source, 'html.parser')
+            
+            # Clean the soup of unwanted elements
+            self._clean_soup_for_extraction(soup)
+            
+            # Try different content extraction strategies based on the site
+            content = ""
+            
+            # Strategy 1: Look for common article content selectors
+            article_selectors = [
+                'article', 'div[class*="article"]', 'div[class*="content"]',
+                'div[class*="story"]', 'div[class*="post"]', 'div[class*="main"]',
+                'section[class*="content"]', 'main', '[role="main"]',
+                'div[class*="body"]', 'div[id*="content"]', 'div[id*="article"]'
+            ]
+            
+            for selector in article_selectors:
+                try:
+                    elements = soup.select(selector)
+                    for element in elements:
+                        text = element.get_text(separator=' ', strip=True)
+                        # Look for substantial content that mentions our symbol or financial terms
+                        if (len(text) > 200 and 
+                            (self.symbol.lower() in text.lower() or 
+                             any(term in text.lower() for term in ['stock', 'shares', 'trading', 'market', 'earnings']))):
+                            content = text
+                            break
+                    if content:
+                        break
+                except Exception:
+                    continue
+            
+            # Strategy 2: If no article content found, try paragraph extraction
+            if not content:
+                paragraphs = soup.find_all('p')
+                relevant_paragraphs = []
+                for p in paragraphs:
+                    text = p.get_text(strip=True)
+                    if (len(text) > 50 and 
+                        (self.symbol.lower() in text.lower() or 
+                         any(term in text.lower() for term in ['stock', 'shares', 'trading', 'market']))):
+                        relevant_paragraphs.append(text)
+                
+                if relevant_paragraphs:
+                    content = ' '.join(relevant_paragraphs)
+            
+            # Clean and validate content
+            if content:
+                content = self.clean_text(content)
+                
+                # Check if content is legitimate
+                if self._is_legitimate_article_content(content):
+                    # Truncate if too long
+                    if len(content) > max_length:
+                        sentences = content.split('.')
+                        truncated = ""
+                        for sentence in sentences:
+                            if len(truncated) + len(sentence) + 1 <= max_length:
+                                truncated += sentence + "."
+                            else:
+                                break
+                        content = truncated.strip()
+                        if not content.endswith('.'):
+                            content += "..."
+                    
+                    if self.debug:
+                        print(f"      Selenium extraction SUCCESS: {len(content)} characters")
+                        print(f"      First 150 chars: {content[:150]}...")
+                    
+                    return content
+                else:
+                    if self.debug:
+                        print(f"      Selenium content failed legitimacy check")
+            else:
+                if self.debug:
+                    print(f"      No relevant content found with Selenium")
+            
+        except Exception as e:
+            if self.debug:
+                print(f"      Selenium fallback extraction failed: {e}")
+        
+        return ""
     
     def _extract_with_custom_methods(self, url: str, max_length: int) -> str:
         """Fallback to custom extraction methods when newspaper3k is not available"""
@@ -1343,9 +1467,15 @@ class BaseScraper(ABC):
             return self._resolve_google_news_url_fallback(google_news_url)
     
     def _resolve_google_news_url_fallback(self, google_news_url: str) -> str:
-        """Fallback Google News URL resolution method"""
+        """Fallback Google News URL resolution method with circuit breaker"""
         # Track resolution attempt
         self.track_url_resolution_attempt("Google News")
+        
+        # Circuit breaker: Check if Google News resolution is temporarily disabled
+        if "Google News" in _DISABLED_SOURCES:
+            if self.debug:
+                print(f"      Google News URL resolution is disabled due to repeated failures")
+            return None
         
         try:
             import base64
@@ -1522,12 +1652,33 @@ class BaseScraper(ABC):
             print(f"    Enhancing article from URL: {article_data.url}")
             print(f"    Original text length: {len(article_data.text)} chars")
         
-        # Pre-resolve Google News URLs before newspaper3k processing
+        # Pre-resolve Google News URLs before newspaper3k processing with timeout
         effective_url = article_data.url
         if 'news.google.com' in article_data.url and '/articles/' in article_data.url:
             if self.debug:
                 print(f"    Pre-resolving Google News redirect...")
-            resolved_url = self._resolve_google_news_url(article_data.url)
+            
+            # Add timeout wrapper for Google News resolution to prevent hanging
+            import concurrent.futures
+            
+            resolved_url = None
+            try:
+                # Use ThreadPoolExecutor with timeout for Windows compatibility
+                with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                    future = executor.submit(self._resolve_google_news_url, article_data.url)
+                    try:
+                        resolved_url = future.result(timeout=15)  # 15-second timeout
+                    except concurrent.futures.TimeoutError:
+                        if self.debug:
+                            print(f"    Google News resolution timed out after 15s - canceling")
+                        future.cancel()  # Try to cancel the future
+                        resolved_url = None
+                        
+            except Exception as e:
+                if self.debug:
+                    print(f"    Google News resolution failed: {e}")
+                resolved_url = None
+            
             if resolved_url and resolved_url != article_data.url:
                 effective_url = resolved_url
                 if self.debug:

@@ -1,0 +1,2 @@
+Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Sentiment,Weighted_Avg_From_Sources,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,Bloomberg_Count,Bloomberg_Avg_Sentiment,NewsAPI_Count,NewsAPI_Avg_Sentiment
+AAPL,AAPL,2025-09-04T16:17:55.626750,3,Very Positive,0.114,0.143,2,1,0,66.7,33.3,0.0,2,-0.047,1,0.522

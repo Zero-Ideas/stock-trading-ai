@@ -15,6 +15,7 @@ import json
 import csv
 import os
 import pandas as pd
+import time  # Add time import for retry delays
 
 # Import modular scrapers
 from scrapers import (
@@ -190,15 +191,18 @@ class StockSentimentAnalyzer:
         self.symbol = symbol.upper()
         self.use_database = use_database and DATABASE_AVAILABLE
         
-        # Initialize database connection if available
+        # Always initialize database connection for saving articles
         self.db = None
-        if self.use_database:
-            try:
-                self.db = SentimentDatabase()
+        try:
+            self.db = SentimentDatabase()
+            if self.use_database:
                 print(f"[SUCCESS] Database caching enabled for {self.symbol}")
-            except Exception as e:
-                print(f"[WARNING] Database connection failed, using file storage only: {e}")
-                self.use_database = False
+            else:
+                print(f"[SUCCESS] Database connection established for {self.symbol} (caching disabled, saving only)")
+        except Exception as e:
+            print(f"[WARNING] Database connection failed: {e}")
+            print(f"[INFO] Will use file storage only")
+            self.use_database = False
         
         # Initialize FinBERT model for financial sentiment analysis
         self.finbert_pipeline = None
@@ -305,7 +309,8 @@ class StockSentimentAnalyzer:
 
     def _run_scraper_with_retry(self, scraper, max_articles: int) -> List[SentimentData]:
         """Run a scraper with retry logic, error handling, and performance optimization"""
-        max_retries = 2
+        max_retries = 3  # Increased from 2 to 3
+        base_delay = 2   # Base delay in seconds
         
         for attempt in range(max_retries):
             try:
@@ -317,11 +322,46 @@ class StockSentimentAnalyzer:
                 
                 return results
             except Exception as e:
-                if debug:
-                    print(f"    Attempt {attempt + 1} failed for {scraper.source_name}: {e}")
+                error_msg = str(e)
+                
+                # Handle different types of errors with appropriate delays
+                if "429" in error_msg or "Too Many Requests" in error_msg:
+                    # Rate limited - longer delay
+                    delay = base_delay * (3 ** attempt)  # Exponential backoff: 2s, 6s, 18s
+                    if debug:
+                        print(f"    {scraper.source_name}: Rate limited (attempt {attempt + 1}), waiting {delay}s")
+                    time.sleep(delay)
+                elif "503" in error_msg or "Service Unavailable" in error_msg:
+                    # Service temporarily unavailable
+                    delay = base_delay * (2 ** attempt)  # 2s, 4s, 8s
+                    if debug:
+                        print(f"    {scraper.source_name}: Service unavailable (attempt {attempt + 1}), waiting {delay}s")
+                    time.sleep(delay)
+                elif "timeout" in error_msg.lower():
+                    # Timeout - moderate delay
+                    delay = base_delay * (1.5 ** attempt)  # 2s, 3s, 4.5s
+                    if debug:
+                        print(f"    {scraper.source_name}: Timeout (attempt {attempt + 1}), waiting {delay}s")
+                    time.sleep(delay)
+                else:
+                    # Other errors - small delay
+                    delay = base_delay
+                    if debug:
+                        print(f"    {scraper.source_name}: Error (attempt {attempt + 1}): {error_msg[:100]}")
+                    time.sleep(delay)
+                
                 if attempt == max_retries - 1:
-                    print(f"    {scraper.source_name}: All attempts failed - {str(e)}")
+                    # Final attempt failed - log detailed error
+                    if "429" in error_msg:
+                        print(f"    {scraper.source_name}: RATE LIMITED - All {max_retries} attempts failed")
+                    elif "403" in error_msg or "Forbidden" in error_msg:
+                        print(f"    {scraper.source_name}: BLOCKED - Anti-bot protection active")
+                    elif "timeout" in error_msg.lower():
+                        print(f"    {scraper.source_name}: TIMEOUT - Network too slow")
+                    else:
+                        print(f"    {scraper.source_name}: FAILED - {error_msg[:100]}")
                     return []
+                    
         return []
 
     def _post_process_scraper_results(self, results: List[SentimentData], source_name: str) -> List[SentimentData]:
@@ -445,12 +485,46 @@ class StockSentimentAnalyzer:
             return [self._analyze_text(text) for text in texts]
 
     def get_comprehensive_sentiment(self, target_articles: int = 50) -> List[SentimentData]:
-        """Gather sentiment data from multiple sources using multithreading"""
+        """Gather sentiment data from multiple sources using multithreading with database caching"""
         all_sentiments = []
+        
+        # First, try to get recent articles from database if enabled
+        if self.use_database and hasattr(self.db, 'get_recent_articles_from_db'):
+            print(f"[DATABASE] Checking for recent articles in {self.symbol} table...")
+            try:
+                recent_from_db = self.db.get_recent_articles_from_db(self.symbol, target_articles, 24)
+                if recent_from_db and len(recent_from_db) >= target_articles // 2:  # If we have at least half the target
+                    print(f"[DATABASE] Found {len(recent_from_db)} recent articles in database")
+                    
+                    # Convert database articles to SentimentData objects
+                    for article in recent_from_db:
+                        sentiment_obj = SentimentData(
+                            text=article['text'],
+                            polarity=article['polarity'],
+                            compound=article['sentiment'],
+                            source=article['source'],
+                            url=article['url'],
+                            timestamp=datetime.fromisoformat(article['timestamp'])
+                        )
+                        # Add extracted text if available
+                        if article.get('raw_extracted_text'):
+                            sentiment_obj.raw_extracted_text = article['raw_extracted_text']
+                        all_sentiments.append(sentiment_obj)
+                    
+                    # Remove duplicates and return if we have enough
+                    unique_sentiments = self._remove_duplicates(all_sentiments)
+                    if len(unique_sentiments) >= target_articles // 2:
+                        print(f"[DATABASE] Using {len(unique_sentiments)} cached articles from database")
+                        return unique_sentiments
+                    else:
+                        print(f"[DATABASE] Not enough cached articles ({len(unique_sentiments)}), fetching more...")
+                        all_sentiments = []  # Clear and fetch fresh
+            except Exception as e:
+                print(f"[WARNING] Failed to get articles from database: {e}")
         
         # Prepare scraper tasks
         scraper_tasks = []
-        articles_per_source = max(10, target_articles // len(self.scrapers) + 5)
+        articles_per_source = max(15, target_articles // len(self.scrapers) + 10)  # Increased to get more articles per source
         
         for name, scraper in self.scrapers.items():
             scraper_tasks.append((scraper, articles_per_source))
@@ -459,11 +533,15 @@ class StockSentimentAnalyzer:
         print(f"Running {len(scraper_tasks)} scrapers in parallel...")
         
         # Use ThreadPoolExecutor with optimized worker count for better performance
-        optimal_workers = min(len(scraper_tasks), 6)  # Limit concurrent connections
+        optimal_workers = len(scraper_tasks)  # Match worker count to number of scrapers to prevent hanging
         with ThreadPoolExecutor(max_workers=optimal_workers, thread_name_prefix="scraper") as executor:
-            # Submit all scraper tasks
+            # Submit all scraper tasks with staggered delays to avoid overwhelming servers
             future_to_scraper = {}
-            for scraper, max_articles in scraper_tasks:
+            for i, (scraper, max_articles) in enumerate(scraper_tasks):
+                # Add small staggered delay between submissions
+                if i > 0:
+                    time.sleep(0.5)  # 0.5 second delay between each scraper start
+                
                 future = executor.submit(self._run_scraper_with_retry, scraper, max_articles)
                 future_to_scraper[future] = scraper.source_name
             
@@ -472,7 +550,7 @@ class StockSentimentAnalyzer:
             for future in as_completed(future_to_scraper):
                 source_name = future_to_scraper[future]
                 try:
-                    source_sentiments = future.result(timeout=45)  # Increased timeout for enhanced scrapers
+                    source_sentiments = future.result(timeout=120)  # Increased timeout to 120s to handle stuck scrapers
                     if source_sentiments:
                         all_sentiments.extend(source_sentiments)
                         
@@ -533,7 +611,78 @@ class StockSentimentAnalyzer:
         # Remove duplicates based on text similarity
         unique_sentiments = self._remove_duplicates(all_sentiments)
         
-        print(f"Total unique articles collected: {len(unique_sentiments)}")
+        # Save all articles to database immediately (always, regardless of use_database setting)
+        print(f"\n[DEBUG] DATABASE SAVE PROCESS - BEFORE PREPARING DATA")
+        print(f"[DEBUG] unique_sentiments count: {len(unique_sentiments)}")
+        print(f"[DEBUG] Symbol: {self.symbol}")
+        
+        if self.db and hasattr(self.db, 'save_articles_to_symbol_table'):
+            try:
+                articles_data = []
+                print(f"\n[DEBUG] Preparing articles for database save...")
+                
+                for i, sentiment in enumerate(unique_sentiments):
+                    article_data = {
+                        "title": sentiment.text.split('.')[0] if '.' in sentiment.text else sentiment.text[:100],
+                        "text": sentiment.text,
+                        "raw_extracted_text": getattr(sentiment, 'raw_extracted_text', ''),
+                        "extraction_successful": hasattr(sentiment, 'raw_extracted_text') and sentiment.raw_extracted_text and len(sentiment.raw_extracted_text) > 100,
+                        "source": sentiment.source,
+                        "url": sentiment.url,
+                        "timestamp": sentiment.timestamp.isoformat(),
+                        "polarity": sentiment.polarity,
+                        "sentiment": sentiment.compound,
+                        "sentiment_label": self._get_sentiment_label(sentiment.compound),
+                        "text_length": len(sentiment.text),
+                        "extracted_length": len(getattr(sentiment, 'raw_extracted_text', '')),
+                        "enhancement_ratio": round(len(getattr(sentiment, 'raw_extracted_text', '')) / max(1, len(sentiment.text)) * 100, 1) if hasattr(sentiment, 'raw_extracted_text') and sentiment.raw_extracted_text else 0.0
+                    }
+                    articles_data.append(article_data)
+                    
+                    # Debug first 3 articles being prepared
+                    if i < 3:
+                        print(f"[DEBUG] Article {i+1} prepared for save:")
+                        print(f"[DEBUG]   Title: {article_data['title']}")
+                        print(f"[DEBUG]   Source: {article_data['source']}")
+                        print(f"[DEBUG]   URL: {article_data['url']}")
+                        print(f"[DEBUG]   Text length: {article_data['text_length']}")
+                        print(f"[DEBUG]   Sentiment: {article_data['sentiment']}")
+                
+                print(f"\n[DEBUG] TOTAL ARTICLES PREPARED FOR SAVE: {len(articles_data)}")
+                print(f"[DEBUG] Articles data structure ready, calling save_articles_to_symbol_table...")
+                
+                # Save to per-symbol table
+                new_articles_saved = self.db.save_articles_to_symbol_table(self.symbol, articles_data)
+                print(f"[DATABASE] SAVE COMPLETE: {new_articles_saved} new articles saved to {self.symbol} table")
+                
+                # Verify what was actually saved
+                print(f"\n[DEBUG] VERIFYING DATABASE SAVE...")
+                try:
+                    saved_articles = self.db.get_recent_articles_from_db(self.symbol, 50, 1)  # Last 1 hour
+                    print(f"[DEBUG] VERIFICATION: {len(saved_articles)} articles found in {self.symbol} table")
+                    
+                    if len(saved_articles) != new_articles_saved:
+                        print(f"[WARNING] MISMATCH: Expected {new_articles_saved} saved, but found {len(saved_articles)} in table")
+                    else:
+                        print(f"[SUCCESS] MATCH: Save count matches table count")
+                        
+                    # Show what was actually saved
+                    if saved_articles:
+                        print(f"[DEBUG] Sample saved articles:")
+                        for i, article in enumerate(saved_articles[:3]):
+                            print(f"[DEBUG]   Saved {i+1}: {article['title'][:50]}... ({article['source']})")
+                            
+                except Exception as ve:
+                    print(f"[ERROR] Verification failed: {ve}")
+                
+            except Exception as e:
+                print(f"[WARNING] Failed to save articles to per-symbol table: {e}")
+                import traceback
+                traceback.print_exc()
+        else:
+            print(f"[WARNING] Database save skipped - db={self.db}, has_method={hasattr(self.db, 'save_articles_to_symbol_table') if self.db else False}")
+        
+        print(f"\n[DEBUG] FINAL RETURN: Returning {len(unique_sentiments)} articles to caller")
         return unique_sentiments
 
     def _analyze_text(self, text: str) -> Dict:
@@ -1311,6 +1460,7 @@ class StockSentimentAnalyzer:
         }
         
         # Add raw_articles data to results before returning
+        print(f"\n[DEBUG] BUILDING FINAL RESULTS - raw_articles section")
         results["raw_articles"] = []
         for sentiment in all_sentiments:
             results["raw_articles"].append({
@@ -1321,10 +1471,16 @@ class StockSentimentAnalyzer:
                 "timestamp": sentiment.timestamp.isoformat()
             })
         
-        # Save analysis data to database if available, then to ./Data directory
+        print(f"[DEBUG] FINAL RESULTS STRUCTURE:")
+        print(f"[DEBUG]   total_articles: {results['total_articles']}")
+        print(f"[DEBUG]   recent_articles count: {len(results['recent_articles'])}")
+        print(f"[DEBUG]   raw_articles count: {len(results['raw_articles'])}")
+        print(f"[DEBUG]   source_breakdown: {list(results['source_breakdown'].keys())}")
+        
+        # Save analysis data to database if available
         if self.use_database:
             try:
-                # Prepare enhanced articles data for database
+                # Prepare enhanced articles data for database (legacy format for analysis table)
                 enhanced_articles_data = []
                 for sentiment in all_sentiments:
                     enhanced_articles_data.append({
@@ -1343,11 +1499,12 @@ class StockSentimentAnalyzer:
                         "enhancement_ratio": round(len(getattr(sentiment, 'raw_extracted_text', '')) / max(1, len(sentiment.text)) * 100, 1) if hasattr(sentiment, 'raw_extracted_text') and sentiment.raw_extracted_text else 0.0
                     })
                 
+                # Save summary analysis to main table
                 analysis_id = self.db.save_analysis(results, enhanced_articles_data)
-                print(f"[DATABASE] Saved analysis to database (ID: {analysis_id})")
+                print(f"[DATABASE] Saved analysis summary to database (ID: {analysis_id})")
                 
             except Exception as e:
-                print(f"[WARNING] Failed to save to database: {e}")
+                print(f"[WARNING] Failed to save analysis to database: {e}")
                 print(f"   Analysis will still be saved to file storage")
         
         # Save analysis data to ./Data directory (as backup or primary if no DB)

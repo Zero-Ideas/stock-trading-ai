@@ -6,7 +6,15 @@
       "Read(/C:\\Users\\ethan\\Desktop\\stock trading ai/**)",
       "Read(/C:\\Users\\ethan\\Desktop\\stock trading ai/**)",
       "Bash(sc query:*)",
-      "Bash(copy \"database_config_example.py\" \"database_config.py\")"
+      "Bash(copy \"database_config_example.py\" \"database_config.py\")",
+      "Read(/C:\\Users\\ethan\\Desktop\\stock trading ai/**)",
+      "Read(/C:\\Users\\ethan\\Desktop\\stock trading ai/**)",
+      "Read(/C:\\Users\\ethan\\Desktop\\stock trading ai/**)",
+      "Read(/C:\\Users\\ethan\\Desktop\\stock trading ai\\core/**)",
+      "Read(/C:\\Users\\ethan\\Desktop\\stock trading ai\\core/**)",
+      "Bash(python:*)",
+      "Bash(timeout 120 python:*)",
+      "Bash(timeout:*)"
     ],
     "deny": [],
     "ask": []
