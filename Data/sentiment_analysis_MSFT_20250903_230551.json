@@ -1,0 +1,285 @@
+{
+  "symbol": "MSFT",
+  "company_name": "MSFT",
+  "analysis_timestamp": "2025-09-03T23:05:51.095511",
+  "total_articles": 13,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_sentiment": 0.037,
+    "weighted_avg_from_sources": 0.046
+  },
+  "sentiment_distribution": {
+    "positive": 4,
+    "negative": 3,
+    "neutral": 6,
+    "positive_percentage": 30.8,
+    "negative_percentage": 23.1,
+    "neutral_percentage": 46.2
+  },
+  "source_breakdown": {
+    "MarketWatch": {
+      "count": 4,
+      "avg_sentiment": -0.20723827183246613
+    },
+    "Yahoo Finance": {
+      "count": 1,
+      "avg_sentiment": 0.9251582622528076
+    },
+    "Bloomberg": {
+      "count": 8,
+      "avg_sentiment": 0.06340420246124268
+    }
+  },
+  "recent_articles": [
+    {
+      "text": "var utag_data = { \"page_access\":\"free\",\"page_content_source\":\"MarketWatch\",\"page_site\":\"MarketWatch\",\"page_site_product\":\"MW\",\"page_content_type\":\"ResearchTools\",\"page_content_type_detail\":\"quote\",\"pa...",
+      "sentiment": 0.0,
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-09-03T20:05:11.413576"
+    },
+    {
+      "text": "Deutsche Bank to Rejoin Euro Stoxx 50 After Seven-Year Absence Deutsche Bank to Rejoin Euro Stoxx 50 After Seven-Year Absence. Deutsche Bank AG has regained its spot in the euro area’s main stock benc...",
+      "sentiment": 0.0,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-01/deutsche-bank-to-rejoin-euro-stoxx-50-after-seven-year-absence",
+      "timestamp": "2025-09-03T17:05:29.445666"
+    },
+    {
+      "text": "Stocks Join Bond Rout as 30-Year Yield Close to 5%: Markets Wrap Stocks Join Bond Rout as 30-Year Yield Close to 5%: Markets Wrap. Wall Street kicked off September on a sour note, with stocks joining ...",
+      "sentiment": -0.9663596749305725,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-01/stock-market-today-dow-s-p-live-updates",
+      "timestamp": "2025-09-03T15:05:28.335351"
+    },
+    {
+      "text": "Raul Ariano/Bloomberg China's Xiaohongshu Hits $31 Billion Value in GSR Books. Xiaohongshu’s valuation surged 19% to $31 billion in just three months during recent transactions via a major fund, under...",
+      "sentiment": 0.9489990472793579,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-04/instagram-style-xiaohongshu-hits-31-billion-value-in-gsr-books?srnd=phx-technology",
+      "timestamp": "2025-09-03T15:05:20.043318"
+    },
+    {
+      "text": "Stocks Rebound Modestly as Testing Month Begins: Markets Wrap Stock Market Today: Dow, S&P Live Updates for September 1. US stock futures staged a small rebound from a technology-led selloff, setting ...",
+      "sentiment": 0.8412032127380371,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-08-31/asia-set-for-cautious-open-after-us-tariff-ruling-global-wrap",
+      "timestamp": "2025-09-03T14:05:30.193260"
+    }
+  ],
+  "raw_articles": [
+    {
+      "title": "MSFT Stock Price | Microsoft Corp",
+      "full_text": "MSFT Stock Price | Microsoft Corp. Stock Quote (U.S.: Nasdaq) | MarketWatch",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-09-01T16:05:11.412076",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 75,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "{\"@context\":\"https://schema",
+      "full_text": "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"description\":\"MSFT | Complete Microsoft Corp. stock news by MarketWatch. View real-time stock prices and stock quotes for a full financial overview.\",\"url\":\"https://www.marketwatch.com/investing/stock/msft\",\"author\":{\"@type\":\"Organization\",\"name\":\"MarketWatch\"},\"headline\":\"MSFT Stock Price | Microsoft Corp. Stock Quote (U.S.: Nasdaq) | MarketWatch\",\"inLanguage\":\"en-US\",\"isAccessibleForFree\":true,\"publisher\":{\"@type\":\"NewsMediaOrganization\",\"@id\":\"https://www.marketwatch.com/#publisher\",\"name\":\"MarketWatch\"}}",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-09-01T13:05:11.412076",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 565,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "“That Will Probably Save a Life”: Engineer Found Dead at Microsoft (NASDAQ:MSFT), Shares Tick Down",
+      "full_text": "“That Will Probably Save a Life”: Engineer Found Dead at Microsoft (NASDAQ:MSFT), Shares Tick Down",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-09-02T22:05:11.413576",
+      "polarity": -0.6632,
+      "compound": -0.829,
+      "sentiment_label": "Negative",
+      "text_length": 98,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "var utag_data = { \"page_access\":\"free\",\"page_content_source\":\"MarketWatch\",\"page_site\":\"MarketWatch\",\"page_site_product\":\"MW\",\"page_content_type\":\"ResearchTools\",\"page_content_type_detail\":\"quote\",\"page_section\":\"Company Research\",\"page_name\":\"Quote_Page\",\"page_subsection\":\"Company Overview\",\"reengagement_refresh\":\"off\",\"user_type\":\"nonsubscriber\",\"page_ad_zone\":\"investing/quotes/stock/overview\",\"quote_ticker\":\"MSFT\",\"quote_company_name\":\"Microsoft Corp",
+      "full_text": "var utag_data = { \"page_access\":\"free\",\"page_content_source\":\"MarketWatch\",\"page_site\":\"MarketWatch\",\"page_site_product\":\"MW\",\"page_content_type\":\"ResearchTools\",\"page_content_type_detail\":\"quote\",\"page_section\":\"Company Research\",\"page_name\":\"Quote_Page\",\"page_subsection\":\"Company Overview\",\"reengagement_refresh\":\"off\",\"user_type\":\"nonsubscriber\",\"page_ad_zone\":\"investing/quotes/stock/overview\",\"quote_ticker\":\"MSFT\",\"quote_company_name\":\"Microsoft Corp.\",\"quote_exchange\":\"U.S.: Nasdaq\",\"quote_instrument_type\":\"Stock\"}; var utag_dataOriginal = {}; (function () { for (var prop in utag_data) { utag_dataOriginal[prop] = utag_data[prop]; } Object.freeze(utag_dataOriginal); })();",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-09-03T20:05:11.413576",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 683,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Time to buy MSFT?",
+      "full_text": "Time to buy MSFT?. This price reflects trading activity during the overnight session on the Blue Ocean ATS, available 8 PM to 4 AM ET, Sunday through Thursday, when regular markets are closed. Microsoft (MSFT) Research Report. Tech giant Microsoft (NASDAQ:MSFT) beat Wall Street’s revenue expectations in Q2 CY2025, with sales up 18.1% year on year to $76.44 billion. Its GAAP profit of $3.65 per share was 8% above analysts’ consensus estimates. Microsoft (MSFT) Q2 CY2025 Highlights: Revenue: $76.44 billion vs analyst estimates of $73.86 billion (3.5% beat) $76.44 billion vs analyst estimates of $73.86 billion (3.5% beat) Operating Profit (GAAP): $34.32 billion vs analyst estimates of $32.25 billion (6.4% beat) $34.32 billion vs analyst estimates of $32.25 billion (6.4% beat) EPS (GAAP): $3.65 vs analyst estimates of $3.38 (8% beat) $3.65 vs analyst estimates of $3.38 (8% beat) Intelligent Cloud Revenue: $0.03 vs analyst estimates of $28.96 billion (3.2% beat) $0.03 vs analyst estimates of $28.96 billion (3.2% beat) Business Software Revenue: $33.11 billion vs analyst estimates of $32.21 billion (2.8% beat) $33.11 billion vs analyst estimates of $32.21 billion (2.8% beat) Personal Computing Revenue: $13.45 billion vs analyst estimates of $12.68 billion (6.1% beat) $13.45 billion vs analyst estimates of $12.68 billion (6.1% beat) Gross Margin: 68.6%, down from 69.6% in the same quarter last year 68.6%, down from 69.6% in the same quarter last year Operating Margin: 44.9%, up from 43.1% in the same quarter last year 44.9%, up from 43.1% in the same quarter last year Free Cash Flow Margin: 33.4%, down from 36% in the same quarter last year 33.4%, down from 36% in the same quarter last year Market Capitalization: $3.81 trillion Key Topics & Areas Of Debate AI is probably the hottest topic in the world of investing today, and the debate for Microsoft is simple. How big is the AI benefit, when will we see it flow into revenue, and how much will it cost from an operating expense and capital expenditure perspective? Customers who pay for Microsoft's products and services to enable their own GenAI goals will likely be buying infrastructure, developer tools, and data analytics platforms. Azure sits at the center of Microsoft’s AI ambitions, and it allows enterprise customers to do everything from accessing large language models (LLMs) to analyzing large volumes of data in real-time. Aside from Azure, Copilot is a suite of AI-powered integrations into various Microsoft products to enhance productivity and streamline tasks. Microsoft 365 Copilot automates writing in Word, modeling in Excel, and email management in Outlook while GitHub Copilot, developed via a collaboration with OpenAI, automates code completion. Despite its scale, Microsoft doesn’t operate in a vacuum. Alphabet (NASDAQ:GOOGL) competes against Azure with Google Cloud Platform and in productivity tools with G Suite and Google Workspace. Apple’s (NASDAQ:AAPL) macOS operating system also goes head to head against Microsoft’s Windows, and its iPhone and iPad products have been a thorn in its side.",
+      "raw_extracted_text": "Microsoft (MSFT) Research Report. Tech giant Microsoft (NASDAQ:MSFT) beat Wall Street’s revenue expectations in Q2 CY2025, with sales up 18.1% year on year to $76.44 billion. Its GAAP profit of $3.65 per share was 8% above analysts’ consensus estimates. Microsoft (MSFT) Q2 CY2025 Highlights: Revenue: $76.44 billion vs analyst estimates of $73.86 billion (3.5% beat) $76.44 billion vs analyst estimates of $73.86 billion (3.5% beat) Operating Profit (GAAP): $34.32 billion vs analyst estimates of $32.25 billion (6.4% beat) $34.32 billion vs analyst estimates of $32.25 billion (6.4% beat) EPS (GAAP): $3.65 vs analyst estimates of $3.38 (8% beat) $3.65 vs analyst estimates of $3.38 (8% beat) Intelligent Cloud Revenue: $0.03 vs analyst estimates of $28.96 billion (3.2% beat) $0.03 vs analyst estimates of $28.96 billion (3.2% beat) Business Software Revenue: $33.11 billion vs analyst estimates of $32.21 billion (2.8% beat) $33.11 billion vs analyst estimates of $32.21 billion (2.8% beat) Personal Computing Revenue: $13.45 billion vs analyst estimates of $12.68 billion (6.1% beat) $13.45 billion vs analyst estimates of $12.68 billion (6.1% beat) Gross Margin: 68.6%, down from 69.6% in the same quarter last year 68.6%, down from 69.6% in the same quarter last year Operating Margin: 44.9%, up from 43.1% in the same quarter last year 44.9%, up from 43.1% in the same quarter last year Free Cash Flow Margin: 33.4%, down from 36% in the same quarter last year 33.4%, down from 36% in the same quarter last year Market Capitalization: $3.81 trillion Key Topics & Areas Of Debate AI is probably the hottest topic in the world of investing today, and the debate for Microsoft is simple. How big is the AI benefit, when will we see it flow into revenue, and how much will it cost from an operating expense and capital expenditure perspective? Customers who pay for Microsoft's products and services to enable their own GenAI goals will likely be buying infrastructure, developer tools, and data analytics platforms. Azure sits at the center of Microsoft’s AI ambitions, and it allows enterprise customers to do everything from accessing large language models (LLMs) to analyzing large volumes of data in real-time. Aside from Azure, Copilot is a suite of AI-powered integrations into various Microsoft products to enhance productivity and streamline tasks. Microsoft 365 Copilot automates writing in Word, modeling in Excel, and email management in Outlook while GitHub Copilot, developed via a collaboration with OpenAI, automates code completion. Despite its scale, Microsoft doesn’t operate in a vacuum. Alphabet (NASDAQ:GOOGL) competes against Azure with Google Cloud Platform and in productivity tools with G Suite and Google Workspace. Apple’s (NASDAQ:AAPL) macOS operating system also goes head to head against Microsoft’s Windows, and its iPhone and iPad products have been a thorn in its side.",
+      "extraction_successful": true,
+      "source": "Yahoo Finance",
+      "url": "https://stockstory.org/us/stocks/nasdaq/msft?partner=yahoo&utm_source=yahoo&utm_medium=financequotetopnavigation&utm_campaign=quotetoppicktimetobuydesktop",
+      "timestamp": "2025-09-02T10:05:10.517667",
+      "polarity": 0.7401,
+      "compound": 0.9252,
+      "sentiment_label": "Very Positive",
+      "text_length": 3100,
+      "extracted_length": 2907,
+      "enhancement_ratio": 93.8
+    },
+    {
+      "title": "David Paul Morris/Bloomberg Trump to Host Meta’s Zuckerberg, Tech CEOs in Redone Rose Garden",
+      "full_text": "David Paul Morris/Bloomberg Trump to Host Meta’s Zuckerberg, Tech CEOs in Redone Rose Garden. Tech industry leaders including Meta Platforms Inc.’s Mark Zuckerberg , Apple Inc.’s Tim Cook , and Microsoft Corp.’s Satya Nadella are expected to attend an artificial intelligence event hosted by First Lady Melania Trump on Thursday and then join President Donald Trump for an evening reception in the newly renovated Rose Garden. Other attendees are expected to include OpenAI Inc.’s Sam Altman , Alphabet Inc.’s Sergey Brin and Sundar Pichai , and Microsoft co-founder Bill Gates , a White House official said. Alexandr Wang , who recently joined Meta’s AI effort, also is among the invitees.",
+      "raw_extracted_text": "Trump to Host Meta’s Zuckerberg, Tech CEOs in Redone Rose Garden. Tech industry leaders including Meta Platforms Inc.’s Mark Zuckerberg , Apple Inc.’s Tim Cook , and Microsoft Corp.’s Satya Nadella are expected to attend an artificial intelligence event hosted by First Lady Melania Trump on Thursday and then join President Donald Trump for an evening reception in the newly renovated Rose Garden. Other attendees are expected to include OpenAI Inc.’s Sam Altman , Alphabet Inc.’s Sergey Brin and Sundar Pichai , and Microsoft co-founder Bill Gates , a White House official said. Alexandr Wang , who recently joined Meta’s AI effort, also is among the invitees.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-04/trump-to-host-meta-s-zuckerberg-tech-ceos-in-redone-rose-garden?srnd=phx-technology",
+      "timestamp": "2025-09-03T14:05:19.222130",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 690,
+      "extracted_length": 662,
+      "enhancement_ratio": 95.9
+    },
+    {
+      "title": "Raul Ariano/Bloomberg China's Xiaohongshu Hits $31 Billion Value in GSR Books",
+      "full_text": "Raul Ariano/Bloomberg China's Xiaohongshu Hits $31 Billion Value in GSR Books. Xiaohongshu’s valuation surged 19% to $31 billion in just three months during recent transactions via a major fund, underscoring the intense investor demand for a Chinese equivalent to Instagram. The valuation came to light through portfolio documents distributed by a GSR Ventures Management Co. vehicle, which logged shares of the fund changing hands in the first half of 2025. Xiaohongshu comprised 92% of the fund’s total assets as of June’s end, a slight rise from the previous quarter, according to documents reviewed by Bloomberg News. The portfolio’s stated net asset value implied a big jump for the social media firm from $26 billion in the March quarter, according to Bloomberg calculations.",
+      "raw_extracted_text": "China's Xiaohongshu Hits $31 Billion Value in GSR Books. Xiaohongshu’s valuation surged 19% to $31 billion in just three months during recent transactions via a major fund, underscoring the intense investor demand for a Chinese equivalent to Instagram. The valuation came to light through portfolio documents distributed by a GSR Ventures Management Co. vehicle, which logged shares of the fund changing hands in the first half of 2025. Xiaohongshu comprised 92% of the fund’s total assets as of June’s end, a slight rise from the previous quarter, according to documents reviewed by Bloomberg News. The portfolio’s stated net asset value implied a big jump for the social media firm from $26 billion in the March quarter, according to Bloomberg calculations.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-04/instagram-style-xiaohongshu-hits-31-billion-value-in-gsr-books?srnd=phx-technology",
+      "timestamp": "2025-09-03T15:05:20.043318",
+      "polarity": 0.7592,
+      "compound": 0.949,
+      "sentiment_label": "Very Positive",
+      "text_length": 781,
+      "extracted_length": 759,
+      "enhancement_ratio": 97.2
+    },
+    {
+      "title": "Stocks and Bonds Rise as Weak Jobs Fuel Fed Bets: Markets Wrap Stock Market Today: Dow, S&P Live Updates for September 3",
+      "full_text": "Stocks and Bonds Rise as Weak Jobs Fuel Fed Bets: Markets Wrap Stock Market Today: Dow, S&P Live Updates for September 3. Wall Street traders kept piling into bets the Federal Reserve will cut rates in September as weak labor data lifted bonds . Those wagers also propped up stocks , which halted a two-day rout amid a rally in big tech. Just 48 hours ahead of the all-important US payrolls report, a drop in job openings to the lowest in 10 months saw traders almost fully pricing in a Fed cut this month and projecting at least two reductions in 2025. Treasuries bounced after a slide that put the 30-year yield close to 5%. The dollar fell.",
+      "raw_extracted_text": "Stock Market Today: Dow, S&P Live Updates for September 3. Wall Street traders kept piling into bets the Federal Reserve will cut rates in September as weak labor data lifted bonds . Those wagers also propped up stocks , which halted a two-day rout amid a rally in big tech. Just 48 hours ahead of the all-important US payrolls report, a drop in job openings to the lowest in 10 months saw traders almost fully pricing in a Fed cut this month and projecting at least two reductions in 2025. Treasuries bounced after a slide that put the 30-year yield close to 5%. The dollar fell.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-02/stock-market-today-dow-s-p-live-updates",
+      "timestamp": "2025-09-03T01:05:26.303336",
+      "polarity": -0.7717,
+      "compound": -0.9647,
+      "sentiment_label": "Negative",
+      "text_length": 643,
+      "extracted_length": 580,
+      "enhancement_ratio": 90.2
+    },
+    {
+      "title": "Bankers Prep for the Busiest Week of the Year in US IPO Rush Bankers Prep for the Busiest Week of the Year in US IPO Rush",
+      "full_text": "Bankers Prep for the Busiest Week of the Year in US IPO Rush Bankers Prep for the Busiest Week of the Year in US IPO Rush. Companies are rushing to take advantage of recent market enthusiasm for new US listings despite September’s reputation as a tough month for stocks. Five firms are now on deck to price their initial public offerings next week including digital payments firm Klarna Group Plc as well as Cameron and Tyler Winklevoss’ crypto exchange Gemini Space Station Inc. If all the IPOs price at the top of their marketed ranges to raise more than $3 billion in aggregate, next week would rank as this year’s busiest in the US in terms of deal volume, according to data compiled by Bloomberg.",
+      "raw_extracted_text": "Bankers Prep for the Busiest Week of the Year in US IPO Rush. Companies are rushing to take advantage of recent market enthusiasm for new US listings despite September’s reputation as a tough month for stocks. Five firms are now on deck to price their initial public offerings next week including digital payments firm Klarna Group Plc as well as Cameron and Tyler Winklevoss’ crypto exchange Gemini Space Station Inc. If all the IPOs price at the top of their marketed ranges to raise more than $3 billion in aggregate, next week would rank as this year’s busiest in the US in terms of deal volume, according to data compiled by Bloomberg.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-02/bankers-prep-for-the-busiest-week-of-the-year-in-us-ipo-rush",
+      "timestamp": "2025-09-03T01:05:27.277226",
+      "polarity": 0.5185,
+      "compound": 0.6481,
+      "sentiment_label": "Positive",
+      "text_length": 701,
+      "extracted_length": 640,
+      "enhancement_ratio": 91.3
+    },
+    {
+      "title": "Stocks Join Bond Rout as 30-Year Yield Close to 5%: Markets Wrap Stocks Join Bond Rout as 30-Year Yield Close to 5%: Markets Wrap",
+      "full_text": "Stocks Join Bond Rout as 30-Year Yield Close to 5%: Markets Wrap Stocks Join Bond Rout as 30-Year Yield Close to 5%: Markets Wrap. Wall Street kicked off September on a sour note, with stocks joining a slide in bonds amid heavy corporate-debt sales Bloomberg Terminal and developed-world budget worries. The dollar rose. Gold hit a record high. US 30-year yields approached 5%, pressuring tech shares whose valuations have widened during a surge from April lows. While the S&P 500 trimmed its losses, almost 400 of its shares fell. All megacaps slipped, with Nvidia Corp. seeing its longest slump since March. In late hours, Alphabet Inc. jumped as a federal judge ruled Google doesn’t have to sell its Chrome web browser.",
+      "raw_extracted_text": "Stocks Join Bond Rout as 30-Year Yield Close to 5%: Markets Wrap. Wall Street kicked off September on a sour note, with stocks joining a slide in bonds amid heavy corporate-debt sales Bloomberg Terminal and developed-world budget worries. The dollar rose. Gold hit a record high. US 30-year yields approached 5%, pressuring tech shares whose valuations have widened during a surge from April lows. While the S&P 500 trimmed its losses, almost 400 of its shares fell. All megacaps slipped, with Nvidia Corp. seeing its longest slump since March. In late hours, Alphabet Inc. jumped as a federal judge ruled Google doesn’t have to sell its Chrome web browser.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-01/stock-market-today-dow-s-p-live-updates",
+      "timestamp": "2025-09-03T15:05:28.335351",
+      "polarity": -0.7731,
+      "compound": -0.9664,
+      "sentiment_label": "Negative",
+      "text_length": 722,
+      "extracted_length": 657,
+      "enhancement_ratio": 91.0
+    },
+    {
+      "title": "Deutsche Bank to Rejoin Euro Stoxx 50 After Seven-Year Absence Deutsche Bank to Rejoin Euro Stoxx 50 After Seven-Year Absence",
+      "full_text": "Deutsche Bank to Rejoin Euro Stoxx 50 After Seven-Year Absence Deutsche Bank to Rejoin Euro Stoxx 50 After Seven-Year Absence. Deutsche Bank AG has regained its spot in the euro area’s main stock benchmark, seven years after being cast out of the gauge. The German lender joins Siemens Energy AG and Belgian-listed biotech Argenx SE in being promoted to the Euro Stoxx 50, index compiler ISS Stoxx said Monday. They replace 5G gear-maker Nokia Oyj, carmaker Stellantis NV and cognac producer Pernod Ricard SA, all of whom have seen their shares hit by US President Donald Trump’s tariffs.",
+      "raw_extracted_text": "Deutsche Bank to Rejoin Euro Stoxx 50 After Seven-Year Absence. Deutsche Bank AG has regained its spot in the euro area’s main stock benchmark, seven years after being cast out of the gauge. The German lender joins Siemens Energy AG and Belgian-listed biotech Argenx SE in being promoted to the Euro Stoxx 50, index compiler ISS Stoxx said Monday. They replace 5G gear-maker Nokia Oyj, carmaker Stellantis NV and cognac producer Pernod Ricard SA, all of whom have seen their shares hit by US President Donald Trump’s tariffs.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-01/deutsche-bank-to-rejoin-euro-stoxx-50-after-seven-year-absence",
+      "timestamp": "2025-09-03T17:05:29.445666",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 588,
+      "extracted_length": 525,
+      "enhancement_ratio": 89.3
+    },
+    {
+      "title": "Stocks Rebound Modestly as Testing Month Begins: Markets Wrap Stock Market Today: Dow, S&P Live Updates for September 1",
+      "full_text": "Stocks Rebound Modestly as Testing Month Begins: Markets Wrap Stock Market Today: Dow, S&P Live Updates for September 1. US stock futures staged a small rebound from a technology-led selloff, setting a steadier tone as a testing month begins with markets near record highs. S&P 500 and Nasdaq 100 contracts advanced 0.2%, with cash trading in US stocks and Treasuries closed for the Labor Day holiday. The dollar was little changed.",
+      "raw_extracted_text": "Stock Market Today: Dow, S&P Live Updates for September 1. US stock futures staged a small rebound from a technology-led selloff, setting a steadier tone as a testing month begins with markets near record highs. S&P 500 and Nasdaq 100 contracts advanced 0.2%, with cash trading in US stocks and Treasuries closed for the Labor Day holiday. The dollar was little changed.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-08-31/asia-set-for-cautious-open-after-us-tariff-ruling-global-wrap",
+      "timestamp": "2025-09-03T14:05:30.193260",
+      "polarity": 0.673,
+      "compound": 0.8412,
+      "sentiment_label": "Very Positive",
+      "text_length": 432,
+      "extracted_length": 370,
+      "enhancement_ratio": 85.6
+    },
+    {
+      "title": "Jason Alden/Bloomberg DigitalBridge’s Vantage Is Said to Weigh $1",
+      "full_text": "Jason Alden/Bloomberg DigitalBridge’s Vantage Is Said to Weigh $1.6 Billion Yondr Deal. Vantage Data Centers is considering acquiring Yondr Group’s assets in Malaysia in a move that would help their joint backer, DigitalBridge Group Inc., simplify its portfolio and boost growth in the Asia Pacific region, according to people familiar with the matter. As part of the deal, Vantage’s APAC business could buy Yondr’s data center campus in Johor in a transaction valued at about $1.6 billion, the people said, asking not to be identified because the deliberations are private. Other co-investors including sovereign wealth fund Abu Dhabi Investment Authority are likely to join, the people said.",
+      "raw_extracted_text": "DigitalBridge’s Vantage Is Said to Weigh $1.6 Billion Yondr Deal. Vantage Data Centers is considering acquiring Yondr Group’s assets in Malaysia in a move that would help their joint backer, DigitalBridge Group Inc., simplify its portfolio and boost growth in the Asia Pacific region, according to people familiar with the matter. As part of the deal, Vantage’s APAC business could buy Yondr’s data center campus in Johor in a transaction valued at about $1.6 billion, the people said, asking not to be identified because the deliberations are private. Other co-investors including sovereign wealth fund Abu Dhabi Investment Authority are likely to join, the people said.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-04/digitalbridge-s-vantage-is-said-to-weigh-1-6-billion-yondr-deal?srnd=phx-ai",
+      "timestamp": "2025-09-02T23:05:34.544194",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 693,
+      "extracted_length": 671,
+      "enhancement_ratio": 96.8
+    }
+  ],
+  "newspaper3k_stats": {
+    "total_articles": 13,
+    "enhanced_articles": 9,
+    "total_extracted_chars": 7771,
+    "avg_enhancement_ratio": 863.4,
+    "sources_with_enhancement": [
+      {
+        "source": "Yahoo Finance",
+        "enhanced_count": 1,
+        "avg_extracted_chars": 2907.0
+      },
+      {
+        "source": "Bloomberg",
+        "enhanced_count": 8,
+        "avg_extracted_chars": 608.0
+      }
+    ]
+  }
+}

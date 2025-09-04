@@ -5,7 +5,7 @@ A web scraper that analyzes public sentiment for stock symbols using news and so
 """
 
 import warnings
-from typing import List, Dict
+from typing import List, Dict, Optional
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from textblob import TextBlob
@@ -22,6 +22,16 @@ from scrapers import (
     MarketWatchScraper, SeekingAlphaScraper, BenzingaScraper,
     FinancialTimesScraper, BloombergScraper, ReutersScraper
 )
+
+# Import database functionality
+try:
+    from core.database import SentimentDatabase
+    DATABASE_AVAILABLE = True
+except ImportError as e:
+    print(f"WARNING: Database not available: {e}")
+    print(f"   Falling back to file-based storage only")
+    DATABASE_AVAILABLE = False
+    SentimentDatabase = None
 
 warnings.filterwarnings('ignore')
 
@@ -174,10 +184,21 @@ financial_context_phrases = [
 
 
 class StockSentimentAnalyzer:
-    """Main interface for stock sentiment analysis using modular scrapers"""
+    """Main interface for stock sentiment analysis using modular scrapers with PostgreSQL caching"""
     
-    def __init__(self, symbol: str):
+    def __init__(self, symbol: str, use_database: bool = True):
         self.symbol = symbol.upper()
+        self.use_database = use_database and DATABASE_AVAILABLE
+        
+        # Initialize database connection if available
+        self.db = None
+        if self.use_database:
+            try:
+                self.db = SentimentDatabase()
+                print(f"[SUCCESS] Database caching enabled for {self.symbol}")
+            except Exception as e:
+                print(f"[WARNING] Database connection failed, using file storage only: {e}")
+                self.use_database = False
         
         # Initialize FinBERT model for financial sentiment analysis
         self.finbert_pipeline = None
@@ -1015,7 +1036,7 @@ class StockSentimentAnalyzer:
         return len(intersection) / len(union) if union else 0.0
 
     def _save_analysis_data(self, results: Dict, all_sentiments: List[SentimentData]) -> None:
-        """Save analysis results to JSON and CSV files in ./Data directory"""
+        """Save analysis results to JSON and CSV files in ./Data directory (backup/fallback storage)"""
         try:
             # Ensure Data directory exists
             data_dir = "./Data"
@@ -1166,8 +1187,36 @@ class StockSentimentAnalyzer:
         else:
             return "Very Negative"
 
-    def analyze_sentiment(self, target_articles: int = 50) -> Dict:
-        """Main method to analyze sentiment for the stock"""
+    def analyze_sentiment(self, target_articles: int = 50, force_refresh: bool = False, max_cache_hours: float = 1.0) -> Dict:
+        """Main method to analyze sentiment for the stock with caching support
+        
+        Args:
+            target_articles: Number of articles to target for analysis
+            force_refresh: If True, bypass cache and perform fresh analysis
+            max_cache_hours: Maximum age of cached data in hours (default 1.0)
+            
+        Returns:
+            Dictionary containing sentiment analysis results
+        """
+        # Check cache first if not forcing refresh
+        if self.use_database and not force_refresh:
+            print(f"[CACHE] Checking cache for {self.symbol} (max age: {max_cache_hours}h)...")
+            cached_result = self.db.get_cached_analysis(self.symbol, max_cache_hours)
+            
+            if cached_result:
+                cache_age_minutes = cached_result.get('cache_age_minutes', 0)
+                print(f"[CACHE HIT] Found cached analysis for {self.symbol} (age: {cache_age_minutes:.1f}m)")
+                print(f"  - {cached_result['total_articles']} articles")
+                print(f"  - Overall sentiment: {cached_result['overall_sentiment']}")
+                print(f"  - Average sentiment: {cached_result['sentiment_scores']['average_sentiment']:.3f}")
+                return cached_result
+            else:
+                print(f"[CACHE MISS] No recent cache found for {self.symbol}, performing fresh analysis...")
+        elif force_refresh:
+            print(f"[FORCE REFRESH] Force refresh requested for {self.symbol}, bypassing cache...")
+        else:
+            print(f"[NO DATABASE] Database caching disabled, using file storage only...")
+        
         print(f"Starting intelligent sentiment analysis for {self.symbol}...")
         print(f"Target: {target_articles} articles from multiple sources")
         
@@ -1272,7 +1321,36 @@ class StockSentimentAnalyzer:
                 "timestamp": sentiment.timestamp.isoformat()
             })
         
-        # Save analysis data to ./Data directory
+        # Save analysis data to database if available, then to ./Data directory
+        if self.use_database:
+            try:
+                # Prepare enhanced articles data for database
+                enhanced_articles_data = []
+                for sentiment in all_sentiments:
+                    enhanced_articles_data.append({
+                        "title": sentiment.text.split('.')[0] if '.' in sentiment.text else sentiment.text[:100],
+                        "text": sentiment.text,
+                        "raw_extracted_text": getattr(sentiment, 'raw_extracted_text', ''),
+                        "extraction_successful": hasattr(sentiment, 'raw_extracted_text') and sentiment.raw_extracted_text and len(sentiment.raw_extracted_text) > 100,
+                        "source": sentiment.source,
+                        "url": sentiment.url,
+                        "timestamp": sentiment.timestamp.isoformat(),
+                        "polarity": sentiment.polarity,
+                        "sentiment": sentiment.compound,  # Map to compound for database
+                        "sentiment_label": self._get_sentiment_label(sentiment.compound),
+                        "text_length": len(sentiment.text),
+                        "extracted_length": len(getattr(sentiment, 'raw_extracted_text', '')),
+                        "enhancement_ratio": round(len(getattr(sentiment, 'raw_extracted_text', '')) / max(1, len(sentiment.text)) * 100, 1) if hasattr(sentiment, 'raw_extracted_text') and sentiment.raw_extracted_text else 0.0
+                    })
+                
+                analysis_id = self.db.save_analysis(results, enhanced_articles_data)
+                print(f"[DATABASE] Saved analysis to database (ID: {analysis_id})")
+                
+            except Exception as e:
+                print(f"[WARNING] Failed to save to database: {e}")
+                print(f"   Analysis will still be saved to file storage")
+        
+        # Save analysis data to ./Data directory (as backup or primary if no DB)
         self._save_analysis_data(results, all_sentiments)
         
         # Clean up Selenium driver to prevent hanging
@@ -1285,10 +1363,52 @@ class StockSentimentAnalyzer:
         return results
 
 
-if __name__ == "__main__":
-    # Example usage
-    analyzer = StockSentimentAnalyzer("MSFT")
-    results = analyzer.analyze_sentiment(target_articles=100)
+def main():
+    """Main function with enhanced CLI interface"""
+    import sys
+    import argparse
     
-    import json
-    print(json.dumps(results, indent=2, default=str))
+    parser = argparse.ArgumentParser(description='Stock Sentiment Analysis with PostgreSQL Caching')
+    parser.add_argument('symbol', help='Stock symbol to analyze (e.g., AAPL)')
+    parser.add_argument('--articles', type=int, default=50, help='Number of articles to target (default: 50)')
+    parser.add_argument('--force-refresh', action='store_true', help='Force refresh, bypass cache')
+    parser.add_argument('--cache-hours', type=float, default=1.0, help='Max cache age in hours (default: 1.0)')
+    parser.add_argument('--no-database', action='store_true', help='Disable database caching')
+    parser.add_argument('--json', action='store_true', help='Output results as JSON')
+    
+    args = parser.parse_args()
+    
+    # Create analyzer
+    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)
+    
+    # Run analysis
+    results = analyzer.analyze_sentiment(
+        target_articles=args.articles,
+        force_refresh=args.force_refresh,
+        max_cache_hours=args.cache_hours
+    )
+    
+    if args.json:
+        import json
+        print(json.dumps(results, indent=2, default=str))
+    else:
+        # Pretty print summary
+        print(f"\n=== SENTIMENT ANALYSIS SUMMARY ===")
+        print(f"Symbol: {results['symbol']} ({results['company_name']})")
+        print(f"Overall Sentiment: {results['overall_sentiment']}")
+        print(f"Average Sentiment Score: {results['sentiment_scores']['average_sentiment']:.3f}")
+        print(f"Total Articles: {results['total_articles']}")
+        print(f"Positive: {results['sentiment_distribution']['positive_percentage']:.1f}%")
+        print(f"Negative: {results['sentiment_distribution']['negative_percentage']:.1f}%")
+        print(f"Neutral: {results['sentiment_distribution']['neutral_percentage']:.1f}%")
+        
+        if results.get('cached'):
+            print(f"\n[INFO] Data from cache (age: {results.get('cache_age_minutes', 0):.1f}m)")
+        
+        print(f"\n=== SOURCE BREAKDOWN ===")
+        for source, data in results['source_breakdown'].items():
+            print(f"{source}: {data['count']} articles (avg: {data['avg_sentiment']:.3f})")
+
+
+if __name__ == "__main__":
+    main()
