@@ -14,7 +14,7 @@ A modern, AI-powered financial analysis platform that provides professional-grad
 ## 🚀 **Key Features**
 
 ### **📊 Multi-Source Intelligence**
-- **6+ News Sources**: Bloomberg, MarketWatch, Yahoo Finance, Seeking Alpha, Google News, NewsAPI
+- **7+ News Sources**: Bloomberg, MarketWatch, Yahoo Finance, Seeking Alpha, Google News, NewsAPI, Financial times, and more
 - **Smart Content Enhancement**: newspaper3k + Selenium fallback for blocked sites
 - **Anti-Bot Evasion**: Rotating user agents, stealth techniques, proxy support
 - **Duplicate Prevention**: SHA-256 URL hashing with database-level constraints
@@ -59,7 +59,7 @@ A modern, AI-powered financial analysis platform that provides professional-grad
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/yourusername/stock-trading-ai.git
+git clone https://github.com/Zero-Ideas/stock-trading-ai.git
 cd stock-trading-ai
 pip install -r requirements.txt
 
@@ -536,27 +536,8 @@ def random_delay(self, min_seconds=1.0, max_seconds=3.0):
 - **Model Loading**: Fallback to TextBlob/VADER only
 - **Network Issues**: Intelligent retry with backoff
 
-### **Circuit Breaker Pattern**
-```python
-# Disable failing sources temporarily
-class CircuitBreaker:
-    def __init__(self, failure_threshold=5, recovery_timeout=300):
-        self.failure_count = 0
-        self.last_failure_time = None
-        self.state = 'CLOSED'  # CLOSED, OPEN, HALF_OPEN
-```
 
 ---
-
-## 📊 **Performance & Scaling**
-
-### **Benchmarks**
-| Metric | Value | Hardware |
-|--------|-------|----------|
-| Articles/minute | 150-200 | 8-core CPU, 16GB RAM |
-| Database writes/sec | 500+ | SSD storage |
-| Memory usage | 2-4GB | Including FinBERT model |
-| Analysis latency | 30-60s | 20 articles, all sources |
 
 ### **Optimization Features**
 - **Parallel Scraping**: 6 concurrent workers
@@ -770,7 +751,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ### **Development Setup**
 ```bash
 # 1. Fork and clone
-git clone https://github.com/yourusername/stock-trading-ai.git
+git clone https://github.com/Zero-Ideas/stock-trading-ai.git
 cd stock-trading-ai
 
 # 2. Create virtual environment
@@ -848,34 +829,28 @@ This project was inspired by the need to democratize financial analysis tools an
 ## 📞 **Support & Contact**
 
 ### **Documentation**
-- **GitHub Wiki**: [Detailed documentation and tutorials](https://github.com/yourusername/stock-trading-ai/wiki)
-- **API Docs**: [Complete API reference](https://github.com/yourusername/stock-trading-ai/blob/main/docs/API.md)
-- **Examples**: [Usage examples and recipes](https://github.com/yourusername/stock-trading-ai/tree/main/examples)
+- **GitHub Wiki**: [Detailed documentation and tutorials](https://github.com/Zero-Ideas/stock-trading-ai/wiki)
+- **API Docs**: [Complete API reference](https://github.com/Zero-Ideas/stock-trading-ai/blob/main/docs/API.md)
+- **Examples**: [Usage examples and recipes](https://github.com/Zero-Ideas/stock-trading-ai/tree/main/examples)
 
 ### **Community**
-- **Issues**: [Bug reports and feature requests](https://github.com/yourusername/stock-trading-ai/issues)
-- **Discussions**: [Community discussions](https://github.com/yourusername/stock-trading-ai/discussions)
-- **Discord**: [Real-time community chat](https://discord.gg/your-invite-code)
+- **Issues**: [Bug reports and feature requests](https://github.com/Zero-Ideas/stock-trading-ai/issues)
+- **Discussions**: [Community discussions](https://github.com/Zero-Ideas/stock-trading-ai/discussions)
 
-### **Professional Support**
-For enterprise support, custom development, or consulting services:
-- **Email**: support@stocktradingai.com
-- **LinkedIn**: [Connect with the team](https://linkedin.com/company/stock-trading-ai)
-- **Website**: [https://stocktradingai.com](https://stocktradingai.com)
+
 
 ---
 
 ## 📊 **Project Statistics**
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/stock-trading-ai?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/stock-trading-ai?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/stock-trading-ai)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/stock-trading-ai)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/stock-trading-ai)
-![GitHub contributors](https://img.shields.io/github/contributors/yourusername/stock-trading-ai)
+![GitHub stars](https://img.shields.io/github/stars/Zero-Ideas/stock-trading-ai?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Zero-Ideas/stock-trading-ai?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Zero-Ideas/stock-trading-ai)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Zero-Ideas/stock-trading-ai)
+![GitHub last commit](https://img.shields.io/github/last-commit/Zero-Ideas/stock-trading-ai)
+![GitHub contributors](https://img.shields.io/github/contributors/Zero-Ideas/stock-trading-ai)
 
 ---
 
 **⭐ If you find this project helpful, please consider giving it a star! ⭐**
 
-**Made with ❤️ by the Stock Trading AI team**
