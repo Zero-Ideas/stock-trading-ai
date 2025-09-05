@@ -8,7 +8,7 @@ PERFORMANCE OPTIMIZATIONS:
 - Fast company names: Static mapping replaces yfinance API calls (eliminates 5s delays)
 - Enhanced Selenium cleanup: Prevents hanging processes
 """
-
+    
 import warnings
 from typing import List, Dict, Optional
 from datetime import datetime

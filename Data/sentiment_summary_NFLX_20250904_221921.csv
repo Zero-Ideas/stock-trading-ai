@@ -1,0 +1,2 @@
+Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Sentiment,Weighted_Avg_From_Sources,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,Google_News_Count,Google_News_Avg_Sentiment,Yahoo_Finance_Count,Yahoo_Finance_Avg_Sentiment,MarketWatch_Count,MarketWatch_Avg_Sentiment,Bloomberg_Count,Bloomberg_Avg_Sentiment
+NFLX,Netflix Inc.,2025-09-04T22:19:21.714982,36,Neutral,0.035,0.006,11,9,16,30.6,25.0,44.4,16,0.209,2,0.0,5,-0.185,13,-0.17
