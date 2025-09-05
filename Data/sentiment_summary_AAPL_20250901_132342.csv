@@ -1,2 +1,0 @@
-Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Sentiment,Weighted_Avg_From_Sources,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,Google_News_Count,Google_News_Avg_Sentiment,MarketWatch_Count,MarketWatch_Avg_Sentiment,NewsAPI_Yahoo_Entertainment_Count,NewsAPI_Yahoo_Entertainment_Avg_Sentiment,Yahoo_Finance_Count,Yahoo_Finance_Avg_Sentiment
-AAPL,AAPL,2025-09-01T13:23:42.790239,19,Very Positive,0.115,0.134,5,2,12,26.3,10.5,63.2,10,0.145,5,0.169,3,-0.18,1,0.789

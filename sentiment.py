@@ -2,6 +2,11 @@
 """
 Stock Sentiment Analyzer - Modular Interface
 A web scraper that analyzes public sentiment for stock symbols using news and social media data.
+
+PERFORMANCE OPTIMIZATIONS:
+- Lazy loading: Scrapers and AI models only load when needed (improves database mode latency)
+- Fast company names: Static mapping replaces yfinance API calls (eliminates 5s delays)
+- Enhanced Selenium cleanup: Prevents hanging processes
 """
 
 import warnings
@@ -9,7 +14,7 @@ from typing import List, Dict, Optional
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from textblob import TextBlob
-import yfinance as yf
+# Removed yfinance import due to API issues - using static mapping instead
 import re
 import json
 import csv
@@ -17,12 +22,8 @@ import os
 import pandas as pd
 import time  # Add time import for retry delays
 
-# Import modular scrapers
-from scrapers import (
-    SentimentData, GoogleNewsScraper, NewsAPIScraper, YahooFinanceScraper,
-    MarketWatchScraper, SeekingAlphaScraper, BenzingaScraper,
-    FinancialTimesScraper, BloombergScraper, ReutersScraper
-)
+# Import SentimentData immediately, but import scrapers lazily
+from scrapers import SentimentData
 
 # Import database functionality
 try:
@@ -36,22 +37,159 @@ except ImportError as e:
 
 warnings.filterwarnings('ignore')
 
-# FinBERT and transformer imports (with fallback handling)
-try:
-    import torch
-    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
-    TRANSFORMERS_AVAILABLE = True
-except ImportError as e:
-    print(f"WARNING: Transformers not available: {e}")
-    print(f"   Falling back to TextBlob sentiment analysis")
-    TRANSFORMERS_AVAILABLE = False
-    torch = None
-    AutoTokenizer = None
-    AutoModelForSequenceClassification = None
-    pipeline = None
+# FinBERT and transformer imports (lazy loading when needed)
+TRANSFORMERS_AVAILABLE = None  # Will be checked when needed
+_TRANSFORMERS_CHECKED = False
+_torch = None
+_AutoTokenizer = None
+_AutoModelForSequenceClassification = None
+_pipeline = None
+
+def _check_transformers_availability():
+    """Check if transformers are available (lazy check)"""
+    global TRANSFORMERS_AVAILABLE, _TRANSFORMERS_CHECKED, _torch, _AutoTokenizer, _AutoModelForSequenceClassification, _pipeline
+    
+    if _TRANSFORMERS_CHECKED:
+        return TRANSFORMERS_AVAILABLE
+    
+    _TRANSFORMERS_CHECKED = True
+    try:
+        import torch
+        from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
+        TRANSFORMERS_AVAILABLE = True
+        _torch = torch
+        _AutoTokenizer = AutoTokenizer
+        _AutoModelForSequenceClassification = AutoModelForSequenceClassification
+        _pipeline = pipeline
+    except ImportError as e:
+        print(f"WARNING: Transformers not available: {e}")
+        print(f"   Falling back to TextBlob sentiment analysis")
+        TRANSFORMERS_AVAILABLE = False
+        _torch = None
+        _AutoTokenizer = None
+        _AutoModelForSequenceClassification = None
+        _pipeline = None
+    
+    return TRANSFORMERS_AVAILABLE
 
 # Global debug flag
 debug = False
+
+# Static mapping of common stock symbols to company names
+# This replaces yfinance to avoid API delays
+STOCK_SYMBOL_TO_COMPANY = {
+    # Major Tech Stocks
+    'AAPL': 'Apple Inc.',
+    'MSFT': 'Microsoft Corporation',
+    'GOOGL': 'Alphabet Inc.',
+    'GOOG': 'Alphabet Inc.',
+    'AMZN': 'Amazon.com Inc.',
+    'META': 'Meta Platforms Inc.',
+    'TSLA': 'Tesla Inc.',
+    'NVDA': 'NVIDIA Corporation',
+    'NFLX': 'Netflix Inc.',
+    'CRM': 'Salesforce Inc.',
+    'ORCL': 'Oracle Corporation',
+    'ADBE': 'Adobe Inc.',
+    'INTC': 'Intel Corporation',
+    'AMD': 'Advanced Micro Devices Inc.',
+    'QCOM': 'QUALCOMM Incorporated',
+    'AVGO': 'Broadcom Inc.',
+    'TXN': 'Texas Instruments Incorporated',
+    'CSCO': 'Cisco Systems Inc.',
+    
+    # Financial Stocks
+    'JPM': 'JPMorgan Chase & Co.',
+    'BAC': 'Bank of America Corporation',
+    'WFC': 'Wells Fargo & Company',
+    'GS': 'The Goldman Sachs Group Inc.',
+    'MS': 'Morgan Stanley',
+    'C': 'Citigroup Inc.',
+    'V': 'Visa Inc.',
+    'MA': 'Mastercard Incorporated',
+    'AXP': 'American Express Company',
+    'BRK.A': 'Berkshire Hathaway Inc.',
+    'BRK.B': 'Berkshire Hathaway Inc.',
+    
+    # Healthcare & Pharma
+    'JNJ': 'Johnson & Johnson',
+    'PFE': 'Pfizer Inc.',
+    'MRNA': 'Moderna Inc.',
+    'BNTX': 'BioNTech SE',
+    'UNH': 'UnitedHealth Group Incorporated',
+    'CVS': 'CVS Health Corporation',
+    'ABBV': 'AbbVie Inc.',
+    'LLY': 'Eli Lilly and Company',
+    'TMO': 'Thermo Fisher Scientific Inc.',
+    'ABT': 'Abbott Laboratories',
+    
+    # Consumer & Retail
+    'WMT': 'Walmart Inc.',
+    'HD': 'The Home Depot Inc.',
+    'PG': 'The Procter & Gamble Company',
+    'KO': 'The Coca-Cola Company',
+    'PEP': 'PepsiCo Inc.',
+    'MCD': 'McDonald\'s Corporation',
+    'SBUX': 'Starbucks Corporation',
+    'NKE': 'NIKE Inc.',
+    'DIS': 'The Walt Disney Company',
+    'AMGN': 'Amgen Inc.',
+    
+    # Energy & Utilities
+    'XOM': 'Exxon Mobil Corporation',
+    'CVX': 'Chevron Corporation',
+    'COP': 'ConocoPhillips',
+    'NEE': 'NextEra Energy Inc.',
+    
+    # Industrial & Manufacturing
+    'BA': 'The Boeing Company',
+    'CAT': 'Caterpillar Inc.',
+    'GE': 'General Electric Company',
+    'MMM': '3M Company',
+    'HON': 'Honeywell International Inc.',
+    'UPS': 'United Parcel Service Inc.',
+    'FDX': 'FedEx Corporation',
+    
+    # Real Estate & REITs
+    'AMT': 'American Tower Corporation',
+    'CCI': 'Crown Castle Inc.',
+    'PLD': 'Prologis Inc.',
+    
+    # Telecom
+    'T': 'AT&T Inc.',
+    'VZ': 'Verizon Communications Inc.',
+    'TMUS': 'T-Mobile US Inc.',
+    
+    # Other Popular Stocks
+    'SPY': 'SPDR S&P 500 ETF Trust',
+    'QQQ': 'Invesco QQQ Trust',
+    'IWM': 'iShares Russell 2000 ETF',
+    'VTI': 'Vanguard Total Stock Market ETF',
+    'GME': 'GameStop Corp.',
+    'AMC': 'AMC Entertainment Holdings Inc.',
+    'BB': 'BlackBerry Limited',
+    'NOK': 'Nokia Corporation',
+    'PLTR': 'Palantir Technologies Inc.',
+    'SNOW': 'Snowflake Inc.',
+    'RBLX': 'Roblox Corporation',
+    'COIN': 'Coinbase Global Inc.',
+    'SQ': 'Block Inc.',
+    'PYPL': 'PayPal Holdings Inc.',
+    'ZM': 'Zoom Video Communications Inc.',
+    'UBER': 'Uber Technologies Inc.',
+    'LYFT': 'Lyft Inc.',
+    'SNAP': 'Snap Inc.',
+    'TWTR': 'Twitter Inc.',
+    'PINS': 'Pinterest Inc.',
+    'SPOT': 'Spotify Technology S.A.',
+    'ROKU': 'Roku Inc.',
+    'DOCU': 'DocuSign Inc.',
+    'CRWD': 'CrowdStrike Holdings Inc.',
+    'OKTA': 'Okta Inc.',
+    'ZS': 'Zscaler Inc.',
+    'PANW': 'Palo Alto Networks Inc.',
+    'FTNT': 'Fortinet Inc.',
+}
 
 # Comprehensive Financial Sentiment Lexicon
 # Includes corporate euphemisms and positive-sounding terms that actually indicate problems
@@ -204,23 +342,59 @@ class StockSentimentAnalyzer:
             print(f"[INFO] Will use file storage only")
             self.use_database = False
         
-        # Initialize FinBERT model for financial sentiment analysis
+        # Initialize FinBERT model for financial sentiment analysis (lazy loading)
         self.finbert_pipeline = None
+        self.tokenizer = None
+        self.model = None
+        self._sentiment_models_loaded = False
         
-        if TRANSFORMERS_AVAILABLE:
+        # Lazy load sentiment analysis models only if not using database
+        if not self.use_database:
+            self._load_sentiment_models()
+        else:
+            print(f"[INFO] Database mode enabled - sentiment models will be loaded on demand to improve latency")
+        
+        # Store financial context for enhanced analysis
+        self.financial_context_phrases = financial_context_phrases
+        
+        # Lazy initialize scrapers only if not using database
+        self.scrapers = None
+        self._scrapers_loaded = False
+        
+        if not self.use_database:
+            self._load_scrapers()
+        else:
+            print(f"[INFO] Database mode enabled - scrapers will be loaded on demand to improve latency")
+        
+        # Cache for performance optimization
+        self._sentiment_cache = {}
+        self._company_name_cache = None
+        
+        # Get company name for better analysis (with caching)
+        self.company_name = self._get_company_name_fast()
+        
+    def _load_sentiment_models(self):
+        """Lazy load sentiment analysis models"""
+        if self._sentiment_models_loaded:
+            return
+            
+        self._sentiment_models_loaded = True
+        print(f"[LAZY LOAD] Loading sentiment analysis models for {self.symbol}...")
+        
+        if _check_transformers_availability():
             print(f"Loading FinBERT model for enhanced financial sentiment analysis...")
             try:
                 # Use FinBERT model specifically trained on financial data
                 model_name = "ProsusAI/finbert"
-                self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-                self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
+                self.tokenizer = _AutoTokenizer.from_pretrained(model_name)
+                self.model = _AutoModelForSequenceClassification.from_pretrained(model_name)
                 
                 # Create pipeline for easier inference
-                self.finbert_pipeline = pipeline(
+                self.finbert_pipeline = _pipeline(
                     "text-classification", 
                     model=self.model, 
                     tokenizer=self.tokenizer,
-                    device=0 if torch.cuda.is_available() else -1  # Use GPU if available
+                    device=0 if _torch.cuda.is_available() else -1  # Use GPU if available
                 )
                 
                 print(f"SUCCESS: FinBERT model loaded successfully")
@@ -229,10 +403,10 @@ class StockSentimentAnalyzer:
                 print(f"WARNING: Could not load FinBERT model, trying fallback: {e}")
                 # Fallback to a more basic transformer model
                 try:
-                    self.finbert_pipeline = pipeline(
+                    self.finbert_pipeline = _pipeline(
                         "sentiment-analysis",
                         model="cardiffnlp/twitter-roberta-base-sentiment-latest",
-                        device=0 if torch.cuda.is_available() else -1
+                        device=0 if _torch.cuda.is_available() else -1
                     )
                     print(f"SUCCESS: Fallback sentiment model loaded")
                 except Exception as e2:
@@ -240,26 +414,38 @@ class StockSentimentAnalyzer:
                     self.finbert_pipeline = None
         else:
             print(f"INFO: Using TextBlob for basic sentiment analysis (install transformers for FinBERT)")
+    
+    def _load_scrapers(self):
+        """Lazy load scraper modules"""
+        if self._scrapers_loaded:
+            return
+            
+        self._scrapers_loaded = True
+        print(f"[LAZY LOAD] Loading scrapers for {self.symbol}...")
         
-        # Store financial context for enhanced analysis
-        self.financial_context_phrases = financial_context_phrases
+        # Import scrapers only when needed
+        from scrapers import (
+            GoogleNewsScraper, NewsAPIScraper, YahooFinanceScraper,
+            MarketWatchScraper, SeekingAlphaScraper, BenzingaScraper,
+            FinancialTimesScraper, BloombergScraper, ReutersScraper
+        )
         
         # Initialize all improved scrapers (including previously disabled ones)
         all_scrapers = {
             # High-performance scrapers (now with newspaper3k enhancement)
-            'newsapi': NewsAPIScraper(symbol, debug),  # Re-enabled - now works great with newspaper3k
-            'google_news': GoogleNewsScraper(symbol, debug),
-            'yahoo_finance': YahooFinanceScraper(symbol, debug),
+            'newsapi': NewsAPIScraper(self.symbol, debug),  # Re-enabled - now works great with newspaper3k
+            'google_news': GoogleNewsScraper(self.symbol, debug),
+            'yahoo_finance': YahooFinanceScraper(self.symbol, debug),
         
             # Improved scrapers with anti-bot protection
-            'bloomberg': BloombergScraper(symbol, debug),  # Re-enabled - improved with fallbacks
-            'seeking_alpha': SeekingAlphaScraper(symbol, debug),  # Re-enabled with enhanced Selenium support
-            'marketwatch': MarketWatchScraper(symbol, debug),
-            #'reuters': ReutersScraper(symbol, debug),
+            'bloomberg': BloombergScraper(self.symbol, debug),  # Re-enabled - improved with fallbacks
+            'seeking_alpha': SeekingAlphaScraper(self.symbol, debug),  # Re-enabled with enhanced Selenium support
+            'marketwatch': MarketWatchScraper(self.symbol, debug),
+            #'reuters': ReutersScraper(self.symbol, debug),
             
             # Additional sources
-            #'benzinga': BenzingaScraper(symbol, debug),
-            #'financial_times': FinancialTimesScraper(symbol, debug),
+            #'benzinga': BenzingaScraper(self.symbol, debug),
+            #'financial_times': FinancialTimesScraper(self.symbol, debug),
         }
         
         # Filter out disabled sources based on success rate tracking
@@ -277,35 +463,45 @@ class StockSentimentAnalyzer:
         
         if disabled_count > 0:
             print(f"INFO: {disabled_count} sources disabled due to low success rates")
-        
-        # Cache for performance optimization
-        self._sentiment_cache = {}
-        self._company_name_cache = None
-        
-        # Get company name for better analysis (with caching)
-        self.company_name = self._get_company_name_from_yfinance()
 
-    def _get_company_name_from_yfinance(self) -> str:
-        """Get company name using yfinance with caching"""
+    def _get_company_name_fast(self) -> str:
+        """Get company name using static mapping (fast, no API calls)"""
         if self._company_name_cache is not None:
             return self._company_name_cache
         
-        try:
-            ticker = yf.Ticker(self.symbol)
-            info = ticker.info
-            
-            # Try different fields that might contain the company name
-            for field in ['longName', 'shortName', 'companyName']:
-                if field in info and info[field]:
-                    self._company_name_cache = info[field]
-                    return self._company_name_cache
-                    
-        except Exception as e:
-            if debug:
-                print(f"Could not fetch company name: {e}")
+        # Try direct lookup from static mapping
+        company_name = STOCK_SYMBOL_TO_COMPANY.get(self.symbol.upper())
         
-        self._company_name_cache = self.symbol  # Fallback to symbol
+        if company_name:
+            self._company_name_cache = company_name
+            if debug:
+                print(f"Found company name for {self.symbol}: {company_name}")
+            return self._company_name_cache
+        
+        # Fallback: Try to create a reasonable company name from symbol
+        # This handles cases not in our static mapping
+        if len(self.symbol) <= 5:
+            # For unknown symbols, create a generic name
+            self._company_name_cache = f"{self.symbol} Corporation"
+        else:
+            # For longer symbols (like ETFs), just use the symbol
+            self._company_name_cache = self.symbol
+        
+        if debug:
+            print(f"Generated company name for {self.symbol}: {self._company_name_cache}")
+        
         return self._company_name_cache
+    
+    @staticmethod
+    def add_stock_symbol(symbol: str, company_name: str):
+        """Add a new stock symbol to company name mapping"""
+        STOCK_SYMBOL_TO_COMPANY[symbol.upper()] = company_name
+        print(f"Added mapping: {symbol.upper()} -> {company_name}")
+    
+    @staticmethod  
+    def get_supported_symbols():
+        """Get list of all supported stock symbols with known company names"""
+        return list(STOCK_SYMBOL_TO_COMPANY.keys())
 
     def _run_scraper_with_retry(self, scraper, max_articles: int) -> List[SentimentData]:
         """Run a scraper with retry logic, error handling, and performance optimization"""
@@ -488,11 +684,16 @@ class StockSentimentAnalyzer:
         """Gather sentiment data from multiple sources using multithreading with database caching"""
         all_sentiments = []
         
+        # Load scrapers and sentiment models if not using database
+        if not self.use_database:
+            self._load_scrapers()
+            self._load_sentiment_models()
+        
         # First, try to get recent articles from database if enabled
         if self.use_database and hasattr(self.db, 'get_recent_articles_from_db'):
             print(f"[DATABASE] Checking for recent articles in {self.symbol} table...")
             try:
-                recent_from_db = self.db.get_recent_articles_from_db(self.symbol, target_articles, 24)
+                recent_from_db = self.db.get_recent_articles_from_db(self.symbol, target_articles, 2400)
                 if recent_from_db and len(recent_from_db) >= target_articles // 2:  # If we have at least half the target
                     print(f"[DATABASE] Found {len(recent_from_db)} recent articles in database")
                     
@@ -522,6 +723,10 @@ class StockSentimentAnalyzer:
             except Exception as e:
                 print(f"[WARNING] Failed to get articles from database: {e}")
         
+        # Ensure scrapers are loaded before use
+        if self.scrapers is None:
+            self._load_scrapers()
+        
         # Prepare scraper tasks
         scraper_tasks = []
         articles_per_source = max(15, target_articles // len(self.scrapers) + 10)  # Increased to get more articles per source
@@ -550,7 +755,7 @@ class StockSentimentAnalyzer:
             for future in as_completed(future_to_scraper):
                 source_name = future_to_scraper[future]
                 try:
-                    source_sentiments = future.result(timeout=120)  # Increased timeout to 120s to handle stuck scrapers
+                    source_sentiments = future.result(timeout=30)  # Increased timeout to 120s to handle stuck scrapers
                     if source_sentiments:
                         all_sentiments.extend(source_sentiments)
                         
@@ -616,7 +821,7 @@ class StockSentimentAnalyzer:
         print(f"[DEBUG] unique_sentiments count: {len(unique_sentiments)}")
         print(f"[DEBUG] Symbol: {self.symbol}")
         
-        if self.db and hasattr(self.db, 'save_articles_to_symbol_table'):
+        if self.db and hasattr(self.db, 'save_articles_to_partitioned_table'):
             try:
                 articles_data = []
                 print(f"\n[DEBUG] Preparing articles for database save...")
@@ -649,11 +854,11 @@ class StockSentimentAnalyzer:
                         print(f"[DEBUG]   Sentiment: {article_data['sentiment']}")
                 
                 print(f"\n[DEBUG] TOTAL ARTICLES PREPARED FOR SAVE: {len(articles_data)}")
-                print(f"[DEBUG] Articles data structure ready, calling save_articles_to_symbol_table...")
+                print(f"[DEBUG] Articles data structure ready, calling save_articles_to_partitioned_table...")
                 
-                # Save to per-symbol table
-                new_articles_saved = self.db.save_articles_to_symbol_table(self.symbol, articles_data)
-                print(f"[DATABASE] SAVE COMPLETE: {new_articles_saved} new articles saved to {self.symbol} table")
+                # Save to partitioned table
+                new_articles_saved = self.db.save_articles_to_partitioned_table(self.symbol, articles_data)
+                print(f"[DATABASE] SAVE COMPLETE: {new_articles_saved} new articles saved to partitioned table for {self.symbol}")
                 
                 # Verify what was actually saved
                 print(f"\n[DEBUG] VERIFYING DATABASE SAVE...")
@@ -676,18 +881,30 @@ class StockSentimentAnalyzer:
                     print(f"[ERROR] Verification failed: {ve}")
                 
             except Exception as e:
-                print(f"[WARNING] Failed to save articles to per-symbol table: {e}")
+                print(f"[WARNING] Failed to save articles to partitioned table: {e}")
                 import traceback
                 traceback.print_exc()
         else:
-            print(f"[WARNING] Database save skipped - db={self.db}, has_method={hasattr(self.db, 'save_articles_to_symbol_table') if self.db else False}")
+            print(f"[WARNING] Database save skipped - db={self.db}, has_method={hasattr(self.db, 'save_articles_to_partitioned_table') if self.db else False}")
         
         print(f"\n[DEBUG] FINAL RETURN: Returning {len(unique_sentiments)} articles to caller")
+        
+        # Clean up Selenium driver after scraping to prevent hanging
+        try:
+            from scrapers.base_scraper import BaseScraper
+            BaseScraper.cleanup_selenium_driver()
+        except Exception as e:
+            print(f"Warning: Selenium cleanup failed: {e}")
+        
         return unique_sentiments
 
     def _analyze_text(self, text: str) -> Dict:
         """Analyze sentiment of text using available methods"""
         try:
+            # Ensure sentiment models are loaded if needed
+            if not self.use_database and not self._sentiment_models_loaded:
+                self._load_sentiment_models()
+                
             # Clean text
             cleaned_text = self._clean_text_for_analysis(text)
             
@@ -1336,7 +1553,7 @@ class StockSentimentAnalyzer:
         else:
             return "Very Negative"
 
-    def analyze_sentiment(self, target_articles: int = 50, force_refresh: bool = False, max_cache_hours: float = 1.0) -> Dict:
+    def analyze_sentiment(self, target_articles: int = 50, force_refresh: bool = False, max_cache_hours: float = 10000) -> Dict:
         """Main method to analyze sentiment for the stock with caching support
         
         Args:
@@ -1354,11 +1571,25 @@ class StockSentimentAnalyzer:
             
             if cached_result:
                 cache_age_minutes = cached_result.get('cache_age_minutes', 0)
-                print(f"[CACHE HIT] Found cached analysis for {self.symbol} (age: {cache_age_minutes:.1f}m)")
-                print(f"  - {cached_result['total_articles']} articles")
-                print(f"  - Overall sentiment: {cached_result['overall_sentiment']}")
-                print(f"  - Average sentiment: {cached_result['sentiment_scores']['average_sentiment']:.3f}")
-                return cached_result
+                cached_articles = cached_result.get('raw_articles', [])
+                
+                # Check if cache has actual articles and sufficient count
+                if cached_articles and len(cached_articles) >= target_articles:
+                    print(f"[CACHE HIT] Found cached analysis for {self.symbol} (age: {cache_age_minutes:.1f}m)")
+                    print(f"  - {len(cached_articles)} articles available")
+                    print(f"  - Overall sentiment: {cached_result['overall_sentiment']}")
+                    print(f"  - Average sentiment: {cached_result['sentiment_scores']['average_sentiment']:.3f}")
+                    
+                    # Limit articles to requested count
+                    if len(cached_articles) > target_articles:
+                        cached_result['raw_articles'] = cached_articles[:target_articles]
+                        cached_result['recent_articles'] = cached_result.get('recent_articles', [])[:target_articles]
+                        print(f"  - Limited to requested {target_articles} articles")
+                    
+                    return cached_result
+                else:
+                    print(f"[CACHE INSUFFICIENT] Found cached analysis but insufficient articles ({len(cached_articles)}/{target_articles})")
+                    print(f"  - Performing fresh analysis to get {target_articles} articles...")
             else:
                 print(f"[CACHE MISS] No recent cache found for {self.symbol}, performing fresh analysis...")
         elif force_refresh:

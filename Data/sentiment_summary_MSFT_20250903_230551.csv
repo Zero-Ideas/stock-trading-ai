@@ -1,2 +1,0 @@
-Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Sentiment,Weighted_Avg_From_Sources,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,MarketWatch_Count,MarketWatch_Avg_Sentiment,Yahoo_Finance_Count,Yahoo_Finance_Avg_Sentiment,Bloomberg_Count,Bloomberg_Avg_Sentiment
-MSFT,MSFT,2025-09-03T23:05:51.095511,13,Positive,0.037,0.046,4,3,6,30.8,23.1,46.2,4,-0.207,1,0.925,8,0.063

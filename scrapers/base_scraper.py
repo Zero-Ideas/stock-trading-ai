@@ -69,16 +69,25 @@ class SentimentData:
 class BaseScraper(ABC):
     """Abstract base class for all news scrapers"""
     
-    def __init__(self, symbol: str, debug: bool = False):
+    def __init__(self, symbol: str, debug: bool = True):
         self.symbol = symbol.upper()
         self.debug = debug
         self.session = requests.Session()
         self.user_agents = [
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/120.0',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/120.0.0.0',
             'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15',
             'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15'
+            'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/120.0',
+            'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+            'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+            'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.144 Mobile Safari/537.36',
+            'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+            'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:109.0) Gecko/20100101 Firefox/120.0'
         ]
         # Track selenium usage for this scraper instance
         self._selenium_used = False
@@ -390,14 +399,34 @@ class BaseScraper(ABC):
         with _SELENIUM_LOCK:  # Prevent concurrent cleanup
             if _GLOBAL_DRIVER is not None:
                 try:
+                    # First try graceful quit
                     _GLOBAL_DRIVER.quit()
                     print("  Selenium driver cleaned up successfully")
                 except Exception as e:
                     print(f"  Warning: Driver cleanup error ({e}), force-killing...")
                     try:
-                        _GLOBAL_DRIVER.service.process.kill()
-                    except:
-                        pass
+                        # Try to kill the process
+                        if hasattr(_GLOBAL_DRIVER, 'service') and hasattr(_GLOBAL_DRIVER.service, 'process'):
+                            _GLOBAL_DRIVER.service.process.kill()
+                    except Exception as kill_error:
+                        print(f"  Warning: Force kill failed: {kill_error}")
+                        # On Windows, try alternative cleanup
+                        try:
+                            import os
+                            import signal
+                            import psutil
+                            # Find and kill any remaining chromedriver processes
+                            for process in psutil.process_iter(['pid', 'name']):
+                                if process.info['name'] in ['chromedriver.exe', 'chrome.exe']:
+                                    try:
+                                        process.kill()
+                                        print(f"  Killed process: {process.info['name']} (PID: {process.info['pid']})")
+                                    except:
+                                        pass
+                        except ImportError:
+                            print("  psutil not available for aggressive cleanup")
+                        except Exception as cleanup_error:
+                            print(f"  Aggressive cleanup failed: {cleanup_error}")
                 finally:
                     _GLOBAL_DRIVER = None
     
@@ -451,7 +480,7 @@ class BaseScraper(ABC):
                 
                 # Dynamic timeout based on URL complexity
                 if 'google.com' in url:
-                    page_timeout = 15  # Google News needs more time for redirects
+                    page_timeout = 10  # Google News needs more time for redirects
                 else:
                     page_timeout = 10   # Standard timeout for other sites
                 
@@ -467,7 +496,30 @@ class BaseScraper(ABC):
                     except:
                         pass
                     
-                    driver.get(url)
+                    # Use timeout wrapper for navigation to prevent hanging
+                    import threading
+                    navigation_completed = threading.Event()
+                    navigation_exception = [None]
+                    
+                    def navigate_with_timeout():
+                        try:
+                            driver.get(url)
+                            navigation_completed.set()
+                        except Exception as nav_error:
+                            navigation_exception[0] = nav_error
+                            navigation_completed.set()
+                    
+                    nav_thread = threading.Thread(target=navigate_with_timeout)
+                    nav_thread.daemon = True
+                    nav_thread.start()
+                    
+                    # Wait for navigation to complete or timeout
+                    if not navigation_completed.wait(timeout=7):  # 20 second timeout
+                        print(f"      Selenium: Navigation timed out after 20s, abandoning URL")
+                        return None, None
+                    
+                    if navigation_exception[0]:
+                        raise navigation_exception[0]
                     
                     # For Google News URLs, wait for potential redirects
                     if 'news.google.com' in url and '/articles/' in url:
@@ -709,7 +761,7 @@ class BaseScraper(ABC):
             # Configure newspaper3k
             config = Config()
             config.browser_user_agent = self.get_random_user_agent()
-            config.request_timeout = 20
+            config.request_timeout = 7
             config.fetch_images = False
             config.memoize_articles = False
             

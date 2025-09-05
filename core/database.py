@@ -196,9 +196,9 @@ class SentimentDatabase:
         
         print("[SUCCESS] Database schema initialized successfully")
     
-    def save_articles_to_symbol_table(self, symbol: str, articles_data: List[Dict]) -> int:
+    def save_articles_to_partitioned_table(self, symbol: str, articles_data: List[Dict]) -> int:
         """
-        Save articles to per-symbol table with duplicate URL checking
+        Save articles to partitioned table with duplicate URL checking
         
         Args:
             symbol: Stock symbol
@@ -215,14 +215,11 @@ class SentimentDatabase:
         
         with self.get_connection() as conn:
             with conn.cursor() as cursor:
-                # Ensure symbol table exists
-                cursor.execute("SELECT create_symbol_table(%s)", (symbol,))
-                
                 for article in articles_data:
                     try:
                         # Use the database function to insert with duplicate checking
                         cursor.execute("""
-                            SELECT insert_article_to_symbol_table(
+                            SELECT insert_article_partitioned(
                                 %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
                             )
                         """, (
@@ -245,8 +242,8 @@ class SentimentDatabase:
                         result = cursor.fetchone()
                         if result:
                             # Handle RealDictRow result from PostgreSQL function
-                            if hasattr(result, 'keys') and 'insert_article_to_symbol_table' in result:
-                                result_id = result['insert_article_to_symbol_table']
+                            if hasattr(result, 'keys') and 'insert_article_partitioned' in result:
+                                result_id = result['insert_article_partitioned']
                             elif hasattr(result, 'values') and result.values():
                                 result_id = list(result.values())[0]
                             else:
@@ -259,17 +256,25 @@ class SentimentDatabase:
                             duplicates_count += 1
                             
                     except Exception as e:
-                        print(f"[WARNING] Failed to save article to {symbol} table: {e}")
+                        print(f"[WARNING] Failed to save article to partitioned table for {symbol}: {e}")
                         continue
             
             conn.commit()
         
-        print(f"[DATABASE] Saved {new_articles_count} new articles to {symbol} table (skipped {duplicates_count} duplicates)")
+        print(f"[DATABASE] Saved {new_articles_count} new articles to partitioned table for {symbol} (skipped {duplicates_count} duplicates)")
         return new_articles_count
+    
+    def save_articles_to_symbol_table(self, symbol: str, articles_data: List[Dict]) -> int:
+        """
+        DEPRECATED: Use save_articles_to_partitioned_table instead
+        Kept for backward compatibility - redirects to partitioned version
+        """
+        print(f"[DEPRECATED] save_articles_to_symbol_table called - redirecting to partitioned table")
+        return self.save_articles_to_partitioned_table(symbol, articles_data)
     
     def get_recent_articles_from_db(self, symbol: str, max_articles: int, max_hours: int = 24) -> List[Dict]:
         """
-        Get recent articles from per-symbol table
+        Get recent articles from partitioned table
         
         Args:
             symbol: Stock symbol
@@ -285,7 +290,7 @@ class SentimentDatabase:
             with self.get_connection() as conn:
                 with conn.cursor() as cursor:
                     cursor.execute("""
-                        SELECT * FROM get_recent_articles(%s, %s, %s)
+                        SELECT * FROM get_recent_articles_partitioned(%s, %s, %s)
                     """, (symbol, max_articles, max_hours))
                     
                     rows = cursor.fetchall()
@@ -307,13 +312,14 @@ class SentimentDatabase:
                         })
                         
         except Exception as e:
-            print(f"[WARNING] Failed to get recent articles from {symbol} table: {e}")
+            print(f"[WARNING] Failed to get recent articles from partitioned table for {symbol}: {e}")
+            # Legacy fallback no longer available after table migration
         
         return articles
     
     def check_url_exists(self, symbol: str, url: str) -> bool:
         """
-        Check if URL already exists in per-symbol table
+        Check if URL already exists in partitioned table
         
         Args:
             symbol: Stock symbol
@@ -326,14 +332,19 @@ class SentimentDatabase:
             with self.get_connection() as conn:
                 with conn.cursor() as cursor:
                     cursor.execute("""
-                        SELECT url_exists_in_symbol_table(%s, %s)
+                        SELECT url_exists_partitioned(%s, %s)
                     """, (symbol, url))
                     
                     result = cursor.fetchone()
-                    return bool(result[0]) if result else False
+                    if hasattr(result, 'keys') and 'url_exists_partitioned' in result:
+                        return bool(result['url_exists_partitioned'])
+                    elif hasattr(result, 'values') and result.values():
+                        return bool(list(result.values())[0])
+                    else:
+                        return bool(result[0]) if result else False
                     
         except Exception as e:
-            print(f"[WARNING] Failed to check URL existence for {symbol}: {e}")
+            print(f"[WARNING] Failed to check URL existence in partitioned table for {symbol}: {e}")
             return False
     
     def get_cached_analysis(self, symbol: str, max_age_hours: float = 1.0) -> Optional[Dict]:
@@ -347,15 +358,16 @@ class SentimentDatabase:
         Returns:
             Cached analysis dict or None if not found or too old
         """
-        # Try to get cached analysis with articles from per-symbol tables
+        # Try to get cached analysis with articles from partitioned table
         try:
             with self.get_connection() as conn:
                 with conn.cursor() as cursor:
                     cursor.execute("""
-                        SELECT * FROM get_cached_analysis_with_articles(%s, %s)
+                        SELECT * FROM get_cached_analysis_with_articles_partitioned(%s, %s)
                     """, (symbol.upper(), max_age_hours))
-                
+                    
                     row = cursor.fetchone()
+                    print(row)
                     if row:
                         # Parse articles data from JSONB
                         articles_data = row['articles_data'] if row['articles_data'] else []
@@ -368,7 +380,8 @@ class SentimentDatabase:
                                 "sentiment": float(article['compound']),
                                 "source": article['source'],
                                 "url": article['url'],
-                                "timestamp": article['article_timestamp']
+                                "timestamp": article['article_timestamp'],
+                                "ID": article['analysis_id']
                             })
                         
                         # Format raw articles
@@ -379,7 +392,8 @@ class SentimentDatabase:
                                 "sentiment": float(article['compound']),
                                 "source": article['source'],
                                 "url": article['url'],
-                                "timestamp": article['article_timestamp']
+                                "timestamp": article['article_timestamp'],
+                                "ID": article['analysis_id']
                             })
                         
                         # Build result dictionary
@@ -410,10 +424,10 @@ class SentimentDatabase:
                         
                         return result
         except Exception as e:
-            print(f"[WARNING] Failed to get cached analysis with per-symbol tables: {e}")
-            print(f"[INFO] Falling back to legacy cache method")
+            print(f"[WARNING] Failed to get cached analysis with partitioned table: {e}")
+            # Legacy fallback no longer available after table migration
             
-        # Fallback to legacy method if new method fails
+        # No fallback available after table migration
         return None
     
     def save_analysis(self, analysis_data: Dict, articles_data: List[Dict]) -> int:
@@ -462,40 +476,9 @@ class SentimentDatabase:
                 
                 analysis_id = cursor.fetchone()['id']
                 
-                # Insert article records
-                if articles_data:
-                    insert_articles_sql = """
-                        INSERT INTO sentiment_articles (
-                            analysis_id, symbol, title, full_text, raw_extracted_text,
-                            extraction_successful, source, url, article_timestamp,
-                            polarity, compound, sentiment_label, text_length,
-                            extracted_length, enhancement_ratio
-                        ) VALUES %s
-                    """
-                    
-                    articles_values = []
-                    for article in articles_data:
-                        articles_values.append((
-                            analysis_id,
-                            analysis_data['symbol'],
-                            article.get('title', article.get('text', '')[:100]),
-                            article.get('text', ''),
-                            article.get('raw_extracted_text', ''),
-                            bool(article.get('extraction_successful', False)) if article.get('extraction_successful', False) != "" else False,
-                            article.get('source', ''),
-                            article.get('url', ''),
-                            datetime.fromisoformat(article.get('timestamp', datetime.utcnow().isoformat())),
-                            article.get('polarity', 0.0),
-                            article.get('sentiment', 0.0),  # Map 'sentiment' to compound
-                            article.get('sentiment_label', 'Neutral'),
-                            article.get('text_length', len(article.get('text', ''))),
-                            article.get('extracted_length', 0),
-                            article.get('enhancement_ratio', 0.0)
-                        ))
-                    
-                    psycopg2.extras.execute_values(
-                        cursor, insert_articles_sql, articles_values, template=None
-                    )
+                # Articles are now stored in the partitioned table separately
+                # The save_articles_to_partitioned_table method handles article storage
+                # This method only saves the analysis summary to sentiment_analyses table
                 
             conn.commit()
             
@@ -540,3 +523,77 @@ class SentimentDatabase:
         
         print(f"[SUCCESS] Cleaned up {deleted_count} analyses older than {days_old} days")
         return deleted_count
+    
+    
+    
+    def get_migration_status(self) -> Dict:
+        """
+        Get status of migration from per-symbol tables to partitioned table
+        """
+        status = {
+            "partitioned_table_exists": False,
+            "legacy_tables": [],
+            "partitioned_article_count": 0,
+            "legacy_article_count": 0,
+            "symbols_migrated": []
+        }
+        
+        try:
+            with self.get_connection() as conn:
+                with conn.cursor() as cursor:
+                    # Check if partitioned table exists
+                    cursor.execute("""
+                        SELECT EXISTS (
+                            SELECT 1 FROM information_schema.tables 
+                            WHERE table_schema = 'public'
+                            AND table_name = 'articles_partitioned'
+                        )
+                    """)
+                    result = cursor.fetchone()
+                    if hasattr(result, 'keys') and 'exists' in result:
+                        status["partitioned_table_exists"] = result['exists']
+                    else:
+                        status["partitioned_table_exists"] = result[0] if result else False
+                    
+                    if status["partitioned_table_exists"]:
+                        # Get article count in partitioned table
+                        cursor.execute("SELECT COUNT(*) FROM articles_partitioned")
+                        count_result = cursor.fetchone()
+                        status["partitioned_article_count"] = count_result['count'] if hasattr(count_result, 'keys') else count_result[0]
+                        
+                        # Get symbols in partitioned table
+                        cursor.execute("SELECT DISTINCT symbol FROM articles_partitioned ORDER BY symbol")
+                        symbol_rows = cursor.fetchall()
+                        status["symbols_migrated"] = [row['symbol'] if hasattr(row, 'keys') else row[0] for row in symbol_rows]
+                    
+                    # Get legacy tables
+                    cursor.execute("""
+                        SELECT table_name, 
+                               replace(table_name, 'articles_', '') as symbol
+                        FROM information_schema.tables 
+                        WHERE table_schema = 'public' 
+                        AND table_name LIKE 'articles_%'
+                        AND table_name != 'articles_partitioned'
+                        ORDER BY table_name
+                    """)
+                    
+                    legacy_tables = cursor.fetchall()
+                    for table_row in legacy_tables:
+                        table_name = table_row['table_name'] if hasattr(table_row, 'keys') else table_row[0]
+                        symbol = table_row[1] if hasattr(table_row, '__len__') else table_name.replace('articles_', '')
+                        
+                        # Get count for each legacy table
+                        cursor.execute(f"SELECT COUNT(*) FROM {table_name}")
+                        count_result = cursor.fetchone()
+                        count = count_result['count'] if hasattr(count_result, 'keys') else count_result[0]
+                        status["legacy_tables"].append({
+                            "table_name": table_name,
+                            "symbol": symbol,
+                            "article_count": count
+                        })
+                        status["legacy_article_count"] += count
+                        
+        except Exception as e:
+            print(f"[WARNING] Failed to get migration status: {e}")
+        
+        return status
