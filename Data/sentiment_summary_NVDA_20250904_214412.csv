@@ -1,0 +1,2 @@
+Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Sentiment,Weighted_Avg_From_Sources,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,Google_News_Count,Google_News_Avg_Sentiment,MarketWatch_Count,MarketWatch_Avg_Sentiment,Yahoo_Finance_Count,Yahoo_Finance_Avg_Sentiment,Bloomberg_Count,Bloomberg_Avg_Sentiment
+NVDA,NVIDIA Corporation,2025-09-04T21:44:12.416702,23,Very Positive,0.122,0.141,6,2,15,26.1,8.7,65.2,13,0.0,5,0.0,1,0.823,4,0.607

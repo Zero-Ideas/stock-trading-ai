@@ -38,3 +38,4 @@ A working system where:
 - The frontend is interactive (JavaScript) and communicates seamlessly with the backend (Flask or a better alternative).  
 - Theme changes update chart colors properly.  
 - Visual rendering is validated through Playwright MCP tests.  
+

@@ -433,7 +433,7 @@ class StockSentimentAnalyzer:
         # Initialize all improved scrapers (including previously disabled ones)
         all_scrapers = {
             # High-performance scrapers (now with newspaper3k enhancement)
-            'newsapi': NewsAPIScraper(self.symbol, debug),  # Re-enabled - now works great with newspaper3k
+            #'newsapi': NewsAPIScraper(self.symbol, debug),  # Re-enabled - now works great with newspaper3k
             'google_news': GoogleNewsScraper(self.symbol, debug),
             'yahoo_finance': YahooFinanceScraper(self.symbol, debug),
         

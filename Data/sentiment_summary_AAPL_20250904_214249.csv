@@ -1,0 +1,2 @@
+Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Sentiment,Weighted_Avg_From_Sources,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,TestNews_Count,TestNews_Avg_Sentiment,Google_News_Count,Google_News_Avg_Sentiment
+AAPL,Apple Inc.,2025-09-04T21:42:49.866593,5,Positive,0.32,0.054,2,1,2,40.0,20.0,40.0,1,0.5,4,-0.057

@@ -1,0 +1,150 @@
+{
+  "symbol": "AAPL",
+  "company_name": "Apple Inc.",
+  "analysis_timestamp": "2025-09-04T21:42:49.866593",
+  "total_articles": 5,
+  "overall_sentiment": "Positive",
+  "sentiment_scores": {
+    "average_sentiment": 0.32,
+    "weighted_avg_from_sources": 0.054
+  },
+  "sentiment_distribution": {
+    "positive": 2,
+    "negative": 1,
+    "neutral": 2,
+    "positive_percentage": 40.0,
+    "negative_percentage": 20.0,
+    "neutral_percentage": 40.0
+  },
+  "source_breakdown": {
+    "TestNews": {
+      "count": 1,
+      "avg_sentiment": 0.5
+    },
+    "Google News": {
+      "count": 4,
+      "avg_sentiment": -0.057499999999999996
+    }
+  },
+  "recent_articles": [
+    {
+      "text": "Apple Inc. saw significant gains today as iPhone sales exceeded expectations...",
+      "sentiment": 0.5,
+      "source": "TestNews",
+      "url": "https://test.com/apple-surges-1",
+      "timestamp": "2025-09-04T20:23:40.016543"
+    },
+    {
+      "text": "SA analyst upgrades/downgrades: MSFT, AAPL, MRVL, and NIO - Seeking Alpha. SA analyst upgrades/downgrades: MSFT, AAPL, MRVL, and NIO  Seeking Alpha",
+      "sentiment": -0.63,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVnpFenlIdDRkQkpad2l0VWVILWZhLUh3V3NIeDhQS3FjdVQ4X0paVTZNclZoTnFUWmxHbHo2Z09XUjVlY3lBcEdWNWVUazE2MnZaWUV6dW5FS0VzQnhXSFEtSEpQcTVVNElpMmlScnRtbEkwbzJvVExmSGw4RjRzQ0o4eWlDTVU1NXcxSk85aHc4NnpO?oc=5",
+      "timestamp": "2025-09-04T11:26:25"
+    },
+    {
+      "text": "ETF Traders Are Quietly Positioning For Market Turbulence: Direxion - Benzinga. ETF Traders Are Quietly Positioning For Market Turbulence: Direxion  Benzinga",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOU85UVNMMmtRNG5iTTZfSTlMWEFicGJNVEJlNkNmdC1QWmhhZFlXRXBUWWF5NHFJeWV1S3p2ckVKWVgzbFFkOTl0a2FnTXNpOUs1eFQyN3d0eThFZUNPSTN5dmJleGlQS1Nka1F3YzNPSk04QVRYTGRHR3ZjY2k2YVdWTDVwbm1vdHMtX09BMU10cmdoZVhXMU5iOWZBaU41YnE4andoTHRzdjFJYVZkUE1VOEEyWnZyQ09OMjE2WkVEWXVOdlE0ZndMSERVQQ?oc=5",
+      "timestamp": "2025-09-04T11:08:08"
+    },
+    {
+      "text": "Apple Stock (AAPL) Is Upgraded as ‘Worst-Case Scenarios Are Off the Table’ - TipRanks. Apple Stock (AAPL) Is Upgraded as ‘Worst-Case Scenarios Are Off the Table’  TipRanks",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWDBCMGJjeWFETUVVR0RZRTJ3c21jaU0tb282RXNDN0ZRVlJzczI2M1JVTmdldzlOWTFLWndZaDlaakg5d2hjY2hnNW82Y21KU2dCbTRQaGxoRWFVcUxSYkJIN2ZneTliY3g0SXNWaUQ1MmFtOTFfVDNBU1lqOHNTYUc3OHhfYThEZm1YRFBKczV6T2kxemtrcGhCeVlfODRPVHc?oc=5",
+      "timestamp": "2025-09-04T07:48:55"
+    },
+    {
+      "text": "AAPL: Apple Stock Surges Nearly 4% on News of Launching AI Search Tool to Rival ChatGPT - TradingView. AAPL: Apple Stock Surges Nearly 4% on News of Launching AI Search Tool to Rival ChatGPT  TradingV...",
+      "sentiment": 0.4,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOaE55UkxXLUdWVEpTMHYyTG5WWktzQnhLcEZ4cWRvV3Qya3ZkYzA1cG9wUUdmVWtLZkNIMVJudnpPSDMwNTUteEhuQ0kzWTJ0ZDdFODJMdXlCSmlTSlhjcHhiY25iZ0hFOXdVdUF3VXhEN010UUZ4bzhCVHlQZmlOa0RyTG9zTzhSbDJYVTVvalhpT0pyNzd1N3ZsU0o5czVLUGRxNFBUejNUQ3lEdTMtOTFNZmVpZ3VHZjdQSlphcUwxWWk1cUo5MnJKWG5sNDhQMWdsN0R2eGtMSmdfbU0xdg?oc=5",
+      "timestamp": "2025-09-04T05:17:24"
+    }
+  ],
+  "raw_articles": [
+    {
+      "title": "Apple Inc",
+      "full_text": "Apple Inc. saw significant gains today as iPhone sales exceeded expectations...",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "TestNews",
+      "url": "https://test.com/apple-surges-1",
+      "timestamp": "2025-09-04T20:23:40.016543",
+      "polarity": 0.3,
+      "compound": 0.5,
+      "sentiment_label": "Positive",
+      "text_length": 79,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "SA analyst upgrades/downgrades: MSFT, AAPL, MRVL, and NIO - Seeking Alpha",
+      "full_text": "SA analyst upgrades/downgrades: MSFT, AAPL, MRVL, and NIO - Seeking Alpha. SA analyst upgrades/downgrades: MSFT, AAPL, MRVL, and NIO  Seeking Alpha",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVnpFenlIdDRkQkpad2l0VWVILWZhLUh3V3NIeDhQS3FjdVQ4X0paVTZNclZoTnFUWmxHbHo2Z09XUjVlY3lBcEdWNWVUazE2MnZaWUV6dW5FS0VzQnhXSFEtSEpQcTVVNElpMmlScnRtbEkwbzJvVExmSGw4RjRzQ0o4eWlDTVU1NXcxSk85aHc4NnpO?oc=5",
+      "timestamp": "2025-09-04T11:26:25",
+      "polarity": -0.7,
+      "compound": -0.63,
+      "sentiment_label": "Negative",
+      "text_length": 147,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "ETF Traders Are Quietly Positioning For Market Turbulence: Direxion - Benzinga",
+      "full_text": "ETF Traders Are Quietly Positioning For Market Turbulence: Direxion - Benzinga. ETF Traders Are Quietly Positioning For Market Turbulence: Direxion  Benzinga",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOU85UVNMMmtRNG5iTTZfSTlMWEFicGJNVEJlNkNmdC1QWmhhZFlXRXBUWWF5NHFJeWV1S3p2ckVKWVgzbFFkOTl0a2FnTXNpOUs1eFQyN3d0eThFZUNPSTN5dmJleGlQS1Nka1F3YzNPSk04QVRYTGRHR3ZjY2k2YVdWTDVwbm1vdHMtX09BMU10cmdoZVhXMU5iOWZBaU41YnE4andoTHRzdjFJYVZkUE1VOEEyWnZyQ09OMjE2WkVEWXVOdlE0ZndMSERVQQ?oc=5",
+      "timestamp": "2025-09-04T11:08:08",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 157,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Apple Stock (AAPL) Is Upgraded as ‘Worst-Case Scenarios Are Off the Table’ - TipRanks",
+      "full_text": "Apple Stock (AAPL) Is Upgraded as ‘Worst-Case Scenarios Are Off the Table’ - TipRanks. Apple Stock (AAPL) Is Upgraded as ‘Worst-Case Scenarios Are Off the Table’  TipRanks",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWDBCMGJjeWFETUVVR0RZRTJ3c21jaU0tb282RXNDN0ZRVlJzczI2M1JVTmdldzlOWTFLWndZaDlaakg5d2hjY2hnNW82Y21KU2dCbTRQaGxoRWFVcUxSYkJIN2ZneTliY3g0SXNWaUQ1MmFtOTFfVDNBU1lqOHNTYUc3OHhfYThEZm1YRFBKczV6T2kxemtrcGhCeVlfODRPVHc?oc=5",
+      "timestamp": "2025-09-04T07:48:55",
+      "polarity": 1.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 171,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "AAPL: Apple Stock Surges Nearly 4% on News of Launching AI Search Tool to Rival ChatGPT - TradingView",
+      "full_text": "AAPL: Apple Stock Surges Nearly 4% on News of Launching AI Search Tool to Rival ChatGPT - TradingView. AAPL: Apple Stock Surges Nearly 4% on News of Launching AI Search Tool to Rival ChatGPT  TradingView",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOaE55UkxXLUdWVEpTMHYyTG5WWktzQnhLcEZ4cWRvV3Qya3ZkYzA1cG9wUUdmVWtLZkNIMVJudnpPSDMwNTUteEhuQ0kzWTJ0ZDdFODJMdXlCSmlTSlhjcHhiY25iZ0hFOXdVdUF3VXhEN010UUZ4bzhCVHlQZmlOa0RyTG9zTzhSbDJYVTVvalhpT0pyNzd1N3ZsU0o5czVLUGRxNFBUejNUQ3lEdTMtOTFNZmVpZ3VHZjdQSlphcUwxWWk1cUo5MnJKWG5sNDhQMWdsN0R2eGtMSmdfbU0xdg?oc=5",
+      "timestamp": "2025-09-04T05:17:24",
+      "polarity": 1.0,
+      "compound": 0.4,
+      "sentiment_label": "Positive",
+      "text_length": 203,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    }
+  ],
+  "newspaper3k_stats": {
+    "total_articles": 5,
+    "enhanced_articles": 0,
+    "total_extracted_chars": 0,
+    "avg_enhancement_ratio": 0.0,
+    "sources_with_enhancement": []
+  }
+}
