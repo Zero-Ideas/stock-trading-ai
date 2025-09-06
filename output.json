@@ -1,21 +1,23 @@
 {
-    "industry": "Media & Entertainment",
-    "overall_sentiment": 0.68,
+    "industry": "Finance",
+    "overall_sentiment": 0.72,
     "sentiment_label": "Positive",
-    "confidence_score": 0.72,
+    "confidence_score": 0.68,
     "key_trends": [
-        "Advertising-driven revenue growth across digital platforms (CTV, AVOD, social video) empowered by AI-powered targeting and hyper-personalisation",
-        "Generative AI accelerating content creation, localization, and efficiency across film, TV, games, and music",
-        "Streaming consolidation and password-sharing crackdowns lifting monetization, with live sports and events as growth catalysts",
-        "Social platforms expanding as entertainment destinations and ad giants, challenging traditional studios",
-        "Video gaming remains a major growth engine, outpacing traditional film/music revenues",
-        "Non-digital entertainment (live events, cinema) continues to contribute a sizable share of consumer spend despite streaming growth"
+        "AI and automation driving efficiency, risk management, and customer experience in financial services",
+        "Embedded finance expanding distribution through partnerships and non-traditional platforms (BaaS, open APIs)",
+        "Tokenization and digital currencies enabling faster, cheaper cross-border payments and settlement",
+        "Central Bank Digital Currencies (CBDCs) and digital payments shaping the payments landscape",
+        "Continued M&A activity and deal flow in financial services, with focus on scale and capabilities",
+        "Adoption of AI across compliance, fraud detection, underwriting, and operational efficiency"
     ],
-    "reasoning": "Industry forecasts from PwC (Global Entertainment & Media Outlook 2025-29, released July 24, 2025) indicate advertising as the fastest-growing revenue stream and AI-enabled innovations driving hyper-personalization and new monetization models. Deloitte's 2025 Digital Media Trends (March 25, 2025) highlight social video platforms as dominant ad spend drivers, while Nielsen (May 2025) shows AVOD/CTV adoption rising and streaming time increasing. Despite consumer budget constraints, these dynamics\u2014AI-assisted production, ad-supported streaming, and social platforms expanding as entertainment hubs\u2014support a positive overall trajectory for Media & Entertainment in 2025\u20132029.",
+    "reasoning": "As of September 6, 2025, multiple leading firms and financial institutions report that the finance industry is undergoing a technology-driven transformation. AI and automation are expected to unlock significant productivity and cost savings, while embedded finance and BaaS are expanding revenue and distribution channels beyond traditional banks. Tokenization and digital currencies are improving cross-border settlement and payment efficiency, and CBDCs are influencing ongoing payments modernization. Although profitability remains heterogeneous\u2014often pressured in lower-rate environments\u2014the net effect of these trends is a positive outlook due to increased efficiency, new revenue streams, and more agile operating models. These themes are reflected in Deloitte's 2025 financial services predictions, EY and PwC insights on embedded finance and deal activity, and Morgan Stanley's coverage of AI-driven banking trends, among others.",
     "sources": [
-        "https://www.pwc.com/gx/en/news-room/press-releases/2025/pwc-global-entertainment-media-outlook.html",
-        "https://www2.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/2025-media-entertainment-outlook.html",
-        "https://www.nielsen.com/insights/2025/connected-tv-transforming-advertising-trends/",
-        "https://www2.deloitte.com/us/en/insights/industry/technology/digital-media-trends-consumption-habits-survey/2025.html"
+        "https://www.deloitte.com/us/en/about/press-room/deloitte-releases-2025-financial-services-industry-predictions-report.html",
+        "https://www.pwc.com/gx/en/services/deals/trends/financial-services.html",
+        "https://www.ey.com/en_us/insights/banking-capital-markets/how-banks-are-staking-a-claim-in-the-embedded-finance-ecosystem",
+        "https://www.ey.com/en_us/insights/financial-services/embedded-finance-and-future-financial-services",
+        "https://www.morganstanley.com/insights/articles/banking-industry-trends-second-half-2025",
+        "https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review-archive/"
     ]
 }

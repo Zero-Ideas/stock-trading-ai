@@ -18,7 +18,9 @@
       "mcp__playwright__browser_navigate",
       "mcp__playwright__browser_snapshot",
       "mcp__playwright__browser_take_screenshot",
-      "mcp__playwright__browser_click"
+      "mcp__playwright__browser_click",
+      "Bash(psql:*)",
+      "Bash(copy output.json output_backup.json)"
     ],
     "deny": [],
     "ask": []
