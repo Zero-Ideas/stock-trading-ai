@@ -27,7 +27,7 @@ os.environ["GEMINI_API_KEY"] = "AIzaSyA91d_s6glh9j8de5CDoxB12lFbTziLn50"
 warnings.filterwarnings('ignore')
 
 # Industry list for classification
-INDUSTRY_LIST = [
+INSTRY_LIST = [
     "Technology",
     "Semiconductor", 
     "Healthcare",
@@ -182,26 +182,123 @@ class IndustryAnalyzer:
             print(f"[WARNING] Database connection failed: {e}")
             self.db_connection = None
     
+    def _get_cached_company_info(self, symbol: str, max_days: int = 30) -> Optional[Dict]:
+        """Get cached company info from database if it exists and is recent enough"""
+        if not self.db_connection:
+            return None
+        
+        try:
+            cur = self.db_connection.cursor()
+            
+            cur.execute("""
+                SELECT * FROM get_company_info(%s, %s)
+            """, (symbol.upper(), max_days))
+            
+            result = cur.fetchone()
+            
+            if result:
+                columns = ['symbol', 'company_name', 'industry', 'needs_update', 'days_old', 'last_verified']
+                company_info = dict(zip(columns, result))
+                return company_info
+            
+            return None
+            
+        except Exception as e:
+            print(f"[ERROR] Failed to get cached company info: {e}")
+            return None
+        finally:
+            if cur:
+                cur.close()
+    
+    def _save_company_info_to_cache(self, symbol: str, company_name: str, industry: str) -> bool:
+        """Save or update company info in database cache"""
+        if not self.db_connection:
+            return False
+        
+        try:
+            cur = self.db_connection.cursor()
+            
+            cur.execute("""
+                SELECT upsert_company_info(%s, %s, %s)
+            """, (symbol.upper(), company_name, industry))
+            
+            company_id = cur.fetchone()[0]
+            self.db_connection.commit()
+            
+            print(f"[CACHE] Saved company info for {symbol} (ID: {company_id})")
+            return True
+            
+        except Exception as e:
+            print(f"[ERROR] Failed to save company info to cache: {e}")
+            if self.db_connection:
+                self.db_connection.rollback()
+            return False
+        finally:
+            if cur:
+                cur.close()
+    
     def _identify_company_info(self):
-        """Identify company name and industry from stock symbol"""
+        """Identify company name and industry from stock symbol with intelligent caching"""
         if not self.company_symbol:
             return
-                                 
-       # return {'industry': 'Technology', 'company_name': 'Apple Inc.'}
-        # First try static lookup
-        self.company_name = STOCK_SYMBOL_TO_COMPANY.get(self.company_symbol)
         
-        # If not found, use AI to identify
-        if not self.company_name:
-            print(f"[INFO] Identifying company info for {self.company_symbol}...")
+        print(f"[INFO] Identifying company info for {self.company_symbol}...")
+        
+        # Step 1: Check database cache first
+        cached_info = self._get_cached_company_info(self.company_symbol)
+        
+        if cached_info and not cached_info['needs_update']:
+            # Use cached data if it's fresh (less than 30 days old)
+            self.company_name = cached_info['company_name']
+            self.industry = cached_info['industry']
+            print(f"[CACHE HIT] Using cached company info ({cached_info['days_old']} days old)")
+            print(f"[TOKEN SAVINGS] Skipped Gemini API call for {self.company_symbol}")
+            print(f"[SUCCESS] Company: {self.company_name}")
+            print(f"[SUCCESS] Industry: {self.industry}")
+            return
+        
+        # Step 2: Try static lookup for known companies
+        static_company_name = STOCK_SYMBOL_TO_COMPANY.get(self.company_symbol)
+        
+        if static_company_name and cached_info and cached_info['needs_update']:
+            # We have static data and cached data is old - update with fresh AI call
+            print(f"[CACHE EXPIRED] Cached data is {cached_info['days_old']} days old, updating...")
+            company_info = self._generate_company_info(self.company_symbol)
+            self.company_name = company_info.get('company_name', static_company_name)
+            self.industry = company_info.get('industry')
+            
+            # Update cache with fresh data
+            self._save_company_info_to_cache(self.company_symbol, self.company_name, self.industry)
+            
+        elif static_company_name and not cached_info:
+            # We have static data but no cache - get industry from AI and save to cache
+            print(f"[STATIC LOOKUP] Found {static_company_name}, getting industry from AI...")
+            company_info = self._generate_company_info(self.company_symbol)
+            self.company_name = static_company_name
+            self.industry = company_info.get('industry')
+            
+            # Save to cache for future use
+            self._save_company_info_to_cache(self.company_symbol, self.company_name, self.industry)
+            
+        elif not static_company_name and cached_info and cached_info['needs_update']:
+            # No static data, but cached data is old - update with fresh AI call
+            print(f"[CACHE EXPIRED] Cached data is {cached_info['days_old']} days old, updating...")
             company_info = self._generate_company_info(self.company_symbol)
             self.company_name = company_info.get('company_name', f'{self.company_symbol} Corporation')
             self.industry = company_info.get('industry')
+            
+            # Update cache with fresh data
+            self._save_company_info_to_cache(self.company_symbol, self.company_name, self.industry)
+            
         else:
-            # Get industry for known company
-            print(f"[INFO] Identifying industry for {self.company_name}...")
+            # No static data and no cache - use AI and save to cache
+            print(f"[NEW SYMBOL] No cached data found, using AI to identify...")
             company_info = self._generate_company_info(self.company_symbol)
+            self.company_name = company_info.get('company_name', f'{self.company_symbol} Corporation')
             self.industry = company_info.get('industry')
+            
+            # Save to cache for future use
+            self._save_company_info_to_cache(self.company_symbol, self.company_name, self.industry)
         
         print(f"[SUCCESS] Company: {self.company_name}")
         print(f"[SUCCESS] Industry: {self.industry}")
@@ -226,7 +323,7 @@ class IndustryAnalyzer:
                 thinking_config=types.ThinkingConfig(thinking_budget=0),
                 response_mime_type="application/json",
             )
-            
+
             response_parts = []
             for chunk in self.gemini_client.models.generate_content_stream(
                 model="gemini-2.5-flash-lite",
@@ -539,6 +636,62 @@ class IndustryAnalyzer:
         """Get dictionary of supported company symbols and names"""
         return STOCK_SYMBOL_TO_COMPANY.copy()
     
+    def get_company_cache_status(self) -> List[Dict]:
+        """Get status of all cached companies"""
+        if not self.db_connection:
+            print("[WARNING] No database connection available")
+            return []
+        
+        try:
+            cur = self.db_connection.cursor()
+            
+            cur.execute("SELECT * FROM company_cache_status")
+            
+            results = cur.fetchall()
+            columns = [desc[0] for desc in cur.description]
+            
+            companies = []
+            for row in results:
+                company = dict(zip(columns, row))
+                companies.append(company)
+            
+            return companies
+            
+        except Exception as e:
+            print(f"[ERROR] Failed to get company cache status: {e}")
+            return []
+        finally:
+            if cur:
+                cur.close()
+    
+    def get_companies_needing_update(self, max_days: int = 30) -> List[Dict]:
+        """Get companies that need their info updated"""
+        if not self.db_connection:
+            print("[WARNING] No database connection available")
+            return []
+        
+        try:
+            cur = self.db_connection.cursor()
+            
+            cur.execute("SELECT * FROM get_companies_needing_update(%s)", (max_days,))
+            
+            results = cur.fetchall()
+            columns = [desc[0] for desc in cur.description]
+            
+            companies = []
+            for row in results:
+                company = dict(zip(columns, row))
+                companies.append(company)
+            
+            return companies
+            
+        except Exception as e:
+            print(f"[ERROR] Failed to get companies needing update: {e}")
+            return []
+        finally:
+            if cur:
+                cur.close()
+    
     def close(self):
         """Close database connection"""
         if self.db_connection:
@@ -567,6 +720,7 @@ def main():
     parser.add_argument('--overview', action='store_true', help='Show overview of all industries')
     parser.add_argument('--list-industries', action='store_true', help='List supported industries')
     parser.add_argument('--list-companies', action='store_true', help='List supported companies')
+    parser.add_argument('--company-cache', action='store_true', help='Show company cache status')
     parser.add_argument('--force-refresh', action='store_true', help='Force fresh analysis, bypass cache')
     parser.add_argument('--cache-hours', type=float, default=24.0, help='Max cache age in hours (default: 24)')
     parser.add_argument('--json', action='store_true', help='Output as JSON')
@@ -592,6 +746,43 @@ def main():
             print("Supported Companies:")
             for symbol, name in companies.items():
                 print(f"  {symbol}: {name}")
+        return
+    
+    if args.company_cache:
+        try:
+            analyzer = IndustryAnalyzer()
+            cache_status = analyzer.get_company_cache_status()
+            
+            if args.json:
+                print(json.dumps(cache_status, indent=2, default=str))
+            else:
+                print("Company Cache Status:")
+                print(f"Total cached companies: {len(cache_status)}")
+                
+                if cache_status:
+                    fresh_count = sum(1 for c in cache_status if c['status'] == 'FRESH')
+                    aging_count = sum(1 for c in cache_status if c['status'] == 'AGING')
+                    needs_update_count = sum(1 for c in cache_status if c['status'] == 'NEEDS_UPDATE')
+                    
+                    print(f"  Fresh (< 14 days): {fresh_count}")
+                    print(f"  Aging (14-30 days): {aging_count}")
+                    print(f"  Needs Update (> 30 days): {needs_update_count}")
+                    print()
+                    
+                    # Show some examples
+                    print("Sample entries:")
+                    for company in cache_status[:10]:
+                        status_indicator = "[OK]" if company['status'] == 'FRESH' else "[AGING]" if company['status'] == 'AGING' else "[UPDATE]"
+                        print(f"  {status_indicator} {company['symbol']}: {company['company_name']} ({company['industry']}) - {company['days_old']} days old")
+                        
+                    if len(cache_status) > 10:
+                        print(f"  ... and {len(cache_status) - 10} more")
+                else:
+                    print("  No companies cached yet")
+                    
+            analyzer.close()
+        except Exception as e:
+            print(f"Error showing company cache: {e}")
         return
     
     # Initialize analyzer
