@@ -1752,6 +1752,7 @@ class StockSentimentAnalyzer:
 
 
 def main():
+    
     """Main function with enhanced CLI interface"""
     import sys
     import argparse

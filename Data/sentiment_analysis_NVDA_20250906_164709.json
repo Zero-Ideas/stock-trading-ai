@@ -1,0 +1,156 @@
+{
+  "symbol": "NVDA",
+  "company_name": "NVIDIA Corporation",
+  "analysis_timestamp": "2025-09-06T16:47:09.771636",
+  "total_articles": 5,
+  "overall_sentiment": "Very Positive",
+  "sentiment_scores": {
+    "average_sentiment": 0.432,
+    "weighted_avg_from_sources": 0.442
+  },
+  "sentiment_distribution": {
+    "positive": 3,
+    "negative": 0,
+    "neutral": 2,
+    "positive_percentage": 60.0,
+    "negative_percentage": 0.0,
+    "neutral_percentage": 40.0
+  },
+  "source_breakdown": {
+    "Google News": {
+      "count": 3,
+      "avg_sentiment": 0.21
+    },
+    "Bloomberg": {
+      "count": 2,
+      "avg_sentiment": 0.789024
+    }
+  },
+  "recent_articles": [
+    {
+      "text": "NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position - MarketBeat. NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position  MarketBeat",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQY25LVEd3MGNJa1hLNXREY1VtTERvdy16ZGJJZnU5YklIQUpSYzdqZF9WdlJTcUdURFJxM3Qyb2ZHU2NrSUVFcHM5Y0lwVDZJT2JjeV9PQ29OVEI2aFBjOC01SUNDMmo1aURBTjNXcEN1WHFYZklsbTR0S2R2al9fMDVOMkc2aFlQbHdjRWxXMm40bER3WEhybEZFREZqLWtQYXNpS1lmZElZUTFRWVpwVUJocWlyLTAxREtybG5LaUY5SGdVcWxlVWNyUQ?oc=5",
+      "timestamp": "2025-09-04T19:56:05"
+    },
+    {
+      "text": "NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S.A. - MarketBeat. NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S.A.  MarketBeat",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUjdySENfRndqaTJvbXFLb016LWNnWXRoczhMVzN6UlZKODVZamdwRTFwU09keFRwYnl4RmNsZzA5NDJlWjctdVR0VVFLWmtESG1SSHNfRUJjN2daMUJSWllmWEJwbVkyWkc4SWpEX0Y4c3ZQVmM4OUlOM0ZhdXFxdXZvNXgwX0habHR4bU1Wb1RUNmNMaU9fajVMSnM3am5ZV1BlOTNBLU1IeVMzaXBucklSWnVJT0taamdfTjQ0am5JUG85YmpnQlJn?oc=5",
+      "timestamp": "2025-09-04T19:12:03"
+    },
+    {
+      "text": "JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot - TipRanks. JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot  Tip...",
+      "sentiment": 0.63,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNczBHbURRRHZwWTBMRzB1b1haSmd1RHZubTZrNnhPMWx0OXJpZVRqUlk4NkwzRk5EZU0yMmNBeENDMElMRlVvZW1QMHJYRWhJVzgyaVFLSzZuSG1SN2tVNEI1T0VndUFzUFk5OEhMR2IzV2N1bzFyWUlxRTNJd0JSVENmNW1TR21rdGxaOUxpY2liQlRrbkEtSm9NdXE5ZkJNT1REcEVMRlhYSFBzdHpRSGx4YnhEWWY5Mnc4?oc=5",
+      "timestamp": "2025-09-04T19:11:18"
+    },
+    {
+      "text": "Raul Ariano/Bloomberg TikTok Rival Xiaohongshu Expects Profit to Triple to $3 Billion. Xiaohongshu Technology Co. is on track to triple its profit to $3 billion this year, making progress with commerc...",
+      "sentiment": 0.948048,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/tiktok-rival-xiaohongshu-expects-profit-to-triple-to-3-billion?srnd=phx-technology",
+      "timestamp": "2025-09-04T16:52:13.961644"
+    },
+    {
+      "text": "Hong Kong’s Digital Bond Market Gains Steam With Fresh Offerings",
+      "sentiment": 0.63,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/hong-kong-s-digital-bond-market-gains-steam-with-fresh-offerings?srnd=phx-technology",
+      "timestamp": "2025-09-04T15:52:20.932412"
+    }
+  ],
+  "raw_articles": [
+    {
+      "title": "NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position - MarketBeat",
+      "full_text": "NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position - MarketBeat. NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position  MarketBeat",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQY25LVEd3MGNJa1hLNXREY1VtTERvdy16ZGJJZnU5YklIQUpSYzdqZF9WdlJTcUdURFJxM3Qyb2ZHU2NrSUVFcHM5Y0lwVDZJT2JjeV9PQ29OVEI2aFBjOC01SUNDMmo1aURBTjNXcEN1WHFYZklsbTR0S2R2al9fMDVOMkc2aFlQbHdjRWxXMm40bER3WEhybEZFREZqLWtQYXNpS1lmZElZUTFRWVpwVUJocWlyLTAxREtybG5LaUY5SGdVcWxlVWNyUQ?oc=5",
+      "timestamp": "2025-09-04T19:56:05",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 149,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S",
+      "full_text": "NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S.A. - MarketBeat. NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S.A.  MarketBeat",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUjdySENfRndqaTJvbXFLb016LWNnWXRoczhMVzN6UlZKODVZamdwRTFwU09keFRwYnl4RmNsZzA5NDJlWjctdVR0VVFLWmtESG1SSHNfRUJjN2daMUJSWllmWEJwbVkyWkc4SWpEX0Y4c3ZQVmM4OUlOM0ZhdXFxdXZvNXgwX0habHR4bU1Wb1RUNmNMaU9fajVMSnM3am5ZV1BlOTNBLU1IeVMzaXBucklSWnVJT0taamdfTjQ0am5JUG85YmpnQlJn?oc=5",
+      "timestamp": "2025-09-04T19:12:03",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 167,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot - TipRanks",
+      "full_text": "JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot - TipRanks. JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot  TipRanks",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNczBHbURRRHZwWTBMRzB1b1haSmd1RHZubTZrNnhPMWx0OXJpZVRqUlk4NkwzRk5EZU0yMmNBeENDMElMRlVvZW1QMHJYRWhJVzgyaVFLSzZuSG1SN2tVNEI1T0VndUFzUFk5OEhMR2IzV2N1bzFyWUlxRTNJd0JSVENmNW1TR21rdGxaOUxpY2liQlRrbkEtSm9NdXE5ZkJNT1REcEVMRlhYSFBzdHpRSGx4YnhEWWY5Mnc4?oc=5",
+      "timestamp": "2025-09-04T19:11:18",
+      "polarity": 0.7,
+      "compound": 0.63,
+      "sentiment_label": "Positive",
+      "text_length": 205,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Raul Ariano/Bloomberg TikTok Rival Xiaohongshu Expects Profit to Triple to $3 Billion",
+      "full_text": "Raul Ariano/Bloomberg TikTok Rival Xiaohongshu Expects Profit to Triple to $3 Billion. Xiaohongshu Technology Co. is on track to triple its profit to $3 billion this year, making progress with commercialization on the way to a potential public listing. The social media firm recently updated investors on its latest projections for the full year, according to people briefed on the numbers. In the field of visual-based social platforms, Xiaohongshu’s profit forecast is roughly 50% higher than Pinterest Inc.’s earnings in 2024 and well ahead of Snap Inc., which has yet to complete a profitable year.",
+      "raw_extracted_text": "TikTok Rival Xiaohongshu Expects Profit to Triple to $3 Billion. Xiaohongshu Technology Co. is on track to triple its profit to $3 billion this year, making progress with commercialization on the way to a potential public listing. The social media firm recently updated investors on its latest projections for the full year, according to people briefed on the numbers. In the field of visual-based social platforms, Xiaohongshu’s profit forecast is roughly 50% higher than Pinterest Inc.’s earnings in 2024 and well ahead of Snap Inc., which has yet to complete a profitable year.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/tiktok-rival-xiaohongshu-expects-profit-to-triple-to-3-billion?srnd=phx-technology",
+      "timestamp": "2025-09-04T16:52:13.961644",
+      "polarity": 0.7584,
+      "compound": 0.948,
+      "sentiment_label": "Very Positive",
+      "text_length": 602,
+      "extracted_length": 580,
+      "enhancement_ratio": 96.3
+    },
+    {
+      "title": "Hong Kong’s Digital Bond Market Gains Steam With Fresh Offerings",
+      "full_text": "Hong Kong’s Digital Bond Market Gains Steam With Fresh Offerings",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/hong-kong-s-digital-bond-market-gains-steam-with-fresh-offerings?srnd=phx-technology",
+      "timestamp": "2025-09-04T15:52:20.932412",
+      "polarity": 0.7,
+      "compound": 0.63,
+      "sentiment_label": "Positive",
+      "text_length": 64,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    }
+  ],
+  "newspaper3k_stats": {
+    "total_articles": 5,
+    "enhanced_articles": 1,
+    "total_extracted_chars": 580,
+    "avg_enhancement_ratio": 580.0,
+    "sources_with_enhancement": [
+      {
+        "source": "Bloomberg",
+        "enhanced_count": 1,
+        "avg_extracted_chars": 580.0
+      }
+    ]
+  }
+}

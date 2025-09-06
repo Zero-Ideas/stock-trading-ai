@@ -17,9 +17,7 @@ import os
 import psycopg2
 from typing import Dict, Optional, List
 from datetime import datetime
-from openai import OpenAI
-from google import genai
-from google.genai import types
+
 from database_config import POSTGRES_CONFIG
 os.environ["OPENAI_API_KEY"] = "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"
 os.environ["GEMINI_API_KEY"] = "AIzaSyA91d_s6glh9j8de5CDoxB12lFbTziLn50"
@@ -27,7 +25,7 @@ os.environ["GEMINI_API_KEY"] = "AIzaSyA91d_s6glh9j8de5CDoxB12lFbTziLn50"
 warnings.filterwarnings('ignore')
 
 # Industry list for classification
-INSTRY_LIST = [
+INDUSTRY_LIST = [
     "Technology",
     "Semiconductor", 
     "Healthcare",
@@ -125,7 +123,7 @@ class IndustryAnalyzer:
     
     def __init__(self, company_symbol: Optional[str] = None, openai_api_key: Optional[str] = None, gemini_api_key: Optional[str] = None):
         """
-        Initialize the Industry Analyzer
+        Initialize the Industry Analyzer with lazy API client loading
         
         Args:
             company_symbol: Stock symbol for company-specific analysis (optional)
@@ -136,10 +134,17 @@ class IndustryAnalyzer:
         self.company_name = None
         self.industry = None
         
-        # Initialize API clients
-        self._init_api_clients(openai_api_key, gemini_api_key)
+        # Store API keys for lazy initialization
+        self._openai_api_key = openai_api_key
+        self._gemini_api_key = gemini_api_key
         
-        # Initialize database connection
+        # API clients (will be initialized lazily)
+        self.openai_client = None
+        self.gemini_client = None
+        self._openai_initialized = False
+        self._gemini_initialized = False
+        
+        # Initialize database connection (fast operation)
         self.db_connection = None
         self._init_database()
         
@@ -147,29 +152,46 @@ class IndustryAnalyzer:
         if self.company_symbol:
             self._identify_company_info()
     
-    def _init_api_clients(self, openai_api_key: Optional[str] = None, gemini_api_key: Optional[str] = None):
-        """Initialize API clients for OpenAI and Gemini"""
+    def _ensure_openai_client(self):
+        """Lazy initialization of OpenAI client"""
+        if self._openai_initialized:
+            return
+        
+        print(f"[LAZY LOAD] Initializing OpenAI client...")
+        from openai import OpenAI
+
         # Set up OpenAI
-        if openai_api_key:
-            os.environ["OPENAI_API_KEY"] = openai_api_key
+        if self._openai_api_key:
+            os.environ["OPENAI_API_KEY"] = self._openai_api_key
         
         if not os.environ.get("OPENAI_API_KEY"):
             raise ValueError("OpenAI API key must be provided either as parameter or environment variable 'OPENAI_API_KEY'")
         
         self.openai_client = OpenAI()
+        self._openai_initialized = True
+    
+    def _ensure_gemini_client(self):
+        """Lazy initialization of Gemini client"""
+        if self._gemini_initialized:
+            return
+        from google import genai
+        from google.genai import types
+        print(f"[LAZY LOAD] Initializing Gemini client...")
         
         # Set up Gemini
-        if gemini_api_key:
-            os.environ["GEMINI_API_KEY"] = gemini_api_key
-        
+        if self._gemini_api_key:
+            os.environ["GEMINI_API_KEY"] = self._gemini_api_key
+            self.gemini_types = types
         if not os.environ.get("GEMINI_API_KEY"):
             raise ValueError("Gemini API key must be provided either as parameter or environment variable 'GEMINI_API_KEY'")
         
         self.gemini_client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+        self._gemini_initialized = True
     
     def _init_database(self):
         """Initialize database connection"""
         try:
+            print(f"Initializing database connection...")
             self.db_connection = psycopg2.connect(
                 host=POSTGRES_CONFIG['host'],
                 port=POSTGRES_CONFIG['port'],
@@ -306,11 +328,14 @@ class IndustryAnalyzer:
     def _generate_company_info(self, symbol: str) -> Dict:
         """Use Gemini AI to identify company name and industry"""
         try:
+            # Ensure Gemini client is initialized
+            self._ensure_gemini_client()
+            
             contents = [
-                types.Content(
+                self.gemini_types.Content(
                     role="user",
                     parts=[
-                        types.Part.from_text(
+                        self.gemini_types.Part.from_text(
                             text=f"What industry best fits the company with stock symbol {symbol} from these industries? "
                                  f"Options: [{', '.join(INDUSTRY_LIST)}] "
                                  f"Respond in JSON format: {{'industry': '<string>', 'company_name': '<string>'}}"
@@ -319,8 +344,8 @@ class IndustryAnalyzer:
                 ),
             ]
             
-            generate_content_config = types.GenerateContentConfig(
-                thinking_config=types.ThinkingConfig(thinking_budget=0),
+            generate_content_config = self.gemini_types.GenerateContentConfig(
+                thinking_config=self.gemini_types.ThinkingConfig(thinking_budget=0),
                 response_mime_type="application/json",
             )
 
@@ -404,6 +429,9 @@ class IndustryAnalyzer:
         
         try:
             print(f"[API CALL] Generating fresh analysis using OpenAI...")
+            # Ensure OpenAI client is initialized
+            self._ensure_openai_client()
+            
             # Generate analysis using OpenAI
             response = self.openai_client.responses.create(
                 model="gpt-5-nano",
@@ -726,7 +754,7 @@ def main():
     parser.add_argument('--json', action='store_true', help='Output as JSON')
     
     args = parser.parse_args()
-    
+    print("STARTING")
     # Handle list commands
     if args.list_industries:
         industries = IndustryAnalyzer.get_supported_industries()

@@ -17,11 +17,11 @@ def test_postgres_connection():
     configs = [
         # (host, port, database, user, password, description)
         ("localhost", 5432, "postgres", "postgres", "", "Default with empty password"),
-        ("localhost", 5432, "postgres", "postgres", "postgres", "Default with 'postgres' password"),
-        ("localhost", 5432, "postgres", "postgres", "admin", "Default with 'admin' password"),
-        ("localhost", 5432, "postgres", "postgres", "password", "Default with 'password' password"),
-        ("127.0.0.1", 5432, "postgres", "postgres", "", "IPv4 with empty password"),
-        ("127.0.0.1", 5432, "postgres", "postgres", "postgres", "IPv4 with 'postgres' password"),
+        #("localhost", 5432, "postgres", "postgres", "postgres", "Default with 'postgres' password"),
+        #("localhost", 5432, "postgres", "postgres", "admin", "Default with 'admin' password"),
+        #("localhost", 5432, "postgres", "postgres", "password", "Default with 'password' password"),
+        #("127.0.0.1", 5432, "postgres", "postgres", "", "IPv4 with empty password"),
+        #("127.0.0.1", 5432, "postgres", "postgres", "postgres", "IPv4 with 'postgres' password"),
     ]
     
     print("\nTrying common configurations...")
