@@ -1,0 +1,414 @@
+{
+  "symbol": "NVDA",
+  "company_name": "NVIDIA Corporation",
+  "analysis_timestamp": "2025-09-05T20:11:38.288268",
+  "total_articles": 21,
+  "overall_sentiment": "Very Positive",
+  "sentiment_scores": {
+    "average_sentiment": 0.195,
+    "weighted_avg_from_sources": 0.244
+  },
+  "sentiment_distribution": {
+    "positive": 8,
+    "negative": 2,
+    "neutral": 11,
+    "positive_percentage": 38.1,
+    "negative_percentage": 9.5,
+    "neutral_percentage": 52.4
+  },
+  "source_breakdown": {
+    "Google News": {
+      "count": 15,
+      "avg_sentiment": 0.12486873333333333
+    },
+    "Bloomberg": {
+      "count": 4,
+      "avg_sentiment": 0.6069742499999999
+    },
+    "Yahoo Finance": {
+      "count": 1,
+      "avg_sentiment": 0.823494
+    },
+    "MarketWatch": {
+      "count": 1,
+      "avg_sentiment": 0.0
+    }
+  },
+  "recent_articles": [
+    {
+      "text": "NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position - MarketBeat. NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position  MarketBeat",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQY25LVEd3MGNJa1hLNXREY1VtTERvdy16ZGJJZnU5YklIQUpSYzdqZF9WdlJTcUdURFJxM3Qyb2ZHU2NrSUVFcHM5Y0lwVDZJT2JjeV9PQ29OVEI2aFBjOC01SUNDMmo1aURBTjNXcEN1WHFYZklsbTR0S2R2al9fMDVOMkc2aFlQbHdjRWxXMm40bER3WEhybEZFREZqLWtQYXNpS1lmZElZUTFRWVpwVUJocWlyLTAxREtybG5LaUY5SGdVcWxlVWNyUQ?oc=5",
+      "timestamp": "2025-09-04T19:56:05"
+    },
+    {
+      "text": "NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S.A. - MarketBeat. NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S.A.  MarketBeat",
+      "sentiment": 0.0,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUjdySENfRndqaTJvbXFLb016LWNnWXRoczhMVzN6UlZKODVZamdwRTFwU09keFRwYnl4RmNsZzA5NDJlWjctdVR0VVFLWmtESG1SSHNfRUJjN2daMUJSWllmWEJwbVkyWkc4SWpEX0Y4c3ZQVmM4OUlOM0ZhdXFxdXZvNXgwX0habHR4bU1Wb1RUNmNMaU9fajVMSnM3am5ZV1BlOTNBLU1IeVMzaXBucklSWnVJT0taamdfTjQ0am5JUG85YmpnQlJn?oc=5",
+      "timestamp": "2025-09-04T19:12:03"
+    },
+    {
+      "text": "JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot - TipRanks. JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot  Tip...",
+      "sentiment": 0.63,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNczBHbURRRHZwWTBMRzB1b1haSmd1RHZubTZrNnhPMWx0OXJpZVRqUlk4NkwzRk5EZU0yMmNBeENDMElMRlVvZW1QMHJYRWhJVzgyaVFLSzZuSG1SN2tVNEI1T0VndUFzUFk5OEhMR2IzV2N1bzFyWUlxRTNJd0JSVENmNW1TR21rdGxaOUxpY2liQlRrbkEtSm9NdXE5ZkJNT1REcEVMRlhYSFBzdHpRSGx4YnhEWWY5Mnc4?oc=5",
+      "timestamp": "2025-09-04T19:11:18"
+    },
+    {
+      "text": "Raul Ariano/Bloomberg TikTok Rival Xiaohongshu Expects Profit to Triple to $3 Billion. Xiaohongshu Technology Co. is on track to triple its profit to $3 billion this year, making progress with commerc...",
+      "sentiment": 0.948048,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/tiktok-rival-xiaohongshu-expects-profit-to-triple-to-3-billion?srnd=phx-technology",
+      "timestamp": "2025-09-04T16:52:13.961644"
+    },
+    {
+      "text": "Hong Kong’s Digital Bond Market Gains Steam With Fresh Offerings",
+      "sentiment": 0.63,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/hong-kong-s-digital-bond-market-gains-steam-with-fresh-offerings?srnd=phx-technology",
+      "timestamp": "2025-09-04T15:52:20.932412"
+    }
+  ],
+  "raw_articles": [
+    {
+      "title": "NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position - MarketBeat",
+      "full_text": "NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position - MarketBeat. NVIDIA Corporation $NVDA is Allianz SE's 4th Largest Position  MarketBeat",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQY25LVEd3MGNJa1hLNXREY1VtTERvdy16ZGJJZnU5YklIQUpSYzdqZF9WdlJTcUdURFJxM3Qyb2ZHU2NrSUVFcHM5Y0lwVDZJT2JjeV9PQ29OVEI2aFBjOC01SUNDMmo1aURBTjNXcEN1WHFYZklsbTR0S2R2al9fMDVOMkc2aFlQbHdjRWxXMm40bER3WEhybEZFREZqLWtQYXNpS1lmZElZUTFRWVpwVUJocWlyLTAxREtybG5LaUY5SGdVcWxlVWNyUQ?oc=5",
+      "timestamp": "2025-09-04T19:56:05",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 149,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S",
+      "full_text": "NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S.A. - MarketBeat. NVIDIA Corporation $NVDA Stock Position Raised by Banco Santander S.A.  MarketBeat",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUjdySENfRndqaTJvbXFLb016LWNnWXRoczhMVzN6UlZKODVZamdwRTFwU09keFRwYnl4RmNsZzA5NDJlWjctdVR0VVFLWmtESG1SSHNfRUJjN2daMUJSWllmWEJwbVkyWkc4SWpEX0Y4c3ZQVmM4OUlOM0ZhdXFxdXZvNXgwX0habHR4bU1Wb1RUNmNMaU9fajVMSnM3am5ZV1BlOTNBLU1IeVMzaXBucklSWnVJT0taamdfTjQ0am5JUG85YmpnQlJn?oc=5",
+      "timestamp": "2025-09-04T19:12:03",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 167,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot - TipRanks",
+      "full_text": "JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot - TipRanks. JPMorgan Analyst Reaffirms Bullish Stance on Nvidia Stock (NVDA) as AI Demand Stays Red-Hot  TipRanks",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNczBHbURRRHZwWTBMRzB1b1haSmd1RHZubTZrNnhPMWx0OXJpZVRqUlk4NkwzRk5EZU0yMmNBeENDMElMRlVvZW1QMHJYRWhJVzgyaVFLSzZuSG1SN2tVNEI1T0VndUFzUFk5OEhMR2IzV2N1bzFyWUlxRTNJd0JSVENmNW1TR21rdGxaOUxpY2liQlRrbkEtSm9NdXE5ZkJNT1REcEVMRlhYSFBzdHpRSGx4YnhEWWY5Mnc4?oc=5",
+      "timestamp": "2025-09-04T19:11:18",
+      "polarity": 0.7,
+      "compound": 0.63,
+      "sentiment_label": "Positive",
+      "text_length": 205,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Raul Ariano/Bloomberg TikTok Rival Xiaohongshu Expects Profit to Triple to $3 Billion",
+      "full_text": "Raul Ariano/Bloomberg TikTok Rival Xiaohongshu Expects Profit to Triple to $3 Billion. Xiaohongshu Technology Co. is on track to triple its profit to $3 billion this year, making progress with commercialization on the way to a potential public listing. The social media firm recently updated investors on its latest projections for the full year, according to people briefed on the numbers. In the field of visual-based social platforms, Xiaohongshu’s profit forecast is roughly 50% higher than Pinterest Inc.’s earnings in 2024 and well ahead of Snap Inc., which has yet to complete a profitable year.",
+      "raw_extracted_text": "TikTok Rival Xiaohongshu Expects Profit to Triple to $3 Billion. Xiaohongshu Technology Co. is on track to triple its profit to $3 billion this year, making progress with commercialization on the way to a potential public listing. The social media firm recently updated investors on its latest projections for the full year, according to people briefed on the numbers. In the field of visual-based social platforms, Xiaohongshu’s profit forecast is roughly 50% higher than Pinterest Inc.’s earnings in 2024 and well ahead of Snap Inc., which has yet to complete a profitable year.",
+      "extraction_successful": true,
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/tiktok-rival-xiaohongshu-expects-profit-to-triple-to-3-billion?srnd=phx-technology",
+      "timestamp": "2025-09-04T16:52:13.961644",
+      "polarity": 0.7584,
+      "compound": 0.948,
+      "sentiment_label": "Very Positive",
+      "text_length": 602,
+      "extracted_length": 580,
+      "enhancement_ratio": 96.3
+    },
+    {
+      "title": "Hong Kong’s Digital Bond Market Gains Steam With Fresh Offerings",
+      "full_text": "Hong Kong’s Digital Bond Market Gains Steam With Fresh Offerings",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/hong-kong-s-digital-bond-market-gains-steam-with-fresh-offerings?srnd=phx-technology",
+      "timestamp": "2025-09-04T15:52:20.932412",
+      "polarity": 0.7,
+      "compound": 0.63,
+      "sentiment_label": "Positive",
+      "text_length": 64,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Nvidia: Bulls Ignore Valuation, Bears Ignore China (NASDAQ:NVDA) - Seeking Alpha",
+      "full_text": "Nvidia: Bulls Ignore Valuation, Bears Ignore China (NASDAQ:NVDA) - Seeking Alpha. Nvidia: Bulls Ignore Valuation, Bears Ignore China (NASDAQ:NVDA)  Seeking Alpha",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPanJIeE1Vc3RuYU56cUxlVGhROEp1Q2ZlRmNkdDZuZWZoQ0c2QVQxcmw3ZVdERld3cmYyMDJXbkQ4blVQRW0wUnBJTmVrVkhQMFl6dDFSd01tWkt2azluRXBjM3BPbG5pb3VqUk1ZdlBrX2JtNlN3YnNoTEVIckhQQXBJVFo5UEIwdmItSEZsZEc5ZEk?oc=5",
+      "timestamp": "2025-09-04T13:14:59",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 161,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "China’s ‘Dark Horse’ AI Startup Says It Will Use Domestic Chips, Not Nvidia’s, for Its Latest Models",
+      "full_text": "China’s ‘Dark Horse’ AI Startup Says It Will Use Domestic Chips, Not Nvidia’s, for Its Latest Models. What Does That Mean for NVDA Stock? - Yahoo Finance. China’s ‘Dark Horse’ AI Startup Says It Will Use Domestic Chips, Not Nvidia’s, for Its Latest Models. What Does That Mean for NVDA Stock?  Yahoo Finance China’s ‘Dark Horse’ AI Startup Says It Will Use Domestic Chips, Not Nvidia’s, for Its Latest Models. What Does That Mean for NVDA Stock?. Chinese AI startup DeepSeek, whose R1 reasoning model shook up the tech world and sparked a selloff in Nvidia and other tech stocks in January, recently hinted that China would soon produce domestic “next-generation” chips to power its AI models. In a comment on its official WeChat account, DeepSeek stated that the “UE8M0 FP8” precision format of its newly released V3.1 model is designed for the next-generation domestically produced chips set to launch soon. Notably, FP8, or 8-bit floating point, is a data format that can enhance computational efficiency in both training and inference of large deep learning models. Nvidia is a premier technology firm known for its expertise in graphics processing units and AI solutions. The company is renowned for its pioneering contributions to gaming, data centers, and AI-driven applications. NVDA’s technological solutions are developed around a platform strategy that combines hardware, systems, software, algorithms, and services to provide distinctive value. The chipmaker has a market cap of $4.15 trillion, making it the most valuable company in the world. Now, the narrative may be shifting in a more concerning direction. DeepSeek recently hinted that its newest models will be \"tailored\" for domestically produced Chinese chips, not Nvidia’s. The company even said its precision format for the latest V3.1 model was designed with “next-generation” homegrown semiconductors in mind. When it comes to artificial intelligence (AI), few companies have rattled Wall Street this year quite like DeepSeek. Dubbed China’s “dark horse,” the AI startup burst onto the scene in January with a breakthrough model that briefly shook up the global tech landscape, triggering a selloff in Nvidia (NVDA) and other AI-related stocks. At the time, however, fears quickly faded when investors realized the startup still depended heavily on Nvidia’s hardware to train and scale its models. Story Continues Chinese semiconductor stocks recently staged a massive rally on hopes that more chips used in China will be produced domestically. DeepSeek’s reference to China’s upcoming next-generation chips may indicate an intention to work more closely with the country’s growing AI chip ecosystem amid U.S. export restrictions on advanced semiconductors and Beijing’s push for chip self-sufficiency. Kevin Xu, founder of AI-focused fund Interconnected Capital, wrote in a blog post that this could enable Chinese AI developers to close the gap with the U.S. “sooner than most people think, credibly challenging Nvidia and the American AI stack both at home and abroad.” However, DeepSeek did not reveal which chips were used to train the V3.1 or specify which local chips the UE8M0 FP8 might be compatible with.",
+      "raw_extracted_text": "China’s ‘Dark Horse’ AI Startup Says It Will Use Domestic Chips, Not Nvidia’s, for Its Latest Models. What Does That Mean for NVDA Stock?. Chinese AI startup DeepSeek, whose R1 reasoning model shook up the tech world and sparked a selloff in Nvidia and other tech stocks in January, recently hinted that China would soon produce domestic “next-generation” chips to power its AI models. In a comment on its official WeChat account, DeepSeek stated that the “UE8M0 FP8” precision format of its newly released V3.1 model is designed for the next-generation domestically produced chips set to launch soon. Notably, FP8, or 8-bit floating point, is a data format that can enhance computational efficiency in both training and inference of large deep learning models. Nvidia is a premier technology firm known for its expertise in graphics processing units and AI solutions. The company is renowned for its pioneering contributions to gaming, data centers, and AI-driven applications. NVDA’s technological solutions are developed around a platform strategy that combines hardware, systems, software, algorithms, and services to provide distinctive value. The chipmaker has a market cap of $4.15 trillion, making it the most valuable company in the world. Now, the narrative may be shifting in a more concerning direction. DeepSeek recently hinted that its newest models will be \"tailored\" for domestically produced Chinese chips, not Nvidia’s. The company even said its precision format for the latest V3.1 model was designed with “next-generation” homegrown semiconductors in mind. When it comes to artificial intelligence (AI), few companies have rattled Wall Street this year quite like DeepSeek. Dubbed China’s “dark horse,” the AI startup burst onto the scene in January with a breakthrough model that briefly shook up the global tech landscape, triggering a selloff in Nvidia (NVDA) and other AI-related stocks. At the time, however, fears quickly faded when investors realized the startup still depended heavily on Nvidia’s hardware to train and scale its models. Story Continues Chinese semiconductor stocks recently staged a massive rally on hopes that more chips used in China will be produced domestically. DeepSeek’s reference to China’s upcoming next-generation chips may indicate an intention to work more closely with the country’s growing AI chip ecosystem amid U.S. export restrictions on advanced semiconductors and Beijing’s push for chip self-sufficiency. Kevin Xu, founder of AI-focused fund Interconnected Capital, wrote in a blog post that this could enable Chinese AI developers to close the gap with the U.S. “sooner than most people think, credibly challenging Nvidia and the American AI stack both at home and abroad.” However, DeepSeek did not reveal which chips were used to train the V3.1 or specify which local chips the UE8M0 FP8 might be compatible with.",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5Pd19uWEcyRTFMSzdHVEcxc3hveG5VRGJGSFFFeVR0b0xMX05mUW0xMjg1dWtCQTBOcTZWT2o0azFRYWNFMlNBMW9tVkxhV2N2TzNzU2ZCa2ZMTzNxZVJKYkZPdU9GLXFKWnVKZG5jb18tRUN4ZFZlMUhCcll1dw?oc=5",
+      "timestamp": "2025-09-04T11:28:23",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 3189,
+      "extracted_length": 2881,
+      "enhancement_ratio": 90.3
+    },
+    {
+      "title": "Mexico’s Klar Catches Up On Race to Bank License With Bineo Buy",
+      "full_text": "Mexico’s Klar Catches Up On Race to Bank License With Bineo Buy",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/fintech-klar-catches-up-on-race-to-bank-license-with-purchase-of-banorte-s-bineo?srnd=phx-technology",
+      "timestamp": "2025-09-04T08:52:23.068537",
+      "polarity": 0.6799,
+      "compound": 0.8498,
+      "sentiment_label": "Very Positive",
+      "text_length": 63,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "NVIDIA (NVDA) Stock: Jim Cramer Emphasized This Metric Over China Sales Concerns - parameter",
+      "full_text": "NVIDIA (NVDA) Stock: Jim Cramer Emphasized This Metric Over China Sales Concerns - parameter.io. NVIDIA (NVDA) Stock: Jim Cramer Emphasized This Metric Over China Sales Concerns  parameter.io",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRGtWaGZHNnpKN2hXX0hCamNmZ0VOMjk3clplSkNzc3E1WlhYdVZIT3Zzem9xM2tOX25tcFlNNUZLcVNWQ2tmeHIzUVVsQnNiSmJjbmk2aWNQRVh5YWI3a0E4c2Mya0lhbmoxXzNpalhJVzhZcmtkRjlDMXc5a2gzN2lVcWhhaDdsb0M4X29Tem4zTGlJdUd4eGdKeHpTSzdV?oc=5",
+      "timestamp": "2025-09-04T06:53:23",
+      "polarity": -0.7,
+      "compound": -0.63,
+      "sentiment_label": "Negative",
+      "text_length": 191,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Quantum stocks rise amid news of Nvidia investment in Honeywell's Quantinuum (NVDA:NASDAQ) - Seeking Alpha",
+      "full_text": "Quantum stocks rise amid news of Nvidia investment in Honeywell's Quantinuum (NVDA:NASDAQ) - Seeking Alpha. Quantum stocks rise amid news of Nvidia investment in Honeywell's Quantinuum (NVDA:NASDAQ)  Seeking Alpha",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeG5xZVF6M3NlMFo3MmxRcTBlbXNYS29mckp4TG54WEpGOTk4Z3ZFMUVRSUplVlhURVRfRTY3TlYzNnN0Y1JuTkNWUGN3azFxXzIzUG5sZ2JnQTQwcHJnUVk3VWRJcDdjOFRmbkxuWmItSkNVRGpVWnpURjRNS2xhU1k1a0kzRFpxN0l2Wm54UldOUUZnbkNGWUotd243bFlmekNZWWQ3enZ1ZkJ4RllnWFdiTQ?oc=5",
+      "timestamp": "2025-09-04T05:12:46",
+      "polarity": 0.6785,
+      "compound": 0.8481,
+      "sentiment_label": "Very Positive",
+      "text_length": 213,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Time to buy NVDA?",
+      "full_text": "Time to buy NVDA?. This price reflects trading activity during the overnight session on the Blue Ocean ATS, available 8 PM to 4 AM ET, Sunday through Thursday, when regular markets are closed. Nvidia (NVDA) Research Report. Leading designer of graphics chips Nvidia (NASDAQ:NVDA) met Wall Street’s revenue expectations in Q2 CY2025, with sales up 55.6% year on year to $46.74 billion. The company expects next quarter’s revenue to be around $54 billion, close to analysts’ estimates. Its non-GAAP profit of $1.05 per share was 4% above analysts’ consensus estimates. Founded in 1993 by Jensen Huang and two former Sun Microsystems engineers, Nvidia (NASDAQ:NVDA) is a leading fabless designer of chips used in gaming, PCs, data centers, automotive, and a variety of end markets. Founded with the goal of bringing high end 3D computer graphics processing units (GPUs) to the mainstream PC market, Nvidia's business has exploded over the past decade as GPUs’ have changed the computing paradigm by enabling leading edge technologies like artificial intelligence, machine learning, and autonomous driving. GPUs differ from CPUs (most commonly associated with Intel) in that their multi-core structures are designed to operate in a parallel fashion, which makes them great at performing repeat operations at a fast pace, such as running repeated complex mathematical operations to render 3D graphics for video games. In recent years, technologists began applying GPUs “parallel processing” to new use cases like accelerating computing in data centers, powering artificial intelligence and machine learning, and modeling complex problems like taking in data from car cameras to guide autonomous safety features. Nvidia’s great differentiation was the introduction of the CUDA programming language back in 2006. Nvidia targeted software developers, giving away CUDA for free to developers, who all used it to code graphics in video games. Importantly, Nvidia kept its CUDA-GPU integration closed, meaning that CUDA could only run on Nvidia’s GPUs, creating a massive barrier to entry for other GPU rivals. In the early to mid 2010s, as developers began using CUDA to program GPUs for the new parallel processing use cases in data centers, Nvidia’s business began expanding dramatically. The exploding use cases for its GPUs and Nvidia’s proprietary programming language have generated one of the great growth stocks of the 2000s, with Nvidia market cap growing more than 20x. Nvidia now has its eyes on the ARM technology, aiming to pair ARM’s low power low cost CPUs with its GPUs to capture ever greater share in the datacenter from Intel’s x86 architecture CPUs.",
+      "raw_extracted_text": "Nvidia (NVDA) Research Report. Leading designer of graphics chips Nvidia (NASDAQ:NVDA) met Wall Street’s revenue expectations in Q2 CY2025, with sales up 55.6% year on year to $46.74 billion. The company expects next quarter’s revenue to be around $54 billion, close to analysts’ estimates. Its non-GAAP profit of $1.05 per share was 4% above analysts’ consensus estimates. Founded in 1993 by Jensen Huang and two former Sun Microsystems engineers, Nvidia (NASDAQ:NVDA) is a leading fabless designer of chips used in gaming, PCs, data centers, automotive, and a variety of end markets. Founded with the goal of bringing high end 3D computer graphics processing units (GPUs) to the mainstream PC market, Nvidia's business has exploded over the past decade as GPUs’ have changed the computing paradigm by enabling leading edge technologies like artificial intelligence, machine learning, and autonomous driving. GPUs differ from CPUs (most commonly associated with Intel) in that their multi-core structures are designed to operate in a parallel fashion, which makes them great at performing repeat operations at a fast pace, such as running repeated complex mathematical operations to render 3D graphics for video games. In recent years, technologists began applying GPUs “parallel processing” to new use cases like accelerating computing in data centers, powering artificial intelligence and machine learning, and modeling complex problems like taking in data from car cameras to guide autonomous safety features. Nvidia’s great differentiation was the introduction of the CUDA programming language back in 2006. Nvidia targeted software developers, giving away CUDA for free to developers, who all used it to code graphics in video games. Importantly, Nvidia kept its CUDA-GPU integration closed, meaning that CUDA could only run on Nvidia’s GPUs, creating a massive barrier to entry for other GPU rivals. In the early to mid 2010s, as developers began using CUDA to program GPUs for the new parallel processing use cases in data centers, Nvidia’s business began expanding dramatically. The exploding use cases for its GPUs and Nvidia’s proprietary programming language have generated one of the great growth stocks of the 2000s, with Nvidia market cap growing more than 20x. Nvidia now has its eyes on the ARM technology, aiming to pair ARM’s low power low cost CPUs with its GPUs to capture ever greater share in the datacenter from Intel’s x86 architecture CPUs.",
+      "extraction_successful": true,
+      "source": "Yahoo Finance",
+      "url": "https://stockstory.org/us/stocks/nasdaq/nvda?partner=yahoo&utm_source=yahoo&utm_medium=financequotetopnavigation&utm_campaign=quotetoppicktimetobuydesktop",
+      "timestamp": "2025-09-04T04:52:08.399618",
+      "polarity": 0.6588,
+      "compound": 0.8235,
+      "sentiment_label": "Very Positive",
+      "text_length": 2659,
+      "extracted_length": 2466,
+      "enhancement_ratio": 92.7
+    },
+    {
+      "title": "Think Nvidia Stock Is Expensive? These 2 Charts Might Change Your Mind",
+      "full_text": "Think Nvidia Stock Is Expensive? These 2 Charts Might Change Your Mind. - Yahoo Finance. Think Nvidia Stock Is Expensive? These 2 Charts Might Change Your Mind.  Yahoo Finance Think Nvidia Stock Is Expensive? These 2 Charts Might Change Your Mind.. Key Points Nvidia stock might look expensive at first glance, but context matters. Despite its massive size, the company is growing much faster than its peers. Management expects sales growth to slow slightly, but it should remain in the high double-digit range. 10 stocks we like better than Nvidia › Nvidia (NASDAQ: NVDA) is the largest company in the world by market cap and one of the most hotly debated. Can it still grow higher at its current levels? Is the artificial intelligence (AI) market overhyped? Is competition coming? And perhaps one of the most popular debate topics: Is Nvidia stock a good value? Let's take a look at why it may not be as expensive as you think. The key to generative AI First, let's get one thing out of the way: Considering Nvidia's dominant market position and impressive growth, the stock does deserve some kind of premium. So, even if it does look expensive at first glance, there are good reasons for that. But let's consider some other factors. Both sales and earnings are growing at high rates, which is why the stock continues to climb while carrying an already high valuation. In other words, its growth isn't necessarily fully priced into the stock. Image source: Nvidia. That said, Nvidia does trade at a high price-to-earnings (P/E) ratio of 49 as of this writing, about twice the S&P 500 average. But consider its price/earnings-to-growth (PEG) ratio, which normalizes its valuation against its earnings growth rate. Below, you can see how Nvidia's PEG ratio compares favorably to the market's other largest companies, including Microsoft, Apple, Amazon, Alphabet, and Meta Platforms: Nvidia also trades at a rich price-to-sales (P/S) ratio of 26, but it's growing revenue much faster than these same peers as well: Data by YCharts. That's why any valuation needs to be taken in context. Nvidia might be starting to slow down, and the market wasn't thrilled with its guidance for revenue growth of about 54% in the current quarter. However, that's still far above its peers, which partially explains the premium for the stock. Should you buy stock in Nvidia right now? Before you buy stock in Nvidia, consider this: The Motley Fool Stock Advisor analyst team just identified what they believe are the 10 best stocks for investors to buy now… and Nvidia wasn’t one of them. The 10 stocks that made the cut could produce monster returns in the coming years. Consider when Netflix made this list on December 17, 2004... if you invested $1,000 at the time of our recommendation, you’d have $654,759!* Or when Nvidia made this list on April 15, 2005... if you invested $1,000 at the time of our recommendation, you’d have $1,046,799!*",
+      "raw_extracted_text": "Think Nvidia Stock Is Expensive? These 2 Charts Might Change Your Mind.. Key Points Nvidia stock might look expensive at first glance, but context matters. Despite its massive size, the company is growing much faster than its peers. Management expects sales growth to slow slightly, but it should remain in the high double-digit range. 10 stocks we like better than Nvidia › Nvidia (NASDAQ: NVDA) is the largest company in the world by market cap and one of the most hotly debated. Can it still grow higher at its current levels? Is the artificial intelligence (AI) market overhyped? Is competition coming? And perhaps one of the most popular debate topics: Is Nvidia stock a good value? Let's take a look at why it may not be as expensive as you think. The key to generative AI First, let's get one thing out of the way: Considering Nvidia's dominant market position and impressive growth, the stock does deserve some kind of premium. So, even if it does look expensive at first glance, there are good reasons for that. But let's consider some other factors. Both sales and earnings are growing at high rates, which is why the stock continues to climb while carrying an already high valuation. In other words, its growth isn't necessarily fully priced into the stock. Image source: Nvidia. That said, Nvidia does trade at a high price-to-earnings (P/E) ratio of 49 as of this writing, about twice the S&P 500 average. But consider its price/earnings-to-growth (PEG) ratio, which normalizes its valuation against its earnings growth rate. Below, you can see how Nvidia's PEG ratio compares favorably to the market's other largest companies, including Microsoft, Apple, Amazon, Alphabet, and Meta Platforms: Nvidia also trades at a rich price-to-sales (P/S) ratio of 26, but it's growing revenue much faster than these same peers as well: Data by YCharts. That's why any valuation needs to be taken in context. Nvidia might be starting to slow down, and the market wasn't thrilled with its guidance for revenue growth of about 54% in the current quarter. However, that's still far above its peers, which partially explains the premium for the stock. Should you buy stock in Nvidia right now? Before you buy stock in Nvidia, consider this: The Motley Fool Stock Advisor analyst team just identified what they believe are the 10 best stocks for investors to buy now… and Nvidia wasn’t one of them. The 10 stocks that made the cut could produce monster returns in the coming years. Consider when Netflix made this list on December 17, 2004... if you invested $1,000 at the time of our recommendation, you’d have $654,759!* Or when Nvidia made this list on April 15, 2005... if you invested $1,000 at the time of our recommendation, you’d have $1,046,799!*",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaFJCbVMtQVo0M051UVA0TmhKWVUxb2ZXdTBpakZUSWxxTHhfR0NRQUt1NmxNcmN0UmNaRHFWMFdPeWZvN2tZRnk4UEg1ZEFzQ2xBWXVSRWRiNGwzTkZDRUxCcjNFQlJJT1NHLVM5dmRMbFZaUHBGZzRvUlFlcHZ3Rjhn?oc=5",
+      "timestamp": "2025-09-04T04:21:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 2927,
+      "extracted_length": 2751,
+      "enhancement_ratio": 94.0
+    },
+    {
+      "title": "Shoko Takayasu/Bloomberg",
+      "full_text": "Shoko Takayasu/Bloomberg",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-05/ai-investment-frenzy-leaves-tokyo-electron-a-market-laggard?srnd=phx-technology",
+      "timestamp": "2025-09-03T20:52:15.421864",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 24,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "3 Reasons Why Sept",
+      "full_text": "3 Reasons Why Sept. 4 Is a Big Day for Nvidia and Broadcom Stock Investors - Yahoo Finance. 3 Reasons Why Sept. 4 Is a Big Day for Nvidia and Broadcom Stock Investors  Yahoo Finance 3 Reasons Why Sept. 4 Is a Big Day for Nvidia and Broadcom Stock Investors. Key Points Thanks to its acquisition of VMware and AI expansion, Broadcom has evolved from a stodgy networking company to a high-octane powerhouse. Broadcom’s integrated AI offering is being well received by hyperscalers. Broadcom is the seventh-largest S&P 500 component by market cap, giving it market-moving potential. 10 stocks we like better than Broadcom › Nvidia's (NASDAQ: NVDA) latest quarterly earnings were a textbook example of the importance of expectations. Despite delivering blowout results and guidance, Nvidia stock sold off simply because investors were already ultra-optimistic heading into the print. Even after the pullback, Nvidia is still on track to crush the S&P 500 (SNPINDEX: ^GSPC) for the third consecutive year. The stakes are arguably just as high for fellow chip giant, Broadcom (NASDAQ: AVGO). Broadcom has become such a massive company that it has surpassed Tesla in market cap -- paving the way for a new group of market-leading growth stocks known as the \"Ten Titans.\" Here's what investors should look for when Broadcom reports earnings on Sept. 4 after market close, and why its results and management's commentary on the call could have ripple effects across the artificial intelligence (AI) investing landscape. Image source: Getty Images. 1. Broadcom is guiding for record AI revenue Broadcom reports its results under two segments, semiconductor solutions and infrastructure software. The company completed its acquisition of VMware in November 2023, which catapulted the software segment from $7.6 billion in fiscal 2023 revenue to $21.5 billion in fiscal 2024, while semiconductor solutions grew from $28.2 billion to $30.1 billion. The VMware acquisition transformed Broadcom into a fully integrated infrastructure software company, building on its core businesses in networking, broadband, wireless, storage, industrial, and automotive. In addition to these two large segments, Broadcom also reports AI revenue, which isn't its own segment, but rather highlights the portions of semiconductor and software that are linked to AI. Broadcom is driving AI growth with its custom AI accelerators (XPUs), a type of advanced application-specific integrated circuit (ASIC) primarily designed for hyperscalers. In its second quarter fiscal 2025 for the period ended May 4, 2025, Broadcom reported AI revenue of $4.4 billion, up 46% year over year, and guided for $5.1 billion in Q3 AI revenue. Overall revenue was up 20% against Q2 fiscal 2024, which was a difficult comp, proving Broadcom is showing no signs of slowing down.",
+      "raw_extracted_text": "3 Reasons Why Sept. 4 Is a Big Day for Nvidia and Broadcom Stock Investors. Key Points Thanks to its acquisition of VMware and AI expansion, Broadcom has evolved from a stodgy networking company to a high-octane powerhouse. Broadcom’s integrated AI offering is being well received by hyperscalers. Broadcom is the seventh-largest S&P 500 component by market cap, giving it market-moving potential. 10 stocks we like better than Broadcom › Nvidia's (NASDAQ: NVDA) latest quarterly earnings were a textbook example of the importance of expectations. Despite delivering blowout results and guidance, Nvidia stock sold off simply because investors were already ultra-optimistic heading into the print. Even after the pullback, Nvidia is still on track to crush the S&P 500 (SNPINDEX: ^GSPC) for the third consecutive year. The stakes are arguably just as high for fellow chip giant, Broadcom (NASDAQ: AVGO). Broadcom has become such a massive company that it has surpassed Tesla in market cap -- paving the way for a new group of market-leading growth stocks known as the \"Ten Titans.\" Here's what investors should look for when Broadcom reports earnings on Sept. 4 after market close, and why its results and management's commentary on the call could have ripple effects across the artificial intelligence (AI) investing landscape. Image source: Getty Images. 1. Broadcom is guiding for record AI revenue Broadcom reports its results under two segments, semiconductor solutions and infrastructure software. The company completed its acquisition of VMware in November 2023, which catapulted the software segment from $7.6 billion in fiscal 2023 revenue to $21.5 billion in fiscal 2024, while semiconductor solutions grew from $28.2 billion to $30.1 billion. The VMware acquisition transformed Broadcom into a fully integrated infrastructure software company, building on its core businesses in networking, broadband, wireless, storage, industrial, and automotive. In addition to these two large segments, Broadcom also reports AI revenue, which isn't its own segment, but rather highlights the portions of semiconductor and software that are linked to AI. Broadcom is driving AI growth with its custom AI accelerators (XPUs), a type of advanced application-specific integrated circuit (ASIC) primarily designed for hyperscalers. In its second quarter fiscal 2025 for the period ended May 4, 2025, Broadcom reported AI revenue of $4.4 billion, up 46% year over year, and guided for $5.1 billion in Q3 AI revenue. Overall revenue was up 20% against Q2 fiscal 2024, which was a difficult comp, proving Broadcom is showing no signs of slowing down.",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBPWlo2RWZrZ0Npdm84U29ITE9LaGdRT3REaGU1THF1ejU0S2s3aURSQnZMcS1MZmE4eGpxOEZWZ0FUTzNFVjBSNDFxMU9WWmw5czlud3NaOE5INl85eTRZUmNndmN4WWU3b1JXV2pvdzRLV2RW?oc=5",
+      "timestamp": "2025-09-03T14:59:36",
+      "polarity": 0.6151,
+      "compound": 0.7688,
+      "sentiment_label": "Very Positive",
+      "text_length": 2822,
+      "extracted_length": 2640,
+      "enhancement_ratio": 93.6
+    },
+    {
+      "title": "Jim Cramer Says You’re Going To “Lose Some Money” With NVIDIA Corporation (NVDA) - Yahoo Finance",
+      "full_text": "Jim Cramer Says You’re Going To “Lose Some Money” With NVIDIA Corporation (NVDA) - Yahoo Finance. Jim Cramer Says You’re Going To “Lose Some Money” With NVIDIA Corporation (NVDA)  Yahoo Finance",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9zWVljallJUkVwS3R3dmNmUlNldXl2ZTY5eDh5XzhfUVN1U25ZdUtHUmdOTzBiZVZHU3p1ZkMtMXdPd3pPVFdTem1FQkFtLS00djE5R2h5Z1N0aC00Z1dHMTFSQzdVNkJNbUczX0llSFhncFBXeWdibmhwUTQ?oc=5",
+      "timestamp": "2025-09-03T10:06:29",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 193,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "After Earnings, Is Nvidia Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+      "full_text": "After Earnings, Is Nvidia Stock a Buy, a Sell, or Fairly Valued? - Morningstar. After Earnings, Is Nvidia Stock a Buy, a Sell, or Fairly Valued?  Morningstar",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNei1HNDB5ZklCNEhDZEFvdy1idHM2MnNqclVYM0pHXzRRVlFSOE1BTDBJai1HQXQyOTVkZVZhYnZlaFFySmVnTE02c2djbXJBWE5fZ2MxZWRLTmk0ZXk5S0ZPS0FSekxYZi04YUhhYl9VOXdVTFVEUGVPQkVmZzBXcVdsV2R3elVkbmJmbjNTRHQ4c1gxUlFWVw?oc=5",
+      "timestamp": "2025-09-03T08:46:10",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 157,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "NVDA Stock Price | NVIDIA Corp",
+      "full_text": "NVDA Stock Price | NVIDIA Corp. Stock Quote (U.S.: Nasdaq) | MarketWatch",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "MarketWatch",
+      "url": "",
+      "timestamp": "2025-09-03T05:52:09.071941",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 72,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Watch for this signal in Nvidia stock to capitalize on spring-loaded gains ahead - Business Insider",
+      "full_text": "Watch for this signal in Nvidia stock to capitalize on spring-loaded gains ahead - Business Insider. Watch for this signal in Nvidia stock to capitalize on spring-loaded gains ahead  Business Insider Watch for this signal in Nvidia stock to capitalize on spring-loaded gains ahead. This story is available exclusively to Business Insider subscribers. Become an Insider and start reading now. It's been a volatile year for shares of Nvidia, with the stock plunging 31% to start the year before rallying 84% since April lows. Sam Pierson, the director of research at S3 Partners, has found a fairly reliable way to capitalize on that volatility. Or rather, a metric to watch within the stock that serves as a signal for outsized gains ahead. It's called the long-to-short ratio, and it's calculated by taking a stock's active long interest and dividing it by short interest. In new research published Tuesday, Pierson found that following notable increases in the ratio, Nvidia's share price has typically surged over the following few months. More specifically, when the ratio climbs to 1.5 standard deviations above its six-month moving average, it's gone up 11% over the following month. That's nearly double the usual average monthly gain of 6%. For the subsequent three-month period, following the signal, Nvidia has returned 28%, versus 19% normally. The stock saw gains 86% of the time in the month following a reading above the 1.5-standard-deviation threshold. When the stock saw rare losses during those periods, it only fell by an average of 1%. These findings led Pierson to call the ratio a \"powerful short-to-intermediate-term tool,\" as it seems to lose its ability to predict returns beyond six months. Here's a chart showing the returns. Periods when the long-to-short ratio is at least at 1.5 are shaded orange. Nvidia's stock returns are shown in the black line. Right now, the measure is below the 1.5 standard-deviation threshold as the ratio of long positions to short positions has fallen in recent weeks to 15.4. S3 Partners The model has continued to be effective so far this year. Related stories Business Insider tells the innovative stories you want to know Business Insider tells the innovative stories you want to know \"In 2025 year-to-date, the LTS extreme signal has remained effective: across 46 threshold days, NVDA delivered an average +7% forward 1M return with a 76% win rate, compared with just +5% on all days, with a 54% win rate,\" Pierson wrote. He added: \"In 2025, periods of Long-to-Short crowding in NVIDIA have coincided with roughly double the baseline 1-month forward return.\" Nvidia stock has had a rough 10 days after it warned of slowing growth ahead during its quarterly earnings call last week. Since August 26, the stock is down 6.5%. The stock remains a favorite among investors. Brokerage platform Interactive Brokers said Nvidia was the most bought stock over the last five trading days with 234,628 buy orders. \"Our customers are certainly a faithful bunch.",
+      "raw_extracted_text": "Watch for this signal in Nvidia stock to capitalize on spring-loaded gains ahead. This story is available exclusively to Business Insider subscribers. Become an Insider and start reading now. It's been a volatile year for shares of Nvidia, with the stock plunging 31% to start the year before rallying 84% since April lows. Sam Pierson, the director of research at S3 Partners, has found a fairly reliable way to capitalize on that volatility. Or rather, a metric to watch within the stock that serves as a signal for outsized gains ahead. It's called the long-to-short ratio, and it's calculated by taking a stock's active long interest and dividing it by short interest. In new research published Tuesday, Pierson found that following notable increases in the ratio, Nvidia's share price has typically surged over the following few months. More specifically, when the ratio climbs to 1.5 standard deviations above its six-month moving average, it's gone up 11% over the following month. That's nearly double the usual average monthly gain of 6%. For the subsequent three-month period, following the signal, Nvidia has returned 28%, versus 19% normally. The stock saw gains 86% of the time in the month following a reading above the 1.5-standard-deviation threshold. When the stock saw rare losses during those periods, it only fell by an average of 1%. These findings led Pierson to call the ratio a \"powerful short-to-intermediate-term tool,\" as it seems to lose its ability to predict returns beyond six months. Here's a chart showing the returns. Periods when the long-to-short ratio is at least at 1.5 are shaded orange. Nvidia's stock returns are shown in the black line. Right now, the measure is below the 1.5 standard-deviation threshold as the ratio of long positions to short positions has fallen in recent weeks to 15.4. S3 Partners The model has continued to be effective so far this year. Related stories Business Insider tells the innovative stories you want to know Business Insider tells the innovative stories you want to know \"In 2025 year-to-date, the LTS extreme signal has remained effective: across 46 threshold days, NVDA delivered an average +7% forward 1M return with a 76% win rate, compared with just +5% on all days, with a 54% win rate,\" Pierson wrote. He added: \"In 2025, periods of Long-to-Short crowding in NVIDIA have coincided with roughly double the baseline 1-month forward return.\" Nvidia stock has had a rough 10 days after it warned of slowing growth ahead during its quarterly earnings call last week. Since August 26, the stock is down 6.5%. The stock remains a favorite among investors. Brokerage platform Interactive Brokers said Nvidia was the most bought stock over the last five trading days with 234,628 buy orders. \"Our customers are certainly a faithful bunch.",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdmxLWUJkZUw4SEVnYzZwMi1Gb1B0Wk83MUI1N2t6RnpKZC1JZWdCOTdwMjJReVhLc25NMWtUV09UX3l0Z2VraFVQaEkzNWdOdW9XbWpQaThtNzFpdnZodmFjS1lyNTAzZzBpMUlCWXNPWWZndlFzaWhfRDlmUmNnb3pJTXdzYTNycHlXMHdHWWlFSXB0eHRuNnZfQVdMTEpxcUtzag?oc=5",
+      "timestamp": "2025-09-03T05:40:00",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 3011,
+      "extracted_length": 2811,
+      "enhancement_ratio": 93.4
+    },
+    {
+      "title": "Why Nvidia and Other Chip Stocks' Slump Is an Opportunity for Investors, UBS Says - Investopedia",
+      "full_text": "Why Nvidia and Other Chip Stocks' Slump Is an Opportunity for Investors, UBS Says - Investopedia. Why Nvidia and Other Chip Stocks' Slump Is an Opportunity for Investors, UBS Says  Investopedia",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOX2xsbGtuaTExWXF5WHNkdVZfa011OElPMVlnZzRITFlDQjVDXzJ4NHdabkdxRkRXTGROcTBTWXNYcmJnVG9wSUpVbXA4NDFnOVFLS3dzdGxoRHpPell3S2dHVnB2OTF0RHZ2NVRSNjFtemhVZHVmUGo4bVhQUkF1VElHM2lxbTRDdDduUHltTTlOME5QcklSOHV5QkpSSjgxOF9pU19CUlNVOGkyc2pDSzg1WnFneE44?oc=5",
+      "timestamp": "2025-09-02T10:49:14",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 193,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Nvidia Stock Falls",
+      "full_text": "Nvidia Stock Falls. Why the Post-Earnings Slump Is Rolling On. - Barron's. Nvidia Stock Falls. Why the Post-Earnings Slump Is Rolling On.  Barron'sNvidia Falls. Why China and Broadcom Could Move the Stock.  Barron'sShould You Avoid Nvidia Stock?  The Motley Fool",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1zREpyWm96RVRxWkdEVkloUTlvZmQyZ2gyRGl4dldGN21icG5DZEhpUmxNb1NNSEhqd1NXSzBHbFBGM1o2cUdCX1g5dldnNVhqM1hYQ3JUeTRzeWFuUE1OdmJIRTBrMDJpenZOZWZTbzZKcU5JVjY4SQ?oc=5",
+      "timestamp": "2025-09-02T06:57:00",
+      "polarity": -0.7,
+      "compound": -0.63,
+      "sentiment_label": "Negative",
+      "text_length": 262,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "How Large Can Nvidia Grow - It Won't 10x Anymore (NASDAQ:NVDA) - Seeking Alpha",
+      "full_text": "How Large Can Nvidia Grow - It Won't 10x Anymore (NASDAQ:NVDA) - Seeking Alpha. How Large Can Nvidia Grow - It Won't 10x Anymore (NASDAQ:NVDA)  Seeking Alpha How Large Can Nvidia Grow - It Won't 10x Anymore (NASDAQ:NVDA). Getty Images NVIDIA's (NASDAQ:NVDA) (TSX:NVDA:CA) stock is up 12.2x in the last five years. Over the same timeframe, the firm's revenue grew 10.2x. Today, Nvidia is the most valuable company with a market cap of $4.23T. Following the massive",
+      "raw_extracted_text": "How Large Can Nvidia Grow - It Won't 10x Anymore (NASDAQ:NVDA). Getty Images NVIDIA's (NASDAQ:NVDA) (TSX:NVDA:CA) stock is up 12.2x in the last five years. Over the same timeframe, the firm's revenue grew 10.2x. Today, Nvidia is the most valuable company with a market cap of $4.23T. Following the massive",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQzBVTTktMzlKZ05peVFfaGE0M0VPbVBEcGhnb0J5bU9pd2NpQzM1SU5jWUVlMk1YMTlEWTdaWVUtNVVXUkJnUDJycThXUV84VmthOXJ2NlBiUURMVDZlTGMxUnBRNmxQbExKeTZjVS1yQ0dRUFVJczVwVmV5VDdqUjFyYlhKblZfeUYzZFpXNmItVFpvazZz?oc=5",
+      "timestamp": "2025-09-02T06:00:00",
+      "polarity": 0.7089,
+      "compound": 0.8861,
+      "sentiment_label": "Very Positive",
+      "text_length": 463,
+      "extracted_length": 305,
+      "enhancement_ratio": 65.9
+    }
+  ],
+  "newspaper3k_stats": {
+    "total_articles": 21,
+    "enhanced_articles": 7,
+    "total_extracted_chars": 14434,
+    "avg_enhancement_ratio": 2062.0,
+    "sources_with_enhancement": [
+      {
+        "source": "Bloomberg",
+        "enhanced_count": 1,
+        "avg_extracted_chars": 580.0
+      },
+      {
+        "source": "Google News",
+        "enhanced_count": 5,
+        "avg_extracted_chars": 2278.0
+      },
+      {
+        "source": "Yahoo Finance",
+        "enhanced_count": 1,
+        "avg_extracted_chars": 2466.0
+      }
+    ]
+  }
+}

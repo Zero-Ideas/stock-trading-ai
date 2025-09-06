@@ -1,0 +1,236 @@
+{
+  "symbol": "AMZN",
+  "company_name": "Amazon.com Inc.",
+  "analysis_timestamp": "2025-09-05T20:17:41.362909",
+  "total_articles": 10,
+  "overall_sentiment": "Very Positive",
+  "sentiment_scores": {
+    "average_sentiment": 0.335,
+    "weighted_avg_from_sources": 0.394
+  },
+  "sentiment_distribution": {
+    "positive": 6,
+    "negative": 1,
+    "neutral": 3,
+    "positive_percentage": 60.0,
+    "negative_percentage": 10.0,
+    "neutral_percentage": 30.0
+  },
+  "source_breakdown": {
+    "Google News": {
+      "count": 6,
+      "avg_sentiment": 0.39247733333333334
+    },
+    "NewsAPI (Yahoo Entertainment)": {
+      "count": 4,
+      "avg_sentiment": 0.39596375
+    }
+  },
+  "recent_articles": [
+    {
+      "text": "Amazon Stock Price Forecast – Anthropic $183B AI Bet Puts NASDAQ:AMZN on Path to $300 - beritasriwijaya.co.id. Amazon Stock Price Forecast – Anthropic $183B AI Bet Puts NASDAQ:AMZN on Path to $300  be...",
+      "sentiment": 0.63,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNb2NiMVBKQ3J0ZkxiaFFkS19tb3pYcmRUVXRqYms5dDhaSzkzNXNOSGtzaHB0SmxCR2dtS1Vlc0NCZHNGNWU3d253M3U1dkQ4blJVNFE2TDc3V1Zzbnk1bEJTUnU0RVluRFVfWk92UjJQNEtkMzBzRkJkWlJfZlBqSFhReGlwOXFiaVZ2QlN3ZFVjUU1ENzdVUmlZWmZoM0dtbVhqNFo2VmpEa05IUk5Lc1ZfTXFTMFIycFl2Sg?oc=5",
+      "timestamp": "2025-09-05T12:20:50"
+    },
+    {
+      "text": "Why Amazon (AMZN) Shares Are Moving Upwards Today. amazon bets big on anthropic to challenge nvidia's ai dominance. This article first appeared on GuruFocus. Sep 4 - Amazon (NASDAQ:AMZN) stock ticked ...",
+      "sentiment": 0.688405,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/why-amazon-amzn-shares-moving-202530804.html",
+      "timestamp": "2025-09-04T20:25:30"
+    },
+    {
+      "text": "Amazon stock pops after Project Kuiper lands JetBlue internet deal. Amazon stock gained over 4% on Thursday afternoon after the company announced that its satellite internet business, Project Kuiper, ...",
+      "sentiment": 0.0,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/amazon-stock-pops-after-project-kuiper-lands-jetblue-internet-deal-191652162.html",
+      "timestamp": "2025-09-04T19:16:52"
+    },
+    {
+      "text": "Amazon (AMZN) Maintains Lead in US E-Commerce Retail, per JPM. Amazon.com, Inc. (NASDAQ:AMZN) is placed 1st on our list of the best stocks to buy. On August 21, JPMorgan reported that Amazon grew its ...",
+      "sentiment": 0.89545,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/amazon-amzn-maintains-lead-us-190534709.html",
+      "timestamp": "2025-09-04T19:05:34"
+    },
+    {
+      "text": "Pershing Square Holdings’ New Addition: Amazon.com (AMZN). Pershing Square Holdings, an investment holding company, released its first half 2025 investor letter. A copy of the same can be downloaded h...",
+      "sentiment": 0.0,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/pershing-square-holdings-addition-amazon-134436536.html",
+      "timestamp": "2025-09-04T13:44:36"
+    }
+  ],
+  "raw_articles": [
+    {
+      "title": "Amazon Stock Price Forecast – Anthropic $183B AI Bet Puts NASDAQ:AMZN on Path to $300 - beritasriwijaya",
+      "full_text": "Amazon Stock Price Forecast – Anthropic $183B AI Bet Puts NASDAQ:AMZN on Path to $300 - beritasriwijaya.co.id. Amazon Stock Price Forecast – Anthropic $183B AI Bet Puts NASDAQ:AMZN on Path to $300  beritasriwijaya.co.id",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNb2NiMVBKQ3J0ZkxiaFFkS19tb3pYcmRUVXRqYms5dDhaSzkzNXNOSGtzaHB0SmxCR2dtS1Vlc0NCZHNGNWU3d253M3U1dkQ4blJVNFE2TDc3V1Zzbnk1bEJTUnU0RVluRFVfWk92UjJQNEtkMzBzRkJkWlJfZlBqSFhReGlwOXFiaVZ2QlN3ZFVjUU1ENzdVUmlZWmZoM0dtbVhqNFo2VmpEa05IUk5Lc1ZfTXFTMFIycFl2Sg?oc=5",
+      "timestamp": "2025-09-05T12:20:50",
+      "polarity": 0.7,
+      "compound": 0.63,
+      "sentiment_label": "Positive",
+      "text_length": 219,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Why Amazon (AMZN) Shares Are Moving Upwards Today",
+      "full_text": "Why Amazon (AMZN) Shares Are Moving Upwards Today. amazon bets big on anthropic to challenge nvidia's ai dominance. This article first appeared on GuruFocus. Sep 4 - Amazon (NASDAQ:AMZN) stock ticked 3.5% higher on Thursday as its artificial intelligence partnership with Anthropic fuels new growth opportunities. … Why Amazon (AMZN) Shares Are Moving Upwards Today. This article first appeared on GuruFocus. Sep 4 - Amazon (NASDAQ:AMZN) stock ticked 3.5% higher on Thursday as its artificial intelligence partnership with Anthropic fuels new growth opportunities. The e-commerce and cloud giant is investing heavily in data center expansion and its in-house Trainium chips, both of which are central to Anthropic's AI development. Industry publication SemiAnalysis reports Amazon Web Services is building three massive data center campuses for Anthropic with a combined capacity near 1.3 gigawatts, intended to support large-scale training runs. Those sites should host one of the largest deployments of AWS's Trainium2 chips yet, purpose-built and tuned for Anthropic's large language models. Exact chip totals remain unconfirmed; some industry reports put the Indiana Project Rainier site at roughly 640,000 Trainium2 accelerators, a scale that would already rank among the largest non-Nvidia AI clusters. The buildout underscores Amazon's push to broaden in-house AI infrastructure and lessen reliance on Nvidia GPUs while positioning AWS as a major AI training provider. Analysts see this as a potential boost to Amazon's revenue growth. Barclays analyst Ross Sandler highlighted Anthropic's enterprise-focused business model as a differentiator from rival OpenAI, which leans on consumer subscriptions. The tie-up underscores Amazon's push to reduce reliance on Nvidia while positioning AWS as a key AI infrastructure provider.",
+      "raw_extracted_text": "Why Amazon (AMZN) Shares Are Moving Upwards Today. This article first appeared on GuruFocus. Sep 4 - Amazon (NASDAQ:AMZN) stock ticked 3.5% higher on Thursday as its artificial intelligence partnership with Anthropic fuels new growth opportunities. The e-commerce and cloud giant is investing heavily in data center expansion and its in-house Trainium chips, both of which are central to Anthropic's AI development. Industry publication SemiAnalysis reports Amazon Web Services is building three massive data center campuses for Anthropic with a combined capacity near 1.3 gigawatts, intended to support large-scale training runs. Those sites should host one of the largest deployments of AWS's Trainium2 chips yet, purpose-built and tuned for Anthropic's large language models. Exact chip totals remain unconfirmed; some industry reports put the Indiana Project Rainier site at roughly 640,000 Trainium2 accelerators, a scale that would already rank among the largest non-Nvidia AI clusters. The buildout underscores Amazon's push to broaden in-house AI infrastructure and lessen reliance on Nvidia GPUs while positioning AWS as a major AI training provider. Analysts see this as a potential boost to Amazon's revenue growth. Barclays analyst Ross Sandler highlighted Anthropic's enterprise-focused business model as a differentiator from rival OpenAI, which leans on consumer subscriptions. The tie-up underscores Amazon's push to reduce reliance on Nvidia while positioning AWS as a key AI infrastructure provider.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/why-amazon-amzn-shares-moving-202530804.html",
+      "timestamp": "2025-09-04T20:25:30",
+      "polarity": 0.5507,
+      "compound": 0.6884,
+      "sentiment_label": "Positive",
+      "text_length": 1833,
+      "extracted_length": 1517,
+      "enhancement_ratio": 82.8
+    },
+    {
+      "title": "Amazon stock pops after Project Kuiper lands JetBlue internet deal",
+      "full_text": "Amazon stock pops after Project Kuiper lands JetBlue internet deal. Amazon stock gained over 4% on Thursday afternoon after the company announced that its satellite internet business, Project Kuiper, landed JetBlue as its.... Amazon (AMZN) stock gained over 4% on Thursday afternoon after the company announced that its satellite internet business, Project Kuiper, landed JetBlue (JBLU) as its first airline customer. JetBlue… Amazon stock pops after Project Kuiper lands JetBlue internet deal. Amazon (AMZN) stock gained over 4% on Thursday afternoon after the company announced that its satellite internet business, Project Kuiper, landed JetBlue (JBLU) as its first airline customer. JetBlue stock fell 6%. Read more about Amazon's stock moves and today's market action. Starting in 2027, Project Kuiper's network of low-Earth-orbit satellites will provide Wi-Fi connectivity on select JetBlue flights. JetBlue, which has offered free Wi-Fi on its flights since 2013, is the first airline to sign on to use Project Kuiper's satellite network as Amazon looks to scale the company and catch up with Elon Musk's larger rival service, SpaceX (SPAX.PVT) subsidiary Starlink. While Project Kuiper has numerous launch deals with Blue Origin, founded by Amazon founder Jeff Bezos, the company is a separate entity that was established in 2019. After launching its first batch of satellites in April, Project Kuiper has placed more than 100 satellites into orbit and aims to launch more than 3,200 satellites overall. In comparison, Starlink operates over 8,000 satellites in low-Earth orbit. Starlink has also partnered with United Airlines (UAL) to provide its in-flight internet service. Project Kuiper has been inking deals with enterprise customers as it ramps up its service in preparation for a wider commercial launch. For instance, earlier this year, Project Kuiper announced an agreement with Airbus (AIR.PA) to integrate its technology into the plane maker's aircraft. Amazon's Project Kuiper has launched over 100 satellites so far this year as it aims to take on Elon Musk's Starlink. On the company's earnings call, Amazon CEO Andy Jassy said he thinks Project Kuiper will be able to take on Starlink in performance and pricing when it goes after the 400 million to 500 million households worldwide without broadband internet. \"I'm kind of amazed we haven't launched Project Kuiper yet,\" Jassy said. \"But the number of enterprise and government agreements that have been signed already to use Project Kuiper is impressive. So we're working very hard to get the satellites into space. We have some delays with some of the rocket providers, but we have most of the available rocket launches over the next couple of years, and we're very hopeful to get the service [to become commercial] ... later this year or early next year.\" Click here for the latest technology news that will impact the stock market Read the latest financial and business news from Yahoo Finance",
+      "raw_extracted_text": "Amazon stock pops after Project Kuiper lands JetBlue internet deal. Amazon (AMZN) stock gained over 4% on Thursday afternoon after the company announced that its satellite internet business, Project Kuiper, landed JetBlue (JBLU) as its first airline customer. JetBlue stock fell 6%. Read more about Amazon's stock moves and today's market action. Starting in 2027, Project Kuiper's network of low-Earth-orbit satellites will provide Wi-Fi connectivity on select JetBlue flights. JetBlue, which has offered free Wi-Fi on its flights since 2013, is the first airline to sign on to use Project Kuiper's satellite network as Amazon looks to scale the company and catch up with Elon Musk's larger rival service, SpaceX (SPAX.PVT) subsidiary Starlink. While Project Kuiper has numerous launch deals with Blue Origin, founded by Amazon founder Jeff Bezos, the company is a separate entity that was established in 2019. After launching its first batch of satellites in April, Project Kuiper has placed more than 100 satellites into orbit and aims to launch more than 3,200 satellites overall. In comparison, Starlink operates over 8,000 satellites in low-Earth orbit. Starlink has also partnered with United Airlines (UAL) to provide its in-flight internet service. Project Kuiper has been inking deals with enterprise customers as it ramps up its service in preparation for a wider commercial launch. For instance, earlier this year, Project Kuiper announced an agreement with Airbus (AIR.PA) to integrate its technology into the plane maker's aircraft. Amazon's Project Kuiper has launched over 100 satellites so far this year as it aims to take on Elon Musk's Starlink. On the company's earnings call, Amazon CEO Andy Jassy said he thinks Project Kuiper will be able to take on Starlink in performance and pricing when it goes after the 400 million to 500 million households worldwide without broadband internet. \"I'm kind of amazed we haven't launched Project Kuiper yet,\" Jassy said. \"But the number of enterprise and government agreements that have been signed already to use Project Kuiper is impressive. So we're working very hard to get the satellites into space. We have some delays with some of the rocket providers, but we have most of the available rocket launches over the next couple of years, and we're very hopeful to get the service [to become commercial] ... later this year or early next year.\" Click here for the latest technology news that will impact the stock market Read the latest financial and business news from Yahoo Finance",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/amazon-stock-pops-after-project-kuiper-lands-jetblue-internet-deal-191652162.html",
+      "timestamp": "2025-09-04T19:16:52",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 2972,
+      "extracted_length": 2545,
+      "enhancement_ratio": 85.6
+    },
+    {
+      "title": "Amazon (AMZN) Maintains Lead in US E-Commerce Retail, per JPM",
+      "full_text": "Amazon (AMZN) Maintains Lead in US E-Commerce Retail, per JPM. Amazon.com, Inc. (NASDAQ:AMZN) is placed 1st on our list of the best stocks to buy. On August 21, JPMorgan reported that Amazon grew its lead in the American.... Amazon.com, Inc. (NASDAQ:AMZN) is placed 1st on our list of the best stocks to buy. On August 21, JPMorgan reported that Amazon grew its lead in the American e-commerce market during Q2 2025, mainly … Amazon (AMZN) Maintains Lead in US E-Commerce Retail, per JPM. Amazon.com, Inc. (NASDAQ:AMZN) is placed 1st on our list of the best stocks to buy. On August 21, JPMorgan reported that Amazon grew its lead in the American e-commerce market during Q2 2025, mainly because of faster retail growth and strong logistics. In its updated e-commerce model for the United States, JPMorgan mentioned that online sales grew 5.3% in the second quarter compared to last year, which is close to the 5.6% growth seen in the first quarter. Analysts added that US e-commerce kept growing for the tenth quarter in a row, increasing by 0.17% from last year to make up 21.9% of adjusted retail sales. Amazon (AMZN) Maintains Lead in US E-Commerce Retail, per JPM christian-wiediger-rymh7EZPqRs-unsplash JPMorgan noted that Amazon’s retail business did better than the overall market, with global first-party sales up 10% from last year, compared to 6% growth in the previous quarter. Third-party sales also rose 10%, up from 7% in the first quarter, driven by high demand for essentials, very fast SD1D delivery, and growth of the Prime ecosystem. JPMorgan analysts estimate that Amazon’s share of the US e-commerce market went up by more than two points from last year, reaching 46.8% in the second quarter. They expect it to grow to 47.4% in Q3 and 49.2% in Q4. The analysts maintained that Amazon is positioned as the leader in e-commerce and kept it as their “Best Idea.” While we acknowledge the potential of AMZN as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: Dow 20 Stocks List: Ranked By Hedge Fund Bullishness Index and 10 Unstoppable Dividend Stocks to Buy Now. Disclosure. None.",
+      "raw_extracted_text": "Amazon (AMZN) Maintains Lead in US E-Commerce Retail, per JPM. Amazon.com, Inc. (NASDAQ:AMZN) is placed 1st on our list of the best stocks to buy. On August 21, JPMorgan reported that Amazon grew its lead in the American e-commerce market during Q2 2025, mainly because of faster retail growth and strong logistics. In its updated e-commerce model for the United States, JPMorgan mentioned that online sales grew 5.3% in the second quarter compared to last year, which is close to the 5.6% growth seen in the first quarter. Analysts added that US e-commerce kept growing for the tenth quarter in a row, increasing by 0.17% from last year to make up 21.9% of adjusted retail sales. Amazon (AMZN) Maintains Lead in US E-Commerce Retail, per JPM christian-wiediger-rymh7EZPqRs-unsplash JPMorgan noted that Amazon’s retail business did better than the overall market, with global first-party sales up 10% from last year, compared to 6% growth in the previous quarter. Third-party sales also rose 10%, up from 7% in the first quarter, driven by high demand for essentials, very fast SD1D delivery, and growth of the Prime ecosystem. JPMorgan analysts estimate that Amazon’s share of the US e-commerce market went up by more than two points from last year, reaching 46.8% in the second quarter. They expect it to grow to 47.4% in Q3 and 49.2% in Q4. The analysts maintained that Amazon is positioned as the leader in e-commerce and kept it as their “Best Idea.” While we acknowledge the potential of AMZN as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock. READ NEXT: Dow 20 Stocks List: Ranked By Hedge Fund Bullishness Index and 10 Unstoppable Dividend Stocks to Buy Now. Disclosure. None.",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/amazon-amzn-maintains-lead-us-190534709.html",
+      "timestamp": "2025-09-04T19:05:34",
+      "polarity": 0.7164,
+      "compound": 0.8954,
+      "sentiment_label": "Very Positive",
+      "text_length": 2366,
+      "extracted_length": 1940,
+      "enhancement_ratio": 82.0
+    },
+    {
+      "title": "Pershing Square Holdings’ New Addition: Amazon",
+      "full_text": "Pershing Square Holdings’ New Addition: Amazon.com (AMZN). Pershing Square Holdings, an investment holding company, released its first half 2025 investor letter. A copy of the same can be downloaded here. In the.... Pershing Square Holdings, an investment holding company, released its first half 2025 investor letter. A copy of the same can be downloaded here. In the first half of 2025, the companys NAV per share… Pershing Square Holdings’ New Addition: Amazon.com (AMZN). Pershing Square Holdings, an investment holding company, released its first half 2025 investor letter. A copy of the same can be downloaded here. In the first half of 2025, the company’s NAV per share increased by 15.5% and 17.7% year-to-date through August 19, 2025. The company’s share price rose by 9.9% and 16.5% during these periods, while the S&P 500 increased by 6.2% and 9.9%, respectively. The first half of 2025 was characterized by complex macroeconomic and geopolitical dynamics, contributing to broad uncertainty. In addition, please check the fund’s top five holdings to know its best picks in 2025. In its second-quarter 2025 investor letter, Pershing Square Holdings highlighted stocks such as Amazon.com, Inc. (NASDAQ:AMZN). Amazon.com, Inc. (NASDAQ:AMZN) provides consumer products, advertising, and subscription services through online and physical stores. The one-month return of Amazon.com, Inc. (NASDAQ:AMZN) was 1.28%, and its shares gained 27.04% of their value over the last 52 weeks. On September 03, 2025, Amazon.com, Inc. (NASDAQ:AMZN) stock closed at $225.99 per share, with a market capitalization of $2.41 trillion. Pershing Square Holdings stated the following regarding Amazon.com, Inc. (NASDAQ:AMZN) in its second quarter 2025 investor letter:",
+      "raw_extracted_text": "Pershing Square Holdings’ New Addition: Amazon.com (AMZN). Pershing Square Holdings, an investment holding company, released its first half 2025 investor letter. A copy of the same can be downloaded here. In the first half of 2025, the company’s NAV per share increased by 15.5% and 17.7% year-to-date through August 19, 2025. The company’s share price rose by 9.9% and 16.5% during these periods, while the S&P 500 increased by 6.2% and 9.9%, respectively. The first half of 2025 was characterized by complex macroeconomic and geopolitical dynamics, contributing to broad uncertainty. In addition, please check the fund’s top five holdings to know its best picks in 2025. In its second-quarter 2025 investor letter, Pershing Square Holdings highlighted stocks such as Amazon.com, Inc. (NASDAQ:AMZN). Amazon.com, Inc. (NASDAQ:AMZN) provides consumer products, advertising, and subscription services through online and physical stores. The one-month return of Amazon.com, Inc. (NASDAQ:AMZN) was 1.28%, and its shares gained 27.04% of their value over the last 52 weeks. On September 03, 2025, Amazon.com, Inc. (NASDAQ:AMZN) stock closed at $225.99 per share, with a market capitalization of $2.41 trillion. Pershing Square Holdings stated the following regarding Amazon.com, Inc. (NASDAQ:AMZN) in its second quarter 2025 investor letter:",
+      "extraction_successful": true,
+      "source": "NewsAPI (Yahoo Entertainment)",
+      "url": "https://finance.yahoo.com/news/pershing-square-holdings-addition-amazon-134436536.html",
+      "timestamp": "2025-09-04T13:44:36",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 1753,
+      "extracted_length": 1336,
+      "enhancement_ratio": 76.2
+    },
+    {
+      "title": "Why Amazon (AMZN) Shares Are Moving Upwards Today - Yahoo Finance",
+      "full_text": "Why Amazon (AMZN) Shares Are Moving Upwards Today - Yahoo Finance. Why Amazon (AMZN) Shares Are Moving Upwards Today  Yahoo Finance",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVmo4NTBkdVlGbVdBN1o0aVlIYVo1SmhfajJDNGJ2OVVCUGJwMnNrd0liRFdsaXYwZXBLNXNWd21Hb2FxamNJMzZFVV95ajFjT2xoQS1FN2FZVTdrci1JZlUtWDczUkJtU0JtN0ZWcWxlY1I4N3ltMDJocjU4SlIteA?oc=5",
+      "timestamp": "2025-09-04T13:25:30",
+      "polarity": 0.0,
+      "compound": 0.0,
+      "sentiment_label": "Neutral",
+      "text_length": 131,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "What's Going On With Amazon Stock Thursday? - Amazon",
+      "full_text": "What's Going On With Amazon Stock Thursday? - Amazon.com (NASDAQ:AMZN) - Benzinga. What's Going On With Amazon Stock Thursday? - Amazon.com (NASDAQ:AMZN)  Benzinga What's Going On With Amazon Stock Thursday? - Amazon.com (NASDAQ:AMZN). Amazon.com Inc AMZN shares closed higher on Thursday afternoon after the company announced a deal with JetBlue Airways Corp JBLU. Here’s what investors need to know. Get the inside scoop on AMZN stock here. What To Know: Under the agreement, Amazon's Blue Origin unit will provide satellite internet to JetBlue aircraft, a project Kuiper partnership that could boost in-flight Wi-Fi. This positive news comes despite a reported slowdown in U.S. Prime membership sign-ups during the company's extended Prime Day event. While the company delivered record sales, the number of new Prime sign-ups fell short of internal goals by 193,000. Additionally, the stock's performance is being boosted by its advancements in the AI space. Amazon is reportedly developing an AI-powered workspace software called Quick Suite to compete with other tech giants like Google and Microsoft in the generative AI market. Benzinga Edge Rankings: According to Benzinga Edge rankings, Amazon stock demonstrates a standout quality with an impressive Growth score of 92.26. AMZN Price Action: According to data from Benzinga Pro, Amazon shares closed Thursday up 4.29% to $235.18. The stock has a 52-week high of $242.52 and a 52-week low of $161.43. Read Also: Sam Bankman-Fried Invested In Anthropic Early, Here’s How Much His Stake Would Be Worth If It Wasn’t Sold While He Was In Prison How To Buy AMZN Stock By now, you're likely curious about how to participate in the market for Amazon, be it to purchase shares or even attempt to bet against the company. Buying shares is typically done through a brokerage account. You can find a list of possible trading platforms here. Many will allow you to buy “fractional shares,” which allows you to own portions of stock without buying an entire share. In the case of Amazon, which was trading at $235.24 today, $100 would buy you 0.43 shares of stock. If you're looking to bet against a company, the process is more complex. You'll need access to an options trading platform or a broker who will allow you to “go short” a share of stock by lending you the shares to sell. The process of shorting a stock can be found at this resource. Otherwise, if your broker allows you to trade options, you can either buy a put option or sell a call option at a strike price above where shares are currently trading — either way, it allows you to profit from the share price decline. Loading... Loading... Read Next: Image: Shutterstock",
+      "raw_extracted_text": "What's Going On With Amazon Stock Thursday? - Amazon.com (NASDAQ:AMZN). Amazon.com Inc AMZN shares closed higher on Thursday afternoon after the company announced a deal with JetBlue Airways Corp JBLU. Here’s what investors need to know. Get the inside scoop on AMZN stock here. What To Know: Under the agreement, Amazon's Blue Origin unit will provide satellite internet to JetBlue aircraft, a project Kuiper partnership that could boost in-flight Wi-Fi. This positive news comes despite a reported slowdown in U.S. Prime membership sign-ups during the company's extended Prime Day event. While the company delivered record sales, the number of new Prime sign-ups fell short of internal goals by 193,000. Additionally, the stock's performance is being boosted by its advancements in the AI space. Amazon is reportedly developing an AI-powered workspace software called Quick Suite to compete with other tech giants like Google and Microsoft in the generative AI market. Benzinga Edge Rankings: According to Benzinga Edge rankings, Amazon stock demonstrates a standout quality with an impressive Growth score of 92.26. AMZN Price Action: According to data from Benzinga Pro, Amazon shares closed Thursday up 4.29% to $235.18. The stock has a 52-week high of $242.52 and a 52-week low of $161.43. Read Also: Sam Bankman-Fried Invested In Anthropic Early, Here’s How Much His Stake Would Be Worth If It Wasn’t Sold While He Was In Prison How To Buy AMZN Stock By now, you're likely curious about how to participate in the market for Amazon, be it to purchase shares or even attempt to bet against the company. Buying shares is typically done through a brokerage account. You can find a list of possible trading platforms here. Many will allow you to buy “fractional shares,” which allows you to own portions of stock without buying an entire share. In the case of Amazon, which was trading at $235.24 today, $100 would buy you 0.43 shares of stock. If you're looking to bet against a company, the process is more complex. You'll need access to an options trading platform or a broker who will allow you to “go short” a share of stock by lending you the shares to sell. The process of shorting a stock can be found at this resource. Otherwise, if your broker allows you to trade options, you can either buy a put option or sell a call option at a strike price above where shares are currently trading — either way, it allows you to profit from the share price decline. Loading... Loading... Read Next: Image: Shutterstock",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR0Y2X2NkRUtmOFJGci1JQ0M2RXAtSnVyd1B6UnhRUjdHOHQwZDA0NUkwS0pSak9NeXowWFl3ZlplY0ZMSGJvSnFHTExFbWNFNHdRWDRoMXBvM2VBc0ZkRkt5NnI3RmltMlNyYms0d3dJRlkzd0FxRkRHRWpMWmxtRi1WaENOc2tnaFVhNjV0RlVzNlBpckdSNGNoTzdaLS1uWXZ6TQ?oc=5",
+      "timestamp": "2025-09-04T13:11:29",
+      "polarity": 0.6339,
+      "compound": 0.7924,
+      "sentiment_label": "Very Positive",
+      "text_length": 2682,
+      "extracted_length": 2518,
+      "enhancement_ratio": 93.9
+    },
+    {
+      "title": "Jim Cramer Dismisses Worries About Amazon",
+      "full_text": "Jim Cramer Dismisses Worries About Amazon.com, Inc. (AMZN)’s Prime Business That Sent Stock Lower - Yahoo Finance. Jim Cramer Dismisses Worries About Amazon.com, Inc. (AMZN)’s Prime Business That Sent Stock Lower  Yahoo Finance",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMnZkbGpkQWJGUXFiVG93ejVSX1Z3UTRvZUdjM3VNX1Y1NmxmeUtCX0tfeGJhSGVmeWoycFBWbzJCR3V5LWF1LS1pMkhDZlhwZlRZRlNoZzhTYjFsLW1WYTdCWnRFQXNNbS1QbXVXT3FpWURZTDRWeGdHd0pCZnZzVHpqZm9wV0pn?oc=5",
+      "timestamp": "2025-09-04T12:29:42",
+      "polarity": -0.7,
+      "compound": -0.63,
+      "sentiment_label": "Negative",
+      "text_length": 227,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    },
+    {
+      "title": "Why Amazon is a leading mover in the stock market Thursday - CNBC",
+      "full_text": "Why Amazon is a leading mover in the stock market Thursday - CNBC. Why Amazon is a leading mover in the stock market Thursday  CNBC Why Amazon is a leading mover in the stock market Thursday. Wall Street is seeing a big revenue opportunity ahead for Amazon after this week's megafunding round for Anthropic, an artificial intelligence startup backed by the e-commerce giant. Shares of Amazon jumped more than 3% on Thursday, making it one of the S & P 500's best-performing stocks of the day. The stock is up more than 6% year to date after making a roughly 10% rebound over the past month, fueled by several catalysts including its relationship with quickly growing Anthropic, expansion of its same-day grocery delivery offerings and its newly minted deal for its satellite internet business. Of all these opportunities, Barclays sees the gold mine in Amazon's deep-rooted relationship with Anthropic. The startup trains its flagship generative AI Claude models primarily on Amazon Web Services, using Amazon's Trainium and Inferentia chips used for training and inference, respectively. Analyst Ross Sandler wrote in a note to clients on Thursday that Amazon could see significant upside by the fourth quarter, as Anthropic could be pre-training its Claude 5 model by that point, which he expects will contribute to AWS growth. \"AMZN shares have recovered a bit since the 2Q dip on anticipation of the re-acceleration of growth at AWS. We expect growth to pick up assuming AWS hangs on to its Anthropic training workloads (there have been grumblings in the industry about training issues with T3/Project Rainier),\" Sandler wrote. \"The quick take is that Anthropic is only adding 100bps to AWS growth currently (in 2Q25), but that might ramp up to as much as 400bps per quarter once Claude 5 training and the existing inference revenues are both flowing … this assumes the bulk of Anthropic training continues on AWS,\" Sandler continued. AMZN 1Y mountain Amazon stock performance over the past year. Sandler views Anthropic as a fast-growing challenger to OpenAI, given that its Application Programming Interface, or API, business has moved ahead over the past year. It includes paid subscription service Claude inclusive of its code-writing app Claude Code. Anthropic's API business is about double OpenAI's, Sandler said, citing press reports. Anthropic on Tuesday announced it closed a $13 billion funding round at a $183 billion post-money valuation, roughly triple what the company was worth at the time of its last funding round in March. Amazon in November had announced it would invest an additional $4 billion in Anthropic, which brought its total investment in the startup to $8 billion. Anthropic's valuation has quickly soared since it announced its AI assistant Claude in March 2023.",
+      "raw_extracted_text": "Why Amazon is a leading mover in the stock market Thursday. Wall Street is seeing a big revenue opportunity ahead for Amazon after this week's megafunding round for Anthropic, an artificial intelligence startup backed by the e-commerce giant. Shares of Amazon jumped more than 3% on Thursday, making it one of the S & P 500's best-performing stocks of the day. The stock is up more than 6% year to date after making a roughly 10% rebound over the past month, fueled by several catalysts including its relationship with quickly growing Anthropic, expansion of its same-day grocery delivery offerings and its newly minted deal for its satellite internet business. Of all these opportunities, Barclays sees the gold mine in Amazon's deep-rooted relationship with Anthropic. The startup trains its flagship generative AI Claude models primarily on Amazon Web Services, using Amazon's Trainium and Inferentia chips used for training and inference, respectively. Analyst Ross Sandler wrote in a note to clients on Thursday that Amazon could see significant upside by the fourth quarter, as Anthropic could be pre-training its Claude 5 model by that point, which he expects will contribute to AWS growth. \"AMZN shares have recovered a bit since the 2Q dip on anticipation of the re-acceleration of growth at AWS. We expect growth to pick up assuming AWS hangs on to its Anthropic training workloads (there have been grumblings in the industry about training issues with T3/Project Rainier),\" Sandler wrote. \"The quick take is that Anthropic is only adding 100bps to AWS growth currently (in 2Q25), but that might ramp up to as much as 400bps per quarter once Claude 5 training and the existing inference revenues are both flowing … this assumes the bulk of Anthropic training continues on AWS,\" Sandler continued. AMZN 1Y mountain Amazon stock performance over the past year. Sandler views Anthropic as a fast-growing challenger to OpenAI, given that its Application Programming Interface, or API, business has moved ahead over the past year. It includes paid subscription service Claude inclusive of its code-writing app Claude Code. Anthropic's API business is about double OpenAI's, Sandler said, citing press reports. Anthropic on Tuesday announced it closed a $13 billion funding round at a $183 billion post-money valuation, roughly triple what the company was worth at the time of its last funding round in March. Amazon in November had announced it would invest an additional $4 billion in Anthropic, which brought its total investment in the startup to $8 billion. Anthropic's valuation has quickly soared since it announced its AI assistant Claude in March 2023.",
+      "extraction_successful": true,
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTzdma1FYTXkyTmVNcUVDN2lzdEQwVEhmT3JYTHEyOXZNWWVUX041bmZNU2wtbjRjSkdvZ254eVRoUVlyMFF6Z05pRnFreTBBWjNUZmdiLTJHMVdBWnRlSXJ2bC1WRTdWZ0UwNnhpTnVtamdQM1ozbmJ3Uy1lV2FnMXJ2WlE0YkNxbl9sd2FucUpuaGQ0QWpzMzRBMA?oc=5",
+      "timestamp": "2025-09-04T09:47:33",
+      "polarity": 0.746,
+      "compound": 0.9324,
+      "sentiment_label": "Very Positive",
+      "text_length": 2797,
+      "extracted_length": 2665,
+      "enhancement_ratio": 95.3
+    },
+    {
+      "title": "As Amazon Copies The Netflix Playbook, Can AMZN Stock Copy The 425% Gains In NFLX? - Barchart",
+      "full_text": "As Amazon Copies The Netflix Playbook, Can AMZN Stock Copy The 425% Gains In NFLX? - Barchart.com. As Amazon Copies The Netflix Playbook, Can AMZN Stock Copy The 425% Gains In NFLX?  Barchart.com",
+      "raw_extracted_text": "",
+      "extraction_successful": "",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTVkySFVZNnJILU83OVJ6MDlxSlNWREx2TWhJX1E4dU12ZG4zUnFZMk1GUDkxeG81OUlJRmVmc0V0OGw3TlRSaVhfMTdDc1c4eV82c3NYODJYTkdMTThCelBjV3BhNGxJSjM2R05RSEV0VzBldVdhS01yV1UtQWxvMUswLVM5TmRQSXZnckNMd1I2V1ZldmU4Y2xxRzVOclU1STY0dzMydEVjeEtBMGZIMmFsaWF3ckkzSWVxSG1VNmN4Zw?oc=5",
+      "timestamp": "2025-09-04T09:20:44",
+      "polarity": 0.7,
+      "compound": 0.63,
+      "sentiment_label": "Positive",
+      "text_length": 195,
+      "extracted_length": 0,
+      "enhancement_ratio": 0.0
+    }
+  ],
+  "newspaper3k_stats": {
+    "total_articles": 10,
+    "enhanced_articles": 6,
+    "total_extracted_chars": 12521,
+    "avg_enhancement_ratio": 2086.8,
+    "sources_with_enhancement": [
+      {
+        "source": "NewsAPI (Yahoo Entertainment)",
+        "enhanced_count": 4,
+        "avg_extracted_chars": 1834.0
+      },
+      {
+        "source": "Google News",
+        "enhanced_count": 2,
+        "avg_extracted_chars": 2592.0
+      }
+    ]
+  }
+}

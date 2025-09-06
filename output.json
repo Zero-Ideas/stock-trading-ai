@@ -1,0 +1,21 @@
+{
+    "industry": "Media & Entertainment",
+    "overall_sentiment": 0.68,
+    "sentiment_label": "Positive",
+    "confidence_score": 0.72,
+    "key_trends": [
+        "Advertising-driven revenue growth across digital platforms (CTV, AVOD, social video) empowered by AI-powered targeting and hyper-personalisation",
+        "Generative AI accelerating content creation, localization, and efficiency across film, TV, games, and music",
+        "Streaming consolidation and password-sharing crackdowns lifting monetization, with live sports and events as growth catalysts",
+        "Social platforms expanding as entertainment destinations and ad giants, challenging traditional studios",
+        "Video gaming remains a major growth engine, outpacing traditional film/music revenues",
+        "Non-digital entertainment (live events, cinema) continues to contribute a sizable share of consumer spend despite streaming growth"
+    ],
+    "reasoning": "Industry forecasts from PwC (Global Entertainment & Media Outlook 2025-29, released July 24, 2025) indicate advertising as the fastest-growing revenue stream and AI-enabled innovations driving hyper-personalization and new monetization models. Deloitte's 2025 Digital Media Trends (March 25, 2025) highlight social video platforms as dominant ad spend drivers, while Nielsen (May 2025) shows AVOD/CTV adoption rising and streaming time increasing. Despite consumer budget constraints, these dynamics\u2014AI-assisted production, ad-supported streaming, and social platforms expanding as entertainment hubs\u2014support a positive overall trajectory for Media & Entertainment in 2025\u20132029.",
+    "sources": [
+        "https://www.pwc.com/gx/en/news-room/press-releases/2025/pwc-global-entertainment-media-outlook.html",
+        "https://www2.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/2025-media-entertainment-outlook.html",
+        "https://www.nielsen.com/insights/2025/connected-tv-transforming-advertising-trends/",
+        "https://www2.deloitte.com/us/en/insights/industry/technology/digital-media-trends-consumption-habits-survey/2025.html"
+    ]
+}

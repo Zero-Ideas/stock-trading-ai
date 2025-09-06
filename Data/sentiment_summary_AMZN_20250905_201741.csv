@@ -1,0 +1,2 @@
+Symbol,Company_Name,Analysis_Timestamp,Total_Articles,Overall_Sentiment,Average_Sentiment,Weighted_Avg_From_Sources,Positive_Count,Negative_Count,Neutral_Count,Positive_Percentage,Negative_Percentage,Neutral_Percentage,Google_News_Count,Google_News_Avg_Sentiment,NewsAPI_Yahoo_Entertainment_Count,NewsAPI_Yahoo_Entertainment_Avg_Sentiment
+AMZN,Amazon.com Inc.,2025-09-05T20:17:41.362909,10,Very Positive,0.335,0.394,6,1,3,60.0,10.0,30.0,6,0.392,4,0.396

@@ -1,0 +1,11 @@
+{'industry': 'Technology', 'overall_sentiment': '0.62', 'sentiment_label': 'Positive', 'confidence_score': '0.75', 'key_trends': ['AI and cloud compute fueling demand for semiconductors and data-center infrastructure',
+        "Apple's Apple Silicon (M-series) strengthens hardware-software integration and services monetization", 'Growth in consumer devices and Services revenues across tech majors', 'Capex expansion in semiconductor manufacturing and advanced packaging', 'Regulatory scrutiny and antitrust considerations for large tech firms'
+    ], 'reasoning': "The Technology industry remains a growth engine driven by AI adoption, cloud compute, and expanding software/services ecosystems. Apple's leadership in silicon and integrated hardware-software strategy positions it well within this industry; however, regulatory and macroeconomic headwinds create some risk. Semiconductor demand tied to AI accelerators and data centers supports a positive near-term outlook; supply-side investments are easing some constraints.", 'sources': '[
+        "https://www.apple.com/newsroom/2025/07/apple-reports-third-quarter-results/",
+        "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/semiconductor-industry-outlook.html",
+        "https://www.infosys.com/iki/research/semiconductor-industry-outlook2025.html",
+        "https://www.tomshardware.com/tech-industry/tsmc-revenues-hit-record-high-in-q2-2025-earnings",
+        "https://www.barrons.com/articles/ai-chip-stocks-buy-ca97093b",
+        "https://futurumgroup.com/press-release/data-center-semiconductor-market-is-set-to-exceed-500-billion-in-2029-delivered-by-futurum/"
+    ]'
+}

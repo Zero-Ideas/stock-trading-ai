@@ -21,7 +21,7 @@ class GoogleNewsScraper(BaseScraper):
     def __init__(self, symbol: str, debug: bool = False):
         super().__init__(symbol, debug)
         self.company_name = self._get_company_name()
-        self.skip_enhancement = True  # Skip enhancement to prevent hanging during testing
+        self.skip_enhancement = False  # Enable newspaper3k enhancement
     
     def _get_company_name(self) -> str:
         """Get company name for the stock symbol"""
