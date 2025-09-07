@@ -1,4 +1,4 @@
-import sentiment, historicalDataGetter, macrosentiment
+import sentiment, historicalDataGetter, randoms.macrosentiment as macrosentiment
 from flask import Flask, request, jsonify, send_from_directory, send_file
 import os
 import json

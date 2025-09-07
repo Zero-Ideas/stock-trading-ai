@@ -64,14 +64,7 @@ def main():
                 print(f"Cache age: {results2.get('cache_age_hours', 0):.2f} hours")
             
             # Third analysis with force refresh - should use API
-            print("\n--- Third Analysis (Force Refresh) ---")
-            results3 = analyzer.analyze_industry(industry="Technology", force_refresh=True)
-            
-            print(f"Analysis Results:")
-            print(f"Industry: {results3['industry']}")
-            print(f"Sentiment: {results3['sentiment_label']} ({results3['overall_sentiment']:.3f})")
-            print(f"Data source: {'Cached' if results3.get('cached') else 'Fresh API call'}")
-            
+
     except Exception as e:
         print(f"Error in industry analysis: {e}")
     

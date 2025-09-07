@@ -177,15 +177,16 @@ class IndustryAnalyzer:
         from google import genai
         from google.genai import types
         print(f"[LAZY LOAD] Initializing Gemini client...")
-        
+        self.gemini_types = types
         # Set up Gemini
         if self._gemini_api_key:
             os.environ["GEMINI_API_KEY"] = self._gemini_api_key
-            self.gemini_types = types
+            
         if not os.environ.get("GEMINI_API_KEY"):
             raise ValueError("Gemini API key must be provided either as parameter or environment variable 'GEMINI_API_KEY'")
         
         self.gemini_client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+        print(self.gemini_types)
         self._gemini_initialized = True
     
     def _init_database(self):

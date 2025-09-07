@@ -14,7 +14,7 @@ import re
 import threading
 from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
-
+import base64
 # Try to import newspaper3k for better article extraction
 try:
     from newspaper import Article, Config
