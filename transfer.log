@@ -1,0 +1,119 @@
+2025-09-07 13:57:40,707 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 13:57:40,741 - INFO - Applied PostgreSQL performance settings
+2025-09-07 13:57:41,618 - INFO - Database has: 18 symbols
+2025-09-07 13:57:41,618 - INFO - CSV files have: 93 symbols
+2025-09-07 13:57:41,618 - INFO - Missing from DB: 75 symbols
+2025-09-07 13:57:41,618 - INFO - Will transfer: ['C', 'CAT', 'CCI', 'COIN', 'COP', 'CRM', 'CRWD', 'CSCO', 'CVS', 'CVX', 'DIS', 'DOCU', 'FDX', 'FTNT', 'GE', 'GME', 'GOOGL', 'GS', 'HD', 'HON', 'INTC', 'IWM', 'JNJ', 'JPM', 'KO', 'LLY', 'LYFT', 'MA', 'MCD', 'META', 'MMM', 'MRNA', 'MS', 'MSFT', 'NEE', 'NFLX', 'NKE', 'NOK', 'OKTA', 'ORCL', 'PANW', 'PEP', 'PFE', 'PG', 'PINS', 'PLD', 'PLTR', 'PYPL', 'QCOM', 'QQQ', 'RBLX', 'ROKU', 'SBUX', 'SNAP', 'SNOW', 'SPOT', 'SPY', 'SQ', 'T', 'TMO', 'TMUS', 'TSLA', 'TWTR', 'TXN', 'UBER', 'UNH', 'UPS', 'V', 'VTI', 'VZ', 'WFC', 'WMT', 'XOM', 'ZM', 'ZS']
+2025-09-07 13:57:41,622 - INFO - Starting transfer for C
+2025-09-07 13:57:41,936 - INFO - C: CSV contains 1,140,966 rows
+2025-09-07 13:59:23,103 - INFO - Starting transfer for CAT
+2025-09-07 13:59:23,412 - INFO - CAT: CSV contains 1,006,641 rows
+2025-09-07 14:00:58,628 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 14:00:58,661 - INFO - Applied PostgreSQL performance settings
+2025-09-07 14:00:59,532 - INFO - Database has: 20 symbols
+2025-09-07 14:00:59,533 - INFO - CSV files have: 93 symbols
+2025-09-07 14:00:59,533 - INFO - Missing from DB: 73 symbols
+2025-09-07 14:00:59,533 - INFO - Will transfer: ['CCI', 'COIN', 'COP', 'CRM', 'CRWD', 'CSCO', 'CVS', 'CVX', 'DIS', 'DOCU', 'FDX', 'FTNT', 'GE', 'GME', 'GOOGL', 'GS', 'HD', 'HON', 'INTC', 'IWM', 'JNJ', 'JPM', 'KO', 'LLY', 'LYFT', 'MA', 'MCD', 'META', 'MMM', 'MRNA', 'MS', 'MSFT', 'NEE', 'NFLX', 'NKE', 'NOK', 'OKTA', 'ORCL', 'PANW', 'PEP', 'PFE', 'PG', 'PINS', 'PLD', 'PLTR', 'PYPL', 'QCOM', 'QQQ', 'RBLX', 'ROKU', 'SBUX', 'SNAP', 'SNOW', 'SPOT', 'SPY', 'SQ', 'T', 'TMO', 'TMUS', 'TSLA', 'TWTR', 'TXN', 'UBER', 'UNH', 'UPS', 'V', 'VTI', 'VZ', 'WFC', 'WMT', 'XOM', 'ZM', 'ZS']
+2025-09-07 14:00:59,534 - INFO - Starting transfer for CCI
+2025-09-07 14:00:59,752 - INFO - CCI: CSV contains 945,835 rows
+2025-09-07 14:02:09,350 - INFO - Starting transfer for COIN
+2025-09-07 14:02:09,540 - INFO - COIN: CSV contains 686,517 rows
+2025-09-07 14:02:18,201 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 14:02:18,235 - INFO - Applied PostgreSQL performance settings
+2025-09-07 14:02:19,370 - INFO - Database has: 21 symbols
+2025-09-07 14:02:19,370 - INFO - CSV files have: 93 symbols
+2025-09-07 14:02:19,370 - INFO - Missing from DB: 72 symbols
+2025-09-07 14:02:19,371 - INFO - Will transfer: ['COIN', 'COP', 'CRM', 'CRWD', 'CSCO', 'CVS', 'CVX', 'DIS', 'DOCU', 'FDX', 'FTNT', 'GE', 'GME', 'GOOGL', 'GS', 'HD', 'HON', 'INTC', 'IWM', 'JNJ', 'JPM', 'KO', 'LLY', 'LYFT', 'MA', 'MCD', 'META', 'MMM', 'MRNA', 'MS', 'MSFT', 'NEE', 'NFLX', 'NKE', 'NOK', 'OKTA', 'ORCL', 'PANW', 'PEP', 'PFE', 'PG', 'PINS', 'PLD', 'PLTR', 'PYPL', 'QCOM', 'QQQ', 'RBLX', 'ROKU', 'SBUX', 'SNAP', 'SNOW', 'SPOT', 'SPY', 'SQ', 'T', 'TMO', 'TMUS', 'TSLA', 'TWTR', 'TXN', 'UBER', 'UNH', 'UPS', 'V', 'VTI', 'VZ', 'WFC', 'WMT', 'XOM', 'ZM', 'ZS']
+2025-09-07 14:02:19,371 - INFO - Starting transfer for COIN
+2025-09-07 14:02:19,522 - INFO - COIN: CSV contains 686,517 rows
+2025-09-07 14:03:12,856 - INFO - Starting transfer for COP
+2025-09-07 14:03:13,091 - INFO - COP: CSV contains 999,647 rows
+2025-09-07 14:03:32,734 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 14:03:32,778 - INFO - Applied PostgreSQL performance settings
+2025-09-07 14:03:33,871 - INFO - CSV files have: 93 symbols
+2025-09-07 14:03:33,871 - INFO - Missing from DB: 93 symbols
+2025-09-07 14:03:33,872 - INFO - Will transfer: ['AAPL', 'ABBV', 'ABT', 'ADBE', 'AMC', 'AMD', 'AMGN', 'AMT', 'AMZN', 'AVGO', 'AXP', 'BA', 'BAC', 'BB', 'BNTX', 'BRK.A', 'BRK.B', 'C', 'CAT', 'CCI', 'COIN', 'COP', 'CRM', 'CRWD', 'CSCO', 'CVS', 'CVX', 'DIS', 'DOCU', 'FDX', 'FTNT', 'GE', 'GME', 'GOOGL', 'GS', 'HD', 'HON', 'INTC', 'IWM', 'JNJ', 'JPM', 'KO', 'LLY', 'LYFT', 'MA', 'MCD', 'META', 'MMM', 'MRNA', 'MS', 'MSFT', 'NEE', 'NFLX', 'NKE', 'NOK', 'NVDA', 'OKTA', 'ORCL', 'PANW', 'PEP', 'PFE', 'PG', 'PINS', 'PLD', 'PLTR', 'PYPL', 'QCOM', 'QQQ', 'RBLX', 'ROKU', 'SBUX', 'SNAP', 'SNOW', 'SPOT', 'SPY', 'SQ', 'T', 'TMO', 'TMUS', 'TSLA', 'TWTR', 'TXN', 'UBER', 'UNH', 'UPS', 'V', 'VTI', 'VZ', 'WFC', 'WMT', 'XOM', 'ZM', 'ZS']
+2025-09-07 14:03:33,872 - INFO - Starting transfer for AAPL
+2025-09-07 14:03:34,326 - INFO - AAPL: CSV contains 1,731,683 rows
+2025-09-07 14:03:34,392 - INFO - AAPL: Found 1,731,683 existing rows, checking for duplicates
+2025-09-07 14:05:13,132 - INFO - Starting transfer for ABBV
+2025-09-07 14:05:13,351 - INFO - ABBV: CSV contains 998,395 rows
+2025-09-07 14:05:13,397 - INFO - ABBV: Found 998,395 existing rows, checking for duplicates
+2025-09-07 14:06:01,813 - INFO - Starting transfer for ABT
+2025-09-07 14:06:02,033 - INFO - ABT: CSV contains 976,693 rows
+2025-09-07 14:06:02,080 - INFO - ABT: Found 976,693 existing rows, checking for duplicates
+2025-09-07 14:06:53,841 - INFO - Starting transfer for ADBE
+2025-09-07 14:06:54,085 - INFO - ADBE: CSV contains 1,001,279 rows
+2025-09-07 14:06:54,134 - INFO - ADBE: Found 1,001,279 existing rows, checking for duplicates
+2025-09-07 14:07:43,986 - INFO - Starting transfer for AMC
+2025-09-07 14:07:44,248 - INFO - AMC: CSV contains 1,315,212 rows
+2025-09-07 14:07:44,303 - INFO - AMC: Found 1,315,212 existing rows, checking for duplicates
+2025-09-07 14:09:00,792 - INFO - Starting transfer for AMD
+2025-09-07 14:09:01,510 - INFO - AMD: CSV contains 1,685,013 rows
+2025-09-07 14:09:01,585 - INFO - AMD: Found 1,685,013 existing rows, checking for duplicates
+2025-09-07 14:11:00,113 - INFO - Starting transfer for AMGN
+2025-09-07 14:11:00,418 - INFO - AMGN: CSV contains 968,117 rows
+2025-09-07 14:11:00,558 - INFO - AMGN: Found 968,117 existing rows, checking for duplicates
+2025-09-07 14:12:03,634 - INFO - Starting transfer for AMT
+2025-09-07 14:12:03,886 - INFO - AMT: CSV contains 941,489 rows
+2025-09-07 14:12:03,948 - INFO - AMT: Found 941,489 existing rows, checking for duplicates
+2025-09-07 14:13:05,140 - INFO - Starting transfer for AMZN
+2025-09-07 14:13:05,566 - INFO - AMZN: CSV contains 1,391,992 rows
+2025-09-07 14:13:05,673 - INFO - AMZN: Found 1,391,992 existing rows, checking for duplicates
+2025-09-07 14:14:26,527 - INFO - Starting transfer for AVGO
+2025-09-07 14:14:26,774 - INFO - AVGO: CSV contains 1,062,235 rows
+2025-09-07 14:14:26,848 - INFO - AVGO: Found 1,062,235 existing rows, checking for duplicates
+2025-09-07 14:15:25,657 - INFO - Starting transfer for AXP
+2025-09-07 14:15:25,892 - INFO - AXP: CSV contains 984,815 rows
+2025-09-07 14:15:26,027 - INFO - AXP: Found 984,815 existing rows, checking for duplicates
+2025-09-07 14:16:13,661 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 14:16:13,805 - INFO - Applied PostgreSQL performance settings
+2025-09-07 14:16:14,968 - INFO - Database has: {'BAC', 'ABBV', 'AMGN', 'AAPL', 'BRK.A', 'BRK.B', 'NVDA', 'COIN', 'AMD', 'BB', 'CAT', 'BNTX', 'AVGO', 'BA', 'CCI', 'COP', 'AMC', 'ABT', 'AXP', 'C', 'AMZN', 'AMT', 'ADBE'} symbols
+2025-09-07 14:16:14,968 - INFO - CSV files have: 93 symbols
+2025-09-07 14:16:14,969 - INFO - Missing from DB: 93 symbols
+2025-09-07 14:16:14,969 - INFO - Will transfer: ['AAPL', 'ABBV', 'ABT', 'ADBE', 'AMC', 'AMD', 'AMGN', 'AMT', 'AMZN', 'AVGO', 'AXP', 'BA', 'BAC', 'BB', 'BNTX', 'BRK.A', 'BRK.B', 'C', 'CAT', 'CCI', 'COIN', 'COP', 'CRM', 'CRWD', 'CSCO', 'CVS', 'CVX', 'DIS', 'DOCU', 'FDX', 'FTNT', 'GE', 'GME', 'GOOGL', 'GS', 'HD', 'HON', 'INTC', 'IWM', 'JNJ', 'JPM', 'KO', 'LLY', 'LYFT', 'MA', 'MCD', 'META', 'MMM', 'MRNA', 'MS', 'MSFT', 'NEE', 'NFLX', 'NKE', 'NOK', 'NVDA', 'OKTA', 'ORCL', 'PANW', 'PEP', 'PFE', 'PG', 'PINS', 'PLD', 'PLTR', 'PYPL', 'QCOM', 'QQQ', 'RBLX', 'ROKU', 'SBUX', 'SNAP', 'SNOW', 'SPOT', 'SPY', 'SQ', 'T', 'TMO', 'TMUS', 'TSLA', 'TWTR', 'TXN', 'UBER', 'UNH', 'UPS', 'V', 'VTI', 'VZ', 'WFC', 'WMT', 'XOM', 'ZM', 'ZS']
+2025-09-07 14:16:14,969 - INFO - Starting transfer for AAPL
+2025-09-07 14:16:15,377 - INFO - AAPL: CSV contains 1,731,683 rows
+2025-09-07 14:16:15,432 - INFO - AAPL: Found 1,731,683 existing rows, checking for duplicates
+2025-09-07 15:21:28,298 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 15:21:28,332 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:21:32,900 - INFO - Database has: {'ABBV', 'PFE', 'DIS', 'COIN', 'PINS', 'ROKU', 'AMD', 'PG', 'HD', 'CRWD', 'JPM', 'NFLX', 'C', 'IWM', 'NKE', 'DOCU', 'PLTR', 'NEE', 'CCI', 'SQ', 'MCD', 'JNJ', 'META', 'BA', 'GE', 'SNAP', 'BRK.A', 'FTNT', 'CAT', 'PYPL', 'SPY', 'LLY', 'LYFT', 'HON', 'AAPL', 'MA', 'SBUX', 'FDX', 'QQQ', 'CSCO', 'ORCL', 'SPOT', 'BAC', 'MS', 'SNOW', 'BNTX', 'MRNA', 'TMO', 'AMT', 'NOK', 'RBLX', 'BB', 'T', 'AMZN', 'CVX', 'ADBE', 'AVGO', 'KO', 'TMUS', 'QCOM', 'AMGN', 'INTC', 'BRK.B', 'NVDA', 'ABT', 'PEP', 'MSFT', 'AMC', 'OKTA', 'MMM', 'CRM', 'CVS', 'COP', 'GS', 'PLD', 'GOOGL', 'AXP', 'PANW', 'TSLA', 'GME'} symbols
+2025-09-07 15:21:32,901 - INFO - CSV files have: 93 symbols
+2025-09-07 15:21:32,902 - INFO - Missing from DB: 93 symbols
+2025-09-07 15:21:32,902 - INFO - Will transfer: ['AAPL', 'ABBV', 'ABT', 'ADBE', 'AMC', 'AMD', 'AMGN', 'AMT', 'AMZN', 'AVGO', 'AXP', 'BA', 'BAC', 'BB', 'BNTX', 'BRK.A', 'BRK.B', 'C', 'CAT', 'CCI', 'COIN', 'COP', 'CRM', 'CRWD', 'CSCO', 'CVS', 'CVX', 'DIS', 'DOCU', 'FDX', 'FTNT', 'GE', 'GME', 'GOOGL', 'GS', 'HD', 'HON', 'INTC', 'IWM', 'JNJ', 'JPM', 'KO', 'LLY', 'LYFT', 'MA', 'MCD', 'META', 'MMM', 'MRNA', 'MS', 'MSFT', 'NEE', 'NFLX', 'NKE', 'NOK', 'NVDA', 'OKTA', 'ORCL', 'PANW', 'PEP', 'PFE', 'PG', 'PINS', 'PLD', 'PLTR', 'PYPL', 'QCOM', 'QQQ', 'RBLX', 'ROKU', 'SBUX', 'SNAP', 'SNOW', 'SPOT', 'SPY', 'SQ', 'T', 'TMO', 'TMUS', 'TSLA', 'TWTR', 'TXN', 'UBER', 'UNH', 'UPS', 'V', 'VTI', 'VZ', 'WFC', 'WMT', 'XOM', 'ZM', 'ZS']
+2025-09-07 15:21:32,906 - INFO - Starting transfer for AAPL
+2025-09-07 15:21:33,314 - INFO - AAPL: CSV contains 1,731,683 rows
+2025-09-07 15:21:33,384 - INFO - AAPL: Found 1,731,683 existing rows, checking for duplicates
+2025-09-07 15:29:16,916 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:29:39,122 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:30:32,805 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:39:53,423 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 15:39:53,473 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:40:00,253 - INFO - Database has: 86 symbols
+2025-09-07 15:40:00,253 - INFO - CSV files have: 93 symbols
+2025-09-07 15:40:00,253 - INFO - Missing from DB: {'SPOT', 'AMZN', 'VTI', 'ABT', 'BRK.B', 'CVX', 'META', 'COIN', 'HD', 'PG', 'GME', 'SBUX', 'DIS', 'COP', 'SQ', 'SNOW', 'AVGO', 'PFE', 'INTC', 'TSLA', 'NVDA', 'TXN', 'BRK.A', 'JPM', 'KO', 'GOOGL', 'CSCO', 'MSFT', 'VZ', 'NOK', 'AMD', 'FTNT', 'ORCL', 'LYFT', 'ROKU', 'QCOM', 'IWM', 'PANW', 'ZM', 'ABBV', 'PINS', 'UNH', 'UPS', 'BB', 'AMGN', 'WFC', 'V', 'GE', 'QQQ', 'NKE', 'T', 'PEP', 'AMC', 'PLTR', 'BNTX', 'LLY', 'PLD', 'OKTA', 'MS', 'RBLX', 'BAC', 'ADBE', 'CAT', 'PYPL', 'CCI', 'XOM', 'BA', 'TWTR', 'MCD', 'MA', 'UBER', 'CRWD', 'AMT', 'NFLX', 'AAPL', 'ZS', 'MRNA', 'GS', 'CVS', 'JNJ', 'HON', 'WMT', 'MMM', 'SNAP', 'FDX', 'TMO', 'C', 'AXP', 'NEE', 'TMUS', 'DOCU', 'SPY', 'CRM'} symbols
+2025-09-07 15:40:00,253 - INFO - Will transfer: ['AAPL', 'ABBV', 'ABT', 'ADBE', 'AMC', 'AMD', 'AMGN', 'AMT', 'AMZN', 'AVGO', 'AXP', 'BA', 'BAC', 'BB', 'BNTX', 'BRK.A', 'BRK.B', 'C', 'CAT', 'CCI', 'COIN', 'COP', 'CRM', 'CRWD', 'CSCO', 'CVS', 'CVX', 'DIS', 'DOCU', 'FDX', 'FTNT', 'GE', 'GME', 'GOOGL', 'GS', 'HD', 'HON', 'INTC', 'IWM', 'JNJ', 'JPM', 'KO', 'LLY', 'LYFT', 'MA', 'MCD', 'META', 'MMM', 'MRNA', 'MS', 'MSFT', 'NEE', 'NFLX', 'NKE', 'NOK', 'NVDA', 'OKTA', 'ORCL', 'PANW', 'PEP', 'PFE', 'PG', 'PINS', 'PLD', 'PLTR', 'PYPL', 'QCOM', 'QQQ', 'RBLX', 'ROKU', 'SBUX', 'SNAP', 'SNOW', 'SPOT', 'SPY', 'SQ', 'T', 'TMO', 'TMUS', 'TSLA', 'TWTR', 'TXN', 'UBER', 'UNH', 'UPS', 'V', 'VTI', 'VZ', 'WFC', 'WMT', 'XOM', 'ZM', 'ZS']
+2025-09-07 15:40:26,842 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 15:40:26,875 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:40:33,238 - INFO - Database has: 86 symbols
+2025-09-07 15:40:33,239 - INFO - CSV files have: 93 symbols
+2025-09-07 15:40:33,239 - INFO - Missing from DB: {'WMT', 'VTI', 'ZS', 'VZ', 'XOM', 'ZM', 'WFC'} symbols
+2025-09-07 15:40:33,239 - INFO - Will transfer: ['VTI', 'VZ', 'WFC', 'WMT', 'XOM', 'ZM', 'ZS']
+2025-09-07 15:54:01,991 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 15:54:02,030 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:54:07,843 - INFO - Database has: 93 symbols
+2025-09-07 15:54:07,843 - INFO - CSV files have: 93 symbols
+2025-09-07 15:54:07,843 - INFO - Missing from DB: set() symbols
+2025-09-07 15:54:07,843 - INFO - Will transfer: []
+2025-09-07 15:56:00,219 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 15:56:00,250 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:56:05,480 - INFO - Database has: 93 symbols
+2025-09-07 15:56:05,480 - INFO - CSV files have: 94 symbols
+2025-09-07 15:56:05,481 - INFO - Missing from DB: {'GOOG'} symbols
+2025-09-07 15:56:05,481 - INFO - Will transfer: ['GOOG']
+2025-09-07 15:58:25,865 - INFO - === Transferring Missing Symbols Only ===
+2025-09-07 15:58:25,896 - INFO - Applied PostgreSQL performance settings
+2025-09-07 15:58:32,734 - INFO - Database has: {'CRM', 'GS', 'HD', 'BRK.A', 'AMT', 'FDX', 'CCI', 'BA', 'MSFT', 'UPS', 'C', 'T', 'LLY', 'XOM', 'PYPL', 'SNOW', 'CVS', 'BB', 'COIN', 'TMUS', 'LYFT', 'NKE', 'PLTR', 'TWTR', 'UBER', 'WMT', 'VTI', 'CAT', 'AMD', 'ABT', 'GME', 'AXP', 'SPOT', 'BAC', 'QQQ', 'CRWD', 'ORCL', 'INTC', 'JPM', 'QCOM', 'SPY', 'PLD', 'JNJ', 'TSLA', 'DIS', 'FTNT', 'TMO', 'MA', 'OKTA', 'ZS', 'MRNA', 'MMM', 'CVX', 'PANW', 'PINS', 'ABBV', 'MCD', 'DOCU', 'ROKU', 'AMC', 'VZ', 'NEE', 'NFLX', 'PG', 'UNH', 'AMGN', 'GE', 'SBUX', 'NOK', 'CSCO', 'AAPL', 'ZM', 'PFE', 'ADBE', 'NVDA', 'GOOGL', 'PEP', 'TXN', 'KO', 'SQ', 'SNAP', 'COP', 'WFC', 'AMZN', 'RBLX', 'HON', 'V', 'META', 'BNTX', 'IWM', 'MS', 'AVGO', 'BRK.B'} symbols
+2025-09-07 15:58:32,734 - INFO - CSV files have: 94 symbols
+2025-09-07 15:58:32,734 - INFO - Missing from DB: {'GOOG'} symbols
+2025-09-07 15:58:32,734 - INFO - Will transfer: ['GOOG']

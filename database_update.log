@@ -1,0 +1,1274 @@
+2025-09-07 16:20:23,787 - INFO - Updating specific symbols: ['AAPL']
+2025-09-07 16:20:23,787 - INFO - === Updating Specific Symbols: ['AAPL'] ===
+2025-09-07 16:20:23,787 - INFO - === Updating AAPL ===
+2025-09-07 16:20:23,787 - INFO - Processing AAPL for stock_data_day
+2025-09-07 16:20:23,832 - INFO - AAPL in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:20:23,832 - INFO - AAPL: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:20:23,832 - INFO - Fetching AAPL 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:20:24,111 - ERROR - Error fetching AAPL 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:20:24,111 - INFO - Processing AAPL for stock_data_hour
+2025-09-07 16:20:24,126 - INFO - AAPL in stock_data_hour: Latest data 2025-09-05, 2 days behind, 37,947 records
+2025-09-07 16:20:24,126 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:20:24,126 - INFO - Fetching AAPL 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:20:24,209 - ERROR - Error fetching AAPL 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:20:24,209 - INFO - Processing AAPL for stock_data_minute
+2025-09-07 16:20:24,494 - INFO - AAPL in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,731,683 records
+2025-09-07 16:20:24,495 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:20:24,495 - INFO - Fetching AAPL 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:20:24,580 - ERROR - Error fetching AAPL 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:20:24,580 - INFO - AAPL update complete: 0 new records, 0 duplicates
+2025-09-07 16:20:24,580 - INFO - Specific update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:15,074 - INFO - === Starting Automatic Database Update ===
+2025-09-07 16:38:15,153 - INFO - Found 94 symbols in stock_data_day
+2025-09-07 16:38:15,305 - INFO - Found 94 symbols in stock_data_hour
+2025-09-07 16:38:20,411 - INFO - Found 94 symbols in stock_data_minute
+2025-09-07 16:38:20,411 - INFO - Total unique symbols across all tables: 94
+2025-09-07 16:38:20,411 - INFO - Found 94 symbols to update
+2025-09-07 16:38:20,427 - INFO - === Updating AAPL ===
+2025-09-07 16:38:20,427 - INFO - Processing AAPL for stock_data_day
+2025-09-07 16:38:20,430 - INFO - AAPL in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:20,431 - INFO - AAPL: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:20,431 - INFO - Fetching AAPL 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:20,897 - ERROR - Error fetching AAPL 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:20,897 - INFO - Processing AAPL for stock_data_hour
+2025-09-07 16:38:20,914 - INFO - AAPL in stock_data_hour: Latest data 2025-09-05, 2 days behind, 37,947 records
+2025-09-07 16:38:20,914 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:20,915 - INFO - Fetching AAPL 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,004 - ERROR - Error fetching AAPL 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:21,005 - INFO - Processing AAPL for stock_data_minute
+2025-09-07 16:38:21,185 - INFO - AAPL in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,731,683 records
+2025-09-07 16:38:21,185 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,185 - INFO - Fetching AAPL 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,275 - ERROR - Error fetching AAPL 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:21,275 - INFO - AAPL update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:21,279 - INFO - === Updating ABBV ===
+2025-09-07 16:38:21,279 - INFO - Processing ABBV for stock_data_day
+2025-09-07 16:38:21,281 - INFO - ABBV in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:21,282 - INFO - ABBV: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:21,282 - INFO - Fetching ABBV 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:21,365 - ERROR - Error fetching ABBV 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:21,366 - INFO - Processing ABBV for stock_data_hour
+2025-09-07 16:38:21,376 - INFO - ABBV in stock_data_hour: Latest data 2025-09-05, 2 days behind, 27,416 records
+2025-09-07 16:38:21,376 - INFO - ABBV: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,376 - INFO - Fetching ABBV 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,465 - ERROR - Error fetching ABBV 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:21,466 - INFO - Processing ABBV for stock_data_minute
+2025-09-07 16:38:21,600 - INFO - ABBV in stock_data_minute: Latest data 2025-09-05, 2 days behind, 998,395 records
+2025-09-07 16:38:21,600 - INFO - ABBV: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,600 - INFO - Fetching ABBV 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,685 - ERROR - Error fetching ABBV 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:21,685 - INFO - ABBV update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:21,686 - INFO - === Updating ABT ===
+2025-09-07 16:38:21,686 - INFO - Processing ABT for stock_data_day
+2025-09-07 16:38:21,688 - INFO - ABT in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:21,689 - INFO - ABT: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:21,689 - INFO - Fetching ABT 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:21,777 - ERROR - Error fetching ABT 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:21,777 - INFO - Processing ABT for stock_data_hour
+2025-09-07 16:38:21,786 - INFO - ABT in stock_data_hour: Latest data 2025-09-05, 2 days behind, 24,459 records
+2025-09-07 16:38:21,786 - INFO - ABT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,786 - INFO - Fetching ABT 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,876 - ERROR - Error fetching ABT 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:21,877 - INFO - Processing ABT for stock_data_minute
+2025-09-07 16:38:21,993 - INFO - ABT in stock_data_minute: Latest data 2025-09-05, 2 days behind, 976,693 records
+2025-09-07 16:38:21,994 - INFO - ABT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:21,994 - INFO - Fetching ABT 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:22,077 - ERROR - Error fetching ABT 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:22,077 - INFO - ABT update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:22,078 - INFO - === Updating ADBE ===
+2025-09-07 16:38:22,078 - INFO - Processing ADBE for stock_data_day
+2025-09-07 16:38:22,083 - INFO - ADBE in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:22,083 - INFO - ADBE: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:22,083 - INFO - Fetching ADBE 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:22,166 - ERROR - Error fetching ADBE 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:22,166 - INFO - Processing ADBE for stock_data_hour
+2025-09-07 16:38:22,172 - INFO - ADBE in stock_data_hour: Latest data 2025-09-05, 2 days behind, 28,005 records
+2025-09-07 16:38:22,172 - INFO - ADBE: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:22,173 - INFO - Fetching ADBE 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:22,256 - ERROR - Error fetching ADBE 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:22,256 - INFO - Processing ADBE for stock_data_minute
+2025-09-07 16:38:22,369 - INFO - ADBE in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,001,279 records
+2025-09-07 16:38:22,370 - INFO - ADBE: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:22,370 - INFO - Fetching ADBE 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:22,457 - ERROR - Error fetching ADBE 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:22,457 - INFO - ADBE update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:22,458 - INFO - === Updating AMC ===
+2025-09-07 16:38:22,458 - INFO - Processing AMC for stock_data_day
+2025-09-07 16:38:22,460 - INFO - AMC in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:22,461 - INFO - AMC: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:22,461 - INFO - Fetching AMC 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:22,546 - ERROR - Error fetching AMC 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:22,547 - INFO - Processing AMC for stock_data_hour
+2025-09-07 16:38:22,555 - INFO - AMC in stock_data_hour: Latest data 2025-09-05, 2 days behind, 31,150 records
+2025-09-07 16:38:22,555 - INFO - AMC: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:22,555 - INFO - Fetching AMC 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:22,647 - ERROR - Error fetching AMC 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:22,648 - INFO - Processing AMC for stock_data_minute
+2025-09-07 16:38:23,040 - INFO - AMC in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,315,212 records
+2025-09-07 16:38:23,041 - INFO - AMC: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:23,043 - INFO - Fetching AMC 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:23,126 - ERROR - Error fetching AMC 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:23,127 - INFO - AMC update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:23,128 - INFO - === Updating AMD ===
+2025-09-07 16:38:23,128 - INFO - Processing AMD for stock_data_day
+2025-09-07 16:38:23,130 - INFO - AMD in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:23,130 - INFO - AMD: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:23,131 - INFO - Fetching AMD 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:23,217 - ERROR - Error fetching AMD 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:23,218 - INFO - Processing AMD for stock_data_hour
+2025-09-07 16:38:23,235 - INFO - AMD in stock_data_hour: Latest data 2025-09-05, 2 days behind, 37,235 records
+2025-09-07 16:38:23,235 - INFO - AMD: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:23,235 - INFO - Fetching AMD 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:23,320 - ERROR - Error fetching AMD 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:23,320 - INFO - Processing AMD for stock_data_minute
+2025-09-07 16:38:25,030 - INFO - AMD in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,685,013 records
+2025-09-07 16:38:25,030 - INFO - AMD: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:25,032 - INFO - Fetching AMD 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:25,119 - ERROR - Error fetching AMD 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:25,119 - INFO - AMD update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:25,120 - INFO - === Updating AMGN ===
+2025-09-07 16:38:25,120 - INFO - Processing AMGN for stock_data_day
+2025-09-07 16:38:25,123 - INFO - AMGN in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:25,123 - INFO - AMGN: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:25,124 - INFO - Fetching AMGN 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:25,209 - ERROR - Error fetching AMGN 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:25,210 - INFO - Processing AMGN for stock_data_hour
+2025-09-07 16:38:25,216 - INFO - AMGN in stock_data_hour: Latest data 2025-09-05, 2 days behind, 24,591 records
+2025-09-07 16:38:25,217 - INFO - AMGN: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:25,217 - INFO - Fetching AMGN 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:25,299 - ERROR - Error fetching AMGN 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:25,300 - INFO - Processing AMGN for stock_data_minute
+2025-09-07 16:38:25,418 - INFO - AMGN in stock_data_minute: Latest data 2025-09-05, 2 days behind, 968,117 records
+2025-09-07 16:38:25,419 - INFO - AMGN: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:25,419 - INFO - Fetching AMGN 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:25,500 - ERROR - Error fetching AMGN 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:25,500 - INFO - AMGN update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:25,501 - INFO - === Updating AMT ===
+2025-09-07 16:38:25,501 - INFO - Processing AMT for stock_data_day
+2025-09-07 16:38:25,504 - INFO - AMT in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:25,504 - INFO - AMT: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:25,504 - INFO - Fetching AMT 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:25,591 - ERROR - Error fetching AMT 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:25,591 - INFO - Processing AMT for stock_data_hour
+2025-09-07 16:38:25,602 - INFO - AMT in stock_data_hour: Latest data 2025-09-05, 2 days behind, 21,405 records
+2025-09-07 16:38:25,602 - INFO - AMT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:25,603 - INFO - Fetching AMT 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:25,690 - ERROR - Error fetching AMT 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:25,690 - INFO - Processing AMT for stock_data_minute
+2025-09-07 16:38:26,717 - INFO - AMT in stock_data_minute: Latest data 2025-09-05, 2 days behind, 941,489 records
+2025-09-07 16:38:26,717 - INFO - AMT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:26,717 - INFO - Fetching AMT 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:26,802 - ERROR - Error fetching AMT 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:26,803 - INFO - AMT update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:26,804 - INFO - === Updating AMZN ===
+2025-09-07 16:38:26,804 - INFO - Processing AMZN for stock_data_day
+2025-09-07 16:38:26,808 - INFO - AMZN in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:26,808 - INFO - AMZN: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:26,808 - INFO - Fetching AMZN 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:26,891 - ERROR - Error fetching AMZN 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:26,891 - INFO - Processing AMZN for stock_data_hour
+2025-09-07 16:38:26,899 - INFO - AMZN in stock_data_hour: Latest data 2025-09-05, 2 days behind, 36,056 records
+2025-09-07 16:38:26,900 - INFO - AMZN: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:26,900 - INFO - Fetching AMZN 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:26,981 - ERROR - Error fetching AMZN 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:26,981 - INFO - Processing AMZN for stock_data_minute
+2025-09-07 16:38:27,423 - INFO - AMZN in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,391,992 records
+2025-09-07 16:38:27,423 - INFO - AMZN: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:27,423 - INFO - Fetching AMZN 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:27,511 - ERROR - Error fetching AMZN 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:27,511 - INFO - AMZN update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:27,512 - INFO - === Updating AVGO ===
+2025-09-07 16:38:27,512 - INFO - Processing AVGO for stock_data_day
+2025-09-07 16:38:27,515 - INFO - AVGO in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:27,515 - INFO - AVGO: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:27,515 - INFO - Fetching AVGO 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:27,602 - ERROR - Error fetching AVGO 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:27,603 - INFO - Processing AVGO for stock_data_hour
+2025-09-07 16:38:27,612 - INFO - AVGO in stock_data_hour: Latest data 2025-09-05, 2 days behind, 28,013 records
+2025-09-07 16:38:27,612 - INFO - AVGO: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:27,613 - INFO - Fetching AVGO 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:27,702 - ERROR - Error fetching AVGO 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:27,702 - INFO - Processing AVGO for stock_data_minute
+2025-09-07 16:38:27,829 - INFO - AVGO in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,062,235 records
+2025-09-07 16:38:27,829 - INFO - AVGO: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:27,829 - INFO - Fetching AVGO 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:27,912 - ERROR - Error fetching AVGO 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:27,912 - INFO - AVGO update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:27,914 - INFO - === Updating AXP ===
+2025-09-07 16:38:27,914 - INFO - Processing AXP for stock_data_day
+2025-09-07 16:38:27,917 - INFO - AXP in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:27,917 - INFO - AXP: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:27,917 - INFO - Fetching AXP 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:28,001 - ERROR - Error fetching AXP 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:28,002 - INFO - Processing AXP for stock_data_hour
+2025-09-07 16:38:28,016 - INFO - AXP in stock_data_hour: Latest data 2025-09-05, 2 days behind, 26,299 records
+2025-09-07 16:38:28,016 - INFO - AXP: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,016 - INFO - Fetching AXP 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,103 - ERROR - Error fetching AXP 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:28,103 - INFO - Processing AXP for stock_data_minute
+2025-09-07 16:38:28,223 - INFO - AXP in stock_data_minute: Latest data 2025-09-05, 2 days behind, 984,815 records
+2025-09-07 16:38:28,223 - INFO - AXP: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,223 - INFO - Fetching AXP 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,312 - ERROR - Error fetching AXP 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:28,312 - INFO - AXP update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:28,313 - INFO - === Updating BA ===
+2025-09-07 16:38:28,313 - INFO - Processing BA for stock_data_day
+2025-09-07 16:38:28,317 - INFO - BA in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:28,317 - INFO - BA: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:28,317 - INFO - Fetching BA 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:28,403 - ERROR - Error fetching BA 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:28,403 - INFO - Processing BA for stock_data_hour
+2025-09-07 16:38:28,414 - INFO - BA in stock_data_hour: Latest data 2025-09-05, 2 days behind, 33,530 records
+2025-09-07 16:38:28,414 - INFO - BA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,415 - INFO - Fetching BA 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,502 - ERROR - Error fetching BA 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:28,502 - INFO - Processing BA for stock_data_minute
+2025-09-07 16:38:28,659 - INFO - BA in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,213,313 records
+2025-09-07 16:38:28,659 - INFO - BA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,660 - INFO - Fetching BA 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,742 - ERROR - Error fetching BA 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:28,743 - INFO - BA update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:28,745 - INFO - === Updating BAC ===
+2025-09-07 16:38:28,745 - INFO - Processing BAC for stock_data_day
+2025-09-07 16:38:28,747 - INFO - BAC in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:28,747 - INFO - BAC: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:28,747 - INFO - Fetching BAC 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:28,833 - ERROR - Error fetching BAC 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:28,833 - INFO - Processing BAC for stock_data_hour
+2025-09-07 16:38:28,841 - INFO - BAC in stock_data_hour: Latest data 2025-09-05, 2 days behind, 36,497 records
+2025-09-07 16:38:28,841 - INFO - BAC: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,841 - INFO - Fetching BAC 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:28,922 - ERROR - Error fetching BAC 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:28,924 - INFO - Processing BAC for stock_data_minute
+2025-09-07 16:38:29,091 - INFO - BAC in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,375,684 records
+2025-09-07 16:38:29,091 - INFO - BAC: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:29,091 - INFO - Fetching BAC 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:29,173 - ERROR - Error fetching BAC 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:29,174 - INFO - BAC update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:29,176 - INFO - === Updating BB ===
+2025-09-07 16:38:29,176 - INFO - Processing BB for stock_data_day
+2025-09-07 16:38:29,177 - INFO - BB in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:29,177 - INFO - BB: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:29,177 - INFO - Fetching BB 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:29,264 - ERROR - Error fetching BB 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:29,264 - INFO - Processing BB for stock_data_hour
+2025-09-07 16:38:29,270 - INFO - BB in stock_data_hour: Latest data 2025-09-05, 2 days behind, 30,096 records
+2025-09-07 16:38:29,270 - INFO - BB: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:29,271 - INFO - Fetching BB 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:29,354 - ERROR - Error fetching BB 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:29,354 - INFO - Processing BB for stock_data_minute
+2025-09-07 16:38:29,488 - INFO - BB in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,058,048 records
+2025-09-07 16:38:29,489 - INFO - BB: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:29,489 - INFO - Fetching BB 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:29,573 - ERROR - Error fetching BB 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:29,574 - INFO - BB update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:29,575 - INFO - === Updating BNTX ===
+2025-09-07 16:38:29,575 - INFO - Processing BNTX for stock_data_day
+2025-09-07 16:38:29,580 - INFO - BNTX in stock_data_day: Latest data 2025-09-04, 3 days behind, 1,484 records
+2025-09-07 16:38:29,580 - INFO - BNTX: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:29,581 - INFO - Fetching BNTX 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:29,666 - ERROR - Error fetching BNTX 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:29,666 - INFO - Processing BNTX for stock_data_hour
+2025-09-07 16:38:29,676 - INFO - BNTX in stock_data_hour: Latest data 2025-09-05, 2 days behind, 18,719 records
+2025-09-07 16:38:29,676 - INFO - BNTX: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:29,676 - INFO - Fetching BNTX 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:29,764 - ERROR - Error fetching BNTX 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:29,765 - INFO - Processing BNTX for stock_data_minute
+2025-09-07 16:38:30,393 - INFO - BNTX in stock_data_minute: Latest data 2025-09-05, 2 days behind, 558,363 records
+2025-09-07 16:38:30,393 - INFO - BNTX: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:30,394 - INFO - Fetching BNTX 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:30,486 - ERROR - Error fetching BNTX 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:30,486 - INFO - BNTX update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:30,488 - INFO - === Updating BRK.A ===
+2025-09-07 16:38:30,488 - INFO - Processing BRK.A for stock_data_day
+2025-09-07 16:38:30,491 - INFO - BRK.A in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:30,491 - INFO - BRK.A: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:30,491 - INFO - Fetching BRK.A 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:30,575 - ERROR - Error fetching BRK.A 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:30,576 - INFO - Processing BRK.A for stock_data_hour
+2025-09-07 16:38:30,580 - INFO - BRK.A in stock_data_hour: Latest data 2025-09-05, 2 days behind, 19,667 records
+2025-09-07 16:38:30,580 - INFO - BRK.A: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:30,580 - INFO - Fetching BRK.A 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:30,665 - ERROR - Error fetching BRK.A 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:30,666 - INFO - Processing BRK.A for stock_data_minute
+2025-09-07 16:38:31,305 - INFO - BRK.A in stock_data_minute: Latest data 2025-09-05, 2 days behind, 573,503 records
+2025-09-07 16:38:31,306 - INFO - BRK.A: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:31,306 - INFO - Fetching BRK.A 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:31,396 - ERROR - Error fetching BRK.A 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:31,397 - INFO - BRK.A update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:31,398 - INFO - === Updating BRK.B ===
+2025-09-07 16:38:31,398 - INFO - Processing BRK.B for stock_data_day
+2025-09-07 16:38:31,401 - INFO - BRK.B in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:31,401 - INFO - BRK.B: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:31,401 - INFO - Fetching BRK.B 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:31,485 - ERROR - Error fetching BRK.B 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:31,485 - INFO - Processing BRK.B for stock_data_hour
+2025-09-07 16:38:31,499 - INFO - BRK.B in stock_data_hour: Latest data 2025-09-05, 2 days behind, 30,962 records
+2025-09-07 16:38:31,499 - INFO - BRK.B: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:31,499 - INFO - Fetching BRK.B 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:31,586 - ERROR - Error fetching BRK.B 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:31,587 - INFO - Processing BRK.B for stock_data_minute
+2025-09-07 16:38:32,746 - INFO - BRK.B in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,028,465 records
+2025-09-07 16:38:32,747 - INFO - BRK.B: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:32,747 - INFO - Fetching BRK.B 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:32,837 - ERROR - Error fetching BRK.B 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:32,838 - INFO - BRK.B update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:32,839 - INFO - === Updating C ===
+2025-09-07 16:38:32,839 - INFO - Processing C for stock_data_day
+2025-09-07 16:38:32,842 - INFO - C in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:32,842 - INFO - C: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:32,842 - INFO - Fetching C 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:32,927 - ERROR - Error fetching C 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:32,928 - INFO - Processing C for stock_data_hour
+2025-09-07 16:38:32,935 - INFO - C in stock_data_hour: Latest data 2025-09-05, 2 days behind, 33,900 records
+2025-09-07 16:38:32,936 - INFO - C: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:32,936 - INFO - Fetching C 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:33,017 - ERROR - Error fetching C 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:33,018 - INFO - Processing C for stock_data_minute
+2025-09-07 16:38:33,434 - INFO - C in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,140,966 records
+2025-09-07 16:38:33,434 - INFO - C: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:33,434 - INFO - Fetching C 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:33,516 - ERROR - Error fetching C 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:33,517 - INFO - C update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:33,517 - INFO - === Updating CAT ===
+2025-09-07 16:38:33,518 - INFO - Processing CAT for stock_data_day
+2025-09-07 16:38:33,520 - INFO - CAT in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:33,520 - INFO - CAT: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:33,520 - INFO - Fetching CAT 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:33,608 - ERROR - Error fetching CAT 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:33,608 - INFO - Processing CAT for stock_data_hour
+2025-09-07 16:38:33,616 - INFO - CAT in stock_data_hour: Latest data 2025-09-05, 2 days behind, 28,927 records
+2025-09-07 16:38:33,616 - INFO - CAT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:33,616 - INFO - Fetching CAT 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:33,708 - ERROR - Error fetching CAT 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:33,709 - INFO - Processing CAT for stock_data_minute
+2025-09-07 16:38:33,746 - INFO - CAT in stock_data_minute: Latest data 2017-06-15, 3006 days behind, 150,000 records
+2025-09-07 16:38:33,746 - INFO - CAT: Fetching from 2017-06-14 to 2025-09-08
+2025-09-07 16:38:33,746 - INFO - Fetching CAT 1Min data from 2017-06-14 to 2025-09-08
+2025-09-07 16:38:33,829 - ERROR - Error fetching CAT 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:33,829 - INFO - CAT update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:33,830 - INFO - === Updating CCI ===
+2025-09-07 16:38:33,830 - INFO - Processing CCI for stock_data_day
+2025-09-07 16:38:33,834 - INFO - CCI in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:33,835 - INFO - CCI: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:33,835 - INFO - Fetching CCI 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:33,918 - ERROR - Error fetching CCI 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:33,918 - INFO - Processing CCI for stock_data_hour
+2025-09-07 16:38:33,925 - INFO - CCI in stock_data_hour: Latest data 2025-09-05, 2 days behind, 21,654 records
+2025-09-07 16:38:33,925 - INFO - CCI: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:33,925 - INFO - Fetching CCI 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,009 - ERROR - Error fetching CCI 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:34,009 - INFO - Processing CCI for stock_data_minute
+2025-09-07 16:38:34,120 - INFO - CCI in stock_data_minute: Latest data 2025-09-05, 2 days behind, 945,835 records
+2025-09-07 16:38:34,120 - INFO - CCI: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,121 - INFO - Fetching CCI 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,209 - ERROR - Error fetching CCI 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:34,209 - INFO - CCI update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:34,210 - INFO - === Updating COIN ===
+2025-09-07 16:38:34,211 - INFO - Processing COIN for stock_data_day
+2025-09-07 16:38:34,211 - INFO - COIN in stock_data_day: Latest data 2025-09-04, 3 days behind, 1,105 records
+2025-09-07 16:38:34,211 - INFO - COIN: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:34,211 - INFO - Fetching COIN 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:34,298 - ERROR - Error fetching COIN 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:34,299 - INFO - Processing COIN for stock_data_hour
+2025-09-07 16:38:34,305 - INFO - COIN in stock_data_hour: Latest data 2025-09-05, 2 days behind, 17,329 records
+2025-09-07 16:38:34,305 - INFO - COIN: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,305 - INFO - Fetching COIN 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,388 - ERROR - Error fetching COIN 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:34,389 - INFO - Processing COIN for stock_data_minute
+2025-09-07 16:38:34,566 - INFO - COIN in stock_data_minute: Latest data 2025-09-05, 2 days behind, 686,517 records
+2025-09-07 16:38:34,566 - INFO - COIN: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,567 - INFO - Fetching COIN 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,649 - ERROR - Error fetching COIN 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:34,649 - INFO - COIN update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:34,650 - INFO - === Updating COP ===
+2025-09-07 16:38:34,650 - INFO - Processing COP for stock_data_day
+2025-09-07 16:38:34,653 - INFO - COP in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:34,653 - INFO - COP: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:34,653 - INFO - Fetching COP 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:34,740 - ERROR - Error fetching COP 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:34,740 - INFO - Processing COP for stock_data_hour
+2025-09-07 16:38:34,748 - INFO - COP in stock_data_hour: Latest data 2025-09-05, 2 days behind, 28,002 records
+2025-09-07 16:38:34,748 - INFO - COP: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,748 - INFO - Fetching COP 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:34,829 - ERROR - Error fetching COP 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:34,830 - INFO - Processing COP for stock_data_minute
+2025-09-07 16:38:34,911 - INFO - COP in stock_data_minute: Latest data 2017-12-15, 2823 days behind, 200,000 records
+2025-09-07 16:38:34,911 - INFO - COP: Fetching from 2017-12-14 to 2025-09-08
+2025-09-07 16:38:34,912 - INFO - Fetching COP 1Min data from 2017-12-14 to 2025-09-08
+2025-09-07 16:38:34,999 - ERROR - Error fetching COP 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:35,001 - INFO - COP update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:35,001 - INFO - === Updating CRM ===
+2025-09-07 16:38:35,001 - INFO - Processing CRM for stock_data_day
+2025-09-07 16:38:35,004 - INFO - CRM in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:35,004 - INFO - CRM: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:35,004 - INFO - Fetching CRM 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:35,088 - ERROR - Error fetching CRM 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:35,089 - INFO - Processing CRM for stock_data_hour
+2025-09-07 16:38:35,102 - INFO - CRM in stock_data_hour: Latest data 2025-09-05, 2 days behind, 30,944 records
+2025-09-07 16:38:35,103 - INFO - CRM: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:35,103 - INFO - Fetching CRM 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:35,190 - ERROR - Error fetching CRM 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:35,191 - INFO - Processing CRM for stock_data_minute
+2025-09-07 16:38:35,426 - INFO - CRM in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,057,933 records
+2025-09-07 16:38:35,427 - INFO - CRM: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:35,427 - INFO - Fetching CRM 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:35,510 - ERROR - Error fetching CRM 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:35,511 - INFO - CRM update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:35,511 - INFO - === Updating CRWD ===
+2025-09-07 16:38:35,511 - INFO - Processing CRWD for stock_data_day
+2025-09-07 16:38:35,515 - INFO - CRWD in stock_data_day: Latest data 2025-09-04, 3 days behind, 1,568 records
+2025-09-07 16:38:35,515 - INFO - CRWD: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:35,515 - INFO - Fetching CRWD 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:35,600 - ERROR - Error fetching CRWD 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:35,601 - INFO - Processing CRWD for stock_data_hour
+2025-09-07 16:38:35,612 - INFO - CRWD in stock_data_hour: Latest data 2025-09-05, 2 days behind, 21,508 records
+2025-09-07 16:38:35,612 - INFO - CRWD: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:35,612 - INFO - Fetching CRWD 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:35,700 - ERROR - Error fetching CRWD 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:35,700 - INFO - Processing CRWD for stock_data_minute
+2025-09-07 16:38:35,844 - INFO - CRWD in stock_data_minute: Latest data 2025-09-05, 2 days behind, 709,269 records
+2025-09-07 16:38:35,845 - INFO - CRWD: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:35,845 - INFO - Fetching CRWD 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:35,930 - ERROR - Error fetching CRWD 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:35,930 - INFO - CRWD update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:35,931 - INFO - === Updating CSCO ===
+2025-09-07 16:38:35,931 - INFO - Processing CSCO for stock_data_day
+2025-09-07 16:38:35,933 - INFO - CSCO in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:35,933 - INFO - CSCO: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:35,933 - INFO - Fetching CSCO 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:36,014 - ERROR - Error fetching CSCO 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:36,014 - INFO - Processing CSCO for stock_data_hour
+2025-09-07 16:38:36,028 - INFO - CSCO in stock_data_hour: Latest data 2025-09-05, 2 days behind, 33,687 records
+2025-09-07 16:38:36,028 - INFO - CSCO: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,028 - INFO - Fetching CSCO 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,111 - ERROR - Error fetching CSCO 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:36,112 - INFO - Processing CSCO for stock_data_minute
+2025-09-07 16:38:36,365 - INFO - CSCO in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,109,925 records
+2025-09-07 16:38:36,365 - INFO - CSCO: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,365 - INFO - Fetching CSCO 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,450 - ERROR - Error fetching CSCO 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:36,450 - INFO - CSCO update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:36,452 - INFO - === Updating CVS ===
+2025-09-07 16:38:36,452 - INFO - Processing CVS for stock_data_day
+2025-09-07 16:38:36,455 - INFO - CVS in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:36,455 - INFO - CVS: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:36,455 - INFO - Fetching CVS 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:36,541 - ERROR - Error fetching CVS 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:36,542 - INFO - Processing CVS for stock_data_hour
+2025-09-07 16:38:36,554 - INFO - CVS in stock_data_hour: Latest data 2025-09-05, 2 days behind, 28,689 records
+2025-09-07 16:38:36,555 - INFO - CVS: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,555 - INFO - Fetching CVS 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,640 - ERROR - Error fetching CVS 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:36,641 - INFO - Processing CVS for stock_data_minute
+2025-09-07 16:38:36,782 - INFO - CVS in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,023,785 records
+2025-09-07 16:38:36,782 - INFO - CVS: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,782 - INFO - Fetching CVS 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,871 - ERROR - Error fetching CVS 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:36,872 - INFO - CVS update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:36,873 - INFO - === Updating CVX ===
+2025-09-07 16:38:36,873 - INFO - Processing CVX for stock_data_day
+2025-09-07 16:38:36,875 - INFO - CVX in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:36,875 - INFO - CVX: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:36,875 - INFO - Fetching CVX 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:36,961 - ERROR - Error fetching CVX 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:36,962 - INFO - Processing CVX for stock_data_hour
+2025-09-07 16:38:36,977 - INFO - CVX in stock_data_hour: Latest data 2025-09-05, 2 days behind, 31,120 records
+2025-09-07 16:38:36,977 - INFO - CVX: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:36,978 - INFO - Fetching CVX 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,060 - ERROR - Error fetching CVX 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:37,061 - INFO - Processing CVX for stock_data_minute
+2025-09-07 16:38:37,314 - INFO - CVX in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,054,346 records
+2025-09-07 16:38:37,314 - INFO - CVX: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,314 - INFO - Fetching CVX 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,401 - ERROR - Error fetching CVX 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:37,403 - INFO - CVX update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:37,404 - INFO - === Updating DIS ===
+2025-09-07 16:38:37,404 - INFO - Processing DIS for stock_data_day
+2025-09-07 16:38:37,407 - INFO - DIS in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:37,407 - INFO - DIS: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:37,407 - INFO - Fetching DIS 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:37,492 - ERROR - Error fetching DIS 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:37,493 - INFO - Processing DIS for stock_data_hour
+2025-09-07 16:38:37,499 - INFO - DIS in stock_data_hour: Latest data 2025-09-05, 2 days behind, 33,849 records
+2025-09-07 16:38:37,499 - INFO - DIS: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,499 - INFO - Fetching DIS 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,583 - ERROR - Error fetching DIS 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:37,583 - INFO - Processing DIS for stock_data_minute
+2025-09-07 16:38:37,718 - INFO - DIS in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,153,407 records
+2025-09-07 16:38:37,718 - INFO - DIS: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,719 - INFO - Fetching DIS 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,803 - ERROR - Error fetching DIS 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:37,803 - INFO - DIS update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:37,804 - INFO - === Updating DOCU ===
+2025-09-07 16:38:37,804 - INFO - Processing DOCU for stock_data_day
+2025-09-07 16:38:37,805 - INFO - DOCU in stock_data_day: Latest data 2025-09-04, 3 days behind, 1,850 records
+2025-09-07 16:38:37,805 - INFO - DOCU: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:37,805 - INFO - Fetching DOCU 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:37,893 - ERROR - Error fetching DOCU 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:37,893 - INFO - Processing DOCU for stock_data_hour
+2025-09-07 16:38:37,909 - INFO - DOCU in stock_data_hour: Latest data 2025-09-05, 2 days behind, 22,349 records
+2025-09-07 16:38:37,909 - INFO - DOCU: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,909 - INFO - Fetching DOCU 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:37,992 - ERROR - Error fetching DOCU 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:37,992 - INFO - Processing DOCU for stock_data_minute
+2025-09-07 16:38:38,161 - INFO - DOCU in stock_data_minute: Latest data 2025-09-05, 2 days behind, 771,475 records
+2025-09-07 16:38:38,162 - INFO - DOCU: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,162 - INFO - Fetching DOCU 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,243 - ERROR - Error fetching DOCU 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:38,244 - INFO - DOCU update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:38,245 - INFO - === Updating FDX ===
+2025-09-07 16:38:38,245 - INFO - Processing FDX for stock_data_day
+2025-09-07 16:38:38,247 - INFO - FDX in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:38,247 - INFO - FDX: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:38,248 - INFO - Fetching FDX 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:38,334 - ERROR - Error fetching FDX 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:38,334 - INFO - Processing FDX for stock_data_hour
+2025-09-07 16:38:38,344 - INFO - FDX in stock_data_hour: Latest data 2025-09-05, 2 days behind, 25,899 records
+2025-09-07 16:38:38,344 - INFO - FDX: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,345 - INFO - Fetching FDX 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,432 - ERROR - Error fetching FDX 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:38,433 - INFO - Processing FDX for stock_data_minute
+2025-09-07 16:38:38,567 - INFO - FDX in stock_data_minute: Latest data 2025-09-05, 2 days behind, 972,950 records
+2025-09-07 16:38:38,568 - INFO - FDX: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,568 - INFO - Fetching FDX 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,653 - ERROR - Error fetching FDX 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:38,653 - INFO - FDX update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:38,654 - INFO - === Updating FTNT ===
+2025-09-07 16:38:38,654 - INFO - Processing FTNT for stock_data_day
+2025-09-07 16:38:38,660 - INFO - FTNT in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:38,660 - INFO - FTNT: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:38,660 - INFO - Fetching FTNT 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:38,745 - ERROR - Error fetching FTNT 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:38,745 - INFO - Processing FTNT for stock_data_hour
+2025-09-07 16:38:38,751 - INFO - FTNT in stock_data_hour: Latest data 2025-09-05, 2 days behind, 25,040 records
+2025-09-07 16:38:38,751 - INFO - FTNT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,751 - INFO - Fetching FTNT 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,834 - ERROR - Error fetching FTNT 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:38,834 - INFO - Processing FTNT for stock_data_minute
+2025-09-07 16:38:38,961 - INFO - FTNT in stock_data_minute: Latest data 2025-09-05, 2 days behind, 960,942 records
+2025-09-07 16:38:38,961 - INFO - FTNT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:38,961 - INFO - Fetching FTNT 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:39,043 - ERROR - Error fetching FTNT 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:39,044 - INFO - FTNT update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:39,045 - INFO - === Updating GE ===
+2025-09-07 16:38:39,045 - INFO - Processing GE for stock_data_day
+2025-09-07 16:38:39,047 - INFO - GE in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:39,047 - INFO - GE: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:39,047 - INFO - Fetching GE 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:39,135 - ERROR - Error fetching GE 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:39,136 - INFO - Processing GE for stock_data_hour
+2025-09-07 16:38:39,142 - INFO - GE in stock_data_hour: Latest data 2025-09-05, 2 days behind, 33,545 records
+2025-09-07 16:38:39,142 - INFO - GE: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:39,142 - INFO - Fetching GE 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:39,224 - ERROR - Error fetching GE 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:39,224 - INFO - Processing GE for stock_data_minute
+2025-09-07 16:38:39,590 - INFO - GE in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,199,313 records
+2025-09-07 16:38:39,590 - INFO - GE: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:39,590 - INFO - Fetching GE 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:39,674 - ERROR - Error fetching GE 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:39,675 - INFO - GE update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:39,675 - INFO - === Updating GME ===
+2025-09-07 16:38:39,675 - INFO - Processing GME for stock_data_day
+2025-09-07 16:38:39,677 - INFO - GME in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:39,677 - INFO - GME: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:39,677 - INFO - Fetching GME 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:39,764 - ERROR - Error fetching GME 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:39,764 - INFO - Processing GME for stock_data_hour
+2025-09-07 16:38:39,771 - INFO - GME in stock_data_hour: Latest data 2025-09-05, 2 days behind, 30,573 records
+2025-09-07 16:38:39,771 - INFO - GME: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:39,771 - INFO - Fetching GME 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:39,854 - ERROR - Error fetching GME 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:39,854 - INFO - Processing GME for stock_data_minute
+2025-09-07 16:38:40,015 - INFO - GME in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,156,786 records
+2025-09-07 16:38:40,015 - INFO - GME: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:40,016 - INFO - Fetching GME 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:40,105 - ERROR - Error fetching GME 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:40,105 - INFO - GME update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:40,106 - INFO - === Updating GOOG ===
+2025-09-07 16:38:40,106 - INFO - Processing GOOG for stock_data_day
+2025-09-07 16:38:40,107 - INFO - GOOG in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:40,107 - INFO - GOOG: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:40,108 - INFO - Fetching GOOG 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:40,195 - ERROR - Error fetching GOOG 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:40,196 - INFO - Processing GOOG for stock_data_hour
+2025-09-07 16:38:40,212 - INFO - GOOG in stock_data_hour: Latest data 2025-09-05, 2 days behind, 31,458 records
+2025-09-07 16:38:40,212 - INFO - GOOG: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:40,212 - INFO - Fetching GOOG 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:40,295 - ERROR - Error fetching GOOG 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:40,296 - INFO - Processing GOOG for stock_data_minute
+2025-09-07 16:38:40,696 - INFO - GOOG in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,140,060 records
+2025-09-07 16:38:40,696 - INFO - GOOG: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:40,696 - INFO - Fetching GOOG 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:40,785 - ERROR - Error fetching GOOG 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:40,785 - INFO - GOOG update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:40,786 - INFO - === Updating GOOGL ===
+2025-09-07 16:38:40,786 - INFO - Processing GOOGL for stock_data_day
+2025-09-07 16:38:40,788 - INFO - GOOGL in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:40,789 - INFO - GOOGL: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:40,789 - INFO - Fetching GOOGL 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:40,876 - ERROR - Error fetching GOOGL 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:40,876 - INFO - Processing GOOGL for stock_data_hour
+2025-09-07 16:38:40,881 - INFO - GOOGL in stock_data_hour: Latest data 2016-02-18, 3489 days behind, 14,189 records
+2025-09-07 16:38:40,881 - INFO - GOOGL: Fetching from 2016-02-17 to 2025-09-08
+2025-09-07 16:38:40,881 - INFO - Fetching GOOGL 1Hour data from 2016-02-17 to 2025-09-08
+2025-09-07 16:38:40,965 - ERROR - Error fetching GOOGL 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:40,965 - INFO - Processing GOOGL for stock_data_minute
+2025-09-07 16:38:41,124 - INFO - GOOGL in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,180,760 records
+2025-09-07 16:38:41,125 - INFO - GOOGL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:41,125 - INFO - Fetching GOOGL 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:41,215 - ERROR - Error fetching GOOGL 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:41,215 - INFO - GOOGL update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:41,216 - INFO - === Updating GS ===
+2025-09-07 16:38:41,216 - INFO - Processing GS for stock_data_day
+2025-09-07 16:38:41,217 - INFO - GS in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:41,217 - INFO - GS: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:41,217 - INFO - Fetching GS 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:41,306 - ERROR - Error fetching GS 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:41,306 - INFO - Processing GS for stock_data_hour
+2025-09-07 16:38:41,319 - INFO - GS in stock_data_hour: Latest data 2025-09-05, 2 days behind, 29,076 records
+2025-09-07 16:38:41,320 - INFO - GS: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:41,320 - INFO - Fetching GS 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:41,406 - ERROR - Error fetching GS 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:41,407 - INFO - Processing GS for stock_data_minute
+2025-09-07 16:38:41,837 - INFO - GS in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,009,874 records
+2025-09-07 16:38:41,837 - INFO - GS: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:41,837 - INFO - Fetching GS 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:41,927 - ERROR - Error fetching GS 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:41,928 - INFO - GS update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:41,928 - INFO - === Updating HD ===
+2025-09-07 16:38:41,928 - INFO - Processing HD for stock_data_day
+2025-09-07 16:38:41,931 - INFO - HD in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:41,931 - INFO - HD: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:41,931 - INFO - Fetching HD 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:42,016 - ERROR - Error fetching HD 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:42,017 - INFO - Processing HD for stock_data_hour
+2025-09-07 16:38:42,022 - INFO - HD in stock_data_hour: Latest data 2025-09-05, 2 days behind, 28,084 records
+2025-09-07 16:38:42,022 - INFO - HD: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,023 - INFO - Fetching HD 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,107 - ERROR - Error fetching HD 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:42,107 - INFO - Processing HD for stock_data_minute
+2025-09-07 16:38:42,411 - INFO - HD in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,006,372 records
+2025-09-07 16:38:42,411 - INFO - HD: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,411 - INFO - Fetching HD 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,497 - ERROR - Error fetching HD 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:42,497 - INFO - HD update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:42,498 - INFO - === Updating HON ===
+2025-09-07 16:38:42,498 - INFO - Processing HON for stock_data_day
+2025-09-07 16:38:42,500 - INFO - HON in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:42,500 - INFO - HON: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:42,500 - INFO - Fetching HON 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:42,590 - ERROR - Error fetching HON 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:42,590 - INFO - Processing HON for stock_data_hour
+2025-09-07 16:38:42,599 - INFO - HON in stock_data_hour: Latest data 2025-09-05, 2 days behind, 23,898 records
+2025-09-07 16:38:42,600 - INFO - HON: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,600 - INFO - Fetching HON 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,689 - ERROR - Error fetching HON 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:42,689 - INFO - Processing HON for stock_data_minute
+2025-09-07 16:38:42,808 - INFO - HON in stock_data_minute: Latest data 2025-09-05, 2 days behind, 966,737 records
+2025-09-07 16:38:42,808 - INFO - HON: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,808 - INFO - Fetching HON 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,897 - ERROR - Error fetching HON 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:42,898 - INFO - HON update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:42,899 - INFO - === Updating INTC ===
+2025-09-07 16:38:42,899 - INFO - Processing INTC for stock_data_day
+2025-09-07 16:38:42,905 - INFO - INTC in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:42,905 - INFO - INTC: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:42,905 - INFO - Fetching INTC 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:42,988 - ERROR - Error fetching INTC 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:42,989 - INFO - Processing INTC for stock_data_hour
+2025-09-07 16:38:42,994 - INFO - INTC in stock_data_hour: Latest data 2025-09-05, 2 days behind, 35,918 records
+2025-09-07 16:38:42,994 - INFO - INTC: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:42,995 - INFO - Fetching INTC 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:43,077 - ERROR - Error fetching INTC 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:43,077 - INFO - Processing INTC for stock_data_minute
+2025-09-07 16:38:43,518 - INFO - INTC in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,396,000 records
+2025-09-07 16:38:43,518 - INFO - INTC: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:43,518 - INFO - Fetching INTC 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:43,607 - ERROR - Error fetching INTC 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:43,608 - INFO - INTC update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:43,608 - INFO - === Updating IWM ===
+2025-09-07 16:38:43,609 - INFO - Processing IWM for stock_data_day
+2025-09-07 16:38:43,611 - INFO - IWM in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:43,611 - INFO - IWM: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:43,612 - INFO - Fetching IWM 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:43,698 - ERROR - Error fetching IWM 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:43,698 - INFO - Processing IWM for stock_data_hour
+2025-09-07 16:38:43,705 - INFO - IWM in stock_data_hour: Latest data 2025-09-05, 2 days behind, 37,544 records
+2025-09-07 16:38:43,706 - INFO - IWM: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:43,706 - INFO - Fetching IWM 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:43,787 - ERROR - Error fetching IWM 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:43,788 - INFO - Processing IWM for stock_data_minute
+2025-09-07 16:38:44,246 - INFO - IWM in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,544,771 records
+2025-09-07 16:38:44,247 - INFO - IWM: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:44,247 - INFO - Fetching IWM 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:44,329 - ERROR - Error fetching IWM 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:44,329 - INFO - IWM update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:44,330 - INFO - === Updating JNJ ===
+2025-09-07 16:38:44,330 - INFO - Processing JNJ for stock_data_day
+2025-09-07 16:38:44,332 - INFO - JNJ in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:44,332 - INFO - JNJ: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:44,333 - INFO - Fetching JNJ 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:44,418 - ERROR - Error fetching JNJ 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:44,419 - INFO - Processing JNJ for stock_data_hour
+2025-09-07 16:38:44,433 - INFO - JNJ in stock_data_hour: Latest data 2025-09-05, 2 days behind, 29,078 records
+2025-09-07 16:38:44,433 - INFO - JNJ: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:44,433 - INFO - Fetching JNJ 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:44,520 - ERROR - Error fetching JNJ 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:44,521 - INFO - Processing JNJ for stock_data_minute
+2025-09-07 16:38:44,645 - INFO - JNJ in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,011,488 records
+2025-09-07 16:38:44,646 - INFO - JNJ: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:44,646 - INFO - Fetching JNJ 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:44,730 - ERROR - Error fetching JNJ 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:44,731 - INFO - JNJ update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:44,732 - INFO - === Updating JPM ===
+2025-09-07 16:38:44,732 - INFO - Processing JPM for stock_data_day
+2025-09-07 16:38:44,734 - INFO - JPM in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:44,734 - INFO - JPM: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:44,734 - INFO - Fetching JPM 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:44,820 - ERROR - Error fetching JPM 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:44,820 - INFO - Processing JPM for stock_data_hour
+2025-09-07 16:38:44,828 - INFO - JPM in stock_data_hour: Latest data 2025-09-05, 2 days behind, 32,884 records
+2025-09-07 16:38:44,828 - INFO - JPM: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:44,829 - INFO - Fetching JPM 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:44,919 - ERROR - Error fetching JPM 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:44,919 - INFO - Processing JPM for stock_data_minute
+2025-09-07 16:38:45,055 - INFO - JPM in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,113,611 records
+2025-09-07 16:38:45,055 - INFO - JPM: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:45,055 - INFO - Fetching JPM 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:45,139 - ERROR - Error fetching JPM 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:45,140 - INFO - JPM update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:45,140 - INFO - === Updating KO ===
+2025-09-07 16:38:45,141 - INFO - Processing KO for stock_data_day
+2025-09-07 16:38:45,143 - INFO - KO in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:45,143 - INFO - KO: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:45,144 - INFO - Fetching KO 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:45,231 - ERROR - Error fetching KO 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:45,231 - INFO - Processing KO for stock_data_hour
+2025-09-07 16:38:45,241 - INFO - KO in stock_data_hour: Latest data 2025-09-05, 2 days behind, 32,672 records
+2025-09-07 16:38:45,241 - INFO - KO: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:45,242 - INFO - Fetching KO 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:45,330 - ERROR - Error fetching KO 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:45,331 - INFO - Processing KO for stock_data_minute
+2025-09-07 16:38:45,672 - INFO - KO in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,066,850 records
+2025-09-07 16:38:45,673 - INFO - KO: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:45,673 - INFO - Fetching KO 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:45,763 - ERROR - Error fetching KO 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:45,764 - INFO - KO update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:45,764 - INFO - === Updating LLY ===
+2025-09-07 16:38:45,764 - INFO - Processing LLY for stock_data_day
+2025-09-07 16:38:45,765 - INFO - LLY in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:45,766 - INFO - LLY: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:45,766 - INFO - Fetching LLY 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:45,849 - ERROR - Error fetching LLY 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:45,850 - INFO - Processing LLY for stock_data_hour
+2025-09-07 16:38:45,856 - INFO - LLY in stock_data_hour: Latest data 2025-09-05, 2 days behind, 25,716 records
+2025-09-07 16:38:45,856 - INFO - LLY: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:45,856 - INFO - Fetching LLY 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:45,941 - ERROR - Error fetching LLY 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:45,941 - INFO - Processing LLY for stock_data_minute
+2025-09-07 16:38:46,260 - INFO - LLY in stock_data_minute: Latest data 2025-09-05, 2 days behind, 986,560 records
+2025-09-07 16:38:46,260 - INFO - LLY: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:46,260 - INFO - Fetching LLY 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:46,353 - ERROR - Error fetching LLY 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:46,353 - INFO - LLY update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:46,354 - INFO - === Updating LYFT ===
+2025-09-07 16:38:46,355 - INFO - Processing LYFT for stock_data_day
+2025-09-07 16:38:46,356 - INFO - LYFT in stock_data_day: Latest data 2025-09-04, 3 days behind, 1,619 records
+2025-09-07 16:38:46,356 - INFO - LYFT: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:46,356 - INFO - Fetching LYFT 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:46,440 - ERROR - Error fetching LYFT 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:46,441 - INFO - Processing LYFT for stock_data_hour
+2025-09-07 16:38:46,453 - INFO - LYFT in stock_data_hour: Latest data 2025-09-05, 2 days behind, 22,607 records
+2025-09-07 16:38:46,453 - INFO - LYFT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:46,453 - INFO - Fetching LYFT 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:46,541 - ERROR - Error fetching LYFT 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:46,543 - INFO - Processing LYFT for stock_data_minute
+2025-09-07 16:38:46,661 - INFO - LYFT in stock_data_minute: Latest data 2025-09-05, 2 days behind, 773,377 records
+2025-09-07 16:38:46,661 - INFO - LYFT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:46,661 - INFO - Fetching LYFT 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:46,741 - ERROR - Error fetching LYFT 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:46,741 - INFO - LYFT update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:46,742 - INFO - === Updating MA ===
+2025-09-07 16:38:46,742 - INFO - Processing MA for stock_data_day
+2025-09-07 16:38:46,744 - INFO - MA in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:46,744 - INFO - MA: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:46,744 - INFO - Fetching MA 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:46,830 - ERROR - Error fetching MA 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:46,831 - INFO - Processing MA for stock_data_hour
+2025-09-07 16:38:46,839 - INFO - MA in stock_data_hour: Latest data 2025-09-05, 2 days behind, 26,189 records
+2025-09-07 16:38:46,840 - INFO - MA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:46,840 - INFO - Fetching MA 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:46,921 - ERROR - Error fetching MA 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:46,922 - INFO - Processing MA for stock_data_minute
+2025-09-07 16:38:47,223 - INFO - MA in stock_data_minute: Latest data 2025-09-05, 2 days behind, 979,574 records
+2025-09-07 16:38:47,224 - INFO - MA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:47,224 - INFO - Fetching MA 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:47,312 - ERROR - Error fetching MA 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:47,313 - INFO - MA update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:47,313 - INFO - === Updating MCD ===
+2025-09-07 16:38:47,314 - INFO - Processing MCD for stock_data_day
+2025-09-07 16:38:47,316 - INFO - MCD in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:47,316 - INFO - MCD: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:47,316 - INFO - Fetching MCD 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:47,403 - ERROR - Error fetching MCD 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:47,403 - INFO - Processing MCD for stock_data_hour
+2025-09-07 16:38:47,410 - INFO - MCD in stock_data_hour: Latest data 2025-09-05, 2 days behind, 27,465 records
+2025-09-07 16:38:47,410 - INFO - MCD: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:47,411 - INFO - Fetching MCD 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:47,503 - ERROR - Error fetching MCD 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:47,503 - INFO - Processing MCD for stock_data_minute
+2025-09-07 16:38:47,813 - INFO - MCD in stock_data_minute: Latest data 2025-09-05, 2 days behind, 990,683 records
+2025-09-07 16:38:47,813 - INFO - MCD: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:47,813 - INFO - Fetching MCD 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:47,903 - ERROR - Error fetching MCD 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:47,904 - INFO - MCD update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:47,905 - INFO - === Updating META ===
+2025-09-07 16:38:47,905 - INFO - Processing META for stock_data_day
+2025-09-07 16:38:47,907 - INFO - META in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:47,907 - INFO - META: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:47,907 - INFO - Fetching META 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:47,993 - ERROR - Error fetching META 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:47,993 - INFO - Processing META for stock_data_hour
+2025-09-07 16:38:48,002 - INFO - META in stock_data_hour: Latest data 2025-09-05, 2 days behind, 37,620 records
+2025-09-07 16:38:48,002 - INFO - META: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:48,002 - INFO - Fetching META 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:48,094 - ERROR - Error fetching META 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:48,094 - INFO - Processing META for stock_data_minute
+2025-09-07 16:38:48,504 - INFO - META in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,435,263 records
+2025-09-07 16:38:48,504 - INFO - META: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:48,504 - INFO - Fetching META 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:48,594 - ERROR - Error fetching META 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:48,594 - INFO - META update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:48,595 - INFO - === Updating MMM ===
+2025-09-07 16:38:48,595 - INFO - Processing MMM for stock_data_day
+2025-09-07 16:38:48,598 - INFO - MMM in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:48,598 - INFO - MMM: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:48,598 - INFO - Fetching MMM 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:48,684 - ERROR - Error fetching MMM 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:48,684 - INFO - Processing MMM for stock_data_hour
+2025-09-07 16:38:48,693 - INFO - MMM in stock_data_hour: Latest data 2025-09-05, 2 days behind, 26,370 records
+2025-09-07 16:38:48,693 - INFO - MMM: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:48,693 - INFO - Fetching MMM 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:48,783 - ERROR - Error fetching MMM 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:48,783 - INFO - Processing MMM for stock_data_minute
+2025-09-07 16:38:49,078 - INFO - MMM in stock_data_minute: Latest data 2025-09-05, 2 days behind, 979,953 records
+2025-09-07 16:38:49,079 - INFO - MMM: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:49,079 - INFO - Fetching MMM 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:49,164 - ERROR - Error fetching MMM 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:49,165 - INFO - MMM update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:49,166 - INFO - === Updating MRNA ===
+2025-09-07 16:38:49,166 - INFO - Processing MRNA for stock_data_day
+2025-09-07 16:38:49,167 - INFO - MRNA in stock_data_day: Latest data 2025-09-04, 3 days behind, 1,695 records
+2025-09-07 16:38:49,167 - INFO - MRNA: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:49,168 - INFO - Fetching MRNA 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:49,253 - ERROR - Error fetching MRNA 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:49,254 - INFO - Processing MRNA for stock_data_hour
+2025-09-07 16:38:49,259 - INFO - MRNA in stock_data_hour: Latest data 2025-09-05, 2 days behind, 23,525 records
+2025-09-07 16:38:49,259 - INFO - MRNA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:49,259 - INFO - Fetching MRNA 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:49,343 - ERROR - Error fetching MRNA 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:49,343 - INFO - Processing MRNA for stock_data_minute
+2025-09-07 16:38:49,605 - INFO - MRNA in stock_data_minute: Latest data 2025-09-05, 2 days behind, 826,199 records
+2025-09-07 16:38:49,606 - INFO - MRNA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:49,607 - INFO - Fetching MRNA 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:49,695 - ERROR - Error fetching MRNA 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:49,696 - INFO - MRNA update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:49,696 - INFO - === Updating MS ===
+2025-09-07 16:38:49,697 - INFO - Processing MS for stock_data_day
+2025-09-07 16:38:49,698 - INFO - MS in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:49,699 - INFO - MS: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:49,699 - INFO - Fetching MS 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:49,785 - ERROR - Error fetching MS 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:49,786 - INFO - Processing MS for stock_data_hour
+2025-09-07 16:38:49,791 - INFO - MS in stock_data_hour: Latest data 2025-09-05, 2 days behind, 29,036 records
+2025-09-07 16:38:49,791 - INFO - MS: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:49,791 - INFO - Fetching MS 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:49,875 - ERROR - Error fetching MS 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:49,876 - INFO - Processing MS for stock_data_minute
+2025-09-07 16:38:50,200 - INFO - MS in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,019,622 records
+2025-09-07 16:38:50,200 - INFO - MS: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:50,202 - INFO - Fetching MS 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:50,284 - ERROR - Error fetching MS 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:50,285 - INFO - MS update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:50,286 - INFO - === Updating MSFT ===
+2025-09-07 16:38:50,286 - INFO - Processing MSFT for stock_data_day
+2025-09-07 16:38:50,288 - INFO - MSFT in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:50,288 - INFO - MSFT: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:50,288 - INFO - Fetching MSFT 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:50,376 - ERROR - Error fetching MSFT 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:50,376 - INFO - Processing MSFT for stock_data_hour
+2025-09-07 16:38:50,393 - INFO - MSFT in stock_data_hour: Latest data 2025-09-05, 2 days behind, 36,775 records
+2025-09-07 16:38:50,393 - INFO - MSFT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:50,394 - INFO - Fetching MSFT 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:50,475 - ERROR - Error fetching MSFT 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:50,475 - INFO - Processing MSFT for stock_data_minute
+2025-09-07 16:38:50,858 - INFO - MSFT in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,385,915 records
+2025-09-07 16:38:50,859 - INFO - MSFT: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:50,859 - INFO - Fetching MSFT 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:50,946 - ERROR - Error fetching MSFT 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:50,947 - INFO - MSFT update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:50,947 - INFO - === Updating NEE ===
+2025-09-07 16:38:50,948 - INFO - Processing NEE for stock_data_day
+2025-09-07 16:38:50,949 - INFO - NEE in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:50,950 - INFO - NEE: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:50,950 - INFO - Fetching NEE 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:51,035 - ERROR - Error fetching NEE 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:51,035 - INFO - Processing NEE for stock_data_hour
+2025-09-07 16:38:51,040 - INFO - NEE in stock_data_hour: Latest data 2025-09-05, 2 days behind, 25,951 records
+2025-09-07 16:38:51,040 - INFO - NEE: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:51,040 - INFO - Fetching NEE 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:51,126 - ERROR - Error fetching NEE 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:51,126 - INFO - Processing NEE for stock_data_minute
+2025-09-07 16:38:51,597 - INFO - NEE in stock_data_minute: Latest data 2025-09-05, 2 days behind, 978,977 records
+2025-09-07 16:38:51,598 - INFO - NEE: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:51,598 - INFO - Fetching NEE 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:51,686 - ERROR - Error fetching NEE 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:51,686 - INFO - NEE update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:51,687 - INFO - === Updating NFLX ===
+2025-09-07 16:38:51,687 - INFO - Processing NFLX for stock_data_day
+2025-09-07 16:38:51,688 - INFO - NFLX in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:51,689 - INFO - NFLX: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:51,689 - INFO - Fetching NFLX 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:51,776 - ERROR - Error fetching NFLX 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:51,776 - INFO - Processing NFLX for stock_data_hour
+2025-09-07 16:38:51,791 - INFO - NFLX in stock_data_hour: Latest data 2025-09-05, 2 days behind, 34,666 records
+2025-09-07 16:38:51,791 - INFO - NFLX: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:51,792 - INFO - Fetching NFLX 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:51,877 - ERROR - Error fetching NFLX 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:51,877 - INFO - Processing NFLX for stock_data_minute
+2025-09-07 16:38:52,139 - INFO - NFLX in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,178,326 records
+2025-09-07 16:38:52,139 - INFO - NFLX: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:52,139 - INFO - Fetching NFLX 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:52,226 - ERROR - Error fetching NFLX 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:52,227 - INFO - NFLX update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:52,227 - INFO - === Updating NKE ===
+2025-09-07 16:38:52,228 - INFO - Processing NKE for stock_data_day
+2025-09-07 16:38:52,229 - INFO - NKE in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:52,229 - INFO - NKE: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:52,230 - INFO - Fetching NKE 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:52,317 - ERROR - Error fetching NKE 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:52,318 - INFO - Processing NKE for stock_data_hour
+2025-09-07 16:38:52,324 - INFO - NKE in stock_data_hour: Latest data 2025-09-05, 2 days behind, 31,903 records
+2025-09-07 16:38:52,324 - INFO - NKE: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:52,325 - INFO - Fetching NKE 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:52,407 - ERROR - Error fetching NKE 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:52,407 - INFO - Processing NKE for stock_data_minute
+2025-09-07 16:38:52,550 - INFO - NKE in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,075,632 records
+2025-09-07 16:38:52,550 - INFO - NKE: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:52,550 - INFO - Fetching NKE 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:52,638 - ERROR - Error fetching NKE 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:52,638 - INFO - NKE update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:52,639 - INFO - === Updating NOK ===
+2025-09-07 16:38:52,639 - INFO - Processing NOK for stock_data_day
+2025-09-07 16:38:52,743 - INFO - NOK in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:52,744 - INFO - NOK: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:52,744 - INFO - Fetching NOK 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:52,828 - ERROR - Error fetching NOK 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:52,828 - INFO - Processing NOK for stock_data_hour
+2025-09-07 16:38:52,872 - INFO - NOK in stock_data_hour: Latest data 2025-09-05, 2 days behind, 35,616 records
+2025-09-07 16:38:52,873 - INFO - NOK: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:52,873 - INFO - Fetching NOK 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:52,958 - ERROR - Error fetching NOK 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:52,959 - INFO - Processing NOK for stock_data_minute
+2025-09-07 16:38:53,484 - INFO - NOK in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,186,838 records
+2025-09-07 16:38:53,484 - INFO - NOK: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:53,485 - INFO - Fetching NOK 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:53,568 - ERROR - Error fetching NOK 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:53,569 - INFO - NOK update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:53,570 - INFO - === Updating NVDA ===
+2025-09-07 16:38:53,570 - INFO - Processing NVDA for stock_data_day
+2025-09-07 16:38:53,572 - INFO - NVDA in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:53,572 - INFO - NVDA: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:53,573 - INFO - Fetching NVDA 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:53,660 - ERROR - Error fetching NVDA 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:53,660 - INFO - Processing NVDA for stock_data_hour
+2025-09-07 16:38:53,676 - INFO - NVDA in stock_data_hour: Latest data 2025-09-05, 2 days behind, 36,723 records
+2025-09-07 16:38:53,677 - INFO - NVDA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:53,677 - INFO - Fetching NVDA 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:53,759 - ERROR - Error fetching NVDA 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:53,759 - INFO - Processing NVDA for stock_data_minute
+2025-09-07 16:38:54,142 - INFO - NVDA in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,603,760 records
+2025-09-07 16:38:54,142 - INFO - NVDA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:54,142 - INFO - Fetching NVDA 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:54,230 - ERROR - Error fetching NVDA 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:54,230 - INFO - NVDA update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:54,231 - INFO - === Updating OKTA ===
+2025-09-07 16:38:54,231 - INFO - Processing OKTA for stock_data_day
+2025-09-07 16:38:54,232 - INFO - OKTA in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,115 records
+2025-09-07 16:38:54,232 - INFO - OKTA: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:54,233 - INFO - Fetching OKTA 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:54,319 - ERROR - Error fetching OKTA 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:54,320 - INFO - Processing OKTA for stock_data_hour
+2025-09-07 16:38:54,325 - INFO - OKTA in stock_data_hour: Latest data 2025-09-05, 2 days behind, 23,819 records
+2025-09-07 16:38:54,325 - INFO - OKTA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:54,325 - INFO - Fetching OKTA 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:54,411 - ERROR - Error fetching OKTA 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:54,411 - INFO - Processing OKTA for stock_data_minute
+2025-09-07 16:38:54,650 - INFO - OKTA in stock_data_minute: Latest data 2025-09-05, 2 days behind, 831,442 records
+2025-09-07 16:38:54,650 - INFO - OKTA: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:54,650 - INFO - Fetching OKTA 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:54,740 - ERROR - Error fetching OKTA 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:54,741 - INFO - OKTA update complete: 0 new records, 0 duplicates
+2025-09-07 16:38:54,741 - INFO - === Updating ORCL ===
+2025-09-07 16:38:54,742 - INFO - Processing ORCL for stock_data_day
+2025-09-07 16:38:54,744 - INFO - ORCL in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:38:54,744 - INFO - ORCL: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:54,744 - INFO - Fetching ORCL 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:38:54,832 - ERROR - Error fetching ORCL 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:54,833 - INFO - Processing ORCL for stock_data_hour
+2025-09-07 16:38:54,844 - INFO - ORCL in stock_data_hour: Latest data 2025-09-05, 2 days behind, 29,165 records
+2025-09-07 16:38:54,845 - INFO - ORCL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:54,845 - INFO - Fetching ORCL 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:38:54,931 - ERROR - Error fetching ORCL 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:38:54,932 - INFO - Processing ORCL for stock_data_minute
+2025-09-07 16:38:55,271 - INFO - 
+[INTERRUPTED] Update cancelled by user
+2025-09-07 16:40:01,437 - INFO - Updating specific symbols: ['AAPL']
+2025-09-07 16:40:01,438 - INFO - === Updating Specific Symbols: ['AAPL'] ===
+2025-09-07 16:40:01,438 - INFO - === Updating AAPL ===
+2025-09-07 16:40:01,438 - INFO - Processing AAPL for stock_data_day
+2025-09-07 16:40:01,481 - INFO - AAPL in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:40:01,481 - INFO - AAPL: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:40:01,481 - INFO - Fetching AAPL 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:40:01,799 - ERROR - Error fetching AAPL 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:40:01,799 - INFO - Processing AAPL for stock_data_hour
+2025-09-07 16:40:01,810 - INFO - AAPL in stock_data_hour: Latest data 2025-09-05, 2 days behind, 37,947 records
+2025-09-07 16:40:01,810 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:40:01,810 - INFO - Fetching AAPL 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:40:01,899 - ERROR - Error fetching AAPL 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:40:01,899 - INFO - Processing AAPL for stock_data_minute
+2025-09-07 16:40:02,163 - INFO - AAPL in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,731,683 records
+2025-09-07 16:40:02,163 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:40:02,163 - INFO - Fetching AAPL 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:40:02,249 - ERROR - Error fetching AAPL 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:40:02,250 - INFO - AAPL update complete: 0 new records, 0 duplicates
+2025-09-07 16:40:02,250 - INFO - Specific update complete: 0 new records, 0 duplicates
+2025-09-07 16:40:38,971 - INFO - Updating specific symbols: ['AAPL']
+2025-09-07 16:40:38,971 - INFO - === Updating Specific Symbols: ['AAPL'] ===
+2025-09-07 16:40:38,972 - INFO - === Updating AAPL ===
+2025-09-07 16:40:38,972 - INFO - Processing AAPL for stock_data_day
+2025-09-07 16:40:39,006 - INFO - AAPL in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:40:39,006 - INFO - AAPL: Fetching from 2025-09-03 to 2025-09-08
+2025-09-07 16:40:39,007 - INFO - Fetching AAPL 1Day data from 2025-09-03 to 2025-09-08
+2025-09-07 16:40:39,278 - ERROR - Error fetching AAPL 1Day data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:40:39,278 - INFO - Processing AAPL for stock_data_hour
+2025-09-07 16:40:39,288 - INFO - AAPL in stock_data_hour: Latest data 2025-09-05, 2 days behind, 37,947 records
+2025-09-07 16:40:39,288 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:40:39,288 - INFO - Fetching AAPL 1Hour data from 2025-09-04 to 2025-09-08
+2025-09-07 16:40:39,379 - ERROR - Error fetching AAPL 1Hour data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:40:39,379 - INFO - Processing AAPL for stock_data_minute
+2025-09-07 16:40:39,578 - INFO - AAPL in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,731,683 records
+2025-09-07 16:40:39,578 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-08
+2025-09-07 16:40:39,578 - INFO - Fetching AAPL 1Min data from 2025-09-04 to 2025-09-08
+2025-09-07 16:40:39,669 - ERROR - Error fetching AAPL 1Min data: {"message":"subscription does not permit querying recent SIP data"}
+
+2025-09-07 16:40:39,670 - INFO - AAPL update complete: 0 new records, 0 duplicates
+2025-09-07 16:40:39,670 - INFO - Specific update complete: 0 new records, 0 duplicates
+2025-09-07 16:42:22,309 - INFO - Updating specific symbols: ['AAPL']
+2025-09-07 16:42:22,310 - INFO - === Updating Specific Symbols: ['AAPL'] ===
+2025-09-07 16:42:22,310 - INFO - === Updating AAPL ===
+2025-09-07 16:42:22,310 - INFO - Processing AAPL for stock_data_day
+2025-09-07 16:42:22,351 - INFO - AAPL in stock_data_day: Latest data 2025-09-04, 3 days behind, 2,433 records
+2025-09-07 16:42:22,351 - INFO - AAPL: Fetching from 2025-09-03 to 2025-09-07
+2025-09-07 16:42:22,351 - INFO - Fetching AAPL 1Day data from 2025-09-03 to 2025-09-07
+2025-09-07 16:42:22,646 - INFO - Successfully fetched 3 bars for AAPL 1Day
+2025-09-07 16:42:22,665 - INFO - Inserted 0 new records, 3 duplicates skipped
+2025-09-07 16:42:22,665 - INFO - Processing AAPL for stock_data_hour
+2025-09-07 16:42:22,679 - INFO - AAPL in stock_data_hour: Latest data 2025-09-05, 2 days behind, 37,947 records
+2025-09-07 16:42:22,679 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-07
+2025-09-07 16:42:22,679 - INFO - Fetching AAPL 1Hour data from 2025-09-04 to 2025-09-07
+2025-09-07 16:42:22,778 - INFO - Successfully fetched 32 bars for AAPL 1Hour
+2025-09-07 16:42:22,787 - INFO - Inserted 0 new records, 32 duplicates skipped
+2025-09-07 16:42:22,787 - INFO - Processing AAPL for stock_data_minute
+2025-09-07 16:42:23,008 - INFO - AAPL in stock_data_minute: Latest data 2025-09-05, 2 days behind, 1,731,683 records
+2025-09-07 16:42:23,008 - INFO - AAPL: Fetching from 2025-09-04 to 2025-09-07
+2025-09-07 16:42:23,009 - INFO - Fetching AAPL 1Min data from 2025-09-04 to 2025-09-07
+2025-09-07 16:42:23,254 - INFO - Successfully fetched 1,421 bars for AAPL 1Min
+2025-09-07 16:42:23,432 - INFO - Inserted 0 new records, 1,421 duplicates skipped
+2025-09-07 16:42:23,432 - INFO - AAPL update complete: 0 new records, 1,456 duplicates
+2025-09-07 16:42:23,433 - INFO - Specific update complete: 0 new records, 1,456 duplicates
