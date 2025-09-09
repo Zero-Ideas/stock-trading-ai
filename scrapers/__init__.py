@@ -15,6 +15,7 @@ from .seeking_alpha_scraper import SeekingAlphaScraper
 from .benzinga_scraper import BenzingaScraper
 from .financial_times_scraper import FinancialTimesScraper
 from .bloomberg_scraper import BloombergScraper
+from .bloomberg_scraper_pydoll import BloombergScraperPydoll
 from .reuters_scraper import ReutersScraper
 
 __all__ = [
@@ -28,6 +29,7 @@ __all__ = [
     'BenzingaScraper',
     'FinancialTimesScraper',
     'BloombergScraper',
+    'BloombergPydollScraper',
     'ReutersScraper'
 ]
 

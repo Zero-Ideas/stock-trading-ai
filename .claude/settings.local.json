@@ -21,7 +21,8 @@
       "mcp__playwright__browser_click",
       "Bash(psql:*)",
       "Bash(copy output.json output_backup.json)",
-      "Bash(del test_progress.py)"
+      "Bash(del test_progress.py)",
+      "Bash(del \"C:\\Users\\ethan\\Desktop\\stock trading ai\\test_pydoll_scraper.py\")"
     ],
     "deny": [],
     "ask": []

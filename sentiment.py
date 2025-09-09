@@ -427,18 +427,18 @@ class StockSentimentAnalyzer:
         from scrapers import (
             GoogleNewsScraper, NewsAPIScraper, YahooFinanceScraper,
             MarketWatchScraper, SeekingAlphaScraper, BenzingaScraper,
-            FinancialTimesScraper, BloombergScraper, ReutersScraper
+            FinancialTimesScraper, BloombergScraperPydoll, ReutersScraper
         )
         
         # Initialize all improved scrapers (including previously disabled ones)
         all_scrapers = {
             # High-performance scrapers (now with newspaper3k enhancement)
-            'newsapi': NewsAPIScraper(self.symbol, debug),  # Re-enabled - now works great with newspaper3k
-            'google_news': GoogleNewsScraper(self.symbol, debug),
+            'newsapi': NewsAPIScraper(self.symbol, debug),  # Disabled - might be hitting API limits
+            'google_news': GoogleNewsScraper(self.symbol, debug),  # Simple RSS-based scraper for testing
             'yahoo_finance': YahooFinanceScraper(self.symbol, debug),
-       # 
+       #
             # Improved scrapers with anti-bot protection
-            'bloomberg': BloombergScraper(self.symbol, debug),  # Re-enabled - improved with fallbacks
+            'bloomberg': BloombergScraperPydoll(self.symbol, debug),  # Disabled temporarily - might be hanging
             'seeking_alpha': SeekingAlphaScraper(self.symbol, debug),  # Re-enabled with enhanced Selenium support
             'marketwatch': MarketWatchScraper(self.symbol, debug),
             #'reuters': ReutersScraper(self.symbol, debug),
@@ -727,9 +727,16 @@ class StockSentimentAnalyzer:
         if self.scrapers is None:
             self._load_scrapers()
         
-        # Prepare scraper tasks
+        # Prepare scraper tasks with better distribution for low article counts
         scraper_tasks = []
-        articles_per_source = max(15, target_articles // len(self.scrapers) + 10)  # Increased to get more articles per source
+        
+        # Smart distribution: for low article counts, don't over-request
+        if target_articles <= 10:
+            # For very low counts, just get 2-3 articles per scraper and stop early
+            articles_per_source = max(2, (target_articles // len(self.scrapers)) + 1)
+        else:
+            # For higher counts, use the original logic
+            articles_per_source = max(15, target_articles // len(self.scrapers) + 10)
         
         for name, scraper in self.scrapers.items():
             scraper_tasks.append((scraper, articles_per_source))
@@ -738,7 +745,13 @@ class StockSentimentAnalyzer:
         print(f"Running {len(scraper_tasks)} scrapers in parallel...")
         
         # Use ThreadPoolExecutor with optimized worker count for better performance
-        optimal_workers = len(scraper_tasks)  # Match worker count to number of scrapers to prevent hanging
+        # For low article counts, reduce workers to prevent resource contention
+        if target_articles <= 10:
+            optimal_workers = min(3, len(scraper_tasks))  # Limit to 3 workers for small requests
+        else:
+            optimal_workers = len(scraper_tasks)  # Match worker count to number of scrapers to prevent hanging
+        
+        print(f"Using {optimal_workers} workers, requesting {articles_per_source} articles per scraper")
         with ThreadPoolExecutor(max_workers=optimal_workers, thread_name_prefix="scraper") as executor:
             # Submit all scraper tasks with staggered delays to avoid overwhelming servers
             future_to_scraper = {}
@@ -750,12 +763,14 @@ class StockSentimentAnalyzer:
                 future = executor.submit(self._run_scraper_with_retry, scraper, max_articles)
                 future_to_scraper[future] = scraper.source_name
             
-            # Collect results as they complete with enhanced error handling
+            # Collect results as they complete with enhanced error handling and early stopping
             scraper_stats = {}
             for future in as_completed(future_to_scraper):
                 source_name = future_to_scraper[future]
                 try:
-                    source_sentiments = future.result(timeout=30)  # Increased timeout to 120s to handle stuck scrapers
+                    # Use shorter timeout for low article counts to prevent hanging
+                    timeout_seconds = 30 if target_articles <= 10 else 60
+                    source_sentiments = future.result(timeout=timeout_seconds)
                     if source_sentiments:
                         all_sentiments.extend(source_sentiments)
                         
@@ -772,6 +787,15 @@ class StockSentimentAnalyzer:
                         
                         enhancement_info = f" ({enhanced_articles} enhanced)" if enhanced_articles > 0 else ""
                         print(f"  SUCCESS {source_name}: {len(source_sentiments)} articles (avg {avg_length} chars){enhancement_info}")
+                        
+                        # Early stopping: if we have enough unique articles, stop waiting for more scrapers
+                        if len(self._remove_duplicates(all_sentiments)) >= target_articles:
+                            print(f"[EARLY STOP] Target of {target_articles} articles reached, canceling remaining scrapers...")
+                            # Cancel remaining futures
+                            for remaining_future in future_to_scraper:
+                                if remaining_future != future and not remaining_future.done():
+                                    remaining_future.cancel()
+                            break
                     else:
                         print(f"  NO ARTICLES {source_name}: No articles found")
                         scraper_stats[source_name] = {'articles': 0, 'enhanced': 0, 'avg_length': 0}
@@ -1764,11 +1788,18 @@ def main():
     parser.add_argument('--cache-hours', type=float, default=1.0, help='Max cache age in hours (default: 1.0)')
     parser.add_argument('--no-database', action='store_true', help='Disable database caching')
     parser.add_argument('--json', action='store_true', help='Output results as JSON')
+    parser.add_argument('--no-finbert', action='store_true', help='Skip FinBERT model loading for faster startup')
     
     args = parser.parse_args()
     
     # Create analyzer
     analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)
+    
+    # Set global flag to skip FinBERT loading if requested
+    if args.no_finbert:
+        global TRANSFORMERS_AVAILABLE
+        TRANSFORMERS_AVAILABLE = False
+        print("[SKIP] FinBERT model loading disabled for faster startup")
     
     # Run analysis
     results = analyzer.analyze_sentiment(
