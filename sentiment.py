@@ -433,14 +433,14 @@ class StockSentimentAnalyzer:
         # Initialize all improved scrapers (including previously disabled ones)
         all_scrapers = {
             # High-performance scrapers (now with newspaper3k enhancement)
-            'newsapi': NewsAPIScraper(self.symbol, debug),  # Disabled - might be hitting API limits
-            'google_news': GoogleNewsScraper(self.symbol, debug),  # Simple RSS-based scraper for testing
-            'yahoo_finance': YahooFinanceScraper(self.symbol, debug),
+            #'newsapi': NewsAPIScraper(self.symbol, debug),  # Disabled - might be hitting API limits
+            #'google_news': GoogleNewsScraper(self.symbol, debug),  # Simple RSS-based scraper for testing
+            #'yahoo_finance': YahooFinanceScraper(self.symbol, debug),
        #
             # Improved scrapers with anti-bot protection
-            'bloomberg': BloombergScraperPydoll(self.symbol, debug),  # Disabled temporarily - might be hanging
+            #'bloomberg': BloombergScraperPydoll(self.symbol, debug),  # Disabled temporarily - might be hanging
             'seeking_alpha': SeekingAlphaScraper(self.symbol, debug),  # Re-enabled with enhanced Selenium support
-            'marketwatch': MarketWatchScraper(self.symbol, debug),
+            #'marketwatch': MarketWatchScraper(self.symbol, debug),
             #'reuters': ReutersScraper(self.symbol, debug),
             
             # Additional sources
@@ -1574,7 +1574,7 @@ class StockSentimentAnalyzer:
             return "Neutral"
         elif compound < -0.05:
             return "Negative"
-        else:
+        elif compound < -0.75:
             return "Very Negative"
 
     def analyze_sentiment(self, target_articles: int = 50, force_refresh: bool = False, max_cache_hours: float = 10000) -> Dict:

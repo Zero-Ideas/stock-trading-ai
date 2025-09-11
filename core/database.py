@@ -597,3 +597,218 @@ class SentimentDatabase:
             print(f"[WARNING] Failed to get migration status: {e}")
         
         return status
+    
+    def get_company_info(self, symbol: str) -> Optional[Dict]:
+        """
+        Get complete company information from the cache
+        
+        Args:
+            symbol: Stock symbol
+            
+        Returns:
+            Dictionary with company_name, common_name, industry or None if not found/expired
+        """
+        try:
+            with self.get_connection() as conn:
+                with conn.cursor() as cursor:
+                    # Check if record exists and is not older than 1 month
+                    cursor.execute("""
+                        SELECT company_name, common_name, industry, updated_at 
+                        FROM company_info_cache 
+                        WHERE symbol = %s 
+                        AND updated_at > %s
+                    """, (symbol.upper(), datetime.utcnow() - timedelta(days=30)))
+                    
+                    row = cursor.fetchone()
+                    if row:
+                        result = {
+                            'company_name': row['company_name'],
+                            'common_name': row['common_name'],
+                            'industry': row['industry']
+                        }
+                        print(f"[DATABASE] Found cached info for {symbol}: {result}")
+                        return result
+                        
+        except Exception as e:
+            print(f"[WARNING] Failed to get company info for {symbol}: {e}")
+            
+        return None
+    
+    def get_company_common_name(self, symbol: str) -> Optional[str]:
+        """
+        Get the common name for a company from the cache
+        
+        Args:
+            symbol: Stock symbol
+            
+        Returns:
+            Common company name or None if not found/expired
+        """
+        info = self.get_company_info(symbol)
+        return info['common_name'] if info else None
+    
+    def set_company_info(self, symbol: str, company_name: str = None, 
+                        common_name: str = None, industry: str = None) -> bool:
+        """
+        Set or update company information in the cache
+        
+        Args:
+            symbol: Stock symbol
+            company_name: Full official company name
+            common_name: Common/short name for searches
+            industry: Industry classification
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            with self.get_connection() as conn:
+                with conn.cursor() as cursor:
+                    # Use INSERT ... ON CONFLICT to handle updates
+                    cursor.execute("""
+                        INSERT INTO company_info_cache (symbol, company_name, common_name, industry, created_at, updated_at)
+                        VALUES (%s, %s, %s, %s, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+                        ON CONFLICT (symbol) 
+                        DO UPDATE SET 
+                            company_name = COALESCE(EXCLUDED.company_name, company_info_cache.company_name),
+                            common_name = COALESCE(EXCLUDED.common_name, company_info_cache.common_name),
+                            industry = COALESCE(EXCLUDED.industry, company_info_cache.industry),
+                            updated_at = CURRENT_TIMESTAMP
+                    """, (symbol.upper(), company_name, common_name, industry))
+                    
+                conn.commit()
+                print(f"[DATABASE] Cached info for {symbol}: company='{company_name}', common='{common_name}', industry='{industry}'")
+                return True
+                
+        except Exception as e:
+            print(f"[WARNING] Failed to set company info for {symbol}: {e}")
+            return False
+    
+    def set_company_common_name(self, symbol: str, common_name: str) -> bool:
+        """
+        Set or update only the common name for a company in the cache
+        (Legacy method for backward compatibility)
+        
+        Args:
+            symbol: Stock symbol
+            common_name: Common company name
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        return self.set_company_info(symbol, common_name=common_name)
+    
+    def get_or_resolve_company_info(self, symbol: str) -> Dict[str, str]:
+        """
+        Get complete company information from cache or resolve using Gemini API
+        
+        Args:
+            symbol: Stock symbol
+            
+        Returns:
+            Dictionary with company_name, common_name, industry
+        """
+        # First check the database cache
+        cached_info = self.get_company_info(symbol)
+        if cached_info:
+            return {
+                'company_name': cached_info['company_name'] or symbol,
+                'common_name': cached_info['common_name'] or symbol,
+                'industry': cached_info['industry'] or 'Unknown'
+            }
+        
+        # If not cached or expired, try to resolve using Gemini API
+        try:
+            from .gemini_client import GeminiClient
+            client = GeminiClient()
+            resolved_info = client.resolve_company_info(symbol)
+            
+            if any(resolved_info.values()):  # If any field was resolved
+                # Cache the resolved information
+                self.set_company_info(
+                    symbol, 
+                    company_name=resolved_info.get('company_name'),
+                    common_name=resolved_info.get('common_name'),
+                    industry=resolved_info.get('industry')
+                )
+                
+                return {
+                    'company_name': resolved_info.get('company_name') or symbol,
+                    'common_name': resolved_info.get('common_name') or symbol,
+                    'industry': resolved_info.get('industry') or 'Unknown'
+                }
+            else:
+                print(f"[WARNING] Could not resolve company info for {symbol}, using defaults")
+                
+        except Exception as e:
+            print(f"[WARNING] Company info resolution failed for {symbol}: {e}")
+        
+        # Fallback to defaults if resolution fails
+        return {
+            'company_name': symbol,
+            'common_name': symbol,
+            'industry': 'Unknown'
+        }
+    
+    def get_or_resolve_company_name(self, symbol: str) -> str:
+        """
+        Get company common name from cache or resolve using Gemini API
+        (Legacy method for backward compatibility)
+        
+        Args:
+            symbol: Stock symbol
+            
+        Returns:
+            Common company name or original symbol if resolution fails
+        """
+        info = self.get_or_resolve_company_info(symbol)
+        return info['common_name']
+    
+    def refresh_company_info(self, symbols: list = None) -> Dict[str, Dict[str, str]]:
+        """
+        Refresh complete company information for given symbols or all symbols in database
+        
+        Args:
+            symbols: List of symbols to refresh, or None for all
+            
+        Returns:
+            Dictionary mapping symbols to company info dictionaries
+        """
+        results = {}
+        
+        try:
+            # Get symbols to refresh
+            if symbols is None:
+                # Get all unique symbols from recent analyses
+                with self.get_connection() as conn:
+                    with conn.cursor() as cursor:
+                        cursor.execute("""
+                            SELECT DISTINCT symbol 
+                            FROM sentiment_analyses 
+                            ORDER BY symbol
+                        """)
+                        symbols = [row['symbol'] for row in cursor.fetchall()]
+            
+            # Resolve info for each symbol
+            for symbol in symbols:
+                resolved_info = self.get_or_resolve_company_info(symbol)
+                results[symbol] = resolved_info
+                
+        except Exception as e:
+            print(f"[WARNING] Failed to refresh company info: {e}")
+            
+        return results
+    
+    def refresh_company_names(self, symbols: list = None) -> Dict[str, str]:
+        """
+        Refresh company names for given symbols or all symbols in database
+        (Legacy method for backward compatibility)
+        
+        Args:
+            symbols: List of symbols to refresh, or None for all
+            
+        Returns:
+            Dictionary mapping symbols to resolved common names
+        """
+        info_results = self.refresh_company_info(symbols)
+        return {symbol: info['common_name'] for symbol, info in info_results.items()}

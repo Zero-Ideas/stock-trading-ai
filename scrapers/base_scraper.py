@@ -72,6 +72,13 @@ class BaseScraper(ABC):
     def __init__(self, symbol: str, debug: bool = True):
         self.symbol = symbol.upper()
         self.debug = debug
+        
+        # Get complete company information
+        company_info = self._get_company_info()
+        self.company_name = company_info.get('company_name', self.symbol)  # Full official name
+        self.common_name = company_info.get('common_name', self.symbol)    # Search-friendly name
+        self.industry = company_info.get('industry', 'Unknown')            # Industry classification
+        
         self.session = requests.Session()
         self.user_agents = [
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -166,6 +173,39 @@ class BaseScraper(ABC):
         """Add random delay to avoid rate limiting"""
         time.sleep(random.uniform(min_seconds, max_seconds))
     
+    def _get_company_info(self) -> Dict[str, str]:
+        """Get complete company information from database or resolve using Gemini API"""
+        try:
+            # Import database module
+            import sys
+            import os
+            current_dir = os.path.dirname(os.path.dirname(__file__))
+            if current_dir not in sys.path:
+                sys.path.insert(0, current_dir)
+            
+            from core.database import SentimentDatabase
+            
+            # Get or resolve complete company info using the database
+            db = SentimentDatabase()
+            company_info = db.get_or_resolve_company_info(self.symbol)
+            
+            if self.debug:
+                print(f"[{self.source_name}] Company info for '{self.symbol}': {company_info}")
+            
+            return company_info
+            
+        except Exception as e:
+            if self.debug:
+                print(f"[{self.source_name}] Failed to get company info for {self.symbol}: {e}")
+                print(f"[{self.source_name}] Falling back to defaults")
+            
+            # Fallback to defaults
+            return {
+                'company_name': self.symbol,
+                'common_name': self.symbol,
+                'industry': 'Unknown'
+            }
+    
     def clean_text(self, text: str) -> str:
         """Clean and normalize text for processing"""
         if not text:
@@ -184,11 +224,17 @@ class BaseScraper(ABC):
         return text.strip()
     
     def is_relevant_content(self, title: str, content: str = "") -> bool:
-        """Check if content is relevant to the stock symbol"""
+        """Check if content is relevant to the stock symbol or company name"""
         text_to_check = f"{title} {content}".lower()
         
         # Check for direct symbol mention
         if self.symbol.lower() in text_to_check:
+            return True
+        
+        # Check for common name mention (if different from symbol)
+        if (hasattr(self, 'common_name') and self.common_name and 
+            self.common_name != self.symbol and 
+            self.common_name.lower() in text_to_check):
             return True
         
         # Additional relevance checks can be added here

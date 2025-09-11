@@ -27,6 +27,7 @@ class SeekingAlphaScraper(BaseScraper):
         return {'polarity': 0.0, 'compound': 0.0}
     
     def scrape(self, max_articles: int = 8) -> List[SentimentData]:
+        self.debug = True
         """Enhanced Seeking Alpha scraper using Selenium to handle JavaScript and extract Analysis/News sections"""
         sentiments = []
         
