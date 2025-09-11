@@ -8,8 +8,13 @@ import requests
 import re
 import time
 import random
+import os
 from datetime import datetime, timedelta
+from dotenv import load_dotenv
 from .base_scraper import BaseScraper, SentimentData
+
+# Load environment variables
+load_dotenv()
 
 
 class NewsAPIScraper(BaseScraper):
@@ -21,7 +26,9 @@ class NewsAPIScraper(BaseScraper):
     
     def __init__(self, symbol: str, debug: bool = False, api_key: str = None):
         super().__init__(symbol, debug)
-        self.api_key = api_key or "53ade5a42d504aa7960aa3a58028cd29"
+        self.api_key = api_key or os.getenv('NEWSAPI_KEY')
+        if not self.api_key:
+            raise ValueError("NewsAPI key must be provided either as parameter or environment variable 'NEWSAPI_KEY'")
         self.company_name = self._get_company_name()
     
     def _get_company_name(self) -> str:

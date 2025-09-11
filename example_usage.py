@@ -5,11 +5,11 @@ Demonstrates how to integrate industry analysis into other Python applications
 """
 
 import os
+from dotenv import load_dotenv
 from industry_analysis import IndustryAnalyzer
 
-# Make sure to set your API keys
-os.environ["OPENAI_API_KEY"] = "your-openai-key-here"
-os.environ["GEMINI_API_KEY"] = "your-gemini-key-here"
+# Load environment variables from .env file
+load_dotenv()
 
 def analyze_company_industry(symbol: str):
     """

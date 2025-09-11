@@ -17,10 +17,12 @@ import os
 import psycopg2
 from typing import Dict, Optional, List
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 from database_config import POSTGRES_CONFIG
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["GEMINI_API_KEY"] = "AIzaSyA91d_s6glh9j8de5CDoxB12lFbTziLn50"
 
 warnings.filterwarnings('ignore')
 

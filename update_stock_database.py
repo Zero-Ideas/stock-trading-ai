@@ -11,6 +11,10 @@ from tqdm import tqdm
 import logging
 import sys
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Alpaca API imports
 from alpaca.data.historical import StockHistoricalDataClient
@@ -34,10 +38,16 @@ logger = logging.getLogger(__name__)
 class StockDatabaseUpdater:
     def __init__(self):
         """Initialize the database updater with Alpaca API client"""
-        # Alpaca API credentials (from your existing script)
+        # Alpaca API credentials from environment variables
+        alpaca_key_id = os.getenv('ALPACA_API_KEY_ID')
+        alpaca_secret_key = os.getenv('ALPACA_SECRET_KEY')
+        
+        if not alpaca_key_id or not alpaca_secret_key:
+            raise ValueError("Alpaca API credentials must be set in environment variables: ALPACA_API_KEY_ID, ALPACA_SECRET_KEY")
+            
         self.client = StockHistoricalDataClient(
-            "PK3S7CKIFQBPLZLSV691",
-            "HOXAsPCVF2v3Pz63wmRR5xrd2cLbyakoAedH3HP4"
+            alpaca_key_id,
+            alpaca_secret_key
         )
         
         # Table configurations

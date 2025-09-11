@@ -22,7 +22,11 @@
       "Bash(psql:*)",
       "Bash(copy output.json output_backup.json)",
       "Bash(del test_progress.py)",
-      "Bash(del \"C:\\Users\\ethan\\Desktop\\stock trading ai\\test_pydoll_scraper.py\")"
+      "Bash(del \"C:\\Users\\ethan\\Desktop\\stock trading ai\\test_pydoll_scraper.py\")",
+      "Bash(find:*)",
+      "Bash(dir:*)",
+      "Bash(move:*)",
+      "Bash(pip install:*)"
     ],
     "deny": [],
     "ask": []

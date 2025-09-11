@@ -181,7 +181,7 @@ class SentimentDatabase:
     
     def initialize_schema(self):
         """Initialize database schema from SQL file"""
-        schema_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "database_schema.sql")
+        schema_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "Schemas", "database_schema.sql")
         
         if not os.path.exists(schema_path):
             raise FileNotFoundError(f"Database schema file not found: {schema_path}")

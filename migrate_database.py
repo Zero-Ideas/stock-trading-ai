@@ -40,7 +40,7 @@ def apply_partitioned_schema(db: SentimentDatabase):
     print("APPLYING PARTITIONED SCHEMA")
     print("="*60)
     
-    schema_path = os.path.join(os.path.dirname(__file__), "database_schema_partitioned.sql")
+    schema_path = os.path.join(os.path.dirname(__file__), "Schemas", "database_schema_partitioned.sql")
     
     if not os.path.exists(schema_path):
         print(f"ERROR: Schema file not found: {schema_path}")
@@ -68,7 +68,7 @@ def run_migration(db: SentimentDatabase):
     print("RUNNING DATA MIGRATION")
     print("="*60)
     
-    migration_path = os.path.join(os.path.dirname(__file__), "migrate_to_partitioned.sql")
+    migration_path = os.path.join(os.path.dirname(__file__), "Schemas", "migrate_to_partitioned.sql")
     
     if not os.path.exists(migration_path):
         print(f"ERROR: Migration file not found: {migration_path}")

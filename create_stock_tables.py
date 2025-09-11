@@ -21,7 +21,7 @@ def create_stock_tables():
         cursor = conn.cursor()
         
         # Read the SQL schema file
-        with open('stock_data_schema.sql', 'r') as f:
+        with open('Schemas/stock_data_schema.sql', 'r') as f:
             schema_sql = f.read()
         
         print("Creating stock data tables...")

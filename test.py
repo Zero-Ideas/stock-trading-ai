@@ -1,4 +1,9 @@
 import alpaca
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
@@ -9,7 +14,14 @@ from tqdm import tqdm
 import time
 import threading
 
-client = StockHistoricalDataClient("PK3S7CKIFQBPLZLSV691","HOXAsPCVF2v3Pz63wmRR5xrd2cLbyakoAedH3HP4")
+# Get Alpaca credentials from environment variables
+alpaca_key_id = os.getenv('ALPACA_API_KEY_ID')
+alpaca_secret_key = os.getenv('ALPACA_SECRET_KEY')
+
+if not alpaca_key_id or not alpaca_secret_key:
+    raise ValueError("Alpaca API credentials must be set in environment variables: ALPACA_API_KEY_ID, ALPACA_SECRET_KEY")
+
+client = StockHistoricalDataClient(alpaca_key_id, alpaca_secret_key)
 
 
 STOCK_SYMBOL_TO_COMPANY = {

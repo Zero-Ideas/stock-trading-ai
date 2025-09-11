@@ -2,3 +2,14 @@ data/
 randoms/
 lots/
 StockData/
+.claude/
+
+# Environment variables - DO NOT COMMIT
+.env
+.env.local
+.env.prod
+
+# API keys and secrets
+*api_key*
+*secret*
+database_config.py

@@ -1,5 +1,5 @@
 -- Migration script to move data from per-symbol tables to partitioned table
--- Run this after applying database_schema_partitioned.sql
+-- Run this after applying Schemas/database_schema_partitioned.sql
 
 DO $$
 DECLARE

@@ -1,171 +1,114 @@
 # CLAUDE.md
 
-## AI Assistant Integration for Stock Sentiment Analysis Platform
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-This document defines how Claude (Anthropic’s AI assistant) supports the development of this financial intelligence platform, combining **strategic guidance** with **practical development assistance**.
+## Overview
 
----
+This is a Stock Trading AI platform that provides intelligent financial sentiment analysis by scraping news from multiple sources and using AI models (FinBERT, TextBlob, VADER) to analyze sentiment. The system features a web interface, database caching, and concurrent scraping architecture.
 
-## Project Overview
+## Core Architecture
 
-**What we’re building:**  
-A modern, AI-powered financial analysis platform that makes professional-grade stock research accessible at a fraction of Bloomberg Terminal’s cost.
+### Main Components
+- **sentiment.py**: Core sentiment analysis engine and CLI interface
+- **core/database.py**: PostgreSQL database interface for caching results
+- **scrapers/**: Modular scraper framework with individual scrapers for Bloomberg, MarketWatch, Yahoo Finance, Seeking Alpha, Google News, NewsAPI, Reuters, Financial Times, and Benzinga
+- **Web interfaces**: Multiple web apps (web_app.py, enhanced_web_app.py, server.py) with HTML frontends
 
-**Core mission:**  
-Transform financial data analysis from a complex, expensive process into an intuitive, transparent, and affordable experience.
+### Key Design Patterns
+- **Lazy loading**: Scrapers and AI models only load when needed
+- **Concurrent execution**: ThreadPoolExecutor for parallel scraping across sources
+- **Modular scrapers**: All inherit from base_scraper.py with common functionality
+- **Database per symbol**: Tables created dynamically as `articles_{symbol}`
+- **Content enhancement**: newspaper3k + Selenium fallback for blocked sites
+- **Duplicate prevention**: SHA-256 URL hashing prevents duplicate articles
 
----
+## Development Commands
 
-## Claude’s Role in Development
+### Core Analysis
+```bash
+# Basic sentiment analysis
+python sentiment.py NVDA --articles 20
 
-### 🧠 Strategic Architecture Consulting
-- Validate multi-scraper architecture for scalability and maintainability.  
-- Guide technology choices for concurrency, ML integration, and deployment.  
-- Evaluate **anti-bot evasion strategies** (Selenium stealth, undetected-chromedriver, proxy rotation).  
+# Force refresh bypassing cache
+python sentiment.py TSLA --force-refresh
 
-### 💡 Practical Development Assistance
-- Write and refine **scrapers** (Selenium first, Playwright MCP for rapid prototyping).  
-- Debug scraping failures, ML integration issues, and UI problems.  
-- Suggest improvements for **error handling, retries, and resilience**.  
-- Assist with **UI design** (frontend/backend separation, testing with Playwright MCP).  
+# JSON output for integration
+python sentiment.py AAPL --json > output.json
 
-### 📚 Domain Knowledge Integration
-- Ensure correct use of **financial terminology, sentiment lexicons, and trading context**.  
-- Apply **industry best practices** for modular, maintainable code.  
-- Offer **competitive insights** into Bloomberg and similar platforms.  
+# No database mode (file output only)
+python sentiment.py MSFT --no-database
 
-### 🚀 Acceleration Techniques
-- Provide **code review, optimization, and refactoring**.  
-- Generate and maintain **documentation**.  
-- Recommend **testing strategies** across scraping, ML, and UI.  
+# Skip FinBERT for faster startup
+python sentiment.py SPY --no-finbert
+```
 
----
+### Database Operations
+```bash
+# Initialize database schema
+python -c "from core.database import SentimentDatabase; SentimentDatabase().initialize_database()"
 
-## Development Philosophy
+# Test database connection
+python -c "from core.database import SentimentDatabase; print('Database OK' if SentimentDatabase()._test_connection() else 'Database Error')"
+```
 
-### "Glass Box" Transparency
-- Traceable reasoning in all analyses.  
-- Source attribution and confidence scoring.  
-- Bias detection and credibility checks.  
+### Web Interfaces
+```bash
+# Basic web app
+python web_app.py
 
-### Technical Standards
-- **Clean architecture** with modular design.  
-- **Production readiness** (logging, retries, graceful error handling).  
-- **Performance first**, with optimizations for concurrency and large-scale scraping.  
-- **User experience focus**, building an intuitive research/trading UI.  
+# Enhanced web app with additional features (way better)
+python enhanced_web_app.py
 
----
+# Server with API endpoints
+python server.py
+```
 
-## Technical Stack
+### Database Setup
+1. Ensure PostgreSQL is running
+2. Copy `database_config_example.py` to `database_config.py` if it doesn't exist
+3. Update `database_config.py` with your PostgreSQL credentials
+4. Run database initialization command above
 
-### Core Technologies
-- **Python 3.9+** (backend, scraping, ML pipelines).  
-- **Selenium WebDriver (primary)** with stealth/UDC for production scraping.  
-- **Playwright MCP (secondary)** for rapid prototyping, DOM exploration, and UI testing.  
-- **BeautifulSoup4** + **newspaper3k** for parsing article content.  
-- **Pandas/numpy** for data handling.  
-- **FinBERT + custom financial lexicon** for sentiment analysis.  
-- **TextBlob** fallback for lightweight text analysis.  
-- **FastAPI/Flask + frontend stack** for web UI.  
-- **Threading/concurrent.futures** for parallel scraping.  
+## Configuration Files
 
-### Data Sources
-- Bloomberg, MarketWatch, Yahoo Finance, Seeking Alpha, Google News RSS, NewsAPI.  
-- Modular design allows new sources to be added easily.  
-
-### AI & ML
-- **Local FinBERT deployment** for sentiment classification.  
-- **Bias detection algorithms** for credibility scoring.  
-- **Future expansion:** predictive ML models (scikit-learn, PyTorch).  
-
----
-
-## MCP Tools
-
-- **Playwright MCP** → DOM exploration, testing selectors, UI automation.  
+- **database_config.py**: PostgreSQL connection settings (not in git)
+- **scrapers/__init__.py**: Scraper registration and SentimentData model
+- **Schemas/database_schema.sql**: Database table definitions
 
 
-Claude should:  
-- Use MCP tools directly when they accelerate development.  
-- Default to Selenium for stealth scraping, Playwright MCP for testing/debugging.  
-- Be explicit about which tool is used and why.  
+Key dependencies:
+- **transformers**: FinBERT model for financial sentiment
+- **torch**: PyTorch backend for transformers
+- **psycopg2-binary**: PostgreSQL connector
+- **selenium**: Web automation for redirect handing and blocked sites
+- **pydoll**: Web automation with extreme stealth capabilities
+- **newspaper3k**: Article content extraction
+- **beautifulsoup4**: HTML parsing
+- **textblob, vaderSentiment**: Alternative sentiment engines
+- **pandas**: Data manipulation
+- **flask**: Web framework (for web interfaces)
 
----
+## Testing
 
-## Coding Guidelines
-- Python 3.10+ when possible.  
-- Clean, modular functions with **docstrings + type hints**.  
-- Use **async** where it improves scraping performance.  
-- Implement **robust error handling** (timeouts, retries, proxy fallback).  
-- Prefer simplicity for UI (Flask/FastAPI backend, vanilla JS or lightweight frontend).  
+The codebase includes several test files:
+- Performance and threading tests
+- Database functionality verification
+- Individual scraper testing
+- Google News timeout handling tests
 
----
+## Current Development Status
 
-## Development Workflow with Claude
+See TODO.md for active development tasks including:
+- Frontend/backend refactoring to JavaScript + Flask API
+- Line graph rendering fixes
+- Article filtering by sentiment and source
+- Theme support improvements
+- Playwright testing integration
 
-1. **Problem Identification** → Share context, error logs, and goals.  
-2. **Solution Development** → Claude suggests multiple approaches, weighing trade-offs.  
-3. **Code Review & Debugging** → Claude refines implementations, catches errors.  
-4. **Documentation & Planning** → Claude generates docs, roadmaps, and testing strategies.  
+## Important Notes
 
----
-
-## Current Achievements
-- Multi-source scraping with anti-bot evasion.  
-- FinBERT + hybrid sentiment pipeline.  
-- Resilient error handling and scraper recovery.  
-- Selenium resource management improvements.  
-
----
-
-## Future Roadmap
-
-### Short-term (2–4 weeks)
-- Polish UI and UX.  
-- Improve Selenium stealth strategies.  
-- Optimize sentiment pipeline performance.  
-
-### Medium-term (2–3 months)
-- Portfolio tracking, alert systems, mobile responsiveness.  
-- Database integration for historical research.  
-
-### Long-term (6+ months)
-- Full API for third-party integrations.  
-- Technical analysis indicators and backtesting.  
-- Predictive ML models for trading strategies.  
-- Expansion to global markets.  
-
----
-
-## Collaboration Guidelines
-
-- Provide context, code, and desired outcomes in prompts.  
-- Ask targeted, iterative questions.  
-- Document learnings for future reference.  
-- Follow best practices: version control, frequent testing, clear commits.  
-
----
-
-## Project Status
-
-**Current phase:** Advanced development, core scrapers + sentiment pipeline live.  
-**Next milestone:** UI polish + production deployment.  
-**Launch target:** ~1–2 months with focused dev.  
-
-**Overall assessment:** Architecture is strong, scraping reliable, UI in progress, ML foundation ready for expansion.  
-
----
-
-## Contact & Collaboration
-
-This project is a unique collaboration between **human creativity** and **AI acceleration**. Claude is a:  
-- Technical advisor  
-- Debugging partner  
-- Development accelerator  
-
-**Success metric:** Build a transparent, reliable, and affordable financial research platform that users love and competitors fear.  
-
----
-
-*Last updated: September 2025*  
-*Project status: Active development with AI assistance*
+- Scrapers implement anti-bot measures (user agent rotation, delays)
+- System handles graceful degradation when sources fail
+- AI models support fallback (FinBERT → TextBlob → VADER)
+- Database connection includes automatic password detection
+- All major operations include timeout protection

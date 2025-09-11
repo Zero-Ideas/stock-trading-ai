@@ -90,7 +90,7 @@ The test results confirm:
 - ✅ Accurate duplicate counting and reporting
 
 ## Files Modified
-- `stock_data_schema.sql` - Contains unique constraints
+- `Schemas/stock_data_schema.sql` - Contains unique constraints
 - `transfer_stock_data.py` - Enhanced with duplicate tracking
 - `test_duplicate_prevention.py` - Verification script
 - `verify_partitioning.py` - Partition verification
