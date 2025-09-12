@@ -26,39 +26,33 @@ client = StockHistoricalDataClient(alpaca_key_id, alpaca_secret_key)
 
 STOCK_SYMBOL_TO_COMPANY = {
     # Major Tech Stocksw
-    'GOOG': 'GOOGLE',
+    'AAPL': 'GOOGLE',
 }
 
 total_symbols = len(STOCK_SYMBOL_TO_COMPANY)
 symbol_progress = tqdm(total=total_symbols, desc="Processing symbols", position=0)
 
 for symbol, company_name in STOCK_SYMBOL_TO_COMPANY.items():
-    try:
         symbol_progress.set_description(f"Processing {symbol}")
         
         # Create a spinner-like progress for fetching
-        fetch_progress = tqdm(desc=f"Fetching {symbol} data", position=1, leave=False)
-        fetch_progress.set_postfix_str("Contacting API...")
-        
         request_params = StockBarsRequest(
             symbol_or_symbols=[symbol],
             timeframe=TimeFrame.Minute,
-            start=datetime(2025, 9, 5),
-            end=datetime(2025, 9, 7)
+            start=datetime(2015, 12, 30),
+            end=datetime(2016, 1, 2)
         )
         
-        fetch_progress.set_postfix_str("Downloading data...")
+       
         # Get the data (this may involve multiple API calls internally)
         bars = client.get_stock_bars(request_params)
         
-        fetch_progress.set_postfix_str("Processing response...")
+        #fetch_progress.set_postfix_str("Processing response...")
         # Convert to DataFrame to get row count
         df = bars.df
         
-        print(df.tail())
-    except Exception as e:
-        if 'fetch_progress' in locals():
-            fetch_progress.close()
+        print(df.head())
+
 
 
 symbol_progress.close()
