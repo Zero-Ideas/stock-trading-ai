@@ -20,26 +20,10 @@ class GoogleNewsScraper(BaseScraper):
     
     def __init__(self, symbol: str, debug: bool = False):
         super().__init__(symbol, debug)
-        self.company_name = self._get_company_name()
+        # company_name, common_name, and industry are now available from base class
+        # company_name = full official name (e.g., "NVIDIA Corporation")
+        # common_name = search-friendly name (e.g., "NVIDIA") 
         self.skip_enhancement = False  # Enable newspaper3k enhancement
-    
-    def _get_company_name(self) -> str:
-        """Get company name for the stock symbol"""
-        try:
-            import yfinance as yf
-            ticker = yf.Ticker(self.symbol)
-            info = ticker.info
-            
-            # Try different fields that might contain the company name
-            for field in ['longName', 'shortName', 'companyName']:
-                if field in info and info[field]:
-                    return info[field]
-                    
-        except Exception as e:
-            if self.debug:
-                print(f"Could not fetch company name: {e}")
-        
-        return self.symbol  # Fallback to symbol if company name not found
     
     def _parse_date(self, date_str: str) -> datetime:
         """Parse various date formats to datetime"""
@@ -65,10 +49,10 @@ class GoogleNewsScraper(BaseScraper):
         # Multiple query strategies for better coverage
         queries = [
             f"{self.symbol} stock",
-            f"{self.company_name}" if self.company_name != self.symbol else f"{self.symbol} company",
+            f"{self.common_name}" if self.common_name != self.symbol else f"{self.symbol} company",
             f"{self.symbol} earnings",
             f"{self.symbol} news",
-            f"{self.company_name} stock" if self.company_name != self.symbol else f"{self.symbol} market"
+            f"{self.common_name} stock" if self.common_name != self.symbol else f"{self.symbol} market"
         ]
         
         # Remove duplicates while preserving order

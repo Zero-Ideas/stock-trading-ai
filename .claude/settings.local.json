@@ -26,7 +26,8 @@
       "Bash(find:*)",
       "Bash(dir:*)",
       "Bash(move:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(del test_company_resolution.py)"
     ],
     "deny": [],
     "ask": []

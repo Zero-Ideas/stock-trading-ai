@@ -222,7 +222,7 @@ class IndustryAnalyzer:
             result = cur.fetchone()
             
             if result:
-                columns = ['symbol', 'company_name', 'industry', 'needs_update', 'days_old', 'last_verified']
+                columns = ['symbol', 'company_name', 'industry', 'needs_update', 'days_old', 'updated_at']
                 company_info = dict(zip(columns, result))
                 return company_info
             

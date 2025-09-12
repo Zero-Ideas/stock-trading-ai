@@ -29,25 +29,9 @@ class NewsAPIScraper(BaseScraper):
         self.api_key = api_key or os.getenv('NEWSAPI_KEY')
         if not self.api_key:
             raise ValueError("NewsAPI key must be provided either as parameter or environment variable 'NEWSAPI_KEY'")
-        self.company_name = self._get_company_name()
-    
-    def _get_company_name(self) -> str:
-        """Get company name for the stock symbol"""
-        try:
-            import yfinance as yf
-            ticker = yf.Ticker(self.symbol)
-            info = ticker.info
-            
-            # Try different fields that might contain the company name
-            for field in ['longName', 'shortName', 'companyName']:
-                if field in info and info[field]:
-                    return info[field]
-                    
-        except Exception as e:
-            if self.debug:
-                print(f"Could not fetch company name: {e}")
-        
-        return self.symbol  # Fallback to symbol if company name not found
+        # company_name, common_name, and industry are now available from base class
+        # company_name = full official name (e.g., "NVIDIA Corporation")  
+        # common_name = search-friendly name (e.g., "NVIDIA")
     
     def _analyze_text(self, text: str) -> dict:
         """Analyze text sentiment (placeholder - will be handled by main analyzer)"""
@@ -69,10 +53,10 @@ class NewsAPIScraper(BaseScraper):
             # Multiple query strategies for better coverage
             queries = [
                 f"{self.symbol} stock",
-                f"{self.company_name} earnings",
-                f"{self.company_name} stock price",
-                f"{self.symbol} {self.company_name}",
-                f"{self.company_name} financial results"
+                f"{self.common_name} earnings",
+                f"{self.common_name} stock price",
+                f"{self.symbol} {self.common_name}",
+                f"{self.common_name} financial results"
             ]
             
             # Calculate articles per query

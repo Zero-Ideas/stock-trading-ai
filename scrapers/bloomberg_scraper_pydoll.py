@@ -28,6 +28,8 @@ class BloombergScraperPydoll(BaseScraper):
     
     def scrape(self, max_articles: int = 10) -> List[SentimentData]:
         """Scrape Bloomberg using pydoll for better bot evasion"""
+        print("STARTING BLOOMBERG SCRAPER USING PYDOLL")
+        self.debug = True
         try:
             loop = asyncio.get_event_loop()
             if loop.is_running():
@@ -87,7 +89,7 @@ class BloombergScraperPydoll(BaseScraper):
                 
             # Bloomberg URL strategies optimized for pydoll
             url_strategies = [
-                f"https://www.bloomberg.com/search?query={quote(self.symbol)}",
+                f"https://www.bloomberg.com/search?query={quote(self.common_name)}",
                 #f"https://www.bloomberg.com/quote/{self.symbol}:US",
                 #f"https://www.bloomberg.com/technology",
                 #f"https://www.bloomberg.com/markets/stocks",
@@ -113,7 +115,7 @@ class BloombergScraperPydoll(BaseScraper):
                             
                             # Navigate to URL
                             await tab.go_to(url)
-                            browser.clic
+                            
                             # Wait for page to fully load with proper timeout
                             current_url = None
                             last_url = ""
@@ -345,7 +347,7 @@ class BloombergScraperPydoll(BaseScraper):
                     url=url,
                     raw_extracted_text=full_text if full_text else text
                 )
-                
+                print("APPENDING",len(processed_articles))
                 processed_articles.append(article_data)
                 
             except Exception as e:

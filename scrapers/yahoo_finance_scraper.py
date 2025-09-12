@@ -20,25 +20,9 @@ class YahooFinanceScraper(BaseScraper):
     
     def __init__(self, symbol: str, debug: bool = False):
         super().__init__(symbol, debug)
-        self.company_name = self._get_company_name()
-    
-    def _get_company_name(self) -> str:
-        """Get company name for the stock symbol"""
-        try:
-            import yfinance as yf
-            ticker = yf.Ticker(self.symbol)
-            info = ticker.info
-            
-            # Try different fields that might contain the company name
-            for field in ['longName', 'shortName', 'companyName']:
-                if field in info and info[field]:
-                    return info[field]
-                    
-        except Exception as e:
-            if self.debug:
-                print(f"Could not fetch company name: {e}")
-        
-        return self.symbol  # Fallback to symbol if company name not found
+        # company_name, common_name, and industry are now available from base class
+        # company_name = full official name (e.g., "NVIDIA Corporation")
+        # common_name = search-friendly name (e.g., "NVIDIA")
     
     def _analyze_text(self, text: str) -> dict:
         """Analyze text sentiment (placeholder - will be handled by main analyzer)"""
@@ -58,7 +42,7 @@ class YahooFinanceScraper(BaseScraper):
             # Strategy 3: Direct quote page (sometimes has news)
             lambda: f"https://finance.yahoo.com/quote/{self.symbol}",
             # Strategy 4: Search-based approach
-            lambda: f"https://finance.yahoo.com/search?p={self.symbol}+{self.company_name.replace(' ', '+')}",
+            lambda: f"https://finance.yahoo.com/search?p={self.symbol}+{self.common_name.replace(' ', '+')}",
             # Strategy 5: Mobile version (sometimes more reliable)
             lambda: f"https://finance.yahoo.com/m/quote/{self.symbol}/news",
         ]
@@ -291,7 +275,7 @@ class YahooFinanceScraper(BaseScraper):
                 text = text_elem.strip()
                 if (len(text) > 30 and 
                     (self.symbol in text or 
-                     self.company_name.split()[0] in text) and
+                     self.common_name.split()[0] in text) and
                     any(keyword in text.lower() for keyword in ['stock', 'share', 'price', 'earnings', 'revenue'])):
                     
                     parent = text_elem.parent

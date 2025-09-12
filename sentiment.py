@@ -426,7 +426,7 @@ class StockSentimentAnalyzer:
         # Import scrapers only when needed
         from scrapers import (
             GoogleNewsScraper, NewsAPIScraper, YahooFinanceScraper,
-            MarketWatchScraper, SeekingAlphaScraper, BenzingaScraper,
+            MarketWatchScraper, SeekingAlphaScraperPydoll, BenzingaScraper,
             FinancialTimesScraper, BloombergScraperPydoll, ReutersScraper
         )
         
@@ -439,8 +439,8 @@ class StockSentimentAnalyzer:
        #
             # Improved scrapers with anti-bot protection
             'bloomberg': BloombergScraperPydoll(self.symbol, debug),  # Disabled temporarily - might be hanging
-            'seeking_alpha': SeekingAlphaScraper(self.symbol, debug),  # Re-enabled with enhanced Selenium support
-            'marketwatch': MarketWatchScraper(self.symbol, debug),
+            'seeking_alpha': SeekingAlphaScraperPydoll(self.symbol, debug),  # Re-enabled with enhanced Selenium support
+            #'marketwatch': MarketWatchScraper(self.symbol, debug),
             #'reuters': ReutersScraper(self.symbol, debug),
             
             # Additional sources
@@ -1574,7 +1574,7 @@ class StockSentimentAnalyzer:
             return "Neutral"
         elif compound < -0.05:
             return "Negative"
-        else:
+        elif compound < -0.75:
             return "Very Negative"
 
     def analyze_sentiment(self, target_articles: int = 50, force_refresh: bool = False, max_cache_hours: float = 10000) -> Dict:

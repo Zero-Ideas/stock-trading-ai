@@ -7,6 +7,7 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto;
 -- Drop tables if they exist (for clean setup)
 DROP TABLE IF EXISTS sentiment_articles CASCADE;
 DROP TABLE IF EXISTS sentiment_analyses CASCADE;
+DROP TABLE IF EXISTS company_info_cache CASCADE;
 
 -- Function to create per-symbol article tables
 CREATE OR REPLACE FUNCTION create_symbol_table(symbol_name VARCHAR(10))
@@ -64,6 +65,17 @@ CREATE TABLE sentiment_analyses (
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Company information cache table
+CREATE TABLE company_info_cache (
+    id SERIAL PRIMARY KEY,
+    symbol VARCHAR(10) UNIQUE NOT NULL,
+    company_name VARCHAR(500),  -- Full official company name
+    common_name VARCHAR(255),   -- Common/short name for searches
+    industry VARCHAR(255),      -- Industry classification for industry sentiment analyzer
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Individual articles table (legacy - for backward compatibility)
 CREATE TABLE sentiment_articles (
     id SERIAL PRIMARY KEY,
@@ -90,6 +102,8 @@ CREATE TABLE sentiment_articles (
 CREATE INDEX idx_sentiment_analyses_symbol ON sentiment_analyses(symbol);
 CREATE INDEX idx_sentiment_analyses_timestamp ON sentiment_analyses(analysis_timestamp DESC);
 CREATE INDEX idx_sentiment_analyses_symbol_timestamp ON sentiment_analyses(symbol, analysis_timestamp DESC);
+CREATE INDEX idx_company_info_cache_symbol ON company_info_cache(symbol);
+CREATE INDEX idx_company_info_cache_updated_at ON company_info_cache(updated_at DESC);
 CREATE INDEX idx_sentiment_articles_analysis_id ON sentiment_articles(analysis_id);
 CREATE INDEX idx_sentiment_articles_symbol ON sentiment_articles(symbol);
 CREATE INDEX idx_sentiment_articles_source ON sentiment_articles(source);
@@ -224,6 +238,9 @@ $$ LANGUAGE plpgsql;
 -- Trigger to automatically update updated_at
 CREATE TRIGGER update_sentiment_analyses_updated_at BEFORE UPDATE
     ON sentiment_analyses FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+CREATE TRIGGER update_company_info_cache_updated_at BEFORE UPDATE
+    ON company_info_cache FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
 -- View for recent analyses per symbol
 CREATE OR REPLACE VIEW recent_analyses AS

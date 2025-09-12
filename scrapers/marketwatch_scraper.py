@@ -21,7 +21,9 @@ class MarketWatchScraper(BaseScraper):
     
     def __init__(self, symbol: str, debug: bool = False):
         super().__init__(symbol, debug)
-        self.company_name = self._get_company_name()
+        # company_name, common_name, and industry are now available from base class
+        # company_name = full official name (e.g., "NVIDIA Corporation")
+        # common_name = search-friendly name (e.g., "NVIDIA")
         
         # Enhanced MarketWatch user agents to avoid 401 Forbidden errors
         self.marketwatch_user_agents = [
@@ -38,24 +40,6 @@ class MarketWatchScraper(BaseScraper):
             'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15'
         ]
         self._current_user_agent_index = 0
-    
-    def _get_company_name(self) -> str:
-        """Get company name for the stock symbol"""
-        try:
-            import yfinance as yf
-            ticker = yf.Ticker(self.symbol)
-            info = ticker.info
-            
-            # Try different fields that might contain the company name
-            for field in ['longName', 'shortName', 'companyName']:
-                if field in info and info[field]:
-                    return info[field]
-                    
-        except Exception as e:
-            if self.debug:
-                print(f"Could not fetch company name: {e}")
-        
-        return self.symbol  # Fallback to symbol if company name not found
     
     def get_marketwatch_user_agent(self) -> str:
         """Get next MarketWatch-specific user agent in rotation"""

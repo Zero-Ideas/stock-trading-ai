@@ -12,6 +12,7 @@ from .newsapi_scraper import NewsAPIScraper
 from .yahoo_finance_scraper import YahooFinanceScraper
 from .marketwatch_scraper import MarketWatchScraper
 from .seeking_alpha_scraper import SeekingAlphaScraper
+from .seeking_alpha_scraper_pydoll import SeekingAlphaScraperPydoll
 from .benzinga_scraper import BenzingaScraper
 from .financial_times_scraper import FinancialTimesScraper
 from .bloomberg_scraper import BloombergScraper
@@ -26,10 +27,11 @@ __all__ = [
     'YahooFinanceScraper',
     'MarketWatchScraper',
     'SeekingAlphaScraper',
+    'SeekingAlphaScraperPydoll',
     'BenzingaScraper',
     'FinancialTimesScraper',
     'BloombergScraper',
-    'BloombergPydollScraper',
+    'BloombergScraperPydoll',
     'ReutersScraper'
 ]
 
@@ -40,8 +42,10 @@ AVAILABLE_SCRAPERS = {
     'yahoo_finance': YahooFinanceScraper,
     'marketwatch': MarketWatchScraper,
     'seeking_alpha': SeekingAlphaScraper,
+    'seeking_alpha_pydoll': SeekingAlphaScraperPydoll,  # Enhanced anti-bot version
     'benzinga': BenzingaScraper,
     'financial_times': FinancialTimesScraper,
     'bloomberg': BloombergScraper,
+    'bloomberg_pydoll': BloombergScraperPydoll,  # Enhanced anti-bot version
     'reuters': ReutersScraper
 }
