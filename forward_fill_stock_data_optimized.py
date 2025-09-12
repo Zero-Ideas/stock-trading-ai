@@ -41,18 +41,18 @@ class OptimizedStockDataForwardFiller:
         self.db = SentimentDatabase()
         self.batch_size = batch_size
         self.timeframe_configs = {
-            'day': {
-                'table': 'stock_data_day',
-                'interval': '1 day',
-                'interval_delta': timedelta(days=1),
-                'interval_sql': 'INTERVAL \'1 day\''
-            },
-            'hour': {
-                'table': 'stock_data_hour', 
-                'interval': '1 hour',
-                'interval_delta': timedelta(hours=1),
-                'interval_sql': 'INTERVAL \'1 hour\''
-            },
+            #'day': {
+            #    'table': 'stock_data_day',
+            #    'interval': '1 day',
+            #    'interval_delta': timedelta(days=1),
+            #    'interval_sql': 'INTERVAL \'1 day\''
+            #},
+            #'hour': {
+            #    'table': 'stock_data_hour', 
+            #    'interval': '1 hour',
+            #    'interval_delta': timedelta(hours=1),
+            #    'interval_sql': 'INTERVAL \'1 hour\''
+            #},
             'minute': {
                 'table': 'stock_data_minute',
                 'interval': '1 minute', 
@@ -67,9 +67,9 @@ class OptimizedStockDataForwardFiller:
         with self.db.get_connection() as conn:
             # Optimize connection for bulk operations
             with conn.cursor() as cursor:
-                cursor.execute("SET work_mem = '256MB'")
-                cursor.execute("SET maintenance_work_mem = '512MB'")
-                cursor.execute("SET synchronous_commit = OFF")  # Faster but less durable
+                cursor.execute("SET work_mem = '1024MB'")
+                cursor.execute("SET maintenance_work_mem = '1024MB'")
+                cursor.execute("SET synchronous_commit = FALSE")  # Faster but less durable
             yield conn
     
     def get_symbols_in_table(self, table_name: str) -> List[str]:
@@ -234,7 +234,7 @@ class OptimizedStockDataForwardFiller:
                 print(f"      Gap {gap_count}: {gap_start} to {gap_end} ({gap_size} points)")
             elif gap_count == 6:
                 print(f"      ... (showing progress every 50 gaps)")
-            elif gap_count % 50 == 0:
+            elif gap_count % 5000 == 0:
                 elapsed = time.time() - start_time
                 print(f"      Processed {gap_count} gaps, {total_filled + len(current_batch)} points queued ({elapsed:.1f}s)")
             
@@ -255,11 +255,12 @@ class OptimizedStockDataForwardFiller:
             inserted = self.batch_insert_fill_data(table_name, current_batch)
             total_filled += inserted
         
-        elapsed = time.time() - start_time
+
         
         if gap_count == 0:
             print(f"      No gaps found for {symbol}")
         else:
+            elapsed = time.time() - start_time
             rate = total_filled / elapsed if elapsed > 0 else 0
             status = "[DRY RUN]" if dry_run else ""
             print(f"      {status} {symbol}: {gap_count} gaps, {total_filled} points filled in {elapsed:.2f}s ({rate:.0f} points/sec)")

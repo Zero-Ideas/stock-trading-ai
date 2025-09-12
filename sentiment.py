@@ -6,7 +6,7 @@ A web scraper that analyzes public sentiment for stock symbols using news and so
 PERFORMANCE OPTIMIZATIONS:
 - Lazy loading: Scrapers and AI models only load when needed (improves database mode latency)
 - Fast company names: Static mapping replaces yfinance API calls (eliminates 5s delays)
-- Enhanced Selenium cleanup: Prevents hanging processes
+- Enhanced Playwright cleanup: Prevents hanging processes
 """
     
 import warnings
@@ -439,7 +439,7 @@ class StockSentimentAnalyzer:
        #
             # Improved scrapers with anti-bot protection
             'bloomberg': BloombergScraperPydoll(self.symbol, debug),  # Disabled temporarily - might be hanging
-            'seeking_alpha': SeekingAlphaScraperPydoll(self.symbol, debug),  # Re-enabled with enhanced Selenium support
+            'seeking_alpha': SeekingAlphaScraperPydoll(self.symbol, debug),  # Re-enabled with enhanced Playwright support
             #'marketwatch': MarketWatchScraper(self.symbol, debug),
             #'reuters': ReutersScraper(self.symbol, debug),
             
@@ -913,12 +913,12 @@ class StockSentimentAnalyzer:
         
         print(f"\n[DEBUG] FINAL RETURN: Returning {len(unique_sentiments)} articles to caller")
         
-        # Clean up Selenium driver after scraping to prevent hanging
+        # Clean up Playwright browser after scraping to prevent hanging
         try:
             from scrapers.base_scraper import BaseScraper
-            BaseScraper.cleanup_selenium_driver()
+            BaseScraper.cleanup_playwright_browser()
         except Exception as e:
-            print(f"Warning: Selenium cleanup failed: {e}")
+            print(f"Warning: Playwright cleanup failed: {e}")
         
         return unique_sentiments
 
@@ -1765,12 +1765,12 @@ class StockSentimentAnalyzer:
         # Save analysis data to ./Data directory (as backup or primary if no DB)
         self._save_analysis_data(results, all_sentiments)
         
-        # Clean up Selenium driver to prevent hanging
+        # Clean up Playwright browser to prevent hanging
         try:
             from scrapers.base_scraper import BaseScraper
-            BaseScraper.cleanup_selenium_driver()
+            BaseScraper.cleanup_playwright_browser()
         except Exception as e:
-            print(f"Warning: Selenium cleanup failed: {e}")
+            print(f"Warning: Playwright cleanup failed: {e}")
         
         return results
 
