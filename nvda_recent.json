@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-09-14T12:28:45.678968",
+  "symbol": "NVDA",
+  "prediction": "Buy",
+  "confidence_score": 0.5274695158004761,
+  "analysis": {
+    "indicators": {
+      "time_range": {
+        "start_date": "2025-09-05T22:00:00",
+        "end_date": "2025-09-10T23:00:00",
+        "data_points": 50
+      },
+      "values": {
+        "rsi": 66.00034464363821,
+        "sma_20": 176.06276,
+        "ema_20": 175.6177034652399,
+        "close": 177.17,
+        "volume": 237499.0,
+        "atr": 1.2721033676159483
+      }
+    },
+    "risk_return": {
+      "sharpe_ratio": 0.4736538126205565,
+      "sortino_ratio": 0.5670166227341812,
+      "calmar_ratio": 0.9701966119534268,
+      "max_drawdown_pct": -7.7475245069996586
+    },
+    "performance": {
+      "backtest_total_return_pct": 7.516622027717212,
+      "r_squared_vs_market": 0.05625703567360989,
+      "model_accuracy": 0.5303370786516854,
+      "buy_hold_return_pct": 0.3864624477849299
+    },
+    "key_drivers": {
+      "obv": 0.051064543426036835,
+      "low": 0.04974335432052612,
+      "BBU_20_2.0_2.0": 0.0394967719912529,
+      "ema_20": 0.03909321129322052,
+      "close": 0.037345778197050095
+    }
+  }
+}
