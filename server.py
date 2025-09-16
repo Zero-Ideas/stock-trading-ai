@@ -1,4 +1,4 @@
-import sentiment, historicalDataGetter, randoms.macrosentiment as macrosentiment
+import sentiment, historicalDataGetter
 from flask import Flask, request, jsonify, send_from_directory, send_file, session, g
 from flask_cors import CORS
 import os
@@ -6,6 +6,7 @@ import json
 from datetime import datetime
 import hashlib
 import secrets
+import industry_analysis
 
 # Import licensing and technical analysis
 from license_manager import license_manager, require_license, admin_required
@@ -21,7 +22,7 @@ CORS(app, supports_credentials=True, origins=['http://localhost:5173'],
 
 # Initialize components
 getter = historicalDataGetter.HistoricalDataGetter()
-macro_analyzer = macrosentiment.MacroSentimentAnalyzer()
+industry_analyzer = industry_analysis.IndustryAnalyzer()
 unified_analyzer = UnifiedAnalyzer()
 technical_bot = OptimizedTradingBot()
 @app.route('/')
@@ -194,6 +195,7 @@ def get_sentiment():
 
         analyzer = sentiment.StockSentimentAnalyzer(symbol)
         results = analyzer.analyze_sentiment(target_articles=articles)
+        print("Sentiment analysis results:", results)  # Debugging log
         return jsonify(results)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -358,7 +360,7 @@ def get_sector_outlook():
         if not sector:
             return jsonify({"error": "sector parameter is required"}), 400
 
-        result = macro_analyzer.get_sector_outlook(sector, days_back)
+        result = industry_analyzer.analyze_industry()
         return jsonify(result)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -374,14 +376,8 @@ def get_enhanced_macro_sentiment():
         if not symbol:
             return jsonify({"error": "symbol parameter is required"}), 400
 
-        # Use enhanced analyzer directly
-        enhanced_analyzer = macrosentiment.EnhancedMacroSentimentAnalyzer()
-        result = enhanced_analyzer.analyze_sector_sentiment(
-            symbol=symbol,
-            days_back=days_back,
-            min_quality_threshold=min_quality
-        )
-        return jsonify(result)
+        # Use industry_analyzer
+        return
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

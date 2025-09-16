@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { AuthProvider, useAuth, AuthContextType } from './contexts/AuthContext';
 import Header from './components/Header';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
@@ -8,6 +9,7 @@ import Analyze from './pages/Analyze';
 
 const AppContent: React.FC = () => {
   const { isAuthenticated, loading } = useAuth();
+  const { isAuthenticated, loading, checkAuthCookie } = useAuth() as AuthContextType;
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem('darkMode');
     return saved ? JSON.parse(saved) : false;
@@ -19,6 +21,10 @@ const AppContent: React.FC = () => {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
+    }
+
+    if (checkAuthCookie) {
+      checkAuthCookie();
     }
   }, [darkMode]);
 

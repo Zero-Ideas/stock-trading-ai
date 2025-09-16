@@ -34,13 +34,13 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a
-              href="#dashboard"
+              href="/dashboard"
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
             >
               Dashboard
             </a>
             <a
-              href="#analyze"
+              href="/analyze"
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
             >
               Analyze

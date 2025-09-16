@@ -491,7 +491,9 @@ def require_license(features: List[str] = None):
             processing_time = int((end_time - start_time).total_seconds() * 1000)
 
             # Get response size (approximation)
-            response_data = response if isinstance(response, (dict, list)) else response[0]
+            print(f"[DEBUG] Response type: {type(response)}")
+            print("AAAA",response.get_json(silent=True))
+            response_data = response if isinstance(response.get_json(silent=True), (dict, list)) else response.get_json(silent=True)
             response_size = len(str(response_data)) if response_data else 0
 
             license_manager.log_api_usage(
