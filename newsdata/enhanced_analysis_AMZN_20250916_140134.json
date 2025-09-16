@@ -1,0 +1,112 @@
+{
+  "symbol": "AMZN",
+  "sector": "Consumer Discretionary",
+  "analysis_timestamp": "2025-09-16T14:01:34.549059",
+  "days_analyzed": 30,
+  "data_quality": {
+    "total_events_found": 1,
+    "average_quality_score": 0.53,
+    "average_relevance_score": 3.0,
+    "source_diversity": 1
+  },
+  "sentiment_metrics": {
+    "overall_score": 0.0,
+    "confidence": "low",
+    "sentiment_distribution": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 100.0
+    },
+    "urgency_breakdown": {
+      "high": 100.0
+    },
+    "data_quality_metrics": {
+      "weighted_events": 1,
+      "total_weight": 0.77,
+      "average_event_quality": 0.53
+    }
+  },
+  "impact_analysis": {
+    "summary": "Sector sentiment is neutral based on 1 high-quality events. Key drivers include ['Earnings & Financial Results'].",
+    "event_type_breakdown": {
+      "Earnings & Financial Results": {
+        "count": 1,
+        "avg_sentiment": 0.0,
+        "impact": 2.40975,
+        "avg_impact": 2.40975
+      }
+    },
+    "geographic_impact": {
+      "Global": 2.40975
+    },
+    "timeline_pattern": {
+      "trend": "insufficient_data",
+      "data_points": 0
+    },
+    "key_themes": {
+      "top_themes": [
+        "Earnings & Financial Results"
+      ],
+      "theme_details": [
+        {
+          "theme": "Earnings & Financial Results",
+          "frequency": 1,
+          "avg_sentiment": 0.0,
+          "sentiment_label": "neutral"
+        }
+      ]
+    },
+    "confidence_factors": [
+      "Small sample size reduces confidence",
+      "Limited source diversity",
+      "High proportion of urgent events increases reliability"
+    ]
+  },
+  "risk_analysis": {
+    "overall_risk_level": "minimal",
+    "risk_score": 0.0,
+    "key_risk_factors": [],
+    "risk_distribution": {
+      "regulatory": 0,
+      "market": 0,
+      "operational": 0,
+      "geopolitical": 0
+    }
+  },
+  "trend_analysis": {
+    "trend": "insufficient_data",
+    "pattern": "unknown"
+  },
+  "top_events": [
+    {
+      "title": "What to Expect in Markets This Week : Fed Interest Rate Decision , U . S . Retail Sales , Meta Event , Earnings from FedEx , General Mills",
+      "date": "20250914",
+      "source": "investopedia.com",
+      "url": "https://www.investopedia.com/what-to-expect-in-markets-this-week-fed-interest-rate-decision-u-s-retail-sales-meta-event-earnings-from-fedex-general-mills-11808248",
+      "sentiment": 0.0,
+      "sentiment_label": "neutral",
+      "event_type": "Earnings & Financial Results",
+      "urgency": "high",
+      "impact_score": 2.41,
+      "sector_relevance": 3.0,
+      "content_quality": 0.53
+    }
+  ],
+  "methodology_notes": {
+    "filtering_approach": "Multi-layered filtering using content quality, source reliability, and sector relevance",
+    "sentiment_calculation": "Weighted average based on event impact, quality, and sector relevance",
+    "confidence_factors": "Based on sample size, source diversity, content quality, and event urgency",
+    "limitations": [
+      "Analysis limited to English-language sources",
+      "Relies on GDELT event database availability",
+      "Sentiment analysis may miss nuanced context",
+      "Recent events may be weighted more heavily"
+    ],
+    "strengths": [
+      "Advanced content filtering reduces noise",
+      "Multi-dimensional relevance scoring",
+      "Quality-weighted sentiment calculation",
+      "Comprehensive risk and trend analysis"
+    ]
+  }
+}
