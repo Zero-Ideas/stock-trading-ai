@@ -79,21 +79,31 @@ const HistoricalDataSection: React.FC<HistoricalDataSectionProps> = ({
         const historicalData = { dates, prices };
         setHistoricalData(historicalData);
 
-        // Calculate statistics
-        const currentPrice = prices[prices.length - 1];
-        const firstPrice = prices[0];
-        const high = Math.max(...prices);
-        const low = Math.min(...prices);
-        const change = currentPrice - firstPrice;
-        const changePercent = (change / firstPrice) * 100;
+        // Calculate statistics with null checks
+        if (prices.length > 0) {
+          const currentPrice = prices[prices.length - 1];
+          const firstPrice = prices[0];
+          const validPrices = prices.filter(price => price !== null && price !== undefined && !isNaN(price));
 
-        setStats({
-          currentPrice,
-          high,
-          low,
-          change,
-          changePercent,
-        });
+          if (validPrices.length > 0) {
+            const high = Math.max(...validPrices);
+            const low = Math.min(...validPrices);
+            const change = currentPrice - firstPrice;
+            const changePercent = firstPrice !== 0 ? (change / firstPrice) * 100 : 0;
+
+            setStats({
+              currentPrice,
+              high,
+              low,
+              change,
+              changePercent,
+            });
+          } else {
+            setStats(null);
+          }
+        } else {
+          setStats(null);
+        }
       }
     } catch (error) {
       console.error('Error fetching historical data:', error);
@@ -160,7 +170,7 @@ const HistoricalDataSection: React.FC<HistoricalDataSectionProps> = ({
         </div>
 
         <div className="space-y-4">
-          {stats && (
+          {stats && stats.currentPrice !== undefined && stats.high !== undefined && stats.low !== undefined && stats.change !== undefined && stats.changePercent !== undefined && (
             <>
               <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
                 <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
@@ -170,25 +180,25 @@ const HistoricalDataSection: React.FC<HistoricalDataSectionProps> = ({
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600 dark:text-gray-400 text-sm">Current:</span>
                     <span className="font-medium text-gray-900 dark:text-white">
-                      ${stats.currentPrice.toFixed(2)}
+                      ${(stats.currentPrice || 0).toFixed(2)}
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600 dark:text-gray-400 text-sm">High:</span>
                     <span className="font-medium text-gray-900 dark:text-white">
-                      ${stats.high.toFixed(2)}
+                      ${(stats.high || 0).toFixed(2)}
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600 dark:text-gray-400 text-sm">Low:</span>
                     <span className="font-medium text-gray-900 dark:text-white">
-                      ${stats.low.toFixed(2)}
+                      ${(stats.low || 0).toFixed(2)}
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600 dark:text-gray-400 text-sm">Change:</span>
-                    <span className={`font-medium ${getChangeColor(stats.change)}`}>
-                      {stats.change >= 0 ? '+' : ''}${stats.change.toFixed(2)} ({stats.change >= 0 ? '+' : ''}{stats.changePercent.toFixed(2)}%)
+                    <span className={`font-medium ${getChangeColor(stats.change || 0)}`}>
+                      {(stats.change || 0) >= 0 ? '+' : ''}${(stats.change || 0).toFixed(2)} ({(stats.change || 0) >= 0 ? '+' : ''}{(stats.changePercent || 0).toFixed(2)}%)
                     </span>
                   </div>
                 </div>
@@ -209,18 +219,20 @@ const HistoricalDataSection: React.FC<HistoricalDataSectionProps> = ({
                     <div className="text-sm">
                       <span className="text-blue-700 dark:text-blue-300 font-medium">Price:</span>
                       <span className="ml-2 text-blue-900 dark:text-blue-100 font-bold">
-                        ${hoverData.price.toFixed(2)}
+                        ${(hoverData.price || 0).toFixed(2)}
                       </span>
                     </div>
-                    {hoverData.index > 0 && historicalData && (
+                    {hoverData.index > 0 && historicalData && historicalData.prices && historicalData.prices[hoverData.index - 1] !== undefined && (
                       <div className="text-sm">
                         <span className="text-blue-700 dark:text-blue-300 font-medium">Change:</span>
                         <span className={`ml-2 font-medium ${
-                          getChangeColor(hoverData.price - historicalData.prices[hoverData.index - 1])
+                          getChangeColor((hoverData.price || 0) - (historicalData.prices[hoverData.index - 1] || 0))
                         }`}>
                           {(() => {
-                            const dayChange = hoverData.price - historicalData.prices[hoverData.index - 1];
-                            const dayChangePercent = (dayChange / historicalData.prices[hoverData.index - 1]) * 100;
+                            const prevPrice = historicalData.prices[hoverData.index - 1] || 0;
+                            const currentPrice = hoverData.price || 0;
+                            const dayChange = currentPrice - prevPrice;
+                            const dayChangePercent = prevPrice !== 0 ? (dayChange / prevPrice) * 100 : 0;
                             return `${dayChange >= 0 ? '+' : ''}${dayChange.toFixed(2)} (${dayChange >= 0 ? '+' : ''}${dayChangePercent.toFixed(2)}%)`;
                           })()}
                         </span>

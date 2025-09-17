@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, send_from_directory, send_file, sessi
 from flask_cors import CORS
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 import hashlib
 import secrets
 import industry_analysis
@@ -16,9 +16,23 @@ import industry_analysis
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 app.secret_key = secrets.token_hex(32)  # For session management
-CORS(app, supports_credentials=True, origins=['http://localhost:5173'],
-     allow_headers=['Content-Type', 'Authorization', 'X-Session-Token'],
-     expose_headers=['Set-Cookie'])  # Enable CORS for web UI with credentials
+
+# Configure session cookies for persistent login
+app.config.update(
+    SESSION_COOKIE_SECURE=False,  # Set to True in production with HTTPS
+    SESSION_COOKIE_HTTPONLY=False,  # Allow JavaScript access for debugging (change to True in production)
+    SESSION_COOKIE_SAMESITE=None,  # Allow cross-origin cookies for development
+    PERMANENT_SESSION_LIFETIME=timedelta(days=30),  # Session expires in 30 days
+    SESSION_COOKIE_DOMAIN=None,  # Allow cookies on localhost
+    SESSION_COOKIE_PATH='/'  # Set cookie path explicitly
+)
+
+CORS(app,
+     supports_credentials=True,
+     origins=['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'http://127.0.0.1:5173', 'http://127.0.0.1:5174', 'http://127.0.0.1:5175'],
+     allow_headers=['Content-Type', 'Authorization', 'X-Session-Token', 'Cookie'],
+     expose_headers=['Set-Cookie'],
+     methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])  # Enable CORS for web UI with credentials
 
 # Initialize components
 getter = historicalDataGetter.HistoricalDataGetter()
@@ -96,13 +110,16 @@ def login():
                 "message": session_result['message']
             }), 400
 
-        # Store session token in Flask session
+        # Store session token in Flask session and make it permanent
+        session.permanent = True
         session['session_token'] = session_result['session_token']
         session['license_key'] = license_key
         session['tier_name'] = validation['tier_name']
         session['user_name'] = validation['user_name']
 
-        return jsonify({
+        print(f"[DEBUG] Session created: {session}")  # Debug output
+
+        response = jsonify({
             "success": True,
             "message": "Login successful",
             "session_token": session_result['session_token'],
@@ -110,6 +127,19 @@ def login():
             "user_name": validation['user_name'],
             "features_enabled": validation['features_enabled']
         })
+
+        # Set the session token as a direct cookie for persistent login
+        response.set_cookie('auth_token', session_result['session_token'],
+                           max_age=60*60*24*30,  # 30 days in seconds
+                           httponly=False,
+                           samesite=None,  # Allow cross-origin for development
+                           secure=False,
+                           domain=None,
+                           path='/')
+
+        print(f"[DEBUG] Setting auth_token cookie: {session_result['session_token']}")  # Debug output
+
+        return response
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -133,10 +163,15 @@ def logout():
         # Clear Flask session
         session.clear()
 
-        return jsonify({
+        response = jsonify({
             "success": True,
             "message": "Logout successful"
         })
+
+        # Clear the auth_token cookie
+        response.set_cookie('auth_token', '', expires=0, domain=None, path='/')
+
+        return response
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -144,7 +179,15 @@ def logout():
 @app.route('/auth/validate', methods=['GET'])
 def validate_session():
     try:
-        session_token = session.get('session_token')
+        # Check for session token in multiple places: Flask session, auth_token cookie, or X-Session-Token header
+        session_token = (session.get('session_token') or
+                        request.cookies.get('auth_token') or
+                        request.headers.get('X-Session-Token'))
+
+        print(f"[DEBUG] Validation - Session data: {dict(session)}")  # Debug output
+        print(f"[DEBUG] Validation - Cookies: {dict(request.cookies)}")  # Debug output
+        print(f"[DEBUG] Validation - Session token: {session_token}")  # Debug output
+
         if not session_token:
             return jsonify({
                 "valid": False,
@@ -152,6 +195,14 @@ def validate_session():
             }), 401
 
         validation = license_manager.validate_session(session_token)
+
+        # If session is valid, update Flask session with current data
+        if validation['valid'] and not session.get('session_token'):
+            session.permanent = True
+            session['session_token'] = session_token
+            session['tier_name'] = validation.get('tier_name')
+            session['user_name'] = validation.get('user_name', 'User')
+
         return jsonify({
             "valid": validation['valid'],
             "tier_name": validation.get('tier_name'),

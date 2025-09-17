@@ -37,6 +37,31 @@ const HistoricalChart: React.FC<HistoricalChartProps> = ({
   isDarkMode = false,
   onHover,
 }) => {
+  // Validate data before rendering
+  if (!historicalData || !historicalData.dates || !historicalData.prices) {
+    return (
+      <div className="flex items-center justify-center h-full text-gray-500">
+        No chart data available
+      </div>
+    );
+  }
+
+  if (historicalData.dates.length === 0 || historicalData.prices.length === 0) {
+    return (
+      <div className="flex items-center justify-center h-full text-gray-500">
+        No chart data points
+      </div>
+    );
+  }
+
+  if (historicalData.dates.length !== historicalData.prices.length) {
+    return (
+      <div className="flex items-center justify-center h-full text-gray-500">
+        Chart data mismatch
+      </div>
+    );
+  }
+
   const data = {
     labels: historicalData.dates,
     datasets: [
@@ -109,7 +134,16 @@ const HistoricalChart: React.FC<HistoricalChartProps> = ({
     },
   };
 
-  return <Line data={data} options={options} />;
+  try {
+    return <Line data={data} options={options} />;
+  } catch (error) {
+    console.error('Chart rendering error:', error);
+    return (
+      <div className="flex items-center justify-center h-full text-red-500">
+        Error rendering chart
+      </div>
+    );
+  }
 };
 
 export default HistoricalChart;

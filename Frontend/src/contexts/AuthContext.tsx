@@ -2,6 +2,11 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 import { authAPI } from '../services/api';
 import type { SessionValidation } from '../types';
 
+// Add hot reload preservation
+if (import.meta.hot) {
+  import.meta.hot.accept();
+}
+
 interface AuthContextType {
   isAuthenticated: boolean;
   user: {
@@ -19,6 +24,17 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (context === undefined) {
+    // During hot reload, provide fallback instead of throwing
+    if (import.meta.hot) {
+      console.warn('useAuth called outside AuthProvider during hot reload, providing fallback');
+      return {
+        isAuthenticated: false,
+        user: null,
+        login: async () => {},
+        logout: async () => {},
+        loading: false
+      };
+    }
     throw new Error('useAuth must be used within an AuthProvider');
   }
   return context;
@@ -66,7 +82,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       const response = await authAPI.login(licenseKey);
       const data = response.data;
 
-      // Store session token if provided
+      // Store session token in localStorage as fallback since cookies aren't working cross-origin
       if (data.session_token) {
         localStorage.setItem('session_token', data.session_token);
       }
@@ -88,6 +104,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     } catch (error) {
       console.error('Logout error:', error);
     } finally {
+      // Clear localStorage session token
       localStorage.removeItem('session_token');
       setIsAuthenticated(false);
       setUser(null);

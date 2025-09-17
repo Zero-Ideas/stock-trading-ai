@@ -8,12 +8,14 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
   withCredentials: true,
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
 });
 
 // Request interceptor for authentication
 api.interceptors.request.use(
   (config) => {
-    // Add session token from localStorage if available
+    // Add session token from localStorage for persistent login
     const sessionToken = localStorage.getItem('session_token');
     if (sessionToken) {
       config.headers['X-Session-Token'] = sessionToken;

@@ -120,9 +120,9 @@ const Analyze: React.FC = () => {
             </div>
             <div className="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
               <div className="text-2xl font-bold text-purple-600 mb-1">
-                {((data.sentiment_scores?.weighted_avg_from_sources || 0) * 100).toFixed(0)}%
+                {data.sentiment_scores?.weighted_avg_from_sources}
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Confidence</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">Weighted Average</p>
             </div>
             <div className="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
               <div className="text-2xl font-bold text-green-600 mb-1">
