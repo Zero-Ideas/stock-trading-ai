@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-09-14T12:38:43.742935",
+  "symbol": "AAPL",
+  "prediction": "Hold",
+  "confidence_score": 0.6324358582496643,
+  "analysis": {
+    "indicators": {
+      "time_range": {
+        "start_date": "2025-09-05T22:00:00",
+        "end_date": "2025-09-10T23:00:00",
+        "data_points": 50
+      },
+      "values": {
+        "rsi": 21.770618793264816,
+        "sma_20": 230.05979,
+        "ema_20": 229.73813318478585,
+        "close": 227.0212,
+        "volume": 70714.0,
+        "atr": 1.180859029272895
+      }
+    },
+    "risk_return": {
+      "sharpe_ratio": 0.19061589549067784,
+      "sortino_ratio": 0.18295562818546637,
+      "calmar_ratio": 1.7474001746481327,
+      "max_drawdown_pct": -24.0592521529909
+    },
+    "performance": {
+      "backtest_total_return_pct": 42.041141414039764,
+      "r_squared_vs_market": 0.04671117382639336,
+      "model_accuracy": 0.8149953880616682,
+      "buy_hold_return_pct": 28.433148420695108
+    },
+    "key_drivers": {
+      "atr": 0.08503028005361557,
+      "high_low_pct": 0.04625421017408371,
+      "ema_10": 0.04336894303560257,
+      "volume_ratio": 0.038450662046670914,
+      "sma_20": 0.033565957099199295
+    }
+  }
+}

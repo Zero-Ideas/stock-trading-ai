@@ -28,7 +28,21 @@
       "Bash(move:*)",
       "Bash(pip install:*)",
       "Bash(del test_company_resolution.py)",
-      "Bash(del test_forward_fill.py)"
+      "Bash(del test_forward_fill.py)",
+      "Bash(npm create:*)",
+      "Bash(npm install)",
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss init:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(del /s /q node_modules)",
+      "Bash(del package-lock.json)",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_close",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_evaluate"
     ],
     "deny": [],
     "ask": []

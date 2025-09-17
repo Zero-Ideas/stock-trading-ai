@@ -23,35 +23,31 @@ except ImportError:
     NEWSPAPER3K_AVAILABLE = False
     print("WARNING: newspaper3k not available. Using fallback extraction methods.")
 
-# Try to import selenium for browser automation
+# Try to import playwright for browser automation
 try:
-    from selenium import webdriver
-    from selenium.webdriver.chrome.options import Options
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.support import expected_conditions as EC
-    from selenium.common.exceptions import TimeoutException, WebDriverException
-    SELENIUM_AVAILABLE = True
+    from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+    PLAYWRIGHT_AVAILABLE = True
 except ImportError:
-    SELENIUM_AVAILABLE = False
+    PLAYWRIGHT_AVAILABLE = False
     if __name__ == "__main__":  # Only show warning if running directly
-        print("INFO: Selenium not available. Browser automation features disabled.")
+        print("INFO: Playwright not available. Browser automation features disabled.")
 
-# Global selenium driver instance for performance optimization
-_GLOBAL_DRIVER = None
-_DRIVER_LAST_USED = 0
-_SELENIUM_ERROR_COUNT = 0
-_SELENIUM_DISABLED_UNTIL = 0
-_DRIVER_CREATION_IN_PROGRESS = False
-_DRIVER_CREATION_COUNT = 0
-_MAX_DRIVER_CREATIONS = 3
+# Global playwright browser instance for performance optimization
+_GLOBAL_PLAYWRIGHT = None
+_GLOBAL_BROWSER = None
+_BROWSER_LAST_USED = 0
+_PLAYWRIGHT_ERROR_COUNT = 0
+_PLAYWRIGHT_DISABLED_UNTIL = 0
+_BROWSER_CREATION_IN_PROGRESS = False
+_BROWSER_CREATION_COUNT = 0
+_MAX_BROWSER_CREATIONS = 3
 
 # Global URL resolution success tracking
 _URL_RESOLUTION_STATS = {}  # {source_name: {"attempts": int, "successes": int}}
 _DISABLED_SOURCES = set()  # Sources with <10% success rate
 
-# Thread safety lock for Selenium operations
-_SELENIUM_LOCK = threading.RLock()
+# Thread safety lock for Playwright operations
+_PLAYWRIGHT_LOCK = threading.RLock()
 
 
 @dataclass
@@ -127,9 +123,9 @@ class BaseScraper(ABC):
                 'Sec-Fetch-Site': 'cross-site'
             }
         ]
-        # Track selenium usage for this scraper instance
-        self._selenium_used = False
-        self._last_selenium_request = 0  # Timestamp of last selenium request
+        # Track playwright usage for this scraper instance
+        self._playwright_used = False
+        self._last_playwright_request = 0  # Timestamp of last playwright request
         
     @abstractmethod
     def scrape(self, max_articles: int = 10) -> List[SentimentData]:
@@ -300,217 +296,143 @@ class BaseScraper(ABC):
         return stats
     
     @classmethod
-    def get_selenium_driver(cls):
-        """Get shared selenium driver instance for all scrapers with error tracking and auto-refresh"""
-        global _GLOBAL_DRIVER, _DRIVER_LAST_USED, _SELENIUM_ERROR_COUNT, _SELENIUM_DISABLED_UNTIL, _DRIVER_CREATION_IN_PROGRESS, _DRIVER_CREATION_COUNT, _MAX_DRIVER_CREATIONS
+    def get_playwright_browser(cls):
+        """Get shared playwright browser instance for all scrapers with error tracking and auto-refresh"""
+        global _GLOBAL_PLAYWRIGHT, _GLOBAL_BROWSER, _BROWSER_LAST_USED, _PLAYWRIGHT_ERROR_COUNT, _PLAYWRIGHT_DISABLED_UNTIL, _BROWSER_CREATION_IN_PROGRESS, _BROWSER_CREATION_COUNT, _MAX_BROWSER_CREATIONS
         
-        if not SELENIUM_AVAILABLE:
-            raise ImportError("Selenium not available. Install selenium and chromedriver.")
+        if not PLAYWRIGHT_AVAILABLE:
+            raise ImportError("Playwright not available. Install playwright and run 'playwright install'.")
         
         current_time = time.time()
         
-        # Check if selenium is temporarily disabled due to errors
-        if current_time < _SELENIUM_DISABLED_UNTIL:
-            remaining_time = int(_SELENIUM_DISABLED_UNTIL - current_time)
-            # Use a simple print instead of cls.debug
-            print(f"  Selenium temporarily disabled for {remaining_time} more seconds due to errors")
-            raise Exception(f"Selenium disabled for {remaining_time} seconds due to repeated errors")
+        # Check if playwright is temporarily disabled due to errors
+        if current_time < _PLAYWRIGHT_DISABLED_UNTIL:
+            remaining_time = int(_PLAYWRIGHT_DISABLED_UNTIL - current_time)
+            print(f"  Playwright temporarily disabled for {remaining_time} more seconds due to errors")
+            raise Exception(f"Playwright disabled for {remaining_time} seconds due to repeated errors")
         
-        # Thread-safe check for driver creation in progress
-        with _SELENIUM_LOCK:
-            if _DRIVER_CREATION_IN_PROGRESS:
-                print(f"  Selenium driver creation already in progress, waiting...")
+        # Thread-safe check for browser creation in progress
+        with _PLAYWRIGHT_LOCK:
+            if _BROWSER_CREATION_IN_PROGRESS:
+                print(f"  Playwright browser creation already in progress, waiting...")
                 time.sleep(2)
-                if _GLOBAL_DRIVER is not None:
-                    return _GLOBAL_DRIVER
+                if _GLOBAL_BROWSER is not None:
+                    return _GLOBAL_BROWSER
                 else:
-                    raise Exception("Driver creation failed or taking too long")
+                    raise Exception("Browser creation failed or taking too long")
         
         # More lenient creation limits for heavy workloads
-        if _DRIVER_CREATION_COUNT >= 10:  # Increased from 3 to 10
-            print(f"  Maximum selenium driver creations ({_MAX_DRIVER_CREATIONS}) reached for this session")
-            raise Exception("Maximum selenium driver creations reached - preventing infinite loops")
+        if _BROWSER_CREATION_COUNT >= 10:  # Increased from 3 to 10
+            print(f"  Maximum playwright browser creations ({_MAX_BROWSER_CREATIONS}) reached for this session")
+            raise Exception("Maximum playwright browser creations reached - preventing infinite loops")
         
-        # Auto-refresh driver conditions:
-        # 1. No driver exists
-        # 2. Driver is older than 3 minutes (reduced from 5 for freshness)
-        # 3. High error count suggests driver issues
+        # Auto-refresh browser conditions:
+        # 1. No browser exists
+        # 2. Browser is older than 3 minutes (reduced from 5 for freshness)
+        # 3. High error count suggests browser issues
         needs_refresh = (
-            _GLOBAL_DRIVER is None or 
-            (current_time - _DRIVER_LAST_USED) > 180 or  # 3 minutes instead of 5
-            _SELENIUM_ERROR_COUNT >= 3  # Refresh if errors accumulate
+            _GLOBAL_BROWSER is None or 
+            (current_time - _BROWSER_LAST_USED) > 180 or  # 3 minutes instead of 5
+            _PLAYWRIGHT_ERROR_COUNT >= 3  # Refresh if errors accumulate
         )
         
         if needs_refresh:
-            _DRIVER_CREATION_IN_PROGRESS = True
-            _DRIVER_CREATION_COUNT += 1
+            _BROWSER_CREATION_IN_PROGRESS = True
+            _BROWSER_CREATION_COUNT += 1
             
             try:
-                if _GLOBAL_DRIVER is not None:
+                # Close existing browser if it exists
+                if _GLOBAL_BROWSER is not None:
                     try:
-                        _GLOBAL_DRIVER.quit()
+                        _GLOBAL_BROWSER.close()
                     except:
                         pass
                 
-                chrome_options = Options()
-                
-                # Enhanced configuration for heavy workloads and stability
-                chrome_options.add_argument('--no-sandbox')
-                chrome_options.add_argument('--disable-dev-shm-usage')
-                chrome_options.add_argument('--disable-gpu')
-                chrome_options.add_argument('--window-size=1920,1080')
-                
-                # Make window minimized instead of headless for better JS support
-                chrome_options.add_argument('--window-position=-2000,-2000')  # Move window off screen
-                
-                # Additional stability options for heavy workloads
-                chrome_options.add_argument('--disable-extensions-file-access-check')
-                chrome_options.add_argument('--disable-extensions-http-throttling')
-                chrome_options.add_argument('--aggressive-cache-discard')
-                chrome_options.add_argument('--disable-background-timer-throttling')
-                chrome_options.add_argument('--disable-renderer-backgrounding')
-                chrome_options.add_argument('--disable-backgrounding-occluded-windows')
-                
-                # Memory management for sustained usage
-                chrome_options.add_argument('--max_old_space_size=2048')  # Reduced from 4096 for stability
-                chrome_options.add_argument('--memory-pressure-off')
-                
-                # SSL and network optimizations
-                chrome_options.add_argument('--ignore-ssl-errors-on-localhost')
-                chrome_options.add_argument('--ignore-ssl-errors')
-                chrome_options.add_argument('--ignore-certificate-errors')
-                chrome_options.add_argument('--allow-running-insecure-content')
-                chrome_options.add_argument('--disable-web-security')
-                chrome_options.add_argument('--disable-features=VizDisplayCompositor')
-                
-                # Performance optimizations - BUT ENABLE JAVASCRIPT for redirects
-                chrome_options.add_argument('--disable-extensions')
-                chrome_options.add_argument('--disable-plugins')
-                chrome_options.add_argument('--disable-images')
-                # REMOVED --enable-javascript to ensure JS is fully enabled for Google News redirects
-                chrome_options.add_argument('--disable-background-timer-throttling')
-                chrome_options.add_argument('--disable-backgrounding-occluded-windows')
-                chrome_options.add_argument('--disable-renderer-backgrounding')
-                chrome_options.add_argument('--disable-background-networking')
-                chrome_options.add_argument('--disable-sync')
-                chrome_options.add_argument('--disable-translate')
-                chrome_options.add_argument('--disable-ipc-flooding-protection')
-                
-                # Memory optimizations
-                chrome_options.add_argument('--memory-pressure-off')
-                chrome_options.add_argument('--max_old_space_size=4096')
-                
-                # Anti-detection (more robust)
-                chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-                chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-                chrome_options.add_experimental_option('useAutomationExtension', False)
-                chrome_options.add_argument('--disable-default-apps')
-                
-                # Logging optimizations (reduce console spam)
-                chrome_options.add_argument('--log-level=3')  # Suppress INFO, WARNING, ERROR
-                chrome_options.add_argument('--silent')
-                chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-                chrome_options.add_experimental_option('useAutomationExtension', False)
-                
-                # User agent randomization
-                chrome_options.add_argument(f'--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-            
-                try:
-                    _GLOBAL_DRIVER = webdriver.Chrome(options=chrome_options)
-                    
-                    # Enhanced anti-detection
-                    _GLOBAL_DRIVER.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-                    _GLOBAL_DRIVER.execute_cdp_cmd('Network.setUserAgentOverride', {
-                        "userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-                    })
-                    _GLOBAL_DRIVER.execute_script("Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en']})")
-                    _GLOBAL_DRIVER.execute_script("Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]})")
-                    
-                    # Optimized timeouts for heavy workloads
-                    _GLOBAL_DRIVER.set_page_load_timeout(12)  # Slightly increased for stability
-                    _GLOBAL_DRIVER.implicitly_wait(2)  # Reduced further for speed
-                    
-                    # Clear any existing state to start fresh
+                if _GLOBAL_PLAYWRIGHT is not None:
                     try:
-                        _GLOBAL_DRIVER.delete_all_cookies()
-                        _GLOBAL_DRIVER.execute_script("window.localStorage.clear();")
-                        _GLOBAL_DRIVER.execute_script("window.sessionStorage.clear();")
+                        _GLOBAL_PLAYWRIGHT.stop()
                     except:
-                        pass  # Ignore if this fails
+                        pass
+                
+                # Start new playwright instance
+                _GLOBAL_PLAYWRIGHT = sync_playwright().start()
+                
+                # Launch browser with optimized settings
+                try:
+                    _GLOBAL_BROWSER = _GLOBAL_PLAYWRIGHT.chromium.launch(
+                        headless=True,  # More stable than visible browser
+                        args=[
+                            '--no-sandbox',
+                            '--disable-dev-shm-usage',
+                            '--disable-gpu',
+                            '--disable-extensions',
+                            '--disable-plugins',
+                            '--disable-images',
+                            '--disable-background-timer-throttling',
+                            '--disable-renderer-backgrounding',
+                            '--disable-backgrounding-occluded-windows',
+                            '--disable-background-networking',
+                            '--disable-sync',
+                            '--disable-translate',
+                            '--disable-ipc-flooding-protection',
+                            '--memory-pressure-off',
+                            '--max_old_space_size=2048',
+                            '--ignore-ssl-errors-on-localhost',
+                            '--ignore-ssl-errors',
+                            '--ignore-certificate-errors',
+                            '--allow-running-insecure-content',
+                            '--disable-web-security',
+                            '--disable-features=VizDisplayCompositor'
+                        ]
+                    )
                     
-                    # Reset error count on successful driver creation
-                    _SELENIUM_ERROR_COUNT = 0
+                    # Reset error count on successful browser creation
+                    _PLAYWRIGHT_ERROR_COUNT = 0
                     
-                    print("  Selenium driver initialized with heavy workload optimizations")
+                    print("  Playwright browser initialized with heavy workload optimizations")
                     
                 except Exception as e:
-                    print(f"  WARNING: Selenium driver creation failed: {e}")
-                    _GLOBAL_DRIVER = None
-                    _SELENIUM_ERROR_COUNT += 3  # Penalize creation failures more heavily
+                    print(f"  WARNING: Playwright browser creation failed: {e}")
+                    _GLOBAL_BROWSER = None
+                    _PLAYWRIGHT_ERROR_COUNT += 3  # Penalize creation failures more heavily
                     raise e
                 
             finally:
-                _DRIVER_CREATION_IN_PROGRESS = False
+                _BROWSER_CREATION_IN_PROGRESS = False
         
-        _DRIVER_LAST_USED = current_time
+        _BROWSER_LAST_USED = current_time
         
-        # Periodic state cleanup for heavy workloads
-        if _DRIVER_CREATION_COUNT > 1 and _DRIVER_CREATION_COUNT % 3 == 0:
-            try:
-                if _GLOBAL_DRIVER:
-                    # Clear accumulated state every few operations
-                    _GLOBAL_DRIVER.delete_all_cookies()
-                    _GLOBAL_DRIVER.execute_script("window.localStorage.clear();")
-                    _GLOBAL_DRIVER.execute_script("window.sessionStorage.clear();")
-                    print("  Selenium driver state cleared for fresh operation")
-            except:
-                pass  # Don't fail if cleanup fails
-        
-        return _GLOBAL_DRIVER
+        return _GLOBAL_BROWSER
     
     @classmethod
-    def cleanup_selenium_driver(cls):
-        """Cleanup the global selenium driver with thread safety"""
-        global _GLOBAL_DRIVER
+    def cleanup_playwright_browser(cls):
+        """Cleanup the global playwright browser with thread safety"""
+        global _GLOBAL_PLAYWRIGHT, _GLOBAL_BROWSER
         
-        with _SELENIUM_LOCK:  # Prevent concurrent cleanup
-            if _GLOBAL_DRIVER is not None:
+        with _PLAYWRIGHT_LOCK:  # Prevent concurrent cleanup
+            if _GLOBAL_BROWSER is not None:
                 try:
-                    # First try graceful quit
-                    _GLOBAL_DRIVER.quit()
-                    print("  Selenium driver cleaned up successfully")
+                    # First try graceful close
+                    _GLOBAL_BROWSER.close()
+                    print("  Playwright browser cleaned up successfully")
                 except Exception as e:
-                    print(f"  Warning: Driver cleanup error ({e}), force-killing...")
-                    try:
-                        # Try to kill the process
-                        if hasattr(_GLOBAL_DRIVER, 'service') and hasattr(_GLOBAL_DRIVER.service, 'process'):
-                            _GLOBAL_DRIVER.service.process.kill()
-                    except Exception as kill_error:
-                        print(f"  Warning: Force kill failed: {kill_error}")
-                        # On Windows, try alternative cleanup
-                        try:
-                            import os
-                            import signal
-                            import psutil
-                            # Find and kill any remaining chromedriver processes
-                            for process in psutil.process_iter(['pid', 'name']):
-                                if process.info['name'] in ['chromedriver.exe', 'chrome.exe']:
-                                    try:
-                                        process.kill()
-                                        print(f"  Killed process: {process.info['name']} (PID: {process.info['pid']})")
-                                    except:
-                                        pass
-                        except ImportError:
-                            print("  psutil not available for aggressive cleanup")
-                        except Exception as cleanup_error:
-                            print(f"  Aggressive cleanup failed: {cleanup_error}")
+                    print(f"  Warning: Browser cleanup error ({e})")
                 finally:
-                    _GLOBAL_DRIVER = None
+                    _GLOBAL_BROWSER = None
+            
+            if _GLOBAL_PLAYWRIGHT is not None:
+                try:
+                    _GLOBAL_PLAYWRIGHT.stop()
+                    print("  Playwright instance stopped successfully")
+                except Exception as e:
+                    print(f"  Warning: Playwright cleanup error ({e})")
+                finally:
+                    _GLOBAL_PLAYWRIGHT = None
     
-    def make_request_with_selenium(self, url: str, wait_for_selector: str = None, 
+    def make_request_with_playwright(self, url: str, wait_for_selector: str = None, 
                                   wait_timeout: int = 10, enable_javascript: bool = True) -> tuple:
         """
-        Make a request using selenium for JavaScript-heavy sites or anti-bot protection
+        Make a request using playwright for JavaScript-heavy sites or anti-bot protection
         
         Args:
             url: URL to fetch
@@ -521,125 +443,80 @@ class BaseScraper(ABC):
         Returns:
             tuple: (page_source, final_url) or (None, None) if failed
         """
-        global _SELENIUM_ERROR_COUNT, _SELENIUM_DISABLED_UNTIL
+        global _PLAYWRIGHT_ERROR_COUNT, _PLAYWRIGHT_DISABLED_UNTIL
         
-        if not SELENIUM_AVAILABLE:
+        if not PLAYWRIGHT_AVAILABLE:
             if self.debug:
-                print("      Selenium not available, falling back to requests")
+                print("      Playwright not available, falling back to requests")
             return None, None
         
-        # Add small delay between selenium requests to prevent driver overload
+        # Add small delay between playwright requests to prevent browser overload
         current_time = time.time()
-        if self._last_selenium_request > 0:
-            time_since_last = current_time - self._last_selenium_request
+        if self._last_playwright_request > 0:
+            time_since_last = current_time - self._last_playwright_request
             if time_since_last < 1.0:  # Less than 1 second since last request
                 delay = 1.0 - time_since_last
                 if self.debug:
-                    print(f"      Selenium: Adding {delay:.1f}s delay to prevent overload")
+                    print(f"      Playwright: Adding {delay:.1f}s delay to prevent overload")
                 time.sleep(delay)
         
-        self._last_selenium_request = time.time()
+        self._last_playwright_request = time.time()
         
         max_retries = 2
         for attempt in range(max_retries):
             try:
-                driver = self.get_selenium_driver()
-                if driver is None:
+                browser = self.get_playwright_browser()
+                if browser is None:
                     if self.debug:
-                        print("      Selenium driver not available")
+                        print("      Playwright browser not available")
                     return None, None
                 
-                self._selenium_used = True
+                self._playwright_used = True
+                
+                # Create new page context for each request
+                context = browser.new_context(
+                    user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    viewport={'width': 1920, 'height': 1080},
+                    ignore_https_errors=True,
+                    java_script_enabled=enable_javascript
+                )
+                
+                page = context.new_page()
                 
                 # Enhanced error handling for navigation
                 if self.debug:
-                    print(f"      Selenium: Attempt {attempt + 1} - Navigating to {url[:80]}...")
+                    print(f"      Playwright: Attempt {attempt + 1} - Navigating to {url[:80]}...")
                 
                 # Dynamic timeout based on URL complexity
                 if 'google.com' in url:
-                    page_timeout = 10  # Google News needs more time for redirects
+                    page_timeout = 10000  # Google News needs more time for redirects (in ms)
                 else:
-                    page_timeout = 10   # Standard timeout for other sites
-                
-                driver.set_page_load_timeout(page_timeout)
+                    page_timeout = 10000   # Standard timeout for other sites (in ms)
                 
                 # Navigate with enhanced timeout handling
                 try:
-                    # Clear any existing page state before navigation
-                    try:
-                        if driver.current_url != "about:blank":
-                            driver.execute_script("window.stop();")  # Stop any pending operations
-                            time.sleep(0.5)
-                    except:
-                        pass
-                    
-                    # Use timeout wrapper for navigation to prevent hanging
-                    import threading
-                    navigation_completed = threading.Event()
-                    navigation_exception = [None]
-                    
-                    def navigate_with_timeout():
-                        try:
-                            driver.get(url)
-                            navigation_completed.set()
-                        except Exception as nav_error:
-                            navigation_exception[0] = nav_error
-                            navigation_completed.set()
-                    
-                    nav_thread = threading.Thread(target=navigate_with_timeout)
-                    nav_thread.daemon = True
-                    nav_thread.start()
-                    
-                    # Wait for navigation to complete or timeout
-                    if not navigation_completed.wait(timeout=7):  # 20 second timeout
-                        print(f"      Selenium: Navigation timed out after 20s, abandoning URL")
-                        return None, None
-                    
-                    if navigation_exception[0]:
-                        raise navigation_exception[0]
+                    # Navigate to the page
+                    response = page.goto(url, timeout=page_timeout, wait_until='domcontentloaded')
                     
                     # For Google News URLs, wait for potential redirects
                     if 'news.google.com' in url and '/articles/' in url:
                         if self.debug:
-                            print(f"      Selenium: Waiting for Google News redirect...")
+                            print(f"      Playwright: Waiting for Google News redirect...")
                         
-                        # Wait up to 5 seconds for URL to change (redirect) - reduced timeout
-                        redirect_detected = False
-                        redirect_timeout = time.time() + 5  # Absolute timeout
-                        
-                        while time.time() < redirect_timeout:
-                            try:
-                                current_url = driver.current_url
-                                if current_url != url:
-                                    if self.debug:
-                                        print(f"      Selenium: URL changed to: {current_url}")
-                                    # If not google.com, we have a successful redirect
-                                    if 'google.com' not in current_url:
-                                        if self.debug:
-                                            print(f"      Selenium: Successful redirect detected!")
-                                        redirect_detected = True
-                                        break
-                                time.sleep(0.2)  # Increased sleep interval for less CPU usage
-                            except Exception as e:
+                        # Wait up to 5 seconds for URL to change (redirect)
+                        try:
+                            page.wait_for_load_state('networkidle', timeout=5000)
+                            current_url = page.url
+                            if current_url != url and 'google.com' not in current_url:
                                 if self.debug:
-                                    print(f"      Selenium: Error checking URL: {e}")
-                                break
-                        
-                        # If no redirect detected after timeout, abandon this URL
-                        if not redirect_detected:
+                                    print(f"      Playwright: Successful redirect detected to: {current_url}")
+                        except PlaywrightTimeoutError:
                             if self.debug:
-                                print(f"      Selenium: No redirect detected after 5s timeout - abandoning URL")
-                            return None, None
-                        
-                        # Additional wait for page to fully load after redirect
-                        if redirect_detected:
-                            time.sleep(1)  # Reduced wait time
-                            if self.debug:
-                                print(f"      Selenium: Final URL after redirect: {driver.current_url}")
+                                print(f"      Playwright: No redirect detected after timeout")
                     
-                except TimeoutException:
+                except PlaywrightTimeoutError:
                     if self.debug:
-                        print(f"      Selenium: Page load timeout, but continuing...")
+                        print(f"      Playwright: Page load timeout, but continuing...")
                     # Continue anyway, partial load might be sufficient
                 
                 # Wait strategy with multiple fallbacks
@@ -647,25 +524,21 @@ class BaseScraper(ABC):
                 
                 if wait_for_selector:
                     try:
-                        # Strict timeout limits per TODO (5-10 seconds max)
-                        WebDriverWait(driver, min(wait_timeout, 6)).until(
-                            EC.presence_of_element_located((By.CSS_SELECTOR, wait_for_selector))
-                        )
+                        # Wait for specific selector
+                        page.wait_for_selector(wait_for_selector, timeout=min(wait_timeout, 6) * 1000)
                         wait_successful = True
                         if self.debug:
-                            print(f"      Selenium: Successfully found selector '{wait_for_selector}'")
-                    except TimeoutException:
+                            print(f"      Playwright: Successfully found selector '{wait_for_selector}'")
+                    except PlaywrightTimeoutError:
                         # Try alternative waiting strategies
                         try:
-                            WebDriverWait(driver, 2).until(  # Reduced from 3 to 2 seconds
-                                EC.presence_of_element_located((By.TAG_NAME, "body"))
-                            )
+                            page.wait_for_selector("body", timeout=2000)
                             wait_successful = True
                             if self.debug:
-                                print(f"      Selenium: Selector timeout, but body loaded")
-                        except TimeoutException:
+                                print(f"      Playwright: Selector timeout, but body loaded")
+                        except PlaywrightTimeoutError:
                             if self.debug:
-                                print(f"      Selenium: Both selectors failed, using minimal wait")
+                                print(f"      Playwright: Both selectors failed, using minimal wait")
                 
                 if not wait_successful:
                     # Minimal wait as last resort
@@ -673,55 +546,58 @@ class BaseScraper(ABC):
                 
                 # Get page content with error handling
                 try:
-                    page_source = driver.page_source
-                    final_url = driver.current_url
+                    page_source = page.content()
+                    final_url = page.url
                     
                     if page_source and len(page_source) > 100:  # Basic validation
                         # Reset error count on successful operation
-                        _SELENIUM_ERROR_COUNT = max(0, _SELENIUM_ERROR_COUNT - 1)  # Gradually reduce error count
+                        _PLAYWRIGHT_ERROR_COUNT = max(0, _PLAYWRIGHT_ERROR_COUNT - 1)  # Gradually reduce error count
                         
                         if self.debug:
-                            print(f"      Selenium: Success! Final URL: {final_url[:60]}...")
-                            print(f"      Selenium: Page source length: {len(page_source)} chars")
+                            print(f"      Playwright: Success! Final URL: {final_url[:60]}...")
+                            print(f"      Playwright: Page source length: {len(page_source)} chars")
                         return page_source, final_url
                     else:
                         if self.debug:
-                            print(f"      Selenium: Page source too short ({len(page_source) if page_source else 0} chars)")
+                            print(f"      Playwright: Page source too short ({len(page_source) if page_source else 0} chars)")
                         
                 except Exception as content_error:
                     if self.debug:
-                        print(f"      Selenium: Failed to get page content: {content_error}")
+                        print(f"      Playwright: Failed to get page content: {content_error}")
+                finally:
+                    # Always close the page context
+                    try:
+                        context.close()
+                    except:
+                        pass
                     
-            except WebDriverException as wde:
-                _SELENIUM_ERROR_COUNT += 1
+            except Exception as pwe:
+                _PLAYWRIGHT_ERROR_COUNT += 1
                 
                 if self.debug:
-                    error_msg = str(wde)
-                    if "handshake failed" in error_msg or "SSL" in error_msg:
-                        print(f"      Selenium: SSL/Network error on attempt {attempt + 1} (total errors: {_SELENIUM_ERROR_COUNT})")
-                    elif "timeout" in error_msg.lower():
-                        print(f"      Selenium: Timeout error on attempt {attempt + 1} (total errors: {_SELENIUM_ERROR_COUNT})")
-                    elif "session deleted" in error_msg.lower() or "invalid session" in error_msg.lower():
-                        print(f"      Selenium: Session error on attempt {attempt + 1} - driver needs refresh")
+                    error_msg = str(pwe)
+                    if "timeout" in error_msg.lower():
+                        print(f"      Playwright: Timeout error on attempt {attempt + 1} (total errors: {_PLAYWRIGHT_ERROR_COUNT})")
+                    elif "connection" in error_msg.lower():
+                        print(f"      Playwright: Connection error on attempt {attempt + 1} (total errors: {_PLAYWRIGHT_ERROR_COUNT})")
                     else:
-                        print(f"      Selenium: WebDriver error on attempt {attempt + 1}: {error_msg[:100]} (total errors: {_SELENIUM_ERROR_COUNT})")
+                        print(f"      Playwright: Error on attempt {attempt + 1}: {error_msg[:100]} (total errors: {_PLAYWRIGHT_ERROR_COUNT})")
                 
-                # Enhanced error recovery - force driver refresh for certain errors
-                critical_errors = ["handshake failed", "connection refused", "session not created", 
-                                 "session deleted", "invalid session", "chrome not reachable"]
-                if any(error_phrase in str(wde).lower() for error_phrase in critical_errors):
+                # Enhanced error recovery - force browser refresh for certain errors
+                critical_errors = ["browser has been closed", "target closed", "connection refused"]
+                if any(error_phrase in str(pwe).lower() for error_phrase in critical_errors):
                     if self.debug:
-                        print(f"      Selenium: Critical error detected - forcing driver refresh")
-                    self.cleanup_selenium_driver()
-                    # Clear error count since we're getting a fresh driver
-                    _SELENIUM_ERROR_COUNT = max(0, _SELENIUM_ERROR_COUNT - 2)
+                        print(f"      Playwright: Critical error detected - forcing browser refresh")
+                    self.cleanup_playwright_browser()
+                    # Clear error count since we're getting a fresh browser
+                    _PLAYWRIGHT_ERROR_COUNT = max(0, _PLAYWRIGHT_ERROR_COUNT - 2)
                 
                 # More lenient error threshold for heavy workloads
-                if _SELENIUM_ERROR_COUNT >= 8:  # Increased from 5 to 8
-                    _SELENIUM_DISABLED_UNTIL = time.time() + 180  # Reduced from 5 minutes to 3 minutes
+                if _PLAYWRIGHT_ERROR_COUNT >= 8:  # Increased from 5 to 8
+                    _PLAYWRIGHT_DISABLED_UNTIL = time.time() + 180  # Reduced from 5 minutes to 3 minutes
                     if self.debug:
-                        print(f"      Selenium: Disabled for 3 minutes due to {_SELENIUM_ERROR_COUNT} consecutive errors")
-                    self.cleanup_selenium_driver()
+                        print(f"      Playwright: Disabled for 3 minutes due to {_PLAYWRIGHT_ERROR_COUNT} consecutive errors")
+                    self.cleanup_playwright_browser()
                     return None, None
                     
                 if attempt == max_retries - 1:
@@ -731,22 +607,22 @@ class BaseScraper(ABC):
                 
             except Exception as e:
                 if self.debug:
-                    print(f"      Selenium: Unexpected error on attempt {attempt + 1}: {e}")
+                    print(f"      Playwright: Unexpected error on attempt {attempt + 1}: {e}")
                 if attempt == max_retries - 1:
                     return None, None
                 time.sleep(1)
         
         return None, None
     
-    def make_request_enhanced(self, url: str, use_selenium_fallback: bool = True, 
-                            selenium_wait_selector: str = None, **kwargs) -> requests.Response:
+    def make_request_enhanced(self, url: str, use_playwright_fallback: bool = True, 
+                            playwright_wait_selector: str = None, **kwargs) -> requests.Response:
         """
-        Enhanced request method that tries requests first, then selenium if needed
+        Enhanced request method that tries requests first, then playwright if needed
         
         Args:
             url: URL to fetch
-            use_selenium_fallback: Whether to try selenium if requests fails
-            selenium_wait_selector: CSS selector to wait for in selenium
+            use_playwright_fallback: Whether to try playwright if requests fails
+            playwright_wait_selector: CSS selector to wait for in playwright
             **kwargs: Additional arguments for requests
             
         Returns:
@@ -758,13 +634,13 @@ class BaseScraper(ABC):
             
             # Check if we got blocked/redirected to anti-bot page
             if self._is_likely_blocked(response):
-                if use_selenium_fallback and SELENIUM_AVAILABLE:
+                if use_playwright_fallback and PLAYWRIGHT_AVAILABLE:
                     if self.debug:
-                        print(f"      Request appears blocked, trying selenium fallback...")
-                    return self._selenium_to_response(url, selenium_wait_selector)
+                        print(f"      Request appears blocked, trying playwright fallback...")
+                    return self._playwright_to_response(url, playwright_wait_selector)
                 else:
                     if self.debug:
-                        print(f"      Request appears blocked but selenium fallback disabled")
+                        print(f"      Request appears blocked but playwright fallback disabled")
             
             return response
             
@@ -772,10 +648,10 @@ class BaseScraper(ABC):
             if self.debug:
                 print(f"      Regular request failed: {e}")
             
-            if use_selenium_fallback and SELENIUM_AVAILABLE:
+            if use_playwright_fallback and PLAYWRIGHT_AVAILABLE:
                 if self.debug:
-                    print(f"      Trying selenium fallback...")
-                return self._selenium_to_response(url, selenium_wait_selector)
+                    print(f"      Trying playwright fallback...")
+                return self._playwright_to_response(url, playwright_wait_selector)
             else:
                 raise e
     
@@ -795,15 +671,15 @@ class BaseScraper(ABC):
         
         return any(indicator in content_lower for indicator in block_indicators)
     
-    def _selenium_to_response(self, url: str, wait_selector: str = None) -> object:
-        """Convert selenium result to requests.Response-like object"""
-        page_source, final_url = self.make_request_with_selenium(url, wait_selector)
+    def _playwright_to_response(self, url: str, wait_selector: str = None) -> object:
+        """Convert playwright result to requests.Response-like object"""
+        page_source, final_url = self.make_request_with_playwright(url, wait_selector)
         
         if page_source is None:
-            raise Exception("Selenium request failed")
+            raise Exception("Playwright request failed")
         
         # Create a minimal response-like object
-        class SeleniumResponse:
+        class PlaywrightResponse:
             def __init__(self, content, url, status_code=200):
                 self.text = content
                 self.content = content.encode('utf-8')
@@ -815,7 +691,7 @@ class BaseScraper(ABC):
                 if self.status_code >= 400:
                     raise requests.HTTPError(f"{self.status_code} Error")
         
-        return SeleniumResponse(page_source, final_url or url)
+        return PlaywrightResponse(page_source, final_url or url)
     
     def fetch_full_article(self, url: str, max_length: int = 3000) -> str:
         """Fetch and extract full article text using newspaper3k (preferred) or fallback methods"""
@@ -936,28 +812,28 @@ class BaseScraper(ABC):
             if self.debug:
                 print(f"      newspaper3k extraction failed: {e}")
             
-            # If newspaper3k failed due to 403/401 errors, try Selenium fallback
+            # If newspaper3k failed due to 403/401 errors, try Playwright fallback
             if ("403" in str(e) or "401" in str(e) or "Forbidden" in str(e) or 
                 "Client Error" in str(e)):
                 if self.debug:
-                    print(f"      newspaper3k blocked - trying Selenium fallback...")
-                return self._extract_with_selenium_fallback(url, max_length)
+                    print(f"      newspaper3k blocked - trying Playwright fallback...")
+                return self._extract_with_playwright_fallback(url, max_length)
             
             return ""
     
-    def _extract_with_selenium_fallback(self, url: str, max_length: int) -> str:
-        """Extract article content using Selenium when newspaper3k is blocked"""
-        if not SELENIUM_AVAILABLE:
+    def _extract_with_playwright_fallback(self, url: str, max_length: int) -> str:
+        """Extract article content using Playwright when newspaper3k is blocked"""
+        if not PLAYWRIGHT_AVAILABLE:
             if self.debug:
-                print(f"      Selenium not available for fallback extraction")
+                print(f"      Playwright not available for fallback extraction")
             return ""
         
         try:
             if self.debug:
-                print(f"      Starting Selenium article extraction for: {url[:80]}...")
+                print(f"      Starting Playwright article extraction for: {url[:80]}...")
             
-            # Use Selenium to fetch the page content
-            page_source, final_url = self.make_request_with_selenium(
+            # Use Playwright to fetch the page content
+            page_source, final_url = self.make_request_with_playwright(
                 url, 
                 wait_for_selector="body",
                 wait_timeout=15,
@@ -966,7 +842,7 @@ class BaseScraper(ABC):
             
             if not page_source:
                 if self.debug:
-                    print(f"      Selenium extraction failed - no page source")
+                    print(f"      Playwright extraction failed - no page source")
                 return ""
             
             # Parse with BeautifulSoup
@@ -1036,20 +912,20 @@ class BaseScraper(ABC):
                             content += "..."
                     
                     if self.debug:
-                        print(f"      Selenium extraction SUCCESS: {len(content)} characters")
+                        print(f"      Playwright extraction SUCCESS: {len(content)} characters")
                         print(f"      First 150 chars: {content[:150]}...")
                     
                     return content
                 else:
                     if self.debug:
-                        print(f"      Selenium content failed legitimacy check")
+                        print(f"      Playwright content failed legitimacy check")
             else:
                 if self.debug:
-                    print(f"      No relevant content found with Selenium")
+                    print(f"      No relevant content found with Playwright")
             
         except Exception as e:
             if self.debug:
-                print(f"      Selenium fallback extraction failed: {e}")
+                print(f"      Playwright fallback extraction failed: {e}")
         
         return ""
     
@@ -1649,22 +1525,22 @@ class BaseScraper(ABC):
                         continue
                 
                 if self.debug:
-                    print(f"      All decode methods failed, trying Selenium approach...")
+                    print(f"      All decode methods failed, trying Playwright approach...")
                 
-                # Use Selenium for JavaScript-based redirects (Google News requires JS)
+                # Use Playwright for JavaScript-based redirects (Google News requires JS)
                 if self.debug:
-                    print(f"      Using Selenium for Google News redirect...")
+                    print(f"      Using Playwright for Google News redirect...")
                 
                 try:
-                    page_source, final_url = self.make_request_with_selenium(
+                    page_source, final_url = self.make_request_with_playwright(
                         google_news_url, 
                         wait_for_selector="body",  # Wait for page to load
                         wait_timeout=10,  # Longer timeout for redirects
                         enable_javascript=True
                     )
-                except Exception as selenium_error:
+                except Exception as playwright_error:
                     if self.debug:
-                        print(f"      Selenium error: {selenium_error}")
+                        print(f"      Playwright error: {playwright_error}")
                     page_source, final_url = None, None
                 
                 if page_source and final_url and final_url != google_news_url:
@@ -1682,13 +1558,13 @@ class BaseScraper(ABC):
                         len(final_url) > 25 and
                         any(domain in final_url for domain in news_domains)):
                         if self.debug:
-                            print(f"      SUCCESS: Selenium redirect to: {final_url}")
+                            print(f"      SUCCESS: Playwright redirect to: {final_url}")
                         self.track_url_resolution_success("Google News")
                         return final_url
                 
-                # Fallback to HTTP approach if Selenium didn't work
+                # Fallback to HTTP approach if Playwright didn't work
                 if self.debug:
-                    print(f"      Selenium failed, trying HTTP approach...")
+                    print(f"      Playwright failed, trying HTTP approach...")
                 
                 headers = {
                     'User-Agent': self.get_random_user_agent(),

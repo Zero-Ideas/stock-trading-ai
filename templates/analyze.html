@@ -1,0 +1,618 @@
+{% extends "base.html" %}
+
+{% block title %}Analysis - Stock Trading AI{% endblock %}
+
+{% block head %}
+<style>
+    .analysis-card {
+        transition: transform 0.2s ease-in-out;
+    }
+    .analysis-card:hover {
+        transform: translateY(-5px);
+    }
+    .result-section {
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    .chart-container {
+        position: relative;
+        height: 400px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1>
+                <i class="fas fa-search me-3"></i>Stock Analysis
+            </h1>
+            <p class="text-muted mb-4">Comprehensive analysis tools for informed trading decisions</p>
+        </div>
+    </div>
+
+    <!-- Analysis Controls -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-cog me-2"></i>Analysis Configuration
+                    </h5>
+                    <form id="analysisForm" class="row g-3">
+                        <div class="col-md-3">
+                            <label for="symbol" class="form-label">Stock Symbol *</label>
+                            <input type="text" class="form-control" id="symbol" placeholder="e.g., AAPL, TSLA" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="analysisType" class="form-label">Analysis Type *</label>
+                            <select class="form-select" id="analysisType" required>
+                                {% if features.sentiment %}
+                                <option value="sentiment">Sentiment Analysis</option>
+                                {% endif %}
+                                {% if features.technical %}
+                                <option value="technical">Technical Analysis</option>
+                                {% endif %}
+                                {% if features.unified %}
+                                <option value="unified">Unified Analysis</option>
+                                {% endif %}
+                                {% if features.sentiment %}
+                                <option value="industry">Industry Analysis</option>
+                                {% endif %}
+                                {% if features.historical %}
+                                <option value="historical">Historical Data</option>
+                                {% endif %}
+                            </select>
+                        </div>
+                        <div class="col-md-2" id="articlesGroup">
+                            <label for="articles" class="form-label">Articles</label>
+                            <input type="number" class="form-control" id="articles" value="20" min="5" max="100">
+                        </div>
+                        <div class="col-md-2" id="timeframeGroup" style="display: none;">
+                            <label for="timeframe" class="form-label">Timeframe</label>
+                            <select class="form-select" id="timeframe">
+                                <option value="minute">Minute</option>
+                                <option value="hour" selected>Hour</option>
+                                <option value="day">Day</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2" id="startDateGroup" style="display: none;">
+                            <label for="startDate" class="form-label">Start Date</label>
+                            <input type="date" class="form-control" id="startDate">
+                        </div>
+                        <div class="col-md-2" id="endDateGroup" style="display: none;">
+                            <label for="endDate" class="form-label">End Date</label>
+                            <input type="date" class="form-control" id="endDate">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">&nbsp;</label>
+                            <button type="submit" class="btn btn-primary d-block w-100">
+                                <i class="fas fa-play me-2"></i>Run Analysis
+                                <span class="spinner-border spinner-border-sm ms-2 d-none" id="analysisSpinner"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="row">
+        <div class="col-12">
+            <div id="resultsContainer" style="display: none;">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-line me-2"></i>Analysis Results
+                        </h5>
+                        <div>
+                            <button class="btn btn-sm btn-outline-primary" id="exportBtn">
+                                <i class="fas fa-download me-1"></i>Export
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary" id="shareBtn">
+                                <i class="fas fa-share me-1"></i>Share
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="resultsContent"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="loadingContainer" style="display: none;">
+                <div class="card">
+                    <div class="card-body text-center py-5">
+                        <div class="spinner-border text-primary mb-3" style="width: 3rem; height: 3rem;" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <h5>Running Analysis...</h5>
+                        <p class="text-muted">This may take a few moments depending on the analysis type and data volume.</p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                 role="progressbar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="errorContainer"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // URL parameter handling
+    const urlParams = new URLSearchParams(window.location.search);
+    const typeParam = urlParams.get('type');
+    if (typeParam) {
+        document.getElementById('analysisType').value = typeParam;
+        updateFormFields();
+    }
+
+    // Set default dates for historical analysis
+    const today = new Date();
+    const lastMonth = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000);
+    document.getElementById('endDate').value = today.toISOString().split('T')[0];
+    document.getElementById('startDate').value = lastMonth.toISOString().split('T')[0];
+
+    // Form field visibility control
+    document.getElementById('analysisType').addEventListener('change', updateFormFields);
+
+    // Form submission
+    document.getElementById('analysisForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        await runAnalysis();
+    });
+
+    // Export functionality
+    document.getElementById('exportBtn').addEventListener('click', exportResults);
+    document.getElementById('shareBtn').addEventListener('click', shareResults);
+
+    updateFormFields();
+});
+
+function updateFormFields() {
+    const analysisType = document.getElementById('analysisType').value;
+
+    // Hide all optional groups
+    document.getElementById('articlesGroup').style.display = 'none';
+    document.getElementById('timeframeGroup').style.display = 'none';
+    document.getElementById('startDateGroup').style.display = 'none';
+    document.getElementById('endDateGroup').style.display = 'none';
+
+    // Show relevant fields based on analysis type
+    switch (analysisType) {
+        case 'sentiment':
+        case 'unified':
+            document.getElementById('articlesGroup').style.display = 'block';
+            break;
+        case 'technical':
+            document.getElementById('timeframeGroup').style.display = 'block';
+            break;
+        case 'historical':
+            document.getElementById('startDateGroup').style.display = 'block';
+            document.getElementById('endDateGroup').style.display = 'block';
+            break;
+    }
+}
+
+async function runAnalysis() {
+    const symbol = document.getElementById('symbol').value.trim().toUpperCase();
+    const analysisType = document.getElementById('analysisType').value;
+
+    if (!symbol) {
+        showError('Please enter a stock symbol');
+        return;
+    }
+
+    // Show loading
+    document.getElementById('loadingContainer').style.display = 'block';
+    document.getElementById('resultsContainer').style.display = 'none';
+    document.getElementById('errorContainer').innerHTML = '';
+    document.getElementById('analysisSpinner').classList.remove('d-none');
+
+    try {
+        let endpoint = `/api/${analysisType}?symbol=${symbol}`;
+
+        // Add type-specific parameters
+        switch (analysisType) {
+            case 'sentiment':
+            case 'unified':
+                const articles = document.getElementById('articles').value;
+                endpoint += `&articles=${articles}`;
+                break;
+            case 'technical':
+                const timeframe = document.getElementById('timeframe').value;
+                endpoint += `&timeframe=${timeframe}`;
+                break;
+            case 'historical':
+                const startDate = document.getElementById('startDate').value;
+                const endDate = document.getElementById('endDate').value;
+                endpoint += `&start_date=${startDate}&end_date=${endDate}`;
+                break;
+        }
+
+        const result = await apiCall(endpoint);
+
+        // Hide loading
+        document.getElementById('loadingContainer').style.display = 'none';
+        document.getElementById('analysisSpinner').classList.add('d-none');
+
+        // Display results
+        displayDetailedResults(result, analysisType, symbol);
+        document.getElementById('resultsContainer').style.display = 'block';
+
+    } catch (error) {
+        document.getElementById('loadingContainer').style.display = 'none';
+        document.getElementById('analysisSpinner').classList.add('d-none');
+        showError(`Analysis failed: ${error.message}`, 'errorContainer');
+    }
+}
+
+function displayDetailedResults(result, type, symbol) {
+    const container = document.getElementById('resultsContent');
+    let html = '';
+
+    switch (type) {
+        case 'sentiment':
+            html = renderSentimentResults(result, symbol);
+            break;
+        case 'technical':
+            html = renderTechnicalResults(result, symbol);
+            break;
+        case 'unified':
+            html = renderUnifiedResults(result, symbol);
+            break;
+        case 'industry':
+            html = renderIndustryResults(result, symbol);
+            break;
+        case 'historical':
+            html = renderHistoricalResults(result, symbol);
+            break;
+        default:
+            html = '<div class="alert alert-info">Results displayed successfully</div>';
+    }
+
+    container.innerHTML = html;
+}
+
+function renderSentimentResults(result, symbol) {
+    const distribution = result.sentiment_distribution || {};
+    return `
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Sentiment Analysis for ${symbol}</h4>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Overall Sentiment</h5>
+                                <h2 class="text-${getSentimentColor(result.overall_sentiment)}">${result.overall_sentiment}</h2>
+                                <p class="card-text">Score: ${result.sentiment_scores?.average_sentiment?.toFixed(3)}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Articles Analyzed</h5>
+                                <h2 class="text-primary">${result.total_articles}</h2>
+                                <p class="card-text">From ${Object.keys(result.source_breakdown || {}).length} sources</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Confidence</h5>
+                                <h2 class="text-info">${((result.sentiment_scores?.weighted_avg_from_sources || 0) * 100).toFixed(0)}%</h2>
+                                <p class="card-text">Weighted Average</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Sentiment Distribution</h5>
+                <div class="progress mb-3" style="height: 30px;">
+                    <div class="progress-bar bg-success" style="width: ${distribution.positive_percentage}%"
+                         title="Positive: ${distribution.positive_percentage?.toFixed(1)}%">
+                        ${distribution.positive_percentage?.toFixed(1)}%
+                    </div>
+                    <div class="progress-bar bg-warning" style="width: ${distribution.neutral_percentage}%"
+                         title="Neutral: ${distribution.neutral_percentage?.toFixed(1)}%">
+                        ${distribution.neutral_percentage?.toFixed(1)}%
+                    </div>
+                    <div class="progress-bar bg-danger" style="width: ${distribution.negative_percentage}%"
+                         title="Negative: ${distribution.negative_percentage?.toFixed(1)}%">
+                        ${distribution.negative_percentage?.toFixed(1)}%
+                    </div>
+                </div>
+
+                <h5>Recent Articles</h5>
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Source</th>
+                                <th>Headline</th>
+                                <th>Sentiment</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${(result.recent_articles || []).slice(0, 10).map(article => `
+                                <tr>
+                                    <td><span class="badge bg-secondary">${article.source}</span></td>
+                                    <td>${article.text}</td>
+                                    <td><span class="badge bg-${getSentimentColor(article.sentiment > 0 ? 'Positive' : article.sentiment < 0 ? 'Negative' : 'Neutral')}">${article.sentiment > 0 ? 'Positive' : article.sentiment < 0 ? 'Negative' : 'Neutral'}</span></td>
+                                    <td>${article.sentiment?.toFixed(3)}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Source Breakdown</h5>
+                <div class="chart-container">
+                    <canvas id="sourceChart"></canvas>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderTechnicalResults(result, symbol) {
+    const prediction = result.prediction_summary || {};
+    const market = result.market_analysis || {};
+
+    return `
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Technical Analysis for ${symbol}</h4>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Prediction</h5>
+                                <h2 class="text-${prediction.prediction === 'BUY' ? 'success' : prediction.prediction === 'SELL' ? 'danger' : 'secondary'}">${prediction.prediction || 'HOLD'}</h2>
+                                <p class="card-text">Confidence: ${((prediction.confidence || 0) * 100).toFixed(1)}%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Current Price</h5>
+                                <h2 class="text-primary">$${market.current_price?.toFixed(2)}</h2>
+                                <p class="card-text">Trend: ${market.price_trend}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">RSI</h5>
+                                <h2 class="text-info">${market.rsi_value?.toFixed(1)}</h2>
+                                <p class="card-text">${market.rsi_condition}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Technical Indicators</h5>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><strong>Price Trend</strong></td>
+                                <td><span class="badge bg-info">${market.price_trend}</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Volume Trend</strong></td>
+                                <td><span class="badge bg-info">${market.volume_trend}</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>RSI Condition</strong></td>
+                                <td><span class="badge bg-info">${market.rsi_condition}</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Model Performance</h5>
+                <div class="alert alert-info">
+                    <strong>Prediction Model:</strong> XGBoost<br>
+                    <strong>Confidence Level:</strong> ${((prediction.confidence || 0) * 100).toFixed(1)}%<br>
+                    <strong>Data Points:</strong> 500 recent candles
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderUnifiedResults(result, symbol) {
+    const summary = result.summary || {};
+    return `
+        <div class="row">
+            <div class="col-12">
+                <h4>Unified Analysis for ${symbol}</h4>
+                <div class="alert alert-success">
+                    <strong>Analysis Complete:</strong> ${summary.data_sources_successful}/${summary.total_data_sources} data sources processed successfully
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Data Source Status</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Company Sentiment
+                                <span class="badge bg-${summary.company_sentiment_status === 'success' ? 'success' : 'danger'}">${summary.company_sentiment_status}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Industry Sentiment
+                                <span class="badge bg-${summary.industry_sentiment_status === 'success' ? 'success' : 'danger'}">${summary.industry_sentiment_status}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Market Data
+                                <span class="badge bg-${summary.market_data_status === 'success' ? 'success' : 'danger'}">${summary.market_data_status}</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Technical Analysis
+                                <span class="badge bg-${summary.technical_analysis_status === 'success' ? 'success' : 'danger'}">${summary.technical_analysis_status}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>GPT-5 Decision Prompt</h5>
+                        <div class="alert alert-info">
+                            <small>A comprehensive prompt has been generated for GPT-5 decision making, incorporating all available data sources and analysis results.</small>
+                        </div>
+                        <p><strong>Prompt Length:</strong> ${result.gpt5_prompt?.length || 0} characters</p>
+                        <p><strong>Analysis Timestamp:</strong> ${new Date(result.analysis_timestamp).toLocaleString()}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderIndustryResults(result, symbol) {
+    return `
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Industry Analysis for ${symbol}</h4>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Industry</h5>
+                                <h3 class="text-primary">${result.industry || 'Unknown'}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Industry Sentiment</h5>
+                                <h3 class="text-${getSentimentColor(result.industry_sentiment)}">${result.industry_sentiment || 'Neutral'}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Peer Companies</h5>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Company</th>
+                                <th>Sentiment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${Object.entries(result.peer_analysis || {}).map(([symbol, data]) => `
+                                <tr>
+                                    <td><strong>${symbol}</strong></td>
+                                    <td>${data.company_name || symbol}</td>
+                                    <td><span class="badge bg-${getSentimentColor(data.sentiment)}">${data.sentiment || 'Unknown'}</span></td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderHistoricalResults(result, symbol) {
+    return `
+        <div class="row">
+            <div class="col-12">
+                <h4>Historical Data for ${symbol}</h4>
+                <div class="alert alert-info">
+                    <strong>Data Points:</strong> ${result.length || 0} records
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="priceChart"></canvas>
+                </div>
+
+                <div class="table-responsive mt-4" style="max-height: 400px;">
+                    <table class="table table-sm">
+                        <thead class="sticky-top bg-white">
+                            <tr>
+                                <th>Date</th>
+                                <th>Open</th>
+                                <th>High</th>
+                                <th>Low</th>
+                                <th>Close</th>
+                                <th>Volume</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${(result || []).map(row => `
+                                <tr>
+                                    <td>${new Date(row.Date).toLocaleDateString()}</td>
+                                    <td>$${row.Open?.toFixed(2)}</td>
+                                    <td>$${row.High?.toFixed(2)}</td>
+                                    <td>$${row.Low?.toFixed(2)}</td>
+                                    <td>$${row.Close?.toFixed(2)}</td>
+                                    <td>${row.Volume?.toLocaleString()}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getSentimentColor(sentiment) {
+    switch (sentiment?.toLowerCase()) {
+        case 'positive':
+        case 'bullish':
+            return 'success';
+        case 'negative':
+        case 'bearish':
+            return 'danger';
+        default:
+            return 'secondary';
+    }
+}
+
+function exportResults() {
+    const results = document.getElementById('resultsContent').innerText;
+    const blob = new Blob([results], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `analysis_${new Date().toISOString().split('T')[0]}.txt`;
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+function shareResults() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Stock Analysis Results',
+            text: 'Check out this stock analysis from Stock Trading AI',
+            url: window.location.href
+        });
+    } else {
+        navigator.clipboard.writeText(window.location.href);
+        showSuccess('Analysis URL copied to clipboard!');
+    }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,385 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Stock Trading AI{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h1>
+                        <i class="fas fa-tachometer-alt me-3"></i>Dashboard
+                    </h1>
+                    <p class="text-muted mb-0">Welcome back, {{ user_name }}! Your account tier: {{ tier_name|title }}</p>
+                </div>
+                <div class="text-end">
+                    <span class="tier-badge tier-{{ tier_name }}">{{ tier_name|title }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- License Info Card -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-id-card me-2"></i>License Information
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>License Tier:</strong> {{ tier_name|title }}</p>
+                            <p><strong>User:</strong> {{ user_name or 'Anonymous' }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Available Features:</strong></p>
+                            <div>
+                                {% for feature, enabled in features.items() %}
+                                    <span class="feature-badge {{ 'feature-disabled' if not enabled }}">
+                                        <i class="fas fa-{{ 'check' if enabled else 'times' }} me-1"></i>
+                                        {{ feature|title }}
+                                    </span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Analysis -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-search me-2"></i>Quick Analysis
+                    </h5>
+                    <form id="quickAnalysisForm" class="row g-3">
+                        <div class="col-md-3">
+                            <label for="symbol" class="form-label">Stock Symbol</label>
+                            <input type="text" class="form-control" id="symbol" placeholder="e.g., AAPL" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="analysisType" class="form-label">Analysis Type</label>
+                            <select class="form-select" id="analysisType" required>
+                                {% if features.sentiment %}
+                                <option value="sentiment">Sentiment Analysis</option>
+                                {% endif %}
+                                {% if features.technical %}
+                                <option value="technical">Technical Analysis</option>
+                                {% endif %}
+                                {% if features.unified %}
+                                <option value="unified">Unified Analysis</option>
+                                {% endif %}
+                                {% if features.sentiment %}
+                                <option value="industry">Industry Analysis</option>
+                                {% endif %}
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="articles" class="form-label">Articles (Sentiment)</label>
+                            <input type="number" class="form-control" id="articles" value="20" min="5" max="100">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">&nbsp;</label>
+                            <button type="submit" class="btn btn-primary d-block w-100">
+                                <i class="fas fa-play me-2"></i>Analyze
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="quickAnalysisLoading" class="loading-spinner">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-2">Running analysis...</p>
+                    </div>
+
+                    <div id="quickAnalysisResult" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="row">
+        {% if features.sentiment %}
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                    <h5 class="card-title">Sentiment Analysis</h5>
+                    <p class="card-text">Analyze market sentiment from news and social media</p>
+                    <a href="{{ url_for('analyze_page') }}?type=sentiment" class="btn btn-primary">
+                        <i class="fas fa-arrow-right me-1"></i>Start Analysis
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if features.technical %}
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-chart-bar fa-3x text-success mb-3"></i>
+                    <h5 class="card-title">Technical Analysis</h5>
+                    <p class="card-text">AI-powered technical indicators and predictions</p>
+                    <a href="{{ url_for('analyze_page') }}?type=technical" class="btn btn-success">
+                        <i class="fas fa-arrow-right me-1"></i>Start Analysis
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if features.unified %}
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-brain fa-3x text-warning mb-3"></i>
+                    <h5 class="card-title">Unified Analysis</h5>
+                    <p class="card-text">Comprehensive analysis combining all data sources</p>
+                    <a href="{{ url_for('analyze_page') }}?type=unified" class="btn btn-warning">
+                        <i class="fas fa-arrow-right me-1"></i>Start Analysis
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if features.historical %}
+        <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-history fa-3x text-info mb-3"></i>
+                    <h5 class="card-title">Historical Data</h5>
+                    <p class="card-text">Access historical price and volume data</p>
+                    <a href="{{ url_for('analyze_page') }}?type=historical" class="btn btn-info">
+                        <i class="fas fa-arrow-right me-1"></i>View Data
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Recent Analysis (placeholder for future implementation) -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-clock me-2"></i>Recent Analysis
+                    </h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Symbol</th>
+                                    <th>Type</th>
+                                    <th>Result</th>
+                                    <th>Timestamp</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recentAnalysisTable">
+                                <tr>
+                                    <td colspan="5" class="text-center text-muted">No recent analysis found. Start your first analysis above!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle quick analysis form
+    document.getElementById('quickAnalysisForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const symbol = document.getElementById('symbol').value.trim().toUpperCase();
+        const analysisType = document.getElementById('analysisType').value;
+        const articles = document.getElementById('articles').value;
+
+        if (!symbol) {
+            showError('Please enter a stock symbol');
+            return;
+        }
+
+        // Show loading
+        showLoading('quickAnalysisLoading');
+        document.getElementById('quickAnalysisResult').innerHTML = '';
+
+        try {
+            let endpoint = `/api/${analysisType}?symbol=${symbol}`;
+            if (analysisType === 'sentiment' || analysisType === 'unified') {
+                endpoint += `&articles=${articles}`;
+            }
+
+            const result = await apiCall(endpoint);
+
+            // Hide loading
+            hideLoading('quickAnalysisLoading');
+
+            // Display result
+            displayAnalysisResult(result, analysisType, symbol);
+
+            // Add to recent analysis (localStorage for demo)
+            addToRecentAnalysis(symbol, analysisType, result);
+
+        } catch (error) {
+            hideLoading('quickAnalysisLoading');
+            showError(`Analysis failed: ${error.message}`, 'quickAnalysisResult');
+        }
+    });
+
+    // Load recent analysis from localStorage
+    loadRecentAnalysis();
+});
+
+function displayAnalysisResult(result, type, symbol) {
+    const container = document.getElementById('quickAnalysisResult');
+    let html = `<div class="alert alert-success"><h6><i class="fas fa-check-circle me-2"></i>Analysis Complete for ${symbol}</h6></div>`;
+
+    if (type === 'sentiment') {
+        html += `
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Overall Sentiment: <span class="badge bg-${getSentimentColor(result.overall_sentiment)}">${result.overall_sentiment}</span></h6>
+                    <p><strong>Total Articles:</strong> ${result.total_articles}</p>
+                    <p><strong>Average Sentiment:</strong> ${result.sentiment_scores?.average_sentiment?.toFixed(3)}</p>
+                </div>
+                <div class="col-md-6">
+                    <h6>Sentiment Distribution:</h6>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-success" style="width: ${result.sentiment_distribution?.positive_percentage}%"></div>
+                        <div class="progress-bar bg-warning" style="width: ${result.sentiment_distribution?.neutral_percentage}%"></div>
+                        <div class="progress-bar bg-danger" style="width: ${result.sentiment_distribution?.negative_percentage}%"></div>
+                    </div>
+                    <small>Positive: ${result.sentiment_distribution?.positive_percentage?.toFixed(1)}% |
+                           Neutral: ${result.sentiment_distribution?.neutral_percentage?.toFixed(1)}% |
+                           Negative: ${result.sentiment_distribution?.negative_percentage?.toFixed(1)}%</small>
+                </div>
+            </div>
+        `;
+    } else if (type === 'technical') {
+        const prediction = result.prediction_summary?.prediction || 'Unknown';
+        const confidence = result.prediction_summary?.confidence || 0;
+        html += `
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Prediction: <span class="badge bg-${prediction === 'BUY' ? 'success' : prediction === 'SELL' ? 'danger' : 'secondary'}">${prediction}</span></h6>
+                    <p><strong>Confidence:</strong> ${(confidence * 100).toFixed(1)}%</p>
+                    <p><strong>Current Price:</strong> $${result.market_analysis?.current_price?.toFixed(2)}</p>
+                </div>
+                <div class="col-md-6">
+                    <h6>Technical Indicators:</h6>
+                    <p><strong>RSI:</strong> ${result.market_analysis?.rsi_value?.toFixed(2)} (${result.market_analysis?.rsi_condition})</p>
+                    <p><strong>Price Trend:</strong> ${result.market_analysis?.price_trend}</p>
+                    <p><strong>Volume Trend:</strong> ${result.market_analysis?.volume_trend}</p>
+                </div>
+            </div>
+        `;
+    } else if (type === 'unified') {
+        const summary = result.summary;
+        html += `
+            <div class="row">
+                <div class="col-12">
+                    <h6>Comprehensive Analysis Summary</h6>
+                    <p><strong>Data Sources Successful:</strong> ${summary.data_sources_successful}/${summary.total_data_sources}</p>
+                    <div class="alert alert-info">
+                        <p><strong>Company Sentiment:</strong> ${summary.company_sentiment_status}</p>
+                        <p><strong>Industry Sentiment:</strong> ${summary.industry_sentiment_status}</p>
+                        <p><strong>Market Data:</strong> ${summary.market_data_status}</p>
+                        <p><strong>Technical Analysis:</strong> ${summary.technical_analysis_status}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    } else if (type === 'industry') {
+        html += `
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Industry: ${result.industry || 'Unknown'}</h6>
+                    <p><strong>Industry Sentiment:</strong> <span class="badge bg-${getSentimentColor(result.industry_sentiment)}">${result.industry_sentiment}</span></p>
+                </div>
+                <div class="col-md-6">
+                    <h6>Peer Analysis:</h6>
+                    <p><strong>Peers Analyzed:</strong> ${Object.keys(result.peer_analysis || {}).length}</p>
+                </div>
+            </div>
+        `;
+    }
+
+    container.innerHTML = html;
+}
+
+function getSentimentColor(sentiment) {
+    switch (sentiment?.toLowerCase()) {
+        case 'positive': return 'success';
+        case 'negative': return 'danger';
+        case 'bullish': return 'success';
+        case 'bearish': return 'danger';
+        default: return 'secondary';
+    }
+}
+
+function addToRecentAnalysis(symbol, type, result) {
+    const recent = JSON.parse(localStorage.getItem('recentAnalysis') || '[]');
+    recent.unshift({
+        symbol,
+        type,
+        result: type === 'sentiment' ? result.overall_sentiment :
+                type === 'technical' ? result.prediction_summary?.prediction :
+                'Completed',
+        timestamp: new Date().toISOString()
+    });
+
+    // Keep only last 10 analyses
+    recent.splice(10);
+    localStorage.setItem('recentAnalysis', JSON.stringify(recent));
+    loadRecentAnalysis();
+}
+
+function loadRecentAnalysis() {
+    const recent = JSON.parse(localStorage.getItem('recentAnalysis') || '[]');
+    const tbody = document.getElementById('recentAnalysisTable');
+
+    if (recent.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5" class="text-center text-muted">No recent analysis found. Start your first analysis above!</td></tr>';
+        return;
+    }
+
+    tbody.innerHTML = recent.map(item => `
+        <tr>
+            <td><strong>${item.symbol}</strong></td>
+            <td><span class="badge bg-primary">${item.type}</span></td>
+            <td><span class="badge bg-${getSentimentColor(item.result)}">${item.result}</span></td>
+            <td><small>${new Date(item.timestamp).toLocaleString()}</small></td>
+            <td>
+                <button class="btn btn-sm btn-outline-primary" onclick="runAnalysis('${item.symbol}', '${item.type}')">
+                    <i class="fas fa-redo me-1"></i>Rerun
+                </button>
+            </td>
+        </tr>
+    `).join('');
+}
+
+function runAnalysis(symbol, type) {
+    document.getElementById('symbol').value = symbol;
+    document.getElementById('analysisType').value = type;
+    document.getElementById('quickAnalysisForm').dispatchEvent(new Event('submit'));
+}
+</script>
+{% endblock %}

@@ -28,14 +28,14 @@ class SeekingAlphaScraper(BaseScraper):
     
     def scrape(self, max_articles: int = 8) -> List[SentimentData]:
         self.debug = True
-        """Enhanced Seeking Alpha scraper using Selenium to handle JavaScript and extract Analysis/News sections"""
+        """Enhanced Seeking Alpha scraper using Playwright to handle JavaScript and extract Analysis/News sections"""
         sentiments = []
         
         try:
-            # Primary strategy: Use Selenium to load the main symbol page and extract articles
+            # Primary strategy: Use Playwright to load the main symbol page and extract articles
             symbol_url = f"https://seekingalpha.com/symbol/{self.symbol}"
-            selenium_articles = self._scrape_with_selenium(symbol_url, max_articles)
-            sentiments.extend(selenium_articles)
+            playwright_articles = self._scrape_with_playwright(symbol_url, max_articles)
+            sentiments.extend(playwright_articles)
             
             # If we got some articles but not enough, try fallback methods
             if len(sentiments) < max_articles:
@@ -49,8 +49,8 @@ class SeekingAlphaScraper(BaseScraper):
         
         return sentiments[:max_articles]
     
-    def _scrape_with_selenium(self, url: str, max_articles: int) -> List[SentimentData]:
-        """Use Selenium to scrape the JavaScript-rendered page and find Analysis/News sections"""
+    def _scrape_with_playwright(self, url: str, max_articles: int) -> List[SentimentData]:
+        """Use Playwright to scrape the JavaScript-rendered page and find Analysis/News sections"""
         sentiments = []
         
         try:
@@ -58,10 +58,10 @@ class SeekingAlphaScraper(BaseScraper):
             self.track_url_resolution_attempt(self.source_name)
             
             if self.debug:
-                print(f"      Seeking Alpha: Using Selenium to load {url}")
+                print(f"      Seeking Alpha: Using Playwright to load {url}")
             
-            # Use Selenium to load the page and wait for content
-            page_source, final_url = self.make_request_with_selenium(
+            # Use Playwright to load the page and wait for content
+            page_source, final_url = self.make_request_with_playwright(
                 url, 
                 wait_for_selector="body", 
                 wait_timeout=10
@@ -69,7 +69,7 @@ class SeekingAlphaScraper(BaseScraper):
             
             if not page_source:
                 if self.debug:
-                    print(f"      Seeking Alpha: Selenium failed to load page")
+                    print(f"      Seeking Alpha: Playwright failed to load page")
                 return sentiments
             
             # Track successful resolution
@@ -102,7 +102,7 @@ class SeekingAlphaScraper(BaseScraper):
             
         except Exception as e:
             if self.debug:
-                print(f"      Seeking Alpha: Selenium scraping failed: {e}")
+                print(f"      Seeking Alpha: Playwright scraping failed: {e}")
         
         return sentiments
     
@@ -311,7 +311,7 @@ class SeekingAlphaScraper(BaseScraper):
         return fallback_text
     
     def _scrape_fallback_methods(self, max_articles: int) -> List[SentimentData]:
-        """Fallback scraping methods if Selenium doesn't get enough articles"""
+        """Fallback scraping methods if Playwright doesn't get enough articles"""
         sentiments = []
         
         try:

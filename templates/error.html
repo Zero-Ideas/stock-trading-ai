@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Error {{ error_code }} - Stock Trading AI{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <div class="card shadow-lg mt-5">
+                <div class="card-body p-5">
+                    <i class="fas fa-exclamation-triangle fa-5x text-warning mb-4"></i>
+                    <h1 class="display-4 text-primary">{{ error_code }}</h1>
+                    <h4 class="mb-3">Oops! Something went wrong</h4>
+                    <p class="text-muted mb-4">{{ error_message }}</p>
+
+                    <div class="d-grid gap-2">
+                        <a href="{{ url_for('dashboard') }}" class="btn btn-primary">
+                            <i class="fas fa-home me-2"></i>Return to Dashboard
+                        </a>
+                        <button onclick="history.back()" class="btn btn-outline-secondary">
+                            <i class="fas fa-arrow-left me-2"></i>Go Back
+                        </button>
+                    </div>
+
+                    {% if error_code == 404 %}
+                    <div class="mt-4">
+                        <h6>Looking for something specific?</h6>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <a href="{{ url_for('dashboard') }}" class="btn btn-sm btn-outline-primary w-100">
+                                    <i class="fas fa-tachometer-alt me-1"></i>Dashboard
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="{{ url_for('analyze_page') }}" class="btn btn-sm btn-outline-success w-100">
+                                    <i class="fas fa-search me-1"></i>Analysis
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

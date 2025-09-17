@@ -1,0 +1,1385 @@
+{
+  "symbol": "AAPL",
+  "analysis_timestamp": "2025-09-14T18:38:53.249604",
+  "data_sources": {
+    "company_sentiment": {
+      "status": "error",
+      "error": "2025-09-14 18:39:05.798885: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n\nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\nTraceback (most recent call last):  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1834, in <module>\n    main()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1796, in main\n    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 353, in __init__\n    self._load_sentiment_models()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 384, in _load_sentiment_models\n    if _check_transformers_availability():\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 58, in _check_transformers_availability\n    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1593, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1603, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\pipelines\\__init__.py\", line 26, in <module>\n    from ..image_processing_utils import BaseImageProcessor\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_processing_utils.py\", line 21, in <module>\n    from .image_transforms import center_crop, normalize, rescale\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_transforms.py\", line 49, in <module>\n    import tensorflow as tf\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\__init__.py\", line 47, in <module>\n    from tensorflow._api.v2 import __internal__\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\__init__.py\", line 8, in <module>\n    from tensorflow._api.v2.__internal__ import autograph\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\autograph\\__init__.py\", line 8, in <module>\n    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\core\\ag_ctx.py\", line 21, in <module>\n    from tensorflow.python.autograph.utils import ag_logging\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\utils\\__init__.py\", line 17, in <module>\n    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\utils\\context_managers.py\", line 19, in <module>\n    from tensorflow.python.framework import ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\framework\\ops.py\", line 46, in <module>\n    from tensorflow.python import pywrap_tfe\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\pywrap_tfe.py\", line 25, in <module>\n    from tensorflow.python._pywrap_tfe import *\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\core\\_multiarray_umath.py\", line 44, in __getattr__\n    raise ImportError(msg)\nImportError: \nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\n\nAttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n\nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\nTraceback (most recent call last):  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1834, in <module>\n    main()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1796, in main\n    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 353, in __init__\n    self._load_sentiment_models()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 384, in _load_sentiment_models\n    if _check_transformers_availability():\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 58, in _check_transformers_availability\n    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1593, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1603, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\pipelines\\__init__.py\", line 26, in <module>\n    from ..image_processing_utils import BaseImageProcessor\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_processing_utils.py\", line 21, in <module>\n    from .image_transforms import center_crop, normalize, rescale\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_transforms.py\", line 49, in <module>\n    import tensorflow as tf\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\__init__.py\", line 47, in <module>\n    from tensorflow._api.v2 import __internal__\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\__init__.py\", line 8, in <module>\n    from tensorflow._api.v2.__internal__ import autograph\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\autograph\\__init__.py\", line 8, in <module>\n    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\core\\ag_ctx.py\", line 21, in <module>\n    from tensorflow.python.autograph.utils import ag_logging\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\utils\\__init__.py\", line 17, in <module>\n    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\utils\\context_managers.py\", line 19, in <module>\n    from tensorflow.python.framework import ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\framework\\ops.py\", line 49, in <module>\n    from tensorflow.python.client import pywrap_tf_session\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\client\\pywrap_tf_session.py\", line 19, in <module>\n    from tensorflow.python.client._pywrap_tf_session import *\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\core\\_multiarray_umath.py\", line 44, in __getattr__\n    raise ImportError(msg)\nImportError: \nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\n\nAttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\nAttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n2025-09-14 18:39:10.281635: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n\nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\nTraceback (most recent call last):  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1834, in <module>\n    main()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1796, in main\n    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 353, in __init__\n    self._load_sentiment_models()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 384, in _load_sentiment_models\n    if _check_transformers_availability():\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 58, in _check_transformers_availability\n    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1593, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1603, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\pipelines\\__init__.py\", line 26, in <module>\n    from ..image_processing_utils import BaseImageProcessor\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_processing_utils.py\", line 21, in <module>\n    from .image_transforms import center_crop, normalize, rescale\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_transforms.py\", line 49, in <module>\n    import tensorflow as tf\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\__init__.py\", line 47, in <module>\n    from tensorflow._api.v2 import __internal__\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\__init__.py\", line 11, in <module>\n    from tensorflow._api.v2.__internal__ import distribute\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\distribute\\__init__.py\", line 8, in <module>\n    from tensorflow._api.v2.__internal__.distribute import combinations\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\distribute\\combinations\\__init__.py\", line 8, in <module>\n    from tensorflow.python.distribute.combinations import env # line: 456\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\combinations.py\", line 33, in <module>\n    from tensorflow.python.distribute import collective_all_reduce_strategy\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\collective_all_reduce_strategy.py\", line 25, in <module>\n    from tensorflow.python.distribute import cross_device_ops as cross_device_ops_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\cross_device_ops.py\", line 28, in <module>\n    from tensorflow.python.distribute import cross_device_utils\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\cross_device_utils.py\", line 22, in <module>\n    from tensorflow.python.distribute import values as value_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\values.py\", line 23, in <module>\n    from tensorflow.python.distribute import distribute_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\distribute_lib.py\", line 205, in <module>\n    from tensorflow.python.data.ops import dataset_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\__init__.py\", line 21, in <module>\n    from tensorflow.python.data import experimental\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\__init__.py\", line 98, in <module>\n    from tensorflow.python.data.experimental import service\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\service\\__init__.py\", line 419, in <module>\n    from tensorflow.python.data.experimental.ops.data_service_ops import distribute\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\ops\\data_service_ops.py\", line 26, in <module>\n    from tensorflow.python.data.ops import dataset_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\ops\\dataset_ops.py\", line 34, in <module>\n    from tensorflow.python.data.ops import iterator_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\ops\\iterator_ops.py\", line 45, in <module>\n    from tensorflow.python.training.saver import BaseSaverBuilder\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\training\\saver.py\", line 50, in <module>\n    from tensorflow.python.training import py_checkpoint_reader\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\training\\py_checkpoint_reader.py\", line 19, in <module>\n    from tensorflow.python.util._pywrap_checkpoint_reader import CheckpointReader\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\core\\_multiarray_umath.py\", line 44, in __getattr__\n    raise ImportError(msg)\nImportError: \nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\n\nImportError: numpy.core.multiarray failed to import\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1603, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1331, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\pipelines\\__init__.py\", line 26, in <module>\n    from ..image_processing_utils import BaseImageProcessor\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_processing_utils.py\", line 21, in <module>\n    from .image_transforms import center_crop, normalize, rescale\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_transforms.py\", line 49, in <module>\n    import tensorflow as tf\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\__init__.py\", line 47, in <module>\n    from tensorflow._api.v2 import __internal__\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\__init__.py\", line 11, in <module>\n    from tensorflow._api.v2.__internal__ import distribute\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\distribute\\__init__.py\", line 8, in <module>\n    from tensorflow._api.v2.__internal__.distribute import combinations\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\distribute\\combinations\\__init__.py\", line 8, in <module>\n    from tensorflow.python.distribute.combinations import env # line: 456\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\combinations.py\", line 33, in <module>\n    from tensorflow.python.distribute import collective_all_reduce_strategy\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\collective_all_reduce_strategy.py\", line 25, in <module>\n    from tensorflow.python.distribute import cross_device_ops as cross_device_ops_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\cross_device_ops.py\", line 28, in <module>\n    from tensorflow.python.distribute import cross_device_utils\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\cross_device_utils.py\", line 22, in <module>\n    from tensorflow.python.distribute import values as value_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\values.py\", line 23, in <module>\n    from tensorflow.python.distribute import distribute_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\distribute_lib.py\", line 205, in <module>\n    from tensorflow.python.data.ops import dataset_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\__init__.py\", line 21, in <module>\n    from tensorflow.python.data import experimental\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\__init__.py\", line 98, in <module>\n    from tensorflow.python.data.experimental import service\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\service\\__init__.py\", line 419, in <module>\n    from tensorflow.python.data.experimental.ops.data_service_ops import distribute\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\ops\\data_service_ops.py\", line 26, in <module>\n    from tensorflow.python.data.ops import dataset_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\ops\\dataset_ops.py\", line 34, in <module>\n    from tensorflow.python.data.ops import iterator_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\ops\\iterator_ops.py\", line 45, in <module>\n    from tensorflow.python.training.saver import BaseSaverBuilder\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\training\\saver.py\", line 50, in <module>\n    from tensorflow.python.training import py_checkpoint_reader\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\training\\py_checkpoint_reader.py\", line 19, in <module>\n    from tensorflow.python.util._pywrap_checkpoint_reader import CheckpointReader\nSystemError: initialization of _pywrap_checkpoint_reader raised unreported exception\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1834, in <module>\n    main()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1796, in main\n    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 353, in __init__\n    self._load_sentiment_models()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 384, in _load_sentiment_models\n    if _check_transformers_availability():\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 58, in _check_transformers_availability\n    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline\n  File \"<frozen importlib._bootstrap>\", line 1412, in _handle_fromlist\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1593, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1605, in _get_module\n    raise RuntimeError(\nRuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):\ninitialization of _pywrap_checkpoint_reader raised unreported exception\n"
+    },
+    "industry_sentiment": {
+      "status": "error",
+      "error": "usage: industry_analysis.py [-h] [--symbol SYMBOL] [--industry INDUSTRY]\n                            [--recent RECENT] [--overview] [--list-industries]\n                            [--list-companies] [--company-cache]\n                            [--force-refresh] [--cache-hours CACHE_HOURS]\n                            [--json]\nindustry_analysis.py: error: unrecognized arguments: AAPL\n"
+    },
+    "market_data": {
+      "status": "success",
+      "data": {
+        "minute_data": {
+          "timeframe": "minute",
+          "rows": 100,
+          "latest_timestamp": "2025-09-12T23:59:00",
+          "earliest_timestamp": "2025-09-12T21:19:00",
+          "latest_price": 233.99,
+          "price_change_1min": -0.008700000000004593,
+          "volume_latest": 750,
+          "vwap_latest": 233.99,
+          "data": [
+            {
+              "open": 234.0199,
+              "high": 234.0199,
+              "low": 234.0199,
+              "close": 234.0199,
+              "vwap": 234.0199,
+              "volume": 740,
+              "trade_count": 19
+            },
+            {
+              "open": 234.0,
+              "high": 234.02,
+              "low": 234.0,
+              "close": 234.02,
+              "vwap": 234.016957,
+              "volume": 1319,
+              "trade_count": 47
+            },
+            {
+              "open": 234.02,
+              "high": 234.02,
+              "low": 233.95,
+              "close": 233.95,
+              "vwap": 234.011003,
+              "volume": 1096,
+              "trade_count": 20
+            },
+            {
+              "open": 233.9801,
+              "high": 233.9801,
+              "low": 233.9801,
+              "close": 233.9801,
+              "vwap": 233.9801,
+              "volume": 1101,
+              "trade_count": 16
+            },
+            {
+              "open": 233.99,
+              "high": 233.9994,
+              "low": 233.99,
+              "close": 233.9994,
+              "vwap": 233.997204,
+              "volume": 604,
+              "trade_count": 24
+            },
+            {
+              "open": 234.0,
+              "high": 234.0,
+              "low": 233.9999,
+              "close": 233.9999,
+              "vwap": 233.99995,
+              "volume": 605,
+              "trade_count": 15
+            },
+            {
+              "open": 233.9605,
+              "high": 233.9605,
+              "low": 233.9605,
+              "close": 233.9605,
+              "vwap": 233.9605,
+              "volume": 381,
+              "trade_count": 19
+            },
+            {
+              "open": 233.96,
+              "high": 233.96,
+              "low": 233.96,
+              "close": 233.96,
+              "vwap": 233.96,
+              "volume": 273,
+              "trade_count": 19
+            },
+            {
+              "open": 233.96,
+              "high": 233.98,
+              "low": 233.96,
+              "close": 233.96,
+              "vwap": 233.965319,
+              "volume": 492,
+              "trade_count": 11
+            },
+            {
+              "open": 233.96,
+              "high": 233.96,
+              "low": 233.96,
+              "close": 233.96,
+              "vwap": 233.96,
+              "volume": 1361,
+              "trade_count": 15
+            },
+            {
+              "open": 233.9601,
+              "high": 233.9601,
+              "low": 233.9601,
+              "close": 233.9601,
+              "vwap": 233.9601,
+              "volume": 568,
+              "trade_count": 16
+            },
+            {
+              "open": 233.97,
+              "high": 233.97,
+              "low": 233.96,
+              "close": 233.96,
+              "vwap": 233.964163,
+              "volume": 790,
+              "trade_count": 25
+            },
+            {
+              "open": 233.9,
+              "high": 233.9,
+              "low": 233.9,
+              "close": 233.9,
+              "vwap": 233.9,
+              "volume": 1012,
+              "trade_count": 9
+            },
+            {
+              "open": 233.96,
+              "high": 233.9973,
+              "low": 233.9599,
+              "close": 233.9973,
+              "vwap": 233.975665,
+              "volume": 1267,
+              "trade_count": 24
+            },
+            {
+              "open": 233.98,
+              "high": 233.98,
+              "low": 233.98,
+              "close": 233.98,
+              "vwap": 233.98,
+              "volume": 270,
+              "trade_count": 9
+            },
+            {
+              "open": 233.98,
+              "high": 233.9999,
+              "low": 233.98,
+              "close": 233.9999,
+              "vwap": 233.999469,
+              "volume": 4678,
+              "trade_count": 6
+            },
+            {
+              "open": 233.98,
+              "high": 233.98,
+              "low": 233.98,
+              "close": 233.98,
+              "vwap": 233.98,
+              "volume": 436,
+              "trade_count": 25
+            },
+            {
+              "open": 234.0,
+              "high": 234.0,
+              "low": 233.9995,
+              "close": 233.9995,
+              "vwap": 233.999674,
+              "volume": 523,
+              "trade_count": 30
+            },
+            {
+              "open": 233.99,
+              "high": 233.99,
+              "low": 233.99,
+              "close": 233.99,
+              "vwap": 233.99,
+              "volume": 310,
+              "trade_count": 22
+            },
+            {
+              "open": 233.99,
+              "high": 234.0,
+              "low": 233.99,
+              "close": 233.9999,
+              "vwap": 233.996655,
+              "volume": 564,
+              "trade_count": 21
+            },
+            {
+              "open": 233.93,
+              "high": 233.96,
+              "low": 233.93,
+              "close": 233.94,
+              "vwap": 233.940584,
+              "volume": 1263,
+              "trade_count": 16
+            },
+            {
+              "open": 233.9915,
+              "high": 233.9915,
+              "low": 233.9915,
+              "close": 233.9915,
+              "vwap": 233.9915,
+              "volume": 216,
+              "trade_count": 7
+            },
+            {
+              "open": 233.93,
+              "high": 233.93,
+              "low": 233.93,
+              "close": 233.93,
+              "vwap": 233.93,
+              "volume": 137,
+              "trade_count": 12
+            },
+            {
+              "open": 233.9272,
+              "high": 234.0,
+              "low": 233.9272,
+              "close": 234.0,
+              "vwap": 233.9636,
+              "volume": 400,
+              "trade_count": 14
+            },
+            {
+              "open": 233.99,
+              "high": 233.99,
+              "low": 233.99,
+              "close": 233.99,
+              "vwap": 233.99,
+              "volume": 480,
+              "trade_count": 18
+            },
+            {
+              "open": 234.0,
+              "high": 234.0,
+              "low": 233.98,
+              "close": 234.0,
+              "vwap": 233.993541,
+              "volume": 2426,
+              "trade_count": 25
+            },
+            {
+              "open": 234.0,
+              "high": 234.0,
+              "low": 234.0,
+              "close": 234.0,
+              "vwap": 234.0,
+              "volume": 391,
+              "trade_count": 15
+            },
+            {
+              "open": 233.98,
+              "high": 233.98,
+              "low": 233.98,
+              "close": 233.98,
+              "vwap": 233.98,
+              "volume": 355,
+              "trade_count": 12
+            },
+            {
+              "open": 233.95,
+              "high": 233.95,
+              "low": 233.95,
+              "close": 233.95,
+              "vwap": 233.95,
+              "volume": 211,
+              "trade_count": 11
+            },
+            {
+              "open": 233.9999,
+              "high": 233.9999,
+              "low": 233.9999,
+              "close": 233.9999,
+              "vwap": 233.9999,
+              "volume": 177,
+              "trade_count": 13
+            },
+            {
+              "open": 233.99,
+              "high": 233.99,
+              "low": 233.99,
+              "close": 233.99,
+              "vwap": 233.99,
+              "volume": 273,
+              "trade_count": 9
+            },
+            {
+              "open": 233.9699,
+              "high": 233.9699,
+              "low": 233.9699,
+              "close": 233.9699,
+              "vwap": 233.9699,
+              "volume": 140,
+              "trade_count": 7
+            },
+            {
+              "open": 233.97,
+              "high": 233.97,
+              "low": 233.97,
+              "close": 233.97,
+              "vwap": 233.97,
+              "volume": 219,
+              "trade_count": 11
+            },
+            {
+              "open": 233.93,
+              "high": 233.93,
+              "low": 233.93,
+              "close": 233.93,
+              "vwap": 233.93,
+              "volume": 742,
+              "trade_count": 22
+            },
+            {
+              "open": 233.99,
+              "high": 233.99,
+              "low": 233.99,
+              "close": 233.99,
+              "vwap": 233.99,
+              "volume": 254,
+              "trade_count": 11
+            },
+            {
+              "open": 233.9846,
+              "high": 233.9846,
+              "low": 233.9846,
+              "close": 233.9846,
+              "vwap": 233.9846,
+              "volume": 241,
+              "trade_count": 20
+            },
+            {
+              "open": 233.9302,
+              "high": 233.9302,
+              "low": 233.9302,
+              "close": 233.9302,
+              "vwap": 233.9302,
+              "volume": 250,
+              "trade_count": 12
+            },
+            {
+              "open": 233.9305,
+              "high": 233.94,
+              "low": 233.93,
+              "close": 233.9315,
+              "vwap": 233.932762,
+              "volume": 2415,
+              "trade_count": 25
+            },
+            {
+              "open": 233.93,
+              "high": 233.93,
+              "low": 233.93,
+              "close": 233.93,
+              "vwap": 233.93,
+              "volume": 497,
+              "trade_count": 11
+            },
+            {
+              "open": 233.93,
+              "high": 233.93,
+              "low": 233.93,
+              "close": 233.93,
+              "vwap": 233.93,
+              "volume": 175,
+              "trade_count": 8
+            },
+            {
+              "open": 233.9755,
+              "high": 233.9755,
+              "low": 233.9755,
+              "close": 233.9755,
+              "vwap": 233.9755,
+              "volume": 111,
+              "trade_count": 4
+            },
+            {
+              "open": 233.94,
+              "high": 233.94,
+              "low": 233.93,
+              "close": 233.93,
+              "vwap": 233.935852,
+              "volume": 796,
+              "trade_count": 11
+            },
+            {
+              "open": 233.98,
+              "high": 233.98,
+              "low": 233.98,
+              "close": 233.98,
+              "vwap": 233.98,
+              "volume": 197,
+              "trade_count": 17
+            },
+            {
+              "open": 233.98,
+              "high": 233.98,
+              "low": 233.98,
+              "close": 233.98,
+              "vwap": 233.98,
+              "volume": 1007,
+              "trade_count": 6
+            },
+            {
+              "open": 233.93,
+              "high": 233.93,
+              "low": 233.93,
+              "close": 233.93,
+              "vwap": 233.93,
+              "volume": 229,
+              "trade_count": 15
+            },
+            {
+              "open": 233.95,
+              "high": 233.95,
+              "low": 233.95,
+              "close": 233.95,
+              "vwap": 233.95,
+              "volume": 269,
+              "trade_count": 13
+            },
+            {
+              "open": 233.94,
+              "high": 233.94,
+              "low": 233.94,
+              "close": 233.94,
+              "vwap": 233.94,
+              "volume": 175,
+              "trade_count": 11
+            },
+            {
+              "open": 233.9303,
+              "high": 233.9303,
+              "low": 233.9303,
+              "close": 233.9303,
+              "vwap": 233.9303,
+              "volume": 198,
+              "trade_count": 13
+            },
+            {
+              "open": 233.9301,
+              "high": 233.94,
+              "low": 233.9301,
+              "close": 233.94,
+              "vwap": 233.933433,
+              "volume": 401,
+              "trade_count": 15
+            },
+            {
+              "open": 233.94,
+              "high": 233.97,
+              "low": 233.94,
+              "close": 233.97,
+              "vwap": 233.958,
+              "volume": 737,
+              "trade_count": 21
+            },
+            {
+              "open": 233.97,
+              "high": 233.97,
+              "low": 233.97,
+              "close": 233.97,
+              "vwap": 233.97,
+              "volume": 410,
+              "trade_count": 6
+            },
+            {
+              "open": 233.97,
+              "high": 233.97,
+              "low": 233.97,
+              "close": 233.97,
+              "vwap": 233.97,
+              "volume": 514,
+              "trade_count": 24
+            },
+            {
+              "open": 233.97,
+              "high": 233.97,
+              "low": 233.97,
+              "close": 233.97,
+              "vwap": 233.97,
+              "volume": 548,
+              "trade_count": 21
+            },
+            {
+              "open": 233.92,
+              "high": 233.9201,
+              "low": 233.92,
+              "close": 233.9201,
+              "vwap": 233.920057,
+              "volume": 976,
+              "trade_count": 43
+            },
+            {
+              "open": 233.9201,
+              "high": 233.9201,
+              "low": 233.9201,
+              "close": 233.9201,
+              "vwap": 233.9201,
+              "volume": 153,
+              "trade_count": 4
+            },
+            {
+              "open": 233.9201,
+              "high": 233.9201,
+              "low": 233.9201,
+              "close": 233.9201,
+              "vwap": 233.9201,
+              "volume": 203,
+              "trade_count": 4
+            },
+            {
+              "open": 233.92,
+              "high": 233.92,
+              "low": 233.92,
+              "close": 233.92,
+              "vwap": 233.92,
+              "volume": 571,
+              "trade_count": 19
+            },
+            {
+              "open": 233.91,
+              "high": 233.91,
+              "low": 233.91,
+              "close": 233.91,
+              "vwap": 233.91,
+              "volume": 362,
+              "trade_count": 8
+            },
+            {
+              "open": 233.92,
+              "high": 233.92,
+              "low": 233.91,
+              "close": 233.91,
+              "vwap": 233.918494,
+              "volume": 898,
+              "trade_count": 20
+            },
+            {
+              "open": 233.91,
+              "high": 233.91,
+              "low": 233.91,
+              "close": 233.91,
+              "vwap": 233.91,
+              "volume": 389,
+              "trade_count": 11
+            },
+            {
+              "open": 233.9101,
+              "high": 233.9101,
+              "low": 233.91,
+              "close": 233.91,
+              "vwap": 233.91004,
+              "volume": 453,
+              "trade_count": 16
+            },
+            {
+              "open": 233.9008,
+              "high": 233.9008,
+              "low": 233.9008,
+              "close": 233.9008,
+              "vwap": 233.9008,
+              "volume": 891,
+              "trade_count": 22
+            },
+            {
+              "open": 233.91,
+              "high": 233.91,
+              "low": 233.91,
+              "close": 233.91,
+              "vwap": 233.91,
+              "volume": 154,
+              "trade_count": 13
+            },
+            {
+              "open": 233.9101,
+              "high": 233.9101,
+              "low": 233.9101,
+              "close": 233.9101,
+              "vwap": 233.9101,
+              "volume": 1176,
+              "trade_count": 13
+            },
+            {
+              "open": 233.9001,
+              "high": 233.91,
+              "low": 233.9001,
+              "close": 233.9099,
+              "vwap": 233.907934,
+              "volume": 555,
+              "trade_count": 15
+            },
+            {
+              "open": 233.9005,
+              "high": 233.9005,
+              "low": 233.9005,
+              "close": 233.9005,
+              "vwap": 233.9005,
+              "volume": 303,
+              "trade_count": 3
+            },
+            {
+              "open": 233.97,
+              "high": 233.97,
+              "low": 233.9,
+              "close": 233.9,
+              "vwap": 233.911667,
+              "volume": 1076,
+              "trade_count": 68
+            },
+            {
+              "open": 233.89,
+              "high": 233.9,
+              "low": 233.85,
+              "close": 233.9,
+              "vwap": 233.884084,
+              "volume": 1108,
+              "trade_count": 14
+            },
+            {
+              "open": 233.9,
+              "high": 233.96,
+              "low": 233.9,
+              "close": 233.92,
+              "vwap": 233.940854,
+              "volume": 1845,
+              "trade_count": 40
+            },
+            {
+              "open": 233.9,
+              "high": 233.9,
+              "low": 233.9,
+              "close": 233.9,
+              "vwap": 233.9,
+              "volume": 286,
+              "trade_count": 10
+            },
+            {
+              "open": 233.9,
+              "high": 233.9,
+              "low": 233.9,
+              "close": 233.9,
+              "vwap": 233.9,
+              "volume": 224,
+              "trade_count": 10
+            },
+            {
+              "open": 233.85,
+              "high": 233.85,
+              "low": 233.85,
+              "close": 233.85,
+              "vwap": 233.85,
+              "volume": 123,
+              "trade_count": 7
+            },
+            {
+              "open": 233.85,
+              "high": 233.85,
+              "low": 233.85,
+              "close": 233.85,
+              "vwap": 233.85,
+              "volume": 247,
+              "trade_count": 10
+            },
+            {
+              "open": 233.83,
+              "high": 233.83,
+              "low": 233.83,
+              "close": 233.83,
+              "vwap": 233.83,
+              "volume": 222,
+              "trade_count": 14
+            },
+            {
+              "open": 233.84,
+              "high": 233.84,
+              "low": 233.83,
+              "close": 233.83,
+              "vwap": 233.833209,
+              "volume": 1486,
+              "trade_count": 34
+            },
+            {
+              "open": 233.82,
+              "high": 233.82,
+              "low": 233.81,
+              "close": 233.81,
+              "vwap": 233.813333,
+              "volume": 418,
+              "trade_count": 16
+            },
+            {
+              "open": 233.81,
+              "high": 233.81,
+              "low": 233.81,
+              "close": 233.81,
+              "vwap": 233.81,
+              "volume": 217,
+              "trade_count": 14
+            },
+            {
+              "open": 233.83,
+              "high": 233.83,
+              "low": 233.83,
+              "close": 233.83,
+              "vwap": 233.83,
+              "volume": 520,
+              "trade_count": 23
+            },
+            {
+              "open": 233.8299,
+              "high": 233.83,
+              "low": 233.82,
+              "close": 233.8299,
+              "vwap": 233.828494,
+              "volume": 1597,
+              "trade_count": 20
+            },
+            {
+              "open": 233.83,
+              "high": 233.83,
+              "low": 233.83,
+              "close": 233.83,
+              "vwap": 233.83,
+              "volume": 458,
+              "trade_count": 6
+            },
+            {
+              "open": 233.83,
+              "high": 233.83,
+              "low": 233.83,
+              "close": 233.83,
+              "vwap": 233.83,
+              "volume": 319,
+              "trade_count": 10
+            },
+            {
+              "open": 233.89,
+              "high": 233.89,
+              "low": 233.89,
+              "close": 233.89,
+              "vwap": 233.89,
+              "volume": 534,
+              "trade_count": 10
+            },
+            {
+              "open": 233.86,
+              "high": 233.86,
+              "low": 233.86,
+              "close": 233.86,
+              "vwap": 233.86,
+              "volume": 428,
+              "trade_count": 17
+            },
+            {
+              "open": 233.8707,
+              "high": 233.8707,
+              "low": 233.8707,
+              "close": 233.8707,
+              "vwap": 233.8707,
+              "volume": 240,
+              "trade_count": 12
+            },
+            {
+              "open": 233.89,
+              "high": 233.89,
+              "low": 233.89,
+              "close": 233.89,
+              "vwap": 233.89,
+              "volume": 222,
+              "trade_count": 7
+            },
+            {
+              "open": 233.88,
+              "high": 233.88,
+              "low": 233.88,
+              "close": 233.88,
+              "vwap": 233.88,
+              "volume": 259,
+              "trade_count": 17
+            },
+            {
+              "open": 233.8895,
+              "high": 233.8997,
+              "low": 233.86,
+              "close": 233.8997,
+              "vwap": 233.885061,
+              "volume": 1978,
+              "trade_count": 37
+            },
+            {
+              "open": 233.8991,
+              "high": 233.9,
+              "low": 233.89,
+              "close": 233.9,
+              "vwap": 233.897836,
+              "volume": 1159,
+              "trade_count": 19
+            },
+            {
+              "open": 233.891,
+              "high": 233.891,
+              "low": 233.89,
+              "close": 233.89,
+              "vwap": 233.8905,
+              "volume": 379,
+              "trade_count": 11
+            },
+            {
+              "open": 233.89,
+              "high": 233.8901,
+              "low": 233.89,
+              "close": 233.8901,
+              "vwap": 233.89005,
+              "volume": 766,
+              "trade_count": 11
+            },
+            {
+              "open": 233.93,
+              "high": 233.93,
+              "low": 233.93,
+              "close": 233.93,
+              "vwap": 233.93,
+              "volume": 348,
+              "trade_count": 20
+            },
+            {
+              "open": 233.89,
+              "high": 233.89,
+              "low": 233.89,
+              "close": 233.89,
+              "vwap": 233.89,
+              "volume": 165,
+              "trade_count": 9
+            },
+            {
+              "open": 233.94,
+              "high": 233.97,
+              "low": 233.94,
+              "close": 233.97,
+              "vwap": 233.965427,
+              "volume": 1338,
+              "trade_count": 34
+            },
+            {
+              "open": 233.98,
+              "high": 233.98,
+              "low": 233.98,
+              "close": 233.98,
+              "vwap": 233.98,
+              "volume": 900,
+              "trade_count": 14
+            },
+            {
+              "open": 233.9,
+              "high": 233.9,
+              "low": 233.9,
+              "close": 233.9,
+              "vwap": 233.9,
+              "volume": 117,
+              "trade_count": 4
+            },
+            {
+              "open": 233.95,
+              "high": 233.95,
+              "low": 233.9081,
+              "close": 233.9081,
+              "vwap": 233.926399,
+              "volume": 527,
+              "trade_count": 13
+            },
+            {
+              "open": 233.99,
+              "high": 233.99,
+              "low": 233.95,
+              "close": 233.98,
+              "vwap": 233.985769,
+              "volume": 2985,
+              "trade_count": 11
+            },
+            {
+              "open": 234.0,
+              "high": 234.0,
+              "low": 233.98,
+              "close": 233.98,
+              "vwap": 233.992885,
+              "volume": 1698,
+              "trade_count": 35
+            },
+            {
+              "open": 234.0,
+              "high": 234.0,
+              "low": 233.9987,
+              "close": 233.9987,
+              "vwap": 233.999367,
+              "volume": 1700,
+              "trade_count": 22
+            },
+            {
+              "open": 233.99,
+              "high": 233.99,
+              "low": 233.99,
+              "close": 233.99,
+              "vwap": 233.99,
+              "volume": 750,
+              "trade_count": 37
+            }
+          ]
+        },
+        "hour_data": {
+          "timeframe": "hour",
+          "rows": 24,
+          "latest_timestamp": "2025-09-12T23:00:00",
+          "earliest_timestamp": "2025-09-11T16:00:00",
+          "latest_price": 233.99,
+          "price_change_1hour": 0.0700000000000216,
+          "price_change_24hour": 5.240000000000009,
+          "volume_latest": 22610,
+          "vwap_latest": 233.919868,
+          "data": [
+            {
+              "open": 228.41,
+              "high": 228.79,
+              "low": 228.03,
+              "close": 228.75,
+              "vwap": 228.492949,
+              "volume": 2810849,
+              "trade_count": 49602
+            },
+            {
+              "open": 228.76,
+              "high": 230.16,
+              "low": 228.6448,
+              "close": 230.06,
+              "vwap": 229.475685,
+              "volume": 4403295,
+              "trade_count": 65652
+            },
+            {
+              "open": 230.06,
+              "high": 230.1508,
+              "low": 229.18,
+              "close": 229.8575,
+              "vwap": 229.728297,
+              "volume": 4316798,
+              "trade_count": 59251
+            },
+            {
+              "open": 229.87,
+              "high": 230.45,
+              "low": 229.41,
+              "close": 230.02,
+              "vwap": 230.100002,
+              "volume": 7664138,
+              "trade_count": 99779
+            },
+            {
+              "open": 230.02,
+              "high": 230.05,
+              "low": 229.4521,
+              "close": 229.52,
+              "vwap": 230.027024,
+              "volume": 8297337,
+              "trade_count": 2143
+            },
+            {
+              "open": 229.5145,
+              "high": 229.65,
+              "low": 229.31,
+              "close": 229.33,
+              "vwap": 229.475679,
+              "volume": 36763,
+              "trade_count": 943
+            },
+            {
+              "open": 229.32,
+              "high": 229.55,
+              "low": 229.02,
+              "close": 229.55,
+              "vwap": 229.290825,
+              "volume": 45354,
+              "trade_count": 1073
+            },
+            {
+              "open": 229.43,
+              "high": 229.58,
+              "low": 229.31,
+              "close": 229.5,
+              "vwap": 229.447563,
+              "volume": 28932,
+              "trade_count": 644
+            },
+            {
+              "open": 229.79,
+              "high": 229.82,
+              "low": 229.38,
+              "close": 229.45,
+              "vwap": 229.598459,
+              "volume": 33810,
+              "trade_count": 1514
+            },
+            {
+              "open": 229.5,
+              "high": 229.55,
+              "low": 229.3,
+              "close": 229.53,
+              "vwap": 229.448594,
+              "volume": 19782,
+              "trade_count": 625
+            },
+            {
+              "open": 229.43,
+              "high": 229.49,
+              "low": 229.11,
+              "close": 229.12,
+              "vwap": 229.212803,
+              "volume": 13176,
+              "trade_count": 619
+            },
+            {
+              "open": 229.14,
+              "high": 229.38,
+              "low": 229.02,
+              "close": 229.38,
+              "vwap": 229.169704,
+              "volume": 46015,
+              "trade_count": 1288
+            },
+            {
+              "open": 229.2,
+              "high": 230.1,
+              "low": 227.5003,
+              "close": 229.26,
+              "vwap": 228.934089,
+              "volume": 2185901,
+              "trade_count": 13870
+            },
+            {
+              "open": 229.26,
+              "high": 231.23,
+              "low": 228.7,
+              "close": 231.214,
+              "vwap": 229.947982,
+              "volume": 5707366,
+              "trade_count": 85275
+            },
+            {
+              "open": 231.1,
+              "high": 234.51,
+              "low": 230.93,
+              "close": 233.94,
+              "vwap": 233.204377,
+              "volume": 11656650,
+              "trade_count": 155441
+            },
+            {
+              "open": 233.95,
+              "high": 234.49,
+              "low": 233.36,
+              "close": 233.97,
+              "vwap": 233.993178,
+              "volume": 6009482,
+              "trade_count": 79981
+            },
+            {
+              "open": 233.9855,
+              "high": 234.265,
+              "low": 233.125,
+              "close": 233.1385,
+              "vwap": 233.836489,
+              "volume": 4927211,
+              "trade_count": 54098
+            },
+            {
+              "open": 233.125,
+              "high": 233.87,
+              "low": 233.0,
+              "close": 233.66,
+              "vwap": 233.378931,
+              "volume": 3690654,
+              "trade_count": 49291
+            },
+            {
+              "open": 233.68,
+              "high": 234.22,
+              "low": 233.02,
+              "close": 234.0,
+              "vwap": 233.61604,
+              "volume": 6270418,
+              "trade_count": 61833
+            },
+            {
+              "open": 234.01,
+              "high": 234.45,
+              "low": 233.51,
+              "close": 234.06,
+              "vwap": 234.012596,
+              "volume": 8180078,
+              "trade_count": 91549
+            },
+            {
+              "open": 234.05,
+              "high": 234.3,
+              "low": 233.81,
+              "close": 234.0199,
+              "vwap": 234.069215,
+              "volume": 6556079,
+              "trade_count": 1901
+            },
+            {
+              "open": 233.975,
+              "high": 234.02,
+              "low": 233.9,
+              "close": 234.0,
+              "vwap": 233.982597,
+              "volume": 448661,
+              "trade_count": 839
+            },
+            {
+              "open": 233.99,
+              "high": 234.0,
+              "low": 233.85,
+              "close": 233.92,
+              "vwap": 233.941196,
+              "volume": 25951,
+              "trade_count": 720
+            },
+            {
+              "open": 233.9,
+              "high": 234.0,
+              "low": 233.81,
+              "close": 233.99,
+              "vwap": 233.919868,
+              "volume": 22610,
+              "trade_count": 514
+            }
+          ]
+        },
+        "day_data": {
+          "timeframe": "day",
+          "rows": 7,
+          "latest_timestamp": "2025-09-12T04:00:00",
+          "earliest_timestamp": "2025-09-06T04:00:00",
+          "latest_price": 234.07,
+          "price_change_1day": 4.039999999999992,
+          "price_change_7day": -5.6200000000000045,
+          "volume_latest": 55824216,
+          "vwap_latest": 233.263743,
+          "data": [
+            {
+              "open": 239.995,
+              "high": 241.32,
+              "low": 238.4901,
+              "close": 239.69,
+              "vwap": 239.673194,
+              "volume": 54848690,
+              "trade_count": 610605
+            },
+            {
+              "open": 239.995,
+              "high": 241.32,
+              "low": 238.4901,
+              "close": 239.69,
+              "vwap": 239.673194,
+              "volume": 54848690,
+              "trade_count": 610605
+            },
+            {
+              "open": 239.3,
+              "high": 240.15,
+              "low": 236.34,
+              "close": 237.88,
+              "vwap": 238.196856,
+              "volume": 48999495,
+              "trade_count": 563611
+            },
+            {
+              "open": 237.0,
+              "high": 238.7805,
+              "low": 233.36,
+              "close": 234.35,
+              "vwap": 235.615688,
+              "volume": 66313918,
+              "trade_count": 757845
+            },
+            {
+              "open": 232.185,
+              "high": 232.42,
+              "low": 225.95,
+              "close": 226.79,
+              "vwap": 227.773239,
+              "volume": 83440810,
+              "trade_count": 1031749
+            },
+            {
+              "open": 226.875,
+              "high": 230.45,
+              "low": 226.65,
+              "close": 230.03,
+              "vwap": 229.186016,
+              "volume": 50195174,
+              "trade_count": 592763
+            },
+            {
+              "open": 229.22,
+              "high": 234.51,
+              "low": 229.02,
+              "close": 234.07,
+              "vwap": 233.263743,
+              "volume": 55824216,
+              "trade_count": 602121
+            }
+          ]
+        }
+      }
+    },
+    "technical_analysis": {
+      "status": "success",
+      "timeframe_comparison": {
+        "symbol": "AAPL",
+        "timeframe_analysis": {
+          "day": {
+            "prediction": "Sell",
+            "confidence": 0.5990726947784424,
+            "model_accuracy": 0.4314177852348993,
+            "risk_metrics": {
+              "sharpe_ratio": 0.08640598473380014,
+              "max_drawdown_pct": -52.27830597255234,
+              "strategy_return_pct": -7.688347665860363
+            }
+          },
+          "hour": {
+            "prediction": "Hold",
+            "confidence": 0.6786034107208252,
+            "model_accuracy": 0.6124227167192758,
+            "risk_metrics": {
+              "sharpe_ratio": 0.13207566665175297,
+              "max_drawdown_pct": -31.469730140819475,
+              "strategy_return_pct": 31.570358781050125
+            }
+          },
+          "minute": {
+            "prediction": "Hold",
+            "confidence": 0.990279495716095,
+            "model_accuracy": 0.9754697318300715,
+            "risk_metrics": {
+              "sharpe_ratio": -0.04413584456301129,
+              "max_drawdown_pct": -36.293257630633455,
+              "strategy_return_pct": -36.00631141079344
+            }
+          }
+        },
+        "consensus_prediction": "Hold",
+        "analysis_timestamp": "2025-09-14T18:39:14.055442",
+        "successful_timeframes": 3,
+        "total_timeframes": 3
+      },
+      "hour_prediction": {
+        "prediction_summary": {
+          "symbol": "AAPL",
+          "prediction": "Hold",
+          "confidence": 0.5752414464950562,
+          "timeframe": "hour"
+        },
+        "market_analysis": {
+          "current_price": 233.99,
+          "price_trend": "Uptrend",
+          "rsi_condition": "Neutral",
+          "rsi_value": 69.36056147149493,
+          "volume_trend": "Normal",
+          "sma_20": 231.72762000000003,
+          "ema_20": 232.27046002283527,
+          "atr": 0.9429242272675497,
+          "data_range": {
+            "start_date": "2025-08-22T12:00:00",
+            "end_date": "2025-09-12T23:00:00",
+            "total_periods": 236
+          }
+        },
+        "risk_analysis": {
+          "sharpe_ratio": 0.13207566665175297,
+          "sortino_ratio": 0.1680020990262801,
+          "calmar_ratio": 1.003197632765847,
+          "max_drawdown_pct": -31.469730140819475,
+          "strategy_return_pct": 31.570358781050125,
+          "buy_hold_return_pct": 94.37257438551099,
+          "r_squared_vs_market": 0.5512719846805626
+        },
+        "model_performance": {
+          "accuracy": 0.6124227167192758,
+          "training_samples": 306662,
+          "symbols_trained": 10,
+          "created_at": "2025-09-14T17:23:01.683902",
+          "risk_metrics": {
+            "total_return_pct": 31.570358781050125,
+            "buy_hold_return_pct": 94.37257438551099,
+            "sharpe_ratio": 0.13207566665175297,
+            "sortino_ratio": 0.1680020990262801,
+            "calmar_ratio": 1.003197632765847,
+            "max_drawdown_pct": -31.469730140819475,
+            "r_squared_vs_market": 0.5512719846805626,
+            "strategy_accuracy": 0.6451718852638494,
+            "num_trades": 421,
+            "final_portfolio_value": 13157.035878105013,
+            "final_epoch_metrics": {
+              "total_return_pct": 36.92855958432257,
+              "buy_hold_return_pct": 94.37257438551099,
+              "sharpe_ratio": 0.14507804518640657,
+              "sortino_ratio": 0.1802842916587635,
+              "calmar_ratio": 1.1476080185611977,
+              "max_drawdown_pct": -32.17872216562358,
+              "r_squared_vs_market": 0.5012895289631597,
+              "strategy_accuracy": 0.32056054302605647,
+              "num_trades": 357,
+              "final_portfolio_value": 13692.855958432257
+            }
+          }
+        },
+        "technical_factors": {
+          "BBB_20_2.0_2.0": {
+            "importance": 0.10229987651109695,
+            "current_value": 3.872030600692138
+          },
+          "symbol_encoded": {
+            "importance": 0.06176936253905296,
+            "current_value": 565.0
+          },
+          "high_low_pct": {
+            "importance": 0.042167745530605316,
+            "current_value": 0.0008120005128424194
+          },
+          "BBL_20_2.0_2.0": {
+            "importance": 0.03958796337246895,
+            "current_value": 227.24133782167223
+          },
+          "atr": {
+            "importance": 0.03845852613449097,
+            "current_value": 0.9429242272675497
+          }
+        },
+        "probability_breakdown": {
+          "Sell": 0.1739095151424408,
+          "Hold": 0.5752414464950562,
+          "Buy": 0.25084903836250305
+        },
+        "timestamp": "2025-09-14T18:39:16.142089",
+        "source": "pre_trained_model"
+      },
+      "analysis_summary": {
+        "comparison_available": true,
+        "hour_prediction_available": true,
+        "consensus_prediction": "Hold",
+        "hour_prediction_signal": "Hold",
+        "hour_confidence": 0.5752414464950562
+      }
+    }
+  },
+  "gpt5_prompt": "# Comprehensive Stock Analysis Request for AAPL\n\n## Analysis Timestamp: 2025-09-14T18:38:53.249604\n\nI need a trading decision recommendation based on the comprehensive analysis below. Please provide:\n1. **DECISION**: BUY, SELL, or HOLD\n2. **CONFIDENCE**: High, Medium, or Low\n3. **REASONING**: Detailed explanation weighing all factors\n4. **RISK ASSESSMENT**: Key risks and opportunities\n5. **TIME HORIZON**: Short-term (1-7 days) or Medium-term (1-4 weeks) recommendation\n\n---\n\n## 1. COMPANY SENTIMENT ANALYSIS\n**Status**: Failed to retrieve company sentiment - 2025-09-14 18:39:05.798885: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n\nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\nTraceback (most recent call last):  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1834, in <module>\n    main()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1796, in main\n    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 353, in __init__\n    self._load_sentiment_models()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 384, in _load_sentiment_models\n    if _check_transformers_availability():\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 58, in _check_transformers_availability\n    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1593, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1603, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\pipelines\\__init__.py\", line 26, in <module>\n    from ..image_processing_utils import BaseImageProcessor\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_processing_utils.py\", line 21, in <module>\n    from .image_transforms import center_crop, normalize, rescale\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_transforms.py\", line 49, in <module>\n    import tensorflow as tf\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\__init__.py\", line 47, in <module>\n    from tensorflow._api.v2 import __internal__\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\__init__.py\", line 8, in <module>\n    from tensorflow._api.v2.__internal__ import autograph\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\autograph\\__init__.py\", line 8, in <module>\n    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\core\\ag_ctx.py\", line 21, in <module>\n    from tensorflow.python.autograph.utils import ag_logging\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\utils\\__init__.py\", line 17, in <module>\n    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\utils\\context_managers.py\", line 19, in <module>\n    from tensorflow.python.framework import ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\framework\\ops.py\", line 46, in <module>\n    from tensorflow.python import pywrap_tfe\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\pywrap_tfe.py\", line 25, in <module>\n    from tensorflow.python._pywrap_tfe import *\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\core\\_multiarray_umath.py\", line 44, in __getattr__\n    raise ImportError(msg)\nImportError: \nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\n\nAttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n\nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\nTraceback (most recent call last):  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1834, in <module>\n    main()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1796, in main\n    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 353, in __init__\n    self._load_sentiment_models()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 384, in _load_sentiment_models\n    if _check_transformers_availability():\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 58, in _check_transformers_availability\n    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1593, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1603, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\pipelines\\__init__.py\", line 26, in <module>\n    from ..image_processing_utils import BaseImageProcessor\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_processing_utils.py\", line 21, in <module>\n    from .image_transforms import center_crop, normalize, rescale\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_transforms.py\", line 49, in <module>\n    import tensorflow as tf\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\__init__.py\", line 47, in <module>\n    from tensorflow._api.v2 import __internal__\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\__init__.py\", line 8, in <module>\n    from tensorflow._api.v2.__internal__ import autograph\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\autograph\\__init__.py\", line 8, in <module>\n    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\core\\ag_ctx.py\", line 21, in <module>\n    from tensorflow.python.autograph.utils import ag_logging\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\utils\\__init__.py\", line 17, in <module>\n    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\autograph\\utils\\context_managers.py\", line 19, in <module>\n    from tensorflow.python.framework import ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\framework\\ops.py\", line 49, in <module>\n    from tensorflow.python.client import pywrap_tf_session\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\client\\pywrap_tf_session.py\", line 19, in <module>\n    from tensorflow.python.client._pywrap_tf_session import *\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\core\\_multiarray_umath.py\", line 44, in __getattr__\n    raise ImportError(msg)\nImportError: \nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\n\nAttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\nAttributeError: 'MessageFactory' object has no attribute 'GetPrototype'\n2025-09-14 18:39:10.281635: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n\nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\nTraceback (most recent call last):  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1834, in <module>\n    main()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1796, in main\n    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 353, in __init__\n    self._load_sentiment_models()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 384, in _load_sentiment_models\n    if _check_transformers_availability():\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 58, in _check_transformers_availability\n    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1593, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1603, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\pipelines\\__init__.py\", line 26, in <module>\n    from ..image_processing_utils import BaseImageProcessor\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_processing_utils.py\", line 21, in <module>\n    from .image_transforms import center_crop, normalize, rescale\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_transforms.py\", line 49, in <module>\n    import tensorflow as tf\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\__init__.py\", line 47, in <module>\n    from tensorflow._api.v2 import __internal__\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\__init__.py\", line 11, in <module>\n    from tensorflow._api.v2.__internal__ import distribute\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\distribute\\__init__.py\", line 8, in <module>\n    from tensorflow._api.v2.__internal__.distribute import combinations\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\distribute\\combinations\\__init__.py\", line 8, in <module>\n    from tensorflow.python.distribute.combinations import env # line: 456\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\combinations.py\", line 33, in <module>\n    from tensorflow.python.distribute import collective_all_reduce_strategy\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\collective_all_reduce_strategy.py\", line 25, in <module>\n    from tensorflow.python.distribute import cross_device_ops as cross_device_ops_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\cross_device_ops.py\", line 28, in <module>\n    from tensorflow.python.distribute import cross_device_utils\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\cross_device_utils.py\", line 22, in <module>\n    from tensorflow.python.distribute import values as value_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\values.py\", line 23, in <module>\n    from tensorflow.python.distribute import distribute_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\distribute_lib.py\", line 205, in <module>\n    from tensorflow.python.data.ops import dataset_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\__init__.py\", line 21, in <module>\n    from tensorflow.python.data import experimental\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\__init__.py\", line 98, in <module>\n    from tensorflow.python.data.experimental import service\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\service\\__init__.py\", line 419, in <module>\n    from tensorflow.python.data.experimental.ops.data_service_ops import distribute\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\ops\\data_service_ops.py\", line 26, in <module>\n    from tensorflow.python.data.ops import dataset_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\ops\\dataset_ops.py\", line 34, in <module>\n    from tensorflow.python.data.ops import iterator_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\ops\\iterator_ops.py\", line 45, in <module>\n    from tensorflow.python.training.saver import BaseSaverBuilder\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\training\\saver.py\", line 50, in <module>\n    from tensorflow.python.training import py_checkpoint_reader\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\training\\py_checkpoint_reader.py\", line 19, in <module>\n    from tensorflow.python.util._pywrap_checkpoint_reader import CheckpointReader\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\core\\_multiarray_umath.py\", line 44, in __getattr__\n    raise ImportError(msg)\nImportError: \nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\n\nImportError: numpy.core.multiarray failed to import\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1603, in _get_module\n    return importlib.import_module(\".\" + module_name, self.__name__)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\importlib\\__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1331, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\pipelines\\__init__.py\", line 26, in <module>\n    from ..image_processing_utils import BaseImageProcessor\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_processing_utils.py\", line 21, in <module>\n    from .image_transforms import center_crop, normalize, rescale\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\image_transforms.py\", line 49, in <module>\n    import tensorflow as tf\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\__init__.py\", line 47, in <module>\n    from tensorflow._api.v2 import __internal__\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\__init__.py\", line 11, in <module>\n    from tensorflow._api.v2.__internal__ import distribute\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\distribute\\__init__.py\", line 8, in <module>\n    from tensorflow._api.v2.__internal__.distribute import combinations\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\_api\\v2\\__internal__\\distribute\\combinations\\__init__.py\", line 8, in <module>\n    from tensorflow.python.distribute.combinations import env # line: 456\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\combinations.py\", line 33, in <module>\n    from tensorflow.python.distribute import collective_all_reduce_strategy\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\collective_all_reduce_strategy.py\", line 25, in <module>\n    from tensorflow.python.distribute import cross_device_ops as cross_device_ops_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\cross_device_ops.py\", line 28, in <module>\n    from tensorflow.python.distribute import cross_device_utils\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\cross_device_utils.py\", line 22, in <module>\n    from tensorflow.python.distribute import values as value_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\values.py\", line 23, in <module>\n    from tensorflow.python.distribute import distribute_lib\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\distribute\\distribute_lib.py\", line 205, in <module>\n    from tensorflow.python.data.ops import dataset_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\__init__.py\", line 21, in <module>\n    from tensorflow.python.data import experimental\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\__init__.py\", line 98, in <module>\n    from tensorflow.python.data.experimental import service\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\service\\__init__.py\", line 419, in <module>\n    from tensorflow.python.data.experimental.ops.data_service_ops import distribute\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\experimental\\ops\\data_service_ops.py\", line 26, in <module>\n    from tensorflow.python.data.ops import dataset_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\ops\\dataset_ops.py\", line 34, in <module>\n    from tensorflow.python.data.ops import iterator_ops\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\data\\ops\\iterator_ops.py\", line 45, in <module>\n    from tensorflow.python.training.saver import BaseSaverBuilder\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\training\\saver.py\", line 50, in <module>\n    from tensorflow.python.training import py_checkpoint_reader\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\tensorflow\\python\\training\\py_checkpoint_reader.py\", line 19, in <module>\n    from tensorflow.python.util._pywrap_checkpoint_reader import CheckpointReader\nSystemError: initialization of _pywrap_checkpoint_reader raised unreported exception\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1834, in <module>\n    main()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 1796, in main\n    analyzer = StockSentimentAnalyzer(args.symbol, use_database=not args.no_database)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 353, in __init__\n    self._load_sentiment_models()\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 384, in _load_sentiment_models\n    if _check_transformers_availability():\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\Desktop\\stock trading ai\\sentiment.py\", line 58, in _check_transformers_availability\n    from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline\n  File \"<frozen importlib._bootstrap>\", line 1412, in _handle_fromlist\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1593, in __getattr__\n    module = self._get_module(self._class_to_module[name])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\ethan\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\transformers\\utils\\import_utils.py\", line 1605, in _get_module\n    raise RuntimeError(\nRuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):\ninitialization of _pywrap_checkpoint_reader raised unreported exception\n\n\n## 2. INDUSTRY SENTIMENT ANALYSIS\n**Status**: Failed to retrieve industry sentiment - usage: industry_analysis.py [-h] [--symbol SYMBOL] [--industry INDUSTRY]\n                            [--recent RECENT] [--overview] [--list-industries]\n                            [--list-companies] [--company-cache]\n                            [--force-refresh] [--cache-hours CACHE_HOURS]\n                            [--json]\nindustry_analysis.py: error: unrecognized arguments: AAPL\n\n\n## 3. RECENT MARKET DATA\n\n**Latest Minute Data** (Last 100 minutes):\n- Current Price: $233.99\n- 1-min Change: $-0.01\n- Latest Volume: 750\n- VWAP: $233.99\n- Time Range: 2025-09-12T21:19:00 to 2025-09-12T23:59:00\n\n**Latest Hourly Data** (Last 24 hours):\n- Current Price: $233.99\n- 1-hour Change: $0.07\n- 24-hour Change: $5.24\n- Latest Volume: 22,610\n- VWAP: $233.92\n\n**Latest Daily Data** (Last 7 days):\n- Current Price: $234.07\n- 1-day Change: $4.04\n- 7-day Change: $-5.62\n- Latest Volume: 55,824,216\n- VWAP: $233.26\n\n## 4. TECHNICAL ANALYSIS\n\n**Multi-Timeframe Consensus**: Hold\n**Hour Prediction**: Hold\n**Hour Confidence**: 57.5%\n\n**Timeframe Analysis Available**: True\n**Hour Prediction Available**: True\n\n**Technical Insights**:\n- Model accuracy and validation metrics\n- Risk-adjusted performance indicators\n- Feature importance and market factors\n- Historical backtesting results\n\n**Detailed Hour Analysis**:\n- Prediction: Hold\n- Confidence: 57.5%\n- Current Price: $233.99\n- Price Trend: Uptrend\n- RSI Condition: Neutral (RSI: 69.4)\n- Volume Trend: Normal\n\n---\n\n## DECISION FRAMEWORK\n\nPlease analyze the above data and provide:\n\n1. **PRIMARY RECOMMENDATION**: BUY/SELL/HOLD with confidence level\n2. **KEY FACTORS**: Top 3 factors supporting your decision\n3. **RISK ASSESSMENT**:\n   - Primary risks to the position\n   - Risk mitigation strategies\n   - Position sizing recommendations\n4. **TIME HORIZON**:\n   - Short-term outlook (1-7 days)\n   - Medium-term outlook (1-4 weeks)\n5. **ENTRY/EXIT STRATEGY**:\n   - Optimal entry points\n   - Stop-loss levels\n   - Take-profit targets\n6. **MONITORING POINTS**: Key metrics/events to watch\n\n**Analysis Constraints**:\n- Current timestamp: 2025-09-14T18:38:53.249604\n- Data freshness varies by source\n- Technical models trained on historical data\n- Sentiment analysis reflects recent news only\n\nPlease provide a clear, actionable recommendation that considers all available data sources and their relative reliability.\n",
+  "summary": {
+    "company_sentiment_status": "error",
+    "industry_sentiment_status": "error",
+    "market_data_status": "success",
+    "technical_analysis_status": "success",
+    "data_sources_successful": 2,
+    "total_data_sources": 4
+  }
+}

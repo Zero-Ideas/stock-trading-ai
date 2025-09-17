@@ -3163,3 +3163,1894 @@
 2025-09-11 16:30:06,535 - INFO - Total new records: 1,830,058
 2025-09-11 16:30:06,535 - INFO - Total duplicates skipped: 93,484
 2025-09-11 16:30:06,536 - INFO - Update completed at: 2025-09-11 16:30:06.536487
+2025-09-14 12:48:38,620 - INFO - === Starting Automatic Database Update ===
+2025-09-14 12:48:38,866 - INFO - Found 94 symbols in stock_data_day
+2025-09-14 12:48:39,471 - INFO - Found 94 symbols in stock_data_hour
+2025-09-14 12:49:58,687 - INFO - Found 94 symbols in stock_data_minute
+2025-09-14 12:49:58,688 - INFO - Total unique symbols across all tables: 94
+2025-09-14 12:49:58,688 - INFO - Found 94 symbols to update
+2025-09-14 12:49:58,703 - INFO - === Updating AAPL ===
+2025-09-14 12:49:58,703 - INFO - Processing AAPL for stock_data_day
+2025-09-14 12:49:58,714 - INFO - AAPL in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,537 records
+2025-09-14 12:49:58,714 - INFO - AAPL: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:49:58,714 - INFO - Fetching AAPL 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:49:59,272 - INFO - Successfully fetched 5 bars for AAPL 1Day
+2025-09-14 12:49:59,314 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:49:59,314 - INFO - Processing AAPL for stock_data_hour
+2025-09-14 12:49:59,429 - INFO - AAPL in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:49:59,430 - INFO - AAPL: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:49:59,431 - INFO - Fetching AAPL 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:49:59,543 - INFO - Successfully fetched 64 bars for AAPL 1Hour
+2025-09-14 12:49:59,578 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:49:59,578 - INFO - Processing AAPL for stock_data_minute
+2025-09-14 12:50:05,899 - INFO - AAPL in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,040 records
+2025-09-14 12:50:05,900 - INFO - AAPL: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:05,900 - INFO - Fetching AAPL 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:06,358 - INFO - Successfully fetched 3,185 bars for AAPL 1Min
+2025-09-14 12:50:07,617 - INFO - Inserted 1,548 new records, 1,637 duplicates skipped
+2025-09-14 12:50:07,618 - INFO - AAPL update complete: 1,582 new records, 1,672 duplicates
+2025-09-14 12:50:07,620 - INFO - === Updating ABBV ===
+2025-09-14 12:50:07,620 - INFO - Processing ABBV for stock_data_day
+2025-09-14 12:50:07,624 - INFO - ABBV in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:07,624 - INFO - ABBV: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:07,624 - INFO - Fetching ABBV 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:07,729 - INFO - Successfully fetched 5 bars for ABBV 1Day
+2025-09-14 12:50:07,736 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:07,737 - INFO - Processing ABBV for stock_data_hour
+2025-09-14 12:50:07,841 - INFO - ABBV in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,898 records
+2025-09-14 12:50:07,842 - INFO - ABBV: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:07,842 - INFO - Fetching ABBV 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:07,949 - INFO - Successfully fetched 45 bars for ABBV 1Hour
+2025-09-14 12:50:07,978 - INFO - Inserted 23 new records, 22 duplicates skipped
+2025-09-14 12:50:07,979 - INFO - Processing ABBV for stock_data_minute
+2025-09-14 12:50:14,292 - INFO - ABBV in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,844 records
+2025-09-14 12:50:14,293 - INFO - ABBV: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:14,293 - INFO - Fetching ABBV 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:14,670 - INFO - Successfully fetched 1,663 bars for ABBV 1Min
+2025-09-14 12:50:15,656 - INFO - Inserted 874 new records, 789 duplicates skipped
+2025-09-14 12:50:15,657 - INFO - ABBV update complete: 899 new records, 814 duplicates
+2025-09-14 12:50:15,659 - INFO - === Updating ABT ===
+2025-09-14 12:50:15,659 - INFO - Processing ABT for stock_data_day
+2025-09-14 12:50:15,664 - INFO - ABT in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:15,665 - INFO - ABT: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:15,665 - INFO - Fetching ABT 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:15,757 - INFO - Successfully fetched 5 bars for ABT 1Day
+2025-09-14 12:50:15,763 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:15,763 - INFO - Processing ABT for stock_data_hour
+2025-09-14 12:50:15,834 - INFO - ABT in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:50:15,834 - INFO - ABT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:15,834 - INFO - Fetching ABT 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:15,939 - INFO - Successfully fetched 42 bars for ABT 1Hour
+2025-09-14 12:50:15,960 - INFO - Inserted 19 new records, 23 duplicates skipped
+2025-09-14 12:50:15,960 - INFO - Processing ABT for stock_data_minute
+2025-09-14 12:50:18,190 - INFO - ABT in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,119 records
+2025-09-14 12:50:18,191 - INFO - ABT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:18,191 - INFO - Fetching ABT 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:18,598 - INFO - Successfully fetched 1,582 bars for ABT 1Min
+2025-09-14 12:50:19,413 - INFO - Inserted 789 new records, 793 duplicates skipped
+2025-09-14 12:50:19,414 - INFO - ABT update complete: 810 new records, 819 duplicates
+2025-09-14 12:50:19,417 - INFO - === Updating ADBE ===
+2025-09-14 12:50:19,417 - INFO - Processing ADBE for stock_data_day
+2025-09-14 12:50:19,421 - INFO - ADBE in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:19,421 - INFO - ADBE: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:19,421 - INFO - Fetching ADBE 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:19,521 - INFO - Successfully fetched 5 bars for ADBE 1Day
+2025-09-14 12:50:19,529 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:19,529 - INFO - Processing ADBE for stock_data_hour
+2025-09-14 12:50:19,631 - INFO - ADBE in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:50:19,631 - INFO - ADBE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:19,632 - INFO - Fetching ADBE 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:19,731 - INFO - Successfully fetched 63 bars for ADBE 1Hour
+2025-09-14 12:50:19,764 - INFO - Inserted 32 new records, 31 duplicates skipped
+2025-09-14 12:50:19,764 - INFO - Processing ADBE for stock_data_minute
+2025-09-14 12:50:27,539 - INFO - ADBE in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,920 records
+2025-09-14 12:50:27,540 - INFO - ADBE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:27,540 - INFO - Fetching ADBE 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:27,967 - INFO - Successfully fetched 2,455 bars for ADBE 1Min
+2025-09-14 12:50:29,356 - INFO - Inserted 1,420 new records, 1,035 duplicates skipped
+2025-09-14 12:50:29,357 - INFO - ADBE update complete: 1,454 new records, 1,069 duplicates
+2025-09-14 12:50:29,359 - INFO - === Updating AMC ===
+2025-09-14 12:50:29,359 - INFO - Processing AMC for stock_data_day
+2025-09-14 12:50:29,364 - INFO - AMC in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:29,365 - INFO - AMC: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:29,365 - INFO - Fetching AMC 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:29,461 - INFO - Successfully fetched 5 bars for AMC 1Day
+2025-09-14 12:50:29,469 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:29,470 - INFO - Processing AMC for stock_data_hour
+2025-09-14 12:50:29,549 - INFO - AMC in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,898 records
+2025-09-14 12:50:29,550 - INFO - AMC: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:29,550 - INFO - Fetching AMC 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:29,651 - INFO - Successfully fetched 63 bars for AMC 1Hour
+2025-09-14 12:50:29,689 - INFO - Inserted 32 new records, 31 duplicates skipped
+2025-09-14 12:50:29,689 - INFO - Processing AMC for stock_data_minute
+2025-09-14 12:50:32,877 - INFO - AMC in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,850 records
+2025-09-14 12:50:32,878 - INFO - AMC: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:32,878 - INFO - Fetching AMC 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:33,279 - INFO - Successfully fetched 2,401 bars for AMC 1Min
+2025-09-14 12:50:34,371 - INFO - Inserted 1,165 new records, 1,236 duplicates skipped
+2025-09-14 12:50:34,372 - INFO - AMC update complete: 1,199 new records, 1,270 duplicates
+2025-09-14 12:50:34,374 - INFO - === Updating AMD ===
+2025-09-14 12:50:34,374 - INFO - Processing AMD for stock_data_day
+2025-09-14 12:50:34,378 - INFO - AMD in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:34,378 - INFO - AMD: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:34,378 - INFO - Fetching AMD 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:34,479 - INFO - Successfully fetched 5 bars for AMD 1Day
+2025-09-14 12:50:34,485 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:34,485 - INFO - Processing AMD for stock_data_hour
+2025-09-14 12:50:34,581 - INFO - AMD in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:50:34,582 - INFO - AMD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:34,582 - INFO - Fetching AMD 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:34,688 - INFO - Successfully fetched 64 bars for AMD 1Hour
+2025-09-14 12:50:34,727 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:50:34,728 - INFO - Processing AMD for stock_data_minute
+2025-09-14 12:50:38,317 - INFO - AMD in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,036 records
+2025-09-14 12:50:38,317 - INFO - AMD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:38,317 - INFO - Fetching AMD 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:38,721 - INFO - Successfully fetched 3,327 bars for AMD 1Min
+2025-09-14 12:50:39,963 - INFO - Inserted 1,612 new records, 1,715 duplicates skipped
+2025-09-14 12:50:39,964 - INFO - AMD update complete: 1,646 new records, 1,750 duplicates
+2025-09-14 12:50:39,966 - INFO - === Updating AMGN ===
+2025-09-14 12:50:39,967 - INFO - Processing AMGN for stock_data_day
+2025-09-14 12:50:39,969 - INFO - AMGN in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:39,970 - INFO - AMGN: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:39,970 - INFO - Fetching AMGN 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:40,062 - INFO - Successfully fetched 5 bars for AMGN 1Day
+2025-09-14 12:50:40,070 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:40,071 - INFO - Processing AMGN for stock_data_hour
+2025-09-14 12:50:40,141 - INFO - AMGN in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,898 records
+2025-09-14 12:50:40,141 - INFO - AMGN: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:40,141 - INFO - Fetching AMGN 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:40,244 - INFO - Successfully fetched 39 bars for AMGN 1Hour
+2025-09-14 12:50:40,276 - INFO - Inserted 20 new records, 19 duplicates skipped
+2025-09-14 12:50:40,276 - INFO - Processing AMGN for stock_data_minute
+2025-09-14 12:50:45,573 - INFO - AMGN in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,863 records
+2025-09-14 12:50:45,574 - INFO - AMGN: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:45,574 - INFO - Fetching AMGN 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:45,968 - INFO - Successfully fetched 1,532 bars for AMGN 1Min
+2025-09-14 12:50:46,823 - INFO - Inserted 775 new records, 757 duplicates skipped
+2025-09-14 12:50:46,824 - INFO - AMGN update complete: 797 new records, 779 duplicates
+2025-09-14 12:50:46,827 - INFO - === Updating AMT ===
+2025-09-14 12:50:46,827 - INFO - Processing AMT for stock_data_day
+2025-09-14 12:50:46,830 - INFO - AMT in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:46,831 - INFO - AMT: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:46,831 - INFO - Fetching AMT 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:46,929 - INFO - Successfully fetched 5 bars for AMT 1Day
+2025-09-14 12:50:46,936 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:46,936 - INFO - Processing AMT for stock_data_hour
+2025-09-14 12:50:47,011 - INFO - AMT in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,895 records
+2025-09-14 12:50:47,012 - INFO - AMT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:47,012 - INFO - Fetching AMT 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:47,110 - INFO - Successfully fetched 37 bars for AMT 1Hour
+2025-09-14 12:50:47,135 - INFO - Inserted 18 new records, 19 duplicates skipped
+2025-09-14 12:50:47,136 - INFO - Processing AMT for stock_data_minute
+2025-09-14 12:50:51,038 - INFO - AMT in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,611 records
+2025-09-14 12:50:51,038 - INFO - AMT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:51,039 - INFO - Fetching AMT 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:51,377 - INFO - Successfully fetched 1,604 bars for AMT 1Min
+2025-09-14 12:50:52,234 - INFO - Inserted 795 new records, 809 duplicates skipped
+2025-09-14 12:50:52,235 - INFO - AMT update complete: 815 new records, 831 duplicates
+2025-09-14 12:50:52,237 - INFO - === Updating AMZN ===
+2025-09-14 12:50:52,237 - INFO - Processing AMZN for stock_data_day
+2025-09-14 12:50:52,241 - INFO - AMZN in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:52,242 - INFO - AMZN: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:52,242 - INFO - Fetching AMZN 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:52,335 - INFO - Successfully fetched 5 bars for AMZN 1Day
+2025-09-14 12:50:52,343 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:52,344 - INFO - Processing AMZN for stock_data_hour
+2025-09-14 12:50:52,453 - INFO - AMZN in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:50:52,453 - INFO - AMZN: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:52,454 - INFO - Fetching AMZN 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:52,568 - INFO - Successfully fetched 64 bars for AMZN 1Hour
+2025-09-14 12:50:52,616 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:50:52,617 - INFO - Processing AMZN for stock_data_minute
+2025-09-14 12:50:56,153 - INFO - AMZN in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,098,984 records
+2025-09-14 12:50:56,153 - INFO - AMZN: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:56,153 - INFO - Fetching AMZN 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:56,555 - INFO - Successfully fetched 3,044 bars for AMZN 1Min
+2025-09-14 12:50:57,856 - INFO - Inserted 1,508 new records, 1,536 duplicates skipped
+2025-09-14 12:50:57,857 - INFO - AMZN update complete: 1,542 new records, 1,571 duplicates
+2025-09-14 12:50:57,858 - INFO - === Updating AVGO ===
+2025-09-14 12:50:57,858 - INFO - Processing AVGO for stock_data_day
+2025-09-14 12:50:57,863 - INFO - AVGO in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:50:57,864 - INFO - AVGO: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:57,864 - INFO - Fetching AVGO 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:50:57,960 - INFO - Successfully fetched 5 bars for AVGO 1Day
+2025-09-14 12:50:57,965 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:50:57,966 - INFO - Processing AVGO for stock_data_hour
+2025-09-14 12:50:58,040 - INFO - AVGO in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:50:58,041 - INFO - AVGO: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:58,041 - INFO - Fetching AVGO 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:50:58,151 - INFO - Successfully fetched 64 bars for AVGO 1Hour
+2025-09-14 12:50:58,181 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:50:58,182 - INFO - Processing AVGO for stock_data_minute
+2025-09-14 12:51:05,241 - INFO - AVGO in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,938 records
+2025-09-14 12:51:05,242 - INFO - AVGO: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:05,242 - INFO - Fetching AVGO 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:05,723 - INFO - Successfully fetched 2,938 bars for AVGO 1Min
+2025-09-14 12:51:06,885 - INFO - Inserted 1,348 new records, 1,590 duplicates skipped
+2025-09-14 12:51:06,886 - INFO - AVGO update complete: 1,382 new records, 1,625 duplicates
+2025-09-14 12:51:06,887 - INFO - === Updating AXP ===
+2025-09-14 12:51:06,887 - INFO - Processing AXP for stock_data_day
+2025-09-14 12:51:06,892 - INFO - AXP in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:06,892 - INFO - AXP: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:06,892 - INFO - Fetching AXP 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:06,989 - INFO - Successfully fetched 5 bars for AXP 1Day
+2025-09-14 12:51:06,996 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:06,996 - INFO - Processing AXP for stock_data_hour
+2025-09-14 12:51:07,073 - INFO - AXP in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,901 records
+2025-09-14 12:51:07,074 - INFO - AXP: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:07,074 - INFO - Fetching AXP 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:07,172 - INFO - Successfully fetched 39 bars for AXP 1Hour
+2025-09-14 12:51:07,201 - INFO - Inserted 20 new records, 19 duplicates skipped
+2025-09-14 12:51:07,202 - INFO - Processing AXP for stock_data_minute
+2025-09-14 12:51:10,001 - INFO - AXP in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,016 records
+2025-09-14 12:51:10,001 - INFO - AXP: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:10,002 - INFO - Fetching AXP 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:10,335 - INFO - Successfully fetched 1,545 bars for AXP 1Min
+2025-09-14 12:51:11,326 - INFO - Inserted 773 new records, 772 duplicates skipped
+2025-09-14 12:51:11,327 - INFO - AXP update complete: 795 new records, 794 duplicates
+2025-09-14 12:51:11,328 - INFO - === Updating BA ===
+2025-09-14 12:51:11,329 - INFO - Processing BA for stock_data_day
+2025-09-14 12:51:11,333 - INFO - BA in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:11,334 - INFO - BA: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:11,334 - INFO - Fetching BA 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:11,425 - INFO - Successfully fetched 5 bars for BA 1Day
+2025-09-14 12:51:11,430 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:11,431 - INFO - Processing BA for stock_data_hour
+2025-09-14 12:51:11,505 - INFO - BA in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:51:11,505 - INFO - BA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:11,507 - INFO - Fetching BA 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:11,617 - INFO - Successfully fetched 59 bars for BA 1Hour
+2025-09-14 12:51:11,647 - INFO - Inserted 31 new records, 28 duplicates skipped
+2025-09-14 12:51:11,648 - INFO - Processing BA for stock_data_minute
+2025-09-14 12:51:14,651 - INFO - BA in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,933 records
+2025-09-14 12:51:14,652 - INFO - BA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:14,653 - INFO - Fetching BA 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:15,175 - INFO - Successfully fetched 2,051 bars for BA 1Min
+2025-09-14 12:51:16,448 - INFO - Inserted 1,137 new records, 914 duplicates skipped
+2025-09-14 12:51:16,449 - INFO - BA update complete: 1,170 new records, 945 duplicates
+2025-09-14 12:51:16,451 - INFO - === Updating BAC ===
+2025-09-14 12:51:16,451 - INFO - Processing BAC for stock_data_day
+2025-09-14 12:51:16,457 - INFO - BAC in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:16,457 - INFO - BAC: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:16,458 - INFO - Fetching BAC 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:16,553 - INFO - Successfully fetched 5 bars for BAC 1Day
+2025-09-14 12:51:16,560 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:16,561 - INFO - Processing BAC for stock_data_hour
+2025-09-14 12:51:16,658 - INFO - BAC in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:51:16,658 - INFO - BAC: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:16,658 - INFO - Fetching BAC 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:16,791 - INFO - Successfully fetched 64 bars for BAC 1Hour
+2025-09-14 12:51:16,819 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:51:16,820 - INFO - Processing BAC for stock_data_minute
+2025-09-14 12:51:23,876 - INFO - BAC in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,098,985 records
+2025-09-14 12:51:23,876 - INFO - BAC: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:23,876 - INFO - Fetching BAC 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:24,297 - INFO - Successfully fetched 1,833 bars for BAC 1Min
+2025-09-14 12:51:25,336 - INFO - Inserted 918 new records, 915 duplicates skipped
+2025-09-14 12:51:25,337 - INFO - BAC update complete: 952 new records, 950 duplicates
+2025-09-14 12:51:25,338 - INFO - === Updating BB ===
+2025-09-14 12:51:25,338 - INFO - Processing BB for stock_data_day
+2025-09-14 12:51:25,344 - INFO - BB in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:25,345 - INFO - BB: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:25,345 - INFO - Fetching BB 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:25,439 - INFO - Successfully fetched 5 bars for BB 1Day
+2025-09-14 12:51:25,443 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:25,444 - INFO - Processing BB for stock_data_hour
+2025-09-14 12:51:25,514 - INFO - BB in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:51:25,515 - INFO - BB: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:25,515 - INFO - Fetching BB 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:25,621 - INFO - Successfully fetched 58 bars for BB 1Hour
+2025-09-14 12:51:25,644 - INFO - Inserted 30 new records, 28 duplicates skipped
+2025-09-14 12:51:25,644 - INFO - Processing BB for stock_data_minute
+2025-09-14 12:51:31,002 - INFO - BB in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,924 records
+2025-09-14 12:51:31,003 - INFO - BB: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:31,003 - INFO - Fetching BB 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:31,259 - INFO - Successfully fetched 1,743 bars for BB 1Min
+2025-09-14 12:51:32,288 - INFO - Inserted 878 new records, 865 duplicates skipped
+2025-09-14 12:51:32,289 - INFO - BB update complete: 910 new records, 896 duplicates
+2025-09-14 12:51:32,290 - INFO - === Updating BNTX ===
+2025-09-14 12:51:32,291 - INFO - Processing BNTX for stock_data_day
+2025-09-14 12:51:32,295 - INFO - BNTX in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,157 records
+2025-09-14 12:51:32,295 - INFO - BNTX: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:32,295 - INFO - Fetching BNTX 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:32,387 - INFO - Successfully fetched 5 bars for BNTX 1Day
+2025-09-14 12:51:32,392 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:32,392 - INFO - Processing BNTX for stock_data_hour
+2025-09-14 12:51:32,444 - INFO - BNTX in stock_data_hour: Latest data 2025-09-10, 4 days behind, 51,895 records
+2025-09-14 12:51:32,445 - INFO - BNTX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:32,445 - INFO - Fetching BNTX 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:32,547 - INFO - Successfully fetched 58 bars for BNTX 1Hour
+2025-09-14 12:51:32,578 - INFO - Inserted 31 new records, 27 duplicates skipped
+2025-09-14 12:51:32,579 - INFO - Processing BNTX for stock_data_minute
+2025-09-14 12:51:34,318 - INFO - BNTX in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,113,612 records
+2025-09-14 12:51:34,318 - INFO - BNTX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:34,319 - INFO - Fetching BNTX 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:34,573 - INFO - Successfully fetched 1,506 bars for BNTX 1Min
+2025-09-14 12:51:35,333 - INFO - Inserted 813 new records, 693 duplicates skipped
+2025-09-14 12:51:35,334 - INFO - BNTX update complete: 846 new records, 723 duplicates
+2025-09-14 12:51:35,336 - INFO - === Updating BRK.A ===
+2025-09-14 12:51:35,336 - INFO - Processing BRK.A for stock_data_day
+2025-09-14 12:51:35,339 - INFO - BRK.A in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:35,340 - INFO - BRK.A: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:35,340 - INFO - Fetching BRK.A 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:35,442 - INFO - Successfully fetched 5 bars for BRK.A 1Day
+2025-09-14 12:51:35,448 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:35,448 - INFO - Processing BRK.A for stock_data_hour
+2025-09-14 12:51:35,582 - INFO - BRK.A in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,895 records
+2025-09-14 12:51:35,583 - INFO - BRK.A: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:35,583 - INFO - Fetching BRK.A 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:35,680 - INFO - Successfully fetched 34 bars for BRK.A 1Hour
+2025-09-14 12:51:35,704 - INFO - Inserted 17 new records, 17 duplicates skipped
+2025-09-14 12:51:35,704 - INFO - Processing BRK.A for stock_data_minute
+2025-09-14 12:51:38,441 - INFO - BRK.A in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,609 records
+2025-09-14 12:51:38,441 - INFO - BRK.A: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:38,441 - INFO - Fetching BRK.A 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:38,683 - INFO - Successfully fetched 612 bars for BRK.A 1Min
+2025-09-14 12:51:39,381 - INFO - Inserted 309 new records, 303 duplicates skipped
+2025-09-14 12:51:39,381 - INFO - BRK.A update complete: 328 new records, 323 duplicates
+2025-09-14 12:51:39,383 - INFO - === Updating BRK.B ===
+2025-09-14 12:51:39,384 - INFO - Processing BRK.B for stock_data_day
+2025-09-14 12:51:39,387 - INFO - BRK.B in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:39,388 - INFO - BRK.B: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:39,388 - INFO - Fetching BRK.B 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:39,485 - INFO - Successfully fetched 5 bars for BRK.B 1Day
+2025-09-14 12:51:39,488 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:39,489 - INFO - Processing BRK.B for stock_data_hour
+2025-09-14 12:51:39,572 - INFO - BRK.B in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,901 records
+2025-09-14 12:51:39,573 - INFO - BRK.B: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:39,573 - INFO - Fetching BRK.B 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:39,676 - INFO - Successfully fetched 58 bars for BRK.B 1Hour
+2025-09-14 12:51:39,707 - INFO - Inserted 28 new records, 30 duplicates skipped
+2025-09-14 12:51:39,707 - INFO - Processing BRK.B for stock_data_minute
+2025-09-14 12:51:42,956 - INFO - BRK.B in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,954 records
+2025-09-14 12:51:42,956 - INFO - BRK.B: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:42,957 - INFO - Fetching BRK.B 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:43,351 - INFO - Successfully fetched 1,734 bars for BRK.B 1Min
+2025-09-14 12:51:44,327 - INFO - Inserted 833 new records, 901 duplicates skipped
+2025-09-14 12:51:44,328 - INFO - BRK.B update complete: 863 new records, 934 duplicates
+2025-09-14 12:51:44,330 - INFO - === Updating C ===
+2025-09-14 12:51:44,331 - INFO - Processing C for stock_data_day
+2025-09-14 12:51:44,336 - INFO - C in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:44,337 - INFO - C: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:44,337 - INFO - Fetching C 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:44,429 - INFO - Successfully fetched 5 bars for C 1Day
+2025-09-14 12:51:44,434 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:44,434 - INFO - Processing C for stock_data_hour
+2025-09-14 12:51:44,505 - INFO - C in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:51:44,506 - INFO - C: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:44,506 - INFO - Fetching C 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:44,609 - INFO - Successfully fetched 53 bars for C 1Hour
+2025-09-14 12:51:44,637 - INFO - Inserted 24 new records, 29 duplicates skipped
+2025-09-14 12:51:44,637 - INFO - Processing C for stock_data_minute
+2025-09-14 12:51:47,109 - INFO - C in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,022 records
+2025-09-14 12:51:47,109 - INFO - C: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:47,109 - INFO - Fetching C 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:47,484 - INFO - Successfully fetched 1,687 bars for C 1Min
+2025-09-14 12:51:48,434 - INFO - Inserted 827 new records, 860 duplicates skipped
+2025-09-14 12:51:48,435 - INFO - C update complete: 853 new records, 892 duplicates
+2025-09-14 12:51:48,436 - INFO - === Updating CAT ===
+2025-09-14 12:51:48,436 - INFO - Processing CAT for stock_data_day
+2025-09-14 12:51:48,442 - INFO - CAT in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:48,442 - INFO - CAT: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:48,442 - INFO - Fetching CAT 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:48,543 - INFO - Successfully fetched 5 bars for CAT 1Day
+2025-09-14 12:51:48,548 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:48,548 - INFO - Processing CAT for stock_data_hour
+2025-09-14 12:51:48,633 - INFO - CAT in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:51:48,634 - INFO - CAT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:48,634 - INFO - Fetching CAT 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:48,734 - INFO - Successfully fetched 40 bars for CAT 1Hour
+2025-09-14 12:51:48,761 - INFO - Inserted 20 new records, 20 duplicates skipped
+2025-09-14 12:51:48,761 - INFO - Processing CAT for stock_data_minute
+2025-09-14 12:51:50,356 - INFO - CAT in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,157 records
+2025-09-14 12:51:50,356 - INFO - CAT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:50,358 - INFO - Fetching CAT 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:50,737 - INFO - Successfully fetched 1,550 bars for CAT 1Min
+2025-09-14 12:51:51,546 - INFO - Inserted 780 new records, 770 duplicates skipped
+2025-09-14 12:51:51,547 - INFO - CAT update complete: 802 new records, 793 duplicates
+2025-09-14 12:51:51,548 - INFO - === Updating CCI ===
+2025-09-14 12:51:51,548 - INFO - Processing CCI for stock_data_day
+2025-09-14 12:51:51,551 - INFO - CCI in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:51:51,551 - INFO - CCI: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:51,552 - INFO - Fetching CCI 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:51,646 - INFO - Successfully fetched 5 bars for CCI 1Day
+2025-09-14 12:51:51,650 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:51:51,651 - INFO - Processing CCI for stock_data_hour
+2025-09-14 12:51:51,728 - INFO - CCI in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:51:51,728 - INFO - CCI: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:51,728 - INFO - Fetching CCI 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:51,828 - INFO - Successfully fetched 37 bars for CCI 1Hour
+2025-09-14 12:51:51,856 - INFO - Inserted 17 new records, 20 duplicates skipped
+2025-09-14 12:51:51,856 - INFO - Processing CCI for stock_data_minute
+2025-09-14 12:51:58,749 - INFO - CCI in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,836 records
+2025-09-14 12:51:58,749 - INFO - CCI: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:58,750 - INFO - Fetching CCI 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:51:59,039 - INFO - Successfully fetched 1,564 bars for CCI 1Min
+2025-09-14 12:51:59,956 - INFO - Inserted 778 new records, 786 duplicates skipped
+2025-09-14 12:51:59,958 - INFO - CCI update complete: 797 new records, 809 duplicates
+2025-09-14 12:51:59,959 - INFO - === Updating COIN ===
+2025-09-14 12:51:59,959 - INFO - Processing COIN for stock_data_day
+2025-09-14 12:51:59,962 - INFO - COIN in stock_data_day: Latest data 2025-09-09, 5 days behind, 1,607 records
+2025-09-14 12:51:59,963 - INFO - COIN: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:51:59,963 - INFO - Fetching COIN 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:00,055 - INFO - Successfully fetched 5 bars for COIN 1Day
+2025-09-14 12:52:00,061 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:00,061 - INFO - Processing COIN for stock_data_hour
+2025-09-14 12:52:00,109 - INFO - COIN in stock_data_hour: Latest data 2025-09-10, 4 days behind, 38,647 records
+2025-09-14 12:52:00,109 - INFO - COIN: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:00,110 - INFO - Fetching COIN 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:00,218 - INFO - Successfully fetched 64 bars for COIN 1Hour
+2025-09-14 12:52:00,242 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:52:00,243 - INFO - Processing COIN for stock_data_minute
+2025-09-14 12:52:01,389 - INFO - COIN in stock_data_minute: Latest data 2025-09-10, 4 days behind, 2,318,794 records
+2025-09-14 12:52:01,389 - INFO - COIN: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:01,389 - INFO - Fetching COIN 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:01,809 - INFO - Successfully fetched 2,418 bars for COIN 1Min
+2025-09-14 12:52:02,574 - INFO - Inserted 1,224 new records, 1,194 duplicates skipped
+2025-09-14 12:52:02,575 - INFO - COIN update complete: 1,258 new records, 1,229 duplicates
+2025-09-14 12:52:02,576 - INFO - === Updating COP ===
+2025-09-14 12:52:02,576 - INFO - Processing COP for stock_data_day
+2025-09-14 12:52:02,580 - INFO - COP in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:02,580 - INFO - COP: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:02,581 - INFO - Fetching COP 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:02,678 - INFO - Successfully fetched 5 bars for COP 1Day
+2025-09-14 12:52:02,686 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:02,686 - INFO - Processing COP for stock_data_hour
+2025-09-14 12:52:02,763 - INFO - COP in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:52:02,763 - INFO - COP: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:02,763 - INFO - Fetching COP 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:02,859 - INFO - Successfully fetched 50 bars for COP 1Hour
+2025-09-14 12:52:02,892 - INFO - Inserted 24 new records, 26 duplicates skipped
+2025-09-14 12:52:02,892 - INFO - Processing COP for stock_data_minute
+2025-09-14 12:52:07,724 - INFO - COP in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,936 records
+2025-09-14 12:52:07,725 - INFO - COP: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:07,725 - INFO - Fetching COP 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:08,099 - INFO - Successfully fetched 1,637 bars for COP 1Min
+2025-09-14 12:52:08,994 - INFO - Inserted 814 new records, 823 duplicates skipped
+2025-09-14 12:52:08,995 - INFO - COP update complete: 840 new records, 852 duplicates
+2025-09-14 12:52:08,996 - INFO - === Updating CRM ===
+2025-09-14 12:52:08,996 - INFO - Processing CRM for stock_data_day
+2025-09-14 12:52:09,002 - INFO - CRM in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:09,002 - INFO - CRM: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:09,002 - INFO - Fetching CRM 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:09,096 - INFO - Successfully fetched 5 bars for CRM 1Day
+2025-09-14 12:52:09,101 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:09,101 - INFO - Processing CRM for stock_data_hour
+2025-09-14 12:52:09,188 - INFO - CRM in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:52:09,188 - INFO - CRM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:09,189 - INFO - Fetching CRM 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:09,296 - INFO - Successfully fetched 63 bars for CRM 1Hour
+2025-09-14 12:52:09,328 - INFO - Inserted 32 new records, 31 duplicates skipped
+2025-09-14 12:52:09,328 - INFO - Processing CRM for stock_data_minute
+2025-09-14 12:52:11,812 - INFO - CRM in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,935 records
+2025-09-14 12:52:11,812 - INFO - CRM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:11,813 - INFO - Fetching CRM 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:12,190 - INFO - Successfully fetched 1,897 bars for CRM 1Min
+2025-09-14 12:52:13,091 - INFO - Inserted 918 new records, 979 duplicates skipped
+2025-09-14 12:52:13,092 - INFO - CRM update complete: 952 new records, 1,013 duplicates
+2025-09-14 12:52:13,092 - INFO - === Updating CRWD ===
+2025-09-14 12:52:13,093 - INFO - Processing CRWD for stock_data_day
+2025-09-14 12:52:13,096 - INFO - CRWD in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,277 records
+2025-09-14 12:52:13,096 - INFO - CRWD: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:13,097 - INFO - Fetching CRWD 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:13,188 - INFO - Successfully fetched 5 bars for CRWD 1Day
+2025-09-14 12:52:13,193 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:13,194 - INFO - Processing CRWD for stock_data_hour
+2025-09-14 12:52:13,246 - INFO - CRWD in stock_data_hour: Latest data 2025-09-10, 4 days behind, 54,777 records
+2025-09-14 12:52:13,246 - INFO - CRWD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:13,246 - INFO - Fetching CRWD 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:13,341 - INFO - Successfully fetched 56 bars for CRWD 1Hour
+2025-09-14 12:52:13,371 - INFO - Inserted 27 new records, 29 duplicates skipped
+2025-09-14 12:52:13,372 - INFO - Processing CRWD for stock_data_minute
+2025-09-14 12:52:14,986 - INFO - CRWD in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,286,585 records
+2025-09-14 12:52:14,987 - INFO - CRWD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:14,987 - INFO - Fetching CRWD 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:15,356 - INFO - Successfully fetched 1,695 bars for CRWD 1Min
+2025-09-14 12:52:16,084 - INFO - Inserted 837 new records, 858 duplicates skipped
+2025-09-14 12:52:16,085 - INFO - CRWD update complete: 866 new records, 890 duplicates
+2025-09-14 12:52:16,086 - INFO - === Updating CSCO ===
+2025-09-14 12:52:16,086 - INFO - Processing CSCO for stock_data_day
+2025-09-14 12:52:16,090 - INFO - CSCO in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:16,090 - INFO - CSCO: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:16,091 - INFO - Fetching CSCO 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:16,182 - INFO - Successfully fetched 5 bars for CSCO 1Day
+2025-09-14 12:52:16,187 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:16,187 - INFO - Processing CSCO for stock_data_hour
+2025-09-14 12:52:16,262 - INFO - CSCO in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:52:16,262 - INFO - CSCO: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:16,263 - INFO - Fetching CSCO 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:16,365 - INFO - Successfully fetched 63 bars for CSCO 1Hour
+2025-09-14 12:52:16,401 - INFO - Inserted 32 new records, 31 duplicates skipped
+2025-09-14 12:52:16,401 - INFO - Processing CSCO for stock_data_minute
+2025-09-14 12:52:20,687 - INFO - CSCO in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,098,986 records
+2025-09-14 12:52:20,687 - INFO - CSCO: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:20,687 - INFO - Fetching CSCO 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:21,087 - INFO - Successfully fetched 1,925 bars for CSCO 1Min
+2025-09-14 12:52:22,054 - INFO - Inserted 997 new records, 928 duplicates skipped
+2025-09-14 12:52:22,055 - INFO - CSCO update complete: 1,031 new records, 962 duplicates
+2025-09-14 12:52:22,056 - INFO - === Updating CVS ===
+2025-09-14 12:52:22,056 - INFO - Processing CVS for stock_data_day
+2025-09-14 12:52:22,061 - INFO - CVS in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:22,061 - INFO - CVS: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:22,062 - INFO - Fetching CVS 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:22,160 - INFO - Successfully fetched 5 bars for CVS 1Day
+2025-09-14 12:52:22,164 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:22,164 - INFO - Processing CVS for stock_data_hour
+2025-09-14 12:52:22,241 - INFO - CVS in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,900 records
+2025-09-14 12:52:22,242 - INFO - CVS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:22,242 - INFO - Fetching CVS 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:22,340 - INFO - Successfully fetched 46 bars for CVS 1Hour
+2025-09-14 12:52:22,365 - INFO - Inserted 22 new records, 24 duplicates skipped
+2025-09-14 12:52:22,366 - INFO - Processing CVS for stock_data_minute
+2025-09-14 12:52:24,755 - INFO - CVS in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,921 records
+2025-09-14 12:52:24,755 - INFO - CVS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:24,755 - INFO - Fetching CVS 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:25,089 - INFO - Successfully fetched 1,698 bars for CVS 1Min
+2025-09-14 12:52:26,204 - INFO - Inserted 812 new records, 886 duplicates skipped
+2025-09-14 12:52:26,205 - INFO - CVS update complete: 836 new records, 913 duplicates
+2025-09-14 12:52:26,207 - INFO - === Updating CVX ===
+2025-09-14 12:52:26,207 - INFO - Processing CVX for stock_data_day
+2025-09-14 12:52:26,211 - INFO - CVX in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:26,211 - INFO - CVX: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:26,212 - INFO - Fetching CVX 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:26,301 - INFO - Successfully fetched 5 bars for CVX 1Day
+2025-09-14 12:52:26,307 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:26,307 - INFO - Processing CVX for stock_data_hour
+2025-09-14 12:52:26,376 - INFO - CVX in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:52:26,376 - INFO - CVX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:26,376 - INFO - Fetching CVX 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:26,474 - INFO - Successfully fetched 53 bars for CVX 1Hour
+2025-09-14 12:52:26,501 - INFO - Inserted 26 new records, 27 duplicates skipped
+2025-09-14 12:52:26,502 - INFO - Processing CVX for stock_data_minute
+2025-09-14 12:52:27,889 - INFO - CVX in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,098,986 records
+2025-09-14 12:52:27,889 - INFO - CVX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:27,890 - INFO - Fetching CVX 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:28,267 - INFO - Successfully fetched 1,699 bars for CVX 1Min
+2025-09-14 12:52:29,653 - INFO - Inserted 834 new records, 865 duplicates skipped
+2025-09-14 12:52:29,654 - INFO - CVX update complete: 862 new records, 895 duplicates
+2025-09-14 12:52:29,655 - INFO - === Updating DIS ===
+2025-09-14 12:52:29,655 - INFO - Processing DIS for stock_data_day
+2025-09-14 12:52:29,659 - INFO - DIS in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:29,660 - INFO - DIS: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:29,660 - INFO - Fetching DIS 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:29,757 - INFO - Successfully fetched 5 bars for DIS 1Day
+2025-09-14 12:52:29,763 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:29,763 - INFO - Processing DIS for stock_data_hour
+2025-09-14 12:52:29,866 - INFO - DIS in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:52:29,867 - INFO - DIS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:29,867 - INFO - Fetching DIS 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:29,966 - INFO - Successfully fetched 59 bars for DIS 1Hour
+2025-09-14 12:52:29,998 - INFO - Inserted 30 new records, 29 duplicates skipped
+2025-09-14 12:52:29,998 - INFO - Processing DIS for stock_data_minute
+2025-09-14 12:52:38,182 - INFO - DIS in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,174 records
+2025-09-14 12:52:38,183 - INFO - DIS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:38,183 - INFO - Fetching DIS 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:38,544 - INFO - Successfully fetched 1,716 bars for DIS 1Min
+2025-09-14 12:52:39,545 - INFO - Inserted 865 new records, 851 duplicates skipped
+2025-09-14 12:52:39,546 - INFO - DIS update complete: 897 new records, 883 duplicates
+2025-09-14 12:52:39,548 - INFO - === Updating DOCU ===
+2025-09-14 12:52:39,548 - INFO - Processing DOCU for stock_data_day
+2025-09-14 12:52:39,552 - INFO - DOCU in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,687 records
+2025-09-14 12:52:39,552 - INFO - DOCU: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:39,552 - INFO - Fetching DOCU 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:39,649 - INFO - Successfully fetched 5 bars for DOCU 1Day
+2025-09-14 12:52:39,654 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:39,655 - INFO - Processing DOCU for stock_data_hour
+2025-09-14 12:52:39,735 - INFO - DOCU in stock_data_hour: Latest data 2025-09-10, 4 days behind, 64,640 records
+2025-09-14 12:52:39,735 - INFO - DOCU: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:39,735 - INFO - Fetching DOCU 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:39,848 - INFO - Successfully fetched 42 bars for DOCU 1Hour
+2025-09-14 12:52:39,874 - INFO - Inserted 19 new records, 23 duplicates skipped
+2025-09-14 12:52:39,874 - INFO - Processing DOCU for stock_data_minute
+2025-09-14 12:52:41,647 - INFO - DOCU in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,878,327 records
+2025-09-14 12:52:41,647 - INFO - DOCU: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:41,647 - INFO - Fetching DOCU 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:42,022 - INFO - Successfully fetched 1,605 bars for DOCU 1Min
+2025-09-14 12:52:43,229 - INFO - Inserted 795 new records, 810 duplicates skipped
+2025-09-14 12:52:43,230 - INFO - DOCU update complete: 816 new records, 836 duplicates
+2025-09-14 12:52:43,231 - INFO - === Updating FDX ===
+2025-09-14 12:52:43,231 - INFO - Processing FDX for stock_data_day
+2025-09-14 12:52:43,236 - INFO - FDX in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:43,236 - INFO - FDX: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:43,236 - INFO - Fetching FDX 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:43,330 - INFO - Successfully fetched 5 bars for FDX 1Day
+2025-09-14 12:52:43,336 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:43,336 - INFO - Processing FDX for stock_data_hour
+2025-09-14 12:52:43,412 - INFO - FDX in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,901 records
+2025-09-14 12:52:43,413 - INFO - FDX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:43,413 - INFO - Fetching FDX 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:43,513 - INFO - Successfully fetched 43 bars for FDX 1Hour
+2025-09-14 12:52:43,535 - INFO - Inserted 21 new records, 22 duplicates skipped
+2025-09-14 12:52:43,536 - INFO - Processing FDX for stock_data_minute
+2025-09-14 12:52:46,882 - INFO - FDX in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,870 records
+2025-09-14 12:52:46,882 - INFO - FDX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:46,883 - INFO - Fetching FDX 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:47,144 - INFO - Successfully fetched 1,535 bars for FDX 1Min
+2025-09-14 12:52:48,295 - INFO - Inserted 788 new records, 747 duplicates skipped
+2025-09-14 12:52:48,295 - INFO - FDX update complete: 811 new records, 772 duplicates
+2025-09-14 12:52:48,296 - INFO - === Updating FTNT ===
+2025-09-14 12:52:48,296 - INFO - Processing FTNT for stock_data_day
+2025-09-14 12:52:48,301 - INFO - FTNT in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:48,301 - INFO - FTNT: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:48,301 - INFO - Fetching FTNT 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:48,396 - INFO - Successfully fetched 5 bars for FTNT 1Day
+2025-09-14 12:52:48,402 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:48,402 - INFO - Processing FTNT for stock_data_hour
+2025-09-14 12:52:48,545 - INFO - FTNT in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,901 records
+2025-09-14 12:52:48,546 - INFO - FTNT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:48,546 - INFO - Fetching FTNT 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:48,648 - INFO - Successfully fetched 62 bars for FTNT 1Hour
+2025-09-14 12:52:48,684 - INFO - Inserted 32 new records, 30 duplicates skipped
+2025-09-14 12:52:48,684 - INFO - Processing FTNT for stock_data_minute
+2025-09-14 12:52:51,716 - INFO - FTNT in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,952 records
+2025-09-14 12:52:51,717 - INFO - FTNT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:51,717 - INFO - Fetching FTNT 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:52,135 - INFO - Successfully fetched 1,710 bars for FTNT 1Min
+2025-09-14 12:52:53,503 - INFO - Inserted 865 new records, 845 duplicates skipped
+2025-09-14 12:52:53,504 - INFO - FTNT update complete: 899 new records, 878 duplicates
+2025-09-14 12:52:53,506 - INFO - === Updating GE ===
+2025-09-14 12:52:53,506 - INFO - Processing GE for stock_data_day
+2025-09-14 12:52:53,511 - INFO - GE in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:52:53,511 - INFO - GE: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:53,511 - INFO - Fetching GE 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:52:53,612 - INFO - Successfully fetched 5 bars for GE 1Day
+2025-09-14 12:52:53,619 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:52:53,619 - INFO - Processing GE for stock_data_hour
+2025-09-14 12:52:53,715 - INFO - GE in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:52:53,716 - INFO - GE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:53,716 - INFO - Fetching GE 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:53,816 - INFO - Successfully fetched 42 bars for GE 1Hour
+2025-09-14 12:52:53,858 - INFO - Inserted 20 new records, 22 duplicates skipped
+2025-09-14 12:52:53,859 - INFO - Processing GE for stock_data_minute
+2025-09-14 12:52:59,462 - INFO - GE in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,177 records
+2025-09-14 12:52:59,462 - INFO - GE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:59,462 - INFO - Fetching GE 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:52:59,851 - INFO - Successfully fetched 1,621 bars for GE 1Min
+2025-09-14 12:53:00,790 - INFO - Inserted 802 new records, 819 duplicates skipped
+2025-09-14 12:53:00,791 - INFO - GE update complete: 824 new records, 844 duplicates
+2025-09-14 12:53:00,792 - INFO - === Updating GME ===
+2025-09-14 12:53:00,792 - INFO - Processing GME for stock_data_day
+2025-09-14 12:53:00,797 - INFO - GME in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:00,798 - INFO - GME: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:00,798 - INFO - Fetching GME 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:00,899 - INFO - Successfully fetched 5 bars for GME 1Day
+2025-09-14 12:53:00,903 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:00,904 - INFO - Processing GME for stock_data_hour
+2025-09-14 12:53:00,989 - INFO - GME in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:53:00,989 - INFO - GME: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:00,989 - INFO - Fetching GME 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:01,103 - INFO - Successfully fetched 64 bars for GME 1Hour
+2025-09-14 12:53:01,135 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:53:01,136 - INFO - Processing GME for stock_data_minute
+2025-09-14 12:53:07,453 - INFO - GME in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,901 records
+2025-09-14 12:53:07,453 - INFO - GME: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:07,453 - INFO - Fetching GME 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:07,877 - INFO - Successfully fetched 2,986 bars for GME 1Min
+2025-09-14 12:53:09,106 - INFO - Inserted 1,335 new records, 1,651 duplicates skipped
+2025-09-14 12:53:09,107 - INFO - GME update complete: 1,369 new records, 1,686 duplicates
+2025-09-14 12:53:09,108 - INFO - === Updating GOOG ===
+2025-09-14 12:53:09,108 - INFO - Processing GOOG for stock_data_day
+2025-09-14 12:53:09,113 - INFO - GOOG in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:09,113 - INFO - GOOG: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:09,114 - INFO - Fetching GOOG 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:09,247 - INFO - Successfully fetched 5 bars for GOOG 1Day
+2025-09-14 12:53:09,255 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:09,256 - INFO - Processing GOOG for stock_data_hour
+2025-09-14 12:53:09,333 - INFO - GOOG in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:53:09,334 - INFO - GOOG: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:09,334 - INFO - Fetching GOOG 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:09,440 - INFO - Successfully fetched 64 bars for GOOG 1Hour
+2025-09-14 12:53:09,492 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:53:09,492 - INFO - Processing GOOG for stock_data_minute
+2025-09-14 12:53:12,448 - INFO - GOOG in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,026 records
+2025-09-14 12:53:12,449 - INFO - GOOG: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:12,450 - INFO - Fetching GOOG 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:12,861 - INFO - Successfully fetched 2,483 bars for GOOG 1Min
+2025-09-14 12:53:14,169 - INFO - Inserted 1,220 new records, 1,263 duplicates skipped
+2025-09-14 12:53:14,170 - INFO - GOOG update complete: 1,254 new records, 1,298 duplicates
+2025-09-14 12:53:14,171 - INFO - === Updating GOOGL ===
+2025-09-14 12:53:14,171 - INFO - Processing GOOGL for stock_data_day
+2025-09-14 12:53:14,177 - INFO - GOOGL in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:14,177 - INFO - GOOGL: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:14,178 - INFO - Fetching GOOGL 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:14,284 - INFO - Successfully fetched 5 bars for GOOGL 1Day
+2025-09-14 12:53:14,290 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:14,290 - INFO - Processing GOOGL for stock_data_hour
+2025-09-14 12:53:14,404 - INFO - GOOGL in stock_data_hour: Latest data 2025-09-10, 4 days behind, 98,650 records
+2025-09-14 12:53:14,405 - INFO - GOOGL: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:14,405 - INFO - Fetching GOOGL 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:14,503 - INFO - Successfully fetched 64 bars for GOOGL 1Hour
+2025-09-14 12:53:14,544 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:53:14,545 - INFO - Processing GOOGL for stock_data_minute
+2025-09-14 12:53:16,477 - INFO - GOOGL in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,996 records
+2025-09-14 12:53:16,477 - INFO - GOOGL: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:16,478 - INFO - Fetching GOOGL 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:16,888 - INFO - Successfully fetched 2,617 bars for GOOGL 1Min
+2025-09-14 12:53:18,038 - INFO - Inserted 1,276 new records, 1,341 duplicates skipped
+2025-09-14 12:53:18,039 - INFO - GOOGL update complete: 1,310 new records, 1,376 duplicates
+2025-09-14 12:53:18,040 - INFO - === Updating GS ===
+2025-09-14 12:53:18,040 - INFO - Processing GS for stock_data_day
+2025-09-14 12:53:18,044 - INFO - GS in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:18,044 - INFO - GS: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:18,045 - INFO - Fetching GS 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:18,136 - INFO - Successfully fetched 5 bars for GS 1Day
+2025-09-14 12:53:18,142 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:18,142 - INFO - Processing GS for stock_data_hour
+2025-09-14 12:53:18,231 - INFO - GS in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,981 records
+2025-09-14 12:53:18,231 - INFO - GS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:18,232 - INFO - Fetching GS 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:18,327 - INFO - Successfully fetched 42 bars for GS 1Hour
+2025-09-14 12:53:18,359 - INFO - Inserted 19 new records, 23 duplicates skipped
+2025-09-14 12:53:18,360 - INFO - Processing GS for stock_data_minute
+2025-09-14 12:53:21,734 - INFO - GS in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,755 records
+2025-09-14 12:53:21,734 - INFO - GS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:21,735 - INFO - Fetching GS 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:22,084 - INFO - Successfully fetched 1,490 bars for GS 1Min
+2025-09-14 12:53:23,048 - INFO - Inserted 713 new records, 777 duplicates skipped
+2025-09-14 12:53:23,049 - INFO - GS update complete: 734 new records, 803 duplicates
+2025-09-14 12:53:23,051 - INFO - === Updating HD ===
+2025-09-14 12:53:23,051 - INFO - Processing HD for stock_data_day
+2025-09-14 12:53:23,058 - INFO - HD in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:23,058 - INFO - HD: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:23,058 - INFO - Fetching HD 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:23,169 - INFO - Successfully fetched 5 bars for HD 1Day
+2025-09-14 12:53:23,176 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:23,176 - INFO - Processing HD for stock_data_hour
+2025-09-14 12:53:23,268 - INFO - HD in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:53:23,268 - INFO - HD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:23,269 - INFO - Fetching HD 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:23,428 - INFO - Successfully fetched 48 bars for HD 1Hour
+2025-09-14 12:53:23,458 - INFO - Inserted 25 new records, 23 duplicates skipped
+2025-09-14 12:53:23,458 - INFO - Processing HD for stock_data_minute
+2025-09-14 12:53:26,220 - INFO - HD in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,164 records
+2025-09-14 12:53:26,221 - INFO - HD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:26,221 - INFO - Fetching HD 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:26,721 - INFO - Successfully fetched 1,643 bars for HD 1Min
+2025-09-14 12:53:27,728 - INFO - Inserted 832 new records, 811 duplicates skipped
+2025-09-14 12:53:27,728 - INFO - HD update complete: 859 new records, 837 duplicates
+2025-09-14 12:53:27,730 - INFO - === Updating HON ===
+2025-09-14 12:53:27,731 - INFO - Processing HON for stock_data_day
+2025-09-14 12:53:27,737 - INFO - HON in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:27,737 - INFO - HON: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:27,737 - INFO - Fetching HON 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:27,844 - INFO - Successfully fetched 5 bars for HON 1Day
+2025-09-14 12:53:27,850 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:27,851 - INFO - Processing HON for stock_data_hour
+2025-09-14 12:53:27,945 - INFO - HON in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,896 records
+2025-09-14 12:53:27,946 - INFO - HON: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:27,946 - INFO - Fetching HON 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:28,066 - INFO - Successfully fetched 42 bars for HON 1Hour
+2025-09-14 12:53:28,097 - INFO - Inserted 22 new records, 20 duplicates skipped
+2025-09-14 12:53:28,097 - INFO - Processing HON for stock_data_minute
+2025-09-14 12:53:34,594 - INFO - HON in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,690 records
+2025-09-14 12:53:34,594 - INFO - HON: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:34,595 - INFO - Fetching HON 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:34,978 - INFO - Successfully fetched 1,613 bars for HON 1Min
+2025-09-14 12:53:35,998 - INFO - Inserted 816 new records, 797 duplicates skipped
+2025-09-14 12:53:35,998 - INFO - HON update complete: 840 new records, 820 duplicates
+2025-09-14 12:53:36,001 - INFO - === Updating INTC ===
+2025-09-14 12:53:36,001 - INFO - Processing INTC for stock_data_day
+2025-09-14 12:53:36,005 - INFO - INTC in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:36,005 - INFO - INTC: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:36,006 - INFO - Fetching INTC 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:36,105 - INFO - Successfully fetched 5 bars for INTC 1Day
+2025-09-14 12:53:36,113 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:36,113 - INFO - Processing INTC for stock_data_hour
+2025-09-14 12:53:36,199 - INFO - INTC in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:53:36,199 - INFO - INTC: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:36,199 - INFO - Fetching INTC 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:36,308 - INFO - Successfully fetched 64 bars for INTC 1Hour
+2025-09-14 12:53:36,341 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:53:36,342 - INFO - Processing INTC for stock_data_minute
+2025-09-14 12:53:38,450 - INFO - INTC in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,098,982 records
+2025-09-14 12:53:38,450 - INFO - INTC: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:38,451 - INFO - Fetching INTC 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:38,910 - INFO - Successfully fetched 3,248 bars for INTC 1Min
+2025-09-14 12:53:40,288 - INFO - Inserted 1,620 new records, 1,628 duplicates skipped
+2025-09-14 12:53:40,288 - INFO - INTC update complete: 1,654 new records, 1,663 duplicates
+2025-09-14 12:53:40,291 - INFO - === Updating IWM ===
+2025-09-14 12:53:40,291 - INFO - Processing IWM for stock_data_day
+2025-09-14 12:53:40,295 - INFO - IWM in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:40,295 - INFO - IWM: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:40,296 - INFO - Fetching IWM 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:40,392 - INFO - Successfully fetched 5 bars for IWM 1Day
+2025-09-14 12:53:40,398 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:40,400 - INFO - Processing IWM for stock_data_hour
+2025-09-14 12:53:40,491 - INFO - IWM in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:53:40,491 - INFO - IWM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:40,491 - INFO - Fetching IWM 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:40,592 - INFO - Successfully fetched 64 bars for IWM 1Hour
+2025-09-14 12:53:40,626 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:53:40,626 - INFO - Processing IWM for stock_data_minute
+2025-09-14 12:53:43,836 - INFO - IWM in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,021 records
+2025-09-14 12:53:43,837 - INFO - IWM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:43,837 - INFO - Fetching IWM 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:44,240 - INFO - Successfully fetched 3,008 bars for IWM 1Min
+2025-09-14 12:53:45,529 - INFO - Inserted 1,501 new records, 1,507 duplicates skipped
+2025-09-14 12:53:45,530 - INFO - IWM update complete: 1,535 new records, 1,542 duplicates
+2025-09-14 12:53:45,530 - INFO - === Updating JNJ ===
+2025-09-14 12:53:45,530 - INFO - Processing JNJ for stock_data_day
+2025-09-14 12:53:45,535 - INFO - JNJ in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:45,535 - INFO - JNJ: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:45,535 - INFO - Fetching JNJ 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:45,626 - INFO - Successfully fetched 5 bars for JNJ 1Day
+2025-09-14 12:53:45,634 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:45,634 - INFO - Processing JNJ for stock_data_hour
+2025-09-14 12:53:45,720 - INFO - JNJ in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,900 records
+2025-09-14 12:53:45,720 - INFO - JNJ: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:45,720 - INFO - Fetching JNJ 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:45,816 - INFO - Successfully fetched 50 bars for JNJ 1Hour
+2025-09-14 12:53:45,842 - INFO - Inserted 22 new records, 28 duplicates skipped
+2025-09-14 12:53:45,843 - INFO - Processing JNJ for stock_data_minute
+2025-09-14 12:53:48,823 - INFO - JNJ in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,956 records
+2025-09-14 12:53:48,824 - INFO - JNJ: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:48,824 - INFO - Fetching JNJ 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:49,228 - INFO - Successfully fetched 1,624 bars for JNJ 1Min
+2025-09-14 12:53:50,102 - INFO - Inserted 800 new records, 824 duplicates skipped
+2025-09-14 12:53:50,103 - INFO - JNJ update complete: 824 new records, 855 duplicates
+2025-09-14 12:53:50,104 - INFO - === Updating JPM ===
+2025-09-14 12:53:50,104 - INFO - Processing JPM for stock_data_day
+2025-09-14 12:53:50,110 - INFO - JPM in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:50,110 - INFO - JPM: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:50,111 - INFO - Fetching JPM 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:50,201 - INFO - Successfully fetched 5 bars for JPM 1Day
+2025-09-14 12:53:50,208 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:50,208 - INFO - Processing JPM for stock_data_hour
+2025-09-14 12:53:50,344 - INFO - JPM in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,902 records
+2025-09-14 12:53:50,345 - INFO - JPM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:50,345 - INFO - Fetching JPM 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:50,451 - INFO - Successfully fetched 55 bars for JPM 1Hour
+2025-09-14 12:53:50,488 - INFO - Inserted 27 new records, 28 duplicates skipped
+2025-09-14 12:53:50,488 - INFO - Processing JPM for stock_data_minute
+2025-09-14 12:53:56,957 - INFO - JPM in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,036 records
+2025-09-14 12:53:56,958 - INFO - JPM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:56,958 - INFO - Fetching JPM 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:57,316 - INFO - Successfully fetched 1,713 bars for JPM 1Min
+2025-09-14 12:53:59,091 - INFO - Inserted 846 new records, 867 duplicates skipped
+2025-09-14 12:53:59,092 - INFO - JPM update complete: 875 new records, 898 duplicates
+2025-09-14 12:53:59,093 - INFO - === Updating KO ===
+2025-09-14 12:53:59,094 - INFO - Processing KO for stock_data_day
+2025-09-14 12:53:59,098 - INFO - KO in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:53:59,099 - INFO - KO: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:59,099 - INFO - Fetching KO 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:53:59,199 - INFO - Successfully fetched 5 bars for KO 1Day
+2025-09-14 12:53:59,206 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:53:59,206 - INFO - Processing KO for stock_data_hour
+2025-09-14 12:53:59,292 - INFO - KO in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:53:59,293 - INFO - KO: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:59,293 - INFO - Fetching KO 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:53:59,401 - INFO - Successfully fetched 64 bars for KO 1Hour
+2025-09-14 12:53:59,433 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:53:59,433 - INFO - Processing KO for stock_data_minute
+2025-09-14 12:54:02,533 - INFO - KO in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,960 records
+2025-09-14 12:54:02,533 - INFO - KO: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:02,533 - INFO - Fetching KO 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:02,926 - INFO - Successfully fetched 2,113 bars for KO 1Min
+2025-09-14 12:54:04,089 - INFO - Inserted 1,081 new records, 1,032 duplicates skipped
+2025-09-14 12:54:04,089 - INFO - KO update complete: 1,115 new records, 1,067 duplicates
+2025-09-14 12:54:04,090 - INFO - === Updating LLY ===
+2025-09-14 12:54:04,090 - INFO - Processing LLY for stock_data_day
+2025-09-14 12:54:04,096 - INFO - LLY in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:04,096 - INFO - LLY: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:04,096 - INFO - Fetching LLY 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:04,185 - INFO - Successfully fetched 5 bars for LLY 1Day
+2025-09-14 12:54:04,190 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:04,190 - INFO - Processing LLY for stock_data_hour
+2025-09-14 12:54:04,275 - INFO - LLY in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,900 records
+2025-09-14 12:54:04,276 - INFO - LLY: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:04,276 - INFO - Fetching LLY 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:04,375 - INFO - Successfully fetched 50 bars for LLY 1Hour
+2025-09-14 12:54:04,402 - INFO - Inserted 25 new records, 25 duplicates skipped
+2025-09-14 12:54:04,403 - INFO - Processing LLY for stock_data_minute
+2025-09-14 12:54:07,358 - INFO - LLY in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,932 records
+2025-09-14 12:54:07,359 - INFO - LLY: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:07,359 - INFO - Fetching LLY 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:07,741 - INFO - Successfully fetched 1,630 bars for LLY 1Min
+2025-09-14 12:54:08,698 - INFO - Inserted 807 new records, 823 duplicates skipped
+2025-09-14 12:54:08,699 - INFO - LLY update complete: 834 new records, 851 duplicates
+2025-09-14 12:54:08,699 - INFO - === Updating LYFT ===
+2025-09-14 12:54:08,700 - INFO - Processing LYFT for stock_data_day
+2025-09-14 12:54:08,704 - INFO - LYFT in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,352 records
+2025-09-14 12:54:08,704 - INFO - LYFT: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:08,704 - INFO - Fetching LYFT 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:08,800 - INFO - Successfully fetched 5 bars for LYFT 1Day
+2025-09-14 12:54:08,805 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:08,805 - INFO - Processing LYFT for stock_data_hour
+2025-09-14 12:54:08,875 - INFO - LYFT in stock_data_hour: Latest data 2025-09-10, 4 days behind, 56,577 records
+2025-09-14 12:54:08,875 - INFO - LYFT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:08,875 - INFO - Fetching LYFT 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:08,980 - INFO - Successfully fetched 64 bars for LYFT 1Hour
+2025-09-14 12:54:09,007 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:54:09,008 - INFO - Processing LYFT for stock_data_minute
+2025-09-14 12:54:11,151 - INFO - LYFT in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,394,571 records
+2025-09-14 12:54:11,152 - INFO - LYFT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:11,152 - INFO - Fetching LYFT 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:11,549 - INFO - Successfully fetched 2,082 bars for LYFT 1Min
+2025-09-14 12:54:12,373 - INFO - Inserted 1,025 new records, 1,057 duplicates skipped
+2025-09-14 12:54:12,374 - INFO - LYFT update complete: 1,059 new records, 1,092 duplicates
+2025-09-14 12:54:12,375 - INFO - === Updating MA ===
+2025-09-14 12:54:12,375 - INFO - Processing MA for stock_data_day
+2025-09-14 12:54:12,380 - INFO - MA in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:12,380 - INFO - MA: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:12,380 - INFO - Fetching MA 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:12,474 - INFO - Successfully fetched 5 bars for MA 1Day
+2025-09-14 12:54:12,480 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:12,481 - INFO - Processing MA for stock_data_hour
+2025-09-14 12:54:12,555 - INFO - MA in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:54:12,556 - INFO - MA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:12,556 - INFO - Fetching MA 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:12,656 - INFO - Successfully fetched 39 bars for MA 1Hour
+2025-09-14 12:54:12,681 - INFO - Inserted 20 new records, 19 duplicates skipped
+2025-09-14 12:54:12,682 - INFO - Processing MA for stock_data_minute
+2025-09-14 12:54:15,646 - INFO - MA in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,171 records
+2025-09-14 12:54:15,647 - INFO - MA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:15,647 - INFO - Fetching MA 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:16,029 - INFO - Successfully fetched 1,521 bars for MA 1Min
+2025-09-14 12:54:16,960 - INFO - Inserted 757 new records, 764 duplicates skipped
+2025-09-14 12:54:16,961 - INFO - MA update complete: 779 new records, 786 duplicates
+2025-09-14 12:54:16,962 - INFO - === Updating MCD ===
+2025-09-14 12:54:16,962 - INFO - Processing MCD for stock_data_day
+2025-09-14 12:54:16,966 - INFO - MCD in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:16,966 - INFO - MCD: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:16,967 - INFO - Fetching MCD 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:17,068 - INFO - Successfully fetched 5 bars for MCD 1Day
+2025-09-14 12:54:17,073 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:17,073 - INFO - Processing MCD for stock_data_hour
+2025-09-14 12:54:17,162 - INFO - MCD in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,902 records
+2025-09-14 12:54:17,162 - INFO - MCD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:17,162 - INFO - Fetching MCD 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:17,268 - INFO - Successfully fetched 43 bars for MCD 1Hour
+2025-09-14 12:54:17,295 - INFO - Inserted 18 new records, 25 duplicates skipped
+2025-09-14 12:54:17,296 - INFO - Processing MCD for stock_data_minute
+2025-09-14 12:54:21,923 - INFO - MCD in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,042 records
+2025-09-14 12:54:21,924 - INFO - MCD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:21,924 - INFO - Fetching MCD 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:22,267 - INFO - Successfully fetched 1,585 bars for MCD 1Min
+2025-09-14 12:54:23,258 - INFO - Inserted 784 new records, 801 duplicates skipped
+2025-09-14 12:54:23,259 - INFO - MCD update complete: 804 new records, 829 duplicates
+2025-09-14 12:54:23,259 - INFO - === Updating META ===
+2025-09-14 12:54:23,261 - INFO - Processing META for stock_data_day
+2025-09-14 12:54:23,266 - INFO - META in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:23,266 - INFO - META: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:23,266 - INFO - Fetching META 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:23,364 - INFO - Successfully fetched 5 bars for META 1Day
+2025-09-14 12:54:23,368 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:23,370 - INFO - Processing META for stock_data_hour
+2025-09-14 12:54:23,455 - INFO - META in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:54:23,456 - INFO - META: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:23,456 - INFO - Fetching META 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:23,566 - INFO - Successfully fetched 64 bars for META 1Hour
+2025-09-14 12:54:23,609 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:54:23,609 - INFO - Processing META for stock_data_minute
+2025-09-14 12:54:26,634 - INFO - META in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,014 records
+2025-09-14 12:54:26,635 - INFO - META: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:26,635 - INFO - Fetching META 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:27,083 - INFO - Successfully fetched 2,032 bars for META 1Min
+2025-09-14 12:54:28,030 - INFO - Inserted 972 new records, 1,060 duplicates skipped
+2025-09-14 12:54:28,031 - INFO - META update complete: 1,006 new records, 1,095 duplicates
+2025-09-14 12:54:28,032 - INFO - === Updating MMM ===
+2025-09-14 12:54:28,032 - INFO - Processing MMM for stock_data_day
+2025-09-14 12:54:28,036 - INFO - MMM in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:28,036 - INFO - MMM: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:28,037 - INFO - Fetching MMM 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:28,140 - INFO - Successfully fetched 5 bars for MMM 1Day
+2025-09-14 12:54:28,146 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:28,146 - INFO - Processing MMM for stock_data_hour
+2025-09-14 12:54:28,225 - INFO - MMM in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,897 records
+2025-09-14 12:54:28,226 - INFO - MMM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:28,226 - INFO - Fetching MMM 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:28,330 - INFO - Successfully fetched 36 bars for MMM 1Hour
+2025-09-14 12:54:28,360 - INFO - Inserted 19 new records, 17 duplicates skipped
+2025-09-14 12:54:28,361 - INFO - Processing MMM for stock_data_minute
+2025-09-14 12:54:30,806 - INFO - MMM in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,640 records
+2025-09-14 12:54:30,806 - INFO - MMM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:30,807 - INFO - Fetching MMM 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:31,173 - INFO - Successfully fetched 1,555 bars for MMM 1Min
+2025-09-14 12:54:32,077 - INFO - Inserted 780 new records, 775 duplicates skipped
+2025-09-14 12:54:32,078 - INFO - MMM update complete: 801 new records, 795 duplicates
+2025-09-14 12:54:32,079 - INFO - === Updating MRNA ===
+2025-09-14 12:54:32,079 - INFO - Processing MRNA for stock_data_day
+2025-09-14 12:54:32,084 - INFO - MRNA in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,463 records
+2025-09-14 12:54:32,084 - INFO - MRNA: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:32,084 - INFO - Fetching MRNA 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:32,184 - INFO - Successfully fetched 5 bars for MRNA 1Day
+2025-09-14 12:54:32,190 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:32,190 - INFO - Processing MRNA for stock_data_hour
+2025-09-14 12:54:32,255 - INFO - MRNA in stock_data_hour: Latest data 2025-09-10, 4 days behind, 59,264 records
+2025-09-14 12:54:32,255 - INFO - MRNA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:32,256 - INFO - Fetching MRNA 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:32,361 - INFO - Successfully fetched 64 bars for MRNA 1Hour
+2025-09-14 12:54:32,393 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:54:32,393 - INFO - Processing MRNA for stock_data_minute
+2025-09-14 12:54:34,044 - INFO - MRNA in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,555,799 records
+2025-09-14 12:54:34,044 - INFO - MRNA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:34,044 - INFO - Fetching MRNA 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:34,426 - INFO - Successfully fetched 2,124 bars for MRNA 1Min
+2025-09-14 12:54:35,317 - INFO - Inserted 1,115 new records, 1,009 duplicates skipped
+2025-09-14 12:54:35,318 - INFO - MRNA update complete: 1,149 new records, 1,044 duplicates
+2025-09-14 12:54:35,320 - INFO - === Updating MS ===
+2025-09-14 12:54:35,320 - INFO - Processing MS for stock_data_day
+2025-09-14 12:54:35,324 - INFO - MS in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:35,324 - INFO - MS: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:35,325 - INFO - Fetching MS 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:35,416 - INFO - Successfully fetched 5 bars for MS 1Day
+2025-09-14 12:54:35,422 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:35,422 - INFO - Processing MS for stock_data_hour
+2025-09-14 12:54:35,502 - INFO - MS in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:54:35,502 - INFO - MS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:35,502 - INFO - Fetching MS 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:35,598 - INFO - Successfully fetched 45 bars for MS 1Hour
+2025-09-14 12:54:35,626 - INFO - Inserted 19 new records, 26 duplicates skipped
+2025-09-14 12:54:35,626 - INFO - Processing MS for stock_data_minute
+2025-09-14 12:54:37,443 - INFO - MS in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,098,984 records
+2025-09-14 12:54:37,443 - INFO - MS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:37,444 - INFO - Fetching MS 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:37,823 - INFO - Successfully fetched 1,611 bars for MS 1Min
+2025-09-14 12:54:39,621 - INFO - Inserted 793 new records, 818 duplicates skipped
+2025-09-14 12:54:39,622 - INFO - MS update complete: 814 new records, 847 duplicates
+2025-09-14 12:54:39,623 - INFO - === Updating MSFT ===
+2025-09-14 12:54:39,623 - INFO - Processing MSFT for stock_data_day
+2025-09-14 12:54:39,627 - INFO - MSFT in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:39,627 - INFO - MSFT: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:39,627 - INFO - Fetching MSFT 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:39,721 - INFO - Successfully fetched 5 bars for MSFT 1Day
+2025-09-14 12:54:39,728 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:39,728 - INFO - Processing MSFT for stock_data_hour
+2025-09-14 12:54:39,872 - INFO - MSFT in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:54:39,872 - INFO - MSFT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:39,874 - INFO - Fetching MSFT 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:39,983 - INFO - Successfully fetched 64 bars for MSFT 1Hour
+2025-09-14 12:54:40,015 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:54:40,015 - INFO - Processing MSFT for stock_data_minute
+2025-09-14 12:54:42,989 - INFO - MSFT in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,010 records
+2025-09-14 12:54:42,990 - INFO - MSFT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:42,990 - INFO - Fetching MSFT 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:43,374 - INFO - Successfully fetched 2,563 bars for MSFT 1Min
+2025-09-14 12:54:44,562 - INFO - Inserted 1,275 new records, 1,288 duplicates skipped
+2025-09-14 12:54:44,563 - INFO - MSFT update complete: 1,309 new records, 1,323 duplicates
+2025-09-14 12:54:44,564 - INFO - === Updating NEE ===
+2025-09-14 12:54:44,564 - INFO - Processing NEE for stock_data_day
+2025-09-14 12:54:44,570 - INFO - NEE in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:44,570 - INFO - NEE: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:44,571 - INFO - Fetching NEE 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:44,667 - INFO - Successfully fetched 5 bars for NEE 1Day
+2025-09-14 12:54:44,672 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:44,672 - INFO - Processing NEE for stock_data_hour
+2025-09-14 12:54:44,760 - INFO - NEE in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,897 records
+2025-09-14 12:54:44,760 - INFO - NEE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:44,760 - INFO - Fetching NEE 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:44,868 - INFO - Successfully fetched 60 bars for NEE 1Hour
+2025-09-14 12:54:44,898 - INFO - Inserted 31 new records, 29 duplicates skipped
+2025-09-14 12:54:44,898 - INFO - Processing NEE for stock_data_minute
+2025-09-14 12:54:47,906 - INFO - NEE in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,755 records
+2025-09-14 12:54:47,907 - INFO - NEE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:47,907 - INFO - Fetching NEE 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:48,283 - INFO - Successfully fetched 1,685 bars for NEE 1Min
+2025-09-14 12:54:49,957 - INFO - Inserted 847 new records, 838 duplicates skipped
+2025-09-14 12:54:49,957 - INFO - NEE update complete: 880 new records, 870 duplicates
+2025-09-14 12:54:49,959 - INFO - === Updating NFLX ===
+2025-09-14 12:54:49,959 - INFO - Processing NFLX for stock_data_day
+2025-09-14 12:54:49,963 - INFO - NFLX in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:49,963 - INFO - NFLX: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:49,964 - INFO - Fetching NFLX 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:50,073 - INFO - Successfully fetched 5 bars for NFLX 1Day
+2025-09-14 12:54:50,079 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:50,079 - INFO - Processing NFLX for stock_data_hour
+2025-09-14 12:54:50,231 - INFO - NFLX in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:54:50,232 - INFO - NFLX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:50,232 - INFO - Fetching NFLX 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:50,333 - INFO - Successfully fetched 55 bars for NFLX 1Hour
+2025-09-14 12:54:50,362 - INFO - Inserted 28 new records, 27 duplicates skipped
+2025-09-14 12:54:50,362 - INFO - Processing NFLX for stock_data_minute
+2025-09-14 12:54:53,152 - INFO - NFLX in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,017 records
+2025-09-14 12:54:53,152 - INFO - NFLX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:53,152 - INFO - Fetching NFLX 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:53,532 - INFO - Successfully fetched 1,703 bars for NFLX 1Min
+2025-09-14 12:54:54,414 - INFO - Inserted 866 new records, 837 duplicates skipped
+2025-09-14 12:54:54,415 - INFO - NFLX update complete: 896 new records, 867 duplicates
+2025-09-14 12:54:54,417 - INFO - === Updating NKE ===
+2025-09-14 12:54:54,417 - INFO - Processing NKE for stock_data_day
+2025-09-14 12:54:54,423 - INFO - NKE in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:54:54,423 - INFO - NKE: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:54,423 - INFO - Fetching NKE 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:54:54,527 - INFO - Successfully fetched 5 bars for NKE 1Day
+2025-09-14 12:54:54,534 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:54:54,534 - INFO - Processing NKE for stock_data_hour
+2025-09-14 12:54:54,618 - INFO - NKE in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:54:54,619 - INFO - NKE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:54,620 - INFO - Fetching NKE 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:54:54,728 - INFO - Successfully fetched 63 bars for NKE 1Hour
+2025-09-14 12:54:54,770 - INFO - Inserted 31 new records, 32 duplicates skipped
+2025-09-14 12:54:54,770 - INFO - Processing NKE for stock_data_minute
+2025-09-14 12:55:00,672 - INFO - NKE in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,023 records
+2025-09-14 12:55:00,672 - INFO - NKE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:00,673 - INFO - Fetching NKE 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:01,012 - INFO - Successfully fetched 1,912 bars for NKE 1Min
+2025-09-14 12:55:02,017 - INFO - Inserted 923 new records, 989 duplicates skipped
+2025-09-14 12:55:02,018 - INFO - NKE update complete: 956 new records, 1,024 duplicates
+2025-09-14 12:55:02,020 - INFO - === Updating NOK ===
+2025-09-14 12:55:02,020 - INFO - Processing NOK for stock_data_day
+2025-09-14 12:55:02,025 - INFO - NOK in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:02,025 - INFO - NOK: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:02,025 - INFO - Fetching NOK 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:02,114 - INFO - Successfully fetched 5 bars for NOK 1Day
+2025-09-14 12:55:02,120 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:02,120 - INFO - Processing NOK for stock_data_hour
+2025-09-14 12:55:02,193 - INFO - NOK in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:55:02,194 - INFO - NOK: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:02,194 - INFO - Fetching NOK 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:02,307 - INFO - Successfully fetched 62 bars for NOK 1Hour
+2025-09-14 12:55:02,338 - INFO - Inserted 31 new records, 31 duplicates skipped
+2025-09-14 12:55:02,338 - INFO - Processing NOK for stock_data_minute
+2025-09-14 12:55:05,365 - INFO - NOK in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,133 records
+2025-09-14 12:55:05,366 - INFO - NOK: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:05,366 - INFO - Fetching NOK 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:05,614 - INFO - Successfully fetched 1,745 bars for NOK 1Min
+2025-09-14 12:55:06,585 - INFO - Inserted 892 new records, 853 duplicates skipped
+2025-09-14 12:55:06,586 - INFO - NOK update complete: 925 new records, 887 duplicates
+2025-09-14 12:55:06,587 - INFO - === Updating NVDA ===
+2025-09-14 12:55:06,588 - INFO - Processing NVDA for stock_data_day
+2025-09-14 12:55:06,593 - INFO - NVDA in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:06,594 - INFO - NVDA: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:06,594 - INFO - Fetching NVDA 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:06,690 - INFO - Successfully fetched 5 bars for NVDA 1Day
+2025-09-14 12:55:06,695 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:06,695 - INFO - Processing NVDA for stock_data_hour
+2025-09-14 12:55:06,853 - INFO - NVDA in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,901 records
+2025-09-14 12:55:06,853 - INFO - NVDA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:06,854 - INFO - Fetching NVDA 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:06,960 - INFO - Successfully fetched 64 bars for NVDA 1Hour
+2025-09-14 12:55:06,989 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:55:06,990 - INFO - Processing NVDA for stock_data_minute
+2025-09-14 12:55:09,473 - INFO - NVDA in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,990 records
+2025-09-14 12:55:09,473 - INFO - NVDA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:09,473 - INFO - Fetching NVDA 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:10,032 - INFO - Successfully fetched 3,802 bars for NVDA 1Min
+2025-09-14 12:55:11,645 - INFO - Inserted 1,893 new records, 1,909 duplicates skipped
+2025-09-14 12:55:11,646 - INFO - NVDA update complete: 1,927 new records, 1,944 duplicates
+2025-09-14 12:55:11,648 - INFO - === Updating OKTA ===
+2025-09-14 12:55:11,648 - INFO - Processing OKTA for stock_data_day
+2025-09-14 12:55:11,653 - INFO - OKTA in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,071 records
+2025-09-14 12:55:11,654 - INFO - OKTA: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:11,654 - INFO - Fetching OKTA 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:11,795 - INFO - Successfully fetched 5 bars for OKTA 1Day
+2025-09-14 12:55:11,800 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:11,800 - INFO - Processing OKTA for stock_data_hour
+2025-09-14 12:55:11,873 - INFO - OKTA in stock_data_hour: Latest data 2025-09-10, 4 days behind, 73,882 records
+2025-09-14 12:55:11,874 - INFO - OKTA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:11,874 - INFO - Fetching OKTA 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:11,975 - INFO - Successfully fetched 51 bars for OKTA 1Hour
+2025-09-14 12:55:12,004 - INFO - Inserted 27 new records, 24 duplicates skipped
+2025-09-14 12:55:12,004 - INFO - Processing OKTA for stock_data_minute
+2025-09-14 12:55:14,535 - INFO - OKTA in stock_data_minute: Latest data 2025-09-10, 4 days behind, 4,432,851 records
+2025-09-14 12:55:14,535 - INFO - OKTA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:14,535 - INFO - Fetching OKTA 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:14,914 - INFO - Successfully fetched 1,636 bars for OKTA 1Min
+2025-09-14 12:55:15,869 - INFO - Inserted 819 new records, 817 duplicates skipped
+2025-09-14 12:55:15,870 - INFO - OKTA update complete: 848 new records, 844 duplicates
+2025-09-14 12:55:15,870 - INFO - === Updating ORCL ===
+2025-09-14 12:55:15,870 - INFO - Processing ORCL for stock_data_day
+2025-09-14 12:55:15,877 - INFO - ORCL in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:15,877 - INFO - ORCL: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:15,877 - INFO - Fetching ORCL 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:15,969 - INFO - Successfully fetched 5 bars for ORCL 1Day
+2025-09-14 12:55:15,975 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:15,975 - INFO - Processing ORCL for stock_data_hour
+2025-09-14 12:55:16,063 - INFO - ORCL in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,900 records
+2025-09-14 12:55:16,063 - INFO - ORCL: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:16,064 - INFO - Fetching ORCL 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:16,180 - INFO - Successfully fetched 64 bars for ORCL 1Hour
+2025-09-14 12:55:16,221 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:55:16,221 - INFO - Processing ORCL for stock_data_minute
+2025-09-14 12:55:24,302 - INFO - ORCL in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,954 records
+2025-09-14 12:55:24,302 - INFO - ORCL: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:24,302 - INFO - Fetching ORCL 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:24,720 - INFO - Successfully fetched 3,457 bars for ORCL 1Min
+2025-09-14 12:55:26,027 - INFO - Inserted 1,694 new records, 1,763 duplicates skipped
+2025-09-14 12:55:26,028 - INFO - ORCL update complete: 1,728 new records, 1,798 duplicates
+2025-09-14 12:55:26,029 - INFO - === Updating PANW ===
+2025-09-14 12:55:26,029 - INFO - Processing PANW for stock_data_day
+2025-09-14 12:55:26,034 - INFO - PANW in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:26,035 - INFO - PANW: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:26,035 - INFO - Fetching PANW 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:26,130 - INFO - Successfully fetched 5 bars for PANW 1Day
+2025-09-14 12:55:26,137 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:26,137 - INFO - Processing PANW for stock_data_hour
+2025-09-14 12:55:26,216 - INFO - PANW in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:55:26,216 - INFO - PANW: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:26,216 - INFO - Fetching PANW 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:26,321 - INFO - Successfully fetched 55 bars for PANW 1Hour
+2025-09-14 12:55:26,350 - INFO - Inserted 27 new records, 28 duplicates skipped
+2025-09-14 12:55:26,350 - INFO - Processing PANW for stock_data_minute
+2025-09-14 12:55:32,215 - INFO - PANW in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,911 records
+2025-09-14 12:55:32,215 - INFO - PANW: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:32,216 - INFO - Fetching PANW 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:32,617 - INFO - Successfully fetched 1,716 bars for PANW 1Min
+2025-09-14 12:55:33,565 - INFO - Inserted 849 new records, 867 duplicates skipped
+2025-09-14 12:55:33,566 - INFO - PANW update complete: 878 new records, 898 duplicates
+2025-09-14 12:55:33,567 - INFO - === Updating PEP ===
+2025-09-14 12:55:33,568 - INFO - Processing PEP for stock_data_day
+2025-09-14 12:55:33,573 - INFO - PEP in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:33,573 - INFO - PEP: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:33,574 - INFO - Fetching PEP 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:33,669 - INFO - Successfully fetched 5 bars for PEP 1Day
+2025-09-14 12:55:33,675 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:33,675 - INFO - Processing PEP for stock_data_hour
+2025-09-14 12:55:33,759 - INFO - PEP in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:55:33,760 - INFO - PEP: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:33,760 - INFO - Fetching PEP 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:33,858 - INFO - Successfully fetched 57 bars for PEP 1Hour
+2025-09-14 12:55:33,888 - INFO - Inserted 29 new records, 28 duplicates skipped
+2025-09-14 12:55:33,889 - INFO - Processing PEP for stock_data_minute
+2025-09-14 12:55:35,852 - INFO - PEP in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,881 records
+2025-09-14 12:55:35,852 - INFO - PEP: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:35,853 - INFO - Fetching PEP 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:36,266 - INFO - Successfully fetched 1,711 bars for PEP 1Min
+2025-09-14 12:55:37,121 - INFO - Inserted 838 new records, 873 duplicates skipped
+2025-09-14 12:55:37,121 - INFO - PEP update complete: 869 new records, 904 duplicates
+2025-09-14 12:55:37,122 - INFO - === Updating PFE ===
+2025-09-14 12:55:37,122 - INFO - Processing PFE for stock_data_day
+2025-09-14 12:55:37,127 - INFO - PFE in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:37,127 - INFO - PFE: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:37,127 - INFO - Fetching PFE 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:37,233 - INFO - Successfully fetched 5 bars for PFE 1Day
+2025-09-14 12:55:37,239 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:37,239 - INFO - Processing PFE for stock_data_hour
+2025-09-14 12:55:37,327 - INFO - PFE in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:55:37,327 - INFO - PFE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:37,327 - INFO - Fetching PFE 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:37,479 - INFO - Successfully fetched 64 bars for PFE 1Hour
+2025-09-14 12:55:37,511 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:55:37,511 - INFO - Processing PFE for stock_data_minute
+2025-09-14 12:55:39,594 - INFO - PFE in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,180 records
+2025-09-14 12:55:39,595 - INFO - PFE: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:39,595 - INFO - Fetching PFE 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:39,992 - INFO - Successfully fetched 2,407 bars for PFE 1Min
+2025-09-14 12:55:41,627 - INFO - Inserted 1,251 new records, 1,156 duplicates skipped
+2025-09-14 12:55:41,628 - INFO - PFE update complete: 1,285 new records, 1,191 duplicates
+2025-09-14 12:55:41,630 - INFO - === Updating PG ===
+2025-09-14 12:55:41,630 - INFO - Processing PG for stock_data_day
+2025-09-14 12:55:41,635 - INFO - PG in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:41,635 - INFO - PG: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:41,635 - INFO - Fetching PG 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:41,735 - INFO - Successfully fetched 5 bars for PG 1Day
+2025-09-14 12:55:41,740 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:41,741 - INFO - Processing PG for stock_data_hour
+2025-09-14 12:55:41,829 - INFO - PG in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,897 records
+2025-09-14 12:55:41,829 - INFO - PG: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:41,830 - INFO - Fetching PG 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:41,926 - INFO - Successfully fetched 46 bars for PG 1Hour
+2025-09-14 12:55:41,953 - INFO - Inserted 21 new records, 25 duplicates skipped
+2025-09-14 12:55:41,953 - INFO - Processing PG for stock_data_minute
+2025-09-14 12:55:44,236 - INFO - PG in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,797 records
+2025-09-14 12:55:44,236 - INFO - PG: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:44,237 - INFO - Fetching PG 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:44,613 - INFO - Successfully fetched 1,608 bars for PG 1Min
+2025-09-14 12:55:45,585 - INFO - Inserted 801 new records, 807 duplicates skipped
+2025-09-14 12:55:45,586 - INFO - PG update complete: 824 new records, 835 duplicates
+2025-09-14 12:55:45,588 - INFO - === Updating PINS ===
+2025-09-14 12:55:45,588 - INFO - Processing PINS for stock_data_day
+2025-09-14 12:55:45,592 - INFO - PINS in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,332 records
+2025-09-14 12:55:45,593 - INFO - PINS: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:45,593 - INFO - Fetching PINS 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:45,691 - INFO - Successfully fetched 5 bars for PINS 1Day
+2025-09-14 12:55:45,696 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:45,697 - INFO - Processing PINS for stock_data_hour
+2025-09-14 12:55:45,757 - INFO - PINS in stock_data_hour: Latest data 2025-09-10, 4 days behind, 56,097 records
+2025-09-14 12:55:45,757 - INFO - PINS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:45,758 - INFO - Fetching PINS 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:45,867 - INFO - Successfully fetched 59 bars for PINS 1Hour
+2025-09-14 12:55:45,897 - INFO - Inserted 30 new records, 29 duplicates skipped
+2025-09-14 12:55:45,898 - INFO - Processing PINS for stock_data_minute
+2025-09-14 12:55:47,940 - INFO - PINS in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,365,792 records
+2025-09-14 12:55:47,940 - INFO - PINS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:47,941 - INFO - Fetching PINS 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:48,279 - INFO - Successfully fetched 1,748 bars for PINS 1Min
+2025-09-14 12:55:49,147 - INFO - Inserted 835 new records, 913 duplicates skipped
+2025-09-14 12:55:49,148 - INFO - PINS update complete: 867 new records, 945 duplicates
+2025-09-14 12:55:49,150 - INFO - === Updating PLD ===
+2025-09-14 12:55:49,150 - INFO - Processing PLD for stock_data_day
+2025-09-14 12:55:49,156 - INFO - PLD in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:49,156 - INFO - PLD: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:49,156 - INFO - Fetching PLD 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:49,253 - INFO - Successfully fetched 5 bars for PLD 1Day
+2025-09-14 12:55:49,259 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:49,259 - INFO - Processing PLD for stock_data_hour
+2025-09-14 12:55:49,350 - INFO - PLD in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,895 records
+2025-09-14 12:55:49,350 - INFO - PLD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:49,351 - INFO - Fetching PLD 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:49,454 - INFO - Successfully fetched 41 bars for PLD 1Hour
+2025-09-14 12:55:49,483 - INFO - Inserted 22 new records, 19 duplicates skipped
+2025-09-14 12:55:49,483 - INFO - Processing PLD for stock_data_minute
+2025-09-14 12:55:51,675 - INFO - PLD in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,612 records
+2025-09-14 12:55:51,675 - INFO - PLD: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:51,676 - INFO - Fetching PLD 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:52,095 - INFO - Successfully fetched 1,579 bars for PLD 1Min
+2025-09-14 12:55:52,996 - INFO - Inserted 794 new records, 785 duplicates skipped
+2025-09-14 12:55:52,997 - INFO - PLD update complete: 818 new records, 807 duplicates
+2025-09-14 12:55:52,999 - INFO - === Updating PLTR ===
+2025-09-14 12:55:52,999 - INFO - Processing PLTR for stock_data_day
+2025-09-14 12:55:53,003 - INFO - PLTR in stock_data_day: Latest data 2025-09-09, 5 days behind, 1,802 records
+2025-09-14 12:55:53,004 - INFO - PLTR: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:53,004 - INFO - Fetching PLTR 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:53,104 - INFO - Successfully fetched 5 bars for PLTR 1Day
+2025-09-14 12:55:53,115 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:53,116 - INFO - Processing PLTR for stock_data_hour
+2025-09-14 12:55:53,156 - INFO - PLTR in stock_data_hour: Latest data 2025-09-10, 4 days behind, 43,351 records
+2025-09-14 12:55:53,156 - INFO - PLTR: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:53,157 - INFO - Fetching PLTR 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:53,267 - INFO - Successfully fetched 64 bars for PLTR 1Hour
+2025-09-14 12:55:53,295 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:55:53,296 - INFO - Processing PLTR for stock_data_minute
+2025-09-14 12:55:54,161 - INFO - PLTR in stock_data_minute: Latest data 2025-09-10, 4 days behind, 2,600,542 records
+2025-09-14 12:55:54,162 - INFO - PLTR: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:54,162 - INFO - Fetching PLTR 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:54,536 - INFO - Successfully fetched 3,412 bars for PLTR 1Min
+2025-09-14 12:55:55,657 - INFO - Inserted 1,660 new records, 1,752 duplicates skipped
+2025-09-14 12:55:55,658 - INFO - PLTR update complete: 1,694 new records, 1,787 duplicates
+2025-09-14 12:55:55,659 - INFO - === Updating PYPL ===
+2025-09-14 12:55:55,659 - INFO - Processing PYPL for stock_data_day
+2025-09-14 12:55:55,664 - INFO - PYPL in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:55:55,664 - INFO - PYPL: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:55,664 - INFO - Fetching PYPL 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:55:55,761 - INFO - Successfully fetched 5 bars for PYPL 1Day
+2025-09-14 12:55:55,767 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:55:55,767 - INFO - Processing PYPL for stock_data_hour
+2025-09-14 12:55:55,914 - INFO - PYPL in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,901 records
+2025-09-14 12:55:55,914 - INFO - PYPL: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:55,914 - INFO - Fetching PYPL 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:56,023 - INFO - Successfully fetched 64 bars for PYPL 1Hour
+2025-09-14 12:55:56,060 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:55:56,060 - INFO - Processing PYPL for stock_data_minute
+2025-09-14 12:55:59,376 - INFO - PYPL in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,025 records
+2025-09-14 12:55:59,377 - INFO - PYPL: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:59,377 - INFO - Fetching PYPL 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:55:59,762 - INFO - Successfully fetched 2,039 bars for PYPL 1Min
+2025-09-14 12:56:00,699 - INFO - Inserted 993 new records, 1,046 duplicates skipped
+2025-09-14 12:56:00,701 - INFO - PYPL update complete: 1,027 new records, 1,081 duplicates
+2025-09-14 12:56:00,701 - INFO - === Updating QCOM ===
+2025-09-14 12:56:00,703 - INFO - Processing QCOM for stock_data_day
+2025-09-14 12:56:00,707 - INFO - QCOM in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:56:00,708 - INFO - QCOM: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:00,708 - INFO - Fetching QCOM 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:00,807 - INFO - Successfully fetched 5 bars for QCOM 1Day
+2025-09-14 12:56:00,814 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:00,814 - INFO - Processing QCOM for stock_data_hour
+2025-09-14 12:56:00,895 - INFO - QCOM in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,982 records
+2025-09-14 12:56:00,896 - INFO - QCOM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:00,896 - INFO - Fetching QCOM 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:00,997 - INFO - Successfully fetched 58 bars for QCOM 1Hour
+2025-09-14 12:56:01,031 - INFO - Inserted 31 new records, 27 duplicates skipped
+2025-09-14 12:56:01,031 - INFO - Processing QCOM for stock_data_minute
+2025-09-14 12:56:03,768 - INFO - QCOM in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,804 records
+2025-09-14 12:56:03,768 - INFO - QCOM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:03,768 - INFO - Fetching QCOM 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:04,158 - INFO - Successfully fetched 1,745 bars for QCOM 1Min
+2025-09-14 12:56:05,065 - INFO - Inserted 878 new records, 867 duplicates skipped
+2025-09-14 12:56:05,066 - INFO - QCOM update complete: 911 new records, 897 duplicates
+2025-09-14 12:56:05,067 - INFO - === Updating QQQ ===
+2025-09-14 12:56:05,067 - INFO - Processing QQQ for stock_data_day
+2025-09-14 12:56:05,075 - INFO - QQQ in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:56:05,075 - INFO - QQQ: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:05,075 - INFO - Fetching QQQ 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:05,170 - INFO - Successfully fetched 5 bars for QQQ 1Day
+2025-09-14 12:56:05,177 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:05,177 - INFO - Processing QQQ for stock_data_hour
+2025-09-14 12:56:05,290 - INFO - QQQ in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:56:05,291 - INFO - QQQ: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:05,291 - INFO - Fetching QQQ 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:05,402 - INFO - Successfully fetched 64 bars for QQQ 1Hour
+2025-09-14 12:56:05,448 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:56:05,448 - INFO - Processing QQQ for stock_data_minute
+2025-09-14 12:56:07,211 - INFO - QQQ in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,027 records
+2025-09-14 12:56:07,211 - INFO - QQQ: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:07,212 - INFO - Fetching QQQ 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:07,593 - INFO - Successfully fetched 3,414 bars for QQQ 1Min
+2025-09-14 12:56:09,184 - INFO - Inserted 1,665 new records, 1,749 duplicates skipped
+2025-09-14 12:56:09,185 - INFO - QQQ update complete: 1,699 new records, 1,784 duplicates
+2025-09-14 12:56:09,187 - INFO - === Updating RBLX ===
+2025-09-14 12:56:09,187 - INFO - Processing RBLX for stock_data_day
+2025-09-14 12:56:09,191 - INFO - RBLX in stock_data_day: Latest data 2025-09-09, 5 days behind, 1,641 records
+2025-09-14 12:56:09,191 - INFO - RBLX: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:09,191 - INFO - Fetching RBLX 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:09,285 - INFO - Successfully fetched 5 bars for RBLX 1Day
+2025-09-14 12:56:09,291 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:09,292 - INFO - Processing RBLX for stock_data_hour
+2025-09-14 12:56:09,356 - INFO - RBLX in stock_data_hour: Latest data 2025-09-10, 4 days behind, 39,486 records
+2025-09-14 12:56:09,356 - INFO - RBLX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:09,357 - INFO - Fetching RBLX 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:09,456 - INFO - Successfully fetched 61 bars for RBLX 1Hour
+2025-09-14 12:56:09,487 - INFO - Inserted 32 new records, 29 duplicates skipped
+2025-09-14 12:56:09,487 - INFO - Processing RBLX for stock_data_minute
+2025-09-14 12:56:10,821 - INFO - RBLX in stock_data_minute: Latest data 2025-09-10, 4 days behind, 2,369,127 records
+2025-09-14 12:56:10,821 - INFO - RBLX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:10,822 - INFO - Fetching RBLX 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:11,210 - INFO - Successfully fetched 1,797 bars for RBLX 1Min
+2025-09-14 12:56:12,066 - INFO - Inserted 899 new records, 898 duplicates skipped
+2025-09-14 12:56:12,067 - INFO - RBLX update complete: 933 new records, 930 duplicates
+2025-09-14 12:56:12,069 - INFO - === Updating ROKU ===
+2025-09-14 12:56:12,069 - INFO - Processing ROKU for stock_data_day
+2025-09-14 12:56:12,072 - INFO - ROKU in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,897 records
+2025-09-14 12:56:12,073 - INFO - ROKU: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:12,073 - INFO - Fetching ROKU 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:12,168 - INFO - Successfully fetched 5 bars for ROKU 1Day
+2025-09-14 12:56:12,174 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:12,174 - INFO - Processing ROKU for stock_data_hour
+2025-09-14 12:56:12,247 - INFO - ROKU in stock_data_hour: Latest data 2025-09-10, 4 days behind, 69,706 records
+2025-09-14 12:56:12,247 - INFO - ROKU: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:12,247 - INFO - Fetching ROKU 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:12,388 - INFO - Successfully fetched 55 bars for ROKU 1Hour
+2025-09-14 12:56:12,416 - INFO - Inserted 27 new records, 28 duplicates skipped
+2025-09-14 12:56:12,417 - INFO - Processing ROKU for stock_data_minute
+2025-09-14 12:56:14,886 - INFO - ROKU in stock_data_minute: Latest data 2025-09-10, 4 days behind, 4,182,282 records
+2025-09-14 12:56:14,887 - INFO - ROKU: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:14,887 - INFO - Fetching ROKU 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:15,287 - INFO - Successfully fetched 1,685 bars for ROKU 1Min
+2025-09-14 12:56:16,105 - INFO - Inserted 822 new records, 863 duplicates skipped
+2025-09-14 12:56:16,106 - INFO - ROKU update complete: 851 new records, 894 duplicates
+2025-09-14 12:56:16,107 - INFO - === Updating SBUX ===
+2025-09-14 12:56:16,108 - INFO - Processing SBUX for stock_data_day
+2025-09-14 12:56:16,113 - INFO - SBUX in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:56:16,113 - INFO - SBUX: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:16,113 - INFO - Fetching SBUX 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:16,202 - INFO - Successfully fetched 5 bars for SBUX 1Day
+2025-09-14 12:56:16,207 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:16,207 - INFO - Processing SBUX for stock_data_hour
+2025-09-14 12:56:16,292 - INFO - SBUX in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:56:16,293 - INFO - SBUX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:16,294 - INFO - Fetching SBUX 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:16,393 - INFO - Successfully fetched 61 bars for SBUX 1Hour
+2025-09-14 12:56:16,428 - INFO - Inserted 31 new records, 30 duplicates skipped
+2025-09-14 12:56:16,428 - INFO - Processing SBUX for stock_data_minute
+2025-09-14 12:56:18,989 - INFO - SBUX in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,157 records
+2025-09-14 12:56:18,990 - INFO - SBUX: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:18,990 - INFO - Fetching SBUX 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:19,415 - INFO - Successfully fetched 1,913 bars for SBUX 1Min
+2025-09-14 12:56:20,409 - INFO - Inserted 966 new records, 947 duplicates skipped
+2025-09-14 12:56:20,410 - INFO - SBUX update complete: 999 new records, 980 duplicates
+2025-09-14 12:56:20,411 - INFO - === Updating SNAP ===
+2025-09-14 12:56:20,411 - INFO - Processing SNAP for stock_data_day
+2025-09-14 12:56:20,416 - INFO - SNAP in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,106 records
+2025-09-14 12:56:20,417 - INFO - SNAP: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:20,417 - INFO - Fetching SNAP 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:20,517 - INFO - Successfully fetched 5 bars for SNAP 1Day
+2025-09-14 12:56:20,522 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:20,522 - INFO - Processing SNAP for stock_data_hour
+2025-09-14 12:56:20,617 - INFO - SNAP in stock_data_hour: Latest data 2025-09-10, 4 days behind, 74,744 records
+2025-09-14 12:56:20,617 - INFO - SNAP: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:20,618 - INFO - Fetching SNAP 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:20,728 - INFO - Successfully fetched 64 bars for SNAP 1Hour
+2025-09-14 12:56:20,757 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:56:20,757 - INFO - Processing SNAP for stock_data_minute
+2025-09-14 12:56:23,543 - INFO - SNAP in stock_data_minute: Latest data 2025-09-10, 4 days behind, 4,484,620 records
+2025-09-14 12:56:23,544 - INFO - SNAP: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:23,544 - INFO - Fetching SNAP 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:23,929 - INFO - Successfully fetched 2,462 bars for SNAP 1Min
+2025-09-14 12:56:24,923 - INFO - Inserted 1,211 new records, 1,251 duplicates skipped
+2025-09-14 12:56:24,924 - INFO - SNAP update complete: 1,245 new records, 1,286 duplicates
+2025-09-14 12:56:24,925 - INFO - === Updating SNOW ===
+2025-09-14 12:56:24,926 - INFO - Processing SNOW for stock_data_day
+2025-09-14 12:56:24,930 - INFO - SNOW in stock_data_day: Latest data 2025-09-09, 5 days behind, 1,816 records
+2025-09-14 12:56:24,931 - INFO - SNOW: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:24,931 - INFO - Fetching SNOW 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:25,022 - INFO - Successfully fetched 5 bars for SNOW 1Day
+2025-09-14 12:56:25,028 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:25,028 - INFO - Processing SNOW for stock_data_hour
+2025-09-14 12:56:25,099 - INFO - SNOW in stock_data_hour: Latest data 2025-09-10, 4 days behind, 43,688 records
+2025-09-14 12:56:25,099 - INFO - SNOW: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:25,099 - INFO - Fetching SNOW 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:25,202 - INFO - Successfully fetched 58 bars for SNOW 1Hour
+2025-09-14 12:56:25,228 - INFO - Inserted 29 new records, 29 duplicates skipped
+2025-09-14 12:56:25,228 - INFO - Processing SNOW for stock_data_minute
+2025-09-14 12:56:27,861 - INFO - SNOW in stock_data_minute: Latest data 2025-09-10, 4 days behind, 2,621,237 records
+2025-09-14 12:56:27,862 - INFO - SNOW: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:27,862 - INFO - Fetching SNOW 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:28,245 - INFO - Successfully fetched 1,846 bars for SNOW 1Min
+2025-09-14 12:56:29,285 - INFO - Inserted 855 new records, 991 duplicates skipped
+2025-09-14 12:56:29,286 - INFO - SNOW update complete: 886 new records, 1,023 duplicates
+2025-09-14 12:56:29,287 - INFO - === Updating SPOT ===
+2025-09-14 12:56:29,287 - INFO - Processing SPOT for stock_data_day
+2025-09-14 12:56:29,291 - INFO - SPOT in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,711 records
+2025-09-14 12:56:29,292 - INFO - SPOT: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:29,292 - INFO - Fetching SPOT 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:29,396 - INFO - Successfully fetched 5 bars for SPOT 1Day
+2025-09-14 12:56:29,401 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:29,401 - INFO - Processing SPOT for stock_data_hour
+2025-09-14 12:56:29,469 - INFO - SPOT in stock_data_hour: Latest data 2025-09-10, 4 days behind, 65,216 records
+2025-09-14 12:56:29,469 - INFO - SPOT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:29,469 - INFO - Fetching SPOT 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:29,577 - INFO - Successfully fetched 44 bars for SPOT 1Hour
+2025-09-14 12:56:29,602 - INFO - Inserted 21 new records, 23 duplicates skipped
+2025-09-14 12:56:29,602 - INFO - Processing SPOT for stock_data_minute
+2025-09-14 12:56:31,891 - INFO - SPOT in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,912,910 records
+2025-09-14 12:56:31,891 - INFO - SPOT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:31,892 - INFO - Fetching SPOT 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:32,279 - INFO - Successfully fetched 1,439 bars for SPOT 1Min
+2025-09-14 12:56:33,154 - INFO - Inserted 719 new records, 720 duplicates skipped
+2025-09-14 12:56:33,154 - INFO - SPOT update complete: 742 new records, 746 duplicates
+2025-09-14 12:56:33,155 - INFO - === Updating SPY ===
+2025-09-14 12:56:33,156 - INFO - Processing SPY for stock_data_day
+2025-09-14 12:56:33,160 - INFO - SPY in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:56:33,160 - INFO - SPY: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:33,160 - INFO - Fetching SPY 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:33,264 - INFO - Successfully fetched 5 bars for SPY 1Day
+2025-09-14 12:56:33,270 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:33,270 - INFO - Processing SPY for stock_data_hour
+2025-09-14 12:56:33,416 - INFO - SPY in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,985 records
+2025-09-14 12:56:33,417 - INFO - SPY: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:33,417 - INFO - Fetching SPY 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:33,531 - INFO - Successfully fetched 65 bars for SPY 1Hour
+2025-09-14 12:56:33,562 - INFO - Inserted 32 new records, 33 duplicates skipped
+2025-09-14 12:56:33,563 - INFO - Processing SPY for stock_data_minute
+2025-09-14 12:56:36,491 - INFO - SPY in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,099,039 records
+2025-09-14 12:56:36,492 - INFO - SPY: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:36,492 - INFO - Fetching SPY 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:36,908 - INFO - Successfully fetched 3,161 bars for SPY 1Min
+2025-09-14 12:56:38,304 - INFO - Inserted 1,543 new records, 1,618 duplicates skipped
+2025-09-14 12:56:38,305 - INFO - SPY update complete: 1,577 new records, 1,654 duplicates
+2025-09-14 12:56:38,306 - INFO - === Updating SQ ===
+2025-09-14 12:56:38,306 - INFO - Processing SQ for stock_data_day
+2025-09-14 12:56:38,324 - INFO - SQ in stock_data_day: Latest data 2025-01-16, 241 days behind, 3,293 records
+2025-09-14 12:56:38,324 - INFO - SQ: Fetching from 2025-01-15 to 2025-09-14
+2025-09-14 12:56:38,325 - INFO - Fetching SQ 1Day data from 2025-01-15 to 2025-09-14
+2025-09-14 12:56:38,415 - INFO - Successfully fetched 3 bars for SQ 1Day
+2025-09-14 12:56:38,420 - INFO - Inserted 0 new records, 3 duplicates skipped
+2025-09-14 12:56:38,421 - INFO - Processing SQ for stock_data_hour
+2025-09-14 12:56:38,537 - INFO - SQ in stock_data_hour: Latest data 2025-01-17, 240 days behind, 79,236 records
+2025-09-14 12:56:38,538 - INFO - SQ: Fetching from 2025-01-16 to 2025-09-14
+2025-09-14 12:56:38,538 - INFO - Fetching SQ 1Hour data from 2025-01-16 to 2025-09-14
+2025-09-14 12:56:38,635 - INFO - Successfully fetched 33 bars for SQ 1Hour
+2025-09-14 12:56:38,656 - INFO - Inserted 0 new records, 33 duplicates skipped
+2025-09-14 12:56:38,656 - INFO - Processing SQ for stock_data_minute
+2025-09-14 12:56:45,553 - INFO - SQ in stock_data_minute: Latest data 2025-01-17, 240 days behind, 4,754,150 records
+2025-09-14 12:56:45,553 - INFO - SQ: Fetching from 2025-01-16 to 2025-09-14
+2025-09-14 12:56:45,554 - INFO - Fetching SQ 1Min data from 2025-01-16 to 2025-09-14
+2025-09-14 12:56:45,787 - INFO - Successfully fetched 941 bars for SQ 1Min
+2025-09-14 12:56:47,317 - INFO - Inserted 0 new records, 941 duplicates skipped
+2025-09-14 12:56:47,318 - INFO - SQ update complete: 0 new records, 977 duplicates
+2025-09-14 12:56:47,319 - INFO - === Updating T ===
+2025-09-14 12:56:47,319 - INFO - Processing T for stock_data_day
+2025-09-14 12:56:47,326 - INFO - T in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:56:47,326 - INFO - T: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:47,326 - INFO - Fetching T 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:47,414 - INFO - Successfully fetched 5 bars for T 1Day
+2025-09-14 12:56:47,418 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:47,419 - INFO - Processing T for stock_data_hour
+2025-09-14 12:56:47,562 - INFO - T in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:56:47,562 - INFO - T: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:47,562 - INFO - Fetching T 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:47,665 - INFO - Successfully fetched 62 bars for T 1Hour
+2025-09-14 12:56:47,697 - INFO - Inserted 30 new records, 32 duplicates skipped
+2025-09-14 12:56:47,697 - INFO - Processing T for stock_data_minute
+2025-09-14 12:56:50,497 - INFO - T in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,098,979 records
+2025-09-14 12:56:50,497 - INFO - T: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:50,497 - INFO - Fetching T 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:50,885 - INFO - Successfully fetched 1,847 bars for T 1Min
+2025-09-14 12:56:51,856 - INFO - Inserted 909 new records, 938 duplicates skipped
+2025-09-14 12:56:51,857 - INFO - T update complete: 941 new records, 973 duplicates
+2025-09-14 12:56:51,858 - INFO - === Updating TMO ===
+2025-09-14 12:56:51,858 - INFO - Processing TMO for stock_data_day
+2025-09-14 12:56:51,862 - INFO - TMO in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:56:51,862 - INFO - TMO: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:51,862 - INFO - Fetching TMO 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:51,959 - INFO - Successfully fetched 5 bars for TMO 1Day
+2025-09-14 12:56:51,965 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:51,966 - INFO - Processing TMO for stock_data_hour
+2025-09-14 12:56:52,074 - INFO - TMO in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,897 records
+2025-09-14 12:56:52,075 - INFO - TMO: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:52,075 - INFO - Fetching TMO 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:52,181 - INFO - Successfully fetched 35 bars for TMO 1Hour
+2025-09-14 12:56:52,236 - INFO - Inserted 17 new records, 18 duplicates skipped
+2025-09-14 12:56:52,236 - INFO - Processing TMO for stock_data_minute
+2025-09-14 12:56:57,247 - INFO - TMO in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,727 records
+2025-09-14 12:56:57,248 - INFO - TMO: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:57,248 - INFO - Fetching TMO 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:57,497 - INFO - Successfully fetched 1,483 bars for TMO 1Min
+2025-09-14 12:56:59,344 - INFO - Inserted 747 new records, 736 duplicates skipped
+2025-09-14 12:56:59,344 - INFO - TMO update complete: 766 new records, 757 duplicates
+2025-09-14 12:56:59,345 - INFO - === Updating TMUS ===
+2025-09-14 12:56:59,345 - INFO - Processing TMUS for stock_data_day
+2025-09-14 12:56:59,359 - INFO - TMUS in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:56:59,360 - INFO - TMUS: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:59,360 - INFO - Fetching TMUS 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:56:59,457 - INFO - Successfully fetched 5 bars for TMUS 1Day
+2025-09-14 12:56:59,463 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:56:59,463 - INFO - Processing TMUS for stock_data_hour
+2025-09-14 12:56:59,560 - INFO - TMUS in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,896 records
+2025-09-14 12:56:59,561 - INFO - TMUS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:59,561 - INFO - Fetching TMUS 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:56:59,661 - INFO - Successfully fetched 42 bars for TMUS 1Hour
+2025-09-14 12:56:59,690 - INFO - Inserted 21 new records, 21 duplicates skipped
+2025-09-14 12:56:59,690 - INFO - Processing TMUS for stock_data_minute
+2025-09-14 12:57:02,697 - INFO - TMUS in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,660 records
+2025-09-14 12:57:02,697 - INFO - TMUS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:02,697 - INFO - Fetching TMUS 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:03,093 - INFO - Successfully fetched 1,596 bars for TMUS 1Min
+2025-09-14 12:57:04,194 - INFO - Inserted 796 new records, 800 duplicates skipped
+2025-09-14 12:57:04,195 - INFO - TMUS update complete: 819 new records, 824 duplicates
+2025-09-14 12:57:04,197 - INFO - === Updating TSLA ===
+2025-09-14 12:57:04,197 - INFO - Processing TSLA for stock_data_day
+2025-09-14 12:57:04,203 - INFO - TSLA in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:57:04,203 - INFO - TSLA: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:04,204 - INFO - Fetching TSLA 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:04,304 - INFO - Successfully fetched 5 bars for TSLA 1Day
+2025-09-14 12:57:04,312 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:57:04,312 - INFO - Processing TSLA for stock_data_hour
+2025-09-14 12:57:04,427 - INFO - TSLA in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:57:04,427 - INFO - TSLA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:04,427 - INFO - Fetching TSLA 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:04,533 - INFO - Successfully fetched 64 bars for TSLA 1Hour
+2025-09-14 12:57:04,565 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:57:04,566 - INFO - Processing TSLA for stock_data_minute
+2025-09-14 12:57:07,615 - INFO - TSLA in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,181 records
+2025-09-14 12:57:07,615 - INFO - TSLA: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:07,615 - INFO - Fetching TSLA 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:08,078 - INFO - Successfully fetched 3,605 bars for TSLA 1Min
+2025-09-14 12:57:09,552 - INFO - Inserted 1,836 new records, 1,769 duplicates skipped
+2025-09-14 12:57:09,553 - INFO - TSLA update complete: 1,870 new records, 1,804 duplicates
+2025-09-14 12:57:09,554 - INFO - === Updating TWTR ===
+2025-09-14 12:57:09,554 - INFO - Processing TWTR for stock_data_day
+2025-09-14 12:57:09,558 - INFO - TWTR in stock_data_day: Latest data 2022-10-26, 1054 days behind, 2,482 records
+2025-09-14 12:57:09,558 - INFO - TWTR: Fetching from 2022-10-25 to 2025-09-14
+2025-09-14 12:57:09,558 - INFO - Fetching TWTR 1Day data from 2022-10-25 to 2025-09-14
+2025-09-14 12:57:09,649 - INFO - Successfully fetched 3 bars for TWTR 1Day
+2025-09-14 12:57:09,653 - INFO - Inserted 0 new records, 3 duplicates skipped
+2025-09-14 12:57:09,653 - INFO - Processing TWTR for stock_data_hour
+2025-09-14 12:57:09,723 - INFO - TWTR in stock_data_hour: Latest data 2022-10-27, 1053 days behind, 59,808 records
+2025-09-14 12:57:09,723 - INFO - TWTR: Fetching from 2022-10-26 to 2025-09-14
+2025-09-14 12:57:09,723 - INFO - Fetching TWTR 1Hour data from 2022-10-26 to 2025-09-14
+2025-09-14 12:57:09,828 - INFO - Successfully fetched 32 bars for TWTR 1Hour
+2025-09-14 12:57:09,847 - INFO - Inserted 0 new records, 32 duplicates skipped
+2025-09-14 12:57:09,847 - INFO - Processing TWTR for stock_data_minute
+2025-09-14 12:57:11,801 - INFO - TWTR in stock_data_minute: Latest data 2022-10-27, 1053 days behind, 3,588,464 records
+2025-09-14 12:57:11,801 - INFO - TWTR: Fetching from 2022-10-26 to 2025-09-14
+2025-09-14 12:57:11,802 - INFO - Fetching TWTR 1Min data from 2022-10-26 to 2025-09-14
+2025-09-14 12:57:12,045 - INFO - Successfully fetched 1,576 bars for TWTR 1Min
+2025-09-14 12:57:12,958 - INFO - Inserted 0 new records, 1,576 duplicates skipped
+2025-09-14 12:57:12,959 - INFO - TWTR update complete: 0 new records, 1,611 duplicates
+2025-09-14 12:57:12,960 - INFO - === Updating TXN ===
+2025-09-14 12:57:12,961 - INFO - Processing TXN for stock_data_day
+2025-09-14 12:57:12,967 - INFO - TXN in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:57:12,967 - INFO - TXN: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:12,967 - INFO - Fetching TXN 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:13,061 - INFO - Successfully fetched 5 bars for TXN 1Day
+2025-09-14 12:57:13,066 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:57:13,066 - INFO - Processing TXN for stock_data_hour
+2025-09-14 12:57:13,150 - INFO - TXN in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,983 records
+2025-09-14 12:57:13,151 - INFO - TXN: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:13,151 - INFO - Fetching TXN 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:13,252 - INFO - Successfully fetched 52 bars for TXN 1Hour
+2025-09-14 12:57:13,279 - INFO - Inserted 27 new records, 25 duplicates skipped
+2025-09-14 12:57:13,280 - INFO - Processing TXN for stock_data_minute
+2025-09-14 12:57:17,605 - INFO - TXN in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,934 records
+2025-09-14 12:57:17,605 - INFO - TXN: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:17,605 - INFO - Fetching TXN 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:17,982 - INFO - Successfully fetched 1,644 bars for TXN 1Min
+2025-09-14 12:57:19,336 - INFO - Inserted 825 new records, 819 duplicates skipped
+2025-09-14 12:57:19,336 - INFO - TXN update complete: 854 new records, 847 duplicates
+2025-09-14 12:57:19,338 - INFO - === Updating UBER ===
+2025-09-14 12:57:19,338 - INFO - Processing UBER for stock_data_day
+2025-09-14 12:57:19,343 - INFO - UBER in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,310 records
+2025-09-14 12:57:19,343 - INFO - UBER: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:19,344 - INFO - Fetching UBER 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:19,439 - INFO - Successfully fetched 5 bars for UBER 1Day
+2025-09-14 12:57:19,445 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:57:19,445 - INFO - Processing UBER for stock_data_hour
+2025-09-14 12:57:19,558 - INFO - UBER in stock_data_hour: Latest data 2025-09-10, 4 days behind, 55,569 records
+2025-09-14 12:57:19,558 - INFO - UBER: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:19,559 - INFO - Fetching UBER 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:19,658 - INFO - Successfully fetched 60 bars for UBER 1Hour
+2025-09-14 12:57:19,689 - INFO - Inserted 30 new records, 30 duplicates skipped
+2025-09-14 12:57:19,689 - INFO - Processing UBER for stock_data_minute
+2025-09-14 12:57:22,308 - INFO - UBER in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,334,073 records
+2025-09-14 12:57:22,309 - INFO - UBER: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:22,309 - INFO - Fetching UBER 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:22,692 - INFO - Successfully fetched 1,909 bars for UBER 1Min
+2025-09-14 12:57:23,695 - INFO - Inserted 916 new records, 993 duplicates skipped
+2025-09-14 12:57:23,695 - INFO - UBER update complete: 948 new records, 1,026 duplicates
+2025-09-14 12:57:23,696 - INFO - === Updating UNH ===
+2025-09-14 12:57:23,696 - INFO - Processing UNH for stock_data_day
+2025-09-14 12:57:23,703 - INFO - UNH in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:57:23,703 - INFO - UNH: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:23,703 - INFO - Fetching UNH 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:23,793 - INFO - Successfully fetched 5 bars for UNH 1Day
+2025-09-14 12:57:23,799 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:57:23,799 - INFO - Processing UNH for stock_data_hour
+2025-09-14 12:57:23,885 - INFO - UNH in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:57:23,886 - INFO - UNH: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:23,886 - INFO - Fetching UNH 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:24,002 - INFO - Successfully fetched 64 bars for UNH 1Hour
+2025-09-14 12:57:24,032 - INFO - Inserted 32 new records, 32 duplicates skipped
+2025-09-14 12:57:24,032 - INFO - Processing UNH for stock_data_minute
+2025-09-14 12:57:28,546 - INFO - UNH in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,941 records
+2025-09-14 12:57:28,547 - INFO - UNH: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:28,547 - INFO - Fetching UNH 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:28,913 - INFO - Successfully fetched 2,678 bars for UNH 1Min
+2025-09-14 12:57:30,558 - INFO - Inserted 1,266 new records, 1,412 duplicates skipped
+2025-09-14 12:57:30,559 - INFO - UNH update complete: 1,300 new records, 1,447 duplicates
+2025-09-14 12:57:30,560 - INFO - === Updating UPS ===
+2025-09-14 12:57:30,561 - INFO - Processing UPS for stock_data_day
+2025-09-14 12:57:30,566 - INFO - UPS in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:57:30,566 - INFO - UPS: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:30,566 - INFO - Fetching UPS 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:30,669 - INFO - Successfully fetched 5 bars for UPS 1Day
+2025-09-14 12:57:30,675 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:57:30,675 - INFO - Processing UPS for stock_data_hour
+2025-09-14 12:57:30,785 - INFO - UPS in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:57:30,785 - INFO - UPS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:30,785 - INFO - Fetching UPS 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:30,891 - INFO - Successfully fetched 61 bars for UPS 1Hour
+2025-09-14 12:57:30,929 - INFO - Inserted 31 new records, 30 duplicates skipped
+2025-09-14 12:57:30,930 - INFO - Processing UPS for stock_data_minute
+2025-09-14 12:57:38,714 - INFO - UPS in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,938 records
+2025-09-14 12:57:38,714 - INFO - UPS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:38,714 - INFO - Fetching UPS 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:39,013 - INFO - Successfully fetched 2,077 bars for UPS 1Min
+2025-09-14 12:57:40,695 - INFO - Inserted 1,100 new records, 977 duplicates skipped
+2025-09-14 12:57:40,696 - INFO - UPS update complete: 1,133 new records, 1,010 duplicates
+2025-09-14 12:57:40,697 - INFO - === Updating V ===
+2025-09-14 12:57:40,698 - INFO - Processing V for stock_data_day
+2025-09-14 12:57:40,705 - INFO - V in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:57:40,705 - INFO - V: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:40,705 - INFO - Fetching V 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:40,799 - INFO - Successfully fetched 5 bars for V 1Day
+2025-09-14 12:57:40,805 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:57:40,805 - INFO - Processing V for stock_data_hour
+2025-09-14 12:57:40,917 - INFO - V in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:57:40,918 - INFO - V: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:40,918 - INFO - Fetching V 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:41,021 - INFO - Successfully fetched 51 bars for V 1Hour
+2025-09-14 12:57:41,057 - INFO - Inserted 23 new records, 28 duplicates skipped
+2025-09-14 12:57:41,057 - INFO - Processing V for stock_data_minute
+2025-09-14 12:57:46,870 - INFO - V in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,170 records
+2025-09-14 12:57:46,870 - INFO - V: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:46,870 - INFO - Fetching V 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:47,307 - INFO - Successfully fetched 1,632 bars for V 1Min
+2025-09-14 12:57:49,053 - INFO - Inserted 810 new records, 822 duplicates skipped
+2025-09-14 12:57:49,054 - INFO - V update complete: 835 new records, 853 duplicates
+2025-09-14 12:57:49,055 - INFO - === Updating VTI ===
+2025-09-14 12:57:49,055 - INFO - Processing VTI for stock_data_day
+2025-09-14 12:57:49,061 - INFO - VTI in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:57:49,061 - INFO - VTI: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:49,062 - INFO - Fetching VTI 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:49,159 - INFO - Successfully fetched 5 bars for VTI 1Day
+2025-09-14 12:57:49,166 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:57:49,166 - INFO - Processing VTI for stock_data_hour
+2025-09-14 12:57:49,241 - INFO - VTI in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,899 records
+2025-09-14 12:57:49,241 - INFO - VTI: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:49,242 - INFO - Fetching VTI 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:49,340 - INFO - Successfully fetched 49 bars for VTI 1Hour
+2025-09-14 12:57:49,366 - INFO - Inserted 24 new records, 25 duplicates skipped
+2025-09-14 12:57:49,366 - INFO - Processing VTI for stock_data_minute
+2025-09-14 12:57:53,886 - INFO - VTI in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,930 records
+2025-09-14 12:57:53,886 - INFO - VTI: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:53,887 - INFO - Fetching VTI 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:54,280 - INFO - Successfully fetched 1,655 bars for VTI 1Min
+2025-09-14 12:57:55,993 - INFO - Inserted 826 new records, 829 duplicates skipped
+2025-09-14 12:57:55,994 - INFO - VTI update complete: 852 new records, 857 duplicates
+2025-09-14 12:57:55,996 - INFO - === Updating VZ ===
+2025-09-14 12:57:55,996 - INFO - Processing VZ for stock_data_day
+2025-09-14 12:57:56,001 - INFO - VZ in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:57:56,001 - INFO - VZ: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:56,001 - INFO - Fetching VZ 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:57:56,105 - INFO - Successfully fetched 5 bars for VZ 1Day
+2025-09-14 12:57:56,112 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:57:56,112 - INFO - Processing VZ for stock_data_hour
+2025-09-14 12:57:56,220 - INFO - VZ in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:57:56,221 - INFO - VZ: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:56,221 - INFO - Fetching VZ 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:57:56,337 - INFO - Successfully fetched 61 bars for VZ 1Hour
+2025-09-14 12:57:56,391 - INFO - Inserted 29 new records, 32 duplicates skipped
+2025-09-14 12:57:56,391 - INFO - Processing VZ for stock_data_minute
+2025-09-14 12:58:03,005 - INFO - VZ in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,181 records
+2025-09-14 12:58:03,007 - INFO - VZ: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:03,007 - INFO - Fetching VZ 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:03,347 - INFO - Successfully fetched 1,919 bars for VZ 1Min
+2025-09-14 12:58:05,220 - INFO - Inserted 947 new records, 972 duplicates skipped
+2025-09-14 12:58:05,221 - INFO - VZ update complete: 978 new records, 1,007 duplicates
+2025-09-14 12:58:05,223 - INFO - === Updating WFC ===
+2025-09-14 12:58:05,223 - INFO - Processing WFC for stock_data_day
+2025-09-14 12:58:05,229 - INFO - WFC in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:58:05,229 - INFO - WFC: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:05,229 - INFO - Fetching WFC 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:05,337 - INFO - Successfully fetched 5 bars for WFC 1Day
+2025-09-14 12:58:05,343 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:58:05,343 - INFO - Processing WFC for stock_data_hour
+2025-09-14 12:58:05,439 - INFO - WFC in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,984 records
+2025-09-14 12:58:05,439 - INFO - WFC: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:05,439 - INFO - Fetching WFC 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:05,538 - INFO - Successfully fetched 55 bars for WFC 1Hour
+2025-09-14 12:58:05,678 - INFO - Inserted 23 new records, 32 duplicates skipped
+2025-09-14 12:58:05,678 - INFO - Processing WFC for stock_data_minute
+2025-09-14 12:58:09,721 - INFO - WFC in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,093,950 records
+2025-09-14 12:58:09,721 - INFO - WFC: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:09,722 - INFO - Fetching WFC 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:10,133 - INFO - Successfully fetched 1,721 bars for WFC 1Min
+2025-09-14 12:58:11,661 - INFO - Inserted 815 new records, 906 duplicates skipped
+2025-09-14 12:58:11,662 - INFO - WFC update complete: 840 new records, 941 duplicates
+2025-09-14 12:58:11,663 - INFO - === Updating WMT ===
+2025-09-14 12:58:11,663 - INFO - Processing WMT for stock_data_day
+2025-09-14 12:58:11,668 - INFO - WMT in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:58:11,668 - INFO - WMT: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:11,668 - INFO - Fetching WMT 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:11,764 - INFO - Successfully fetched 5 bars for WMT 1Day
+2025-09-14 12:58:11,770 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:58:11,771 - INFO - Processing WMT for stock_data_hour
+2025-09-14 12:58:11,892 - INFO - WMT in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:58:11,892 - INFO - WMT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:11,892 - INFO - Fetching WMT 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:11,994 - INFO - Successfully fetched 62 bars for WMT 1Hour
+2025-09-14 12:58:12,035 - INFO - Inserted 30 new records, 32 duplicates skipped
+2025-09-14 12:58:12,036 - INFO - Processing WMT for stock_data_minute
+2025-09-14 12:58:19,966 - INFO - WMT in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,009 records
+2025-09-14 12:58:19,966 - INFO - WMT: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:19,967 - INFO - Fetching WMT 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:20,351 - INFO - Successfully fetched 1,867 bars for WMT 1Min
+2025-09-14 12:58:22,056 - INFO - Inserted 903 new records, 964 duplicates skipped
+2025-09-14 12:58:22,057 - INFO - WMT update complete: 935 new records, 999 duplicates
+2025-09-14 12:58:22,057 - INFO - === Updating XOM ===
+2025-09-14 12:58:22,057 - INFO - Processing XOM for stock_data_day
+2025-09-14 12:58:22,062 - INFO - XOM in stock_data_day: Latest data 2025-09-09, 5 days behind, 3,528 records
+2025-09-14 12:58:22,062 - INFO - XOM: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:22,063 - INFO - Fetching XOM 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:22,165 - INFO - Successfully fetched 5 bars for XOM 1Day
+2025-09-14 12:58:22,171 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:58:22,171 - INFO - Processing XOM for stock_data_hour
+2025-09-14 12:58:22,276 - INFO - XOM in stock_data_hour: Latest data 2025-09-10, 4 days behind, 84,903 records
+2025-09-14 12:58:22,276 - INFO - XOM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:22,277 - INFO - Fetching XOM 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:22,374 - INFO - Successfully fetched 57 bars for XOM 1Hour
+2025-09-14 12:58:22,411 - INFO - Inserted 27 new records, 30 duplicates skipped
+2025-09-14 12:58:22,411 - INFO - Processing XOM for stock_data_minute
+2025-09-14 12:58:26,912 - INFO - XOM in stock_data_minute: Latest data 2025-09-10, 4 days behind, 5,094,127 records
+2025-09-14 12:58:26,912 - INFO - XOM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:26,912 - INFO - Fetching XOM 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:27,294 - INFO - Successfully fetched 1,736 bars for XOM 1Min
+2025-09-14 12:58:28,802 - INFO - Inserted 859 new records, 877 duplicates skipped
+2025-09-14 12:58:28,803 - INFO - XOM update complete: 888 new records, 910 duplicates
+2025-09-14 12:58:28,804 - INFO - === Updating ZM ===
+2025-09-14 12:58:28,805 - INFO - Processing ZM for stock_data_day
+2025-09-14 12:58:28,809 - INFO - ZM in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,332 records
+2025-09-14 12:58:28,809 - INFO - ZM: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:28,809 - INFO - Fetching ZM 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:28,900 - INFO - Successfully fetched 5 bars for ZM 1Day
+2025-09-14 12:58:28,905 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:58:28,906 - INFO - Processing ZM for stock_data_hour
+2025-09-14 12:58:29,001 - INFO - ZM in stock_data_hour: Latest data 2025-09-10, 4 days behind, 56,096 records
+2025-09-14 12:58:29,001 - INFO - ZM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:29,002 - INFO - Fetching ZM 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:29,101 - INFO - Successfully fetched 49 bars for ZM 1Hour
+2025-09-14 12:58:29,128 - INFO - Inserted 21 new records, 28 duplicates skipped
+2025-09-14 12:58:29,128 - INFO - Processing ZM for stock_data_minute
+2025-09-14 12:58:32,187 - INFO - ZM in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,365,701 records
+2025-09-14 12:58:32,188 - INFO - ZM: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:32,188 - INFO - Fetching ZM 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:32,538 - INFO - Successfully fetched 1,625 bars for ZM 1Min
+2025-09-14 12:58:33,867 - INFO - Inserted 791 new records, 834 duplicates skipped
+2025-09-14 12:58:33,868 - INFO - ZM update complete: 814 new records, 865 duplicates
+2025-09-14 12:58:33,868 - INFO - === Updating ZS ===
+2025-09-14 12:58:33,868 - INFO - Processing ZS for stock_data_day
+2025-09-14 12:58:33,874 - INFO - ZS in stock_data_day: Latest data 2025-09-09, 5 days behind, 2,729 records
+2025-09-14 12:58:33,874 - INFO - ZS: Fetching from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:33,874 - INFO - Fetching ZS 1Day data from 2025-09-08 to 2025-09-14
+2025-09-14 12:58:33,965 - INFO - Successfully fetched 5 bars for ZS 1Day
+2025-09-14 12:58:33,971 - INFO - Inserted 2 new records, 3 duplicates skipped
+2025-09-14 12:58:33,971 - INFO - Processing ZS for stock_data_hour
+2025-09-14 12:58:34,036 - INFO - ZS in stock_data_hour: Latest data 2025-09-10, 4 days behind, 65,649 records
+2025-09-14 12:58:34,037 - INFO - ZS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:34,037 - INFO - Fetching ZS 1Hour data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:34,136 - INFO - Successfully fetched 42 bars for ZS 1Hour
+2025-09-14 12:58:34,161 - INFO - Inserted 19 new records, 23 duplicates skipped
+2025-09-14 12:58:34,162 - INFO - Processing ZS for stock_data_minute
+2025-09-14 12:58:37,825 - INFO - ZS in stock_data_minute: Latest data 2025-09-10, 4 days behind, 3,938,933 records
+2025-09-14 12:58:37,825 - INFO - ZS: Fetching from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:37,826 - INFO - Fetching ZS 1Min data from 2025-09-09 to 2025-09-14
+2025-09-14 12:58:38,150 - INFO - Successfully fetched 1,506 bars for ZS 1Min
+2025-09-14 12:58:39,532 - INFO - Inserted 751 new records, 755 duplicates skipped
+2025-09-14 12:58:39,533 - INFO - ZS update complete: 772 new records, 781 duplicates
+2025-09-14 12:58:39,535 - INFO - === Update Complete ===
+2025-09-14 12:58:39,535 - INFO - Symbols updated: 92/94
+2025-09-14 12:58:39,535 - INFO - Total new records: 94,068
+2025-09-14 12:58:39,535 - INFO - Total duplicates skipped: 95,510
+2025-09-14 12:58:39,535 - INFO - Update completed at: 2025-09-14 12:58:39.535725

@@ -1,0 +1,93 @@
+# Comprehensive Stock Analysis Request for NVDA
+
+## Analysis Timestamp: 2025-09-14T21:13:28.470240
+
+I need a trading decision recommendation based on the comprehensive analysis below. Please provide:
+1. **DECISION**: BUY, SELL, or HOLD
+2. **CONFIDENCE**: High, Medium, or Low
+3. **REASONING**: Detailed explanation weighing all factors
+4. **RISK ASSESSMENT**: Key risks and opportunities
+5. **TIME HORIZON**: Short-term (1-7 days) or Medium-term (1-4 weeks) recommendation
+
+---
+
+## 1. COMPANY SENTIMENT ANALYSIS
+**Status**: Failed to retrieve company sentiment - StockSentimentAnalyzer.analyze_sentiment() got an unexpected keyword argument 'max_articles'
+
+## 2. INDUSTRY SENTIMENT ANALYSIS
+**Status**: Failed to retrieve industry sentiment - Industry must be provided either in constructor with company_symbol or as parameter
+
+## 3. RECENT MARKET DATA
+
+**Latest Minute Data** (Last 100 minutes):
+- Current Price: $177.53
+- 1-min Change: $-0.04
+- Latest Volume: 26,965
+- VWAP: $177.53
+- Time Range: 2025-09-12T22:10:00 to 2025-09-12T23:59:00
+
+**Latest Hourly Data** (Last 24 hours):
+- Current Price: $177.53
+- 1-hour Change: $-0.15
+- 24-hour Change: $0.22
+- Latest Volume: 196,537
+- VWAP: $177.57
+
+**Latest Daily Data** (Last 7 days):
+- Current Price: $177.82
+- 1-day Change: $0.65
+- 7-day Change: $10.80
+- Latest Volume: 124,911,026
+- VWAP: $177.75
+
+## 4. TECHNICAL ANALYSIS
+
+**Multi-Timeframe Consensus**: Hold
+**Hour Prediction**: Hold
+**Hour Confidence**: 82.5%
+
+**Timeframe Analysis Available**: True
+**Hour Prediction Available**: True
+
+**Technical Insights**:
+- Model accuracy and validation metrics
+- Risk-adjusted performance indicators
+- Feature importance and market factors
+- Historical backtesting results
+
+**Detailed Hour Analysis**:
+- Prediction: Hold
+- Confidence: 82.5%
+- Current Price: $177.53
+- Price Trend: Downtrend
+- RSI Condition: Neutral (RSI: 51.9)
+- Volume Trend: Normal
+
+---
+
+## DECISION FRAMEWORK
+
+Please analyze the above data and provide:
+
+1. **PRIMARY RECOMMENDATION**: BUY/SELL/HOLD with confidence level
+2. **KEY FACTORS**: Top 3 factors supporting your decision
+3. **RISK ASSESSMENT**:
+   - Primary risks to the position
+   - Risk mitigation strategies
+   - Position sizing recommendations
+4. **TIME HORIZON**:
+   - Short-term outlook (1-7 days)
+   - Medium-term outlook (1-4 weeks)
+5. **ENTRY/EXIT STRATEGY**:
+   - Optimal entry points
+   - Stop-loss levels
+   - Take-profit targets
+6. **MONITORING POINTS**: Key metrics/events to watch
+
+**Analysis Constraints**:
+- Current timestamp: 2025-09-14T21:13:28.470240
+- Data freshness varies by source
+- Technical models trained on historical data
+- Sentiment analysis reflects recent news only
+
+Please provide a clear, actionable recommendation that considers all available data sources and their relative reliability.

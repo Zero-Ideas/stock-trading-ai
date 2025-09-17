@@ -35,8 +35,8 @@ class GoogleNewsResolver:
         ]
         # Simple cache to avoid re-resolving the same URLs
         self._resolution_cache = {}
-        self._selenium_attempts = 0
-        self._max_selenium_attempts = 1  # Limit selenium attempts to prevent hanging
+        self._playwright_attempts = 0
+        self._max_playwright_attempts = 1  # Limit playwright attempts to prevent hanging
     
     def resolve_url(self, google_news_url: str) -> Optional[str]:
         """
@@ -66,19 +66,19 @@ class GoogleNewsResolver:
             self._resolution_cache[google_news_url] = resolved_url
             return resolved_url
         
-        # Strategy 3: Use selenium if available and under limit (slow, limited usage)
+        # Strategy 3: Use playwright if available and under limit (slow, limited usage)
         try:
-            if self._selenium_attempts < self._max_selenium_attempts:
-                resolved_url = self._try_selenium_approach(google_news_url)
+            if self._playwright_attempts < self._max_playwright_attempts:
+                resolved_url = self._try_playwright_approach(google_news_url)
                 if resolved_url:
                     self._resolution_cache[google_news_url] = resolved_url
                     return resolved_url
         except ImportError:
             if self.debug:
-                print("  Selenium not available, skipping browser automation")
+                print("  Playwright not available, skipping browser automation")
         except Exception as e:
             if self.debug:
-                print(f"  Selenium approach failed: {e}")
+                print(f"  Playwright approach failed: {e}")
         
         # Cache failed resolution to avoid retrying the same URL
         self._resolution_cache[google_news_url] = None
@@ -295,27 +295,27 @@ class GoogleNewsResolver:
         
         return None
     
-    def _try_selenium_approach(self, url: str) -> Optional[str]:
-        """Try using Selenium with JavaScript support for Google News redirects"""
-        self._selenium_attempts += 1
+    def _try_playwright_approach(self, url: str) -> Optional[str]:
+        """Try using Playwright with JavaScript support for Google News redirects"""
+        self._playwright_attempts += 1
         
         try:
             # Use the working approach from base_scraper.py
             from scrapers.base_scraper import BaseScraper
             
             if self.debug:
-                print(f"  Selenium attempt {self._selenium_attempts}/{self._max_selenium_attempts}")
-                print(f"  Using working Selenium approach for Google News...")
+                print(f"  Playwright attempt {self._playwright_attempts}/{self._max_playwright_attempts}")
+                print(f"  Using working Playwright approach for Google News...")
             
-            # Create a temporary base scraper instance to use its working Selenium method
+            # Create a temporary base scraper instance to use its working Playwright method
             temp_scraper = type('TempScraper', (BaseScraper,), {
                 'source_name': property(lambda self: 'GoogleNewsResolver'),
                 'scrape': lambda self, max_articles=10: [],
                 'debug': self.debug
-            })('TEMP', debug=self.debug)
+            })('TEMPSCRAPE', debug=self.debug)  # Use GOOG since we're resolving Google News URLs
             
-            # Use the working make_request_with_selenium method
-            page_source, final_url = temp_scraper.make_request_with_selenium(
+            # Use the working make_request_with_playwright method
+            page_source, final_url = temp_scraper.make_request_with_playwright(
                 url,
                 wait_for_selector="body",
                 wait_timeout=10
@@ -324,7 +324,7 @@ class GoogleNewsResolver:
             if page_source and final_url and final_url != url:
                 if self._is_valid_news_url(final_url):
                     if self.debug:
-                        print(f"    SUCCESS: Selenium redirected to {final_url}")
+                        print(f"    SUCCESS: Playwright redirected to {final_url}")
                     return final_url
             
             if self.debug:
