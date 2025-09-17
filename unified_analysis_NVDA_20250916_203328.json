@@ -1,0 +1,1603 @@
+{
+  "symbol": "NVDA",
+  "analysis_timestamp": "2025-09-16T20:30:22.811848",
+  "data_sources": {
+    "company_sentiment": {
+      "status": "success",
+      "data": {
+        "symbol": "NVDA",
+        "company_name": "NVIDIA Corporation",
+        "analysis_timestamp": "2025-09-16T20:33:26.743223",
+        "total_articles": 20,
+        "overall_sentiment": "Very Negative",
+        "sentiment_scores": {
+          "average_sentiment": -0.161,
+          "weighted_avg_from_sources": -0.19
+        },
+        "sentiment_distribution": {
+          "positive": 4,
+          "negative": 9,
+          "neutral": 7,
+          "positive_percentage": 20.0,
+          "negative_percentage": 45.0,
+          "neutral_percentage": 35.0
+        },
+        "source_breakdown": {
+          "Seeking Alpha (Analysis)": {
+            "count": 8,
+            "avg_sentiment": -0.16159475
+          },
+          "Bloomberg (Pydoll)": {
+            "count": 9,
+            "avg_sentiment": -0.23041122222222224
+          },
+          "Seeking Alpha (RSS)": {
+            "count": 1,
+            "avg_sentiment": 0.919687
+          },
+          "Seeking Alpha (News)": {
+            "count": 2,
+            "avg_sentiment": -0.6751484999999999
+          }
+        },
+        "recent_articles": [
+          {
+            "text": "NVIDIA Corporation (NVDA) Presents At Goldman Sachs Communacopia + Technology Conference (Transcript)",
+            "sentiment": 0.0,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820686-nvidia-corporation-nvda-presents-at-goldman-sachs-communicopia-technology-conference-2025#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7",
+            "timestamp": "2025-09-11T12:59:31.290447"
+          },
+          {
+            "text": "Nvidia: Time To Double Down (NASDAQ:NVDA). I'm a Ukraine-based seasoned investor, who firsthand experienced what\u2019s it like to live in an environment full of systemic geopolitical shocks when the war c...",
+            "sentiment": 0.0,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820533-nvidia-time-to-double-down#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4",
+            "timestamp": "2025-09-11T12:59:24.152838"
+          },
+          {
+            "text": "Nvidia\u2019s Hyper-Growth Keeps Stock Valuation Out of Bubble Zone. . For all the handwringing about Nvidia Corp.\u2019s sky-high market value pushing the stock into bubble territory, its revenue growth keeps ...",
+            "sentiment": 0.95219,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/articles/2025-08-29/nvidia-s-hyper-growth-keeps-stock-valuation-out-of-bubble-zone",
+            "timestamp": "2025-09-11T10:55:41.414281"
+          },
+          {
+            "text": "PsiQuantum hits $7B valuation, partners with Nvidia to boost quantum tech.",
+            "sentiment": 0.919687,
+            "source": "Seeking Alpha (RSS)",
+            "url": "https://seekingalpha.com/news/4493664-psiquantum-hits-7b-valuation-partners-with-nvidia-to-boost-quantum-tech?source=feed_symbol_NVDA",
+            "timestamp": "2025-09-11T10:02:04.158604"
+          },
+          {
+            "text": "Nvidia: Recently Dethroned AI King Of A Past Era - But Buy Case Still Compelling",
+            "sentiment": 0.0,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820650-nvidia-recently-dethroned-ai-king-of-a-past-era-but-buy-case-still-compelling#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2",
+            "timestamp": "2025-09-11T09:59:22.549866"
+          }
+        ],
+        "raw_articles": [
+          {
+            "text": "NVIDIA Corporation (NVDA) Presents At Goldman Sachs Communacopia + Technology Conference (Transcript)",
+            "sentiment": 0.0,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820686-nvidia-corporation-nvda-presents-at-goldman-sachs-communicopia-technology-conference-2025#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7",
+            "timestamp": "2025-09-11T12:59:31.290447"
+          },
+          {
+            "text": "Nvidia: Time To Double Down (NASDAQ:NVDA). I'm a Ukraine-based seasoned investor, who firsthand experienced what\u2019s it like to live in an environment full of systemic geopolitical shocks when the war came to my home country. Despite this, I managed to build an all-weather portfolio that has been able to thrive in volatile markets. My goal is to help investors find event-driven geopolitical ideas that can generate strong returns during periods of economic and political uncertainty.\n\nAnalyst\u2019s Disclosure:I/we have a beneficial long position in the shares of NVDA either through stock ownership, options, or other derivatives. I wrote this article myself, and it expresses my own opinions. I am not receiving compensation for it (other than from Seeking Alpha). I have no business relationship with any company whose stock is mentioned in this article.\n\n\n\nBohdan Kucheriavyi is not a financial/investment advisor, broker, or dealer. He's solely sharing personal experience and opinion; therefore, all strategies, tips, suggestions, and recommendations shared are solely for informational purposes. There are risks associated with investing in securities. Investing in stocks, bonds, options, exchange-traded funds, mutual funds, and money market funds involves the risk of loss. Loss of principal is possible. Some high-risk investments may use leverage, which will accentuate gains & losses. Foreign investing involves special risks, including greater volatility and political, economic, and currency risks and differences in accounting methods. A security\u2019s or a firm\u2019s past investment performance is not a guarantee or predictor of future investment performance.\n\nSeeking Alpha's Disclosure: Past performance is no guarantee of future results. No recommendation or advice is being given as to whether any investment is suitable for a particular investor. Any views or opinions expressed above may not reflect those of Seeking Alpha as a whole. Seeking Alpha is not a licensed securities dealer, broker or US investment adviser or investment bank. Our analysts are third party authors that include both professional investors and individual investors who may not be licensed or certified by any institute or regulatory body.",
+            "sentiment": 0.0,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820533-nvidia-time-to-double-down#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4",
+            "timestamp": "2025-09-11T12:59:24.152838"
+          },
+          {
+            "text": "Nvidia\u2019s Hyper-Growth Keeps Stock Valuation Out of Bubble Zone. . For all the handwringing about Nvidia Corp.\u2019s sky-high market value pushing the stock into bubble territory, its revenue growth keeps investors buying. While the chipmaker\u2019s earnings this week weren\u2019t the blowout Wall Street was hoping for, they did show that its sales are still climbing faster than those by the technology universe more broadly. Nvidia is expected to post revenue growth of at least 42% over the next four quarters, compared with an average of roughly 10% for the tech-heavy Nasdaq 100 Index, according to data compiled by Bloomberg Intelligence.",
+            "sentiment": 0.95219,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/articles/2025-08-29/nvidia-s-hyper-growth-keeps-stock-valuation-out-of-bubble-zone",
+            "timestamp": "2025-09-11T10:55:41.414281"
+          },
+          {
+            "text": "PsiQuantum hits $7B valuation, partners with Nvidia to boost quantum tech.",
+            "sentiment": 0.919687,
+            "source": "Seeking Alpha (RSS)",
+            "url": "https://seekingalpha.com/news/4493664-psiquantum-hits-7b-valuation-partners-with-nvidia-to-boost-quantum-tech?source=feed_symbol_NVDA",
+            "timestamp": "2025-09-11T10:02:04.158604"
+          },
+          {
+            "text": "Nvidia: Recently Dethroned AI King Of A Past Era - But Buy Case Still Compelling",
+            "sentiment": 0.0,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820650-nvidia-recently-dethroned-ai-king-of-a-past-era-but-buy-case-still-compelling#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A2",
+            "timestamp": "2025-09-11T09:59:22.549866"
+          },
+          {
+            "text": "Nvidia gets H20 chip licenses for some customers in China, but geopolitical woes linger",
+            "sentiment": -0.720297,
+            "source": "Seeking Alpha (News)",
+            "url": "https://seekingalpha.com/news/4493253-nvidia-gets-h20-chip-licenses-for-some-customers-in-china-but-geopolitical-woes-linger#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A6",
+            "timestamp": "2025-09-11T08:59:37.170644"
+          },
+          {
+            "text": "OpenAI Teams With Broadcom on AI Chip to Challenge Nvidia | The Pulse 9/05/2025. . 00:00 > > NEWSMAKERS AND MARKET MOVERS. THIS IS THE PULSE WITH FRANCINE LACQUA. > > GOOD MORNING AND WELCOME TO THE PULSE. I'M LIZZY BURDEN. LET'S CHECK IN ON THE PREMARKET MOVERS. WE HAVE MOVED FOR BROADCOM AFTER BLOOMBERG LEARNED BROADCOM IS HELPING OPENAI DESIGN AND PRODUCE AN AI ACCELERATOR CHIP. GETTING INTO THIS LUCRATIVE SPHERE THAT HAS BEEN DOMINATED BY NVIDIA. THE CHIPMAKER ALSO REPORTING THIRD-QUARTER RESULTS THAT BEAT EXPECTATIONS ON AI SEMICONDUCTOR REVENUE. THE CEO POINTING TO A STRONG AI OUTLOOK. BROADCOM SHARES UP 6%. LULULEMON DOWN NEARLY 17%. SLASHING THEIR OUTLOOK, DISAPPOINTING INVESTORS FOR A THIRD STRAIGHT QUARTER AS THEY STRUGGLE TO MEET THE HIGH EXPECTATIONS OF THE COMPANY. THIS WALL STREET STOCK RALLY HAS EXTENDED INTO ASIA AS FURTHER SIGNS OF A COOLING LABOR MARKET REINFORCED BETS THAT THE FED WILL CUT RATES LATER THIS MONTH. JOHN WILLIAMS EXPECTS RATES WILL COME DOWN EVENTUALLY. > > LOOKING AHEAD, IF PROGRESS ON THE DUAL MANDATE GOALS CONTINUES, I ANTICIPATE",
+            "sentiment": -0.938488,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/videos/2025-09-05/the-pulse-9-05-2025-video",
+            "timestamp": "2025-09-11T08:55:30.956634"
+          },
+          {
+            "text": "Top Beijing Adviser Says China Should Ditch Nvidia For Own Tech. . China should develop chips to create AI that doesn\u2019t rely on the type of accelerators popularized by Nvidia Corp., a top government adviser said, warning that Asian companies in particular risk becoming beholden to US technology. Asian nations including China should reduce their dependence on the general-purpose graphics processing units now used around the world to train platforms from ChatGPT to DeepSeek, Wei Shaojun, a professor at Beijing-based Tsinghua University, told a forum in Singapore.",
+            "sentiment": 0.0,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/articles/2025-09-11/top-beijing-adviser-says-china-should-ditch-nvidia-for-own-tech",
+            "timestamp": "2025-09-11T08:55:03.104502"
+          },
+          {
+            "text": "Nvidia Investors Grapple With China Risks Ahead of Earnings. . Nvidia Corp.\u2019s China sales have taken on new levels of complexity, and investors will be hoping for a clearer read when the chipmaker reports earnings Wednesday afternoon. The firm\u2019s on-again, off-again sales in the world\u2019s largest market for semiconductors have been a source of confusion for Wall Street. Third-quarter revenue projections for the company are roughly $15 billion apart, twice the difference between the highest and lowest estimates in the second quarter and the widest in percentage terms in at least a decade, according to data compiled by Bloomberg.",
+            "sentiment": -0.951666,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/articles/2025-08-27/nvidia-investors-grapple-with-china-risks-ahead-of-earnings",
+            "timestamp": "2025-09-11T07:55:36.547018"
+          },
+          {
+            "text": "Nvidia Can\u2019t Pay US 15% Unless Trump\u2019s Plan Formalized, CFO Says. . An unconventional plan by the Trump administration to charge a 15% commission on Nvidia Corp. AI chip sales to China hasn\u2019t progressed beyond the early stages and could pose legal risks, according to the company. The US government hasn\u2019t indicated how it will put regulations in place that require the chipmaker to make the payments, Nvidia said late Wednesday. Discussions between Nvidia and the government are ongoing, according to Chief Financial Officer Colette Kress .",
+            "sentiment": 0.0,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/articles/2025-08-28/nvidia-waiting-for-white-house-to-codify-15-commission-plan",
+            "timestamp": "2025-09-11T07:53:39.007265"
+          },
+          {
+            "text": "Nvidia rises even as Citi trims estimates amid concerns over increased competition",
+            "sentiment": -0.63,
+            "source": "Seeking Alpha (News)",
+            "url": "https://seekingalpha.com/news/4493047-nvidia-rises-even-as-citi-trims-estimates-amid-concerns-over-increased-competition#source=section%3Asummary%7Csection_asset%3Aall_news%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A9",
+            "timestamp": "2025-09-11T05:59:38.111791"
+          },
+          {
+            "text": "Nvidia: Still Short Of A $4 Trillion Market Value (Rating Downgrade)",
+            "sentiment": -0.63,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820635-nvidia-still-short-of-a-4-trillion-market-value-rating-downgrade#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A3",
+            "timestamp": "2025-09-11T05:59:22.721626"
+          },
+          {
+            "text": "Nvidia: The Real Winner In The $19B Microsoft/Nebius Deal",
+            "sentiment": 0.713415,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820888-nvidia-the-real-winner-in-the-19b-microsoft-nebius-deal#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A1",
+            "timestamp": "2025-09-11T03:59:22.381307"
+          },
+          {
+            "text": "Nvidia Is Still In The Early Innings Of The AI Revolution",
+            "sentiment": -0.65189,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4819427-nvidia-is-still-in-the-early-innings-of-the-ai-revolution#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A10",
+            "timestamp": "2025-09-11T02:59:26.484320"
+          },
+          {
+            "text": "Nvidia-Backed CuspAI Raises $100m in Series A Funding. . 00:00 The race is a landmark race not only for the company, but I think for Europe as a whole. And we've seen some really nice momentum in Europe, as just shown previously on the screen. But I think the funding round that we've just announced predominately will be spent in three kind of core areas, one of which is on people. So many of you will be familiar with the kind of talent war that we currently find ourselves in the air space. So people are a big cost center for us compete. Obviously we're training fairly large models on fairly large datasets, so the usage of cheap use through our cloud partners will be a second sink. And the third and foremost is the experimental component of our work. So of course we are making materials, we're designing materials, and in order to do that, you have to physically synthesize those materials. And so we have labs across the world that we're working with actually physically make those materials for us. So they're kind of the three top centers that",
+            "sentiment": 0.0,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/videos/2025-09-11/nvidia-baked-cusp-ai-raises-100m-in-series-a-funding-video",
+            "timestamp": "2025-09-11T02:55:22.410331"
+          },
+          {
+            "text": "Stock Movers: Pepsi Co, Kraft Heinz, Nvidia. . Browse all episodes Stock Movers: Pepsi Co, Kraft Heinz, Nvidia Stock Movers Pepsi Co, Kraft Heinz, Nvidia Arrow Right 4:01 On this episode of Stock Movers: Listen for comprehensive cross-platform coverage of the US market close as heard on Bloomberg Television, Bloomberg Radio, and YouTube with Eric Balchunas, Katie Griefeld, Carol Massar and Tim Stenovec Activist investor Elliott Investment Management has built a stake of about $4 billion in PepsiCo (PEP) with plans to call for changes at the struggling beverage maker. The position makes it one of PepsiCo\u2019s largest investors, the activist said Tuesday in a letter to the company board of directors. PepsiCo said will review Elliott\u2019s perspectives in the context of its growth strategy, which it said is positioned to accelerate growth and deliver long-term value for shareholders. The soda-and-snacks maker has struggled in the face of competitive pressure and changing consumer tastes, with its market value plunging more than 20% from a",
+            "sentiment": -0.655377,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/audio/2025-09-02/stock-movers-pepsi-co-kraft-heinz-nvidia",
+            "timestamp": "2025-09-11T00:53:34.881394"
+          },
+          {
+            "text": "Nvidia Slide on Broadcom-OpenAI Pact Threatens $4 Trillion Value. . Nvidia Corp. shares fell on Friday, with the chipmaker at risk of losing its historic $4 trillion valuation for the first time in nearly two months. The drop came as Broadcom Inc. is helping OpenAI design and produce an artificial intelligence accelerator chip, with the two firms reportedly planning to ship the first chips in that lineup starting next year. This would make Broadcom a more direct competitor to Nvidia, the leader in AI hardware.",
+            "sentiment": -0.974257,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/articles/2025-09-05/nvidia-slide-on-broadcom-openai-pact-threatens-4-trillion-value",
+            "timestamp": "2025-09-10T23:55:10.955689"
+          },
+          {
+            "text": "Nvidia's China Revenue Constraints Don't Negate The Bull Case",
+            "sentiment": -0.724283,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4820081-nvidia-china-revenue-constraints-dont-negate-the-bull-case#source=section%3Asummary%7Csection_asset%3Aall_analysis%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A7",
+            "timestamp": "2025-09-10T21:59:25.943739"
+          },
+          {
+            "text": "NVIDIA Corporation (NVDA) Presents at 2025 NASDAQ Investor Conference Transcript",
+            "sentiment": 0.0,
+            "source": "Seeking Alpha (Analysis)",
+            "url": "https://seekingalpha.com/article/4793673-nvidia-corporation-nvda-presents-at-2025-nasdaq-investor-conference-transcript#source=section%3AAll%7Csection_asset%3ATranscripts%7Cfirst_level_url%3Asymbol%7Cbutton%3ATitle%7Clock_status%3ANo%7Cline%3A4",
+            "timestamp": "2025-09-10T20:59:31.980268"
+          },
+          {
+            "text": "Stock Movers: Oracle, Synopsis, Novo. . Browse all episodes Stock Movers: Oracle, Synopsis, Novo Stock Movers Oracle, Synopsis, Novo Arrow Right 4:12 On this episode of Stock Movers: - Oracle (ORCL) surged to a record after the company gave an aggressive outlook for its cloud business, stunning Wall Street and galvanizing hopes that the post-ChatGPT global AI infrastructure build-out is accelerating. Oracle's cloud infrastructure revenue increased 55% to $3.3 billion, with the company signing four multibillion-dollar contracts with three different customers in the quarter and expecting to sign up several additional customers in the coming months. - Coreweave (CRWV) and Nvidia (NVDA) are following the Oracle rally as they have relationships with the big tech giant. - Synopsis (SNPS) shares are sinking after warning that US export restrictions are contributing to a slowdown in China. Its price target was also cut at Stifel, Wells Fargo, and KeyBanc. The electronic design automation software company reported third-quarter re",
+            "sentiment": 0.493897,
+            "source": "Bloomberg (Pydoll)",
+            "url": "https://www.bloomberg.com/news/audio/2025-09-10/stock-movers-oracle-synopsis-novo-podcast",
+            "timestamp": "2025-09-10T17:29:24.190918"
+          }
+        ]
+      },
+      "articles_analyzed": 20,
+      "overall_sentiment": "Very Negative",
+      "sentiment_score": 0.0
+    },
+    "industry_sentiment": {
+      "status": "error",
+      "error": "Industry must be provided either in constructor with company_symbol or as parameter"
+    },
+    "market_data": {
+      "status": "success",
+      "data": {
+        "minute_data": {
+          "timeframe": "minute",
+          "rows": 100,
+          "latest_timestamp": "2025-09-12T23:59:00",
+          "earliest_timestamp": "2025-09-12T22:10:00",
+          "latest_price": 177.53,
+          "price_change_1min": -0.043299999999987904,
+          "volume_latest": 26965,
+          "vwap_latest": 177.532803,
+          "data": [
+            {
+              "open": 177.75,
+              "high": 177.75,
+              "low": 177.75,
+              "close": 177.75,
+              "vwap": 177.75,
+              "volume": 435,
+              "trade_count": 30
+            },
+            {
+              "open": 177.76,
+              "high": 177.76,
+              "low": 177.75,
+              "close": 177.75,
+              "vwap": 177.753036,
+              "volume": 1865,
+              "trade_count": 72
+            },
+            {
+              "open": 177.75,
+              "high": 177.76,
+              "low": 177.75,
+              "close": 177.76,
+              "vwap": 177.750543,
+              "volume": 2096,
+              "trade_count": 45
+            },
+            {
+              "open": 177.75,
+              "high": 177.75,
+              "low": 177.75,
+              "close": 177.75,
+              "vwap": 177.75,
+              "volume": 651,
+              "trade_count": 39
+            },
+            {
+              "open": 177.75,
+              "high": 177.75,
+              "low": 177.75,
+              "close": 177.75,
+              "vwap": 177.75,
+              "volume": 1307,
+              "trade_count": 31
+            },
+            {
+              "open": 177.75,
+              "high": 177.7502,
+              "low": 177.75,
+              "close": 177.7502,
+              "vwap": 177.750083,
+              "volume": 2633,
+              "trade_count": 26
+            },
+            {
+              "open": 177.7501,
+              "high": 177.76,
+              "low": 177.75,
+              "close": 177.76,
+              "vwap": 177.752237,
+              "volume": 732,
+              "trade_count": 57
+            },
+            {
+              "open": 177.7598,
+              "high": 177.77,
+              "low": 177.75,
+              "close": 177.7518,
+              "vwap": 177.761261,
+              "volume": 7606,
+              "trade_count": 92
+            },
+            {
+              "open": 177.76,
+              "high": 177.76,
+              "low": 177.76,
+              "close": 177.76,
+              "vwap": 177.76,
+              "volume": 905,
+              "trade_count": 46
+            },
+            {
+              "open": 177.77,
+              "high": 177.77,
+              "low": 177.7501,
+              "close": 177.7697,
+              "vwap": 177.763924,
+              "volume": 1321,
+              "trade_count": 44
+            },
+            {
+              "open": 177.75,
+              "high": 177.7507,
+              "low": 177.75,
+              "close": 177.7507,
+              "vwap": 177.750232,
+              "volume": 1641,
+              "trade_count": 47
+            },
+            {
+              "open": 177.76,
+              "high": 177.76,
+              "low": 177.76,
+              "close": 177.76,
+              "vwap": 177.76,
+              "volume": 390,
+              "trade_count": 40
+            },
+            {
+              "open": 177.77,
+              "high": 177.78,
+              "low": 177.76,
+              "close": 177.78,
+              "vwap": 177.77204,
+              "volume": 3018,
+              "trade_count": 82
+            },
+            {
+              "open": 177.77,
+              "high": 177.77,
+              "low": 177.77,
+              "close": 177.77,
+              "vwap": 177.77,
+              "volume": 898,
+              "trade_count": 49
+            },
+            {
+              "open": 177.7798,
+              "high": 177.78,
+              "low": 177.7798,
+              "close": 177.78,
+              "vwap": 177.779924,
+              "volume": 3106,
+              "trade_count": 77
+            },
+            {
+              "open": 177.78,
+              "high": 177.8,
+              "low": 177.78,
+              "close": 177.7901,
+              "vwap": 177.795044,
+              "volume": 5427,
+              "trade_count": 123
+            },
+            {
+              "open": 177.7901,
+              "high": 177.8,
+              "low": 177.7901,
+              "close": 177.8,
+              "vwap": 177.799804,
+              "volume": 6212,
+              "trade_count": 56
+            },
+            {
+              "open": 177.78,
+              "high": 177.78,
+              "low": 177.78,
+              "close": 177.78,
+              "vwap": 177.78,
+              "volume": 458,
+              "trade_count": 44
+            },
+            {
+              "open": 177.7891,
+              "high": 177.7891,
+              "low": 177.7891,
+              "close": 177.7891,
+              "vwap": 177.7891,
+              "volume": 977,
+              "trade_count": 41
+            },
+            {
+              "open": 177.78,
+              "high": 177.79,
+              "low": 177.78,
+              "close": 177.7899,
+              "vwap": 177.787475,
+              "volume": 649,
+              "trade_count": 32
+            },
+            {
+              "open": 177.78,
+              "high": 177.7801,
+              "low": 177.77,
+              "close": 177.77,
+              "vwap": 177.772997,
+              "volume": 2826,
+              "trade_count": 54
+            },
+            {
+              "open": 177.77,
+              "high": 177.78,
+              "low": 177.77,
+              "close": 177.77,
+              "vwap": 177.773658,
+              "volume": 3272,
+              "trade_count": 45
+            },
+            {
+              "open": 177.76,
+              "high": 177.76,
+              "low": 177.75,
+              "close": 177.75,
+              "vwap": 177.755,
+              "volume": 493,
+              "trade_count": 41
+            },
+            {
+              "open": 177.75,
+              "high": 177.75,
+              "low": 177.73,
+              "close": 177.73,
+              "vwap": 177.748573,
+              "volume": 7392,
+              "trade_count": 112
+            },
+            {
+              "open": 177.74,
+              "high": 177.74,
+              "low": 177.74,
+              "close": 177.74,
+              "vwap": 177.74,
+              "volume": 973,
+              "trade_count": 46
+            },
+            {
+              "open": 177.74,
+              "high": 177.74,
+              "low": 177.72,
+              "close": 177.72,
+              "vwap": 177.725626,
+              "volume": 979,
+              "trade_count": 37
+            },
+            {
+              "open": 177.72,
+              "high": 177.72,
+              "low": 177.72,
+              "close": 177.72,
+              "vwap": 177.72,
+              "volume": 1154,
+              "trade_count": 41
+            },
+            {
+              "open": 177.71,
+              "high": 177.72,
+              "low": 177.71,
+              "close": 177.72,
+              "vwap": 177.711255,
+              "volume": 2121,
+              "trade_count": 41
+            },
+            {
+              "open": 177.7198,
+              "high": 177.72,
+              "low": 177.7198,
+              "close": 177.72,
+              "vwap": 177.7199,
+              "volume": 415,
+              "trade_count": 42
+            },
+            {
+              "open": 177.71,
+              "high": 177.72,
+              "low": 177.71,
+              "close": 177.72,
+              "vwap": 177.711572,
+              "volume": 2564,
+              "trade_count": 83
+            },
+            {
+              "open": 177.7,
+              "high": 177.7,
+              "low": 177.69,
+              "close": 177.69,
+              "vwap": 177.696935,
+              "volume": 2470,
+              "trade_count": 146
+            },
+            {
+              "open": 177.68,
+              "high": 177.69,
+              "low": 177.67,
+              "close": 177.6892,
+              "vwap": 177.685776,
+              "volume": 1907,
+              "trade_count": 66
+            },
+            {
+              "open": 177.67,
+              "high": 177.67,
+              "low": 177.63,
+              "close": 177.63,
+              "vwap": 177.651105,
+              "volume": 5896,
+              "trade_count": 127
+            },
+            {
+              "open": 177.64,
+              "high": 177.64,
+              "low": 177.63,
+              "close": 177.63,
+              "vwap": 177.634,
+              "volume": 791,
+              "trade_count": 37
+            },
+            {
+              "open": 177.63,
+              "high": 177.63,
+              "low": 177.63,
+              "close": 177.63,
+              "vwap": 177.63,
+              "volume": 1574,
+              "trade_count": 76
+            },
+            {
+              "open": 177.64,
+              "high": 177.64,
+              "low": 177.631,
+              "close": 177.631,
+              "vwap": 177.634,
+              "volume": 593,
+              "trade_count": 55
+            },
+            {
+              "open": 177.68,
+              "high": 177.68,
+              "low": 177.6603,
+              "close": 177.6603,
+              "vwap": 177.666198,
+              "volume": 639,
+              "trade_count": 37
+            },
+            {
+              "open": 177.67,
+              "high": 177.68,
+              "low": 177.67,
+              "close": 177.68,
+              "vwap": 177.677763,
+              "volume": 1184,
+              "trade_count": 54
+            },
+            {
+              "open": 177.66,
+              "high": 177.68,
+              "low": 177.66,
+              "close": 177.66,
+              "vwap": 177.660858,
+              "volume": 7006,
+              "trade_count": 64
+            },
+            {
+              "open": 177.65,
+              "high": 177.67,
+              "low": 177.65,
+              "close": 177.67,
+              "vwap": 177.652151,
+              "volume": 1628,
+              "trade_count": 46
+            },
+            {
+              "open": 177.65,
+              "high": 177.66,
+              "low": 177.65,
+              "close": 177.66,
+              "vwap": 177.65139,
+              "volume": 1141,
+              "trade_count": 50
+            },
+            {
+              "open": 177.66,
+              "high": 177.67,
+              "low": 177.66,
+              "close": 177.67,
+              "vwap": 177.668767,
+              "volume": 2025,
+              "trade_count": 56
+            },
+            {
+              "open": 177.67,
+              "high": 177.6701,
+              "low": 177.67,
+              "close": 177.6701,
+              "vwap": 177.67005,
+              "volume": 627,
+              "trade_count": 47
+            },
+            {
+              "open": 177.67,
+              "high": 177.68,
+              "low": 177.67,
+              "close": 177.68,
+              "vwap": 177.678517,
+              "volume": 3546,
+              "trade_count": 55
+            },
+            {
+              "open": 177.68,
+              "high": 177.68,
+              "low": 177.66,
+              "close": 177.68,
+              "vwap": 177.672488,
+              "volume": 1442,
+              "trade_count": 55
+            },
+            {
+              "open": 177.66,
+              "high": 177.68,
+              "low": 177.66,
+              "close": 177.68,
+              "vwap": 177.666309,
+              "volume": 1129,
+              "trade_count": 39
+            },
+            {
+              "open": 177.68,
+              "high": 177.68,
+              "low": 177.67,
+              "close": 177.68,
+              "vwap": 177.678623,
+              "volume": 5492,
+              "trade_count": 45
+            },
+            {
+              "open": 177.69,
+              "high": 177.69,
+              "low": 177.6899,
+              "close": 177.6899,
+              "vwap": 177.68996,
+              "volume": 750,
+              "trade_count": 26
+            },
+            {
+              "open": 177.68,
+              "high": 177.69,
+              "low": 177.68,
+              "close": 177.6898,
+              "vwap": 177.684394,
+              "volume": 5858,
+              "trade_count": 41
+            },
+            {
+              "open": 177.6803,
+              "high": 177.6803,
+              "low": 177.6101,
+              "close": 177.62,
+              "vwap": 177.646842,
+              "volume": 11226,
+              "trade_count": 116
+            },
+            {
+              "open": 177.62,
+              "high": 177.62,
+              "low": 177.61,
+              "close": 177.61,
+              "vwap": 177.617507,
+              "volume": 2042,
+              "trade_count": 36
+            },
+            {
+              "open": 177.6101,
+              "high": 177.6101,
+              "low": 177.61,
+              "close": 177.61,
+              "vwap": 177.610012,
+              "volume": 1321,
+              "trade_count": 32
+            },
+            {
+              "open": 177.6199,
+              "high": 177.6199,
+              "low": 177.6,
+              "close": 177.6,
+              "vwap": 177.605838,
+              "volume": 4882,
+              "trade_count": 29
+            },
+            {
+              "open": 177.6199,
+              "high": 177.62,
+              "low": 177.6,
+              "close": 177.6,
+              "vwap": 177.602096,
+              "volume": 9606,
+              "trade_count": 97
+            },
+            {
+              "open": 177.59,
+              "high": 177.59,
+              "low": 177.57,
+              "close": 177.57,
+              "vwap": 177.586471,
+              "volume": 1286,
+              "trade_count": 41
+            },
+            {
+              "open": 177.56,
+              "high": 177.57,
+              "low": 177.56,
+              "close": 177.57,
+              "vwap": 177.564455,
+              "volume": 696,
+              "trade_count": 23
+            },
+            {
+              "open": 177.59,
+              "high": 177.59,
+              "low": 177.58,
+              "close": 177.58,
+              "vwap": 177.585,
+              "volume": 815,
+              "trade_count": 41
+            },
+            {
+              "open": 177.58,
+              "high": 177.58,
+              "low": 177.561,
+              "close": 177.561,
+              "vwap": 177.563533,
+              "volume": 1096,
+              "trade_count": 33
+            },
+            {
+              "open": 177.58,
+              "high": 177.58,
+              "low": 177.57,
+              "close": 177.57,
+              "vwap": 177.574799,
+              "volume": 1441,
+              "trade_count": 31
+            },
+            {
+              "open": 177.57,
+              "high": 177.5879,
+              "low": 177.57,
+              "close": 177.58,
+              "vwap": 177.578675,
+              "volume": 1365,
+              "trade_count": 37
+            },
+            {
+              "open": 177.57,
+              "high": 177.58,
+              "low": 177.54,
+              "close": 177.54,
+              "vwap": 177.557349,
+              "volume": 5825,
+              "trade_count": 68
+            },
+            {
+              "open": 177.55,
+              "high": 177.5799,
+              "low": 177.5319,
+              "close": 177.55,
+              "vwap": 177.536472,
+              "volume": 9052,
+              "trade_count": 44
+            },
+            {
+              "open": 177.5327,
+              "high": 177.59,
+              "low": 177.53,
+              "close": 177.57,
+              "vwap": 177.57506,
+              "volume": 4450,
+              "trade_count": 61
+            },
+            {
+              "open": 177.59,
+              "high": 177.59,
+              "low": 177.5504,
+              "close": 177.5504,
+              "vwap": 177.554484,
+              "volume": 5878,
+              "trade_count": 26
+            },
+            {
+              "open": 177.57,
+              "high": 177.59,
+              "low": 177.57,
+              "close": 177.59,
+              "vwap": 177.577654,
+              "volume": 1272,
+              "trade_count": 26
+            },
+            {
+              "open": 177.59,
+              "high": 177.59,
+              "low": 177.59,
+              "close": 177.59,
+              "vwap": 177.59,
+              "volume": 888,
+              "trade_count": 31
+            },
+            {
+              "open": 177.59,
+              "high": 177.5945,
+              "low": 177.57,
+              "close": 177.58,
+              "vwap": 177.578945,
+              "volume": 2900,
+              "trade_count": 40
+            },
+            {
+              "open": 177.5989,
+              "high": 177.5989,
+              "low": 177.5989,
+              "close": 177.5989,
+              "vwap": 177.5989,
+              "volume": 711,
+              "trade_count": 43
+            },
+            {
+              "open": 177.56,
+              "high": 177.56,
+              "low": 177.53,
+              "close": 177.53,
+              "vwap": 177.554273,
+              "volume": 6162,
+              "trade_count": 76
+            },
+            {
+              "open": 177.56,
+              "high": 177.56,
+              "low": 177.56,
+              "close": 177.56,
+              "vwap": 177.56,
+              "volume": 750,
+              "trade_count": 51
+            },
+            {
+              "open": 177.52,
+              "high": 177.52,
+              "low": 177.52,
+              "close": 177.52,
+              "vwap": 177.52,
+              "volume": 673,
+              "trade_count": 34
+            },
+            {
+              "open": 177.56,
+              "high": 177.56,
+              "low": 177.56,
+              "close": 177.56,
+              "vwap": 177.56,
+              "volume": 181,
+              "trade_count": 25
+            },
+            {
+              "open": 177.5408,
+              "high": 177.5408,
+              "low": 177.5408,
+              "close": 177.5408,
+              "vwap": 177.5408,
+              "volume": 745,
+              "trade_count": 41
+            },
+            {
+              "open": 177.5799,
+              "high": 177.58,
+              "low": 177.5618,
+              "close": 177.5799,
+              "vwap": 177.574938,
+              "volume": 1960,
+              "trade_count": 43
+            },
+            {
+              "open": 177.58,
+              "high": 177.59,
+              "low": 177.58,
+              "close": 177.59,
+              "vwap": 177.589091,
+              "volume": 1291,
+              "trade_count": 33
+            },
+            {
+              "open": 177.59,
+              "high": 177.6,
+              "low": 177.55,
+              "close": 177.55,
+              "vwap": 177.579147,
+              "volume": 1617,
+              "trade_count": 38
+            },
+            {
+              "open": 177.59,
+              "high": 177.6,
+              "low": 177.54,
+              "close": 177.54,
+              "vwap": 177.576311,
+              "volume": 4846,
+              "trade_count": 76
+            },
+            {
+              "open": 177.56,
+              "high": 177.56,
+              "low": 177.54,
+              "close": 177.54,
+              "vwap": 177.541279,
+              "volume": 1873,
+              "trade_count": 39
+            },
+            {
+              "open": 177.5401,
+              "high": 177.5401,
+              "low": 177.52,
+              "close": 177.52,
+              "vwap": 177.52324,
+              "volume": 2111,
+              "trade_count": 59
+            },
+            {
+              "open": 177.52,
+              "high": 177.56,
+              "low": 177.51,
+              "close": 177.56,
+              "vwap": 177.517147,
+              "volume": 3959,
+              "trade_count": 56
+            },
+            {
+              "open": 177.56,
+              "high": 177.5695,
+              "low": 177.56,
+              "close": 177.5695,
+              "vwap": 177.564864,
+              "volume": 729,
+              "trade_count": 29
+            },
+            {
+              "open": 177.5601,
+              "high": 177.5601,
+              "low": 177.5601,
+              "close": 177.5601,
+              "vwap": 177.5601,
+              "volume": 423,
+              "trade_count": 28
+            },
+            {
+              "open": 177.56,
+              "high": 177.57,
+              "low": 177.56,
+              "close": 177.57,
+              "vwap": 177.56756,
+              "volume": 706,
+              "trade_count": 34
+            },
+            {
+              "open": 177.56,
+              "high": 177.57,
+              "low": 177.56,
+              "close": 177.57,
+              "vwap": 177.566,
+              "volume": 1153,
+              "trade_count": 28
+            },
+            {
+              "open": 177.57,
+              "high": 177.6442,
+              "low": 177.56,
+              "close": 177.6442,
+              "vwap": 177.600246,
+              "volume": 2271,
+              "trade_count": 43
+            },
+            {
+              "open": 177.6,
+              "high": 177.63,
+              "low": 177.6,
+              "close": 177.63,
+              "vwap": 177.613774,
+              "volume": 1052,
+              "trade_count": 38
+            },
+            {
+              "open": 177.62,
+              "high": 177.6301,
+              "low": 177.51,
+              "close": 177.51,
+              "vwap": 177.585463,
+              "volume": 5820,
+              "trade_count": 107
+            },
+            {
+              "open": 177.53,
+              "high": 177.58,
+              "low": 177.53,
+              "close": 177.55,
+              "vwap": 177.548516,
+              "volume": 2706,
+              "trade_count": 53
+            },
+            {
+              "open": 177.5999,
+              "high": 177.6,
+              "low": 177.55,
+              "close": 177.5518,
+              "vwap": 177.564733,
+              "volume": 2969,
+              "trade_count": 42
+            },
+            {
+              "open": 177.5994,
+              "high": 177.5994,
+              "low": 177.56,
+              "close": 177.59,
+              "vwap": 177.596967,
+              "volume": 3093,
+              "trade_count": 37
+            },
+            {
+              "open": 177.56,
+              "high": 177.56,
+              "low": 177.55,
+              "close": 177.5591,
+              "vwap": 177.553507,
+              "volume": 1843,
+              "trade_count": 29
+            },
+            {
+              "open": 177.56,
+              "high": 177.59,
+              "low": 177.55,
+              "close": 177.59,
+              "vwap": 177.560783,
+              "volume": 2793,
+              "trade_count": 35
+            },
+            {
+              "open": 177.55,
+              "high": 177.5989,
+              "low": 177.51,
+              "close": 177.58,
+              "vwap": 177.533383,
+              "volume": 9935,
+              "trade_count": 62
+            },
+            {
+              "open": 177.57,
+              "high": 177.57,
+              "low": 177.52,
+              "close": 177.52,
+              "vwap": 177.536884,
+              "volume": 2995,
+              "trade_count": 45
+            },
+            {
+              "open": 177.54,
+              "high": 177.5401,
+              "low": 177.5216,
+              "close": 177.5216,
+              "vwap": 177.531034,
+              "volume": 1771,
+              "trade_count": 38
+            },
+            {
+              "open": 177.54,
+              "high": 177.55,
+              "low": 177.501,
+              "close": 177.501,
+              "vwap": 177.514042,
+              "volume": 5840,
+              "trade_count": 66
+            },
+            {
+              "open": 177.5399,
+              "high": 177.5399,
+              "low": 177.5213,
+              "close": 177.5213,
+              "vwap": 177.5253,
+              "volume": 2071,
+              "trade_count": 49
+            },
+            {
+              "open": 177.52,
+              "high": 177.5473,
+              "low": 177.52,
+              "close": 177.52,
+              "vwap": 177.520813,
+              "volume": 13879,
+              "trade_count": 65
+            },
+            {
+              "open": 177.5482,
+              "high": 177.5733,
+              "low": 177.53,
+              "close": 177.5733,
+              "vwap": 177.547027,
+              "volume": 2503,
+              "trade_count": 42
+            },
+            {
+              "open": 177.55,
+              "high": 177.5892,
+              "low": 177.51,
+              "close": 177.53,
+              "vwap": 177.532803,
+              "volume": 26965,
+              "trade_count": 113
+            }
+          ]
+        },
+        "hour_data": {
+          "timeframe": "hour",
+          "rows": 24,
+          "latest_timestamp": "2025-09-12T23:00:00",
+          "earliest_timestamp": "2025-09-11T16:00:00",
+          "latest_price": 177.53,
+          "price_change_1hour": -0.15000000000000568,
+          "price_change_24hour": 0.22499999999999432,
+          "volume_latest": 196537,
+          "vwap_latest": 177.567293,
+          "data": [
+            {
+              "open": 177.98,
+              "high": 178.1,
+              "low": 177.02,
+              "close": 177.305,
+              "vwap": 177.549631,
+              "volume": 12156567,
+              "trade_count": 119333
+            },
+            {
+              "open": 177.31,
+              "high": 177.52,
+              "low": 176.48,
+              "close": 177.1218,
+              "vwap": 177.052064,
+              "volume": 13245858,
+              "trade_count": 131433
+            },
+            {
+              "open": 177.13,
+              "high": 177.74,
+              "low": 176.91,
+              "close": 177.505,
+              "vwap": 177.463584,
+              "volume": 13591689,
+              "trade_count": 117192
+            },
+            {
+              "open": 177.5,
+              "high": 177.95,
+              "low": 176.9,
+              "close": 177.09,
+              "vwap": 177.194595,
+              "volume": 16882995,
+              "trade_count": 164299
+            },
+            {
+              "open": 177.06,
+              "high": 177.7234,
+              "low": 176.95,
+              "close": 177.1,
+              "vwap": 177.169157,
+              "volume": 15573034,
+              "trade_count": 6900
+            },
+            {
+              "open": 177.1,
+              "high": 177.3,
+              "low": 177.02,
+              "close": 177.15,
+              "vwap": 177.156171,
+              "volume": 975267,
+              "trade_count": 4511
+            },
+            {
+              "open": 177.16,
+              "high": 177.3,
+              "low": 177.02,
+              "close": 177.1991,
+              "vwap": 177.161583,
+              "volume": 215597,
+              "trade_count": 4070
+            },
+            {
+              "open": 177.18,
+              "high": 177.29,
+              "low": 177.1111,
+              "close": 177.22,
+              "vwap": 177.212848,
+              "volume": 174347,
+              "trade_count": 3063
+            },
+            {
+              "open": 177.2,
+              "high": 177.75,
+              "low": 177.0,
+              "close": 177.73,
+              "vwap": 177.49353,
+              "volume": 280762,
+              "trade_count": 6503
+            },
+            {
+              "open": 177.74,
+              "high": 177.93,
+              "low": 177.53,
+              "close": 177.57,
+              "vwap": 177.778096,
+              "volume": 267111,
+              "trade_count": 4418
+            },
+            {
+              "open": 177.53,
+              "high": 177.65,
+              "low": 177.13,
+              "close": 177.24,
+              "vwap": 177.386221,
+              "volume": 241517,
+              "trade_count": 5240
+            },
+            {
+              "open": 177.28,
+              "high": 177.81,
+              "low": 177.25,
+              "close": 177.81,
+              "vwap": 177.477126,
+              "volume": 305551,
+              "trade_count": 4665
+            },
+            {
+              "open": 177.81,
+              "high": 177.92,
+              "low": 177.0,
+              "close": 177.6,
+              "vwap": 177.487457,
+              "volume": 912795,
+              "trade_count": 16464
+            },
+            {
+              "open": 177.61,
+              "high": 178.44,
+              "low": 176.45,
+              "close": 177.53,
+              "vwap": 177.449617,
+              "volume": 18929942,
+              "trade_count": 222669
+            },
+            {
+              "open": 177.49,
+              "high": 178.595,
+              "low": 177.055,
+              "close": 178.295,
+              "vwap": 177.896988,
+              "volume": 21069530,
+              "trade_count": 239435
+            },
+            {
+              "open": 178.3,
+              "high": 178.55,
+              "low": 177.325,
+              "close": 177.63,
+              "vwap": 177.89986,
+              "volume": 17985879,
+              "trade_count": 161526
+            },
+            {
+              "open": 177.63,
+              "high": 178.2184,
+              "low": 177.46,
+              "close": 177.91,
+              "vwap": 177.893664,
+              "volume": 12067867,
+              "trade_count": 110708
+            },
+            {
+              "open": 177.91,
+              "high": 178.015,
+              "low": 177.5,
+              "close": 177.82,
+              "vwap": 177.760264,
+              "volume": 8207617,
+              "trade_count": 92428
+            },
+            {
+              "open": 177.815,
+              "high": 177.94,
+              "low": 177.4,
+              "close": 177.81,
+              "vwap": 177.638157,
+              "volume": 9783990,
+              "trade_count": 95403
+            },
+            {
+              "open": 177.8,
+              "high": 178.0,
+              "low": 177.4,
+              "close": 177.79,
+              "vwap": 177.686515,
+              "volume": 16805893,
+              "trade_count": 154929
+            },
+            {
+              "open": 177.8,
+              "high": 177.99,
+              "low": 177.6213,
+              "close": 177.77,
+              "vwap": 177.818616,
+              "volume": 17589964,
+              "trade_count": 5389
+            },
+            {
+              "open": 177.77,
+              "high": 177.79,
+              "low": 177.75,
+              "close": 177.75,
+              "vwap": 177.763433,
+              "volume": 145867,
+              "trade_count": 3210
+            },
+            {
+              "open": 177.75,
+              "high": 177.8,
+              "low": 177.63,
+              "close": 177.68,
+              "vwap": 177.735912,
+              "volume": 113049,
+              "trade_count": 3016
+            },
+            {
+              "open": 177.68,
+              "high": 177.69,
+              "low": 177.501,
+              "close": 177.53,
+              "vwap": 177.567293,
+              "volume": 196537,
+              "trade_count": 2521
+            }
+          ]
+        },
+        "day_data": {
+          "timeframe": "day",
+          "rows": 7,
+          "latest_timestamp": "2025-09-12T04:00:00",
+          "earliest_timestamp": "2025-09-06T04:00:00",
+          "latest_price": 177.82,
+          "price_change_1day": 0.6500000000000057,
+          "price_change_7day": 10.799999999999983,
+          "volume_latest": 124911026,
+          "vwap_latest": 177.751905,
+          "data": [
+            {
+              "open": 168.03,
+              "high": 169.03,
+              "low": 164.07,
+              "close": 167.02,
+              "vwap": 166.410559,
+              "volume": 224398193,
+              "trade_count": 2691645
+            },
+            {
+              "open": 168.03,
+              "high": 169.03,
+              "low": 164.07,
+              "close": 167.02,
+              "vwap": 166.410559,
+              "volume": 224398193,
+              "trade_count": 2691645
+            },
+            {
+              "open": 167.55,
+              "high": 170.96,
+              "low": 167.35,
+              "close": 168.31,
+              "vwap": 169.501212,
+              "volume": 163765027,
+              "trade_count": 1616167
+            },
+            {
+              "open": 169.09,
+              "high": 170.98,
+              "low": 166.7401,
+              "close": 170.76,
+              "vwap": 168.814327,
+              "volume": 157548392,
+              "trade_count": 1459074
+            },
+            {
+              "open": 176.64,
+              "high": 179.29,
+              "low": 175.47,
+              "close": 177.33,
+              "vwap": 177.544096,
+              "volume": 226852020,
+              "trade_count": 2122717
+            },
+            {
+              "open": 179.68,
+              "high": 180.28,
+              "low": 176.48,
+              "close": 177.17,
+              "vwap": 177.720878,
+              "volume": 151120346,
+              "trade_count": 1407990
+            },
+            {
+              "open": 177.77,
+              "high": 178.595,
+              "low": 176.45,
+              "close": 177.82,
+              "vwap": 177.751905,
+              "volume": 124911026,
+              "trade_count": 1129215
+            }
+          ]
+        }
+      }
+    },
+    "technical_analysis": {
+      "status": "success",
+      "timeframe_comparison": {
+        "symbol": "NVDA",
+        "timeframe_analysis": {
+          "day": {
+            "prediction": "Hold",
+            "confidence": 0.49323195219039917,
+            "model_accuracy": 0.4314177852348993,
+            "risk_metrics": {
+              "sharpe_ratio": 0.08640598473380014,
+              "max_drawdown_pct": -52.27830597255234,
+              "strategy_return_pct": -7.688347665860363
+            }
+          },
+          "hour": {
+            "prediction": "Hold",
+            "confidence": 0.8120784759521484,
+            "model_accuracy": 0.6124227167192758,
+            "risk_metrics": {
+              "sharpe_ratio": 0.13207566665175297,
+              "max_drawdown_pct": -31.469730140819475,
+              "strategy_return_pct": 31.570358781050125
+            }
+          },
+          "minute": {
+            "prediction": "Hold",
+            "confidence": 0.8066473603248596,
+            "model_accuracy": 0.9754697318300715,
+            "risk_metrics": {
+              "sharpe_ratio": -0.04413584456301129,
+              "max_drawdown_pct": -36.293257630633455,
+              "strategy_return_pct": -36.00631141079344
+            }
+          }
+        },
+        "consensus_prediction": "Hold",
+        "analysis_timestamp": "2025-09-16T20:33:28.700155",
+        "successful_timeframes": 3,
+        "total_timeframes": 3
+      },
+      "hour_prediction": {
+        "prediction_summary": {
+          "symbol": "NVDA",
+          "prediction": "Hold",
+          "confidence": 0.8120784759521484,
+          "timeframe": "hour"
+        },
+        "market_analysis": {
+          "current_price": 177.53,
+          "price_trend": "Downtrend",
+          "rsi_condition": "Neutral",
+          "rsi_value": 51.886488974803676,
+          "volume_trend": "Normal",
+          "sma_20": 177.606705,
+          "ema_20": 177.5985510905125,
+          "atr": 0.7284544457426152,
+          "data_range": {
+            "start_date": "2025-08-22T12:00:00",
+            "end_date": "2025-09-12T23:00:00",
+            "total_periods": 236
+          }
+        },
+        "risk_analysis": {
+          "sharpe_ratio": 0.13207566665175297,
+          "sortino_ratio": 0.1680020990262801,
+          "calmar_ratio": 1.003197632765847,
+          "max_drawdown_pct": -31.469730140819475,
+          "strategy_return_pct": 31.570358781050125,
+          "buy_hold_return_pct": 94.37257438551099,
+          "r_squared_vs_market": 0.5512719846805626
+        },
+        "model_performance": {
+          "accuracy": 0.6124227167192758,
+          "training_samples": 306662,
+          "symbols_trained": 10,
+          "created_at": "2025-09-14T17:23:01.683902",
+          "risk_metrics": {
+            "total_return_pct": 31.570358781050125,
+            "buy_hold_return_pct": 94.37257438551099,
+            "sharpe_ratio": 0.13207566665175297,
+            "sortino_ratio": 0.1680020990262801,
+            "calmar_ratio": 1.003197632765847,
+            "max_drawdown_pct": -31.469730140819475,
+            "r_squared_vs_market": 0.5512719846805626,
+            "strategy_accuracy": 0.6451718852638494,
+            "num_trades": 421,
+            "final_portfolio_value": 13157.035878105013,
+            "final_epoch_metrics": {
+              "total_return_pct": 36.92855958432257,
+              "buy_hold_return_pct": 94.37257438551099,
+              "sharpe_ratio": 0.14507804518640657,
+              "sortino_ratio": 0.1802842916587635,
+              "calmar_ratio": 1.1476080185611977,
+              "max_drawdown_pct": -32.17872216562358,
+              "r_squared_vs_market": 0.5012895289631597,
+              "strategy_accuracy": 0.32056054302605647,
+              "num_trades": 357,
+              "final_portfolio_value": 13692.855958432257
+            }
+          }
+        },
+        "technical_factors": {
+          "BBB_20_2.0_2.0": {
+            "importance": 0.10229987651109695,
+            "current_value": 0.6784982276669506
+          },
+          "symbol_encoded": {
+            "importance": 0.06176936253905296,
+            "current_value": 179.0
+          },
+          "high_low_pct": {
+            "importance": 0.042167745530605316,
+            "current_value": 0.0010646087985128876
+          },
+          "BBL_20_2.0_2.0": {
+            "importance": 0.03958796337246895,
+            "current_value": 177.00417582717867
+          },
+          "atr": {
+            "importance": 0.03845852613449097,
+            "current_value": 0.7284544457426152
+          }
+        },
+        "probability_breakdown": {
+          "Sell": 0.17354249954223633,
+          "Hold": 0.8120784759521484,
+          "Buy": 0.014379122294485569
+        },
+        "timestamp": "2025-09-16T20:33:28.790017",
+        "source": "pre_trained_model"
+      },
+      "analysis_summary": {
+        "comparison_available": true,
+        "hour_prediction_available": true,
+        "consensus_prediction": "Hold",
+        "hour_prediction_signal": "Hold",
+        "hour_confidence": 0.8120784759521484
+      }
+    }
+  },
+  "gpt5_prompt": "# Comprehensive Stock Analysis Request for NVDA\n\n## Analysis Timestamp: 2025-09-16T20:30:22.811848\n\nI need a trading decision recommendation based on the comprehensive analysis below. Please provide:\n1. **DECISION**: BUY, SELL, or HOLD\n2. **CONFIDENCE**: High, Medium, or Low\n3. **REASONING**: Detailed explanation weighing all factors\n4. **RISK ASSESSMENT**: Key risks and opportunities\n5. **TIME HORIZON**: Short-term (1-7 days) or Medium-term (1-4 weeks) recommendation\n\n---\n\n## 1. COMPANY SENTIMENT ANALYSIS\n\n**Overall Sentiment**: Very Negative\n**Sentiment Score**: 0.000\n**Articles Analyzed**: 20\n\n**Key Insights**:\n- Recent news sentiment: No data\n- Source diversity: 0 different sources\n- Sentiment breakdown: {}\n\n## 2. INDUSTRY SENTIMENT ANALYSIS\n**Status**: Failed to retrieve industry sentiment - Industry must be provided either in constructor with company_symbol or as parameter\n\n## 3. RECENT MARKET DATA\n\n**Latest Minute Data** (Last 100 minutes):\n- Current Price: $177.53\n- 1-min Change: $-0.04\n- Latest Volume: 26,965\n- VWAP: $177.53\n- Time Range: 2025-09-12T22:10:00 to 2025-09-12T23:59:00\n\n**Latest Hourly Data** (Last 24 hours):\n- Current Price: $177.53\n- 1-hour Change: $-0.15\n- 24-hour Change: $0.22\n- Latest Volume: 196,537\n- VWAP: $177.57\n\n**Latest Daily Data** (Last 7 days):\n- Current Price: $177.82\n- 1-day Change: $0.65\n- 7-day Change: $10.80\n- Latest Volume: 124,911,026\n- VWAP: $177.75\n\n## 4. TECHNICAL ANALYSIS\n\n**Multi-Timeframe Consensus**: Hold\n**Hour Prediction**: Hold\n**Hour Confidence**: 81.2%\n\n**Timeframe Analysis Available**: True\n**Hour Prediction Available**: True\n\n**Technical Insights**:\n- Model accuracy and validation metrics\n- Risk-adjusted performance indicators\n- Feature importance and market factors\n- Historical backtesting results\n\n**Detailed Hour Analysis**:\n- Prediction: Hold\n- Confidence: 81.2%\n- Current Price: $177.53\n- Price Trend: Downtrend\n- RSI Condition: Neutral (RSI: 51.9)\n- Volume Trend: Normal\n\n---\n\n## DECISION FRAMEWORK\n\nPlease analyze the above data and provide:\n\n1. **PRIMARY RECOMMENDATION**: BUY/SELL/HOLD with confidence level\n2. **KEY FACTORS**: Top 3 factors supporting your decision\n3. **RISK ASSESSMENT**:\n   - Primary risks to the position\n   - Risk mitigation strategies\n   - Position sizing recommendations\n4. **TIME HORIZON**:\n   - Short-term outlook (1-7 days)\n   - Medium-term outlook (1-4 weeks)\n5. **ENTRY/EXIT STRATEGY**:\n   - Optimal entry points\n   - Stop-loss levels\n   - Take-profit targets\n6. **MONITORING POINTS**: Key metrics/events to watch\n\n**Analysis Constraints**:\n- Current timestamp: 2025-09-16T20:30:22.811848\n- Data freshness varies by source\n- Technical models trained on historical data\n- Sentiment analysis reflects recent news only\n\nPlease provide a clear, actionable recommendation that considers all available data sources and their relative reliability.\n",
+  "summary": {
+    "company_sentiment_status": "success",
+    "industry_sentiment_status": "error",
+    "market_data_status": "success",
+    "technical_analysis_status": "success",
+    "data_sources_successful": 3,
+    "total_data_sources": 4
+  }
+}
